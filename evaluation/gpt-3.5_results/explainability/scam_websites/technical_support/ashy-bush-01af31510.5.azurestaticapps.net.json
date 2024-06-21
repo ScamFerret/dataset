@@ -1,0 +1,13 @@
+{
+    "url": "https://ashy-bush-01af31510.5.azurestaticapps.net/Win08ShDMeEr0887/index.html",
+    "question": "Please analyze this URL https://ashy-bush-01af31510.5.azurestaticapps.net/Win08ShDMeEr0887/index.html",
+    "thought": "The website returned a 404 status code, which means the page does not exist. Based on this, the URL is likely a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake website",
+        "reason": "The URL returned a 404 status code indicating that the page does not exist. This is a common tactic used by scam websites to make it seem like the website is legitimate but in reality they do not have a real product or service to offer."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "path": "gpt-3.5_results/explainability/scam_websites/technical_support",
+    "result": "Very bad"
+}

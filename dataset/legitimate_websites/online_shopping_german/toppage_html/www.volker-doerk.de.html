@@ -1,0 +1,1669 @@
+<!DOCTYPE html><html lang="de"><head>
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" id="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"><meta name="googlebot" content="noarchive"><title>OXID Module, Shop Software und Addons | draufgeschaut Volker Dörk</title><meta name="description" content="Module auf Basis der Shop Software OXID eSales. Shop System Lösungen, OXID Programmierung und Customizing sowie Integration professioneller Shop Systeme."><meta name="keywords" content="volker dörk, oxid esales, internetlösungen, shop system lösungen, shopsysteme, shoplösungen, oxid programmierung, oxid customizing, shop software, shopsoftware, ecommerce systeme, electronic commerce lösungen, eshops, shop, eshop, wehshop, php shop, onlineshop, warenkorbsystem, open source shop, online-shop, shop-software"><meta property="og:site_name" content="https://www.volker-doerk.de/"><meta property="og:title" content=" "><meta property="og:description" content="Alles zum Thema Wassersport, Sportbekleidung und Mode. Umfangreiches Produktsortiment mit den neusten Trendprodukten. Blitzschneller Versand."><meta property="og:type" content="website"><meta property="og:image" content="https://www.volker-doerk.de/out/dgf/img/basket.png"><meta property="og:url" content="https://www.volker-doerk.de/"><link rel="canonical" href="https://www.volker-doerk.de/"><!-- Shortcut Icons --><link rel="shortcut icon" href="https://www.volker-doerk.de/out/dgf/img/favicons/favicon.ico?rand=1" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-XRS6ZE1QS5&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+ga('create', 'UA-911706-1', 'volker-doerk.de'); 
+ga('set', 'anonymizeIp', true); 
+ga('require', 'ec'); 
+ga('set', 'currencyCode', 'EUR');
+var dgGoogleProducts = [ 
+{ 'anid': '40067', 'id': '40067', 'name': 'OXID Shop Modul L\u00e4nderspezifische Mehrwertsteuer (01.07.2021) One-Stop-Shop', 'price': '129', 'brand': 'draufgeschaut', 'category': 'SMALL OXID Addons', 'variant': '' , 'position': 0 , 'list': 'newest list' }
+,{ 'anid': '30304', 'id': '30304', 'name': 'Kaufland Bestellimport und Artikelexport', 'price': '359', 'brand': 'draufgeschaut', 'category': 'System Anbindungen', 'variant': '' , 'position': 1 , 'list': 'newest list' }
+,{ 'anid': '40093', 'id': '40093', 'name': 'Sprachdateien anpassen', 'price': '99', 'brand': 'draufgeschaut', 'category': 'Marketing', 'variant': '' , 'position': 2 , 'list': 'newest list' }
+,{ 'anid': '40092', 'id': '40092', 'name': 'OXID eShop Modul Otto Market Anbindung Bestellimport und Artikel \u00dcbertragung', 'price': '799', 'brand': 'draufgeschaut', 'category': 'System Anbindungen', 'variant': '' , 'position': 3 , 'list': 'newest list' }
+,{ 'anid': '40090', 'id': '40090', 'name': 'Robots & Useragenten Controll', 'price': '159', 'brand': 'draufgeschaut', 'category': 'Seo Module', 'variant': '' , 'position': 4 , 'list': 'newest list' }
+,{ 'anid': '40073', 'id': '40073', 'name': 'OXID Billbee Shop Api Anbindung', 'price': '299', 'brand': 'draufgeschaut', 'category': 'System Anbindungen', 'variant': '' , 'position': 5 , 'list': 'newest list' }
+,{ 'anid': '40074', 'id': '40074', 'name': 'OXID Flyout Navigationsmen\u00fc f\u00fcr die Mobile Darstellung', 'price': '129', 'brand': 'draufgeschaut', 'category': 'Marketing', 'variant': '' , 'position': 6 , 'list': 'newest list' }
+,{ 'anid': '40069', 'id': '40069', 'name': 'OXID Idealo Artikelexport', 'price': '159', 'brand': 'draufgeschaut', 'category': 'System Anbindungen', 'variant': '' , 'position': 7 , 'list': 'newest list' }
+,{ 'anid': '40071', 'id': '40071', 'name': 'OXID Label Manager', 'price': '149', 'brand': 'draufgeschaut', 'category': 'Marketing', 'variant': '' , 'position': 8 , 'list': 'newest list' }
+,{ 'anid': '40096', 'id': '40096', 'name': 'Adcell Tracking Integration und CSV Export', 'price': '99', 'brand': 'draufgeschaut', 'category': '', 'variant': '' , 'position': 9 , 'list': 'newest list' }
+,{ 'anid': '40058', 'id': '40058', 'name': 'Newsletter Erinnerungsemail', 'price': '49', 'brand': 'draufgeschaut', 'category': 'Marketing', 'variant': '' , 'position': 10 , 'list': 'newest list' }
+,{ 'anid': '40095', 'id': '40095', 'name': 'Newsletter Erfolgsemail', 'price': '99', 'brand': 'draufgeschaut', 'category': '', 'variant': '' , 'position': 11 , 'list': 'newest list' }
+,{ 'anid': '30320', 'id': '30320', 'name': 'Modul Connector f\u00fcr OXID eShop CE + PE + EE', 'price': '0.0', 'brand': 'draufgeschaut', 'category': 'System Anbindungen', 'variant': '' , 'position': 0 , 'list': 'top5 list' }
+,{ 'anid': '40067', 'id': '40067', 'name': 'OXID Shop Modul L\u00e4nderspezifische Mehrwertsteuer (01.07.2021) One-Stop-Shop', 'price': '129', 'brand': 'draufgeschaut', 'category': 'SMALL OXID Addons', 'variant': '' , 'position': 1 , 'list': 'top5 list' }
+,{ 'anid': '40079', 'id': '40079', 'name': 'Cookie Consent Modul', 'price': '0.0', 'brand': 'draufgeschaut', 'category': 'Module kostenlos', 'variant': '' , 'position': 2 , 'list': 'top5 list' }
+,{ 'anid': '10227', 'id': '10227', 'name': 'OXID eShop Modul Google Shopping Merchant Export Schnittstelle', 'price': '129', 'brand': 'draufgeschaut', 'category': 'Google Anbindungen', 'variant': '' , 'position': 3 , 'list': 'top5 list' }
+,{ 'anid': '00007', 'id': '00007', 'name': 'OXID Shop Modul Bestellexport f\u00fcr Lexware', 'price': '159', 'brand': 'draufgeschaut', 'category': 'Lexware', 'variant': '' , 'position': 4 , 'list': 'top5 list' } ];
+for(var i = 0; i < dgGoogleProducts.length; i++) { 
+  var dgGoogleProduct = dgGoogleProducts[i]; 
+  ga('ec:addImpression', { 'id': dgGoogleProduct.id, 'name': dgGoogleProduct.id, 'category': dgGoogleProduct.category, 'brand': dgGoogleProduct.brand, 'variant': dgGoogleProduct.variant, 'position': dgGoogleProduct.position, 'list': dgGoogleProduct.list }); 
+} 
+ga('send', 'pageview', 'Startseite' ); 
+</script> 
+<script type="text/javascript">
+var gaProperty = 'UA-911706-1';
+var disableStr = 'ga-disable-' + gaProperty;
+if (document.cookie.indexOf(disableStr + '=true') > -1) { window[disableStr] = true; };
+function gaOptout() { 
+document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+window[disableStr] = true;
+};
+</script> 
+<style type="text/css">.gaOptout { bottom: 2px; cursor: pointer; display: inline-block; overflow: hidden; position: fixed; left: 0px; z-index: 2147483644; font-size:11px; padding: 2px 20px 2px 17px; background: none repeat scroll 0 0 #fff; opacity: 0.6; border: 1px solid #d3d3d3; border-radius: 3px; }.gaOptout a { display:block; line-height:18px; }</style><link rel="alternate" type="application/rss+xml" title="draufgeschaut.de/Top of the Shop" href="https://www.volker-doerk.de/rss/draufgeschaut-de/Top-of-the-Shop/"><link rel="alternate" type="application/rss+xml" title="draufgeschaut.de/Neue Artikel im Shop" href="https://www.volker-doerk.de/rss/draufgeschaut-de/Neue-Artikel-im-Shop/">
+
+                <link rel="stylesheet" type="text/css" href="https://www.volker-doerk.de/out/dgf/src/css/styles.min.css?1510575404">
+<link rel="stylesheet" type="text/css" href="https://www.volker-doerk.de/modules/dgsearch/out/azure/src/dgsearch.css">
+<link rel="stylesheet" type="text/css" href="https://www.volker-doerk.de/modules/oe/oegdprbase/out/css/oegdprbase-flow.css">
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+    <body class="cl-start">
+
+                
+        <div style="display: none;">
+            <!--?xml version="1.0" encoding="utf-8"?-->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">    
+	<symbol id="shoppingBag">
+		<g>
+		<path fill="#000" d="M6.6,14.6l6.2-4.1h37.1l6.2,4.1V62c0,1.1-0.9,2.1-2.1,2.1H8.6c-1.1,0-2.1-0.9-2.1-2.1V14.6z"></path>
+		<path fill="#efefef" d="M6.6,14.6H56V63c0,0.6-0.5,1-1,1H7.6c-0.6,0-1-0.5-1-1V14.6z"></path>
+		<path fill="#efefef" d="M55.5,63.9l-24.2-8.1V14.6H56V63C56,63.4,55.8,63.7,55.5,63.9z"></path>
+		<polygon fill="#efefef" points="21,0.2 41.6,0.2 45.7,4.3 16.9,4.3 	"></polygon>
+		<path fill="#efefef" d="M41.6,0.2l4.1,4.1v14.4h-4.1V0.2z M16.9,4.3L21,0.2v18.5h-4.1V4.3z"></path>
+		</g>
+        <text class="shopping-bag-text" x="32" y="43" stroke="none" fill="#000" style="font-weight:bold; font-size: 225%; text-anchor: middle;">0</text>
+    </symbol>    
+	<symbol id="shoppingBagMini">
+        <polygon class="shopping-bag-stroke" fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" points="44,18 54,18 54,63 10,63 10,18 20,18 "></polygon>
+        <path class="shopping-bag-stroke" fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M22,24V11c0-5.523,4.477-10,10-10s10,4.477,10,10v13"></path>
+        <text class="shopping-bag-text" x="32" y="53" stroke="currentColor" fill="#000" stroke-width="2" style="font-size: 225%; text-anchor: middle;">0</text>
+    </symbol>
+</svg>        </div>
+        
+
+        <div class="fullwidth-container">
+            <div class="main-row">
+                                        
+    
+            
+
+    
+    <header id="header">
+
+        <div class="container">
+
+            <div class="header-box">
+
+                <div class="row">
+                    <div class="col-xs-5 col-sm-6 col-md-4 logo-col">
+                        
+                                                                                                                <a href="https://www.volker-doerk.de/" title="">
+                                <img src="https://www.volker-doerk.de/out/dgf/img/logo.png" alt="" style="">
+                            </a>
+                        
+                    </div>
+                    <div class="col-xs-7 col-sm-6 col-md-4 col-md-push-4 menus-col">
+                        
+                            <div class="menu-dropdowns pull-right">
+                                
+                                                                        
+                                
+                                
+                                                                        
+                                
+
+                                
+                                                                                                                                                                                        <div class="btn-group service-menu showLogin">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-href="https://www.volker-doerk.de/mein-konto/">
+        
+                            Anmelden
+                                    <i class="fa fa-angle-down hidden-xs"></i>
+        
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right pull-right" role="menu">
+        
+            <li>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 pull-right">
+                        <div class="service-menu-box clearfix">
+                            <div class="topPopList">
+    
+        <span class="lead">Konto</span>
+        <div class="flyoutBox">
+            <ul id="services" class="list-unstyled">
+                
+                    <li>
+                        <a href="https://www.volker-doerk.de/mein-konto/">Mein Konto</a>
+                    </li>
+                                        <li>
+                        <a href="https://www.volker-doerk.de/mein-merkzettel/"><span>Mein Merkzettel</span></a>
+                                            </li>
+                                                                                    <li>
+                            <a href="https://www.volker-doerk.de/index.php?cl=account_downloads"><span>Meine Downloads</span></a>
+                        </li>
+                                    
+            </ul>
+        </div>
+    
+</div>                                                    </div>
+                    </div>
+                                            <div class="col-xs-12 col-sm-7">
+                            <div class="service-menu-box clearfix">
+                                    <form class="form" id="login" name="login" action="https://www.volker-doerk.de/index.php?" method="post">
+        <div id="loginBox" class="loginBox">
+            
+<input type="hidden" name="lang" value="0">
+            <input type="hidden" name="actcontrol" value="start">
+
+            <input type="hidden" name="fnc" value="login_noredirect">
+            <input type="hidden" name="cl" value="start">
+                        <input type="hidden" name="pgNr" value="0">
+            <input type="hidden" name="CustomError" value="loginBoxErrors">
+            
+            <span class="lead">Anmelden</span>
+
+            <div class="form-group">
+                <input id="loginEmail" type="email" name="lgn_usr" value="" class="form-control" placeholder="E-Mail-Adresse">
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input id="loginPasword" type="password" name="lgn_pwd" class="form-control" value="" placeholder="Passwort">
+                    <span class="input-group-btn">
+                        <a class="forgotPasswordOpener btn btn-default" href="https://www.volker-doerk.de/passwort-vergessen/" title="Passwort vergessen?">?</a>
+                    </span>
+                </div>
+            </div>
+
+                            <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="1" name="lgn_cook" id="remember"> Passwort merken
+                    </label>
+                </div>
+            
+            <button type="submit" class="btn btn-primary">Anmelden</button>
+
+                            <a class="btn" id="registerLink" role="button" href="https://www.volker-doerk.de/konto-eroeffnen/" title="Registrieren">Registrieren</a>
+            
+                    </div>
+    </form>
+                            </div>
+                        </div>
+                                    </div>
+            </li>
+        
+    </ul>
+</div>
+                                
+
+                                
+                                                                                                                                                                                        <div class="btn-group minibasket-menu">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-href="https://www.volker-doerk.de/warenkorb/">
+        
+            <svg class="shopping-bag" viewBox="0 0 64 64">
+                <use xlink:href="#shoppingBag"></use>             </svg>
+        
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right pull-right" role="menu">
+        
+            <li>
+                <div class="row">
+                    <div class="col-xs-12 pull-right">
+                        <div class="minibasket-menu-box">
+                            
+
+            
+            <div class="alert alert-info">Der Warenkorb ist leer.</div>
+        
+    
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+    </ul>
+</div>
+                                
+                            </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-md-pull-4 search-col">
+                        
+            <form class="form search" role="form" action="https://www.volker-doerk.de/index.php?" method="get" name="search">
+            
+<input type="hidden" name="lang" value="0">
+            <input type="hidden" name="cl" value="search">
+
+            
+                <div class="input-group">
+                    
+                        <input class="form-control" type="text" id="searchParam" name="searchparam" value="" placeholder="Suche" autocomplete="off">
+                    
+
+                    
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary" title="Suchen">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    
+                </div>
+            
+        </form><div id="searchresults" class="search-results"></div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            <nav id="mainnav" class="navbar navbar-default" role="navigation">
+            <div class="container">
+
+                
+                    <div class="navbar-header">
+                        
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button><span class="visible-xs-inline">Menü</span>
+                        
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul id="navigation" class="nav navbar-nav">
+                            
+                                <li class="active">
+                                    <a href="https://www.volker-doerk.de/">Startseite</a>
+                                </li>
+
+                                                                                                                                                                                
+                                        <li class=" dropdown">
+                                            <a href="https://www.volker-doerk.de/marketing-module.html" class="dropdown-toggle" data-toggle="dropdown">
+                                                Marketing <i class="fa fa-angle-down"></i>                                            </a>
+
+                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                        
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/marketing-module-amazon-anbindungen.html">Amazon Anbindungen</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                            
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/marketing-module-e-mail-marketing.html">E-Mail Marketing</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                            
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/ebay-anbindung.html">Ebay Anbindung</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                            
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/oxid-shop-module-fuer-google.html">Google Anbindungen</a>
+                                                                </li>
+                                                                                                                                                                                                                        </ul>
+                                                                                    </li>
+                                                                                                                                                
+                                        <li class=" dropdown">
+                                            <a href="https://www.volker-doerk.de/eshop-shop-module.html" class="dropdown-toggle" data-toggle="dropdown">
+                                                OXID Shop Module <i class="fa fa-angle-down"></i>                                            </a>
+
+                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                        
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/payment-module.html">Payment Schnittstellen</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                            
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/small-addon-oxid.html">SMALL OXID Addons</a>
+                                                                </li>
+                                                                                                                                                                                                                        </ul>
+                                                                                    </li>
+                                                                                                                                                
+                                        <li class=" dropdown">
+                                            <a href="https://www.volker-doerk.de/oxid-shop-module.html" class="dropdown-toggle" data-toggle="dropdown">
+                                                OXID eSales Module <i class="fa fa-angle-down"></i>                                            </a>
+
+                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                                                                </ul>
+                                                                                    </li>
+                                                                                                                                                
+                                        <li class=" dropdown">
+                                            <a href="https://www.volker-doerk.de/warenwirtschaft-anbindung.html" class="dropdown-toggle" data-toggle="dropdown">
+                                                Erp Schnittstellen <i class="fa fa-angle-down"></i>                                            </a>
+
+                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                        
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/lippisch-procurator.html">Lippisch Prokurator</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                            
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/amicron.html">Amicron Faktura</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/lexware.html">Lexware</a>
+                                                                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                    </li>
+                                                                                                                                                
+                                        <li class="">
+                                            <a href="https://www.volker-doerk.de/oxid-seo-module.html">
+                                                Seo Module                                            </a>
+
+                                                                                    </li>
+                                                                                                                                                                                                                    
+                                        
+                                                                                                                                                
+                                        
+                                                                                                                                                                    
+                        <li class="dropdown moreLinks"><a class="dropdown-toggle" data-toggle="dropdown">Mehr <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li class=" dropdown">
+                                            <a href="https://www.volker-doerk.de/system-anbindungen.html" class="dropdown-toggle" data-toggle="dropdown">
+                                                System Anbindungen <i class="fa fa-angle-down"></i>                                            </a>
+
+                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                        
+                                                                                                                            <li>
+                                                                    <a href="https://www.volker-doerk.de/google.html">Google</a>
+                                                                </li>
+                                                                                                                                                                                                                        </ul>
+                                                                                    </li><li class="">
+                                            <a href="https://www.volker-doerk.de/module-kostenlos.html">
+                                                Module kostenlos                                            </a>
+
+                                                                                    </li></ul></li></ul>
+
+                        <ul class="nav navbar-nav navbar-right fixed-header-actions">
+
+                            <li>
+                                <a href="https://www.volker-doerk.de/warenkorb/" rel="nofollow">
+                                    <svg class="shopping-bag-mini" viewBox="0 0 64 64">
+                                        <use xlink:href="#shoppingBagMini"></use>                                     </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(null)" class="search-toggle" rel="nofollow">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        
+                    </div>
+                
+
+            </div>
+        </nav>
+    
+        
+
+    </header>
+
+
+
+
+    
+
+    
+    <div id="wrapper" class="sidebarLeft">
+
+        <div class="container">
+
+            <div class="underdog">
+
+                
+
+                <div class="content-box">
+
+                                            
+                            
+    <div class="row"><div class="col-xs-12"><ol id="breadcrumb" class="breadcrumb"></ol></div></div>
+                        
+                    
+                        
+
+                    <div class="row">
+                                                    <div class="col-xs-12 col-md-3 start">
+                                <div id="sidebar">
+                                    
+
+    
+                    <div class="box well well-sm categorytree">
+                <section>
+                    <div class="page-header h3">
+                        <div class="pull-right visible-xs visible-sm">
+                            <i class="fa fa-caret-down toggleTree"></i>
+                        </div>
+                        Kategorien
+                    </div>
+                    <div class="categoryBox hidden-xs hidden-sm">
+                
+                    <ol class="nav nav-pills nav-stacked cat-tree">
+                        
+                                                                                                                                                                                                                                                                                                                    
+                                                                                                                        <li class="">
+                                            <a href="https://www.volker-doerk.de/marketing-module.html" title="Marketing">
+                                                <i class="fa fa-caret-right"></i> Marketing                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                        
+                                                                                                                        <li class="">
+                                            <a href="https://www.volker-doerk.de/eshop-shop-module.html" title="OXID Shop Module">
+                                                <i class="fa fa-caret-right"></i> OXID Shop Module                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                        
+                                                                                                                        <li class=" end">
+                                            <a href="https://www.volker-doerk.de/oxid-shop-module.html" title="OXID eSales Module">
+                                                <i class="fa fa-caret-right"></i> OXID eSales Module                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                        
+                                                                                                                        <li class="">
+                                            <a href="https://www.volker-doerk.de/warenwirtschaft-anbindung.html" title="Erp Schnittstellen">
+                                                <i class="fa fa-caret-right"></i> Erp Schnittstellen                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                        
+                                                                                                                        <li class=" end">
+                                            <a href="https://www.volker-doerk.de/oxid-seo-module.html" title="Seo Module">
+                                                <i class="fa fa-caret-right"></i> Seo Module                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                                                                                            
+                                                                                                                        <li class="">
+                                            <a href="https://www.volker-doerk.de/system-anbindungen.html" title="System Anbindungen">
+                                                <i class="fa fa-caret-right"></i> System Anbindungen                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                        
+                                                                                                                        <li class=" end">
+                                            <a href="https://www.volker-doerk.de/module-kostenlos.html" title="Module kostenlos">
+                                                <i class="fa fa-caret-right"></i> Module kostenlos                                             </a>
+                                                                                    </li>
+                                                                                                                                                                                            
+                    </ol>
+                
+            </div>
+            
+                </section>
+            </div>
+            
+
+    
+            
+
+    
+            
+
+    
+
+    
+            
+
+    
+            
+
+    
+              
+
+    
+            
+    
+        <div class="box well well-sm">
+      <section>
+         <div class="page-header h3">Topseller</div>
+          <div class="content">
+           
+
+
+<div class="boxwrapper" id="boxwrapper_topBox">
+    
+                
+
+        <div class="list-container" id="topBox">
+                            
+                
+                                    <div class="row gridView newItems">
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-12 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/modul-connector-fuer-oxid-eshop-ce-pe-ee.html" title="Modul Connector für OXID eShop CE + PE + EE " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-modul-connector.png" alt="Modul Connector für OXID eShop CE + PE + EE " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="topBox_1" href="https://www.volker-doerk.de/modul-connector-fuer-oxid-eshop-ce-pe-ee.html" class="title" title="Modul Connector für OXID eShop CE + PE + EE ">
+                        <span>Modul Connector für OXID eShop CE + PE + EE </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                            kostenlos
+                                                                                                                                                                                                       </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/modul-connector-fuer-oxid-eshop-ce-pe-ee.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                                    <div class="row gridView newItems">
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-12 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/small-addon-oxid-htmloxid-shop-modul-laenderspezifische-mehrwertsteuer-01-07-2021-one-stop-shop.html" title="OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-modul-laenderspezifische-mehrwertsteuer.png" alt="OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="topBox_2" href="https://www.volker-doerk.de/small-addon-oxid-htmloxid-shop-modul-laenderspezifische-mehrwertsteuer-01-07-2021-one-stop-shop.html" class="title" title="OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop ">
+                        <span>OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          129,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/small-addon-oxid-htmloxid-shop-modul-laenderspezifische-mehrwertsteuer-01-07-2021-one-stop-shop.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                                    <div class="row gridView newItems">
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-12 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/module-kostenlos-htmlcookie-consent-modul.html" title="Cookie Consent Modul " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-cookie-consent-modul.png" alt="Cookie Consent Modul " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="topBox_3" href="https://www.volker-doerk.de/module-kostenlos-htmlcookie-consent-modul.html" class="title" title="Cookie Consent Modul ">
+                        <span>Cookie Consent Modul </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                            kostenlos
+                                                                                                                                                                                                       </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/module-kostenlos-htmlcookie-consent-modul.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                                    <div class="row gridView newItems">
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-12 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/oxid-shop-module-fuer-google/oxid-eshop-google-shopping-merchant-export-schnittstelle.html" title="OXID eShop  Modul Google Shopping Merchant Export Schnittstelle " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-google-merchant-modul.png" alt="OXID eShop  Modul Google Shopping Merchant Export Schnittstelle " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="topBox_4" href="https://www.volker-doerk.de/oxid-shop-module-fuer-google/oxid-eshop-google-shopping-merchant-export-schnittstelle.html" class="title" title="OXID eShop  Modul Google Shopping Merchant Export Schnittstelle ">
+                        <span>OXID eShop  Modul Google Shopping Merchant Export Schnittstelle </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          129,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/oxid-shop-module-fuer-google/oxid-eshop-google-shopping-merchant-export-schnittstelle.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                                    <div class="row gridView newItems">
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-12 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/oxid-to-lexware.html" title="OXID Shop Modul Bestellexport für Lexware " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-lexware-bestellung-modul.png" alt="OXID Shop Modul Bestellexport für Lexware " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="topBox_5" href="https://www.volker-doerk.de/oxid-to-lexware.html" class="title" title="OXID Shop Modul Bestellexport für Lexware ">
+                        <span>OXID Shop Modul Bestellexport für Lexware </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          159,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/oxid-to-lexware.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                            
+                        
+        </div>
+    </div>          </div>
+       </section>
+    </div>
+        
+
+                                </div>
+                            </div>
+                        
+                        <div class="col-xs-12 col-md-9">
+
+                            <div id="content">
+                                
+                                    
+                                                                                        
+
+
+
+            
+    
+    
+            
+
+
+<div class="boxwrapper" id="boxwrapper_newItems">
+                        <div class="page-header">
+                <h2>
+                    Neues
+                                            <a class="rss" id="rssNewestProducts" href="https://www.volker-doerk.de/rss/draufgeschaut-de/Neue-Artikel-im-Shop/" target="_blank">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                                    </h2>
+
+                            </div>
+            
+                
+
+        <div class="list-container" id="newItems">
+                            
+                
+                                    <div class="row gridView newItems">
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/small-addon-oxid-htmloxid-shop-modul-laenderspezifische-mehrwertsteuer-01-07-2021-one-stop-shop.html" title="OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-modul-laenderspezifische-mehrwertsteuer.png" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-modul-laenderspezifische-mehrwertsteuer.png" alt="OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_1" href="https://www.volker-doerk.de/small-addon-oxid-htmloxid-shop-modul-laenderspezifische-mehrwertsteuer-01-07-2021-one-stop-shop.html" class="title" title="OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop ">
+                        <span>OXID Shop Modul Länderspezifische Mehrwertsteuer  (01.07.2021),
+One-Stop-Shop </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          129,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/small-addon-oxid-htmloxid-shop-modul-laenderspezifische-mehrwertsteuer-01-07-2021-one-stop-shop.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/system-anbindungen-htmlkaufland-bestellimport-und-artikelexport.html" title="Kaufland Bestellimport und Artikelexport " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-kaufland-schnittstelle-anbindung.png" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-kaufland-schnittstelle-anbindung.png" alt="Kaufland Bestellimport und Artikelexport " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_2" href="https://www.volker-doerk.de/system-anbindungen-htmlkaufland-bestellimport-und-artikelexport.html" class="title" title="Kaufland Bestellimport und Artikelexport ">
+                        <span>Kaufland Bestellimport und Artikelexport </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          359,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/system-anbindungen-htmlkaufland-bestellimport-und-artikelexport.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/sprachdateien-anpassen.html" title="Sprachdateien anpassen " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-modul-sprachen.png" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-modul-sprachen.png" alt="Sprachdateien anpassen " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_3" href="https://www.volker-doerk.de/sprachdateien-anpassen.html" class="title" title="Sprachdateien anpassen ">
+                        <span>Sprachdateien anpassen </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          99,00
+                                                                                                                          
+                                        €                                                                                     *                                                                            </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/sprachdateien-anpassen.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/oxid-eshop-modul-otto-anbindung-bestellimport-und-artikel-Uebertragung.html" title="OXID eShop Modul Otto Market Anbindung, Bestellimport und Artikel Übertragung " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-otto-marketplace-anbinding.png" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-otto-marketplace-anbinding.png" alt="OXID eShop Modul Otto Market Anbindung, Bestellimport und Artikel Übertragung " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_4" href="https://www.volker-doerk.de/oxid-eshop-modul-otto-anbindung-bestellimport-und-artikel-Uebertragung.html" class="title" title="OXID eShop Modul Otto Market Anbindung, Bestellimport und Artikel Übertragung ">
+                        <span>OXID eShop Modul Otto Market Anbindung, Bestellimport und Artikel Übertragung </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          799,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/oxid-eshop-modul-otto-anbindung-bestellimport-und-artikel-Uebertragung.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                                    <div class="row gridView newItems">
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/robots-useragenten-controll.html" title="Robots &amp; Useragenten Controll " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/robots-useragenten-controll.png" alt="Robots &amp; Useragenten Controll " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_5" href="https://www.volker-doerk.de/robots-useragenten-controll.html" class="title" title="Robots &amp; Useragenten Controll ">
+                        <span>Robots &amp; Useragenten Controll </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          159,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/robots-useragenten-controll.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/oxid-billbee-api-anbindung.html" title="OXID  Billbee Shop Api Anbindung " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-billbee-api-anbindung.png" alt="OXID  Billbee Shop Api Anbindung " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_6" href="https://www.volker-doerk.de/oxid-billbee-api-anbindung.html" class="title" title="OXID  Billbee Shop Api Anbindung ">
+                        <span>OXID  Billbee Shop Api Anbindung </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          299,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/oxid-billbee-api-anbindung.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/oxid-flyout-navigationsmenue-fuer-die-mobile-darstellung.html" title="OXID Flyout Navigationsmenü für die Mobile Darstellung " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-flow-mobile-flyout-menue.png" alt="OXID Flyout Navigationsmenü für die Mobile Darstellung " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_7" href="https://www.volker-doerk.de/oxid-flyout-navigationsmenue-fuer-die-mobile-darstellung.html" class="title" title="OXID Flyout Navigationsmenü für die Mobile Darstellung ">
+                        <span>OXID Flyout Navigationsmenü für die Mobile Darstellung </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          129,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/oxid-flyout-navigationsmenue-fuer-die-mobile-darstellung.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/system-anbindungen-htmloxid-idealo-artikelexport.html" title="OXID Idealo Artikelexport " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-idealo-direktkauf-modul.png" alt="OXID Idealo Artikelexport " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_8" href="https://www.volker-doerk.de/system-anbindungen-htmloxid-idealo-artikelexport.html" class="title" title="OXID Idealo Artikelexport ">
+                        <span>OXID Idealo Artikelexport </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                          ab
+                                                                                            159,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/system-anbindungen-htmloxid-idealo-artikelexport.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                                    <div class="row gridView newItems">
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/oxid-label-manager.html" title="OXID Label Manager " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-label-manager.png" alt="OXID Label Manager " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_9" href="https://www.volker-doerk.de/oxid-label-manager.html" class="title" title="OXID Label Manager ">
+                        <span>OXID Label Manager </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          149,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/oxid-label-manager.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/adcell-tracking-integration-und-csv-export.html" title="Adcell Tracking Integration und CSV Export " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/oxid-adcell-tracking-modul.png" alt="Adcell Tracking Integration und CSV Export " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_10" href="https://www.volker-doerk.de/adcell-tracking-integration-und-csv-export.html" class="title" title="Adcell Tracking Integration und CSV Export ">
+                        <span>Adcell Tracking Integration und CSV Export </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          99,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/adcell-tracking-integration-und-csv-export.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/marketing-module/newsletter-erinnerungsemail.html" title="Newsletter Erinnerungsemail " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/thumb/150_370_75/newsletter_erinnerungsemail.png" alt="Newsletter Erinnerungsemail " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_11" href="https://www.volker-doerk.de/marketing-module/newsletter-erinnerungsemail.html" class="title" title="Newsletter Erinnerungsemail ">
+                        <span>Newsletter Erinnerungsemail </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          49,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/marketing-module/newsletter-erinnerungsemail.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                
+                                            
+                
+                
+                <div class="productData col-xs-12 col-sm-6 col-md-3 productBox">
+                    <div class="picture text-center">
+            <a href="https://www.volker-doerk.de/newsletter-erfolgsemail.html" title="Newsletter Erfolgsemail " rel="nofollow">
+                <img src="https://www.volker-doerk.de/out/dgf/img/spinner.gif" data-src="https://www.volker-doerk.de/out/pictures/generated/product/1/150_370_75/nopic.jpg" alt="Newsletter Erfolgsemail " class="img-responsive">
+            </a>
+        </div>
+        
+
+        <div class="listDetails text-center">
+            
+                <div class="title">
+                    <a id="newItems_12" href="https://www.volker-doerk.de/newsletter-erfolgsemail.html" class="title" title="Newsletter Erfolgsemail ">
+                        <span>Newsletter Erfolgsemail </span>
+                    </a>
+                </div>
+            
+
+            <div class="price text-center">
+                <div class="content">
+                    
+                                                                                                            
+                            
+                            
+                                                                    <span class="lead text-nowrap">
+                                                                                                                                                                          99,00
+                                                                                                                          
+                                        €                                                                                                                                                                 </span>
+                                                            
+                                                                        
+                </div>
+            </div>
+            
+                <div class="actions text-center">
+                    <div class="btn-group">
+                                                    <a rel="nofollow" class="btn btn-primary" href="https://www.volker-doerk.de/newsletter-erfolgsemail.html">Mehr Informationen</a>
+                                            </div>
+                </div>
+            
+        </div>
+                </div>
+
+                                    </div>
+                
+                            
+                        
+        </div>
+    </div>    
+            <div class="row">
+            <hr>
+        </div>
+    
+                
+            <div class="welcome-teaser"><h2>Wir bieten Ihnen OXID Shop Module von der ERP-Schnittstelle über SEO Module bis zur Anbindung an die großen Shopping Portale – erleben Sie Ihren einfachen E-Commerce!</h2>
+
+Nutzen Sie unsere OXID E-Shop Anbindung an das Warenwirtschaftssystem <a href="/lippisch-procurator-schnittstelle.html">Procurator</a> von Lippisch Software.
+Dieses Schnittstelle ermöglicht den Import von Bestellungen aus Ihrem OXID Onlineshop nach Procurator.
+Auch Artikel können zwischen Ihrem Shop und der Warenwirtschaft einfach abgeglichen werden. <br>
+ <br>
+Mit unserem entsprechenden Third Party Modul für OXID eShop importieren Sie Bestellungen aus Ihrem Onlineshop in die Warenwirtschaft <a href="/oxid-eshop-amicron-anbindung.html">Amicron Faktura</a>.
+Gleichen Sie so auch Artikel zwischen Warenwirtschaft und Ihrem Webshop ab. <br>
+  <br>
+Unser OXID Shop Modul für Lexware exportiert Bestellungen aus Ihrem OXID Onlineshop ins XML Format.
+Damit füttern Sie die Lexware Warenwirtschaft <a href="/oxid-to-lexware.html">Financial Office Pro Handel</a> über die gegebene Lexware-Standardshopschnittstelle zu Ihrem Shop.
+Unser Exportwerkzeug eignet sich auch für andere Anwendungen mit dieser Schnittstelle. <br>
+  <br>
+Mit unserem <a href="/oxid-4-amzon-anbindung.html">Amazon Artikelexport und Bestellimport</a> für Ihren OXID-Shop nutzen Sie den Handelsriesen als Ihre zusätzliche Verkaufsplattform.
+Binden Sie Ihren OXID E-Shop ganz simpel an den Marktplatz Amazon Deutschland an.
+Optional kommunizieren Sie auch mit Amazon United Kingdom, France und vielen weiteren Zweigen. <br>
+  <br>
+Mit unserem <a href="/oxid-shop-module-fuer-google/oxid-eshop-modul-google-analytics.html">OXID Modul Google Analytics</a> binden Sie Ihren Shop an den kalifornischen Sevicegiganten an.
+So nutzen Sie AdWords Conversion und Remarketing effizient für Ihre Märkte.
+Sehen Sie Trends in Ihren Shop Umsätzen, planen Sie Ihre Marketingkampagnen professionell, die optimale Voraussetzung zur Optimierung Ihrer Conversion Rate. <br>
+  <br>
+Nutzen Sie unser <a href="/modul-lexikon-fuer-oxid-eshop.html"></a>Lexikonmodul für Ihren OXID E-Shop: Informieren Sie Ihre Kunden zu Ihren Produkten.
+Wissen zu Materialen oder Inhaltsstoffen schafft Vertrauen in Sie – Kenntnisse zu Einsatzbereichen Ihrer Produkte schaffen Folgeaufträge.
+Informierte Interessenten bleiben Ihnen als zufriedene Kunden treu. <br>
+  <br>
+Wir bieten Ihnen viele weitere Möglichkeiten für Ihren Oxid Onlineshop.
+Unsere OXID eShop Module erweitern Ihren Shop systematisch, vereinfachen Abläufe und erschließen neue Einnahmequellen.
+Schauen Sie sich dazu in Ruhe bei uns um und kontaktieren Sie uns bei Bedarf – wir begleiten Sie gerne!</div>
+        <br>
+    OXID Schnittstelle für eBay: Vertrauen Sie auf die einfache E-Commerce-Lösung<br>
+Vereinfachen Sie Ihre Shop Prozesse mit einer OXID Schnittstelle für eBay zum fairen Preis. Die personenbezogenen Daten, die Ihre Kunden beim Bestellprozess eingeben, werden durch die Schnittstelle automatisch mit Ihrem Ebay Onlineshop synchronisiert. Sparen Sie wertvolle Zeit mit der Schnittstelle für Ihren eBay eShop!
+<br><br>
+Sie haben Fragen oder benötigen weitere Informationen zur praktischen OXID eBay Schnittstelle? Gerne hilft Ihnen der Kundensupport individuell weiter: support@draufgeschaut.de.
+<br><br>
+Erprobte Lösungen und Schnittstellen vom Experten für Ihre Online-Marktplätze
+<br>Auch wenn Sie als Online-Händler auf der Suche nach einer Amazon Schnittstelle oder Google Shopping Schnittstelle zum günstigen Preis sind, bieten wir die richtige OXID Schnittstelle für Ihren Amazon Webshop. Wir bieten darüber hinaus zuverlässige Software Lösungen für Ihr ERP-System! Gerne beraten wir Sie unverbindlich.
+    
+
+                                                                    
+                            </div>
+
+                        </div>
+
+                                            </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+            
+
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="row">
+                        <div class="footer-left-part">
+                            
+                                <section class="col-xs-12 col-sm-3 footer-box footer-box-service">
+                                    <div class="h4 footer-box-title">Service</div>
+                                    <div class="footer-box-content">
+                                        
+                                            <ul class="services list-unstyled">
+        
+            <li><a href="https://www.volker-doerk.de/kontakt.html">Kontakt</a></li>
+                                                                            <li>
+                    <a href="https://www.volker-doerk.de/warenkorb/">
+                        Warenkorb
+                    </a>
+                                    </li>
+                        <li><a href="https://www.volker-doerk.de/mein-konto/">Konto</a></li>
+            <li>
+                <a href="https://www.volker-doerk.de/mein-merkzettel/">
+                    Merkzettel
+                </a>
+                            </li>
+                                        <li><a href="https://www.volker-doerk.de/index.php?cl=account_downloads">Meine Downloads</a></li>
+                    
+      <li><a href="https://www.volker-doerk.de/index.php?cl=dgcookieconsentoverview">Cookie-Einstellungen bearbeiten</a></li>
+    </ul>
+                                        
+                                    </div>
+                                </section>
+                            
+                            
+                                <section class="col-xs-12 col-sm-3 footer-box footer-box-information">
+                                    <div class="h4 footer-box-title">Informationen</div>
+                                    <div class="footer-box-content">
+                                        
+                                            <ul class="information list-unstyled">
+                    <li><a href="https://www.volker-doerk.de/impressum/">Impressum</a></li>
+                            <li><a href="https://www.volker-doerk.de/agb/">AGB</a></li>
+                                    <li><a href="https://www.volker-doerk.de/versand/">Versand</a></li>
+                            <li><a href="https://www.volker-doerk.de/Widerrufsrecht/">Widerrufsrecht</a></li>
+                            <li><a href="https://www.volker-doerk.de/wie-bestellen/">Wie Bestellen ?</a></li>
+                                    <li><a href="https://www.volker-doerk.de/datenschutz-oxid/">Datenschutz</a></li>
+                
+        
+                    <li><a href="https://www.volker-doerk.de/newsletter/">Newsletter</a></li>
+                            <li><a href="https://www.volker-doerk.de/news/">News</a></li>
+            </ul>
+                                        
+                                    </div>
+                                </section>
+                            
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="row">
+                        <div class="footer-right-part">
+                            <div class="col-xs-6 col-xs-offset-3 col-sm-12 col-sm-offset-0">
+                                                                    <section class="footer-box footer-box-newsletter">
+                                        <div class="h4 footer-box-title">Newsletter</div>
+                                        <div class="footer-box-content">
+                                            
+                                                <p class="small">Die neuesten Produkte und die besten Angebote per E-Mail, damit Ihr nichts mehr verpasst.</p>
+                                                
+    <form class="form-inline" role="form" action="https://www.volker-doerk.de/index.php?" method="post">
+        
+            <div class="hidden">
+                
+<input type="hidden" name="lang" value="0">
+                <input type="hidden" name="fnc" value="fill">
+                <input type="hidden" name="cl" value="newsletter">
+                            </div>
+
+            
+                <label class="sr-only" for="footer_newsletter_oxusername">Newsletter</label>
+                <input class="form-control" type="email" name="editval[oxuser__oxusername]" id="footer_newsletter_oxusername" value="" placeholder="Email">
+                <button class="btn btn-primary" type="submit">Abonnieren</button>
+            
+        
+    </form>                                            
+                                        </div>
+                                    </section>
+                                                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+                        
+                            
+                    </div>
+
+                
+        
+                <div id="incVatInfo">
+                        * <span class="deliveryInfo">inkl. MwSt., zzgl. <a href="https://www.volker-doerk.de/versand/">Versandkosten</a></span>
+                    </div>
+                
+        
+            </footer>
+
+    <div class="legal">
+        <div class="container">
+            <div class="legal-box">
+                <div class="row">
+                    <section class="col-sm-12">
+                        
+                            
+                                                            
+                        
+
+                        
+                                                            <div></div>
+                                                    
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+    <i class="fa fa-chevron-circle-up icon-4x" id="jumptotop"></i>
+
+                            </div>
+        </div>
+
+        
+        
+        
+
+            <script>
+    var oFlow = oFlow || [];
+    oFlow.i18n =
+        {
+            DD_FORM_VALIDATION_VALIDEMAIL:     'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+            DD_FORM_VALIDATION_PASSWORDAGAIN:  'Die Passwörter stimmen nicht überein.',
+            DD_FORM_VALIDATION_NUMBER:         'Bitte geben Sie eine Zahl ein.',
+            DD_FORM_VALIDATION_INTEGER:        'Es sind keine Nachkommastellen erlaubt.',
+            DD_FORM_VALIDATION_POSITIVENUMBER: 'Bitte geben Sie eine positive Zahl ein.',
+            DD_FORM_VALIDATION_NEGATIVENUMBER: 'Bitte geben Sie eine negative Zahl ein.',
+            DD_FORM_VALIDATION_REQUIRED:       'Bitte Wert angeben.',
+            DD_FORM_VALIDATION_CHECKONE:       'Bitte wählen Sie mindestens eine Option.'
+        };
+</script>
+            
+            
+            
+        
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+<div id="#gaOptout" class="gaOptout"><a href="javascript:gaOptout()" onclick="alert('Google Analytics wurde deaktiviert.');">Klicken Sie hier, um Google Analytics zu deaktivieren.</a></div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+       
+ 
+
+   
+   <div id="dgcookienote">
+   <div id="dgCookieNoteBar">
+      <div id="truste-consent-track" style="display: block;">  
+         <div id="truste-consent-content" class="truste-banner" tabindex="0">
+           <form action="https://www.volker-doerk.de/index.php" method="post">    
+            
+<input type="hidden" name="lang" value="0">
+            <input type="hidden" name="actcontrol" value="start">
+
+            <input type="hidden" name="fnc" value="dgCookieConsentSetAllow">
+            <input type="hidden" name="cl" value="start">   
+                        <input type="hidden" name="pgNr" value="0">
+                        <div id="truste-consent-text" class="truste-messageColumn">
+                              <h2>Über Cookies auf dieser Website</h2>   
+                                     
+               <p>Dieser Online-Shop verwendet Cookies für ein optimales Einkaufserlebnis. Dabei werden beispielsweise die Session-Informationen oder die Spracheinstellung auf Ihrem Rechner gespeichert. Ohne Cookies ist der Funktionsumfang des Online-Shops eingeschränkt.</p>     
+               <div id="truste-consent-buttons" class="truste-buttonsColumn">   
+                             
+                  <button id="truste-consent-button" type="submit" class="truste-button2">Cookies akzeptieren</button>
+                         
+                  <a href="https://www.volker-doerk.de/index.php?cl=dgcookieconsentoverview">
+                    <button id="truste-show-consent" type="button" class="truste-button1">Cookie-Einstellungen bearbeiten</button> 
+                  </a>
+                    
+
+                                    <a href="https://www.volker-doerk.de/impressum/">
+                    <button id="truste-show-consent" type="button" class="truste-button1">Impressum</button>
+                  </a>
+                          
+               </div>         
+            </div> 
+           </form>   
+         </div>
+      </div>
+   </div>
+</div>
+
+<style>
+.truste-banner { margin: 0 auto; }.truste-messageColumn { font-family:Arial,sans-serif;font-size: 12px;color: #ffff; margin:15px 0px 15px 5px; float: left; direction:ltr; }.truste-buttonsColumn { float: right; margin: 10px 5px 10px 0px; }.truste-button1 { font-family:Arial,sans-serif;  background: #747474; color: #fff; font-size: 14px; width: 170px; height: auto; cursor: pointer; margin-left: 5px; padding:5px; border: 0px none; direction:ltr; }.truste-button2 { font-family:Arial,sans-serif;  background: #830505; color: #ffffff; font-size: 14px; width: 170px; height: auto; cursor: pointer; margin-left: 5px; padding:5px; border: 0px none; direction:ltr; }.truste-button1:hover, .truste-button2:hover{ background:#ffffff; }.truste-cookie-link { font-family:Arial,sans-serif;font-size: 12px;cursor: pointer;color: #fff; text-decoration:underline;display:inline-block;padding: 5px; }.truste-cookie-link:hover { color:#ffffff; }@media screen and (max-width: 420px) {.truste-banner { margin: 0 10px;}.truste-messageColumn, .truste-buttonsColumn { float: left; width: 100%;}.truste-messageColumn { margin: 15px 0px 10px 0px;}.truste-buttonsColumn {float:right; margin: 10px 0px 10px 0px;}.truste-button1, .truste-button2 { margin-top: 5px;  margin-left: 0px; width: 100%;}}@media screen and (min-width: 421px) and (max-width: 856px) {.truste-banner { margin: 0 10px;}.truste-messageColumn, .truste-buttonsColumn { float: left; width: 100%;}.truste-messageColumn { margin: 15px 0px 10px 0px;}.truste-buttonsColumn { margin: 10px 0px 10px 0px;}.truste-button1, .truste-button2 {  margin-top: 0px; margin-left: 0px; width: 49%;  float:left;}.truste-button2 { margin-right:5px;}}#dgCookieNoteBar {background: #747474;margin: 0 auto;position: fixed;bottom: 0;left: 0;width: 100%;z-index: 19999;}#truste-consent-track {max-width: 1200px;margin: 0 auto;display: none;}#truste-consent-content.truste-banner {background: #747474;margin: 0 auto;padding 10px;display: flex;flex-direction: row;align-items: center;}#truste-consent-text.truste-messageColumn {margin: 20px 0 40px 0;font-family:Arial, sans-serif;font-size: 12px;color: #ffff;display: flex;flex-direction: row;align-items: center;}#truste-consent-text.truste-messageColumn h2,#truste-consent-text.truste-messageColumn p {float: none;display: inline-block;color: #ffff;}#truste-consent-text.truste-messageColumn h2 {font-size: 18px;line-height: 80px;height: 100px;flex-shrink: 0;margin: 15px;padding: 10px;text-align: center;}#truste-consent-text.truste-messageColumn p {font-size: 12px;line-height: 16px;padding: 0 25px;margin: 0;}#truste-consent-buttons.truste-buttonsColumn {margin: 10px 5px 10px 0px;line-height: 20px;text-align: center;padding: 10px;float: right;display: flex;justify-content: space-between;flex-wrap: wrap;width: 377px;flex-shrink: 0;}#dgcookienote {position: relative;bottom: 50px; }#dgcookienote #truste-consent-button.truste-button2,#dgcookienote #truste-show-consent.truste-button1,#dgcookienote #truste-cookie-button.truste-cookie-link {font-family:Arial, sans-serif;font-size: 15px;text-align: center;outline: none;margin: 0;border: 0px none;cursor: pointer;text-decoration: none;overflow: hidden; }#dgcookienote #truste-consent-button.truste-button2 {background: #830505;color: #ffffff;height: 40px;flex-basis: 100%;padding: 5px 10px;line-height: 30px;margin-bottom: 10px; }#dgcookienote #truste-show-consent.truste-button1,#dgcookienote #truste-cookie-button.truste-cookie-link {max-width:150px;background: transparent;text-decoration: underline;overflow: hidden;flex-grow: 1;display: inline-block;padding: 10px 10px;min-height: 40px;line-height: 20px;text-align: center;width: auto;color: #fff;}#dgcookienote #truste-consent-button.truste-button2:hover {color: #ffffff;}#dgcookienote #truste-show-consent.truste-button1:hover,#dgcookienote #truste-cookie-button.truste-cookie-link:hover {background: transparent;}@media screen and (max-width: 999px) {#truste-consent-content.truste-banner {margin: 0 auto;padding 10px;flex-direction: column;padding-bottom: 60px;}#dgcookienote #truste-consent-text.truste-messageColumn {flex-direction: column;float: none;width: 100%;margin: 0;}#dgcookienote #truste-consent-text.truste-messageColumn h2 {text-align: center; height: auto; line-height: 20px; padding: 0 20px; margin: 20px 0; width: 100%;}#dgcookienote #truste-consent-buttons.truste-buttonsColumn {float: none;padding: 0;width: 100%;max-width: 400px;margin: 10px auto;}}@media screen and (min-width: 700px) and (max-width: 999px) {#dgcookienote #truste-consent-text.truste-messageColumn p { padding: 0 15% 10px 15%;}}@media screen and (max-width: 699px) {#dgcookienote #truste-consent-text.truste-messageColumn p {padding: 0 8% 10px 8%;margin-bottom: 15px;}}
+</style> 
+    
+
+
+
+
+
+
+        
+        <!--[if gte IE 9]><style type="text/css">.gradient {filter:none;}</style><![endif]-->
+        <script type="text/javascript" src="https://www.volker-doerk.de/out/dgf/src/js/libs/jquery.min.js?1510573890"></script>
+<script type="text/javascript" src="https://www.volker-doerk.de/out/dgf/src/js/libs/jquery-ui.min.js?1510573890"></script>
+<script type="text/javascript" src="https://www.volker-doerk.de/out/dgf/src/js/scripts.min.js?1510575134"></script>
+<script type="text/javascript" src="https://www.volker-doerk.de/out/dgf/src/js/pages/start.min.js?1510573890"></script>
+<script type="text/javascript" src="https://www.volker-doerk.de/modules/dgsearch/out/azure/src/draufgeschaut.js"></script>
+<script type="text/javascript">
+$('#searchParam').dgSearchList({searchUrl:'https://www.volker-doerk.de/index.php?add=1'});
+jQuery(document).ready(function($) {$(".productData .submitButton, .productData a.viewAllHover, .productData a.title").bind("click", function() {if( dgGoogleProducts !== null ){var aid = $(this).parent().closest('li').find('input[name="anid"][type="hidden"]:first').val();for(var i = 0, a = null; i < dgGoogleProducts.length; ++i) {if( dgGoogleProducts[i].anid == aid ) {var a = dgGoogleProducts[i];ga("ec:addProduct", { "id": a.id, "name": a.id, "price": a.price, "category": a.category, "brand": a.brand, "variant": a.variant, "position": a.position, "list": a.list });ga("ec:setAction", "click", { "list": a.list });ga("send", "event", "UX", "click", a.id, { "nonInteraction": true });break;}}}});$(".articleBoxImage a, .articleTitle a").bind("click", function() {if( dgGoogleProducts !== null ){var href = $(this).attr('href');for(var i = 0, href = null; i < dgGoogleProducts.length; ++i) {if( dgGoogleProducts[i].link == href ) {var a = dgGoogleProducts[i];ga("ec:addProduct", { "id": a.id, "name": a.id, "price": a.price, "category": a.category, "brand": a.brand, "variant": a.variant, "position": a.position, "list": a.list });ga("ec:setAction", "click", { "list": a.list });ga("send", "event", "UX", "click", a.list, { "nonInteraction": true } );break;}}}});$("body a").bind("click", function() {ga( "send", { "hitType": "event", "eventCategory": "start", "eventAction": "click", "eventLabel": $('#breadCrumb').text(), "nonInteraction": true });});$(".search").submit( function(){ga("send", "event", "keyword_search", "submit", $("#searchParam").val(), { "nonInteraction": true });});});
+</script>
+
+
+                    
+
+
+<script type="text/javascript">var sBaseUrl = 'https://www.volker-doerk.de/index.php?';var sActCl = 'start';</script>
+
+
+
+
+        
+        
+    
+</body></html>

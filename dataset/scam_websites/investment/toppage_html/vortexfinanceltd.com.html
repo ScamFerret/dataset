@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/_autoindex/assets/css/autoindex.css"><script src="/_autoindex/assets/js/tablesort.js"></script><script src="/_autoindex/assets/js/tablesort.number.js"></script><title>Index of /</title></head>
+<body><div class="content"><h1>Index of /</h1>
+<div id="table-filter"><input type="text" name="keyword" id="filter-keyword" placeholder="Filter Name"></div>
+<div id="table-list"><table id="table-content"><thead class="t-header"><tr><th class="colname" aria-sort="ascending" role="columnheader"><a class="name" href="?ND" onclick="return false" "="">Name</a></th><th class="colname" data-sort-method="number" role="columnheader"><a href="?MA" onclick="return false" "="">Last Modified</a></th><th class="colname" data-sort-method="number" role="columnheader"><a href="?SA" onclick="return false" "="">Size</a></th></tr></thead>
+<tbody><tr><td data-sort="*hyipp"><a href="/hyipp/"><img class="icon" src="/_autoindex/assets/icons/folder-fill.svg" alt="Directory">hyipp</a></td><td data-sort="131960646">2024-02-24 07:44</td><td data-sort="-1">-</td></tr>
+<tr><td data-sort="*vp_ioexplorer"><a href="/vp_ioexplorer/"><img class="icon" src="/_autoindex/assets/icons/folder-fill.svg" alt="Directory">vp_ioexplorer</a></td><td data-sort="131960646">2024-02-24 07:44</td><td data-sort="-1">-</td></tr>
+<tr><td data-sort="cronjobs.txt"><a href="/cronjobs.txt"><img class="icon" src="/_autoindex/assets/icons/file-text.svg" alt="[TXT]">cronjobs.txt</a></td><td data-sort="1674175798">2023-01-20 00:49</td><td data-sort="203">      1k</td></tr>
+<tr><td data-sort="firsdyna_hyipdb.sql"><a href="/firsdyna_hyipdb.sql"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">firsdyna_hyipdb.sql</a></td><td data-sort="1674172524">2023-01-19 23:55</td><td data-sort="428413">    419k</td></tr>
+<tr><td data-sort="hyiprio-client.sql"><a href="/hyiprio-client.sql"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="File">hyiprio-client.sql</a></td><td data-sort="1673001262">2023-01-06 10:34</td><td data-sort="399127">    390k</td></tr>
+<tr><td data-sort="ioblockexplorer.zip"><a href="/ioblockexplorer.zip"><img class="icon" src="/_autoindex/assets/icons/file.svg" alt="[CMP]">ioblockexplorer.zip</a></td><td data-sort="1701422721">2023-12-01 09:25</td><td data-sort="25960483">  25353k</td></tr>
+<tr><td data-sort="read me.txt"><a href="/Read%20Me.txt"><img class="icon" src="/_autoindex/assets/icons/file-text.svg" alt="[TXT]">Read Me.txt</a></td><td data-sort="1674175950">2023-01-20 00:52</td><td data-sort="229">      1k</td></tr>
+</tbody></table></div>
+<address>Proudly Served by LiteSpeed Web Server at vortexfinanceltd.com Port 443</address></div><script>
+	new Tablesort(document.getElementById("table-content"));
+	var keywordInput = document.getElementById('filter-keyword');
+	document.addEventListener('keyup', filterTable);
+
+	function filterTable(e) {
+		if (e.target.id != 'filter-keyword') return;
+
+		var cols = document.querySelectorAll('tbody td:first-child');
+		var keyword = keywordInput.value.toLowerCase();
+		for (i = 0; i < cols.length; i++) {
+			var text = cols[i].textContent.toLowerCase();
+			if (text != 'parent directory') {
+				cols[i].parentNode.style.display = text.indexOf(keyword) === -1 ? 'none' : 'table-row';
+			}
+		}
+	}
+</script>
+</body></html>

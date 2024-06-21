@@ -1,0 +1,12 @@
+{
+    "url": "https://opahtradefx.com/landing/ok/index.html",
+    "question": "Please analyze this URL https://opahtradefx.com/landing/ok/index.html",
+    "thought": "I need to first access the URL to obtain a status code. The website is accessible, now I need to extract the text and check for any signs of a scam. The website shows signs of being a scam based on the unusually low prices, claims of free and high returns, and the use of psychological tactics to entice users to invest. Additionally, the company seems non-existent, and the payment methods are not common. The information on the website also appears to be outdated. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake investment website",
+        "reason": "The website exhibits multiple characteristics of a scam website including unusually low prices claims of free high returns psychological targeting non-existent company information unusual payment methods and outdated information."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

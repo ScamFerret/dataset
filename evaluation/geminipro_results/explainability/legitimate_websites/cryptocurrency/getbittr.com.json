@@ -1,0 +1,12 @@
+{
+    "url": "https://getbittr.com/",
+    "question": "Please analyze this URL https://getbittr.com/",
+    "thought": "I should access the URL and check the HTTP status code.     I now know the final answer {",
+    "answer": {
+        "result": "False",
+        "scam_type": "Fake shopping site",
+        "reason": "//getbittr.com/. The website has no unusually low prices or claims of free it does not make claims of being able to get an amount of money that is generally not possible there are no texts that target human psychological weaknesses on the website there is no information on non-existent companies it does not handle different products from common e-commerce websites the inquiry phone number and email address are appropriate for business use the privacy of customer information notation is clear the payment methods are common and not unusual and the information listed has been updated."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Very bad"
+}

@@ -1,0 +1,12 @@
+{
+    "url": "https://montrealcorp.com",
+    "question": "Please analyze this URL https://montrealcorp.com",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is accessible, now I need to extract the text from the HTML to look for any signs of a scam. The website claims to offer unusually high profits and guarantees that you will not lose your funds, which is not typical of legitimate investment opportunities. The website also lacks comprehensive and specific information about the company and its operations. Additionally, the payment options and withdrawal guarantees are unusual. Based on these observations, it is likely that the website is a scam. The WHOIS information for montrealcorp.com shows that it is registered to Tee Tech, located in Osogbo, Nigeria. The website claims to be a legally operating company, but the registration information does not support that claim. Additionally, the website offers high profits with guaranteed withdrawals, which are not typical of legitimate investment opportunities. Based on these observations, it is likely that the website is a scam. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake investment website",
+        "reason": "The website offers unusually high profits with guaranteed withdrawals which are not typical of legitimate investment opportunities. The WHOIS information does not support the claim that the company is legally operating."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

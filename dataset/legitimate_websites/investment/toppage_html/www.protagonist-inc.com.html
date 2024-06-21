@@ -1,0 +1,1858 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="pointer skrollr skrollr-desktop"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="customRules"></style><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.protagonist-inc.com/',
+        AccountUUID: '47721037c35c41669903ca575d5bb9f7',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '8e9b9820',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Wed Apr 03 18:42:50 UTC 2024',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'home',
+        InitialPageUuid: 'ae3bf4e8dd364b5183b29dcfeb8acd04',
+        InitialPageId: '28722976',
+        InitialEncodedPageAlias: 'aG9tZQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: true,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '43240',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'protagonist-inc',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div> <p class=\"rteBlock\">We use cookies to ensure that we give you the best experience on our website.&nbsp;<\/p> \n <p class=\"rteBlock\">To learn more, go to the <a value=\"privacy-policy\" label=\"\" type=\"page\" href=\"\/privacy-policy\" data-runtime-url=\"\/privacy-policy\">Privacy Page<\/a>.<\/p> \n<\/div> \n',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.protagonist-inc.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="http://www.protagonist-inc.com/">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp.cdn-website.com/8e9b9820/dms3rep/multi/favicon-1.png">
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/8e9b9820/site_favicon_16_1672411974224.ico">
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/">
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(16, 116, 162, 1);
+  --color_2: rgba(84,88,99,1);
+  --color_3: rgba(16, 116, 162, 1);
+  --color_4: rgba(230, 228, 230, 1);
+  --color_5: rgba(82, 102, 149, 1);
+  --color_6: rgba(255, 255, 255, 1);
+  --color_7: rgba(250,140,14,1);
+}
+</style>
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";@font-face{font-family:Poppins;font-style:normal;font-weight:300;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:italic;font-weight:300;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v21/pxiDyp8kv8JHgFVrJJLm21lVF9eO.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:FontAwesome;font-display:block;src:url(https://static.cdn-website.com/fonts/fontawesome-webfont.eot?v=6);src:url(https://static.cdn-website.com/fonts/fontawesome-webfont.eot?#iefix&v=6) format("embedded-opentype"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.woff?v=6) format("woff"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.ttf?v=6) format("truetype"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.svg#fontawesomeregular?v=6) format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root{--color_1:rgba(16, 116, 162, 1);--color_2:rgba(84,88,99,1);--color_3:rgba(16, 116, 162, 1);--color_4:rgba(230, 228, 230, 1);--color_5:rgba(82, 102, 149, 1);--color_6:rgba(255, 255, 255, 1);--color_7:rgba(250,140,14,1)}.dmInner{min-height:100vh!important;position:relative}[dmtemplateid*=amburger] .dmLayoutWrapper{overflow:hidden}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{position:fixed;margin:0;display:none;width:10px;z-index:1000000999;top:0;left:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{text-align:left;position:fixed;top:10px;left:0;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}#dm .header-over-content .site_content{margin-top:0!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{display:none;z-index:9999999999!important}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}body.fix-mobile-scrolling{overflow:initial}#hcontainer[has-shadow=true]{position:relative;z-index:1}#dmRoot{text-decoration-skip-ink:none}@media (min-width:1025px){#dmRoot.responsiveTablet #dm #dmStyle_outerContainer #dmStyle_innerContainer .showOnMedium{display:none!important}#dmRoot.responsiveTablet #dm [data-responsive-name=ResponsiveDesktopTopTabletHamburger] .site_content{margin-top:0!important}:root{--btn-text-font-size:16px}}@media (min-width:768px) and (max-width:1024px){#dmRoot.responsiveTablet #dm #dmStyle_outerContainer #dmStyle_innerContainer .showOnLarge{display:none!important}:root{--btn-text-font-size:16px}}@media (max-width:767px){#dmRoot.responsiveTablet #dm #dmStyle_outerContainer #dmStyle_innerContainer .showOnLarge{display:none!important}}body{-webkit-overflow-scrolling:touch}:not(.runtime-module-container) .layout-drawer,:not(.runtime-module-container) .layout-drawer-hamburger,:not(.runtime-module-container) .layout-drawer-overlay{visibility:hidden}:not(.runtime-module-container) .layout-drawer{position:fixed;transform:translate(-100%,-100%)}:not(.runtime-module-container) .layout-drawer[data-origin=side-reverse]{transform:translate(100%,0)}:not(.runtime-module-container) .layout-drawer-overlay{opacity:0}.runtime-module-container{width:100%}.runtime-module-container[dmtemplateid*=amburger] #site_content,.runtime-module-container[dmtemplateid*=amburger] .dmInner{position:static}.runtime-module-container[dmtemplateid*=amburger] #site_content .site_content{position:relative}.runtime-module-container[dmtemplateid*=amburger] .dmLayoutWrapper{background-color:transparent}.runtime-module-container .hamburger-header-container{position:fixed;z-index:2;top:0;left:0;width:100%}.runtime-module-container .hamburger-header-container .hamburger-header{min-height:43px}.runtime-module-container .layout-drawer,.runtime-module-container .layout-drawer-hamburger,.runtime-module-container .layout-drawer-overlay{visibility:visible}.runtime-module-container[dmtemplateid*=amburger] .site_content{margin-top:59px}.runtime-module-container .layout-drawer,.runtime-module-container .layout-drawer-overlay{height:100%;position:fixed;top:0;left:0}.runtime-module-container .layout-drawer{background-color:#fff;width:75vw;transform:translate(-100%,0);overflow:auto;-webkit-overflow-scrolling:auto;z-index:13;display:flex;flex-direction:column}.runtime-module-container .layout-drawer .dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:0}.runtime-module-container .layout-drawer[data-origin=side-reverse]{transform:translate(100%,0);left:auto;right:0}.runtime-module-container .layout-drawer-overlay{width:100vw;background-color:rgba(0,0,0,.4);opacity:0;z-index:6}body:not([data-flex-site]) .layout-drawer .dmRespRow:not(:first-of-type):not(:last-of-type){flex:1 1 auto}.layout-drawer-hamburger{position:fixed;left:18px;margin-left:env(safe-area-inset-left);padding:17px 11px;z-index:13;width:52px;height:52px;background-color:transparent;color:#787878;display:flex;flex-direction:column;border:0;justify-content:space-between;align-items:stretch;outline:0;top:18px;border-radius:0}.layout-drawer-hamburger .hamburger__slice{display:block;height:0;width:100%;border:1px solid currentColor;transform-origin:center}@media (max-width:767px){.layout-drawer-hamburger{position:fixed;left:10px;margin-left:env(safe-area-inset-left);padding:13px 9px;z-index:13;width:40px;height:40px;background-color:transparent;color:#787878;display:flex;flex-direction:column;border:0;justify-content:space-between;align-items:stretch;outline:0;top:10px;border-radius:0}.layout-drawer-hamburger .hamburger__slice{display:block;height:0;width:100%;border:1px solid currentColor;transform-origin:center}}.hamburger-reverse .layout-drawer-hamburger{left:auto;right:10px;margin-right:env(safe-area-inset-right)}#dm-outer-wrapper #hamburger-header-container #hamburger-header .dmRespCol{display:flex;flex-direction:column;justify-content:center}nav{display:block}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button,input{font-family:inherit;font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}@media screen and (min-width:1200px){.rows-1200 .dmRespRow:not(.fullBleedMode) .dmRespColsWrapper{max-width:1200px}}.dmHeader,.dmRespRow .dmRespCol>*{max-width:100%}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmDesktopBody .dmRespRow .large-3{position:relative;width:25%}.dmDesktopBody .dmRespRow .large-9{position:relative;width:75%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}.icon-angle-right:before{content:'\f105'}.icon-angle-down:before{content:'\f107'}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}@media (min-width:768px){.hamburger-reverse .layout-drawer-hamburger{right:18px}#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}.imageWidget img[width][height],img[width][height]{height:auto}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}#dm [blog-posts-feature-flag=true][dmle_extension=internal_blog_list][show-author=false] .authorBar,#dm [dmle_extension=internal_blog_list][show-author=false] .authorBar{display:none}#dm .header-over-content .dmHeaderContainer{position:absolute;z-index:101;width:100%}.imageWidget a{font-style:italic;text-align:center}#dm .postText *,#dm [list-layout=layout4][text-align=left] .postText *{text-align:left}#dm .postArticle .authorBar{font-size:80%;opacity:.8}#dm [list-layout=layout4] .postArticle .authorBar{margin:0 0 15px;padding:0}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] h1,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}A IMG{border:none}h1,h2,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}a,img,li,ul{vertical-align:top}#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{min-width:768px!important;font-size:16px;background:#fff;color:#666}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939;outline:0;vertical-align:inherit}.dmInner ul:not(.defaultList){padding:0}.dmHeader{background:#68ccd1;color:#666;text-align:center;position:relative;width:100%}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container .nav-item-text::before,.dmNewParagraph{text-align:left}DIV.dmBody{padding:0;clear:both}.dmContent{margin:0;padding:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}#dm .dmRespColsWrapper,.dmStandardDesktop{display:block}.imageWidget:not(.displayNone) img{width:100%}h3{font-weight:400;font-size:23px}.dmNewParagraph{margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#dmFirstContainer .dmRespRowsWrapper:after,#dmFirstContainer .dmRespRowsWrapper:before{content:"";display:table}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmStandardDesktop{margin:0 auto}.dmCustomHtml{margin:10px 0}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important;background-color:#eee}.main-navigation.unifiednav{-js-display:flex;display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{-js-display:flex;display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{-js-display:flex;display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{-js-display:flex;display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}.main-navigation.unifiednav.effect-background{padding:0}.main-navigation.unifiednav.effect-background .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:12px 15px;margin:0 15px 0 0}.main-navigation.unifiednav.effect-background .unifiednav__container:not([data-depth]) .unifiednav__container[data-depth='0']{left:15px;top:calc(100% - 12px)}.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav .unifiednav__container[data-depth]{position:absolute;top:0;left:0;flex-direction:column;opacity:0;z-index:100;background-color:#faf9f9}.main-navigation.unifiednav .unifiednav__container[data-depth='0']{top:100%;transform:translateY(-10px)}.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container[data-depth='0']{left:15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap .unifiednav__container>.unifiednav__item-wrap{flex-direction:column}.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap .unifiednav__item{padding:15px 30px 15px 15px;margin:0}.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{content:''!important;width:100%;height:0;color:#ececec;align-self:center;border:0 solid currentColor}.main-navigation.unifiednav[layout-sub=submenu_horizontal_1] .unifiednav__container[data-depth]{color:#999}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item.unifiednav__item_has-sub-nav .icon{display:initial;padding-left:10px;margin-left:0}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav .unifiednav__container[data-depth]{background-color:transparent}#dm .main-navigation.unifiednav[layout-sub=submenu_horizontal_1] .unifiednav__container[data-depth]{background-color:#faf9f9}#dm .main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{color:#d1d1d1}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container{flex-direction:column;flex:1 1 100%}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{padding:8px 0;margin:0}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item.unifiednav__item_has-sub-nav .icon{padding-left:15px}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:initial}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap{flex-direction:column}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap .unifiednav__container[data-depth]{opacity:1;position:static;transform:translate(0)}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap .unifiednav__container[data-depth]>.unifiednav__item-wrap .unifiednav__item{justify-content:inherit;padding:8px 1em;margin:0;font-size:.8em}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after{content:''!important;width:100%;height:0;color:#d1d1d1;align-self:flex-start;border:0 solid currentColor}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL].effect-background .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{margin:0}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][layout-main=vertical_nav_layout_3] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:12px 15px}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][layout-main=vertical_nav_layout_3] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__container[data-depth]>.unifiednav__item-wrap .unifiednav__item{padding:5px 30px}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][data-show-vertical-sub-items=HOVER] .unifiednav__container[data-depth]{transform-origin:top;height:auto;overflow:hidden}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][data-show-vertical-sub-items=HOVER]>.unifiednav__container:not([data-depth])>.unifiednav__item-wrap .unifiednav__container[data-depth]{opacity:0;max-height:0}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container{flex-wrap:wrap;justify-content:inherit}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:''}#dm .main-navigation.unifiednav:not([data-nav-structure=SPLIT]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:last-child .unifiednav__container[data-depth='0']{left:auto;right:0}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item.unifiednav__item_has-sub-nav .icon{display:inline-block;padding-right:0}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dm-bfs.dm-layout-home div.dmInner{background-color:#fff}.dmStandardDesktop .dmHeader{background-color:#68ccd1;max-width:100%}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed).empty-column,.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:100px}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed).empty-column,.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed):empty{min-height:1px}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child.empty-column{min-height:100px}#dm div.dmContent h1{color:#666;color:rgba(100,100,100,1)}#dm div.dmRespCol>*{line-height:normal}#dm div.dmInner{line-height:initial}#dm div.dmInner h1{font-family:Montserrat,"Montserrat Fallback"}#dm DIV.dmInner{background-repeat:no-repeat;background-image:url(https://irt-cdn.multiscreensite.com/ce0bb35f932b47bb809d0e37905542ba/dms3rep/multi/site_background_education-2087x1173.jpg);background-size:cover;background-position:50% 0}#dm div.dmOuter div.dmInner{background-position:center center;background-repeat:repeat;background-size:auto}.clinical-study-bg,.explore-pipeline,.work-with-us{background-repeat:no-repeat;background-size:cover;background-position:center center}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-weight:300}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}#dm .dmRespCol div.dmNewParagraph,#dm div.dmInner,#dm div.dmInner .dmRespCol{color:rgba(0,0,0,1);font-family:Poppins,"Poppins Fallback"}#dm div.dmContent h1{font-family:PragmaticaCond-Black;color:var(--color_1);direction:ltr;font-weight:700;font-style:normal;text-decoration:none}#dm div.dmContent .dmNewParagraph[data-version] h1{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h1 *{text-decoration:none}#dm div.dmNewParagraph p{color:var(--color_2);direction:ltr;font-family:Pragmatica-Book;font-weight:400;font-style:normal;text-decoration:none;line-height:1.5}nav.u_1144820115 span.icon.icon-angle-down,nav.u_1697444087 span.icon.icon-angle-down{display:none!important}.custom-hero-width-h1{max-width:745px!important}.custom-hero-width-p{max-width:650px!important}.cta-boxes{width:100%;display:flex;justify-content:center;flex-wrap:wrap}.cta-box{width:30%;height:280px;position:relative;margin:10px}.clinical-study-bg{background-image:url(https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/iStock-1373659740-1920w.jpg)}.explore-pipeline{background-image:url(https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/iStock-1206629515-1920w.jpg)}.work-with-us{background-image:url(https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/iStock-905130626-1920w.jpg)}.cta-box-content{width:100%;height:90px;bottom:0;background-color:rgba(84,88,99,.8);position:absolute;display:flex;align-items:baseline;justify-content:right;padding:30px}.cta-box-arrow,.cta-box-title{position:relative}.cta-box-title{font-size:20px;line-height:28px;color:#fff;font-family:PragmaticaCond-Black;margin-right:10px;text-align:right}.modal h3,.modal p{font-family:Pragmatica-Book!important}.cta-box-arrow>img{width:34px;height:22px}@media screen and (max-width:1205px){.cta-box-title{font-size:16px;line-height:24px}.cta-box-arrow{width:24px;height:15px}}@media screen and (max-width:1000px){.cta-box-content{padding:30px 20px}}@media screen and (max-width:800px){.cta-box{width:45%}}@media screen and (max-width:600px){.cta-box{width:100%;margin:10px 0}}::placeholder{opacity:1}:-ms-input-placeholder{color:#A9ABB1}::-ms-input-placeholder{color:#A9ABB1}#dm .dmBody div.u_1620106714{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;height:auto;flex-direction:column}#dm .dmWidget:not([data-buttonstyle]) .iconBg,.modal{display:none}.modal{position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4)}.modal-content{position:relative;background-color:#fff;margin:auto;padding:0;border:1px solid #fff;width:80%;animation-name:animatetop;animation-duration:.4s}@-webkit-keyframes animatetop{from{top:-300px;opacity:0}to{top:0;opacity:1}}@keyframes animatetop{from{top:-300px;opacity:0}to{top:0;opacity:1}}.close_btn{color:#545863;float:right;font-size:38px;font-weight:700}.font-size-20,.modal p,.size-20{font-size:20px!important}.modal-header{padding:30px}.modal-body{padding:0 30px 30px}.modal p{color:#545863!important;line-height:1.5!important;margin:0 0 20px!important}.modal h2,.modal h3{font-size:24px!important;line-height:1.5!important;margin:0 0 20px!important}.modal h2{font-family:PragmaticaCond-Black!important;color:#fa8c0e!important}.modal h3{color:#1074a2!important}@media screen and (max-width:600px){.modal-content{width:90%}.modal-header{padding:20px}.modal-body{padding:0 20px 20px}}#dm .p_hfcontainer .u_1302190739,#dm .p_hfcontainer .u_1923160809{width:100%!important}#dm div.dmContent h1{line-height:initial;font-size:50px}#dm DIV.dmOuter DIV.dmInner{background-image:none;background-color:rgba(255,255,255,1)}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-size:16px}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:0px;--btn-border-radius:0px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgb(16, 116, 162);--btn-border-color:rgba(0, 0, 0, 0);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(255, 255, 255);--btn-text-decoration:none;--btn-text-font-weight:400;--btn-text-font-family:PragmaticaCond-Black;--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:var(--color_7);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:var(--color_7);--btn-hover-text-color:var(--btn-text-color);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}@media (min-width:0px) and (max-width:767px){:root{--btn-text-font-size:16px}}#dm .dmWidget:not([data-buttonstyle]){border-radius:50px}#dm .dmWidget:not([data-buttonstyle]) .text{padding:10px 0}#dm div.dmInner #site_content .dmWidget{background-color:var(--btn-bg-color);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-family:var(--btn-text-font-family);font-size:var(--btn-text-font-size);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:14px!important}#dm .p_hfcontainer div.u_1923160809 img{border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important}#dm .p_hfcontainer nav.u_1144820115{color:#000!important}#dm .p_hfcontainer .u_1697444087.main-navigation.unifiednav:not([image]) .unifiednav__container[data-depth="0"]{top:calc(100% - 0px)!important}#dm .p_hfcontainer .u_1697444087.main-navigation.unifiednav[data-nav-structure=HORIZONTAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child) .unifiednav__container[data-depth="0"]{left:0!important}#dm .p_hfcontainer .u_1697444087.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{margin:0!important;padding:35px 15px!important}#dm .p_hfcontainer .u_1697444087.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1697444087.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:18px!important}#dm .p_hfcontainer nav.u_1697444087.main-navigation.unifiednav .unifiednav__container[data-depth]{background-color:var(--color_4)!important}#dm .p_hfcontainer nav.u_1697444087.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container[data-depth]{box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .p_hfcontainer .u_1144820115.main-navigation.unifiednav:not([image]) .unifiednav__container[data-depth="0"]{top:calc(100% - 0px)!important}#dm .p_hfcontainer nav.u_1144820115.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{font-weight:400!important;color:var(--color_2)!important;font-family:PragmaticaCond-Medium!important}#dm .p_hfcontainer .u_1144820115.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{text-align:left!important;justify-content:flex-start!important;margin:0!important;padding:15px 20px!important}#dm .p_hfcontainer .u_1144820115.main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after{align-self:flex-start!important}#dm .p_hfcontainer .u_1144820115.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{justify-content:flex-start!important;text-align:LEFT!important;margin:0!important;padding:15px 10px 15px 50px!important}#dm .p_hfcontainer div.u_1655486006,#dm .p_hfcontainer div.u_1705692124{background-color:rgba(0,0,0,0)!important}#dm .p_hfcontainer .u_1697444087.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{margin:0!important;padding:15px 30px 15px 15px!important}#dm .dmInner div.u_hcontainer,#dm .p_hfcontainer div.u_1705692124{float:none!important;left:0!important;width:100%!important;position:relative!important;height:auto!important;text-align:center!important;margin:0 auto!important;top:0!important}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(255,255,255,.8)!important;box-shadow:rgba(0,0,0,.15) 0 3px 11px 0!important;-moz-box-shadow:rgba(0,0,0,.15) 0 3px 11px 0!important;-webkit-box-shadow:rgba(0,0,0,.15) 0 3px 11px 0!important}#dm .p_hfcontainer nav.u_1144820115.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{color:var(--color_2)!important;font-weight:400!important;font-family:Pragmatica-Bold!important}#dm .dmInner div.u_hcontainer{max-width:100%!important;min-width:0!important;padding:25px 0 20px!important}#dm .dmInner div.dmHeader.u_hcontainer{padding-bottom:20px!important;padding-top:25px!important}#dm .p_hfcontainer div.u_1705692124{max-width:none!important;min-width:0!important;padding:15px 40px!important}#dm .p_hfcontainer div.u_1183846399{padding:0!important;margin:0!important}#dm .p_hfcontainer div.u_1826294544{margin-top:0!important;padding:0!important}#dm .p_hfcontainer div.u_1655486006{margin-left:0!important;margin-right:0!important;padding-left:0!important;padding-right:0!important}#dm .dmInner div.fHeader .dmHeader[freeheader=true]{padding-top:12px!important;padding-bottom:12px!important}.fHeader #hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}@media (min-width:768px) and (max-width:1024px){.responsiveTablet [dmtemplateid=Hamburger] .site_content{margin-top:94.66px!important}.responsiveTablet [dmtemplateid=Hamburger].runtime-module-container .layout-drawer-hamburger{top:21.33px!important}}#dm .p_hfcontainer div.u_1861705244{width:auto!important;padding:0 20px!important;margin:0!important}#dm .p_hfcontainer div.u_1302190739,#dm .p_hfcontainer div.u_1923160809{width:190px!important;max-width:100%!important;min-width:0!important;float:none!important;left:0!important;position:relative!important;height:auto!important;display:block!important;text-align:center!important}#dm .p_hfcontainer div.u_1246161842{padding-left:10px!important}#dm .p_hfcontainer div.u_1554190716{margin:0!important;padding:0!important}#dm .p_hfcontainer div.u_1302190739{top:0!important;padding:0!important;margin:15px 82px 0 0!important}#dm .p_hfcontainer nav.u_1697444087.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item,#dm .p_hfcontainer nav.u_1697444087.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{font-family:PragmaticaCond-Book!important;color:var(--color_2)!important;font-size:18px!important}[dmtemplateid=Hamburger] .layout-drawer-hamburger.hamburger-on-header{color:rgba(84,88,99,1)!important;background-color:rgba(0,0,0,0)!important}#dm .p_hfcontainer div.u_1923160809{top:0!important;padding:0!important;margin:0 auto 0 0!important}[dmtemplateid=Hamburger].runtime-module-container .layout-drawer-hamburger{top:21.33px!important}[dmtemplateid=Hamburger] .site_content{margin-top:94.66px!important}#dm .p_hfcontainer #hamburger-drawer.layout-drawer:not([data-origin=top]){width:100vw!important}#dm .p_hfcontainer div.u_1676049285{width:auto!important;padding:0!important;margin:0!important}#dm .p_hfcontainer div#hamburger-drawer.layout-drawer{background-color:rgba(255,255,255,1)!important;margin:0!important;padding:0!important}#dm .p_hfcontainer div.u_1808057136{margin:0!important;padding:0!important}#dm .p_hfcontainer div.u_1021493186{width:auto!important;padding:80px 0 20px!important;margin:0!important}#dm .p_hfcontainer nav.u_1144820115{float:none!important;top:0!important;left:0!important;width:100%!important;position:relative!important;height:auto!important;max-width:calc(100% - 0px)!important;justify-content:flex-start!important;align-items:stretch!important;min-width:25px!important;text-align:start!important;padding:0!important;margin:0!important}#dm .dmBody a.u_1299084403,#dm .dmBody div.u_1243667655,#dm .dmBody div.u_1250556749,#dm .dmBody div.u_1809699492,#dm .p_hfcontainer nav.u_1697444087{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:0!important}#dm .p_hfcontainer nav.u_1144820115.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item,#dm .p_hfcontainer nav.u_1144820115.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{font-size:18px!important}#dm .p_hfcontainer div#hamburger-header{background-color:rgba(255,255,255,.8)!important;box-shadow:rgba(0,0,0,.15) 0 3px 11px 0!important;-moz-box-shadow:rgba(0,0,0,.15) 0 3px 11px 0!important;-webkit-box-shadow:rgba(0,0,0,.15) 0 3px 11px 0!important;border-bottom-style:solid!important;border-bottom-color:rgba(249,249,249,1)!important;border-bottom-width:0!important;margin:0!important;padding:0!important}#dm .p_hfcontainer nav.u_1697444087{width:100%!important;height:auto!important;max-width:100%!important;justify-content:flex-start!important;align-items:stretch!important;text-align:left!important;margin:0 auto 0 0!important;padding:0!important}#dm .dmInner div.fHeader.dmHeaderContainer #hcontainer.dmHeader[freeheader=true]{margin:0!important;padding:0!important}#dm .dmBody div.u_1612449323{background-color:var(--color_4)!important}#dm .dmBody a.u_1299084403{background-color:var(--color_1)!important;height:50px!important;width:300px!important;display:block!important;max-width:100%!important;text-align:center!important;padding:0!important;margin:0 900px 0 0!important}#dm .d-page-1716942098 DIV.dmInner{background-repeat:no-repeat!important;background-size:cover!important;background-attachment:fixed!important;background-position:50% 50%!important}#dm .dmBody div.u_1612449323{width:auto!important;margin:0!important;padding:0 20px 70px!important}#dm .dmBody div.u_1572785897{margin:-150px 0 0!important;padding:0!important}#dm .dmBody div.u_1809699492{display:block!important;width:650px!important;height:auto!important;max-width:100%!important;margin:0 auto 25px 0!important;padding:0!important}#dm .dmBody div.u_1250556749{display:block!important;width:745px!important;height:auto!important;max-width:100%!important;margin:0 auto 15px 0!important;padding:0!important}#dm .dmBody div.u_1243667655{background-color:var(--color_6)!important;background-repeat:no-repeat!important;background-image:url(https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/ptgx-header-bkgd-horz-4324d15e-1920w.png),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important;background-size:cover!important;width:auto!important;height:auto!important;max-width:none!important;text-align:center!important;margin:0!important;padding:180px 20px 230px!important}#dm .dmBody .u_1212329020 .postText *{text-align:LEFT!important}#dm .dmBody div.u_1986248900{margin:0 0 70px!important;padding:0!important}.dmCustomHtml{height:auto!important}div#dm .header-over-content .dmInner #hamburger-header:not(.scroll-responder_set){background-color:rgba(255,255,255,.8)!important}#dm .dmBody div.custom-hero-width-h1{max-width:745px!important}@media screen and (max-width:1200px){#dm .p_hfcontainer nav.u_1697444087.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{font-size:15px!important}}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+        visibility: hidden;
+    }
+
+    
+</style>
+
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+
+  <link type="application/rss+xml" rel="alternate" href="http://www.protagonist-inc.com//feed/rss2">
+  <link type="application/atom+xml" rel="alternate" href="http://www.protagonist-inc.com//feed/atom">
+  <meta property="og:type" content="website">
+  <title>
+    
+    Protagonist Therapeutics Inc.
+  
+  </title>
+  <meta name="description" content="Protagonist Therapeutics is a clinical-stage biopharmaceutical company with a proprietary technology platform focused on discovering and developing peptide-based new chemical entities (NCEs) that can potentially transform existing treatment paradigms in disease areas with significant unmet medical needs.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Protagonist Therapeutics Inc.">
+  <meta name="twitter:description" content="Protagonist Therapeutics is a clinical-stage biopharmaceutical company with a proprietary technology platform focused on discovering and developing peptide-based new chemical entities (NCEs) that can potentially transform existing treatment paradigms in disease areas with significant unmet medical needs.">
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/protagonist-sm-1920w.png">
+  <meta property="og:description" content="Protagonist Therapeutics is a clinical-stage biopharmaceutical company with a proprietary technology platform focused on discovering and developing peptide-based new chemical entities (NCEs) that can potentially transform existing treatment paradigms in disease areas with significant unmet medical needs.">
+  <meta property="og:title" content="Protagonist Therapeutics Inc.">
+  <meta property="og:image" content="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/protagonist-sm-1920w.png">
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+<script src="https://acsbapp.com/apps/app/dist/js/app.js" async=""></script><script src="https://static.cdn-website.com/libs/bower-skrollr/skrollr.min.js"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="home" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet pcCustomScrollbar d1SiteBody dmBodyNoIscroll" style="padding:0;margin:0;"><span role="alert" data-acsb-sr-alert="true" data-acsb-sr-only="true" class="acsb-sr-alert acsb-sr-only" data-acsb-force-visible="true" style="position: absolute; width: 200px; height: 1px; margin-top: -1px; z-index: -1; border: 0px; top: 0px; left: 0px; overflow: hidden; outline: 0px;">Press Alt+1 for screen-reader mode, Alt+0 to cancel</span><access-widget-ui data-acsb="" class="notranslate"></access-widget-ui><a href="https://accessibe.com/blog/knowledgebase/screen-reader-guide" target="_blank" rel="noopener" data-acsb="sr-trigger" data-acsb-sr-only="true" class="acsb-sr-only" style="position: absolute; width: 200px; height: 1px; margin-top: -1px; z-index: -1; border: 0px; top: 0px; left: 0px; overflow: hidden; outline: 0px;">Accessibility Screen-Reader Guide, Feedback, and Issue Reporting</a><access-widget-ui data-acsb="skipLinks" class="notranslate"></access-widget-ui><access-widget-ui data-acsb="" class="notranslate"></access-widget-ui>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class="dmwr">
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content" mobile-global-classes="header-over-content"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-home hasAnimations rows-1200 hamburger-reverse header-over-content dmPageBody d-page-1716942098 dmFreeHeader showing-message backgroundSlider-ff showing-message--bottom showing-message--shown" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse" data-auto-height="true"> <div class="u_1826294544 dmRespRow" style="text-align: center;" id="1826294544"> <div class="dmRespColsWrapper" id="1337204992"> <div class="u_1183846399 dmRespCol small-12 medium-12 large-12 empty-column" id="1183846399"></div> 
+</div> 
+</div> 
+ <div class="u_1021493186 dmRespRow middleDrawerRow" style="text-align: center;" id="1021493186"> <div class="dmRespColsWrapper" id="1170137577"> <div class="dmRespCol small-12 u_1808057136 medium-12 large-12" id="1808057136"> <nav class="u_1144820115 effect-background main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_3" layout-sub="" data-show-vertical-sub-items="HOVER" id="1144820115" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/innovation" class="unifiednav__item dmUDNavigationItem_010101977539 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Innovation
+        " data-auto="page-text-style">Innovation<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/areas-of-focus" class="unifiednav__item dmUDNavigationItem_010101505554" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Areas of Focus
+          " data-auto="page-text-style">Areas of Focus<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/technology" class="unifiednav__item dmUDNavigationItem_010101847226" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Technology
+          " data-auto="page-text-style">Technology<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/product-pipeline" class="unifiednav__item dmUDNavigationItem_010101365390" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Product Pipeline
+          " data-auto="page-text-style">Product Pipeline<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="https://www.protagonist-inc.com/clinical-trials" class="unifiednav__item dmUDNavigationItem_010101921379" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Clinical Trials
+          " data-auto="page-text-style">Clinical Trials<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/community" class="unifiednav__item dmUDNavigationItem_010101621852 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Community
+        " data-auto="page-text-style">Community<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/clinical-trials" class="unifiednav__item dmUDNavigationItem_010101366383" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Clinical Trials
+          " data-auto="page-text-style">Clinical Trials<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/esg" class="unifiednav__item dmUDNavigationItem_010101995552" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           ESG
+          " data-auto="page-text-style">ESG<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/leadership" class="unifiednav__item dmUDNavigationItem_010101690697 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Leadership
+        " data-auto="page-text-style">Leadership<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/executive-team" class="unifiednav__item dmUDNavigationItem_01010157591" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Executive Team
+          " data-auto="page-text-style">Executive Team<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/board-of-directors" class="unifiednav__item dmUDNavigationItem_01010114598" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Board of Directors
+          " data-auto="page-text-style">Board of Directors<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item dmUDNavigationItem_010101362552 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Investors
+        " data-auto="page-text-style">Investors<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/press-releases" class="unifiednav__item dmUDNavigationItem_010101621732" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Press Releases
+          " data-auto="page-text-style">Press Releases<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="https://irp.cdn-website.com/8e9b9820/files/uploaded/2024_PTGX_CorpDeck_11March.pdf" class="unifiednav__item dmUDNavigationItem_010101738028" target="_blank" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Corporate Presentation
+          " data-auto="page-text-style">Corporate Presentation<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/events-presentations" class="unifiednav__item dmUDNavigationItem_010101422802" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Events &amp; Presentations
+          " data-auto="page-text-style">Events &amp; Presentations<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/stock-info" class="unifiednav__item dmUDNavigationItem_010101684594" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Stock Info
+          " data-auto="page-text-style">Stock Info<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/analyst-coverage" class="unifiednav__item dmUDNavigationItem_010101626775" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Analyst Coverage
+          " data-auto="page-text-style">Analyst Coverage<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/financials" class="unifiednav__item dmUDNavigationItem_010101332826" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Financials
+          " data-auto="page-text-style">Financials<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/governance" class="unifiednav__item dmUDNavigationItem_010101544776" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Governance
+          " data-auto="page-text-style">Governance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/investor-email-alerts" class="unifiednav__item dmUDNavigationItem_010101473088" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Investor Email Alerts
+          " data-auto="page-text-style">Investor Email Alerts<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/investor-contacts" class="unifiednav__item dmUDNavigationItem_0101019700" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Investor Contacts
+          " data-auto="page-text-style">Investor Contacts<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/news" class="unifiednav__item dmUDNavigationItem_010101609753" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         News
+        " data-auto="page-text-style">News<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/careers" class="unifiednav__item dmUDNavigationItem_010101354861 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Careers
+        " data-auto="page-text-style">Careers<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/culture-values" class="unifiednav__item dmUDNavigationItem_010101335931" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Culture &amp; Values
+          " data-auto="page-text-style">Culture &amp; Values<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/join-our-team" class="unifiednav__item dmUDNavigationItem_010101112600" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Join Our Team
+          " data-auto="page-text-style">Join Our Team<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item dmUDNavigationItem_010101465818 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/locations" class="unifiednav__item dmUDNavigationItem_01010188697" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Locations
+          " data-auto="page-text-style">Locations<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1676049285" style="text-align: center;" id="1676049285"> <div class="dmRespColsWrapper" id="1888750820"> <div class="u_1916182198 dmRespCol small-12 medium-12 large-12 empty-column" id="1916182198"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header" has-shadow="true" lock-element-for-editing="true"> <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="dmRespCol small-12 u_1655486006 medium-12 large-12" id="1655486006"> <div class="u_1923160809 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1923160809" editablewidget="true"> <a href="/" id="1573522578" file="false"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/protagonist-logo-1920w.png" id="1761992403" class="" data-dm-image-path="https://irp.cdn-website.com/8e9b9820/dms3rep/multi/protagonist-logo.png" width="191" height="65" alt="Protagonist Logo. Click to navigate to a home page" onerror="handleImageLoadError(this)"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header" has-shadow="true" lock-element-for-editing="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1861705244 dmRespRow dmDefaultListContentRow" style="text-align:center" id="1861705244" lock-element-for-editing="true"> <div class="dmRespColsWrapper" id="1914255413"> <div class="u_1246161842 dmRespCol small-12 large-3 medium-3" id="1246161842"> <span id="1630001966"></span> 
+ <div class="u_1302190739 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1302190739" editablewidget="true"> <a href="/" id="1117290525"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/protagonist-logo-228w.png" alt="Protagonist Logo. Click to navigate to a home page" id="1300653936" class="" data-dm-image-path="https://irp.cdn-website.com/8e9b9820/dms3rep/multi/protagonist-logo.png" width="191" height="65" onerror="handleImageLoadError(this)"></a> 
+</div> 
+</div> 
+ <div class="u_1554190716 dmRespCol small-12 large-9 medium-9" id="1554190716"> <nav class="u_1697444087 effect-background main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_7" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1697444087" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/innovation" class="unifiednav__item dmUDNavigationItem_010101977539 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Innovation
+        " data-auto="page-text-style">Innovation<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/areas-of-focus" class="unifiednav__item dmUDNavigationItem_010101505554" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Areas of Focus
+          " data-auto="page-text-style">Areas of Focus<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/technology" class="unifiednav__item dmUDNavigationItem_010101847226" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Technology
+          " data-auto="page-text-style">Technology<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/product-pipeline" class="unifiednav__item dmUDNavigationItem_010101365390" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Product Pipeline
+          " data-auto="page-text-style">Product Pipeline<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="https://www.protagonist-inc.com/clinical-trials" class="unifiednav__item dmUDNavigationItem_010101921379" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Clinical Trials
+          " data-auto="page-text-style">Clinical Trials<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/community" class="unifiednav__item dmUDNavigationItem_010101621852 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Community
+        " data-auto="page-text-style">Community<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/clinical-trials" class="unifiednav__item dmUDNavigationItem_010101366383" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Clinical Trials
+          " data-auto="page-text-style">Clinical Trials<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/esg" class="unifiednav__item dmUDNavigationItem_010101995552" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           ESG
+          " data-auto="page-text-style">ESG<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/leadership" class="unifiednav__item dmUDNavigationItem_010101690697 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Leadership
+        " data-auto="page-text-style">Leadership<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/executive-team" class="unifiednav__item dmUDNavigationItem_01010157591" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Executive Team
+          " data-auto="page-text-style">Executive Team<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/board-of-directors" class="unifiednav__item dmUDNavigationItem_01010114598" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Board of Directors
+          " data-auto="page-text-style">Board of Directors<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item dmUDNavigationItem_010101362552 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Investors
+        " data-auto="page-text-style">Investors<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/press-releases" class="unifiednav__item dmUDNavigationItem_010101621732" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Press Releases
+          " data-auto="page-text-style">Press Releases<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="https://irp.cdn-website.com/8e9b9820/files/uploaded/2024_PTGX_CorpDeck_11March.pdf" class="unifiednav__item dmUDNavigationItem_010101738028" target="_blank" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Corporate Presentation
+          " data-auto="page-text-style">Corporate Presentation<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/events-presentations" class="unifiednav__item dmUDNavigationItem_010101422802" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Events &amp; Presentations
+          " data-auto="page-text-style">Events &amp; Presentations<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/stock-info" class="unifiednav__item dmUDNavigationItem_010101684594" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Stock Info
+          " data-auto="page-text-style">Stock Info<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/analyst-coverage" class="unifiednav__item dmUDNavigationItem_010101626775" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Analyst Coverage
+          " data-auto="page-text-style">Analyst Coverage<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/financials" class="unifiednav__item dmUDNavigationItem_010101332826" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Financials
+          " data-auto="page-text-style">Financials<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/governance" class="unifiednav__item dmUDNavigationItem_010101544776" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Governance
+          " data-auto="page-text-style">Governance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/investor-email-alerts" class="unifiednav__item dmUDNavigationItem_010101473088" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Investor Email Alerts
+          " data-auto="page-text-style">Investor Email Alerts<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/investor-contacts" class="unifiednav__item dmUDNavigationItem_0101019700" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Investor Contacts
+          " data-auto="page-text-style">Investor Contacts<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/news" class="unifiednav__item dmUDNavigationItem_010101609753" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         News
+        " data-auto="page-text-style">News<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/careers" class="unifiednav__item dmUDNavigationItem_010101354861 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Careers
+        " data-auto="page-text-style">Careers<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/culture-values" class="unifiednav__item dmUDNavigationItem_010101335931" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Culture &amp; Values
+          " data-auto="page-text-style">Culture &amp; Values<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/join-our-team" class="unifiednav__item dmUDNavigationItem_010101112600" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Join Our Team
+          " data-auto="page-text-style">Join Our Team<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item dmUDNavigationItem_010101465818 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/locations" class="unifiednav__item dmUDNavigationItem_01010188697" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           Locations
+          " data-auto="page-text-style">Locations<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content" mobile-global-classes="header-over-content"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize1" id="1716942098"> <div class="u_1243667655 dmRespRow" style="text-align: center;" id="1243667655"> <div class="dmRespColsWrapper" id="1173148036"> <div class="dmRespCol small-12 u_1620106714 medium-12 large-12" id="1620106714"> <div class="u_1250556749 dmNewParagraph custom-hero-width-h1" data-element-type="paragraph" data-version="5" id="1250556749" style="visibility: visible !important;" data-anim-desktop="none"> <h1 class="m-size-32" style="line-height: 1.3;"><span class="m-font-size-32" m-font-size-set="true" style="color: var(--color_1); display: unset;">DEVELOPING LIFE-CHANGING PEPTIDE DRUG THERAPIES</span></h1> 
+</div> 
+ <div class="u_1809699492 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1809699492" data-anim-desktop="none" style="visibility: visible !important;"><p class="m-size-18 size-20  custom-hero-width-p" style="line-height: 1.5;"><span class="m-font-size-18 font-size-20" m-font-size-set="true" style="display: unset;">Welcome to Protagonist, a clinical-stage biopharmaceutical company. We strive to improve patients’ lives through the power of peptide drug discovery and development, targeting areas of unmet need across rare and prevalent diseases where treatments are limited or inadequate.</span></p></div> 
+ <a data-display-type="block" class="u_1299084403 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/innovation" data-element-type="dButtonLinkId" id="1299084403" data-anim-desktop="none" style="visibility: visible !important;"> <span class="iconBg" aria-hidden="true" id="1183565443"> <span class="icon hasFontIcon icon-star" id="1145929109"></span> 
+</span> 
+ <span class="text" id="1597894663">HOW WE DELIVER FOR PATIENTS</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1612449323" id="1612449323"> <div class="dmRespColsWrapper" id="1322986914"> <div class="dmRespCol large-12 medium-12 small-12 u_1572785897" id="1572785897"> <div data-element-type="html" class="dmCustomHtml u_1986248900" id="1986248900" data-anim-desktop="none" lock-element-for-editing="true" style="visibility: visible !important;"> <div class="cta-boxes"> <div class="cta-box clinical-study-bg"> <div class="cta-box-content" onclick="window.location.href='https://www.protagonist-inc.com/clinical-trials'"> <div class="cta-box-title">JOIN A CLINICAL STUDY</div> 
+ <div class="cta-box-arrow"><img src="https://irp.cdn-website.com/8e9b9820/dms3rep/multi/noun-arrow-5153804.svg" alt="Arrow icon. Click for more details" onerror="handleImageLoadError(this)"></div> 
+</div> 
+</div> 
+ <div class="cta-box explore-pipeline"> <div class="cta-box-content" onclick="window.location.href='https://www.protagonist-inc.com/product-pipeline'"> <div class="cta-box-title">EXPLORE OUR PIPELINE</div> 
+ <div class="cta-box-arrow"><img src="https://irp.cdn-website.com/8e9b9820/dms3rep/multi/noun-arrow-5153804.svg" alt="Arrow icon. Click for more details" onerror="handleImageLoadError(this)"></div> 
+</div> 
+</div> 
+ <div class="cta-box work-with-us"> <div class="cta-box-content" onclick="window.location.href='https://www.protagonist-inc.com/careers'"> <div class="cta-box-title">WORK WITH US</div> 
+ <div class="cta-box-arrow"><img src="https://irp.cdn-website.com/8e9b9820/dms3rep/multi/noun-arrow-5153804.svg" alt="Arrow icon. Click for more details" onerror="handleImageLoadError(this)"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <a data-display-type="block" class="u_1284218253 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/8e9b9820/files/uploaded/2024_PTGX_CorpDeck_11March.pdf" data-element-type="dButtonLinkId" id="1284218253" data-anim-desktop="none" target="_blank" style="visibility: visible !important;"> <span class="iconBg" aria-hidden="true" id="1435321240"> <span class="icon hasFontIcon icon-star" id="1368646470"></span> 
+</span> 
+ <span class="text" id="1494550234">VIEW OUR CORPORATE PRESENTATION</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1904027884" id="1904027884" lock-element-for-editing="true"> <div class="dmRespColsWrapper" id="1284177366"> <div class="dmRespCol large-12 medium-12 small-12 content-removed" id="1518915841"> <div class="u_1212329020 default custom-news-feed mainBlog layout4" id="1212329020" dmle_extension="internal_blog_list" data-element-type="internal_blog_list" show-images="true" wr="true" trim-title="false" show-blog-title="false" show-action-text="false" text-align="left" icon="true" surround="true" adwords="" list-layout="layout4" visible-items="6" visible-post-lines="4" search-tags="home" search-term="" more-posts-text="Show More" header-type="H2" posts-padding="10" posts-per-row="3" show-author="false" text-box-padding="true" action-text="Read more →" skip-post-index="-1" blog-posts-feature-flag="true" data-image-hover-effect="zoomout" show-more-posts-text="false"> <div class="inner "> <div style="-ms-grid-column:1; -ms-grid-row:1" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 200.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/events-presentations/6th-annual-guggenheim-healthcare-talks-annual-biotechnology-conference" data-blog-post-alias="events-presentations/6th-annual-guggenheim-healthcare-talks-annual-biotechnology-conference"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/image003-1920w.png');"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/image003-1920w.png" "="" onerror="handleImageLoadError(this)"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/events-presentations/6th-annual-guggenheim-healthcare-talks-annual-biotechnology-conference" data-blog-post-alias="events-presentations/6th-annual-guggenheim-healthcare-talks-annual-biotechnology-conference">6th Annual Guggenheim Healthcare Talks Annual Biotechnology Conference</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>29 Jan, 2024</span> 
+</div> 
+ <div class="postDescription">February 7-8, 2024</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:2; -ms-grid-row:1" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 400.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/events-presentations/42nd-annual-j-p-morgan-healthcare-conference-jan-8-2023" data-blog-post-alias="events-presentations/42nd-annual-j-p-morgan-healthcare-conference-jan-8-2023"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/image001-94267041-d462972b-1920w.png');"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/image001-94267041-d462972b-1920w.png" alt="a poster for a healthcare conference with a dna structure " onerror="handleImageLoadError(this)"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/events-presentations/42nd-annual-j-p-morgan-healthcare-conference-jan-8-2023" data-blog-post-alias="events-presentations/42nd-annual-j-p-morgan-healthcare-conference-jan-8-2023">42nd Annual J.P. Morgan Healthcare Conference</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>10 Jan, 2024</span> 
+</div> 
+ <div class="postDescription">January 8-11, 2024</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:3; -ms-grid-row:1" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 600.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/news/protagonist-therapeutics-ceo-on-its-hepcidin-memetic-at-ash23-and-oral-il23-program-in-i-i" data-blog-post-alias="news/protagonist-therapeutics-ceo-on-its-hepcidin-memetic-at-ash23-and-oral-il23-program-in-i-i"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/Screenshot+2023-12-11+110528-1920w.png');"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/Screenshot+2023-12-11+110528-1920w.png" alt="two men standing in front of a sign" onerror="handleImageLoadError(this)"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/news/protagonist-therapeutics-ceo-on-its-hepcidin-memetic-at-ash23-and-oral-il23-program-in-i-i" data-blog-post-alias="news/protagonist-therapeutics-ceo-on-its-hepcidin-memetic-at-ash23-and-oral-il23-program-in-i-i">Protagonist Therapeutics CEO Dinesh V. Patel on our hepcidin memetic and oral IL-23 program at #ASH23</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>11 Dec, 2023</span> 
+</div> 
+ <div class="postDescription">NEWS | By BiotechTV</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:1; -ms-grid-row:2" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 800.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/news/protagonist-inclusion-by-the-numbers" data-blog-post-alias="news/protagonist-inclusion-by-the-numbers"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/AdobeStock_309170786-1920w.png');"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/AdobeStock_309170786-1920w.png" alt="Image of a female working in a lab" onerror="handleImageLoadError(this)"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/news/protagonist-inclusion-by-the-numbers" data-blog-post-alias="news/protagonist-inclusion-by-the-numbers">Protagonist: Inclusion by the Numbers</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>24 Feb, 2023</span> 
+</div> 
+ <div class="postDescription">SPOTLIGHT</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:2; -ms-grid-row:2" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 1000.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/news/improving-access-to-medicines-ensuring-diverse-representation" data-blog-post-alias="news/improving-access-to-medicines-ensuring-diverse-representation"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/arturo-molina-1920w.jpg');"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/arturo-molina-1920w.jpg" alt="Image of Arturo Molina, MD, Chief Medical Officer" onerror="handleImageLoadError(this)"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/news/improving-access-to-medicines-ensuring-diverse-representation" data-blog-post-alias="news/improving-access-to-medicines-ensuring-diverse-representation">Improving Access to Medicines, Ensuring Diverse Representation</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>23 Feb, 2023</span> 
+</div> 
+ <div class="postDescription">SPOTLIGHT</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:3; -ms-grid-row:2" class="postArticle lastArticle"> <div class="inner clearfix wow" style="animation-delay: 1200.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/news/polycythemia-vera-mechanism-of-disease" data-blog-post-alias="news/polycythemia-vera-mechanism-of-disease"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/thumb-img-video-1920w.png');"><img src="https://lirp.cdn-website.com/8e9b9820/dms3rep/multi/opt/thumb-img-video-1920w.png" alt="Video preview" onerror="handleImageLoadError(this)"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/news/polycythemia-vera-mechanism-of-disease" data-blog-post-alias="news/polycythemia-vera-mechanism-of-disease">Polycythemia Vera: Mechanism of Disease</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>21 Feb, 2023</span> 
+</div> 
+ <div class="postDescription">WATCH VIDEO</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer" lock-element-for-editing="true"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1632155419" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1063824722 dmRespCol small-12 large-3 medium-3" id="1063824722"> <div class="dmNewParagraph u_1665137407" data-element-type="paragraph" data-version="5" id="1665137407"> <h2 class="m-size-24 size-28"><span class="m-font-size-24 font-size-28" m-font-size-set="true" style="text-transform:none;color:var(--color_6);display:unset;font-family:PragmaticaCond-Medium;">Contact Us</span></h2> 
+</div> 
+ <div class="dmNewParagraph u_1209842019" data-element-type="paragraph" data-version="5" id="1209842019"><p class="m-size-18 size-20"><span class="font-size-20 m-font-size-18" m-font-size-set="true" style="color: var(--color_6); display: unset;">+1 (510) 474-0170</span></p><p class="m-size-18 size-20"><a href="mailto:info@ptgx-inc.com" target="_blank" type="email" class="font-size-20 m-font-size-18" m-font-size-set="true" style="display: unset; text-decoration: none; color: var(--color_6);">info@ptgx-inc.com</a></p></div> 
+ <div class="dmNewParagraph u_1976200014" data-element-type="paragraph" data-version="5" id="1976200014"> <h2 class="size-28 m-size-24"><span class="font-size-28 m-font-size-24" style="text-transform:none;color:var(--color_6);display:unset;font-family:PragmaticaCond-Medium;" m-font-size-set="true">Stay Connected</span></h2> 
+</div> 
+ <div class="u_1403265109 align-center text-align-center dmSocialHub" id="1403265109" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://www.linkedin.com/company/protagonist-therapeutics/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Linkedin')"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://twitter.com/ProtagonistTx" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Twitter')"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1699309771 dmRespCol small-12 large-3 medium-3" id="1699309771"> <div class="dmNewParagraph u_1793819803" data-element-type="paragraph" data-version="5" id="1793819803"><p class="m-size-24 size-28"><a href="/innovation" runtime_url="/innovation" type="page" class="font-size-28 m-font-size-24" m-font-size-set="true" style="color:var(--color_6);display:unset;text-decoration:none;font-family:PragmaticaCond-Medium;">Innovation</a></p><p class="m-size-24 size-28"><a href="/community" runtime_url="/community" type="page" class="font-size-28 m-font-size-24" m-font-size-set="true" style="color:var(--color_6);display:unset;text-decoration:none;font-family:PragmaticaCond-Medium;">Community</a></p><p class="m-size-24 size-28"><a href="/leadership" runtime_url="/leadership" type="page" class="font-size-28 m-font-size-24" m-font-size-set="true" style="color:var(--color_6);text-decoration:none;display:unset;font-family:PragmaticaCond-Medium;">Leadership</a></p><p class="m-size-24 size-28"><a href="/press-releases" runtime_url="/press-releases" type="page" class="font-size-28 m-font-size-24" m-font-size-set="true" style="color:var(--color_6);display:unset;text-decoration:none;font-family:PragmaticaCond-Medium;">Investors</a></p><p class="m-size-24 size-28"><a href="/news" runtime_url="/news" type="page" class="font-size-28 m-font-size-24" m-font-size-set="true" style="color:var(--color_6);display:unset;text-decoration:none;font-family:PragmaticaCond-Medium;">News</a></p><p class="m-size-24 size-28"><a href="/careers" runtime_url="/careers" type="page" class="font-size-28 m-font-size-24" m-font-size-set="true" style="color:var(--color_6);display:unset;text-decoration:none;font-family:PragmaticaCond-Medium;">Careers</a></p></div> 
+</div> 
+ <div class="u_1685191949 dmRespCol small-12 large-6 medium-6 content-removed" id="1685191949"> <div class="dmNewParagraph u_1846682848" data-element-type="paragraph" data-version="5" id="1846682848"> <h2 class="m-size-24 size-24"><span class="m-font-size-24 font-size-24" m-font-size-set="true" style="text-transform:none;color:var(--color_6);display:unset;font-family:PragmaticaCond-Medium;">Get Our News And Updates Delivered To Your Inbox:</span></h2> 
+</div> 
+ <div data-element-type="html" class="dmCustomHtml u_1276568166" id="1276568166"> <form action="https://irreach.com/proc.php" method="post" id="_form_33392" accept-charset="utf-8" enctype="multipart/form-data"><input type="hidden" name="f" value="33392"><input type="hidden" name="s" value=""><input type="hidden" name="c" value="0"><input type="hidden" name="m" value="0"><input type="hidden" name="act" value="sub"><input type="hidden" name="nlbox[]" value="2432"> <div class="_form"> <div class="formwrapper"><!--<div id="_field96588">--><!-- <div id="compile96588" class="_field _type_input">--><!--  <div class="_label ">--><!--  </div>--><!--  <div class="_option">--><!--   <input type="text" name="field[1556]" value="" placeholder="First Name*">--><!--  </div>--><!-- </div>--><!--</div>--><!--<div id="_field96590">--><!-- <div id="compile96590" class="_field _type_input">--><!--  <div class="_label ">--><!--  </div>--><!--  <div class="_option">--><!--   <input type="text" name="field[1557]" value="" placeholder="Last Name*">--><!--  </div>--><!-- </div>--><!--</div>--> <div id="_field96585"> <div id="compile96585" class="_field _type_input"> <div class="_label "></div> 
+ <div class="_option"><input type="email" name="email" placeholder="Email*" data-placeholder-original="Email*"></div> 
+</div> 
+</div> 
+ <div id="_field96586"> <div id="compile96586" class="_field _type_input"> <div class="_option"><input type="submit" value="SIGN UP"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</form> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1350068681" id="1350068681"> <div class="dmRespColsWrapper" id="1653818970"> <div class="dmRespCol large-12 medium-12 small-12 u_1761742143" id="1761742143"> <div class="dmNewParagraph u_1205495841" data-element-type="paragraph" data-version="5" id="1205495841"><p class="m-size-18 size-20"><a href="/privacy-policy" runtime_url="/privacy-policy" type="page" class="m-font-size-18 font-size-20" m-font-size-set="true" style="display: unset; text-decoration: none; color: var(--color_6);">Privacy Policy</a><span single-space="true" class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);"> <span class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);"></span> 
+</span><span class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);" m-font-size-set="true">|</span><span single-space="true" class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);"> <span class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);"></span> 
+</span><a href="/terms-of-use" runtime_url="/terms-of-use" type="page" class="m-font-size-18 font-size-20" m-font-size-set="true" style="display: unset; color: var(--color_6); text-decoration: none;">Terms of Use</a><span single-space="true" class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);"> <span class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);"></span> 
+</span><span class="m-font-size-18 font-size-20" style="display: unset; color: var(--color_6);" m-font-size-set="true">| © 2024 Protagonist Therapeutics Inc. All Rights Reserved.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" role="button" aria-label="menu opener" tabindex="0"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div id="d-notification-bar" data-rule-type="notification" data-visible="true"> <div> <p class="rteBlock">We use cookies to ensure that we give you the best experience on our website.&nbsp;</p> 
+ <p class="rteBlock">To learn more, go to the <a value="privacy-policy" label="" type="page" href="/privacy-policy" data-runtime-url="/privacy-policy">Privacy Page</a>.</p> 
+</div> 
+<div class="notification-dismiss" aria-label="Dismiss notification">×</div></div></div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&amp;family=Amiri:ital,wght@0,400;0,700;1,400;1,700&amp;family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Bebas+Neue:ital,wght@0,400&amp;family=Be+Vietnam:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900&amp;family=Comfortaa:ital,wght@0,300..700;1,300..700&amp;family=Dancing+Script:ital,wght@0,400..700;1,400..700&amp;family=DM+Sans:ital,wght@0,100..1000;1,100..1000&amp;family=DM+Serif+Display:ital,wght@0,400;1,400&amp;family=Droid+Sans:ital,wght@0,400;0,700&amp;family=Droid+Sans+Mono:ital,wght@0,400&amp;family=Droid+Serif:ital,wght@0,400;0,700&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Fjalla+One:ital,wght@0,400&amp;family=Heebo:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,wght@0,100..900;1,100..900&amp;family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Muli:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900&amp;family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+<link rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Oswald:ital,wght@0,200..700;1,200..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Petit+Formal+Script:ital,wght@0,400&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Prata:ital,wght@0,400&amp;family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Quicksand:ital,wght@0,300..700;1,300..700&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;family=Roboto+Slab:ital,wght@0,100..900;1,100..900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;family=Rock+Salt:ital,wght@0,400&amp;family=Shadows+Into+Light:ital,wght@0,400&amp;family=Slabo+27px:ital,wght@0,400&amp;family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;family=Spartan:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900&amp;family=Sulphur+Point:ital,wght@0,300;0,400;0,700&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;family=Vidaloka:ital,wght@0,400&amp;subset=latin-ext&amp;display=swap" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+<link rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;family=Yeseva+One:ital,wght@0,400&amp;family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;family=Red+Rose:ital,wght@0,300..700;1,300..700&amp;family=Abril+Fatface:ital,wght@0,400&amp;family=Fraunces:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+<style>
+@font-face {
+  font-family: "Pragmatica-Bold";
+  src: url("https://irp.cdn-website.com/8e9b9820/fonts/Pragmatica-Bold-3a2f_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "PragmaticaCond-Book";
+  src: url("https://irp.cdn-website.com/8e9b9820/fonts/PragmaticaCond-Book-2dd1_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Pragmatica-Book";
+  src: url("https://irp.cdn-website.com/8e9b9820/fonts/Pragmatica-Book-edfa_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "PragmaticaCond-Black";
+  src: url("https://irp.cdn-website.com/8e9b9820/fonts/PragmaticaCond-Black-6cce_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "PragmaticaCond-Medium";
+  src: url("https://irp.cdn-website.com/8e9b9820/fonts/PragmaticaCond-Medium-629_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/4324/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" type="text/css">
+
+<!-- End of RT CSS Include -->
+
+<link rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/219291e0f75d16198865e89159b35349.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="https://irp.cdn-website.com/8e9b9820/files/8e9b9820_withFlex_1.min.css?v=258" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+
+
+<style id="customWidgetStyle" type="text/css">
+
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<!-- Page CSS -->
+<link rel="stylesheet" href="https://irp.cdn-website.com/8e9b9820/files/8e9b9820_home_withFlex_1.min.css?v=258" id="homeCssLink" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-28, .size-28, .size-28 > font { font-size: 28px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4324";
+    var build = "2024-04-03T08_52_09";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-04-03T08_52_09";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div> <p class=\"rteBlock\">We use cookies to ensure that we give you the best experience on our website.&nbsp;<\/p> \n <p class=\"rteBlock\">To learn more, go to the <a value=\"privacy-policy\" label=\"\" type=\"page\" href=\"\/privacy-policy\" data-runtime-url=\"\/privacy-policy\">Privacy Page<\/a>.<\/p> \n<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id="d-js-params">
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4324';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4324';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    // no usages
+    rtCommonProps["run.imageCount.script.enabled"] =false;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["keyboard.navigation.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =false;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.backgroundSlider.borderRadius"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4324/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4324/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '8e9b9820'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root" data-locale="en"></div>
+<!-- Alias: 8e9b9820 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+
+<!--  Begin Body End Markup -->
+<!--DONT REMOVE CSS-->
+<style>
+    *#dm *.dmBody div.u_1522424797{
+        width: 100%!important;
+    }
+    .dmCustomHtml{
+        height: auto!important;
+    }
+    div#dm .header-over-content .dmInner #hamburger-header:not(.scroll-responder_set) {
+        background-color: rgba(255,255,255,0.8) !important;
+    }
+    *#dm *.dmBody div.u_1123322645 > .dmRespColsWrapper{
+        justify-content: center!important;
+    }
+    *#dm *.dmBody div.u_1123322645 > .dmRespColsWrapper > .dmRespCol{
+        max-width: 50%;
+    }
+    *#dm *.dmBody .postDescription {
+        margin-bottom: 20px;
+    }
+    *#dm *.dmBody div.custom-hero-width-h1{
+        max-width: 745px !important;
+    }
+    *#dm *.dmBody div.custom-hero-width-p{
+        max-width: 650px !important;
+    }
+    #d-notification-bar{
+        padding: 20px!important;
+    }
+    #d-notification-bar p{
+        font-size: 18px!important;
+        font-family: "Pragmatica-Book";
+        font-weight: 400;
+        line-height: 1.5!important;
+    }
+    /*NEWS*/
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner{
+        height: 350px;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner a.blogImgLink{
+        position: absolute;
+        height: 100%;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner .postText{
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        min-height: 145px;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle:nth-child(odd)>.inner .postText{
+        background-color: rgba(16,116,162,0.8)!important;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle:nth-child(even)>.inner .postText{
+        background-color: rgba(82,102,149,0.8)!important;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner .postText {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner .postText .postTitle{
+        order: 2;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner .postText .postDescription{
+        order: 1;
+    }
+    *#dm *.dmBody *.custom-news-feed .postText .postDescription{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    *#dm *.dmBody *.custom-news-feed .postText .postTitle{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    *#dm *.dmBody *.custom-news-feed .postText .postTitle:hover{
+        text-decoration: underline;
+        color: #fff;
+    }
+    #dm *.dmBody *.custom-news-feed .postText{
+        flex: 0;
+    }
+    *#dm *.dmBody div.custom-news-feed .postArticle>.inner .postText .postTitle h3{
+        margin-bottom: 0px;
+    }
+    *#dm *.dmBody div.u_1304480749{
+        height: auto!important;
+    }
+    video[poster]{
+        object-fit: cover!important;
+    }
+    @media screen and (max-width:1200px){
+        *#dm *.p_hfcontainer nav.u_1697444087.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item {
+            font-size: 15px !important;
+        }
+        *#dm *.dmBody div.u_1474710245{
+            margin-top: -330px !important;
+        }
+        *#dm *.dmBody div.u_1789602441{
+            padding-bottom: 10px !important;
+        }
+        *#dm *.dmBody div.u_1456292419{
+            margin-top: -60px !important;
+        }
+    }
+    @media screen and (max-width:800px){
+        *#dm *.dmBody div.u_1474710245{
+            margin-top: -100px!important;
+        }
+        *#dm *.dmBody div.u_1456292419{
+            margin-top: -100px !important;
+        }
+        *#dm *.dmBody div.u_1123322645 > .dmRespColsWrapper > .dmRespCol{
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:600px){
+        *#dm *.dmBody div.u_1741510620 .technology-icon-column{
+            border-right: none !important;
+            border-right-width: 0px !important;
+        }
+    }
+</style>
+
+<!--STOCK WIDGET-->
+<script src="https://feeds.issuerdirect.com/assets/libraries/jquery/dist/jquery.min.js"></script>
+<script src="https://feeds.issuerdirect.com/assets/js/stock-widget-main.js"></script>
+<script>
+    var symbol = 'PTGX';
+    var price_decimals = 2;
+    var change_decimals = 2;
+    var pct_change_decimals = 2;
+    window.onload = function() {
+        stockWidgetBySymbol("PTGX");
+    };
+</script>
+
+<!--TEAM ACCORDION-->
+<script>
+    var acc = document.getElementsByClassName("team-accordion-item");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active-team-item");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = "100%";
+            }
+        });
+    }
+</script>
+
+<!--Mobile Submenu-->
+<script>
+     var mobIrMenu = document.querySelector("nav.custom-mob-ir-menu");
+     var mobIrMenuBtn = document.querySelector("div.mob-ir-menu");
+     mobIrMenu.style.display = "none";
+     mobIrMenuBtn.addEventListener("click", function() {
+         if(mobIrMenu.style.display === "flex"){
+             mobIrMenu.style.display = "none";
+         } else {
+             mobIrMenu.style.display = "flex";
+         }
+     });
+</script>
+
+<!--Added Accessibility-->
+<script>
+    const readMoreItems = document.querySelectorAll("#dm .postArticle .readMore a");
+    readMoreItems.forEach(function(readMoreItem) {
+        if (readMoreItem.hasAttribute('area-label')){
+            // do nothing
+        } else {
+            readMoreItem.setAttribute("area-label", "Click to open an article");
+        }
+        if(readMoreItem.innerHTML == ""){
+            readMoreItem.innerHTML = "READ MORE";
+        }
+        else{
+            // do nothing
+        }
+    });
+</script>
+
+<!--Pop up window-->
+<script>
+    function openPopUp(mdl_cls){
+        const mdl_wnd = document.querySelector("."+mdl_cls);
+        mdl_wnd.style.display = "block";
+        
+        var cls_btn = document.querySelector("."+mdl_cls+" .close_btn");
+        cls_btn.onclick = function() {
+          mdl_wnd.style.display = "none";
+          console.log('test test test');
+        }
+        window.onclick = function(event) {
+          if (event.target == mdl_wnd) {
+           mdl_wnd.style.display = "none";
+          }
+        }
+    }
+</script>
+
+ <!--MODALS-->
+ <!--MODAL 1-->
+ <div class="modal modal1">
+  <div class="modal-content">
+   <div class="modal-header">
+    <span class="close_btn">
+     ×
+    </span>
+    <h2>
+     Health Equity: Improving Access to Medicines, Ensuring Diverse Representation
+    </h2>
+    <p>
+     Spotlight, Arturo Molina, MD, Chief Medical Officer
+    </p>
+   </div>
+   <div class="modal-body">
+    <h3>
+     Dr. Molina, how are you helping to advance access to medicines?
+    </h3>
+    <p>
+     At Protagonist, we work hard to meet the needs of the patient communities who are relying on us to innovate new and better medicines. Part of our commitment to them includes working to advance our medicines through clinical studies as quickly as possible and ensuring patients can access investigational therapies outside of our clinical trials, which has allowed some patients in critical need to access our therapies for several additional years after trials conclude.
+    </p>
+    <h3>
+     We’re seeing a greater push for better representation in therapeutic innovation across the industry. How is Protagonist supporting diverse and equitable discovery and development?
+    </h3>
+    <p>
+     Protagonist actively works to ensure we have strong patient representation in our clinical studies. We actively seek patients from across urban, suburban, and rural locations, from varying age groups and from among diverse backgrounds to ensure equitable patient representation in our study data.
+    </p>
+    <p>
+     We’re particularly concerned aging populations are left out of clinical studies, and we’re currently working to recruit older patients into our trials.
+    </p>
+   </div>
+  </div>
+ </div>
+ <!--MODAL 2-->
+ <div id="1949781482" class="modal modal2">
+  <div class="modal-content">
+   <div class="modal-header">
+    <span class="close_btn">
+     ×
+    </span>
+    <h2>
+     Protagonist: Inclusion by the Numbers
+    </h2>
+    <p>
+     Spotlight: Carena Spivey, Head of HR
+    </p>
+   </div>
+   <div class="modal-body">
+    <h3>
+     Carena, equality, inclusion, and workplace diversity have long been in focus at Protagonist, as expressed through various programs and initiatives. Can you tell us about your approach?
+    </h3>
+    <p>
+     We view our diverse and welcoming corporate culture as being critical to our long-term success – It’s essential to the way we innovate. And we regularly track and report our progress, because we believe that what doesn’t get measured doesn’t get done.
+     <br>
+     Today:
+     <br>
+     - 65% of employees are members of underrepresented ethnic communities
+     <br>
+     - 51% are women
+     <br>
+     - nearly 50% of our Board identifies as a member of an underserved community or as female
+    </p>
+    <h3>
+     What are you doing to help create a more diverse employee community?
+    </h3>
+    <p>
+     We create the conditions for our employees to thrive, facilitating their learning and growth through a richly supportive workplace setting.
+    </p>
+    <p>
+     Part of that is creating a speak-up culture; we have cultivated an environment where every voice is heard, and we encourage the expression of different points of view in decision-making processes. At every turn, we encourage deep listening, thoughtful consideration, and open-mindedness that allows for decisions to be changed or refined in step with new data. By embracing our team members’ differences, we create wins for our organization and for patients.
+    </p>
+   </div>
+  </div>
+ </div>
+ 
+ <!--A11Y WIDGET-->
+<script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : 'Powered by Issuer Direct', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#545863', triggerColor : '#545863', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'center', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 10, triggerOffsetY : 10, mobile : { triggerSize : 'medium', triggerPositionX : 'right', triggerPositionY : 'center', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '50%' } }); }; h.appendChild(s); })(); </script><!--  End Body End Markup -->
+
+<!--  Site Wide Html Markup -->
+<div id="swh-dd17e18bae5a4a3cbf76f9345350b70b">
+                            <script>
+                                const getMenu_ = {};
+                                getMenu_['8e9b9820'] = function(){
+                                    return [{"title":"Innovation","url":"/innovation","orientation":"Horizontal","newTab":false,"type":"blank","components":[{"multi_sub_nav":{"name":"Sub Navigation","title":"","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Areas of Focus","url":"/areas-of-focus","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Technology","url":"/technology","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Product Pipeline","url":"/product-pipeline","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Clinical Trials","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}}]},{"title":"Community","url":"/community","orientation":"Horizontal","newTab":false,"type":"blank","components":[{"multi_sub_nav":{"name":"Sub Navigation","title":"","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Clinical Trials","url":"/clinical-trials","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Access","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"ESG","url":"/esg","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}}]},{"title":"About","url":"/about","orientation":"Horizontal","newTab":false,"type":"blank","components":[{"multi_sub_nav":{"name":"Sub Navigation","title":"About Our Company","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Leadership","url":"/leadership","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Board of Directors","url":"/board-of-directors","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}},{"multi_sub_nav":{"name":"Sub Navigation","title":"Investors","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Overview","url":"/investors","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Why Invest","url":"/why-invest","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Financials","url":"/financials","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Annual Reports","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"SEC Filings","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Stock Info","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Stock Quote","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Stock Chart","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}},{"multi_sub_nav":{"name":"Sub Navigation","title":"","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Analyst Coverage","url":"","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"News","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Events & Presentations","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Corporate Governance","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Committee Compositions","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Shareholder Services","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Request Form","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Investor Alerts","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Investor Contacts","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}}]},{"title":"News","url":"/news","orientation":"Horizontal","newTab":false,"type":"blank","components":[{"multi_sub_nav":{"name":"Sub Navigation","title":"","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Press Releases","url":"","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Articles","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Interviews","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}}]},{"title":"Careers","url":"/careers","orientation":"Horizontal","newTab":false,"type":"blank","components":[{"multi_sub_nav":{"name":"Sub Navigation","title":"","orientation":"Vertical","nav_list":[{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Locations","url":"","newTab":false,"short_desc":"","inner_nav_list":[{"icon":"<i class=\"fas fa-book-open\"></i>","title":"History Inner","url":"","newTab":false,"short_desc":""}]},{"hideIcon":true,"icon":"<i class=\"fas fa-book-open\"></i>","title":"Join Our Team","url":"","newTab":false,"short_desc":"","inner_nav":[{"link":"https://www.inner.com"}]}]}}]},{"title":"Contact","url":"/contact","orientation":"Horizontal","newTab":false,"type":"blank","components":[]}]
+                                }
+                            </script></div><!--  Site Wide Html Markup -->
+
+
+<iframe srcdoc="<html lang=&quot;en&quot;></html>" style="visibility: hidden; pointer-events: none; position: fixed;"></iframe><div class="acsb-trigger acsb-widget" tabindex="0" role="button"></div></body></html>

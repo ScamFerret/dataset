@@ -1,0 +1,12 @@
+{
+    "url": "https://omomentep.live/",
+    "question": "Please analyze this URL https://omomentep.live/",
+    "thought": "I need to check the content of the given URL to determine if it is a scam website. The website is accessible, now I need to check for any signs of a scam. The website content contains a mix of various products and brands at unusually low prices, which is a potential sign of a scam. There seems to be an error when trying to retrieve WHOIS information for the domain omomentep.live. This could be an indication of a potential issue with the domain. The certificate information for omomentep.live shows that it is linked to umotivatew.monster, which seems suspicious and potentially fraudulent. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "The website omomentep.live displays a mix of various products and brands at unusually low prices and the certificate information is linked to a suspicious domain umotivatew.monster indicating a potential scam."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

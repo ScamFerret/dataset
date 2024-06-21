@@ -1,0 +1,12 @@
+{
+    "url": "https://iado.cgistuff.top/",
+    "question": "Please analyze this URL https://iado.cgistuff.top/",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is up and running, so I need to extract the text from the HTML to see if there are any red flags. The text extracted from the HTML does not seem to make sense and includes a wide variety of products, some of which are not commonly found on e-commerce websites. This is a possible red flag for fraudulent activity. Additionally, the inquiry email address seems suspicious. The domain cgistuff.top is registered, but the information is redacted for privacy. However, the information seems to be suspicious based on the extracted text from the HTML and the non-existent company details. The email address and the wide variety of products also raise red flags. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake shopping site",
+        "reason": "The website shows unusually low prices and offers a wide variety of products not commonly found on e-commerce websites. The Whois information is also redacted for privacy which is a common characteristic of fraudulent sites."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

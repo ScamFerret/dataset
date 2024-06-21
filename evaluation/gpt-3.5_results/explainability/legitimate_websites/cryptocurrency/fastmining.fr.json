@@ -1,0 +1,12 @@
+{
+    "url": "https://fastmining.fr/",
+    "question": "Please analyze this URL https://fastmining.fr/",
+    "thought": "I need to check the content of the website and look for any signs of a potential scam. The website is accessible. Now I need to extract the text and hyperlinks to analyze the content. The website content seems to be related to cryptocurrency mining and investment. I need to check if there are any signs of potential scam characteristics. The website appears to be related to cryptocurrency mining and investment, and the domain information is valid until 2025. There are no immediate signs of a scam based on the content and domain information. {",
+    "answer": {
+        "result": "false",
+        "scam_type": "null",
+        "reason": "The website content is related to cryptocurrency mining and investment and the domain information is valid until 2025. There are no immediate signs of a scam based on the content and domain information."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

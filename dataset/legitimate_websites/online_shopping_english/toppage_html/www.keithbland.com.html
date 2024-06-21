@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd"><html lang="en"><head>
+	
+<!-- Site Header Content //-->
+<link rel="stylesheet" media="screen" type="text/css" href="/themes/keith_bland/main.css?20">
+<link rel="stylesheet" media="screen" type="text/css" href="/themes/keith_bland/typography.css?20">
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Oil Paintings</title>
+<meta name="description" content="Keith Bland is an artist specializing in paintings in oil.  His new series titled,  &quot;SACRED SPACE dawn dusk&quot; are inspried from the radiance of the sky in his home of Key West, famous for beautiful sunsets and sunrises.  These large monumental paintings focus on twilight glow, the transcendent spiritual vast silent ground and space that we all share.  His other series include, &quot;Behind the Mask&quot; and &quot;Reflection&quot; a series of self portraits. Contemporary portraits and faces, surreal fruit and large modern fruit still life paintings.  Keith is a self-taught artist whose work explores instinctive themes inspired by emotional experience and request a meta-physical or emotional response as opposed to an intellectual one.">
+<meta name="keywords" content="Oil paintings, portraits, sacred, spritual, key west sunset, sunrise, contemporary fruit still life, radiance">
+<meta name="generator" content="concrete5 - 5.6.1.2">
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';
+var CCM_CID = 1;
+var CCM_EDIT_MODE = false;
+var CCM_ARRANGE_MODE = false;
+var CCM_IMAGE_PATH = "/updates/concrete5.6.1.2_updater/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_BASE_URL = "http://www.keithbland.com";
+var CCM_REL = "";
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.6.1.2_updater/concrete/css/ccm.base.css?v=a9cedce2994df4ac02b24b36b7f9b37a">
+<script type="text/javascript" src="/updates/concrete5.6.1.2_updater/concrete/js/jquery.js?v=a9cedce2994df4ac02b24b36b7f9b37a"></script>
+<script type="text/javascript" src="/updates/concrete5.6.1.2_updater/concrete/js/ccm.base.js?v=a9cedce2994df4ac02b24b36b7f9b37a"></script>
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.6.1.2_updater/concrete/blocks/slideshow/view.css?v=a9cedce2994df4ac02b24b36b7f9b37a">
+
+</head>
+<body>
+<div id="page">
+
+<div id="logo"><a href="/" title="Keith Bland Oil Paintings"><img src="/themes/keith_bland/images/keith-bland-oil-paintings-logo.gif" title="Keith Bland Oil Paintings"></a></div>
+
+<div id="navigation">
+<ul class="nav-header">
+
+	
+	<li class="first">
+		<a class="first" href="/sacred-space/" target="_self">sacred space</a>
+	</li>
+	
+	<li class="">
+		<a class="" href="/faces/" target="_self">faces</a>
+	</li>
+	
+	<li class="">
+		<a class="" href="/behind-the-mask-reflection/" target="_self">behind the mask/reflection</a>
+	</li>
+	
+	<li class="">
+		<a class="" href="/fruit/" target="_self">fruit</a>
+	</li>
+
+</ul>
+
+<div class="ccm-spacer">&nbsp;</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var ccmSlideShowHelper121 = {
+
+	bID:121,
+	imgNum:0,
+	
+	init:function(){
+		this.displayWrap=$('#ccm-SlideshowBlock-display'+this.bID); 
+		if(this.imgInfos.length==0){
+			//alert('There are no images in this slideshow');
+			return false;
+		}
+		var maxHeight=0;
+		for(var i=0;i<this.imgInfos.length;i++){
+			this.addImg(i);
+			if(maxHeight==0 || this.imgInfos[i].imgHeight > maxHeight)
+				maxHeight=this.imgInfos[i].imgHeight;
+		}
+		this.displayWrap.css('height',maxHeight);
+
+		
+		//center images
+		for(var i=0;i<this.imgInfos.length;i++){ 
+			if( this.imgInfos[i].imgHeight < maxHeight){
+				var t=((maxHeight - this.imgInfos[i].imgHeight)/2);
+				this.imgEls[i].css('top',t);
+			}
+		}
+		this.nextImg();
+	}, 
+	nextImg:function(){ 
+		if(this.imgNum>=this.imgInfos.length) this.imgNum=0;  
+		this.imgEls[this.imgNum].css('opacity',0);
+		this.imgEls[this.imgNum].css('display','block');
+		this.imgEls[this.imgNum].animate({opacity:1},
+			this.imgInfos[this.imgNum].fadeDuration*1000,'',function(){ccmSlideShowHelper121.preparefadeOut()});
+		var prevNum=this.imgNum-1;
+		if(prevNum<0) prevNum=this.imgInfos.length-1;
+		if(this.imgInfos.length==1) return;
+		this.imgEls[prevNum].animate({opacity:0},this.imgInfos[this.imgNum].fadeDuration*800,function(){this.style.zIndex=1;});			
+	},
+	preparefadeOut:function(){
+		if(this.imgInfos.length==1) return;
+		var milisecDuration=parseInt(this.imgInfos[this.imgNum].duration)*1000;
+		this.imgEls[this.imgNum].css('z-index',2);
+		setTimeout('ccmSlideShowHelper'+121+'.nextImg();',milisecDuration);
+		this.imgNum++;
+	},
+	maxHeight:0,
+	imgEls:[],
+	addImg:function(num){
+		var el=document.createElement('div');
+		el.id="slideImgWrap"+num;
+		el.className="slideImgWrap"; 
+		if(this.imgInfos[num].fullFilePath.length>0)
+			 imgURL=this.imgInfos[num].fullFilePath;
+		else imgURL='/files/'+this.imgInfos[num].fileName; 
+		//el.innerHTML='<img src="'+imgURL+'" >';
+		el.innerHTML='<div style="height:'+this.imgInfos[num].imgHeight+'px; background:url(\''+escape(imgURL)+'\') center no-repeat">&nbsp;</div>';
+		//alert(imgURL);
+		if(this.imgInfos[num].url.length>0) {
+			//el.linkURL=this.imgInfos[num].url;
+			var clickEvent='onclick="return ccmSlideShowHelper121.imgClick( this.href  );"';
+			el.innerHTML='<a href="'+this.imgInfos[num].url+'" '+clickEvent+' >'+el.innerHTML+'</a>';			
+		}
+		el.style.display='none';
+		this.displayWrap.append(el);
+		var jqEl=$(el);
+		this.imgEls.push(jqEl);
+	},
+	imgClick:function(linkURL){
+		//override for custom behavior
+	},
+	imgInfos:[
+				{
+				fileName:"slideshow-1.gif",
+				fullFilePath:"/files/1012/6998/1423/slideshow-1.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:140			}
+		,			{
+				fileName:"slideshow-2.gif",
+				fullFilePath:"/files/9712/6998/1424/slideshow-2.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:140			}
+		,			{
+				fileName:"slideshow-3.gif",
+				fullFilePath:"/files/8912/6998/1425/slideshow-3.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"/fruit/",
+				groupSet:0,
+				imgHeight:140			}
+		,			{
+				fileName:"slideshow-4.gif",
+				fullFilePath:"/files/3312/6998/1425/slideshow-4.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"/faces/",
+				groupSet:0,
+				imgHeight:140			}
+		,			{
+				fileName:"slideshow-5.gif",
+				fullFilePath:"/files/4512/6998/2450/slideshow-5.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"/heavens-in-half-light/",
+				groupSet:0,
+				imgHeight:140			}
+		,			{
+				fileName:"slideshow-6.gif",
+				fullFilePath:"/files/6612/6998/1427/slideshow-6.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"/behind-the-mask-reflection/",
+				groupSet:0,
+				imgHeight:140			}
+		,			{
+				fileName:"slideshow-7.gif",
+				fullFilePath:"/files/1712/6998/1428/slideshow-7.gif",
+				duration:2,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:140			}
+			]
+}
+$(function(){ccmSlideShowHelper121.init();}); 
+//]]>
+</script>
+
+<div id="ccm-SlideshowBlock-display121" style="height:140px" class="ccm-SlideshowBlock-display">
+<div id="ccm-SlideshowBlock-heightSetter121" class="ccm-SlideshowBlock-heightSetter"></div>
+<div class="ccm-SlideshowBlock-clear"></div>
+<div id="slideImgWrap0" class="slideImgWrap" style="display: block; opacity: 0.991864;"><div style="height:140px; background:url('/files/1012/6998/1423/slideshow-1.gif') center no-repeat">&nbsp;</div></div><div id="slideImgWrap1" class="slideImgWrap" style="display: none;"><div style="height:140px; background:url('/files/9712/6998/1424/slideshow-2.gif') center no-repeat">&nbsp;</div></div><div id="slideImgWrap2" class="slideImgWrap" style="display: none;"><a href="/fruit/" onclick="return ccmSlideShowHelper121.imgClick( this.href  );"><div style="height:140px; background:url('/files/8912/6998/1425/slideshow-3.gif') center no-repeat">&nbsp;</div></a></div><div id="slideImgWrap3" class="slideImgWrap" style="display: none;"><a href="/faces/" onclick="return ccmSlideShowHelper121.imgClick( this.href  );"><div style="height:140px; background:url('/files/3312/6998/1425/slideshow-4.gif') center no-repeat">&nbsp;</div></a></div><div id="slideImgWrap4" class="slideImgWrap" style="display: none;"><a href="/heavens-in-half-light/" onclick="return ccmSlideShowHelper121.imgClick( this.href  );"><div style="height:140px; background:url('/files/4512/6998/2450/slideshow-5.gif') center no-repeat">&nbsp;</div></a></div><div id="slideImgWrap5" class="slideImgWrap" style="display: none;"><a href="/behind-the-mask-reflection/" onclick="return ccmSlideShowHelper121.imgClick( this.href  );"><div style="height:140px; background:url('/files/6612/6998/1427/slideshow-6.gif') center no-repeat">&nbsp;</div></a></div><div id="slideImgWrap6" class="slideImgWrap" style="display: none; opacity: 0; z-index: 1;"><div style="height:140px; background:url('/files/1712/6998/1428/slideshow-7.gif') center no-repeat">&nbsp;</div></div></div>
+</div>
+		
+<div id="content">
+	<h1 class="title">Home</h1>
+	<p style="text-align: center;"><span style="font-size: x-large; color: #ff6600;"><strong>- RECENT WORK -</strong></span></p>
+<p style="text-align: center;"><span style="color: #993300; font-size: medium;"><strong>-&nbsp;</strong></span><strong style="color: #993300; font-size: medium;">inspired by faces sculpted by artists from past millennia - </strong></p>
+<p style="text-align: center;"><strong style="color: #993300; font-size: medium;">- originating from vastly diverse world cultures - </strong></p>
+<p style="text-align: center;"><strong style="color: #993300; font-size: medium;">- initially created to comfort, entertain, or commemorate... for eternity -</strong></p>
+<p style="text-align: center;"><strong style="color: #993300; font-size: medium;">- the painted portraits in oil universally explore...</strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #ff6600;"><strong><span style="font-size: medium;"><span style="text-decoration: none;"><span style="text-decoration: none;"><span style="font-size: xx-large;"><em>Riffs on Immortality</em></span></span></span></span></strong></span></p>
+<p style="text-align: center;"><strong><span style="font-size: medium; color: #ff6600;">Portraits of Sculpted Faces from the Stone Age to the Present&nbsp;</span></strong></p>
+<p style="text-align: center;"><span style="font-size: medium; color: #ff6600;"><br></span></p>
+<p style="text-align: center;"><span style="color: #993300;">The &nbsp;series is a collaborative venture with Maureen Tracy Venti, a poet who splits her time between Key West and Jackson, New Hampshire.</span></p>
+<p style="text-align: center;"><strong><span style="color: #993300; font-size: medium;">The&nbsp;<span style="color: #ff6600;"><em>Riffs on Immortality </em></span>exhibition debuted at</span></strong></p>
+<p style="text-align: center;"><strong><span style="color: #993300; font-size: medium;">T</span></strong><span style="color: #993300; font-size: medium;">he Studios</span><strong><span style="color: #993300; font-size: medium;">&nbsp;of Key West (tskw.org)</span></strong></p>
+<p style="text-align: center;"><span style="color: #993300; font-size: small;"><strong>July 18-August 8, 2013</strong></span></p>
+<p style="text-align: center;"><strong><span style="color: #993300; font-size: medium;"><span style="font-size: small;">The opening celebration&nbsp;</span></span></strong><span style="color: #993300; font-size: small;">featured poetry readings with jazz riffs, and</span></p>
+<p style="text-align: center;"><span style="font-size: small; color: #993300;">a second line parade with Skipper Kripitz and The Conch Republic Marching Band</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #993300;"><br></span></p>
+<p style="text-align: center;"><span style="font-size: large; color: #800000;"><strong><span style="text-decoration: none;"><span style="text-decoration: none;">Continuing Work</span></span></strong></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #ff6600;"><strong><span style="font-size: medium;"><span style="text-decoration: none;"><span style="text-decoration: none;"><span style="font-size: xx-large;">SACRED SPACE </span><em>dawn dusk</em></span></span></span></strong></span></p>
+<script type="text/javascript">
+//<![CDATA[
+var ccmSlideShowHelper304 = {
+
+	bID:304,
+	imgNum:0,
+	
+	init:function(){
+		this.displayWrap=$('#ccm-SlideshowBlock-display'+this.bID); 
+		if(this.imgInfos.length==0){
+			//alert('There are no images in this slideshow');
+			return false;
+		}
+		var maxHeight=0;
+		for(var i=0;i<this.imgInfos.length;i++){
+			this.addImg(i);
+			if(maxHeight==0 || this.imgInfos[i].imgHeight > maxHeight)
+				maxHeight=this.imgInfos[i].imgHeight;
+		}
+		this.displayWrap.css('height',maxHeight);
+
+		
+		//center images
+		for(var i=0;i<this.imgInfos.length;i++){ 
+			if( this.imgInfos[i].imgHeight < maxHeight){
+				var t=((maxHeight - this.imgInfos[i].imgHeight)/2);
+				this.imgEls[i].css('top',t);
+			}
+		}
+		this.nextImg();
+	}, 
+	nextImg:function(){ 
+		if(this.imgNum>=this.imgInfos.length) this.imgNum=0;  
+		this.imgEls[this.imgNum].css('opacity',0);
+		this.imgEls[this.imgNum].css('display','block');
+		this.imgEls[this.imgNum].animate({opacity:1},
+			this.imgInfos[this.imgNum].fadeDuration*1000,'',function(){ccmSlideShowHelper304.preparefadeOut()});
+		var prevNum=this.imgNum-1;
+		if(prevNum<0) prevNum=this.imgInfos.length-1;
+		if(this.imgInfos.length==1) return;
+		this.imgEls[prevNum].animate({opacity:0},this.imgInfos[this.imgNum].fadeDuration*800,function(){this.style.zIndex=1;});			
+	},
+	preparefadeOut:function(){
+		if(this.imgInfos.length==1) return;
+		var milisecDuration=parseInt(this.imgInfos[this.imgNum].duration)*1000;
+		this.imgEls[this.imgNum].css('z-index',2);
+		setTimeout('ccmSlideShowHelper'+304+'.nextImg();',milisecDuration);
+		this.imgNum++;
+	},
+	maxHeight:0,
+	imgEls:[],
+	addImg:function(num){
+		var el=document.createElement('div');
+		el.id="slideImgWrap"+num;
+		el.className="slideImgWrap"; 
+		if(this.imgInfos[num].fullFilePath.length>0)
+			 imgURL=this.imgInfos[num].fullFilePath;
+		else imgURL='/files/'+this.imgInfos[num].fileName; 
+		//el.innerHTML='<img src="'+imgURL+'" >';
+		el.innerHTML='<div style="height:'+this.imgInfos[num].imgHeight+'px; background:url(\''+escape(imgURL)+'\') center no-repeat">&nbsp;</div>';
+		//alert(imgURL);
+		if(this.imgInfos[num].url.length>0) {
+			//el.linkURL=this.imgInfos[num].url;
+			var clickEvent='onclick="return ccmSlideShowHelper304.imgClick( this.href  );"';
+			el.innerHTML='<a href="'+this.imgInfos[num].url+'" '+clickEvent+' >'+el.innerHTML+'</a>';			
+		}
+		el.style.display='none';
+		this.displayWrap.append(el);
+		var jqEl=$(el);
+		this.imgEls.push(jqEl);
+	},
+	imgClick:function(linkURL){
+		//override for custom behavior
+	},
+	imgInfos:[
+				{
+				fileName:"13019505511_8fv5F.jpg",
+				fullFilePath:"/files/6813/0063/6403/13019505511_8fv5F.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:302			}
+		,			{
+				fileName:"8511694050_WT9Kq.jpg",
+				fullFilePath:"/files/2912/7723/3606/8511694050_WT9Kq.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13022294690_58gBQ.jpg",
+				fullFilePath:"/files/9513/0064/4610/13022294690_58gBQ.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:392			}
+		,			{
+				fileName:"13027373034_7ZKNJ.jpg",
+				fullFilePath:"/files/3013/0065/7203/13027373034_7ZKNJ.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13044976549_kbwcL.jpg",
+				fullFilePath:"/files/1913/0073/8459/13044976549_kbwcL.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"8198094350_7HXMb.jpg",
+				fullFilePath:"/files/3612/7523/6043/8198094350_7HXMb.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13022604767_NbnsQ.jpg",
+				fullFilePath:"/files/9513/0064/5418/13022604767_NbnsQ.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:287			}
+		,			{
+				fileName:"13019457252_RRx9L.jpg",
+				fullFilePath:"/files/9613/0063/6281/13019457252_RRx9L.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13019487061_bV6T4.jpg",
+				fullFilePath:"/files/5913/0063/6368/13019487061_bV6T4.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:350			}
+		,			{
+				fileName:"13019481427_DNwkx.jpg",
+				fullFilePath:"/files/1713/0063/6339/13019481427_DNwkx.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13027065977_PgtD5.jpg",
+				fullFilePath:"/files/7913/0065/6386/13027065977_PgtD5.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:347			}
+		,			{
+				fileName:"9815983852_fbRzS.jpg",
+				fullFilePath:"/files/7712/8490/2209/9815983852_fbRzS.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13045002211_htck6.jpg",
+				fullFilePath:"/files/1613/0073/8522/13045002211_htck6.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:300			}
+		,			{
+				fileName:"13027752848_7D8RL.jpg",
+				fullFilePath:"/files/6213/0065/8271/13027752848_7D8RL.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13022591150_qp9gQ.jpg",
+				fullFilePath:"/files/5413/0064/5382/13022591150_qp9gQ.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:338			}
+		,			{
+				fileName:"13019453286_xsrxm.jpg",
+				fullFilePath:"/files/9113/0063/6250/13019453286_xsrxm.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13019510157_qddLP.jpg",
+				fullFilePath:"/files/1613/0063/6438/13019510157_qddLP.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:344			}
+		,			{
+				fileName:"13027683267_VLnWc.jpg",
+				fullFilePath:"/files/9113/0065/8061/13027683267_VLnWc.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13027132276_WcLjr.jpg",
+				fullFilePath:"/files/1113/0065/6560/13027132276_WcLjr.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:390			}
+		,			{
+				fileName:"13019438790_JxFrs.jpg",
+				fullFilePath:"/files/1913/0063/6215/13019438790_JxFrs.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13019536226_vD7fL.jpg",
+				fullFilePath:"/files/7213/0063/6509/13019536226_vD7fL.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:338			}
+		,			{
+				fileName:"13027310979_SwCxw.jpg",
+				fullFilePath:"/files/4413/0065/7055/13027310979_SwCxw.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"9816076192_TTP59.jpg",
+				fullFilePath:"/files/8912/8490/2758/9816076192_TTP59.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:166			}
+		,			{
+				fileName:"13027846326_sS64F.jpg",
+				fullFilePath:"/files/4113/0065/8505/13027846326_sS64F.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"7990216704_6RjBh.jpg",
+				fullFilePath:"/files/4912/7376/0314/7990216704_6RjBh.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"7990251813_SmpFP.jpg",
+				fullFilePath:"/files/8112/7376/0627/7990251813_SmpFP.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:448			}
+		,			{
+				fileName:"7959026913_hsMMm.jpg",
+				fullFilePath:"/files/3512/7350/9552/7959026913_hsMMm.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13045099801_nWc9N.jpg",
+				fullFilePath:"/files/7113/0073/8787/13045099801_nWc9N.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:300			}
+		,			{
+				fileName:"7990289925_49NZ5.jpg",
+				fullFilePath:"/files/1812/7376/0917/7990289925_49NZ5.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"13044953674_SFzMt.jpg",
+				fullFilePath:"/files/9413/0073/8408/13044953674_SFzMt.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:450			}
+		,			{
+				fileName:"7990274201_3cbHz.jpg",
+				fullFilePath:"/files/3212/7376/0776/7990274201_3cbHz.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:452			}
+		,			{
+				fileName:"13019517396_cdWdV.jpg",
+				fullFilePath:"/files/6913/0063/6471/13019517396_cdWdV.jpg",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:411			}
+			]
+}
+$(function(){ccmSlideShowHelper304.init();}); 
+//]]>
+</script>
+
+<div id="ccm-SlideshowBlock-display304" style="height:452px" class="ccm-SlideshowBlock-display">
+<div id="ccm-SlideshowBlock-heightSetter304" class="ccm-SlideshowBlock-heightSetter"></div>
+<div class="ccm-SlideshowBlock-clear"></div>
+<div id="slideImgWrap0" class="slideImgWrap" style="display: block; top: 75px; opacity: 0.991864;"><div style="height:302px; background:url('/files/6813/0063/6403/13019505511_8fv5F.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap1" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/2912/7723/3606/8511694050_WT9Kq.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap2" class="slideImgWrap" style="display: none; top: 30px;"><div style="height:392px; background:url('/files/9513/0064/4610/13022294690_58gBQ.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap3" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/3013/0065/7203/13027373034_7ZKNJ.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap4" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/1913/0073/8459/13044976549_kbwcL.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap5" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/3612/7523/6043/8198094350_7HXMb.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap6" class="slideImgWrap" style="display: none; top: 82.5px;"><div style="height:287px; background:url('/files/9513/0064/5418/13022604767_NbnsQ.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap7" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/9613/0063/6281/13019457252_RRx9L.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap8" class="slideImgWrap" style="display: none; top: 51px;"><div style="height:350px; background:url('/files/5913/0063/6368/13019487061_bV6T4.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap9" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/1713/0063/6339/13019481427_DNwkx.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap10" class="slideImgWrap" style="display: none; top: 52.5px;"><div style="height:347px; background:url('/files/7913/0065/6386/13027065977_PgtD5.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap11" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/7712/8490/2209/9815983852_fbRzS.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap12" class="slideImgWrap" style="display: none; top: 76px;"><div style="height:300px; background:url('/files/1613/0073/8522/13045002211_htck6.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap13" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/6213/0065/8271/13027752848_7D8RL.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap14" class="slideImgWrap" style="display: none; top: 57px;"><div style="height:338px; background:url('/files/5413/0064/5382/13022591150_qp9gQ.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap15" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/9113/0063/6250/13019453286_xsrxm.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap16" class="slideImgWrap" style="display: none; top: 54px;"><div style="height:344px; background:url('/files/1613/0063/6438/13019510157_qddLP.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap17" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/9113/0065/8061/13027683267_VLnWc.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap18" class="slideImgWrap" style="display: none; top: 31px;"><div style="height:390px; background:url('/files/1113/0065/6560/13027132276_WcLjr.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap19" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/1913/0063/6215/13019438790_JxFrs.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap20" class="slideImgWrap" style="display: none; top: 57px;"><div style="height:338px; background:url('/files/7213/0063/6509/13019536226_vD7fL.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap21" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/4413/0065/7055/13027310979_SwCxw.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap22" class="slideImgWrap" style="display: none; top: 143px;"><div style="height:166px; background:url('/files/8912/8490/2758/9816076192_TTP59.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap23" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/4113/0065/8505/13027846326_sS64F.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap24" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/4912/7376/0314/7990216704_6RjBh.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap25" class="slideImgWrap" style="display: none; top: 2px;"><div style="height:448px; background:url('/files/8112/7376/0627/7990251813_SmpFP.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap26" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/3512/7350/9552/7959026913_hsMMm.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap27" class="slideImgWrap" style="display: none; top: 76px;"><div style="height:300px; background:url('/files/7113/0073/8787/13045099801_nWc9N.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap28" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/1812/7376/0917/7990289925_49NZ5.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap29" class="slideImgWrap" style="display: none; top: 1px;"><div style="height:450px; background:url('/files/9413/0073/8408/13044953674_SFzMt.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap30" class="slideImgWrap" style="display: none;"><div style="height:452px; background:url('/files/3212/7376/0776/7990274201_3cbHz.jpg') center no-repeat">&nbsp;</div></div><div id="slideImgWrap31" class="slideImgWrap" style="display: none; top: 20.5px; opacity: 0; z-index: 1;"><div style="height:411px; background:url('/files/6913/0063/6471/13019517396_cdWdV.jpg') center no-repeat">&nbsp;</div></div></div>
+<p style="text-align: center;"><strong><br></strong></p>
+<p style="text-align: center;"><span style="color: #ff6600;"><strong><span style="font-size: large;">SACRED SPACE</span> <em>dawn dusk</em></strong></span></p>
+<p style="text-align: center;"><span style="color: #800000;"><strong><em>STEP INTO THE SILENT TRANSCENDENT UNKNOWN</em></strong></span></p>
+<p style="text-align: center;"><span style="color: #993300;">color meditations in oil</span></p>
+<p><span style="color: #800000;">"In my work, I attempt to unite the viewer with the power of the sublime found in our visual environment. &nbsp;Whether a color-saturated twilight sky, the expression of a human face, or the exquisite sculptural quality of a piece of fruit, the inspiration for my paintings derives primarily from nature and emerges intuitively. &nbsp;The work is meant to evoke elemental emotions and an aesthetic arrest universal to the human spirit.</span></p>
+<p><span style="color: #800000;">The <span style="color: #993300;">SACRED SPACE <em><span style="font-size: x-small;">dawn dusk</span></em></span>&nbsp;paintings were the result of daily physical immersion into the energy and color of morning and evening twilight in Key West for a full year. &nbsp;The spiritual rejuvenation and transformation was personal and translated to my art. &nbsp;Over the course of the year, the paintings progressively grew in size and in their level of peace and unity. &nbsp;As I reconnected with the cycles and colors of nature, the resulting canvases became monumentally larger and compositionally quieter. &nbsp;The paintings represent an attempt to channel and reduce to the essence my experience during those mornings and evenings spent alone with the enveloping beauty and boundless energy of the sky. &nbsp;As John Muir so eloquently stated, 'Going out, I found, was really going in'.</span></p>
+<p><span style="color: #800000;">Toward the end of my incredible year, I was fortunate to witness and photograph two elusive green flashes within a one-month period. &nbsp;A green flash is a one-to-two-second refraction of light phenomenon that rarely appears, just a moment after &nbsp;the sun sinks below the horizon."</span></p>
+<p style="text-align: center;"><span style="color: #800000;">- Keith Bland</span></p>
+<p style="text-align: center;"><span style="color: #800000;"><img src="/files/3113/1402/6754/15959239071_NSBvf.jpg" alt="DSC01631.JPG" width="450" height="326"></span></p>
+<p style="text-align: center;"><span style="color: #800000;">NOVEMBER 23 DUSK, GREEN FLASH; oil on canvas; 60 x 84 inches</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #800000;"><img src="/files/5313/1541/4993/16232439383_T34SV.jpg" alt="DSC01660.JPG" width="450" height="318"></span></p>
+<p style="text-align: center;"><span style="color: #800000;">OCTOBER 27 DUSK, GREEN FLASH; oil on canvas; 60 x 84 inches</span></p>
+<p style="text-align: center;"><span style="color: #800000;"><br></span></p>
+<p><span style="color: #800000;">Please click on the <span style="color: #ff6600;"><strong><span style="font-size: medium;">SACRED SPACE </span></strong><span style="font-size: medium;"><span style="font-size: x-small;"><em>dawn dusk</em></span></span></span> link at the top of this homepage for ordering and pricing information for the paintings, the photographs, and the coffee table book.</span></p>
+<p><span style="color: #800000;">The 136-page book features 113 copyrighted photographs (including two green flashes), each also for sale on the website by title and page number in the book. &nbsp;The photos are available framed or unframed, signed or unsigned, in varying sizes. &nbsp;Please follow the instructions on the site using Paypal or email keith@keithbland.com to order books, photos, and/or paintings.</span></p>
+<p style="text-align: center;"><span style="color: #888888;"><img src="/files/7213/0965/7967/15001122431_tr6Bq.jpg" alt="DSC01596.JPG" width="450" height="270"></span></p>
+<p style="text-align: center;"><span style="color: #800000;">Three of the six photographs (above) and the two oil paintings (below) that hang at the beautiful Methodist Hospice Residence in Memphis, Tennessee</span></p>
+<p style="text-align: center;"><span style="color: #888888;"><img src="/files/3013/0965/8469/15001243274_vxDw7.jpg" alt="DSC01602.JPG" width="450" height="260"></span></p>
+<p style="text-align: center;"><span style="color: #888888;"><img src="/files/9713/1160/6779/15454996928_3SLLj.jpg" alt="Hospice_Lobby_Ptn_Image.jpg" width="450" height="301"><br></span></p>
+<p><span style="color: #888888;"><strong><em><span style="font-style: normal; font-weight: normal; color: #800000;">The </span></em><span style="font-weight: normal; font-size: small; color: #ff6600;">SACRED SPACE&nbsp;<em><span style="font-size: x-small;">dawn dusk&nbsp;</span></em></span></strong></span><span style="color: #800000; font-size: small;">work has been featured in three solo exhibitions. &nbsp;The first was held at The Studios of Key West (tskw.org), March 3 - 15, 2011. The second was hosted by the Memphis Botanic Garden, April 1 - 30, 2011, and the third at the galleries of Askew, Hargraves, Harcourt &amp; Associates (A2H) in Lakeland, Tennessee. &nbsp;In addition, two of the large paintings and six framed photos have been featured at gala openings of Phase 1 of the new Methodist Hospice Residence facility in Memphis. &nbsp;The pieces were chosen and purchased as part of the highly successful Methodist Le Bonheur Hospital's new focus on fine art in hospitals.</span></p>
+<p><span style="color: #800000; font-size: small;">In January, 2012, the Florida Keys Council of the Arts selected three of the large paintings to hang in a very prominent location at the Key West International Airport (see below).</span></p>
+<p style="text-align: center;"><span style="color: #800000; font-size: small;"><img src="/files/8413/2740/9183/18492911013_JFcrG.jpg" alt="DSC01848.JPG" width="450" height="398"></span></p>
+<p style="text-align: center;"><span style="color: #800000; font-size: small;"><img src="/files/1113/2740/8947/18492847697_GtNQb.jpg" alt="DSC01843.JPG" width="450" height="399"></span></p>
+<p style="text-align: center;"><span style="color: #800000; font-size: small;">Three 7 feet x 5 feet paintings in oil hang in the Key West International Airport.</span></p>
+<p><span style="color: #800000; font-size: small;"><br></span></p>
+<p style="text-align: center;"><span style="color: #800000;"><img src="/files/7113/1160/9216/15455591086_zKHbP.jpg" alt="Comm_Adv_Triptych_2010.jpg" width="450" height="301"></span></p>
+<p style="text-align: center;"><span style="color: #800000;"><span style="color: #ff6600;"><strong>SACRED SPACE </strong></span><em><span style="font-size: x-small;"><span style="color: #ff6600;"><strong>dawn dusk</strong></span>; </span></em>commissioned triptych in the lobby of</span></p>
+<p style="text-align: center;"><span style="color: #800000;">Commercial Advisors, Memphis, Tennessee</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><span style="color: #800000;">"SILENCE IS SO ACCURATE." &nbsp;Mark Rothko</span></strong></p></div>
+
+	<div id="footer">
+	<p></p><p style="text-align: center;"><span style="font-size: medium;"><a title="about the artist" href="/about-the-artist/">about the artist</a>&nbsp;&nbsp;&nbsp;&nbsp;<a title="prices &amp; fees" href="/prices-and-fees/">prices &amp; fees</a>&nbsp;&nbsp;&nbsp;&nbsp;<a title="contact information" href="/contact-information/">contact information</a></span></p>
+<p style="text-align: center;"><span style="color: #888888;">keith bland oil paintings :: key west florida :: new york city</span><br><span style="color: #888888;">email: <a href="mailto:keith@keithbland.com"><span style="color: #888888;">keith@keithbland.com</span></a> :: telephone: 305 304 6335</span></p><p>
+	</p><p>
+			© 2024 Keith Bland&nbsp;&nbsp;|&nbsp;&nbsp; 
+							<a href="/index.php/login/">Login</a>
+			            &nbsp;&nbsp;|&nbsp;&nbsp;Website by <a href="http://crushdev.com" target="_blank">CRUSH</a></p><p>
+	</p></div>
+
+</div>
+
+
+
+</body></html>

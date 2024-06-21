@@ -1,0 +1,12 @@
+{
+    "url": "https://investofxcrypto.com/",
+    "question": "Please analyze this URL https://investofxcrypto.com/",
+    "thought": "I need to check the content of the website and determine if it shows any characteristics of a scam website. The website is live and accessible. The website claims to offer unusually high profits with minimal risk, which is a characteristic of a scam website. The website is registered with a privacy protection service, which is a characteristic of a scam website. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake investment site",
+        "reason": "The website claims to offer unusually high profits with minimal risk the domain is registered with a privacy protection service and the information provided is not verifiable."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

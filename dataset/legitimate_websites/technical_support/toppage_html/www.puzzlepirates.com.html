@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="utf-8">
+
+	
+		<title>Puzzle Pirates</title>
+		<style>html {opacity: 0%;} </style>
+		<link rel="stylesheet" type="text/css" href="/static/css/puzzlepirates.css">
+		
+<style>
+	#frame {
+		background: url(/static/images/frame_bg.png) no-repeat;
+		width: 955px;
+		height: 368px;
+		position: relative;
+		top: 375px;
+	}
+	#btn-play {
+		position: absolute;
+		left: 120px;
+		top: 270px
+	}
+	#about-list {
+		font-family: arial, sans serif;
+		font-size: 15px;
+		font-weight: bold;
+		position: absolute;
+		left: 60px;
+		top: 150px;
+		margin-top: 0px;
+		line-height: 26px;
+		list-style-image: url(/static/images/bullet_gold.png);
+	}
+	#box-image {
+		position: absolute;
+		left: 520px;
+		top: 15px;
+	}
+</style>
+<script>
+	var data = {
+		single: {
+			img: "/static/images/boxes_single.en.png",
+			about: [
+				"Join thousands of Pirates online!",
+				"Use single player puzzles to run the Pirate economy!",
+				"Help build ships, Pirate clothing, and cannon balls!",
+				"Try yer hand at each of our 20 puzzles!"
+			]
+		},
+		multi: {
+			img: "/static/images/boxes_multi.png",
+			about: [
+				"Play Puzzles against thousands of other Pirates!",
+				"Fight one on one, in tournaments, and team battles!",
+				"Puzzles for sword fighting, drinking, and more!",
+				"Compete in all seven multi-player puzzles!"
+			]
+		},
+		adventure: {
+			img: "/static/images/boxes_adventures.png",
+			about: [
+				"Sail across the Ocean for fame and fortune!",
+				"Protect your Island from Brigand blockades!",
+				"Cross swords in Atlantis and the Cursed isles!",
+				"Build your own Pirate empire!"
+			]
+		},
+		strategy: {
+			img: "/static/images/boxes_strategy.png",
+			about: [
+				"Fight ship to ship against other players!",
+				"Sink treasure galleons laden with gold!",
+				"Sail to Atlantis and face formidable foes!",
+				"Race to the Cursed Isles to hunt for treasure!"
+			]
+		}
+	}
+
+	function changeTo(newSlide) {
+		var newData = data[newSlide];
+		document.getElementById("box-image").src = newData.img;
+
+		var list = document.getElementById("about-list");
+		var list_elements = list.getElementsByTagName("li");
+		for (var i = 0; i < newData.about.length; i++) {
+			list_elements[i].innerHTML = newData.about[i];
+		}
+
+		if (! (typeof interval === 'undefined')) {
+			clearInterval(interval);
+		}
+		setupInterval();
+	}
+
+	var options = ["single", "multi", "adventure", "strategy"];
+
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * max);
+	}
+
+	function randomload() {
+		var r = getRandomInt(4);
+		var chose = options[r];
+		changeTo(chose);
+	}
+
+	var interval = undefined;
+	function setupInterval() {
+		interval = setInterval(function() {
+			randomload();
+		}, 5000);
+    }
+
+	window.addEventListener('load', setupInterval());
+</script>
+
+	</head>
+	<body>
+		<div id="content">
+			<div id="content-contents">
+				
+<div id="main-press-container">
+	<img id="illustration" src="/static/images/blank.gif">
+	<a href="play.html"><img id="playnow" src="/static/images/blank.gif"></a>
+	<div id="button-array">
+		<img src="/static/images/landing/blue_multi_default.en.png" onmouseout="this.src = '/static/images/landing/blue_multi_default.en.png';" alt="Multiplayer Puzzles" onmouseover="this.src = '/static/images/landing/blue_multi_over.en.png';" onclick="changeTo('multi');">
+		<img src="/static/images/landing/blue_single_default.en.png" onmouseout="this.src = '/static/images/landing/blue_single_default.en.png';" alt="Single Player Puzzles" onmouseover="this.src = '/static/images/landing/blue_single_over.en.png';" onclick="changeTo('single');">
+		<img src="/static/images/landing/blue_adventure_default.en.png" onmouseout="this.src = '/static/images/landing/blue_adventure_default.en.png';" alt="Adventure" onmouseover="this.src = '/static/images/landing/blue_adventure_over.en.png';" onclick="changeTo('adventure');">
+		<img src="/static/images/landing/blue_strategy_default.en.png" onmouseout="this.src = '/static/images/landing/blue_strategy_default.en.png';" alt="Strategy" onmouseover="this.src = '/static/images/landing/blue_strategy_over.en.png';" onclick="changeTo('strategy');">
+	</div>
+</div>
+<div id="frame" style="">
+	<img alt="Puzzle Pirates" src="/static/images/ypp_logo.png" class="ypp_logo" style="position: absolute; left: 70px; top: 30px;">
+	<div id="btn-play">
+		<a href="/play.html">
+			<img src="/static/images/btn_play_default.en.png" onmouseout="this.src = '/static/images/btn_play_default.en.png';" alt="Play Puzzle Pirates" onmouseover="this.src = '/static/images/btn_play_over.en.png';"></a>
+	</div>
+	<ul id="about-list" style="">
+		<li>Play Puzzles against thousands of other Pirates!</li>
+		<li>Fight one on one, in tournaments, and team battles!</li>
+		<li>Puzzles for sword fighting, drinking, and more!</li>
+		<li>Compete in all seven multi-player puzzles!</li>
+	</ul>
+	<img id="box-image" alt="---" src="/static/images/boxes_multi.png"></div>
+
+			</div>
+		</div>
+		<div id="header">
+			<div id="header-contents">
+				<a class="ypp_logo" href="/"><img src="/static/images/pp_logo.en.png" alt="Puzzle Pirates"></a>
+				<div class="nav">
+					<a href="play.html"><img src="/static/images/header/play.en.png" onmouseout="this.src = '/static/images/header/play.en.png';" alt="Play" onmouseover="this.src = '/static/images/header/play_over.en.png';"></a>
+					<a href="about.html"><img src="/static/images/header/about.en.png" onmouseout="this.src = '/static/images/header/about.en.png';" alt="About" onmouseover="this.src = '/static/images/header/about_over.en.png';"></a>
+					<a href="https://blog.puzzlepirates.com/spyglass/"><img src="/static/images/header/news.en.png" onmouseout="this.src = '/static/images/header/news.en.png';" alt="About" onmouseover="this.src = '/static/images/header/news_over.en.png';"></a>
+					<a href="https://forums.puzzlepirates.com"><img src="/static/images/header/forums.en.png" onmouseout="this.src = '/static/images/header/forums.en.png';" alt="About" onmouseover="this.src = '/static/images/header/forums_over.en.png';"></a>
+					<a href="https://yppedia.puzzlepirates.com/Main_Page"><img src="/static/images/header/yppedia.en.png" onmouseout="this.src = '/static/images/header/yppedia.en.png';" alt="About" onmouseover="this.src = '/static/images/header/yppedia_over.en.png';"></a>
+					<a href="help.html"><img src="/static/images/header/help.en.png" onmouseout="this.src = '/static/images/header/help.en.png';" alt="About" onmouseover="this.src = '/static/images/header/help_over.en.png';"></a>
+				</div>
+				<a class="gh_logo" href="http://www.greyhavens.co"><img src="/static/images/grey_havens_logo_64.png" alt="Puzzle Pirates"></a>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer-contents">
+				Puzzle Pirates™ © 2001-2023 Grey Havens, LLC All Rights Reserved.
+	            &nbsp;
+	            <a href="/terms.html"><span class="YPP_hlink">Terms</span></a>
+	            ·
+	            <a href="/privacy.html"><span class="YPP_hlink">Privacy</span></a>
+	        </div>
+		</div>
+	
+</body></html>

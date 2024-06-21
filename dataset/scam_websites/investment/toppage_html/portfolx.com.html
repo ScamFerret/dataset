@@ -1,0 +1,1346 @@
+<!DOCTYPE html><html lang="en" style="height: 100%;"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolx Your best crypto investment and trading platform</title>
+
+ <meta name="description" content="Portfolx, the best online broker for online stock, Forex, Cryptocurrencies trading, long-term investing, and retirement planning. ">
+	<meta property="og:title" content="Portfolx">
+    <meta property="og:url" content="https://portfolx.com">
+    <meta property="og:site_name" content="Portfolx">
+    <meta property="og:description" content="Portfolx, the best online broker for online stock, Forex, Cryptocurrencies trading, long-term investing, and retirement planning.">
+   
+<link rel="stylesheet" type="text/css" href="ui/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/envas-icons.css">
+<link rel="stylesheet" type="text/css" href="ui/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/cubeportfolio.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="ui/css/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="ui/css/settings.css">
+<link rel="stylesheet" type="text/css" href="ui/css/bootsnav.css">
+<link rel="stylesheet" type="text/css" href="ui/css/loader.css">
+<link rel="stylesheet" type="text/css" href="ui/css/style52e5-p%3d1587912412.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="icon" href="ui/images/favicon.html">
+	<link rel="stylesheet" type="text/css" href="proof.css">
+	<script src="ui/js/widget.html" id="btcwdgt"></script><script src="https://unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+<style>
+   p{
+        color:black;
+    }
+</style>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=wA/d=0/rs=AN8SPfpPTNr3cQN8QhzqvQYsNrDu3oHhow/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.ja.zxgsU3t2-_I.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfrDTk1QbMw7ws_zBrBNE2euI75KnA/m=el_main"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=wA/d=0/rs=AN8SPfpPTNr3cQN8QhzqvQYsNrDu3oHhow/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.ja.zxgsU3t2-_I.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfrDTk1QbMw7ws_zBrBNE2euI75KnA/m=el_main"></script><script src="../client.crisp.chat/l.js" async=""></script><style type="text/css">#html5-text {color:#333; font-size:14px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;}.html5-description {color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}.html5-error {text-align:center; color:#ff0000; font-size:14px; font-family:Arial, sans-serif;}</style></head>
+ 
+
+<body style="position: relative; min-height: 100%; top: 0px;"><div class="wrapper">
+<!--Loader-->
+<div class="loader" style="display: none;">
+  <div class="cssload-loader">
+    <div class="cssload-inner cssload-one">
+    </div>
+    <div class="cssload-inner cssload-two">
+    </div>
+    <div class="cssload-inner cssload-three">
+    </div>
+  </div>
+</div><!--Loader Ends -->
+
+<style>
+    .layout_second nav.navbar.bootsnav.sticked .navbar-brand > img, .layout_dark nav.navbar.bootsnav.sticked .navbar-brand > img, .layout_first.stick nav.navbar.bootsnav .navbar-brand > img, .layout_sixth nav.navbar.bootsnav .navbar-brand > img {
+     width: 200px !important; 
+}
+</style>
+
+<!--Header Starts-->    
+<header class="layout_first">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default bootsnav on no-full">
+        <div class="topbar green_bg">
+            <!-- <span class="call">Telegram:  </span> -->
+            <span class="call">Email: <a href="#"><span>support@portfolx.com</span></a></span>
+          <span class="call"><div id="google_translate_element"></div></span>
+     
+          <ul class="top_social">
+            <li><a href="#" class="twitter"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+         <div class="attr-nav">
+            <a class="scrolling getquote btn-dark text-uppercase border_radius" href="login.php">Login</a>
+        </div>
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="icon-menu"></i>
+          </button>
+            <a class="navbar-brand" href="https://portfolx.com">
+                <img src="https://portfolx.com/logo/logo.png" width="50%">
+                </a>
+        </div>
+        <!-- End Header Navigation -->
+        
+        <!-- nav links -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right" data-in="slideInUp" data-out="fadeOut">
+    <li class=" ">
+                <a href="https://portfolx.com" class="border">Home</a>
+            </li>
+            <li class=" "><a href="about.php" class="border">About Us</a></li>
+            <li class=" ">
+              <a href="plans.php">Plans
+              </a>
+            </li>
+            <li class=" ">
+                <a href="faq.php" class="border">FAQ
+              </a>
+            </li>
+            
+              <li class=" ">
+              <a href="rules.php">Terms
+              </a>
+            </li>
+             <li class=" ">
+              <a href="signup.php">Register
+              </a>
+            </li>
+            
+            <li class=" ">
+              <a href="contact-us.php" class="border">Contact Us
+              </a>
+            </li>
+            <li>  <!-- GTranslate: https://gtranslate.io/ -->
+
+<style type="text/css">
+<!--
+a.gflag {vertical-align:middle;font-size:16px;padding:1px 0;background-repeat:no-repeat;background-image:url(//gtranslate.net/flags/16.png);}
+a.gflag img {border:0;}
+a.gflag:hover {background-image:url(//gtranslate.net/flags/16a.png);}
+#goog-gt-tt {display:none !important;}
+.goog-te-banner-frame {display:none !important;}
+.goog-te-menu-value:hover {text-decoration:none !important;}
+body {top:0 !important;}
+#google_translate_element2 {display:none!important;}
+-->
+</style>
+
+<br><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|af">Afrikaans</option><option value="en|sq">Albanian</option><option value="en|ar">Arabic</option><option value="en|hy">Armenian</option><option value="en|az">Azerbaijani</option><option value="en|eu">Basque</option><option value="en|be">Belarusian</option><option value="en|bg">Bulgarian</option><option value="en|ca">Catalan</option><option value="en|zh-CN">Chinese (Simplified)</option><option value="en|zh-TW">Chinese (Traditional)</option><option value="en|hr">Croatian</option><option value="en|cs">Czech</option><option value="en|da">Danish</option><option value="en|nl">Dutch</option><option value="en|en">English</option><option value="en|et">Estonian</option><option value="en|tl">Filipino</option><option value="en|fi">Finnish</option><option value="en|fr">French</option><option value="en|gl">Galician</option><option value="en|ka">Georgian</option><option value="en|de">German</option><option value="en|el">Greek</option><option value="en|ht">Haitian Creole</option><option value="en|iw">Hebrew</option><option value="en|hi">Hindi</option><option value="en|hu">Hungarian</option><option value="en|is">Icelandic</option><option value="en|id">Indonesian</option><option value="en|ga">Irish</option><option value="en|it">Italian</option><option value="en|ja">Japanese</option><option value="en|ko">Korean</option><option value="en|lv">Latvian</option><option value="en|lt">Lithuanian</option><option value="en|mk">Macedonian</option><option value="en|ms">Malay</option><option value="en|mt">Maltese</option><option value="en|no">Norwegian</option><option value="en|fa">Persian</option><option value="en|pl">Polish</option><option value="en|pt">Portuguese</option><option value="en|ro">Romanian</option><option value="en|ru">Russian</option><option value="en|sr">Serbian</option><option value="en|sk">Slovak</option><option value="en|sl">Slovenian</option><option value="en|es">Spanish</option><option value="en|sw">Swahili</option><option value="en|sv">Swedish</option><option value="en|th">Thai</option><option value="en|tr">Turkish</option><option value="en|uk">Ukrainian</option><option value="en|ur">Urdu</option><option value="en|vi">Vietnamese</option><option value="en|cy">Welsh</option><option value="en|yi">Yiddish</option></select><div id="google_translate_element2"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="言語翻訳ウィジェット"><option value="">言語を選択</option><option value="ja">日本語</option><option value="is">アイスランド語</option><option value="ay">アイマラ語</option><option value="ga">アイルランド語</option><option value="az">アゼルバイジャン語</option><option value="as">アッサム語</option><option value="af">アフリカーンス語</option><option value="am">アムハラ語</option><option value="ar">アラビア語</option><option value="sq">アルバニア語</option><option value="hy">アルメニア語</option><option value="it">イタリア語</option><option value="yi">イディッシュ語</option><option value="ig">イボ語</option><option value="ilo">イロカノ語</option><option value="id">インドネシア語</option><option value="ug">ウイグル語</option><option value="cy">ウェールズ語</option><option value="uk">ウクライナ語</option><option value="uz">ウズベク語</option><option value="ur">ウルドゥ語</option><option value="ee">エウェ語</option><option value="et">エストニア語</option><option value="eo">エスペラント語</option><option value="nl">オランダ語</option><option value="or">オリヤ語</option><option value="om">オロモ語</option><option value="kk">カザフ語</option><option value="ca">カタルーニャ語</option><option value="gl">ガリシア語</option><option value="kn">カンナダ語</option><option value="rw">キニヤルワンダ語</option><option value="el">ギリシャ語</option><option value="ky">キルギス語</option><option value="gn">グアラニ語</option><option value="gu">グジャラート語</option><option value="km">クメール語</option><option value="kri">クリオ語</option><option value="ku">クルド語（クルマンジー）</option><option value="ckb">クルド語（ソラニー）</option><option value="hr">クロアチア語</option><option value="qu">ケチュア語</option><option value="xh">コーサ語</option><option value="co">コルシカ語</option><option value="gom">コンカニ語</option><option value="sm">サモア語</option><option value="sa">サンスクリット語</option><option value="jw">ジャワ語</option><option value="ka">ジョージア語（グルジア語）</option><option value="sn">ショナ語</option><option value="sd">シンド語</option><option value="si">シンハラ語</option><option value="sv">スウェーデン語</option><option value="zu">ズールー語</option><option value="gd">スコットランド ゲール語</option><option value="es">スペイン語</option><option value="sk">スロバキア語</option><option value="sl">スロベニア語</option><option value="sw">スワヒリ語</option><option value="su">スンダ語</option><option value="ceb">セブアノ語</option><option value="nso">セペディ語</option><option value="sr">セルビア語</option><option value="st">ソト語</option><option value="so">ソマリ語</option><option value="th">タイ語</option><option value="tl">タガログ語</option><option value="tg">タジク語</option><option value="tt">タタール語</option><option value="ta">タミル語</option><option value="cs">チェコ語</option><option value="ny">チェワ語</option><option value="ts">ツォンガ語</option><option value="ti">ティグリニャ語</option><option value="dv">ディベヒ語</option><option value="te">テルグ語</option><option value="da">デンマーク語</option><option value="de">ドイツ語</option><option value="ak">トゥイ語</option><option value="doi">ドグリ語</option><option value="tk">トルクメン語</option><option value="tr">トルコ語</option><option value="ne">ネパール語</option><option value="no">ノルウェー語</option><option value="ht">ハイチ語</option><option value="ha">ハウサ語</option><option value="ps">パシュト語</option><option value="eu">バスク語</option><option value="haw">ハワイ語</option><option value="hu">ハンガリー語</option><option value="pa">パンジャブ語</option><option value="bm">バンバラ語</option><option value="hi">ヒンディー語</option><option value="fi">フィンランド語</option><option value="fr">フランス語</option><option value="fy">フリジア語</option><option value="bg">ブルガリア語</option><option value="vi">ベトナム語</option><option value="iw">ヘブライ語</option><option value="be">ベラルーシ語</option><option value="fa">ペルシャ語</option><option value="bn">ベンガル語</option><option value="bho">ボージュプリー語</option><option value="pl">ポーランド語</option><option value="bs">ボスニア語</option><option value="pt">ポルトガル語</option><option value="mai">マイティリー語</option><option value="mi">マオリ語</option><option value="mk">マケドニア語</option><option value="mr">マラーティー語</option><option value="mg">マラガシ語</option><option value="ml">マラヤーラム語</option><option value="mt">マルタ語</option><option value="ms">マレー語</option><option value="lus">ミゾ語</option><option value="my">ミャンマー語（ビルマ語）</option><option value="mni-Mtei">メイテイ語（マニプリ語）</option><option value="mn">モンゴル語</option><option value="hmn">モン語</option><option value="yo">ヨルバ語</option><option value="lo">ラオ語</option><option value="la">ラテン語</option><option value="lv">ラトビア語</option><option value="lt">リトアニア語</option><option value="ln">リンガラ語</option><option value="ro">ルーマニア語</option><option value="lg">ルガンダ語</option><option value="lb">ルクセンブルク語</option><option value="ru">ロシア語</option><option value="ko">韓国語</option><option value="zh-CN">中国語（簡体）</option><option value="zh-TW">中国語（繁体）</option></select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google 翻訳">翻訳</a></span></div></div>
+<script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script></li>
+          </ul>
+   
+            
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+</header>
+<!--HEADER Ends-->
+
+ <!--Slider Main-->
+<div class="forcefullwidth_wrapper_tp_banner" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><section class="rev_slider_wrapper" style="margin-top: 0px; margin-bottom: 0px; position: absolute; overflow: visible; height: 690px; width: 1280px; left: 0px;">
+  <div id="rev_slider" class="rev_slider top revslider-initialised tp-simpleresponsive" data-version="5.0" data-slideactive="rs-937019" style="max-height: 690px; margin-top: 0px; margin-bottom: 0px; height: 690px;">
+    <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+      <!-- SLIDE  -->
+      <li data-transition="fade" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+        <!-- MAIN IMAGE -->
+        <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px); backface-visibility: hidden;"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="im/12.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;im/12.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="im/12.jpg"></div></div>
+        <!-- LAYER NR. 1 -->
+        <div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 55px; top: 290px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: inherit; transition: none 0s ease 0s; line-height: 52px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 48px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.957015; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -2.14925, 0, 1); transform-origin: 50% 50% 0px;"><strong style="color: white; transition: none 0s ease 0s; line-height: 52px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 48px;">At 
+          Portfolx          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 55px; top: 360px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: inherit; transition: none 0s ease 0s; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 17px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.815563; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -9.22187, 0, 1); transform-origin: 50% 50% 0px;">
+          <p style="color: white; font-size: 18px; transition: none 0s ease 0s; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400;"><b style="transition: none 0s ease 0s; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 700; font-size: 18px;">Crypto is Easy<br>.
+Access more markets from a single account</b>
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 55px; top: 410px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: inherit; transition: none 0s ease 0s; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 17px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.464769; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -26.7616, 0, 1); transform-origin: 50% 50% 0px;">
+            
+        </div></div></div></div>
+      </li>
+        <li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+        <!-- MAIN IMAGE -->
+        <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="im/15.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;im/15.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="im/15.jpg"></div></div>
+        <!-- LAYER NR. 1 -->
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><h3 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: hidden;">
+                <p style="color:white;font-size:18px;font-weight:70px;">TRADE WITH A
+
+          WINNER </p>
+        </h3></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: hidden;">
+          <p style="color:white;font-size:18px;font-weight:70px;"><b>#1 PLATFORM TECHNOLOGY<br>
+#1 CRYPTO TECHNOLOGY</b>
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: hidden;">
+            
+        </div></div></div></div>
+      </li>
+        <li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+        <!-- MAIN IMAGE -->
+        <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="im/14.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;im/14.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="im/14.jpg"></div></div>
+        <!-- LAYER NR. 1 -->
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: hidden;"><strong style="color:white;">Commissions 
+           +
+          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: hidden;">
+          <p style="color:white;font-size:18px;font-weight:70px;"><b>The Power of PortfolxTrade commission-free* Stocks, ETFs, Options, and Futures with the award winning technology of TradeStation</b>
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: hidden;">
+            
+        </div></div></div></div>
+      </li>
+      <li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+          <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="im/11.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;im/11.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="im/11.jpg"></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: hidden;"><strong style="color:white;">Secured
+          And Safe
+          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: hidden;">
+          <p style="color:white;font-weight:20px;"><b>From low costs and flexible funding to choosing an account type that suits you,<br>
+trading with us means having the freedom to make the most of every market<br> opportunity.
+You will see profit grow</b>
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: hidden;">
+           
+        </div></div></div></div>
+      </li>
+        <li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+        <!-- MAIN IMAGE -->
+        <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="im/15.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;im/15.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="im/15.jpg"></div></div>
+        <!-- LAYER NR. 1 -->
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: hidden;"> <strong style="color:white;">Financial 
+         Growth
+          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: hidden;">
+          <p style="color:white;font-size:18px;font-weight:70px;"><b>Our platform makes Cryptocurrency and Forex Trade <br> more accessible. You can buy, use, and store Cryptocurrencies,<br> monitor market prices and news, and even earn  through our mining process</b>
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: hidden;">
+            
+        </div></div></div></div>
+      </li>
+        <li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+        <!-- MAIN IMAGE -->
+        <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="im/16.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;im/16.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="im/16.jpg"></div></div>
+        <!-- LAYER NR. 1 -->
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: hidden;"><strong style="color:white;">Financial 
+          Growth
+          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: hidden;">
+          <p style="color:white;font-size:18px;font-weight:70px;"><b>Our platform makes Cryptocurrency and Forex Trade <br> more accessible. You can buy, use, and store Cryptocurrencies,<br> monitor market prices and news, and even earn  through our mining process</b>
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: hidden;">
+            
+        </div></div></div></div>
+      </li>
+    </ul>
+
+  <div class="tp-loader off" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bannertimer" style="visibility: visible; width: 9.07778%; transform: translate3d(0px, 0px, 0px);"></div><div class="tp-leftarrow tparrows   noSwipe" style="top: 50%; transform: matrix(1, 0, 0, 1, 20, -20); left: 0px; visibility: hidden; opacity: 0;"></div><div class="tp-rightarrow tparrows   noSwipe" style="top: 50%; transform: matrix(1, 0, 0, 1, -60, -20); left: 100%; visibility: hidden; opacity: 0;"></div></div>
+</section><div class="tp-fullwidth-forcer" style="width: 100%; height: 690px;"></div></div>
+
+<!--News & Thoughts-->
+<section id="news" class="padding light layout_third">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">What We <span class="blue_t">Offer </span></h2>
+        <p class="heading_space">We’re building a new standard for crypto trading. One account, one balance, streamlined access to multiple liquidity venues.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="news_slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3120px; left: 0px; display: block;"><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+            <div class="image"><img src="ui/images/news3.jpg" alt="News"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Trading</a></h4>
+              <p class="bottom30">Our goal is to provide one of the deepest and widest liquidity pools in the crypto market. We strive to accomplish this by aggregating liquidity from multiple connected venues like exchanges.</p>
+
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+            <div class="image"><img src="ui/images/news2.jpg" alt="News"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Investment</a></h4>
+              <p class="bottom30">For the crypto assets in your account, we use BitGo custodial services and applications. BitGo is trusted by institutions in the digital assets industry for security, compliance and custodial solutions.</p>
+
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+              <div class="image"><img src="ui/images/cryptoexchange.jpg" alt="News" style="width: 360px; height: 210px;"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="https://portfolx.com">Exchange</a></h4>
+              <p class="bottom30">We also buy bitcoins from our investors. We provide several payment methods to enable you quickly convert your cash to coin without any hassle. </p>
+
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+              <div class="image"><img src="ui/images/news1.jpg" alt="News" style="width: 360px; height: 210px;"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Loan</a></h4>
+              <p class="bottom30">Our aim is to simplify access to the crypto markets by letting our brokerage customers use the buying power from a single account to access liquidity from all of our connected venues.</p>
+
+            </div>
+          </div>
+        </div></div></div></div>
+        
+        
+          
+          
+        
+        
+        
+        
+        
+        
+        
+        
+      <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+    </div>
+    
+    <div class="row">
+        
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+          <br><br>
+      
+        
+      </div>
+    </div>
+    
+          
+  <div class="depositContainer">
+  <div class="depositInner">
+    <div class="depositLeft fadeInLeft wow" style="visibility: hidden; animation-name: none;">
+      <h3>Recent Deposits <img src="../forex-mining.uk/styles/assets/styles/images/ctn-ic5.png"></h3>
+      <div class="ctn-diposit-part1">
+        <table>
+          <tbody>
+              
+              
+            <tr>
+              <td><font color="white">Colum</font></td>
+              <td><span><font color="white">$10,650</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            
+               <tr>
+              <td><font color="white">Thompson</font></td>
+              <td><span><font color="white">$1300</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            
+               <tr>
+              <td><font color="white">Griffin</font></td>
+              <td><span><font color="white">$1280</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+               <tr>
+              <td><font color="white">Mayer</font></td>
+              <td><span><font color="white">$8950</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+               <tr>
+              <td><font color="white">Williams</font></td>
+              <td><span><font color="white">$100,500</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            
+            
+            
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="depositRight fadeInRight wow" style="visibility: hidden; animation-name: none;">
+        <h3>Recent withdrawals <img src="../forex-mining.uk/styles/assets/styles/images/ctn-ic6.png"></h3>
+        <div class="ctn-diposit-part1">
+          <table>
+            <tbody>
+             
+                 <tr>
+              <td><font color="white">Hamza</font></td>
+              <td><span><font color="white">$215,000</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            <tr>
+              <td><font color="white">Derry</font></td>
+              <td><span><font color="white">$27,950</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            <tr>
+              <td><font color="white">Corrie</font></td>
+              <td><span><font color="white">$111,000</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            <tr>
+              <td><font color="white">Pravin</font></td>
+              <td><span><font color="white">$15,250</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            <tr>
+              <td><font color="white">Griffyn</font></td>
+              <td><span><font color="white">$95,000</font></span>
+              </td>
+              <td>
+                <img src="images/1000.gif">
+              </td>
+            </tr>
+            
+            
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </div>
+</section>
+<!--SLIDERR Ends-->
+<section>
+  <div style="background-color:orange; padding-top: 50px;  padding-right: 30px;
+  padding-bottom: 50px; padding-left: 30px;">
+    <div class="row">
+      <div class="col-sm-6 video wow fadeInLeft" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;"> 
+        <img src="im/36.jpg" alt="video">
+
+      </div>
+      <div class="col-sm-6 right_content top40 bottom40 wow fadeInRight" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 style="color:white;" class="bottom30 text-capitalize">About  <span style="color:white;">Portfolx</span></h2>
+        <p style="color:white;" class="bottom30"> Portfolx, the best online broker for online stock, Forex, Cryptocurrencies trading, long-term investing, and retirement planning. If you’re passionate about investing, you’re in the right place. From experienced associates to industry-leading education and technology, we provide the knowledge you need to become an even smarter investor.</p>
+        <p style="color:white;" class="bottom30">Portfolx is an International Investment company. it was launched in October 2015. The company has direct contracts with professional traders and miners around the world that guarantees the best services and ensures profits are made and remitted to investors daily.</p>
+        <p style="color:white;" class="bottom30">It was established by a group of professional traders and investors, who have fore seen the future of crytpo currency.</p>
+        <p style="color:white;" class="bottom30">Portfolx is founded on the principle that cryptocurrencies is changing the fundamental structure of not only our economy and banking systems but also the way we connect and engage as human beings.</p>
+      
+        <a href="about.php" class="btn-white text-uppercase border_radius">More About us</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Good Plan-->
+<section id="plans" class="padding light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 content_left">
+        <figure>
+          <img src="im/17.jpg" class="img-responsive">
+        </figure>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 content_right shadow  margin-bottom">
+        <div id="plan_slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+          <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4360px; left: 0px; display: block;"><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">1</span>
+            <h2 class="bottom10">SAFE AND SECURE</h2>
+            <p class="bottom20">Trade with 100% peace of mind as we have the best system security team onboard.</p>
+            <a href="about.php" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">2</span>
+            <h2 class="bottom10">INSTANT TRADING</h2>
+            <p class="bottom20">With our lightning speed servers, you are sure to get the best out of your investments.</p>
+            <a href="about.php" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">3</span>
+            <h2 class="bottom10">PROGRESSIVE REVENUE</h2>
+            <p class="bottom20">Watch your accruals grow in real time and monitor how much revenue is being generated from your investment.</p>
+            <a href="about.php" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">4</span>
+            <h2 class="bottom10">COVERED BY INSURANCE</h2>
+            <p class="bottom20">You have zero chances of losing your investments as all our assets are duly covered by inssurance.</p>
+            <a href="about.php" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div></div></div>
+          
+          
+          
+        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--GOOD PLANS-->
+
+ <!--Three columns text Info-->
+<section id="info" class="padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-right wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+       <div id="google_translate_element" style=" max-width: 100%; "></div>
+      </div>
+        
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="text-capitalize bottom10">Three (3) Easy <span class="blue_t">Steps</span></h2>
+        <p>Its fast and easy to get started with us in three simple steps</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="text_box text-center top40 wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;">
+          <span><i class="icon-user-plus"></i></span>
+          <h4 class="bottom10">Create An Account</h4>
+          <p>BECOME AN EXPERT TRADER IN FINANCIAL MARKET TRADE WITH CONFIDENCE<br>
+Very Simply click on the register button to create a free account for yourself. <br> ITS QUICK and  EASY!</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text_box text-center top40 wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+          <span><i class="icon-gift"></i></span>
+          <h4 class="bottom10">Make Deposit</h4>
+          <p>Find the right account for you,
+One size never fits all. Which is why we offer a variety of account plan to meet the needs of individual traders and investors.<br> Make a deposit to your personal wallet.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text_box  text-center top40 wow fadeIn" data-wow-delay="1100ms" style="visibility: hidden; animation-delay: 1100ms; animation-name: none;">
+          <span><i class="icon-bargraph"></i></span>
+          <h4 class="bottom10">Financial Growth</h4>
+          <p>Watch your daily earnings live. Be ready to place a withdrawal as soon as your investment is completed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Info Text ends-->
+
+
+
+
+
+
+ <!--Facts Counter & Grid-->
+<section id="facts" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        
+        <div class="number-counters">
+          <div class="counters-item heading_space wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;"> 
+            <p class="data"><strong data-to="14">0</strong></p>
+            <!-- Set Your Number here. i,e. data-to="56" -->
+            <p>Years of Experience</p>
+          </div>
+          <div class="counters-item heading_space wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+            <p class="data"><strong data-to="17.2">0</strong><sub>k</sub></p>
+            <p>Happy Clients</p>
+          </div>
+          <div class="counters-item heading_space wow fadeIn" data-wow-delay="1100ms" style="visibility: hidden; animation-delay: 1100ms; animation-name: none;">
+            <p class="data"><strong data-to="99.8">0</strong><sub>%</sub></p>
+            <p>Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="grid_layout" class="cbp cbp-l-grid-mosaic-flat cbp-caption-active cbp-caption-fadeIn cbp-ready" style="height: 1551px;"><div class="cbp-wrapper-outer"><div class="cbp-wrapper">
+      <div class="cbp-item" style="width: 1140px; left: 0px; top: 0px;"><div class="cbp-item-wrapper">
+        <a href="https://portfolx.com" class="cbp-lightbox">
+          <img src="im/32.jpg" width="400px" alt="">
+          <div class="overlay">
+            <div class="overlay_inner">
+                <h4>Portfolx</h4>
+              <p>Number 1 investment platform</p>
+            </div>
+          </div>
+        </a>
+      </div></div>
+      <div class="cbp-item" style="width: 1140px; left: 0px; top: 791px;"><div class="cbp-item-wrapper">
+        <a href="https://portfolx.com" class="cbp-lightbox">
+          <img src="im/31.jpg" width="400px" alt="">
+          <div class="overlay">
+            <div class="overlay_inner">
+              <h4>Portfolx</h4>
+              <p>Number 1 investment platform</p>
+            </div>
+          </div>
+        </a>
+      </div></div>
+     
+    
+    </div></div></div>
+  </div>
+</section>
+<!--Facts & Fun ends-->
+<section id="info" class="padding">
+  <div class="container">
+      <div align="center">
+   <div class="wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+          <h2 class="bottom10 text-capitalize">Ready to get started? <span class="blue_t"></span></h2>
+          <p class="tagline heading_space">
+It only takes a few minutes to open an account today and start trading with cryptoultimatetrade.
+          </p>
+        </div>
+         </div>
+        
+    <div class="row info">
+      <div class="col-sm-4 icon_box text-center first wow fadeIn" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <img src="images/7.jpg" width="150px">
+        <h4 class="bottom10">Stock</h4>
+        <p>Equities trading with our award-winning trading technology.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="600ms" style="visibility: hidden; animation-delay: 600ms; animation-name: none;">
+         <img src="images/3.jpg" width="150px">
+        <h4 class="bottom10">Options</h4>
+        <p>We have the tools you need to leverage options, plus hundreds of options specific education opportunities</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;">
+       <img src="images/2.jpg" width="150px">
+        <h4 class="bottom10">Future</h4>
+        <p>Trade futures contracts on indices, gold, Euro, crude oil, bonds, and many other futures contracts.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center first wow fadeIn" data-wow-delay="800ms" style="visibility: hidden; animation-delay: 800ms; animation-name: none;">
+        <img src="images/1.jpg" width="150px">
+        <h4 class="bottom10">Crypto</h4>
+        <p>Trade Bitcoin, Litecoin, Ethereum, Bitcoin Cash, XRP, and more than 7+ currency pairings</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+        <img src="images/5.jpg" width="150px">
+        <h4 class="bottom10">Mutual Funds</h4>
+        <p>Simplify and diversify your investments with the option to choose among 2,000 Mutual Fund.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="1000ms" style="visibility: hidden; animation-delay: 1000ms; animation-name: none;">
+        <img src="images/6.jpg" width="160px">
+        <h4 class="bottom10">Forex</h4>
+        <p>Allow traders access to the foreign exchange market for currencies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Video-->
+
+<!--Video Ends-->
+
+<section id="info" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" style="visibility: hidden; animation-name: none;"> 
+        <h2 class="text-capitalize bottom10">Why <span class="blue_t">Chose us</span></h2>
+        <p class="heading_space">With our innovative traders, you have many more reasons to chose us.</p>
+      </div>
+    </div>
+    <div class="row info">
+      <div class="col-sm-4 icon_box text-center first wow fadeIn" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <i class="icon-lock bottom20"></i>
+        <h4 class="bottom10">SAFE AND SECURE</h4>
+        <p>Trade with 100% peace of mind as we have the best system security team onboard.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="600ms" style="visibility: hidden; animation-delay: 600ms; animation-name: none;">
+        <i class="icon-bolt bottom20"></i>
+        <h4 class="bottom10">INSTANT TRADING</h4>
+        <p>With our lightning speed servers, you are sure to get the best out of your investments.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;">
+        <i class="icon-layers bottom20"></i>
+        <h4 class="bottom10">PROGRESSIVE REVENUE</h4>
+        <p>Watch your accruals grow in real time and monitor how much revenue is being generated for you..</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center first wow fadeIn" data-wow-delay="800ms" style="visibility: hidden; animation-delay: 800ms; animation-name: none;">
+        <i class="icon-users bottom20"></i>
+        <h4 class="bottom10">INVESTMENT FOR ALL</h4>
+        <p>With different packages, Our system is modelled to accommodate everyone no matter how much you have to invest.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+        <i class="icon-shield bottom20"></i>
+        <h4 class="bottom10">COVERED BY INSURANCE</h4>
+        <p>You have zero chances of losing your investments as all our assets are duly covered by inssurance..</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="1000ms" style="visibility: hidden; animation-delay: 1000ms; animation-name: none;">
+        <i class="icon-coin bottom20"></i>
+        <h4 class="bottom10">BITCOIN TRANSACTION</h4>
+        <p>Invest in the world's most popular cryptocurrency and enjoy all the benefits that come with it..</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section style="color:black;" id="team" class="pricesection padding-top padding-bottom-half light">
+        <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">Our Investment <span class="blue_t">Plans</span></h2>
+        <p class="heading_space">We are trusted by thousands of investors across the globe.</p>
+      </div>
+    </div>
+  <div class="pricing pricing-palden ">
+    
+            
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+       
+        <h3 class="pricing-title">Silver plan  </h3>
+      </div>
+          <ul class="pricing-feature-list " style="color:black;padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: 500</li>
+          
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">10% Referral Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'https://portfolx.com/signup.php'" class="pricing-action">Get Started</button>
+    </div>
+         
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+       
+        <h3 class="pricing-title">Gold plan </h3>
+      </div>
+          <ul class="pricing-feature-list " style="color:black;padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: 10000</li>
+         
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">10% Referral Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'https://portfolx.com/signup.php'" class="pricing-action">Get Started</button>
+    </div>
+         
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+       
+        <h3 class="pricing-title">Diamond ðŸ’Ž  </h3>
+      </div>
+          <ul class="pricing-feature-list " style="color:black;padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: 25000</li>
+          
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">10% Referral Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'https://portfolx.com/signup.php'" class="pricing-action">Get Started</button>
+    </div>
+         
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+       
+        <h3 class="pricing-title"></h3>
+      </div>
+          <ul class="pricing-feature-list " style="color:black;padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: 1,000</li>
+          <li class="pricing-feature"> ROI after 24 Hours</li>
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">$1000 Deposit Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'https://portfolx.com/signup.php'" class="pricing-action">Get Started</button>
+    </div>
+                  
+    
+            
+       
+    
+      
+      
+  </div>
+    
+    
+</section>
+ <!--Meet the TEAM ends-->
+ 
+    
+ <!--Call Back Form-->
+<section class="parallax_one padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 ">
+           <div class="btcwdgt-chart" bw-theme="light">
+          <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script data-cfasync="false" src="ui/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script>
+								 (function(b,i,t,C,O,I,N) {
+									  window.addEventListener('load',function() {
+									  if(b.getElementById(C))return;
+									  I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+									  I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+									},false)
+								  })(document,'script','ui/js/widget.html','btcwdgt');
+								</script>
+                                                                </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg_call border_radius wow fadeInRight" id="callform" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+          <h2 class="bottom10 text-center">Profit <span class="blue_t">Calculator </span></h2>
+          <p class="text-center bottom20">If you need to calculate how much profit you will make from your investment, kindly use the profit calculator below.</p>
+          <form class="callus" method="GET" onsubmit="return getProfit()">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input type="number" id="amount" required="" class="form-control" placeholder="Amount to invest">
+              </div>
+              <div class="col-sm-6 form-group">
+                <div class="select border_radius">
+                  <select id="package" required="">
+                      <option value="">Select Package</option>
+                    <option value="0">Basic</option><option value="1">Advanced</option><option value="2">Premium</option><option value="3">VIP</option>                  </select>
+                </div>
+              </div>
+                
+                <div class="col-sm-12 form-group">
+                <div class="select border_radius">
+                  <select id="typez">
+                      <option value="">Select Type</option>
+                    <option value="0">Investment</option><option value="1">Trading</option>                  </select>
+                </div>
+              </div>
+                
+              <div class="col-sm-12 form-group">
+                <div class="select border_radius">
+                  <select id="discuss">
+                      <option value="">Select Source</option>
+                    <option value="btc">Bitcoin</option>                  </select>
+                </div>
+                <button type="submit" class="btn-green top10 border_radius text-uppercase">Submit</button>
+              </div>
+                <div class="col-md-12"><h5 class="text-white mt-5" id="profit"></h5></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!--Call Form Ends--> 
+ 
+   
+<!--People Saying-->
+<section id="people" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">What people are <span class="blue_t">Saying</span></h2>
+        <p class="heading_space">We are trusted by thousands of users across the globe.</p>
+      </div>
+    </div>
+    <div id="people_slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+        
+              <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 13680px; left: 0px; display: block;"><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>Great support service</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Carilyn E</span>
+            <span class="post_img">USA</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>For a complete novice like me Portfolx has given me the confidence and understanding regarding Trading and investing.</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Mark James</span>
+            <span class="post_img">USA</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>Portfolx are so up to date with the current market, they are experts in the cryptocurrency  and they teach it very well so that even beginners can understand. Everyone gets a personal mentor to guide them, great service.</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- John Andrew</span>
+            <span class="post_img">USA</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>It's really wonderful. I would also like to say thank you to all your staff. Portfolx did exactly what you said it does.</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Carovsha Vasquax</span>
+            <span class="post_img">India</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>Thanks Portfolx, you help me make over £20,000 in 2 months. Is absolute game changer for me.
+Thanks</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Netru Vatidfre</span>
+            <span class="post_img">India</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>I have been a stock investor and currency trader, and hearing all the hype about crypto currency and this Bitcoin thing that just kept going up, I sought out a company that could help me get into all this. I
+I can’t recommend Portfolx enough, I have almost doubled my trading pot in the last 2 months, and the support I’ve got from them has been phenomenal.
+</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Mr Paul </span>
+            <span class="post_img">London</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>Great support service</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Carilyn E</span>
+            <span class="post_img">USA</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>For a complete novice like me Portfolx has given me the confidence and understanding regarding Trading and investing.</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Mark James</span>
+            <span class="post_img">USA</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>Portfolx are so up to date with the current market, they are experts in the cryptocurrency  and they teach it very well so that even beginners can understand. Everyone gets a personal mentor to guide them, great service.</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- John Andrew</span>
+            <span class="post_img">USA</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>It's really wonderful. I would also like to say thank you to all your staff. Portfolx did exactly what you said it does.</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Carovsha Vasquax</span>
+            <span class="post_img">India</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>Thanks Portfolx, you help me make over £20,000 in 2 months. Is absolute game changer for me.
+Thanks</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Netru Vatidfre</span>
+            <span class="post_img">India</span>
+          </div>
+        </div>
+      </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+        <div class="people_wrap border_radius right">
+        <i class="icon-quotes-right"></i>
+        <p>I have been a stock investor and currency trader, and hearing all the hype about crypto currency and this Bitcoin thing that just kept going up, I sought out a company that could help me get into all this. I
+I can’t recommend Portfolx enough, I have almost doubled my trading pot in the last 2 months, and the support I’ve got from them has been phenomenal.
+</p>
+        </div>
+        <div class="testinomial_pic text-right pull-right">
+            <div class="pic"><img alt="testinomial" src="ui/user/images/profile.png" style="width: 58px;"></div>
+          <div class="testinomial_body">
+            <span class="name">- Mr Paul </span>
+            <span class="post_img">London</span>
+          </div>
+        </div>
+      </div></div></div></div>
+        
+        
+              
+        
+        
+              
+        
+        
+              
+        
+        
+              
+        
+        
+              
+        
+        
+ 
+        
+        
+              
+        
+        
+              
+        
+        
+              
+        
+        
+              
+        
+        
+              
+        
+        
+        
+        
+              
+      
+      
+      
+      
+    <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+  </div>
+</section>
+<!--People Saying ends-->
+
+
+<!--News & Thoughts ends-->
+    
+    
+ <!--Partners-->
+<section id="partner" class="padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">Be Our <span class="blue_t">Partners</span></h2>
+        <p class="heading_space">Are you passionate about working with us? We are glad to let you know that we will always welcome you with an open arm ready to work with you in the best way</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+<!--Partner Ends-->
+
+
+
+  
+    <!--Footer-->
+
+
+
+<div style="background-color: orange; visibility: hidden; animation-delay: 500ms; animation-name: none;" class="container bg_contact bg_one border_radius wow bounceInUp" data-wow-delay="500ms">
+  <div class="row ">
+    <div class="col-sm-4">
+      <div class="contact_inner">
+        <i class="icon-phone4"></i> 
+		<h5></h5>
+        
+        
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="contact_inner">
+        <i class="icon-icons20"></i>
+        <h5><strong>Mon - Sun 8.00 - 20.00</strong></h5>
+        <h5></h5>
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="contact_inner">
+        <i class="icon-location"></i>
+        <h5><strong>Biscayne Florida USA</strong></h5><strong>
+      </strong></div><strong>
+    </strong></div><strong>
+  </strong></div><strong>
+</strong></div><strong>
+     
+  <footer>
+  <div style="background-color:orange; padding-top: 50px;  padding-right: 30px;
+  padding-bottom: 50px; padding-left: 30px;">
+    <div class="row">
+      <div class="col-sm-4 footer_panel heading_space">
+               <a class="navbar-brand" href="https://portfolx.com">
+                <img src="https://portfolx.com/logo/logo.png" width="200px">
+                </a>
+        <p style="color:white;" class="bottom30">Portfolx is an International Investment company, it was launched in October 2015. The company has direct contracts with professional traders and miners around the world that guarantees the best services and ensures profits are made and remitted to investors daily.</p>
+       
+      </div>
+      <div class="col-sm-4 footer_panel heading_space">
+        <h3 class="heading bottom30">Useful <span>Links</span></h3>
+        <ul class="links">
+            <li><a href="https://portfolx.com"><i class="icon-chevron-small-right"></i>Home</a></li>
+            <li><a href="about.php"><i class="icon-chevron-small-right"></i>Company</a></li>
+            <li><a href="plans.php"><i class="icon-chevron-small-right"></i>Packages</a></li>
+            <li><a href="faq.php"><i class="icon-chevron-small-right"></i>FAQ</a></li>
+            
+            <li><a href="contact-us.php"><i class="icon-chevron-small-right"></i>Contact Us</a></li>
+          <li><a href="login.php"><i class="icon-chevron-small-right"></i>Start Investing</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footer_panel heading_space">
+            <!-- GTranslate: https://gtranslate.io/ -->
+<a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="English"></a><a href="#" onclick="doGTranslate('en|fr');return false;" title="French" class="gflag nturl" style="background-position:-200px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French"></a><a href="#" onclick="doGTranslate('en|de');return false;" title="German" class="gflag nturl" style="background-position:-300px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="German"></a><a href="#" onclick="doGTranslate('en|it');return false;" title="Italian" class="gflag nturl" style="background-position:-600px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Italian"></a><a href="#" onclick="doGTranslate('en|pt');return false;" title="Portuguese" class="gflag nturl" style="background-position:-300px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Portuguese"></a><a href="#" onclick="doGTranslate('en|ru');return false;" title="Russian" class="gflag nturl" style="background-position:-500px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Russian"></a><a href="#" onclick="doGTranslate('en|es');return false;" title="Spanish" class="gflag nturl" style="background-position:-600px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Spanish"></a>
+
+<style type="text/css">
+<!--
+a.gflag {vertical-align:middle;font-size:16px;padding:1px 0;background-repeat:no-repeat;background-image:url(//gtranslate.net/flags/16.png);}
+a.gflag img {border:0;}
+a.gflag:hover {background-image:url(//gtranslate.net/flags/16a.png);}
+#goog-gt-tt {display:none !important;}
+.goog-te-banner-frame {display:none !important;}
+.goog-te-menu-value:hover {text-decoration:none !important;}
+body {top:0 !important;}
+#google_translate_element2 {display:none!important;}
+-->
+</style>
+
+<br><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|af">Afrikaans</option><option value="en|sq">Albanian</option><option value="en|ar">Arabic</option><option value="en|hy">Armenian</option><option value="en|az">Azerbaijani</option><option value="en|eu">Basque</option><option value="en|be">Belarusian</option><option value="en|bg">Bulgarian</option><option value="en|ca">Catalan</option><option value="en|zh-CN">Chinese (Simplified)</option><option value="en|zh-TW">Chinese (Traditional)</option><option value="en|hr">Croatian</option><option value="en|cs">Czech</option><option value="en|da">Danish</option><option value="en|nl">Dutch</option><option value="en|en">English</option><option value="en|et">Estonian</option><option value="en|tl">Filipino</option><option value="en|fi">Finnish</option><option value="en|fr">French</option><option value="en|gl">Galician</option><option value="en|ka">Georgian</option><option value="en|de">German</option><option value="en|el">Greek</option><option value="en|ht">Haitian Creole</option><option value="en|iw">Hebrew</option><option value="en|hi">Hindi</option><option value="en|hu">Hungarian</option><option value="en|is">Icelandic</option><option value="en|id">Indonesian</option><option value="en|ga">Irish</option><option value="en|it">Italian</option><option value="en|ja">Japanese</option><option value="en|ko">Korean</option><option value="en|lv">Latvian</option><option value="en|lt">Lithuanian</option><option value="en|mk">Macedonian</option><option value="en|ms">Malay</option><option value="en|mt">Maltese</option><option value="en|no">Norwegian</option><option value="en|fa">Persian</option><option value="en|pl">Polish</option><option value="en|pt">Portuguese</option><option value="en|ro">Romanian</option><option value="en|ru">Russian</option><option value="en|sr">Serbian</option><option value="en|sk">Slovak</option><option value="en|sl">Slovenian</option><option value="en|es">Spanish</option><option value="en|sw">Swahili</option><option value="en|sv">Swedish</option><option value="en|th">Thai</option><option value="en|tr">Turkish</option><option value="en|uk">Ukrainian</option><option value="en|ur">Urdu</option><option value="en|vi">Vietnamese</option><option value="en|cy">Welsh</option><option value="en|yi">Yiddish</option></select><div id="google_translate_element2"></div>
+<script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
+        <h3 class="bottom30 heading"> Live <span>Chart</span></h3>
+      
+        <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script data-cfasync="false" src="ui/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script type="text/javascript">
+								baseUrl = "../external.html?link=https://widgets.cryptocompare.com/";
+								var scripts = document.getElementsByTagName("script");
+								var embedder = scripts[ scripts.length - 1 ];
+								var cccTheme = {"General":{"background":"#121212","borderColor":"#000"},"Tabs":{"background":"#000","color":"#FFF","borderColor":"#333","activeBackground":"#333","activeColor":"#FFF"},"Row":{"color":"#FFF","borderColor":"#585858"},"Trend":{"colorUp":"#78dc3c","colorDown":"#ee3737","colorUnchanged":"#3791ee"},"Conversion":{"background":"#000","color":"#CCC"}};
+								(function (){
+								var appName = encodeURIComponent(window.location.hostname);
+								if(appName==""){appName="local";}
+								var s = document.createElement("script");
+								s.type = "text/javascript";
+								s.async = true;
+								var theUrl = baseUrl+'serve/v1/coin/multi?fsyms=BTC,ETH,XMR&tsyms=USD,EUR,CNY,GBP';
+								s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+								embedder.parentNode.appendChild(s);
+								})();
+							</script><script type="text/javascript" async="" src="../external.html?link=https://widgets.cryptocompare.com/serve/v1/coin/multi?fsyms=BTC,ETH,XMR&amp;tsyms=USD,EUR,CNY,GBP&amp;app=portfolx.com"></script>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+          <p>Copyright © 2008 - 2020 <a href="https://portfolx.com">Portfolx</a>. all rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="ui/js/jquery-2.2.3.js"></script>
+<script src="ui/js/bootstrap.min.js"></script>
+<script src="ui/js/jquery.parallax-1.1.3.js"></script>
+<script src="ui/js/jquery.appear.js"></script>
+<script src="ui/js/jquery-countTo.js"></script>
+<script src="ui/js/bootsnav.js"></script>
+<script src="ui/js/jquery.cubeportfolio.min.js"></script>
+<script src="ui/js/owl.carousel.min.js"></script>
+<script src="ui/js/viedobox_video.js"></script>
+<script src="ui/js/jquery.themepunch.tools.min.js"></script>
+<script src="ui/js/jquery.themepunch.revolution.min.js"></script>
+<script src="ui/js/jquery.themepunch.revolution.min.js"></script>
+<script src="ui/js/revolution.extension.layeranimation.min.js"></script>
+<script src="ui/js/revolution.extension.navigation.min.js"></script>
+<script src="ui/js/revolution.extension.parallax.min.js"></script>
+<script src="ui/js/revolution.extension.slideanims.min.js"></script>
+<script src="ui/js/revolution.extension.video.min.js"></script>
+<script src="ui/js/wow.min.js"></script>
+<script src="ui/js/functionsac1d-u%3d1587912441.js"></script>
+<script>
+function getProfit(){
+var amount = document.getElementById("amount").value*1;
+var package = document.getElementById("package").value*1;
+var selectedType = document.getElementById("typez").value;
+var mins = [50, 100,10000,100000];
+var maxs = [99, 9999,99999,10000000];  
+
+var tradeMins = [1000, 10000,20000,100000];
+var tradeMaxs = [9999, 19999,99999,10000000];  
+
+
+var percents = [20, 50,100,200];
+var tradePercents = [3.1, 4,6.7,7.2];
+var loanPercents = [3, 2.5,1.5,1];
+var packages = ["Basic", "Advanced","Premium","VIP"];
+var min = 0;
+var max = 0;
+var profit = "profit";
+var perc = 1;
+var multiplier = 0;
+
+    switch(selectedType){
+        case "0":{
+perc = percents[package];  
+min = mins[package];
+max = maxs[package];
+multiplier = 1;
+        }
+            break;
+        case "1":{
+perc = tradePercents[package];   
+min = tradeMins[package];
+max = tradeMaxs[package];
+multiplier =30;
+        }
+            break;
+             case "2":{
+                     profit = "interest"
+perc = loanPercents[package];    
+        }
+            break;
+    }
+
+if(amount>=min&&amount<=max){
+
+
+    
+    console.log("it is"+selectedType);
+ document.getElementById("profit").innerHTML = `Expected `+profit+` after  is: <strong class="text-success">$`+(((perc/100)*multiplier*amount)+amount)+`</strong>`
+}else{
+ document.getElementById("profit").innerHTML ="<span class='text-danger'>For "+packages[package]+" Package, Minimum is: $"+min+" and Maximum is: $"+max+"</span>";     
+}
+
+
+console.log(amount+" We want to calculate porofit "+min);
+    
+    return false;
+}
+
+</script>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5abdff8-6a0b-4e9d-a913-ca21086798e4";(function(){d=document;s=d.createElement("script");s.src="../client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+
+
+
+</strong></div><div id="html5-lightbox" style="display: none; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999998; text-align: center; position: fixed;"><div id="html5-lightbox-overlay" style="display:block;position:absolute;top:0px;left:0px;width:100%;min-height:100%;background-color:#000;opacity:0.8;filter:alpha(opacity=80);"></div><div id="html5-lightbox-box" style="display:block;position:relative;margin:0px auto;"><div id="html5-elem-box" style="display:block;position:relative;margin:0px auto;text-align:center;overflow:hidden;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;"><div id="html5-elem-wrap" style="display:block;position:relative;margin:0px auto;text-align:center;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#fff;"><div id="html5-loading" style="display:none;position:absolute;top:0px;left:0px;text-align:center;width:100%;height:100%;background:url(&quot;images/lightbox-loading.gif&quot;) no-repeat center center;"></div><div id="html5-error" class="html5-error" style="display:none;position:absolute;padding:8px;text-align:center;width:280px;height:48px;">The requested content cannot be loaded.<br>Please try again later.</div><div id="html5-image" style="display:none;position:absolute;top:0px;left:0px;padding:8px;text-align:center;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;"></div><div id="html5-next" style="display:none;cursor:pointer;position:absolute;right:8px;top:50%;margin-top:-16px;"><img src="images/lightbox-next.png"></div><div id="html5-prev" style="display:none;cursor:pointer;position:absolute;left:8px;top:50%;margin-top:-16px;"><img src="images/lightbox-prev.png"></div></div><div id="html5-elem-data-box" style="display: none; position: relative; width: 100%; height: auto; padding: 0px 0px 8px; background-color: rgb(255, 255, 255); text-align: left;"><div id="html5-text" style="display: block; overflow: hidden; margin: 0px 8px;"></div></div></div><div id="html5-watermark" style="display:none;position:absolute;left:10px;top:10px;"><a href="false" style="text-decoration:none;" title="jQuery Lightbox"><div style="display:block;width:170px;height:20px;text-align:center;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#fff;color:#333;font:12px Arial,sans-serif;"><div style="line-height:20px;"></div></div></a></div><div id="html5-close" style="display:none;cursor:pointer;position:absolute;top:0;right:0;margin-top:-16px;margin-right:-16px;"><img src="images/close-box.png"></div></div></div><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">この翻訳を評価してください</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">いただいたフィードバックは Google 翻訳の改善に役立てさせていただきます</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="良い翻訳" aria-label="良い翻訳" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="悪い翻訳" aria-label="悪い翻訳" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><a href="#" class="back-to"><i class="icon-arrow-up2"></i></a><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

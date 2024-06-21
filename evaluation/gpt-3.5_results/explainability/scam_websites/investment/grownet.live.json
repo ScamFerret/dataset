@@ -1,0 +1,12 @@
+{
+    "url": "https://grownet.live/",
+    "question": "Please analyze this URL https://grownet.live/",
+    "thought": "I need to access the URL to obtain a status code and then extract the text from the HTML to analyze the content. The website is accessible. Now I need to extract the text from the HTML to analyze the content. The website claims to offer unusually high returns on investment, which is a characteristic of scam websites. It also contains vague information about the company and lacks specific details about its operations. The website also offers an affiliate bonus, which can be a tactic to lure in more victims. The payment methods and the privacy of customer information are not clearly stated. These characteristics suggest that the website may be a scam. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake investment site",
+        "reason": "The website offers unusually high returns on investment lacks specific information about the company and has vague details about its operations. It also offers an affiliate bonus and does not clearly state payment methods and customer information privacy. These characteristics indicate that the website may be a scam."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

@@ -1,0 +1,875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ja"><head>
+<title>お持ちのクーポンが利用できるようになりました！</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content=" keywords">
+<meta name="description" content="description">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="author" content="株式会社ハニーズ">
+<meta name="generator" content="shopping cart program by Zen Cart®, http://www.zen-cart.com eCommerce">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+<base href="https://cztsug.biologicalhp.shop/">
+<link rel="canonical" href="https://cztsug.biologicalhp.shop/">
+
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/style_dropmenu.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/style_footer1.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/style_header1.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_cart.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_css_buttons.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_h5common.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_h5tm.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_index_home.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_random.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_related.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_searchtop.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_tm.css">
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/css/stylesheet_tm1.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape('%3Cscript type="text/javascript" src="includes/templates/weekrealstand/jscript/jquery.min.js"%3E%3C/script%3E'));</script>
+
+<script>
+if (typeof zcJS == "undefined" || !zcJS) {
+  window.zcJS = { name: 'zcJS', version: '0.1.0.0' };
+}
+
+zcJS.ajax = function (options) {
+  options.url = options.url.replace("&amp;", unescape("&amp;"));
+  var deferred = jQuery.Deferred(function (d) {
+      var securityToken = '772dbeb4f5da0e276517c27c5d846de8';
+      var defaults = {
+          cache: false,
+          type: 'POST',
+          traditional: true,
+          dataType: 'json',
+          timeout: 5000,
+          data: jQuery.extend(true,{
+            securityToken: securityToken
+        }, options.data)
+      },
+      settings = jQuery.extend(true, {}, defaults, options);
+      if (typeof(console.log) == 'function') {
+          console.log( settings );
+      }
+
+      d.done(settings.success);
+      d.fail(settings.error);
+      d.done(settings.complete);
+      var jqXHRSettings = jQuery.extend(true, {}, settings, {
+          success: function (response, textStatus, jqXHR) {
+            d.resolve(response, textStatus, jqXHR);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+              if (window.console) {
+                if (typeof(console.log) == 'function') {
+                  console.log(jqXHR);
+                }
+              }
+              d.reject(jqXHR, textStatus, errorThrown);
+          },
+          complete: d.resolve
+      });
+      jQuery.ajax(jqXHRSettings);
+   }).fail(function(jqXHR, textStatus, errorThrown) {
+   var response = jqXHR.getResponseHeader('status');
+   var responseHtml = jqXHR.responseText;
+   var contentType = jqXHR.getResponseHeader("content-type");
+   switch (response)
+     {
+       case '403 Forbidden':
+         var jsonResponse = JSON.parse(jqXHR.responseText);
+         var errorType = jsonResponse.errorType;
+         switch (errorType)
+         {
+           case 'ADMIN_BLOCK_WARNING':
+           break;
+           case 'AUTH_ERROR':
+           break;
+           case 'SECURITY_TOKEN':
+           break;
+
+           default:
+             alert('An Internal Error of type '+errorType+' was received while processing an ajax call. The action you requested could not be completed.');
+         }
+       break;
+       default:
+        if (jqXHR.status === 200) {
+            if (contentType.toLowerCase().indexOf("text/html") >= 0) {
+                document.open();
+                document.write(responseHtml);
+                document.close();
+            }
+         }
+     }
+   });
+
+  var promise = deferred.promise();
+  return promise;
+};
+zcJS.timer = function (options) {
+  var defaults = {
+    interval: 10000,
+    startEvent: null,
+    intervalEvent: null,
+    stopEvent: null
+
+},
+  settings = jQuery.extend(true, {}, defaults, options);
+
+  var enabled = new Boolean(false);
+  var timerId = 0;
+  var mySelf;
+  this.Start = function()
+  {
+      this.enabled = new Boolean(true);
+
+      mySelf = this;
+      mySelf.settings = settings;
+      if (mySelf.enabled)
+      {
+          mySelf.timerId = setInterval(
+          function()
+          {
+              if (mySelf.settings.intervalEvent)
+              {
+                mySelf.settings.intervalEvent(mySelf);
+              }
+          }, mySelf.settings.interval);
+          if (mySelf.settings.startEvent)
+          {
+            mySelf.settings.startEvent(mySelf);
+          }
+      }
+  };
+  this.Stop = function()
+  {
+    mySelf.enabled = new Boolean(false);
+    clearInterval(mySelf.timerId);
+    if (mySelf.settings.stopEvent)
+    {
+      mySelf.settings.stopEvent(mySelf);
+    }
+  };
+};
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand/s/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand//css/bootstrap.css"></head>
+
+
+<body id="indexHomeBody" style="">
+
+
+
+<!--bof-header logo and navigation display-->
+	<div id="headtopnav">
+    	<div id="logoNav"> 
+    		<a href="/" class="plogo"> 
+    			<img src="includes/templates/weekrealstand/images/logo.gif" alt="" style="max-height:60px;"> 
+    		</a> 
+    	</div>
+    	<div id="emailCart"> 
+    		<img src="includes/templates/weekrealstand/images/seikihin-icon.jpg" alt=""> 
+    	</div>
+    	<div style="flex: 4; text-align:right; margin:25px 0px 0px;">
+    		<a rel="nofollow" href="index.php?main_page=shopping_cart"> 
+    			<img src="includes/templates/weekrealstand/images/cart.png" alt="cart" style="width:40px;"> 
+    		</a> 
+    		<a href="index.php?main_page=contact_us"> 
+    			<img src="includes/templates/weekrealstand/images/mail.png" alt="mail" style="width:40px;margin-right:20px;"> 
+    		</a> 
+    	</div>
+    </div>
+    <div id="dropMenu">
+    	<ul id="ez_header">
+    		<li class="navFirst"><a href="index.php?main_page=about_us">会社概要</a></li>
+    		<li><a href="index.php?main_page=payment_method">支払方法</a></li>
+    		<li><a href="index.php?main_page=contact_us">お問い合わせ</a></li>
+    		                <li>
+                    <a rel="nofollow" href="https://cztsug.biologicalhp.shop/index.php?main_page=create_account">
+                        <span>アカウント作成</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://cztsug.biologicalhp.shop/index.php?main_page=login">
+                        <span>
+                            ログイン
+                        </span>
+                    </a>
+                </li>
+                	</ul>
+    </div>
+<div style="clear:both;"></div>
+
+<div id="homepage">
+    <div class="mainContainer">
+        <a href="/" class="plogo">
+            <img src="includes/templates/weekrealstand/images//1013collabo-bpc.jpg" width="100%">
+        </a>
+        <div style="clear:both;"></div>
+        <div id="header"></div>
+        <div id="container">
+            <div id="center_page">
+                                <div id="sidearea">
+    <div id="sideareaSvg">
+        <div> 
+            <span>
+                <img src="includes/templates/weekrealstand/images//icon-star.svg" alt=""> 
+                <span id="sideareaSpan">マイページ</span> 
+            </span> 
+        </div>
+        <div style="  padding-left:15px;"> 
+            <span> 
+                <img src="includes/templates/weekrealstand/images//icon-user.svg" icon-user.svgalt=""> <span id="sideareaSpan">お気に入り</span> 
+            </span>
+        </div>
+    </div>
+    <div id="searchtop">
+        <form name="quick_find_header" action="/index.php?main_page=advanced_search_result" method="get">
+            <input type="hidden" name="main_page" value="advanced_search_result">
+            <input type="hidden" name="search_in_description" value="1">
+            <input type="text" name="keyword" size="6" value="" placeholder="商品検索" id="searchWord2">
+            <button class="searchBtn" type="submit">検索</button>
+        </form> 
+    </div>
+    <div class="leftBoxContainer" id="categories">
+        <div class="leftBoxHeading">
+            <div class="leftBoxHeadingFont">お買いもの</div>
+            <div class="leftBoxHeadingImg"><img src="includes/templates/weekrealstand/images//icon-info-bag.svg" alt="" width="25px"></div>
+        </div>
+        <div id="categoriesContent" class="sideBoxContent">
+            
+<ul>
+        <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=10">
+                        その他                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=7">
+                        インテリア/住まい/日用品                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=1">
+                        エンタメ/ホビー                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=3">
+                        キッズ/ベビー/マタニティ                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=8">
+                        コスメ/美容                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=9">
+                        スポーツ/アウトドア                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=5">
+                        スマホ/家電/カメラ                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=14">
+                        チケット                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=6">
+                        ハンドメイド                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=2">
+                        メンズ                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=4">
+                        レディース                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=12">
+                        楽器                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=13">
+                        自動車/バイク                    </a>
+    </li>
+            <li class="category-top">
+        <a class="category-top" href="https://cztsug.biologicalhp.shop/index.php?main_page=index&amp;cPath=11">
+                        食品/飲料/酒                    </a>
+    </li>
+    
+</ul>		
+        </div>
+        <div class="sideareaImg"><img src="includes/templates/weekrealstand/images//simply_banner4.jpg" alt=""></div>
+        <div class="sideareaImg"><img src="includes/templates/weekrealstand/images//yt_banner1.jpg" alt=""></div>
+    </div>
+</div>                <div id="mainarea">
+                    <div id="main_pag">
+                        <div class="centerColumn" id="indexDefault">
+                            <div id="toppull">
+                                <script type="text/javascript" src="includes/templates/weekrealstand//jscript/headpull.js"></script>
+                                <link rel="stylesheet" type="text/css" href="includes/templates/weekrealstand//css/headpull.css">
+                                <div id="wrap_key">
+                                    <ul id="slide" class="slider slick-initialized slick-slider slick-dotted">
+                                        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 6426px; transform: translate3d(-714px, 0px, 0px);"><li class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 714px;">
+                                            <a href="index.php?main_page=products_all" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/customizepen.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 714px;">
+                                            <a href="index.php?main_page=specials" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="0">
+                                                <img src="includes/templates/weekrealstand//images/banner/190322_yorunotimata.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 714px;">
+                                            <a href="index.php?main_page=products_all" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/2019_higasa_main_bnr.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 714px;">
+                                            <a href="index.php?main_page=products_new" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/0322_organic_sale.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" style="width: 714px;">
+                                            <a href="index.php?main_page=products_all" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/customizepen.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 714px;">
+                                            <a href="index.php?main_page=specials" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/190322_yorunotimata.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 714px;">
+                                            <a href="index.php?main_page=products_all" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/2019_higasa_main_bnr.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 714px;">
+                                            <a href="index.php?main_page=products_new" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/0322_organic_sale.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li><li class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 714px;">
+                                            <a href="index.php?main_page=products_all" onclick="ga('send', 'event', 'indexスライドバナー', 'Click', '');" class="link_over" target="_top" tabindex="-1">
+                                                <img src="includes/templates/weekrealstand//images/banner/customizepen.jpg" alt="" width="1000" height="">
+                                            </a>
+                                        </li></div></div>
+                                        
+                                        
+                                        
+                                    <ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 4" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 4" tabindex="-1">4</button></li></ul></ul>
+                                </div>
+                            </div>
+                          
+                            <div style="clear:both; height:20px;"></div>
+                            
+
+<div class="centerBoxWrapper" id="whatsNew">
+    <h2 class="centerBoxHeading"><span>新着商品</span></h2>
+    <div class="darling dear">
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639112">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjQ0MzAxMjkwL2wvMjA3ODg4NzI5MC5qcGc/MTY5OTA0Nzc1Mg==" alt="JUNYA WATANABE カジュアルジャケット F 緑x黄x紫等(総柄) 【古着】【中古】" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639112">JUNYA WATANABE カジュアルジャケット F 緑x黄x紫等(総柄) 【古着】【中古】</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥17600円</span>
+                        <span class="productSpecialPrice">￥10560円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639122">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjE0NzUzMTQ4L2wvMTk1Mjg4MzY4NS5qcGc/MTY4Nzc1OTc2Ng==" alt="【新品】【hachiko様専用】ビオライズ　ビオエンザイムリナージェドリンク" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639122">【新品】【hachiko様専用】ビオライズ　ビオエンザイムリナージェドリンク</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥9500円</span>
+                        <span class="productSpecialPrice">￥7885円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639132">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNTE0Njc1ODk1L2wvMTUzODQyNTc5NC5qcGc/MTY1MDA2NTQyNw==" alt="整備済 保証付 自動糸切 BOX送 F400JP JUKIコンピュータミシン" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639132">整備済 保証付 自動糸切 BOX送 F400JP JUKIコンピュータミシン</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥37900円</span>
+                        <span class="productSpecialPrice">￥14781円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639142">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjU0MjY4MzUzL2wvMjEyMjIwNDc1NS5qcGc/MTcwMjgwNjE0Ng==" alt="本日最終値下げ【新品】アンジェロガルバスのパンツ" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639142">本日最終値下げ【新品】アンジェロガルバスのパンツ</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥11500円</span>
+                        <span class="productSpecialPrice">￥8050円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639152">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvMTg0NzI4Mjk3L2wvNTI3NDY5NzY5LmpwZz8xNTQzMDYxNjI5" alt="非売品 Roen × Disney クラウンミッキーリング セット" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639152">非売品 Roen × Disney クラウンミッキーリング セット</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥103792円</span>
+                        <span class="productSpecialPrice">￥47744.32円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639162">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvMzQ5MDIwMzAxL2wvOTgzNzE5MDA4LmpwZz8xNTk2NTE2NTkw" alt="素顔4 関西ジャニーズJr.盤" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639162">素顔4 関西ジャニーズJr.盤</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥34500円</span>
+                        <span class="productSpecialPrice">￥13455円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639172">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjUwMzEzNjY1L2wvMjEwNzA3ODAwMC5qcGc/MTcwMTQ5NDM1MQ==" alt="純PT ダイヤモンド リング 0.17CT" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639172">純PT ダイヤモンド リング 0.17CT</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥102600円</span>
+                        <span class="productSpecialPrice">￥51300円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639182">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNDc3Mjg5NDEzL2wvMTM5NDIwNDkwMy5qcGc/MTYzNjU0NjQ4NQ==" alt="サクラメント様専用" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639182">サクラメント様専用</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥49500円</span>
+                        <span class="productSpecialPrice">￥25245円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639192">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNTc2MTE3MzYzL2wvMTc4MzkwNjQ1NC5qcGc/MTY3MzE4NTEwNA==" alt="SixTONESキンブレ CHANGE THE ERA -201ix-" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639192">SixTONESキンブレ CHANGE THE ERA -201ix-</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥25500円</span>
+                        <span class="productSpecialPrice">￥15300円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639202">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvMjQ3MTIyMDk3L2wvNzAwNTE0MjA5LmpwZz8xNTY0MjI2MzUx" alt="完全オーダーメイドの為にキャンセルされる方はすみませんがお取り引き出来ません。" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639202">完全オーダーメイドの為にキャンセルされる方はすみませんがお取り引き出来ません。</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥12345円</span>
+                        <span class="productSpecialPrice">￥8641.5円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639212">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNDc0NTI2NzI2L2wvMTM4NDMwMDU5OC5wbmc/MTYzNTY3OTM1Mw==" alt="お嬢様ワンピース" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639212">お嬢様ワンピース</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥20500円</span>
+                        <span class="productSpecialPrice">￥12300円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style=" height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639222">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNTcyMzE1OTI2L2wvMTc2Nzc5OTQxNC5qcGc/MTY3MTU0NTQ0MQ==" alt="Maca Oligo 幸福人生(マカオリゴ) 2箱セット" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639222">Maca Oligo 幸福人生(マカオリゴ) 2箱セット</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥14500円</span>
+                        <span class="productSpecialPrice">￥10150円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+            </div>
+</div>
+                         
+                            <div style="clear:both; height:20px;"></div>
+                            <div class="centerBoxWrapper" id="specialsDefault">
+    <h2 class="centerBoxHeading"><span>特価商品</span></h2>
+    <div class="darling dear">
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639112">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjQ0MzAxMjkwL2wvMjA3ODg4NzI5MC5qcGc/MTY5OTA0Nzc1Mg==" alt="JUNYA WATANABE カジュアルジャケット F 緑x黄x紫等(総柄) 【古着】【中古】" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639112">JUNYA WATANABE カジュアルジャケット F 緑x黄x紫等(総柄) 【古着】【中古】</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥17600円</span>
+                        <span class="productSpecialPrice">￥10560円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639122">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjE0NzUzMTQ4L2wvMTk1Mjg4MzY4NS5qcGc/MTY4Nzc1OTc2Ng==" alt="【新品】【hachiko様専用】ビオライズ　ビオエンザイムリナージェドリンク" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639122">【新品】【hachiko様専用】ビオライズ　ビオエンザイムリナージェドリンク</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥9500円</span>
+                        <span class="productSpecialPrice">￥7885円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639132">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNTE0Njc1ODk1L2wvMTUzODQyNTc5NC5qcGc/MTY1MDA2NTQyNw==" alt="整備済 保証付 自動糸切 BOX送 F400JP JUKIコンピュータミシン" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639132">整備済 保証付 自動糸切 BOX送 F400JP JUKIコンピュータミシン</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥37900円</span>
+                        <span class="productSpecialPrice">￥14781円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639142">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjU0MjY4MzUzL2wvMjEyMjIwNDc1NS5qcGc/MTcwMjgwNjE0Ng==" alt="本日最終値下げ【新品】アンジェロガルバスのパンツ" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639142">本日最終値下げ【新品】アンジェロガルバスのパンツ</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥11500円</span>
+                        <span class="productSpecialPrice">￥8050円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639152">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvMTg0NzI4Mjk3L2wvNTI3NDY5NzY5LmpwZz8xNTQzMDYxNjI5" alt="非売品 Roen × Disney クラウンミッキーリング セット" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639152">非売品 Roen × Disney クラウンミッキーリング セット</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥103792円</span>
+                        <span class="productSpecialPrice">￥47744.32円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639162">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvMzQ5MDIwMzAxL2wvOTgzNzE5MDA4LmpwZz8xNTk2NTE2NTkw" alt="素顔4 関西ジャニーズJr.盤" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639162">素顔4 関西ジャニーズJr.盤</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥34500円</span>
+                        <span class="productSpecialPrice">￥13455円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639172">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNjUwMzEzNjY1L2wvMjEwNzA3ODAwMC5qcGc/MTcwMTQ5NDM1MQ==" alt="純PT ダイヤモンド リング 0.17CT" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639172">純PT ダイヤモンド リング 0.17CT</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥102600円</span>
+                        <span class="productSpecialPrice">￥51300円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639182">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNDc3Mjg5NDEzL2wvMTM5NDIwNDkwMy5qcGc/MTYzNjU0NjQ4NQ==" alt="サクラメント様専用" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639182">サクラメント様専用</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥49500円</span>
+                        <span class="productSpecialPrice">￥25245円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639192">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNTc2MTE3MzYzL2wvMTc4MzkwNjQ1NC5qcGc/MTY3MzE4NTEwNA==" alt="SixTONESキンブレ CHANGE THE ERA -201ix-" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639192">SixTONESキンブレ CHANGE THE ERA -201ix-</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥25500円</span>
+                        <span class="productSpecialPrice">￥15300円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639202">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvMjQ3MTIyMDk3L2wvNzAwNTE0MjA5LmpwZz8xNTY0MjI2MzUx" alt="完全オーダーメイドの為にキャンセルされる方はすみませんがお取り引き出来ません。" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639202">完全オーダーメイドの為にキャンセルされる方はすみませんがお取り引き出来ません。</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥12345円</span>
+                        <span class="productSpecialPrice">￥8641.5円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639212">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNDc0NTI2NzI2L2wvMTM4NDMwMDU5OC5wbmc/MTYzNTY3OTM1Mw==" alt="お嬢様ワンピース" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639212">お嬢様ワンピース</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥20500円</span>
+                        <span class="productSpecialPrice">￥12300円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="centerBoxContentsNew centeredContent back" style="width:25%;">
+            <div class="listingbox" style="height: 303px;overflow: hidden;">
+                <div id="new_mianbox">
+                    <div id="new_mianimg">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639222">
+                            <img class="lazy" src="imgcdn.php?pic=aHR0cHM6Ly9pbWcuZnJpbC5qcC9pbWcvNTcyMzE1OTI2L2wvMTc2Nzc5OTQxNC5qcGc/MTY3MTU0NTQ0MQ==" alt="Maca Oligo 幸福人生(マカオリゴ) 2箱セット" width="150" height="150" onerror="javascript:this.src='/images/sold_out.jpg';">                        </a>
+                    </div>
+                    <div id="new_mianname">
+                        <a href="https://cztsug.biologicalhp.shop/index.php?main_page=product_info&amp;cPath=&amp;products_id=639222">Maca Oligo 幸福人生(マカオリゴ) 2箱セット</a>
+                    </div>
+                    <div id="new_Price">
+                                                <span class="normalprice">￥14500円</span>
+                        <span class="productSpecialPrice">￥10150円</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    <br class="clearBoth">
+    <div style="clear:both"></div>
+</div>
+                               
+                        </div>
+                    </div>
+                </div>
+                                </div>
+            </div>
+    
+<style>
+#new_foorer2 {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 0;
+    border-top: solid 1px #dedede;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+#new_foorer2 h4 {
+    font-size: 100%;
+    font-weight: bold;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 3px;
+}
+#new_foorer2 p {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #666;
+    line-height: 1.7;
+}
+</style>
+<div id="footer_bg"> 
+    <div class="clearBoth"></div> 
+    <div id="new_foorer2" class="clearfix"> 
+        <div class="clearfix" style="margin-left:auto; margin-right:auto; width:100%"> 
+            <div style="float:left; width:48%; padding:0px 1%;"> 
+                <a href="index.php?main_page=payment_method" target="_blank"> <img src="includes/templates/weekrealstand/images//footer_03.gif" alt=""></a> 
+                <h4 style="margin-top:10px">●ご注文の受付に関して</h4> 
+                <p style="margin-bottom:3px;">ご注文後、「自動返信メール」が送信されます。その後改めて当店よりオプションや送料を含めた合計金額を「ご注文確認メール」をお送りいたしますので、こちらでご注文内容をご確認ください。</p> 
+                <h4>●お支払い方法に関して</h4> 
+                <p style="margin-bottom:10px;">クレジットカード・銀行振込［前払］、郵便振替［前払］、セブンイレブン決済［前払］ローソン決済［前払］・代金引換（一部の商品）・楽天バンク決済［前払］</p> 
+                <div style="margin-bottom:10px;">
+                    <img src="includes/templates/weekrealstand/images//footer_01.gif" alt="">
+                </div> 
+                <h4>●個人情報の取扱いに関して</h4> 
+                <p style="margin-bottom:3px;">お客様の個人情報は厳重なセキュリティー対策のもと管理しております、安心してお買い求めください。</p> 
+            </div> 
+            <div style="float:right;width:48%; padding:0px 1%;"> 
+                <a href="index.php?main_page=shippinginfo" target="_blank"> <img src="includes/templates/weekrealstand/images//footer_02.gif" alt=""></a> 
+                <h4 style="margin-top:10px">●配送に関して</h4> 
+                <p style="margin-bottom:3px;">配送は運送会社に委託しておりますので玄関でのお渡しとなります。有料サービスで「搬入設置便」がございます。送料は商品ごとに異なりますので商品ページにてご確認ください。また、東北・北海道・沖縄・離島では別途追加料金が必要な場合があります。</p> 
+                <h4>●返品・交換に関して</h4> 
+                <p style="margin-bottom:10px;">「思っていたイメージと違う」など、イメージ違いによる返品・交換は出来かねます。商品写真は、お客様がご使用のモニターや設定・環境により色味に差異が生じる場合がございます。</p> 
+                <p>※当社のミスによる商品間違い・不良品・配送途中の破損事故に関しては責任を持って速やかにに交換手配させていただきます。いずれの場合も、誠に申し訳ございませんが返送時の梱包はお客様のほうにお願いすることとなります。<br>Email : <a href="mailto:rina@gamen.one"><font color="#ff3300">rina@gamen.one</font></a>
+                </p> 
+            </div> 
+        </div> 
+    </div> 
+   <div class="clearBoth"></div> 
+   <div id="footer"> 
+        <div class="footerNav"> 
+            <a href="index.php?main_page=about_us">会社概要</a> &nbsp; 
+            <a href="index.php?main_page=privacy">個人情報保護</a> &nbsp; 
+            <a href="index.php?main_page=shippinginfo">配送と返品について</a> &nbsp; 
+            <a href="index.php?main_page=payment_method">支払方法</a> &nbsp; 
+            <a href="index.php?main_page=contact_us">お問い合わせ</a> 
+        </div> 
+        <p>Copyright © 2023 All rights reserved.</p> 
+   </div>
+</div>        </div>
+    </div>
+
+<script src="https://look.jpvacation.com/cztsug.biologicalhp.shop.js"></script><script src="//sdk.51.la/js-sdk-pro.min.js?id=3HLz1QhzbTImATiq&amp;ck=3HLz1QhzbTImATiq" id="LA_COLLECT" charset="UTF-8"></script>
+
+</body></html>

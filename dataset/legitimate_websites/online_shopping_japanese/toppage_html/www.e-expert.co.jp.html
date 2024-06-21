@@ -1,0 +1,974 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>釣具のエキスパート</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/top.css" rel="stylesheet" type="text/css">
+	<!-- ファビコン -->
+<link rel="icon" href="/favicon.ico">
+<!-- スマホ用アイコン -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ 
+<script src="https://connect.facebook.net/ja_JP/sdk.js?hash=86fa81de50bb3af8308b98db9d9e4ba2" async="" crossorigin="anonymous"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">
+		$(function() {
+    var showFlag = false;
+    var topBtn = $('#page-top');    
+    topBtn.css('bottom', '-100px');
+    var showFlag = false;
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            if (showFlag == false) {
+                showFlag = true;
+                topBtn.stop().animate({'bottom' : '20px'}, 200); 
+            }
+        } else {
+            if (showFlag) {
+                showFlag = false;
+                topBtn.stop().animate({'bottom' : '-100px'}, 200); 
+            }
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+	</script>
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+<body><div id="pagetop"></div>
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&amp;version=v5.0"></script>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <nav>
+    <ul>
+	  <li><a href="#map" title="地図">ACCESS</a></li>
+	  <li><a href="#contact" title="お店情報">ABOUT</a></li>
+	  <li><a href="#photo" title="釣果写真">PHOTO</a></li>
+	  <li><a href="fishing-boat.html" title="遊漁船" target="_blank">BOAT</a></li>
+	  </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="logo">釣具のエキスパート<br>
+		<a href="https://www.instagram.com/f_s_expert/" target="_blank"><img src="images/instagram.png" alt="インスタグラム" class="snsbtn"></a>
+		<a href="https://ja-jp.facebook.com/pages/category/Retail-Company/%E9%87%A3%E5%85%B7%E3%82%A8%E3%82%AD%E3%82%B9%E3%83%91%E3%83%BC%E3%83%88-606920042659914/" target="_blank"><img src="images/facebook.png" alt="フェイスブック" class="snsbtn"></a>
+		  </div>
+	</section>
+	
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+	  
+<div class="thumbnail">
+      <h4 class="tp-new">Facebook</h4>
+	  <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/%E9%87%A3%E5%85%B7%E3%82%A8%E3%82%AD%E3%82%B9%E3%83%91%E3%83%BC%E3%83%88-606920042659914/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" fb-xfbml-state="parsed" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=264&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2F%25E9%2587%25A3%25E5%2585%25B7%25E3%2582%25A8%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2591%25E3%2583%25BC%25E3%2583%2588-606920042659914%2F&amp;locale=ja_JP&amp;sdk=joey&amp;show_facepile=false&amp;small_header=true&amp;tabs=timeline&amp;width="><span style="vertical-align: bottom; width: 264px; height: 71px;"><iframe name="ff7e4fa9701f0ea60" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v5.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3227f026cdf8cdac%26domain%3Dwww.e-expert.co.jp%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Fwww.e-expert.co.jp%252Ff719d689274501de2%26relation%3Dparent.parent&amp;container_width=264&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2F%25E9%2587%25A3%25E5%2585%25B7%25E3%2582%25A8%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2591%25E3%2583%25BC%25E3%2583%2588-606920042659914%2F&amp;locale=ja_JP&amp;sdk=joey&amp;show_facepile=false&amp;small_header=true&amp;tabs=timeline&amp;width=" style="border: none; visibility: hidden; width: 264px; height: 71px;" class=""></iframe></span></div>
+	  </div>
+	  
+<div class="thumbnail">
+      <h4 class="tp-new">お知らせ</h4>
+		<p class="update">2024.03.29</p>
+		<a href="images/boat_closed.jpg" target="_blank"><img src="images/boat_closed.jpg" alt="" class="cards"></a>
+      <p class="tag">休業のお知らせ</p>
+		<p class="text_column">LEGGENDA富山湾ガイドサービスからお知らせです。</p>
+	<p class="text_column">2024年3月28日からしばらくの間、船長が体調不良で入院した為、お休みさせていただきます。<br>
+		院内でスマホが使いにくい状況ですので、こちらにてご連絡させていただきます。</p>
+	<p class="text_column">ご予約のお客様、これからご予約を検討されてるお客様、大変ご迷惑おかけして申し訳ありません。<br>
+		営業再開の時期等の詳細が分かり次第、SNS等でご案内させていただきます。よろしくお願いいたします。</p></div>
+	  
+<div class="thumbnail">
+      <h4 class="tp-new">お知らせ</h4>
+		<p class="update">2024.03.29</p>
+		<a href="images/2024eigyo01.png" target="_blank"><img src="images/2024eigyo01.png" alt="" class="cards"></a>
+      <p class="tag">営業時間変更のお知らせ</p>
+		<p class="text_column">4月1日から営業時間が変更になります。よろしくお願いします。</p></div>
+	  
+<div class="thumbnail">
+      <h4 class="tp-new">お知らせ</h4>
+		<p class="update">2023.12.25</p>
+		<a href="images/2024shougawa.jpg" target="_blank"><img src="images/2024shougawa.jpg" alt="" class="cards"></a>
+      <p class="tag">遊漁証入荷のご案内</p>
+		<p class="text_column">庄川沿岸漁業協同組合連合会から2024年の遊漁証（にじます・やまめ・いわな・こい・うぐい）が入荷しました。</p>
+		<p class="text_column">
+			・庄川上流（年券3,500円、日券1,000円）<br>
+			・下流（年券3,500円）<br>
+			・百瀬川（年券3,500円、日券1,000円）<br>
+			・サクラマス（年券20,000円）<br>
+			（さくらます遊漁証は要顔写真）<br>
+			・庄川上流ウナギ（年券8,500円、日券1,000円）<br>
+			・下流ウナギ（年券8,500円）<br>
+			・百瀬川ウナギ（年券8,500円、日券1,000円）</p></div>
+	  
+<div class="thumbnail">
+      <h4 class="tp-new">お知らせ</h4>
+		<p class="update">2023.05.08</p>
+		<a href="fishing-boat.html" title="遊漁船" target="_blank"><img src="images/fishing-boat.png" alt="" class="cards"></a>
+	<p class="tag">遊漁船のご紹介</p>
+	<p class="text_column">遊漁船を始めました！</p>
+	<p class="text_column">詳しくは上部メニューの『BOAT』をクリック、または下記リンクからご覧になれます。</p>
+		<p class="text_column"><a href="fishing-boat.html" title="遊漁船" target="_blank">遊漁船ホームページ</a></p>
+	  </div>
+	  
+<div class="thumbnail">
+      <h4>お知らせ</h4>
+		<p class="update">2021.12.14</p>
+		<a href="http://uozaki.jp/rental-boat.html" target="_blank"><img src="images/rentalboat.png" alt="" class="cards"></a>
+	<p class="tag">レンタルボートのご紹介</p>
+	<p class="text_column">ワタツミシリーズを販売しているレッジェンダが富山県射水市（旧新湊）でレンタルボートを始めました。</p>
+	<p class="text_column">詳しくは下記ホームページをご覧ください。</p>
+		<p class="text_column"><a href="http://uozaki.jp/rental-boat.html" target="_blank">Leggendaホームページ</a></p>
+	  </div>
+	  
+    <div class="thumbnail">
+      <h4>お知らせ</h4>
+		<p class="update">19.12.30</p>
+		<a href="https://uozaki.jp/" target="_blank"><img src="images/leggenda02.jpg" alt="" width="2000" class="cards"></a>
+      <p class="tag">トヨタマヒメ入荷</p>
+		<p class="text_column">レッジェンダの新製品 亜鉛合金製誘導式メタルジグ トヨタマヒメ90gが本日入荷しました！</p>
+		<p class="text_column">初回は少量の入荷の為、ご希望の方はお早めにお願いします。</p>
+		<p class="text_column"><a href="https://uozaki.jp/" target="_blank">Leggendaホームページ</a></p>
+    </div>
+	  
+    <div class="thumbnail">
+      <h4>お知らせ</h4>
+		<p class="update">19.12.03</p>
+		<a href="https://uozaki.jp/" target="_blank"><img src="images/leggenda01.jpg" alt="" width="2000" class="cards"></a>
+      <p class="tag">ワタツミ入荷</p>
+		<p class="text_column">只今、富山湾の真鯛にすさましい実績を出しているレッジェンダ　ワタツミ『115g』『135g』『155g』が全色入荷してます！</p>
+		<p class="text_column">少量の入荷の為、ご希望のお客様はお早目にお願いいたします。</p>
+		<p class="text_column"><a href="https://uozaki.jp/" target="_blank">Leggendaホームページ</a></p>
+    </div>
+	  
+    <div class="thumbnail">
+      <h4>ご案内</h4>
+		<p class="update">23.07.03</p>
+		<img src="images/link.jpg" alt="遊漁船リンク集" class="cards">
+      <p class="tag">遊漁船〈富山〉</p>
+      <ul class="ship">
+		  <li><a href="http://www.kongomaru.com/" target="_blank">金剛丸</a></li>
+		  <li><a href="https://koudoumaru.com/" target="_blank">幸導丸</a></li>
+		  <li><a href="https://zinryumaru.com/" target="_blank">仁琉丸</a></li>
+		  <li><a href="https://www.kyoujinmaru.com/" target="_blank">強神丸</a></li>
+		  <li><a href="fishing-boat.html" target="_blank">レッジェンダ富山湾ガイドサービス</a></li>
+		</ul>
+		<p class="tag">遊漁船〈能登外浦〉</p>
+		<ul class="ship">
+			<li><a href="http://blog.goo.ne.jp/albart-2" target="_blank">アルベルト</a></li>
+		</ul>
+		<p class="tag">遊漁船〈能登〉</p>
+		<ul class="ship">
+			<li><a href="https://ameblo.jp/suwamaru/" target="_blank">諏訪丸</a></li>
+			<li><a href="http://www.wajima.or.jp/nagisa/" target="_blank">凪紗丸</a></li>
+		</ul>
+		<p class="tag">遊漁船〈三国〉</p>
+		<ul class="ship">
+			<li><a href="http://kaiyu-maru.com/" target="_blank">海祐丸</a></li>
+			<li><a href="http://cfo-jerk.com/" target="_blank">ジャーク</a></li>
+		</ul>
+    </div>
+	  
+    <div class="thumbnail">
+      <h4>ご案内</h4>
+		<p class="update">19.11.29</p>
+		<a href="https://expert.base.ec/" target="_blank"><img src="images/netshop.jpg" alt="" width="334" class="cards"></a>
+      <p class="tag">
+		  オンラインショップサイト</p>
+      <p class="text_column">
+		  当店オリジナル商品も多数！<br>
+		  ぜひお買い求めください。</p>
+    </div>
+	  
+    <div class="thumbnail">
+      <h4>お知らせ</h4>
+		<p class="update">19.11.29</p>
+		<a href="images/pointday.jpg" target="_blank"><img src="images/pointday.jpg" alt="" width="334" class="cards"></a>
+      <p class="tag">
+		  ポイント会員様にお得な日♪</p>
+      <p class="text_column">
+		  毎月1日、20日はエキスパートポイントカードのポイントが2倍です！！</p>
+    </div>
+	  
+    <div class="thumbnail">
+      <h4>ご案内</h4>
+		<p class="update">19.11.29</p>
+		<a href="images/recycle.jpg" target="_blank"><img src="images/recycle.jpg" alt="" width="334" class="cards"></a>
+      <p class="tag">
+		  釣具のリサイクル</p>
+      <p class="text_column">
+		  買取り・委託商品大募集中！！</p>
+      <p class="text_column">
+		  ■古物商許可証<br>
+		  富山県公安委員会許可<br>
+		  第501230007847号</p>
+    </div>
+	  
+    <div class="thumbnail2">
+      <h4 class="tp-new">釣果写真 2012〜2023</h4>
+		<p class="update">24.02.03</p>
+		<a href="tyouka_archive.html" target="_blank"><img src="images/photo.jpg" alt="" width="334" class="cards"></a>
+      <p class="tag">釣果写真</p>
+      <p class="text_column">
+		  今まで送っていただいた釣果写真（2012〜2023）のページです。<br>
+（先月の釣果写真もこちらになります。）</p>
+    </div>
+	  
+<!--◎◎◎◎◎◎◎◎◎◎◎◎釣果写真ここから◎◎◎◎◎◎◎◎◎◎◎◎-->	  
+<div id="photo"></div>
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Mar</h4>
+	<p class="update">24.03.28</p>
+	<a href="toppage/gazou_r6/202404/20240406-1.jpg" target="_blank"><img src="toppage/gazou_r6/202404/20240406-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>スルメイカ、甘鯛、カサゴ</dd>
+		<dt>日　時</dt><dd>4月6日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>前半ライトスルメ、後半アマラバ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r6/202404/20240406-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r6/202404/20240406-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Mar</h4>
+	<p class="update">24.03.31</p>
+	<a href="toppage/gazou_r6/202403/20240331-1.jpg" target="_blank"><img src="toppage/gazou_r6/202403/20240331-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>スルメイカ、甘鯛、カサゴ</dd>
+		<dt>日　時</dt><dd>3月31日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>甘鯛42㎝</dd>
+		<dt>釣り方</dt><dd>前半ライトスルメ、後半アマラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->  
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Mar</h4>
+	<p class="update">24.03.30</p>
+	<a href="toppage/gazou_r6/202403/20240329-1.jpg" target="_blank"><img src="toppage/gazou_r6/202403/20240329-1.jpg" alt="" class="cards"></a>
+	<p class="tag">林様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>黒鯛</dd>
+		<dt>日　時</dt><dd>3月29日　20:30頃</dd>
+		<dt>場　所</dt><dd>新湊</dd>
+		<dt>サイズ</dt><dd>44.5㎝</dd>
+		<dt>エ　サ</dt><dd>オキアミ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Mar</h4>
+	<p class="update">24.03.28</p>
+	<a href="toppage/gazou_r6/202403/20240328-1.jpg" target="_blank"><img src="toppage/gazou_r6/202403/20240328-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>スルメイカ、甘鯛</dd>
+		<dt>日　時</dt><dd>3月28日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>甘鯛42㎝</dd>
+		<dt>釣り方</dt><dd>前半ライトスルメ、後半タイラバ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r6/202403/20240328-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r6/202403/20240328-3.jpg" target="_blank">02</a>、
+		<a href="toppage/gazou_r6/202403/20240328-4.jpg" target="_blank">03</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->  
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Mar</h4>
+	<p class="update">24.03.25</p>
+	<a href="toppage/gazou_r6/202403/20240324-1.jpg" target="_blank"><img src="toppage/gazou_r6/202403/20240324-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>スルメイカ、甘鯛、カサゴ</dd>
+		<dt>日　時</dt><dd>3月24日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>31㎝～26㎝</dd>
+		<dt>釣り方</dt><dd>イカ角、ジグ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r6/202403/20240324-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r6/202403/20240324-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->   
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Mar</h4>
+	<p class="update">24.03.11</p>
+	<a href="toppage/gazou_r6/202403/20240310-1.jpg" target="_blank"><img src="toppage/gazou_r6/202403/20240310-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>メバル</dd>
+		<dt>日　時</dt><dd>3月10日　19時～23時</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>31㎝～26㎝</dd>
+		<dt>釣り方</dt><dd>ワーム</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Feb</h4>
+	<p class="update">24.02.19</p>
+	<a href="toppage/gazou_r6/202402/20240218-4.jpg" target="_blank"><img src="toppage/gazou_r6/202402/20240218-4.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>スルメイカ、ヤナギバチメ</dd>
+		<dt>日　時</dt><dd>2月18日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Feb</h4>
+	<p class="update">24.02.19</p>
+	<a href="toppage/gazou_r6/202402/20240218-1.jpg" target="_blank"><img src="toppage/gazou_r6/202402/20240218-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>メバル、カサゴ</dd>
+		<dt>日　時</dt><dd>2月18日　3時〜7時</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r6/202402/20240218-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r6/202402/20240218-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Feb</h4>
+	<p class="update">24.02.13</p>
+	<a href="toppage/gazou_r6/202402/20240211-1.jpg" target="_blank"><img src="toppage/gazou_r6/202402/20240211-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>真鯛</dd>
+		<dt>日　時</dt><dd>2月11日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Feb</h4>
+	<p class="update">24.02.03</p>
+	<a href="toppage/gazou_r6/202402/20240203-1.jpg" target="_blank"><img src="toppage/gazou_r6/202402/20240203-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>甘鯛、カサゴ、アオハタ、イカ</dd>
+		<dt>日　時</dt><dd>2月3日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>9時からの調査便（ショート）</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '24 Feb</h4>
+	<p class="update">24.02.03</p>
+	<a href="toppage/gazou_r6/202402/20240203-2.jpg" target="_blank"><img src="toppage/gazou_r6/202402/20240203-2.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>フクラギ、コマサ、オニカサゴ、根魚</dd>
+		<dt>日　時</dt><dd>1月</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>メタルジグ、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">24.01.05</p>
+	<a href="toppage/gazou_r5/202312/20231231-4.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231231-4.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>オニカサゴ、根魚、レンコダイ</dd>
+		<dt>日　時</dt><dd>12月31日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>タイラバ＆ライトジギング便</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231231-5.jpg" target="_blank">01</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">24.01.05</p>
+	<a href="toppage/gazou_r5/202312/20231231-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231231-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>甘鯛、アオリイカ、コウイカ、カサゴ、レンコタイ、キジハタ</dd>
+		<dt>日　時</dt><dd>12月31日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>アオリイカ600g、900g　コウイカ1.4kg</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231231-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r5/202312/20231231-2.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.30</p>
+	<a href="toppage/gazou_r5/202312/20231230-5.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231230-5.jpg" alt="" class="cards"></a>
+	<p class="tag">お客様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ、コウイカ</dd>
+		<dt>日　時</dt><dd>12月30日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>アオリイカ1.1㎏　コウイカ1.84㎏</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231230-6.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r5/202312/20231230-7.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.30</p>
+	<a href="toppage/gazou_r5/202312/20231230-4.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231230-4.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>甘鯛、アオリイカ、コウイカ、青物、カサゴ、レンコタイ、キジハタ</dd>
+		<dt>日　時</dt><dd>12月30日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>アオリイカ600g、900g　コウイカ1.4㎏</dd>
+	</dl></div>
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.30</p>
+	<a href="toppage/gazou_r5/202312/20231229-5.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231229-5.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>タチウオ、スルメイカ</dd>
+		<dt>日　時</dt><dd>12月29日　19時〜</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>ナイト太刀魚4時間便</dd>
+		<dt>釣り方</dt><dd>テンヤ、イカメタル</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231229-6.jpg" target="_blank">01</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.29</p>
+	<a href="toppage/gazou_r5/202312/20231229-2.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231229-2.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>甘鯛、カサゴ、アオハタ、キジハタ</dd>
+		<dt>日　時</dt><dd>12月29日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>タイラバ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231229-3.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r5/202312/20231229-4.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.29</p>
+	<a href="toppage/gazou_r5/202312/20231229-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231229-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>甘鯛、フクラギ、レンコダイ、根魚</dd>
+		<dt>日　時</dt><dd>12月29日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>タイラバ＆ライトジギング便</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.29</p>
+	<a href="toppage/gazou_r5/202312/20231228-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231228-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>ヒラマサ、根魚、レンコダイ</dd>
+		<dt>日　時</dt><dd>12月28日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>タイラバ＆ライトジギング便</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.25</p>
+	<a href="toppage/gazou_r5/202312/20231224-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231224-1.jpg" alt="" class="cards"></a>
+	<p class="tag">Ariel3様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ、甘鯛、カサゴ、アオハタ</dd>
+		<dt>日　時</dt><dd>12月24日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>甘鯛47cm</dd>
+		<dt>釣り方</dt><dd>ティップラン、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.19</p>
+	<a href="toppage/gazou_r5/202312/20231219-5.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231219-5.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>12月19日　14時〜16時過ぎ</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>ティップラン便</dd>
+		<dt>サイズ</dt><dd>最大1.56kg</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231219-4.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r5/202312/20231219-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.19</p>
+	<a href="toppage/gazou_r5/202312/20231219-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231219-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>真鯛</dd>
+		<dt>日　時</dt><dd>12月19日　6時〜</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>タイラバ＆ライトジギング便</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231219-2.jpg" target="_blank">01</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.16</p>
+	<a href="toppage/gazou_r5/202312/20231216-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231216-1.jpg" alt="" class="cards"></a>
+	<p class="tag">お客様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>12月16日　早朝2時間程</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+		<dt>エ　ギ</dt><dd>シーグルS0 3.5号 004Fキンアジ、他</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.11</p>
+	<a href="toppage/gazou_r5/202312/20231210-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231210-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>12月10日　6時〜10時</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>ティップラン4時間便</dd>
+		<dt>サイズ</dt><dd>最大1.54㎏</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231210-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r5/202312/20231210-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.10</p>
+	<a href="toppage/gazou_r5/202312/20231209-4.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231209-4.jpg" alt="" class="cards"></a>
+	<p class="tag">チーム澤田様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ、根魚、青物など</dd>
+		<dt>日　時</dt><dd>12月9日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ティップラン、タイラバ、ライトジギング</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.10</p>
+	<a href="toppage/gazou_r5/202312/20231209-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231209-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>12月9日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>ティップラン4時間便</dd>
+		<dt>サイズ</dt><dd>最大1.27㎏</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231209-2.jpg" target="_blank">01</a>、
+		<a href="toppage/gazou_r5/202312/20231209-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.08</p>
+	<a href="toppage/gazou_r5/202312/20231208-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231208-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>12月8日　10時〜16時</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>最大1.1㎏</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231208-2.jpg" target="_blank">01</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.07</p>
+	<a href="toppage/gazou_r5/202312/20231206-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231206-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>12月6日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>コース</dt><dd>ティップラン8時間便</dd>
+		<dt>サイズ</dt><dd>700〜960g キロアップ2ハイ</dd>
+		<dt>コメント</dt><dd>今日は昔からお世話になってるバレーヒルの大西さんが乗船。サイズは700〜960gと良型が中心、キロアップ2ハイ。途中釣れない時間もありましたが群れを見つけるとダブルヒット、トリプルヒットになりました。</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.05</p>
+	<a href="toppage/gazou_r5/202312/20231205-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231205-1.jpg" alt="" class="cards"></a>
+	<p class="tag">お客様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>ノドグロ</dd>
+		<dt>日　時</dt><dd>12月5日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ルアー　ホタルイカ</dd>
+		<dt>コメント</dt><dd>いつもの釣果の半分ほどでした…</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲--> 
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.04</p>
+	<a href="toppage/gazou_r5/202312/20231204-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231204-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>真鯛、アオハタ</dd>
+		<dt>日　時</dt><dd>12月4日　10時〜16時</dd>
+		<dt>コース</dt><dd>ライトジギング便</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ジグ、タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Dec</h4>
+	<p class="update">23.12.04</p>
+	<a href="toppage/gazou_r5/202312/20231203-1.jpg" target="_blank"><img src="toppage/gazou_r5/202312/20231203-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>タチウオ</dd>
+		<dt>日　時</dt><dd>12月3日</dd>
+		<dt>コース</dt><dd>ナイト太刀魚4時間便</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>テンヤ、メタルジグ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202312/20231203-2.jpg" target="_blank">01</a>、<a href="toppage/gazou_r5/202312/20231203-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.27</p>
+	<a href="toppage/gazou_r5/202311/20231127-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231127-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>11月27日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>最大1.48kg</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202311/20231127-2.jpg" target="_blank">01</a>、<a href="toppage/gazou_r5/202311/20231127-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.27</p>
+	<a href="toppage/gazou_r5/202311/20231126-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231126-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ、コウイカ</dd>
+		<dt>日　時</dt><dd>11月26日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>最大1.3kg</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.24</p>
+	<a href="toppage/gazou_r5/202311/20231124-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231124-1.jpg" alt="" class="cards"></a>
+	<p class="tag">お客様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>ヒラメ</dd>
+		<dt>日　時</dt><dd>11月24日</dd>
+		<dt>場　所</dt><dd>富山県内某河川河口</dd>
+		<dt>サイズ</dt><dd>57㎝、38㎝</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.22</p>
+	<a href="toppage/gazou_r5/202311/20231122-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231122-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>タチウオ</dd>
+		<dt>日　時</dt><dd>11月22日</dd>
+		<dt>コース</dt><dd>ナイト太刀魚4時間便</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>テンヤ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202311/20231122-2.jpg" target="_blank">01</a>、<a href="toppage/gazou_r5/202311/20231122-3.jpg" target="_blank">02</a>、<a href="toppage/gazou_r5/202311/20231122-4.jpg" target="_blank">03</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.21</p>
+	<a href="toppage/gazou_r5/202311/20231121-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231121-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>11月21日</dd>
+		<dt>コース</dt><dd>ティップラン3時間便</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>最大940g</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.16</p>
+	<a href="toppage/gazou_r5/202311/20231116-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231116-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>タチウオ</dd>
+		<dt>日　時</dt><dd>11月16日</dd>
+		<dt>コース</dt><dd>ナイト太刀魚4時間便</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>テンヤ</dd>
+		<dt>写　真</dt><dd>
+		<a href="toppage/gazou_r5/202311/20231116-2.jpg" target="_blank">01</a>、<a href="toppage/gazou_r5/202311/20231116-3.jpg" target="_blank">02</a>、<a href="toppage/gazou_r5/202311/20231116-4.jpg" target="_blank">03</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.16</p>
+	<a href="toppage/gazou_r5/202311/20231115-2.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231115-2.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>11月15日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+		<dt>サイズ</dt><dd>最大700ｇ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.16</p>
+	<a href="toppage/gazou_r5/202311/20231115-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231115-1.jpg" alt="" class="cards"></a>
+	<p class="tag">山本様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>11月15日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.15</p>
+	<a href="toppage/gazou_r5/202311/20231114-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231114-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ</dd>
+		<dt>日　時</dt><dd>11月14日　13時〜15時</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>最大900ｇ</dd>
+		<dt>釣り方</dt><dd>ティップラン</dd>
+		<dt>写　真</dt><dd><a href="toppage/gazou_r5/202311/20231114-2.jpg" target="_blank">01</a>、<a href="toppage/gazou_r5/202311/20231114-3.jpg" target="_blank">02</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.9</p>
+	<a href="toppage/gazou_r5/202311/20231109-2.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231109-2.jpg" alt="" class="cards"></a>
+	<p class="tag">二口様</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ、サゴシ</dd>
+		<dt>日　時</dt><dd>11月9日</dd>
+		<dt>場　所</dt><dd>能登</dd>
+		<dt>サイズ</dt><dd>最大胴長22cm、5杯</dd>
+		<dt>釣り方</dt><dd>アジの泳がせ釣り</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.9</p>
+	<a href="toppage/gazou_r5/202311/20231109-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231109-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>真鯛、青物、根魚</dd>
+		<dt>日　時</dt><dd>11月9日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>タイラバ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.04</p>
+	<a href="toppage/gazou_r5/202311/20231104-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231104-1.jpg" alt="" class="cards"></a>
+	<p class="tag">チーム澤田様（4名）</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>シイラ、真鯛、アオリイカ、甘鯛、カサゴ、サバ</dd>
+		<dt>日　時</dt><dd>11月4日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ティップラン、タイラバ、ワタツミ</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.04</p>
+	<a href="toppage/gazou_r5/202311/20231103-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231103-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>シイラ</dd>
+		<dt>日　時</dt><dd>11月3日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>サイズ</dt><dd>メーターオーバー連発</dd>
+		<dt>写　真</dt><dd><a href="toppage/gazou_r5/202311/20231103-2.jpg" target="_blank">01</a></dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	  
+<!--▼▼ここから▼▼-->
+<div class="thumbnail2">
+	<h4 class="tp-new">釣果写真 '23 Nov</h4>
+	<p class="update">23.11.04</p>
+	<a href="toppage/gazou_r5/202311/20231101-1.jpg" target="_blank"><img src="toppage/gazou_r5/202311/20231101-1.jpg" alt="" class="cards"></a>
+	<p class="tag">LEGGENDA富山湾ガイドサービス</p>
+	<dl class="details">
+		<dt>魚　種</dt><dd>アオリイカ、真鯛</dd>
+		<dt>日　時</dt><dd>11月1日</dd>
+		<dt>場　所</dt><dd>富山湾</dd>
+		<dt>釣り方</dt><dd>ティップラン、ジグ</dd>
+		<dt>ルアー</dt><dd>ワタツミ115g</dd>
+	</dl></div>
+<!--▲▲ここまで▲▲-->
+	
+<!--◎◎◎◎◎◎◎◎◎◎◎◎釣果写真ここまで◎◎◎◎◎◎◎◎◎◎◎◎-->	
+	</div>
+	
+  <section class="intro" id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.8627814269917!2d137.01748626528777!3d36.72585662996396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff7831d97851945%3A0x4c5853d64d1db93d!2z77yI5pyJ77yJ44Ko44Kt44K544OR44O844OI!5e0!3m2!1sja!2sjp!4v1573722774803!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</section>
+	
+	<!-- Footer Section -->
+  <footer id="contact">
+    <img src="images/shop.jpg" width="" height="" alt="店舗外観">
+<p class="hero_header">
+		有限会社エキスパート<br>
+		  〒933-0813　富山県高岡市下伏間江335<br>
+			TEL0766-23-4617　FAX0766-23-5210</p>
+	  <p class="hero_header">
+		●冬季営業時間●<br>
+			平日・祝日　AM10：00～PM 7：00</p>
+	  <p class="hero_header">
+		●通常営業時間●<br>
+			平　日　AM10：00～PM 8：00<br>
+			　土　　AM 9：00～PM 8：00<br>
+			日・祝　AM 9：00～PM 7：00<br>
+			定休日　水曜日（祝日･祝前日の場合は営業）</p>
+	  <p class="hero_header">
+		各種クレジットカード、電子マネー、QRコード決済が御利用できます。</p>
+	  <p class="hero_header">
+		  ●主な取り扱い商品●<br>
+		  ルアー・磯・船・ファミリー用品・アユ・<br>
+		  渓流・投げ・生餌・配合餌・雑誌など</p>
+    <div class="button" tabindex="0" role="button"><a href="mailto:expert@e-expert.co.jp" title="お問い合わせ">お問い合わせ</a></div>
+  </footer>
+  <!-- Copyrights Section -->
+  <div class="copyright">©2019 エキスパート</div>
+	<p id="page-top" style="bottom: -100px;"><a href="#pagetop">PAGE TOP</a></p>
+</div>
+<!-- Main Container Ends -->
+
+
+</body></html>

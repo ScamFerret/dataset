@@ -1,0 +1,12 @@
+{
+    "url": "https://neoenergytrade.ltd/",
+    "question": "Please analyze this URL https://neoenergytrade.ltd/",
+    "thought": "I need to check the website for any signs of being a scam, such as unusually low prices, claims of free, non-existent companies, etc. The website is accessible, so I need to further analyze the content for signs of being a scam. The website claims to be a British oil and gas company, but there are signs that it may not be legitimate, such as the unusually high returns on investment and the lack of specific details about the company's operations. I now know the final answer The website https://neoenergytrade.ltd/ is likely a scam website.",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake investment site",
+        "reason": "The website claims to be a British oil and gas company but the high returns on investment and lack of specific details about the company's operations are red flags. Additionally the WHOIS information for the domain is not accessible which is suspicious for a legitimate company website."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

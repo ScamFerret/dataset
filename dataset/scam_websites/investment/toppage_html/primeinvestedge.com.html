@@ -1,0 +1,1645 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <meta charset="utf-8">
+    <title>Prime-Invest Edge</title>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    CSS
+    ==================================================
+    -->
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=1.6">
+    <!-- Animation-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css?v=1.5">
+    <link rel="stylesheet" href="css/morris.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Icon font-->
+    <link rel="stylesheet" href="css/icon-font.css">
+    <!-- Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Colorbox-->
+    <link rel="stylesheet" href="css/colorbox.css">
+
+    <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script><script src="../kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+        .lead {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        span {}
+
+        .btn-custom {
+            color: #bdc3c7;
+            font-size: 18px;
+            border: 1px solid #bdc3c7;
+        }
+
+        .btn-custom:hover {
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        .rounded-lg {
+            border-radius: 1rem !important;
+        }
+
+        .text-small {
+            font-size: 0.9rem !important;
+        }
+
+        .custom-separator {
+            width: 5rem;
+            height: 6px;
+            border-radius: 1rem;
+        }
+
+
+
+
+        .cah2 {
+            color: #0998ec;
+            font-size: 20px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .cah2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 4px;
+            border-radius: 1px;
+            background: #0998ec;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+        }
+
+        .carousel_test {
+            margin: 50px auto;
+            padding: 0 10px;
+        }
+
+        .carousel_test .item {
+            color: #ffffff;
+            overflow: hidden;
+            min-height: 120px;
+            font-size: 13px;
+        }
+
+        .carousel_test .media img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .carousel_test .testimonial {
+            padding: 0 10px 0 10px;
+            position: relative;
+        }
+
+        .carousel_test .overview b {
+            text-transform: uppercase;
+            color: #0998ec;
+        }
+
+        @media screen and (max-width: 992px) {
+            .me_table::-webkit-scrollbar {
+                display: none !important;
+                overflow-x: scroll;
+            }
+
+            .rem-home {
+                padding: 9rem 0 5rem 0;
+            }
+
+            @media screen and (max-width: 992px) {
+                .rem-home {
+                    padding: 6rem 0 5rem 0;
+                }
+            }
+
+            /* Hide scrollbar for IE and Edge */
+            .me-table {
+                -ms-overflow-style: none !important;
+                overflow-x: scroll;
+            }
+        }
+
+        .me_icon {
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .token_rtinfo {
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+            margin-top: -80px;
+            padding: 40px 15px;
+            background-color: rgba(255, 255, 255, 0.10);
+            box-shadow: none !important;
+        }
+
+        .token_rt_value {
+            padding: 0 25px;
+        }
+
+        .me_big {
+            font-size:  !important;
+            line-height: normal !important;
+        }
+
+        .tradingview-widget-copyright {
+            display: none !important;
+        }
+
+        .badge {
+            border-radius: 50px;
+            padding: 0.2rem 1rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        .pricing-rate sup {
+            font-size: 24px;
+            position: relative;
+            left: -20px;
+            top: -30px;
+        }
+
+        .pricing-rate span {
+            font-size: 12px;
+            color: #707070;
+            text-transform: uppercase;
+            right: -600px;
+        }
+
+        .pricing-rate {
+            font-size: 70px;
+            font-weight: 700;
+            color: #1a2c79;
+            position: relative;
+            text-align: center;
+        }
+
+
+        .thatwhat {
+            z-index: 99999;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .thatwhat img {
+            height: 60px;
+            width: 60px;
+        }
+
+    </style>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #google_translate_element {
+            z-index: 9999999;
+            position: fixed;
+            bottom: 25px;
+            left: 15px;
+        }
+
+        .goog-te-gadget {
+            font-family: Roboto, "Open Sans", sans-serif !important;
+            text-transform: uppercase;
+        }
+
+        .goog-te-gadget-simple {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            border: 1px solid rgba(255, 255, 255, 0.5) !important;
+            padding: 3px !important;
+            border-radius: 4px !important;
+            font-size: 0.8rem !important;
+            line-height: 2rem !important;
+            display: inline-block;
+            cursor: pointer;
+            zoom: 1;
+            margin-bottom: 4px;
+        }
+
+        .goog-te-menu2 {
+            max-width: 100%;
+        }
+
+        .goog-te-menu-value {
+            color: #fff !important;
+        }
+
+        .goog-te-menu-value:before {
+            font-family: 'Material Icons';
+            content: "\E927";
+            margin-right: 16px;
+            font-size: 2rem;
+            vertical-align: -10px;
+        }
+
+        .goog-te-menu-value span:nth-child(5) {
+            display: none;
+        }
+
+        .goog-te-menu-value span:nth-child(3) {
+            border: none !important;
+            font-family: 'Material Icons';
+        }
+
+        .goog-te-menu-value span:nth-child(3):after {
+            font-family: 'Material Icons';
+            content: "\E5C5";
+            font-size: 1.5rem;
+            vertical-align: -6px;
+        }
+
+        .goog-te-gadget-icon {
+            background-position: 0px 0px;
+            height: 32px !important;
+            width: 32px !important;
+            margin-right: 8px !important;
+            display: none;
+        }
+
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+
+        body {
+            top: 0px !important;
+        }
+
+        /* ================================== *\
+    Mediaqueries
+\* ================================== */
+        @media (max-width: 667px) {
+            #google_translate_element {}
+
+            #google_translate_element goog-te-gadget {}
+
+            #google_translate_element .skiptranslate {}
+
+            #google_translate_element .goog-te-gadget-simple {
+                text-align: center;
+            }
+        }
+
+    </style>
+
+    <style>
+        .xp {
+            top: 60%;
+            width: 100%;
+            vertical-align: middle;
+            position: absolute;
+        }
+
+        .xloader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            bottom: 0;
+            margin-top: -35px;
+            margin-left: -35px;
+            border: 5px solid #2154cf;
+            border-radius: 50%;
+            border-top: 5px solid #fec107;
+            width: 70px;
+            height: 70px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+    
+    
+    
+    <script type="text/javascript">
+        function hide_loader() {
+            document.getElementById("preloader").style.display = "none";
+        }
+
+        window.onload = hide_loader;
+
+    </script>
+    
+<style class="gtranslate_css">div.skiptranslate,#google_translate_element2{display:none!important}body{top:0!important}font font{background-color:transparent!important;box-shadow:none!important;position:initial!important}.gt_float_switcher{font-family:Arial;font-size:20px;border-radius:2px;color:#555;display:inline-block;line-height:20px;box-shadow:rgba(0,0,0,0.15) 0 5px 15px;background:#fff;overflow:hidden;transition:all .5s cubic-bezier(0.4, 0, 1, 1)}.gt_float_switcher img{vertical-align:middle;display:inline-block;width:33px;height:auto;margin:0 5px 0 0;border-radius:3px}.gt_float_switcher .gt_options{position:relative;z-index:777;max-height:250px;overflow-y:auto;transform:translateY(-30px);opacity:0;cursor:pointer;transition:all .8s cubic-bezier(.3,1.1,.4,1.1)}.gt_float_switcher .gt_options a{display:block;text-decoration:none;padding:10px 15px;color:#444;transition:color .4s linear}.gt_float_switcher .gt-selected{position:relative;z-index:888;background-color:#fff;cursor:pointer;text-transform:uppercase;overflow:hidden;text-align:left}.gt_float_switcher .gt_options.gt-open{opacity:1;transform:translateX(0px)}.gt_float_switcher .gt_options::-webkit-scrollbar-track{background-color:#f5f5f5}.gt_float_switcher .gt_options::-webkit-scrollbar{width:5px}.gt_float_switcher .gt_options::-webkit-scrollbar-thumb{background-color:#888}.gt_float_switcher .gt_options a:hover{background:#6070a0;color:#fff}.gt_float_switcher .gt_options a.gt-current{display:none}.gt_float_switcher .gt-selected .gt-current-lang{padding:10px 15px;color:#333;font-weight:bold}.gt_float_switcher .gt-selected .gt-current-lang span.gt-lang-code{position:relative;top:2px}.gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow{display:inline-block;height:24px;width:15px;vertical-align:middle;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 285 285'><path d='M282 76.5l-14.2-14.3a9 9 0 0 0-13.1 0L142.5 174.4 30.3 62.2a9 9 0 0 0-13.2 0L3 76.5a9 9 0 0 0 0 13.1l133 133a9 9 0 0 0 13.1 0l133-133a9 9 0 0 0 0-13z' style='fill:%23666'/></svg>");background-position:50%;background-size:11px;background-repeat:no-repeat;transition:all .3s;transform:rotate(-180deg)}.gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow.gt_arrow_rotate{transform:rotate(0deg)}</style></head>
+
+<body>
+
+    <div class="body-inner">
+        <div id="preloader" style="display: none;">
+  <div id="loader"></div>
+</div>
+
+        <div class="site-top">
+            <header class="header nav-down header-solid" id="header-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo-area clearfix logo-wrapper logo-absolute">
+                            <div class="logo col-lg-3 col-md-12" style="text-align: left;">
+                                <a href="index.html" style="z-index: 999999999;">
+                                    <img src="img/elilosmain.jpg" alt="" style="width: 155px;  margin-top: -5px;">
+                                </a>
+                            </div>
+                            <!-- logo end-->
+                            <div class="col-lg-9 col-md-12 pull-right">
+                                <ul class="top-info top-info-wrraper">
+                                   
+                                    <li><span class="info-icon"><i class="icon icon-envelope"></i></span>
+                                        <div class="info-wrapper">
+                                            <p class="info-title"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c6a7a2abafa886b2a9ada3a8ebafa8b0a3b5b2aba3a8b2e8a5a9ab">admin@primeinvestedge.com</a></p>
+                                            <p class="info-subtitle">Send us mail</p>
+                                        </div>
+                                    </li>
+                                    <li class="header-get-a-quote">
+                                                                              <a class="btn btn-success" href="https://iportal.primeinvestedge.com/login">Login</a>
+                                                                                                                      
+                                      </li>
+                                </ul>
+                            </div>
+                            <!-- Col End-->
+                        </div>
+                        <!-- Logo Area End-->
+                    </div>
+                </div>
+                <!-- Container end-->
+                <div class="site-nav-inner site-navigation navdown nav-transparent">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg justify-content-end">
+                            <a class="btn btn-success d-md-none" style="padding: 6px 10px; border-radius: 5px; margin-right: -8px;" href="https://iportal.primeinvestedge.com/login"><i class="fa fa-sign-in"></i> Login</a>
+                            
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                            </button>
+                            <!-- End of Navbar toggler-->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="indexe47e.html?a=about">About Us</a>
+                                    </li>
+                                    
+                                                                        <li class="nav-item">
+                                        <a href="index0be4.html?a=plans1">Investments</a>
+                                    </li>
+
+                                    
+
+                                    <li class="nav-item">
+                                        <a href="index38cd.html?a=faq">FAQs</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="index15a0.html?a=support">Support</a>
+                                    </li>
+
+                                    <!-- li end-->
+                                    <li class="nav-item">
+                                        <a href="indexb6b1.html?a=privacy">Policy</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="http://app.companiesoffice.govt.nz/co/1168820">Legal</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="index5729.html?a=buy-btc">Buy Digital Currency</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="https://iportal.primeinvestedge.com/register">Sign Up</a>
+                                    </li>
+                                </ul>
+                                <!--Nav ul end-->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Site nav inner end-->
+            </header>
+            <!-- Header end-->
+        </div>
+<div id="box-slide" class="owl-carousel owl-theme page-slider mrt-110 owl-loaded owl-drag">
+         
+         <!-- Item 1 end -->
+
+         
+         <!-- Item 2 end -->
+
+        
+         <!-- Item 3 end -->
+      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2560px, 0px, 0px); transition: all 0s ease 0s; width: 7680px;"><div class="owl-item cloned" style="width: 1280px;"><div class="item" style="background-image:url(images/slider/btc2.jpg)">
+            <div class="container">
+               <div class="box-slider-content">
+                  <div class="box-slider-text animated">
+                     <h2 class="box-slide-title">We are Experts</h2>
+                     <h3 class="box-slide-sub-title">In Cryptocurrency</h3>
+                     <p class="box-slide-description">You have dreams. We have a culturally diverse, forward thinking team ready to help you achieve your dreams.
+                    
+                     </p>
+                     <p>
+                         <a href="https://iportal.primeinvestedge.com/register" class="slider btn btn-success">Get Started</a>
+                         <a href="indexe47e.html?a=about" class="slider btn btn-border">Know More</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div></div><div class="owl-item cloned" style="width: 1280px;"><div class="item" style="background-image:url(images/slider/gold-3080552_1920.jpg)">
+            <div class="container">
+               <div class="box-slider-content">
+                  <div class="box-slider-text animated">
+                     <h2 class="box-slide-title">We are the Leaders</h2>
+                     <h3 class="box-slide-sub-title">In Crypto Assets Trade</h3>
+                     <p class="box-slide-description">
+                         We help our investors make the best out of cryptocurrency innovation through our team of expert traders.
+                     </p>
+                     <p>
+                         <a href="https://iportal.primeinvestedge.com/register" class="slider btn btn-warning">Get Started</a>
+                        <a href="#0" class="slider btn btn-border">Know More</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div></div><div class="owl-item active" style="width: 1280px;"><div class="item" style="background-image:url(images/slider/btc2.jpg)">
+            <div class="container">
+               <div class="box-slider-content">
+                  <div class="box-slider-text animated">
+                     <h2 class="box-slide-title">We are Experts</h2>
+                     <h3 class="box-slide-sub-title">In Cryptocurrency</h3>
+                     <p class="box-slide-description">You have dreams. We have a culturally diverse, forward thinking team ready to help you achieve your dreams.
+                    
+                     </p>
+                     <p>
+                         <a href="https://iportal.primeinvestedge.com/register" class="slider btn btn-success">Get Started</a>
+                         <a href="indexe47e.html?a=about" class="slider btn btn-border">Know More</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div></div><div class="owl-item" style="width: 1280px;"><div class="item" style="background-image:url(images/slider/gold-3080552_1920.jpg)">
+            <div class="container">
+               <div class="box-slider-content">
+                  <div class="box-slider-text animated">
+                     <h2 class="box-slide-title">We are the Leaders</h2>
+                     <h3 class="box-slide-sub-title">In Crypto Assets Trade</h3>
+                     <p class="box-slide-description">
+                         We help our investors make the best out of cryptocurrency innovation through our team of expert traders.
+                     </p>
+                     <p>
+                         <a href="https://iportal.primeinvestedge.com/register" class="slider btn btn-warning">Get Started</a>
+                        <a href="#0" class="slider btn btn-border">Know More</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div></div><div class="owl-item cloned" style="width: 1280px;"><div class="item" style="background-image:url(images/slider/btc2.jpg)">
+            <div class="container">
+               <div class="box-slider-content">
+                  <div class="box-slider-text animated">
+                     <h2 class="box-slide-title">We are Experts</h2>
+                     <h3 class="box-slide-sub-title">In Cryptocurrency</h3>
+                     <p class="box-slide-description">You have dreams. We have a culturally diverse, forward thinking team ready to help you achieve your dreams.
+                    
+                     </p>
+                     <p>
+                         <a href="https://iportal.primeinvestedge.com/register" class="slider btn btn-success">Get Started</a>
+                         <a href="indexe47e.html?a=about" class="slider btn btn-border">Know More</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div></div><div class="owl-item cloned" style="width: 1280px;"><div class="item" style="background-image:url(images/slider/gold-3080552_1920.jpg)">
+            <div class="container">
+               <div class="box-slider-content">
+                  <div class="box-slider-text animated">
+                     <h2 class="box-slide-title">We are the Leaders</h2>
+                     <h3 class="box-slide-sub-title">In Crypto Assets Trade</h3>
+                     <p class="box-slide-description">
+                         We help our investors make the best out of cryptocurrency innovation through our team of expert traders.
+                     </p>
+                     <p>
+                         <a href="https://iportal.primeinvestedge.com/register" class="slider btn btn-warning">Get Started</a>
+                        <a href="#0" class="slider btn btn-border">Know More</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="icon icon-left-arrow2"></i></div><div class="owl-next"><i class="icon icon-right-arrow2"></i></div></div><div class="owl-dots disabled"></div></div>
+
+<section class="ts-features-col" style="margin-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div style=" width: 100%;">
+                    <div style="width: 100%; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; padding:1px;padding: 0px; margin: 0px;">
+                        <div style="height:40px;">
+                            <embed src="https://widget.coinlib.io/widget?type=horizontal_v2&amp;theme=light&amp;pref_coin_id=1505&amp;invert_hover=" width="100%" height="36" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ts-features-col" style="padding-bottom: 2px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="feature-text-box">
+                    <h2 class="column-title"><span>Prime-Invest Edge</span>We Have the Edge
+                    </h2>
+                </div>
+                <p>
+                    Our several years of experience has made us one of the best in the business.
+                    Our system is built for your maximum benefit &amp; our experts ready to provide guide at every step of the way
+                </p>
+                <a href="indexe47e.html?a=about" class="btn btn-primary">Read More</a>
+            </div>
+            <!-- Col end-->
+            <!--<div class="col-lg-4">
+                <div class="ts-feature text-center box-primary">
+                    <div class="ts-feature-info"><i class="icon icon-chart2"></i>
+                        <div class="tenor-gif-embed" data-postid="23995088" data-share-method="host" data-aspect-ratio="1.0356" data-width="100%"><a href="https://tenor.com/view/monkey-nft-gif-23995088">Monkey Nft GIF</a>from <a href="https://tenor.com/search/monkey+nft-gifs">Monkey Nft GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                    </div>
+                </div>
+                <!-- feature 2 end-->
+            </div>--&gt;
+            <!-- Col end-->
+            <div class="col-lg-4">
+                <div class="ts-feature text-center box-secondary">
+                    <div class="ts-feature-info"><i class="icon icon-layers"></i>
+                       <img src="primecert-1.jpg" width="100%">
+                    </div>
+                </div>
+                <!-- feature 3 end-->
+            </div>
+            <!-- Col end-->
+        </div>
+        <!-- Row end-->
+    </section></div>
+    <!-- Container end-->
+
+
+<section id="about-us" class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="column-title title-small"><span>About us</span>We have been known to give investors the better choice.</h2>
+                <p>With over 153,000 investments under our management, $5 billion+ in assets under our administration, over 11 industry awards,
+                    we have made Prime-Invest Edge the safe haven for investors who want to trust their financial partner to be capable of
+                    helping them reach their financial goals, and in due time, without the fear of disappointments.</p>
+                <div class="gap-15"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ts-feature-box">
+                            <div class="ts-feature-info icon-left">
+                                <span class="feature-icon">
+                                    <i class="icon icon-business"></i>
+                                </span>
+                                <div class="feature-content">
+                                    <h3 class="ts-feature-title">80m+</h3>
+
+                                    <p>NFTs</p>
+                                </div>
+                                <!-- feature content end -->
+                            </div>
+                        </div>
+                        <!-- feature box end-->
+                        <div class="ts-feature-box">
+                            <div class="ts-feature-info icon-left">
+                                <span class="feature-icon">
+                                    <i class="icon icon-chart22"></i>
+                                </span>
+                                <div class="feature-content">
+                                    <h3 class="ts-feature-title">$100m+</h3>
+
+                                    <p>Volume</p>
+                                </div>
+                                <!-- feature content end -->
+                            </div>
+                        </div>
+                        <!-- feature box end-->
+                        <div class="ts-feature-box">
+                            <div class="ts-feature-info icon-left">
+                                <span class="feature-icon">
+                                    <i class="icon icon-deal"></i>
+                                </span>
+                                <div class="feature-content">
+                                    <h3 class="ts-feature-title">32+</h3>
+
+                                    <p>Partners</p>
+                                </div>
+                                <!-- feature content end -->
+                            </div>
+                        </div>
+                        <!-- feature box end-->
+                    </div>
+                </div>
+                <!-- container row end-->
+            </div>
+            <!-- Col end-->
+            <div class="col-lg-6 align-self-center">
+                <img class="img-fluid" src="images/pages/about_2.png" alt="">
+            </div>
+
+            <div class="col-md-12 align-self-center">
+                <a class="btn btn-primary" href="indexe47e.html?a=about"> Read More</a>
+            </div>
+            <!-- Col end-->
+        </div>
+        <!-- Main row end-->
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Section Features -->
+
+
+
+<section class="ts-features no-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="column-title title-small text-center">3 Simple Steps</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 feature-box1" style="background-image: url(images/features/feature1.jpg);">
+                <div class="ts-feature text-center">
+                    <div class="ts-feature-info"><i class="icon icon-users"></i>
+                        <h3 class="ts-feature-title">Create An Account</h3>
+                        <p><a href="https://iportal.primeinvestedge.com/register" class="text-warning">Sign up</a> for an account with us to get started, it is easy and simple.</p>
+                    </div>
+                </div>
+                <!-- feature 1 end-->
+            </div>
+            <!-- Col end-->
+            <div class="col-lg-4 feature-box2" style="background-image: url(images/features/feature2.jpg);">
+                <div class="ts-feature text-center">
+                    <div class="ts-feature-info"><i class="icon icon-upload"></i>
+                        <h3 class="ts-feature-title">Make Deposit</h3>
+                        <p>Deposit into any of our investment plans of your choice.</p>
+                    </div>
+                </div>
+                <!-- feature 2 end-->
+            </div>
+            <!-- Col end-->
+            <div class="col-lg-4 feature-box3" style="background-image: url(images/features/feature3.jpg);">
+                <div class="ts-feature text-center">
+                    <div class="ts-feature-info"><i class="icon icon-wallet"></i>
+                        <h3 class="ts-feature-title">Make Withdrawal</h3>
+                        <p>You can withdraw as soon as your investment duration is completed.</p>
+                    </div>
+                </div>
+                <!-- feature 3 end-->
+            </div>
+            <!-- Col end-->
+        </div>
+        <!-- Row end-->
+    </div>
+    <!-- Container end-->
+</section>
+
+<!-- Section Team -->
+
+
+<!-- Section Features -->
+<section class="ts-featured-cases">
+    <div class="container">
+        <div class="section-title-vertical">
+            <h2 class="section-title">Featured Services</h2>
+        </div>
+        <!-- Title row end-->
+        <div class="row">
+            <div class="owl-carousel owl-theme featured-cases-slide owl-loaded owl-drag" id="featured-cases-slide">
+                
+                <!-- Item 1 end-->
+                
+                <!-- Item 3 end-->
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2280px, 0px, 0px); transition: all 0s ease 0s; width: 6840px;"><div class="owl-item cloned" style="width: 1140px;"><div class="item">
+                    <div class="featured-projects-content">
+                        <div class="featured-projects-text float-left">
+                            <h2 class="column-title"><span>Prime-Invest Edge</span> The Non-farm Payrolls(NFP)</h2>
+                            <p class="intro-desc">The Non-farm payrolls report is one of the most anticipated economic news reports in the
+                                forex markets. It is published the first Friday of the month at 8:30AM Eastern time by the U.S. Bureau of labor statistics.
+
+                                The data release actually includes a number of statistics, and not just the NFP(which is the change in the number of employees
+                                in the country, not including farm, government, private and non- profit employees.). Another metric included in the data
+                                release is the unemployment rate.
+
+                                As one of the most anticipated economic news events of the months, Integrated Binary Options Services focus mainly on currency pairs(especially those
+                                involving the U.S. Dollar) and typically see big price movements in the minutes and hours after the data is released.
+                                This makes it a great opportunity for our traders with a sound strategy to take advantage of the volatility.</p>
+                        </div>
+                        <div class="features-slider-img float-right">
+                            <img class="img-fluid" src="images/slider-small/featured-slider1.jpg" alt="">
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 1140px;"><div class="item">
+                    <div class="featured-projects-content">
+                        <div class="featured-projects-text pull-left">
+                            <h2 class="column-title"><span>TRUST, EXPERTISE, ROBUSTNESS</span>The Difference</h2>
+                            <p class="intro-desc">Prime-Invest Edge provides industry-focused services for public and private clients. Our experienced staff, combined with our global network, allow us to provide the support you need—wherever you need it, at home and abroad, whatever the size of your organisation.
+
+                                In our several years of experience in the finance industry, we are able to tailor specifically for each of our clients the most suitable investment plan that can work for them. It does not matter if you are a 4,5 or 6 digits earner, everyone has an opportunity at neptodigitalassets to pursue their financial goals.
+
+</p>
+                        </div>
+                        <div class="features-slider-img pull-right">
+                            <img src="images/slider-small/featured-slider2.jpg" alt="">
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 1140px;"><div class="item">
+                    <div class="featured-projects-content">
+                        <div class="featured-projects-text float-left">
+                            <h2 class="column-title"><span>Prime-Invest Edge</span> The Non-farm Payrolls(NFP)</h2>
+                            <p class="intro-desc">The Non-farm payrolls report is one of the most anticipated economic news reports in the
+                                forex markets. It is published the first Friday of the month at 8:30AM Eastern time by the U.S. Bureau of labor statistics.
+
+                                The data release actually includes a number of statistics, and not just the NFP(which is the change in the number of employees
+                                in the country, not including farm, government, private and non- profit employees.). Another metric included in the data
+                                release is the unemployment rate.
+
+                                As one of the most anticipated economic news events of the months, Integrated Binary Options Services focus mainly on currency pairs(especially those
+                                involving the U.S. Dollar) and typically see big price movements in the minutes and hours after the data is released.
+                                This makes it a great opportunity for our traders with a sound strategy to take advantage of the volatility.</p>
+                        </div>
+                        <div class="features-slider-img float-right">
+                            <img class="img-fluid" src="images/slider-small/featured-slider1.jpg" alt="">
+                        </div>
+                    </div>
+                </div></div><div class="owl-item" style="width: 1140px;"><div class="item">
+                    <div class="featured-projects-content">
+                        <div class="featured-projects-text pull-left">
+                            <h2 class="column-title"><span>TRUST, EXPERTISE, ROBUSTNESS</span>The Difference</h2>
+                            <p class="intro-desc">Prime-Invest Edge provides industry-focused services for public and private clients. Our experienced staff, combined with our global network, allow us to provide the support you need—wherever you need it, at home and abroad, whatever the size of your organisation.
+
+                                In our several years of experience in the finance industry, we are able to tailor specifically for each of our clients the most suitable investment plan that can work for them. It does not matter if you are a 4,5 or 6 digits earner, everyone has an opportunity at neptodigitalassets to pursue their financial goals.
+
+</p>
+                        </div>
+                        <div class="features-slider-img pull-right">
+                            <img src="images/slider-small/featured-slider2.jpg" alt="">
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 1140px;"><div class="item">
+                    <div class="featured-projects-content">
+                        <div class="featured-projects-text float-left">
+                            <h2 class="column-title"><span>Prime-Invest Edge</span> The Non-farm Payrolls(NFP)</h2>
+                            <p class="intro-desc">The Non-farm payrolls report is one of the most anticipated economic news reports in the
+                                forex markets. It is published the first Friday of the month at 8:30AM Eastern time by the U.S. Bureau of labor statistics.
+
+                                The data release actually includes a number of statistics, and not just the NFP(which is the change in the number of employees
+                                in the country, not including farm, government, private and non- profit employees.). Another metric included in the data
+                                release is the unemployment rate.
+
+                                As one of the most anticipated economic news events of the months, Integrated Binary Options Services focus mainly on currency pairs(especially those
+                                involving the U.S. Dollar) and typically see big price movements in the minutes and hours after the data is released.
+                                This makes it a great opportunity for our traders with a sound strategy to take advantage of the volatility.</p>
+                        </div>
+                        <div class="features-slider-img float-right">
+                            <img class="img-fluid" src="images/slider-small/featured-slider1.jpg" alt="">
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 1140px;"><div class="item">
+                    <div class="featured-projects-content">
+                        <div class="featured-projects-text pull-left">
+                            <h2 class="column-title"><span>TRUST, EXPERTISE, ROBUSTNESS</span>The Difference</h2>
+                            <p class="intro-desc">Prime-Invest Edge provides industry-focused services for public and private clients. Our experienced staff, combined with our global network, allow us to provide the support you need—wherever you need it, at home and abroad, whatever the size of your organisation.
+
+                                In our several years of experience in the finance industry, we are able to tailor specifically for each of our clients the most suitable investment plan that can work for them. It does not matter if you are a 4,5 or 6 digits earner, everyone has an opportunity at neptodigitalassets to pursue their financial goals.
+
+</p>
+                        </div>
+                        <div class="features-slider-img pull-right">
+                            <img src="images/slider-small/featured-slider2.jpg" alt="">
+                        </div>
+                    </div>
+                </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="icon icon-left-arrow2"></i></div><div class="owl-next"><i class="icon icon-right-arrow2"></i></div></div><div class="owl-dots disabled"></div></div>
+            <!-- Featured Projects slider end-->
+        </div>
+        <!-- Content row end-->
+    </div>
+    <!-- Container end-->
+</section>
+
+
+
+<section id="call-to-action" class="call-to-action solid-bg" style="padding-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 align-self-center">
+                <h3 class="call-to-action-title">We Offer Financial Strategies &amp; Superior Services</h3>
+                <p>
+                    Our mission is to provide quality guidance, build relationships of
+                    <br> trust, and develop innovative solutions
+                </p>
+            </div>
+            <div class="col-lg-4 text-right">
+                <a class="btn btn-primary" href="https://iportal.primeinvestedge.com/register">Open Account</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-container" id="main-container" style="padding-top: 0px;">
+
+    <div class="ts-price-box solid-bg" style="margin-top: 0px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="section-title"><span>INVESTMENT</span>PLANS</h2>
+                </div>
+                <!-- Col End -->
+            </div>
+
+             <div class="row" style="margin-bottom: 40px;">
+
+                <div class="col-lg-12">
+                    <div class="pricing-boxed">
+
+
+                        <div class="single-price-box featured">
+                            <div class="pricing-plan">
+                                <div class="pricing-header border-left" style="background-color: rgb(253 51 76);">
+                                      <h3 class="plan-price">
+                                        <strong>BASIC</strong>
+                                    </h3>
+                                    <h2 class="plan-name">2% Daily Profit</h2>
+                                </div>
+                                <ul class="list-unstyled">
+                                    
+                                    <li><span style="color: #ff9900;">Min. Deposit: </span><b>$ 100</b></li> 
+                                                                 
+                                    <li><span style="color: #ff9900;">Max. Deposit: </span><b>$ 999</b></li>
+                                    
+                                    <li><span style="color: #ff9900;">Duration: </span><b> 30 Days</b></li>
+                                    <li><span style="color: #ff9900;">Referral Bonus: </span><b>4 %</b></li>
+                                    
+                                </ul>
+                                <div>
+                                    <a href="https://iportal.primeinvestedge.com/register" class="btn btn-primary" style="background-color: rgb(253 51 76);">Invest</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="single-price-box featured">
+                            <div class="pricing-plan">
+                                <div class="pricing-header border-left" style="background-color: rgb(253 51 76);">
+                                      <h3 class="plan-price">
+                                        <strong>CLASSIC</strong>
+                                    </h3>
+                                    <h2 class="plan-name">4% Daily Profit</h2>
+                                </div>
+                                <ul class="list-unstyled">
+                                    
+                                    <li><span style="color: #ff9900;">Min. Deposit: </span><b>$ 1,000</b></li> 
+                                                                 
+                                    <li><span style="color: #ff9900;">Max. Deposit: </span><b>$ 19,999</b></li>
+                                    
+                                    <li><span style="color: #ff9900;">Duration: </span><b> 30 Days</b></li>
+                                    <li><span style="color: #ff9900;">Referral Bonus: </span><b>6 %</b></li>
+                                    
+                                </ul>
+                                <div>
+                                    <a href="https://iportal.primeinvestedge.com/register" class="btn btn-primary" style="background-color: rgb(253 51 76);">Invest</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="single-price-box featured">
+                            <div class="pricing-plan">
+                                <div class="pricing-header border-left" style="background-color: rgb(253 51 76);">
+                                      <h3 class="plan-price">
+                                        <strong>GOLD</strong>
+                                    </h3>
+                                    <h2 class="plan-name">6% Daily Profit</h2>
+                                </div>
+                                <ul class="list-unstyled">
+                                    
+                                    <li><span style="color: #ff9900;">Min. Deposit: </span><b>$ 20,000</b></li> 
+                                                                 
+                                    <li><span style="color: #ff9900;">Max. Deposit: </span><b>$ 99,999</b></li>
+                                    
+                                    <li><span style="color: #ff9900;">Duration: </span><b> 30 Days</b></li>
+                                    <li><span style="color: #ff9900;">Referral Bonus: </span><b>6 %</b></li>
+                                    
+                                </ul>
+                                <div>
+                                    <a href="https://iportal.primeinvestedge.com/register" class="btn btn-primary" style="background-color: rgb(253 51 76);">Invest</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                                                <div class="single-price-box featured">
+                            <div class="pricing-plan">
+                                <div class="pricing-header border-left" style="background-color: rgb(253 51 76);">
+                                      <h3 class="plan-price">
+                                        <strong>PREMIUM</strong>
+                                    </h3>
+                                    <h2 class="plan-name">8% Daily Profit</h2>
+                                </div>
+                                <ul class="list-unstyled">
+                                    
+                                    <li><span style="color: #ff9900;">Min. Deposit: </span><b>$ 100,000</b></li> 
+                                                                 
+                                    <li><span style="color: #ff9900;">Max. Deposit: </span><b>Unlimited</b></li>
+                                    
+                                    <li><span style="color: #ff9900;">Duration: </span><b> 30 Days</b></li>
+                                    <li><span style="color: #ff9900;">Referral Bonus: </span><b>6%</b></li>
+                                    
+                                </ul>
+                                <div>
+                                    <a href="https://iportal.primeinvestedge.com/register" class="btn btn-primary" style="background-color: rgb(253 51 76);">Invest</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+</section>
+
+<section class="main-container" id="main-container" style="padding-top: 0px;">
+
+    <div class="ts-price-box solid-bg" style="margin-top: 0px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="section-title"><span>Presentation</span>English</h2>
+                </div>
+                <!-- Col End -->
+            </div>
+
+             <div class="row" style="margin-bottom: 40px;">
+
+                <div class="col-lg-12">
+                    <div class="pricing-boxed">
+
+ <div class="embed-responsive embed-responsive-16by9">
+ <video src="video/english.mp4" width="100%" controls=""></video>
+</div>
+                        <div class="single-price-box ">
+                           
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="single-price-box featured">
+                          
+                        </div>
+
+                        <div class="single-price-box ">
+                           
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        
+    
+</section>
+
+<section class="main-container" id="main-container" style="padding-top: 0px;">
+
+    <div class="ts-price-box solid-bg" style="margin-top: 0px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="section-title">French</h2>
+                </div>
+                <!-- Col End -->
+            </div>
+
+             <div class="row" style="margin-bottom: 40px;">
+
+                <div class="col-lg-12">
+                    <div class="pricing-boxed">
+
+ <div class="embed-responsive embed-responsive-16by9">
+ <video src="video/french.mp4" width="100%" controls=""></video>
+</div>
+                        <div class="single-price-box ">
+                           
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="single-price-box featured">
+                          
+                        </div>
+
+                        <div class="single-price-box ">
+                           
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        
+    
+</section>
+<!--<section class="main-container" id="main-container" style="padding-top: 0px;">
+
+    <div class="ts-price-box solid-bg" style="margin-top: 0px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="section-title"><span>Presentation</span>Spanish</h2>
+                </div>
+                
+            </div>
+
+             <div class="row" style='margin-bottom: 40px;'>
+
+                <div class="col-lg-12">
+                    <div class="pricing-boxed">
+
+ <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MXZ8qE5Bz7M" allowfullscreen></iframe>
+</div>
+                        <div class="single-price-box ">
+                           
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="single-price-box featured">
+                          
+                        </div>
+
+                        <div class="single-price-box ">
+                           
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>-->
+
+
+<!-- Section FAQ -->
+<section class="main-container" id="main-container">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="accordion-title">
+                    <h3 class="column-title"><span>Our FAQ</span> Frequently Asked Questions</h3>
+                </div>
+                <div class="gap-40"></div>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link " data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <p>What is Prime-Invest Edge?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse show" id="collapse1" aria-labelledby="heading1" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Prime-Invest Edge Trade our company provides a full investment service focused on the bitcoin and cryptocurrency market We are among the best platforms to invest and grow your bitcoin and other cryptocurrency</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <p>How do I create my account?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse2" aria-labelledby="heading2" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Registration process is very easy and will take a few moments to complete Simply click CREATE ACCOUNT button and fill in all the required fields</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <p>How do I make a deposit?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse3" aria-labelledby="heading3" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>To deposit funds in your trading account is quick and simple For your convenience you may choose one of the several available deposit methods To make a successful deposit please follow the steps below Login to your account Click on the DEPOSITS button in the DASHBOARD section Choose the deposit option And follow the steps to complete your transaction</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <p>How long does my deposit take before it can reflect on my Investments account dashboard?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse4" aria-labelledby="heading4" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Your deposit will be reflected immediately once it is confirmed on the blockchain network</p>
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <div class="card">
+                        <div class="card-header" id="heading5">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <p>How do I make a withdrawal?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse5" aria-labelledby="heading5" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>To make a withdrawal request click the WITHDRAW button at the top center of your account dashboard and input the required details to withdraw</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading6">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    <p>How long does it take to process my withdrawal?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse6" aria-labelledby="heading6" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Once we receive your withdrawal request we process immediately and send to your bitcoin wallet</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading7">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    <p>Can I have more than one account?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse7" aria-labelledby="heading7" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>No you cannot have more than one account.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading8">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    <p>Is this company properly registered?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse8" aria-labelledby="heading8" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Yes we are officially and properly registered with the New Zealand company house our company registration number is #1168820</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading9">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                    <p>Can I have more than two accounts?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse9" aria-labelledby="heading9" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>We do not allow multiple accounts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading10">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    <p>how many times can i make a deposit?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse10" aria-labelledby="heading10" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Yes you can make as many deposit as you want on any of our investment plans.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- col end-->
+            <div class="col-lg-4">
+                <div class="help-box">
+                    <div class="help mrb-40">
+                        <h2>Need any help!</h2>
+                        <p>
+                            Find answers to frequently asked questions about Prime-Invest Edge </p><a class="btn btn-primary" href="index15a0.html?a=support">Contact us</a>
+                    </div>
+                    <!-- Quote item end-->
+                </div>
+            </div>
+            <!-- Col end-->
+        </div>
+        <!-- Row end-->
+    </div>
+</section>
+<section class="main-container" id="main-container" style="margin-bottom: 180px;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="section-title"><span>Send Us Message</span>Contact Us</h2>
+            </div>
+        </div>
+        <!-- Title row end-->
+    </div>
+    <!-- container end-->
+    <div class="ts-form form-boxed" id="ts-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-wrapper">
+                        <div class="contact-box form-box">
+                            <form class="contact-form" action="https://fxglobaltr.com/?a=supoort" method="POST"><input type="hidden" name="form_id" value="16519677023677"><input type="hidden" name="form_token" value="bc7991a4cd71bd59b7cee5d1047e86eb"><input type="hidden" name="form_id" value="16461986134364"><input type="hidden" name="form_token" value="99f2b7d2151c0f5a9dbf171e8069792c">
+                                <input type="hidden" name="a" value="support">
+                                <input type="hidden" name="action" value="send">
+                                <div class="error-container"></div>
+                                <div class="row">
+                                    <!-- Col end-->
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control form-email" type="text" name="name" value="" placeholder="Enter Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control form-name" type="text" name="email" value="" placeholder="Enter Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-message required-field" placeholder="Message *" name="message" cols="45" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Col 12 end-->
+                                </div>
+                                <!-- Form row end-->
+                                <div class="text-right">
+                                    <button class="btn btn-primary tw-mt-30" name="send" type="submit">Contact US</button>
+                                </div>
+                            </form>
+                            <!-- Form end-->
+                        </div>
+                        <div class="contact-box info-box">
+                            <div class="contact-info-right">
+                                <h3>Contact Us</h3>
+                                <div class="ts-contact-info"><span class="ts-contact-icon float-left"><i class="icon icon-map-marker2"></i></span>
+                                    <div class="ts-contact-content">
+                                        <h3 class="ts-contact-title">Visit Us</h3>
+                                        <p>1100 15th St NW, Washington, DC 2005, USA
+</p>
+                                    </div>
+                                    <!-- Contact content end-->
+                                </div>
+                                
+                                <div class="ts-contact-info"><span class="ts-contact-icon float-left"><i class="icon icon-map-marker2"></i></span>
+                                    <div class="ts-contact-content">
+                                        <h3 class="ts-contact-title">Phone</h3>
+                                        <p>+1 (731) 337 2738
+</p>
+                                    </div>
+                                    <!-- Contact content end-->
+                                </div>
+                                
+                                <div class="ts-contact-info last"><span class="ts-contact-icon float-left"><i class="icon icon-envelope"></i></span>
+                                    <div class="ts-contact-content">
+                                        <h3 class="ts-contact-title">Mail Us</h3>
+                                       admin@primeinvestedge.com
+                                    </div>
+                                    <!-- Contact content end-->
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top-bg row">
+                        <div class="col-md-4 footer-box"><i class="icon icon-users"></i>
+                            <div class="footer-box-content">
+                                <h3>739012</h3>
+                                <p>USERS</p>
+                            </div>
+                        </div>
+                        <!-- Box 2 end-->
+                        <div class="col-md-4 footer-box"><i class="icon icon-upload"></i>
+                            <div class="footer-box-content">
+                                <h3>USD 9186636.48</h3>
+                                <p>WITHDRAWALS</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 footer-box"><i class="icon icon-download"></i>
+                            <div class="footer-box-content">
+                                <h3>USD 7648636.85</h3>
+                                <p>DEPOSITS</p>
+                            </div>
+                        </div>
+                        <!-- Box 3 end-->
+                    </div>
+                    <!-- Content row end-->
+                </div>
+                <!-- Container end-->
+            </div>
+            <!-- Footer top end-->
+            <div class="footer-main bg-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 footer-widget footer-about">
+                            
+                            <p>We are everything a traditional financial institution is not.
+                                We set out to give investors better, simpler and more profitable ways to become
+                                financially successful and secure.</p>
+                            <div class="footer-social">
+                               
+                            </div>
+                            <!-- Footer social end-->
+                        </div>
+                        <!-- About us end-->
+                        <div class="col-lg-5 col-md-12 footer-widget">
+                            <h3 class="widget-title">Useful Docs &amp; Quick Links</h3>
+                            <ul class="list-dash">
+                                <li><a href="e-overview.pdf">Company Profile &amp; Certificates</a></li>
+                                <li><a href="e-agreement.pdf">Company Marketing Agreement</a></li>
+                                <li><a href="e-plans.pdf">Download Plans</a></li>
+                                <li><a href="indexe47e.html?a=about">About Us</a></li>
+                                <li><a href="https://iportal.primeinvestedge.com/register">Sign Up</a></li>
+                                <li><a href="https://iportal.primeinvestedge.com/login">Login</a></li>
+                               
+                                <li><a href="index15a0.html?a=support">Get Support</a></li>
+                                <li><a href="https://app.companiesoffice.govt.nz/co/1168820">Legal</a></li>
+                                <li><a href="indexb6b1.html?a=privacy">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <!-- About us end-->
+
+                        <div class="col-lg-12 footer-widget">
+                            <img src="images/tfc-icon.png" alt="">
+                            <div class="newsletter-introtext"><br>
+                                Prime-Invest Edge is a member of The Financial Commission, an international organization engaged in
+                                the resolution of disputes within the financial services industry in the Forex market.
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 footer-widget">
+                            <img src="images/sec-logo.png" alt=""><br>
+                            <div class="newsletter-introtext"><br>
+                                We are regulated by the US Securities and Exchange Commission. The mission of the SEC is to protect
+                                investors; maintain fair,
+                                orderly, and efficient markets; and facilitate capital formation.
+
+                                Prime-Invest Edge is an investment company that . Direct access to over 50 financial markets
+                                through one account. Any information contained on this website is provided to you for informational
+                                purposes only and should not be regarded as an offer or solicitation of an offer to buy or sell any
+                                investments or related services that may be referenced here. Investing in certain instruments,
+                                including stocks, options, futures, foreign currencies, and bonds involve a high level of risk.
+                                Trading on margin comes with substantial risk as well. You must be aware of these risks before
+                                opening an account to trade. The income you may get from online investing may go down as well
+                                as up.
+
+
+                                Prime-Invest Edge Trade is a registered investment dealer, a member of the
+                                United States Securities and Exchange Commission (SEC), the Investment Industry Regulatory Organization of Canada
+                                (IIROC) and a member of the Canadian Investor Protection Fund (CIPF), the benefits of which are limited to the
+                                activities undertaken by Prime-Invest Edge.
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+<style>
+    .mgm {
+        border-radius: 7px;
+        position: fixed;
+        z-index: 90;
+        bottom: 45%;
+        right: 50px;
+        background: #fff;
+        padding: 10px 27px;
+        box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
+    }
+
+    .mgm a {
+        font-weight: 700;
+        display: block;
+        color: #2962FF;
+    }
+
+    .mgm a,
+    .mgm a:active {
+        transition: all .2s ease;
+        color: #2962FF;
+    }
+</style>
+<div class="mgm" style="display: none;">
+    <div class="txt" style="color:black;"></div>
+</div>
+
+
+
+                    <!-- Contnt row end-->
+                </div>
+                <!-- Container end-->
+            </div>
+            <!-- Footer Main-->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="copyright-info"><span>Copyright © 2023 Prime-Invest Edge. All Rights Reserved.</span></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="footer-menu">
+                                <ul class="nav unstyled">
+                                    <li><a href="indexe47e.html?a=about">About</a></li>
+                                    <li><a href="indexb6b1.html?a=privacy">Privacy Policy</a></li>
+                                    <li><a href="index5729.html?a=buy-btc">Buy Digital Currency</a></li>
+                                    <li><a href="https://app.companiesoffice.govt.nz/co/1168820">Legals</a></li>
+                                    <li><a href="index38e1.html?a=contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row end-->
+                </div>
+                <!-- Container end-->
+            </div>
+            <!-- Copyright end-->
+        </footer>
+        <!--footer section end-->
+
+        <!--bottom to top button end-->
+        <div id="google_translate_element"></div>
+        
+        
+        
+        <script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <!-- Popper-->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap jQuery-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- Owl Carousel-->
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- Counter-->
+        <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+        <!-- Waypoints-->
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+        <!-- Color box-->
+        <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+        <!-- Smoothscroll-->
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <!-- Google Map API Key-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+        <!-- Google Map Plugin-->
+        <script type="text/javascript" src="js/gmap3.js"></script>
+        <!-- Template custom-->
+        <script type="text/javascript" src="js/custom.js"></script>
+    
+<div class="gtranslate_wrapper gt_container--c8la1f"><!-- GTranslate: https://gtranslate.com --><div id="google_translate_element2"></div><div id="gt_float_wrapper" style="position:fixed;bottom:20px;left:20px;z-index:999999;"><div class="gt_float_switcher notranslate" style="opacity: 1;"><div class="gt_options" style="display:none"><a href="#" class="nturl" data-gt-lang="af"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/af.svg" alt="af"> Afrikaans</a><a href="#" class="nturl" data-gt-lang="sq"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sq.svg" alt="sq"> Albanian</a><a href="#" class="nturl" data-gt-lang="am"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/am.svg" alt="am"> Amharic</a><a href="#" class="nturl" data-gt-lang="ar"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ar.svg" alt="ar"> Arabic</a><a href="#" class="nturl" data-gt-lang="hy"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hy.svg" alt="hy"> Armenian</a><a href="#" class="nturl" data-gt-lang="az"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/az.svg" alt="az"> Azerbaijani</a><a href="#" class="nturl" data-gt-lang="eu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/eu.svg" alt="eu"> Basque</a><a href="#" class="nturl" data-gt-lang="be"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/be.svg" alt="be"> Belarusian</a><a href="#" class="nturl" data-gt-lang="bn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/bn.svg" alt="bn"> Bengali</a><a href="#" class="nturl" data-gt-lang="bs"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/bs.svg" alt="bs"> Bosnian</a><a href="#" class="nturl" data-gt-lang="bg"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/bg.svg" alt="bg"> Bulgarian</a><a href="#" class="nturl" data-gt-lang="ca"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ca.svg" alt="ca"> Catalan</a><a href="#" class="nturl" data-gt-lang="ceb"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ceb.svg" alt="ceb"> Cebuano</a><a href="#" class="nturl" data-gt-lang="ny"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ny.svg" alt="ny"> Chichewa</a><a href="#" class="nturl" data-gt-lang="zh-CN"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/zh-CN.svg" alt="zh-CN"> Chinese (Simplified)</a><a href="#" class="nturl" data-gt-lang="zh-TW"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/zh-TW.svg" alt="zh-TW"> Chinese (Traditional)</a><a href="#" class="nturl" data-gt-lang="co"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/co.svg" alt="co"> Corsican</a><a href="#" class="nturl" data-gt-lang="hr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hr.svg" alt="hr"> Croatian</a><a href="#" class="nturl" data-gt-lang="cs"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/cs.svg" alt="cs"> Czech</a><a href="#" class="nturl" data-gt-lang="da"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/da.svg" alt="da"> Danish</a><a href="#" class="nturl" data-gt-lang="nl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/nl.svg" alt="nl"> Dutch</a><a href="#" class="nturl gt-current" data-gt-lang="en"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/en.svg" alt="en"> English</a><a href="#" class="nturl" data-gt-lang="eo"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/eo.svg" alt="eo"> Esperanto</a><a href="#" class="nturl" data-gt-lang="et"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/et.svg" alt="et"> Estonian</a><a href="#" class="nturl" data-gt-lang="tl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/tl.svg" alt="tl"> Filipino</a><a href="#" class="nturl" data-gt-lang="fi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fi.svg" alt="fi"> Finnish</a><a href="#" class="nturl" data-gt-lang="fr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fr.svg" alt="fr"> French</a><a href="#" class="nturl" data-gt-lang="fy"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fy.svg" alt="fy"> Frisian</a><a href="#" class="nturl" data-gt-lang="gl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/gl.svg" alt="gl"> Galician</a><a href="#" class="nturl" data-gt-lang="ka"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ka.svg" alt="ka"> Georgian</a><a href="#" class="nturl" data-gt-lang="de"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/de.svg" alt="de"> German</a><a href="#" class="nturl" data-gt-lang="el"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/el.svg" alt="el"> Greek</a><a href="#" class="nturl" data-gt-lang="gu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/gu.svg" alt="gu"> Gujarati</a><a href="#" class="nturl" data-gt-lang="ht"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ht.svg" alt="ht"> Haitian Creole</a><a href="#" class="nturl" data-gt-lang="ha"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ha.svg" alt="ha"> Hausa</a><a href="#" class="nturl" data-gt-lang="haw"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/haw.svg" alt="haw"> Hawaiian</a><a href="#" class="nturl" data-gt-lang="iw"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/iw.svg" alt="iw"> Hebrew</a><a href="#" class="nturl" data-gt-lang="hi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hi.svg" alt="hi"> Hindi</a><a href="#" class="nturl" data-gt-lang="hmn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hmn.svg" alt="hmn"> Hmong</a><a href="#" class="nturl" data-gt-lang="hu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hu.svg" alt="hu"> Hungarian</a><a href="#" class="nturl" data-gt-lang="is"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/is.svg" alt="is"> Icelandic</a><a href="#" class="nturl" data-gt-lang="ig"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ig.svg" alt="ig"> Igbo</a><a href="#" class="nturl" data-gt-lang="id"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/id.svg" alt="id"> Indonesian</a><a href="#" class="nturl" data-gt-lang="ga"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ga.svg" alt="ga"> Irish</a><a href="#" class="nturl" data-gt-lang="it"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/it.svg" alt="it"> Italian</a><a href="#" class="nturl" data-gt-lang="ja"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ja.svg" alt="ja"> Japanese</a><a href="#" class="nturl" data-gt-lang="jw"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/jw.svg" alt="jw"> Javanese</a><a href="#" class="nturl" data-gt-lang="kn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/kn.svg" alt="kn"> Kannada</a><a href="#" class="nturl" data-gt-lang="kk"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/kk.svg" alt="kk"> Kazakh</a><a href="#" class="nturl" data-gt-lang="km"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/km.svg" alt="km"> Khmer</a><a href="#" class="nturl" data-gt-lang="ko"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ko.svg" alt="ko"> Korean</a><a href="#" class="nturl" data-gt-lang="ku"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ku.svg" alt="ku"> Kurdish (Kurmanji)</a><a href="#" class="nturl" data-gt-lang="ky"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ky.svg" alt="ky"> Kyrgyz</a><a href="#" class="nturl" data-gt-lang="lo"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lo.svg" alt="lo"> Lao</a><a href="#" class="nturl" data-gt-lang="la"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/la.svg" alt="la"> Latin</a><a href="#" class="nturl" data-gt-lang="lv"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lv.svg" alt="lv"> Latvian</a><a href="#" class="nturl" data-gt-lang="lt"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lt.svg" alt="lt"> Lithuanian</a><a href="#" class="nturl" data-gt-lang="lb"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lb.svg" alt="lb"> Luxembourgish</a><a href="#" class="nturl" data-gt-lang="mk"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mk.svg" alt="mk"> Macedonian</a><a href="#" class="nturl" data-gt-lang="mg"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mg.svg" alt="mg"> Malagasy</a><a href="#" class="nturl" data-gt-lang="ms"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ms.svg" alt="ms"> Malay</a><a href="#" class="nturl" data-gt-lang="ml"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ml.svg" alt="ml"> Malayalam</a><a href="#" class="nturl" data-gt-lang="mt"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mt.svg" alt="mt"> Maltese</a><a href="#" class="nturl" data-gt-lang="mi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mi.svg" alt="mi"> Maori</a><a href="#" class="nturl" data-gt-lang="mr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mr.svg" alt="mr"> Marathi</a><a href="#" class="nturl" data-gt-lang="mn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mn.svg" alt="mn"> Mongolian</a><a href="#" class="nturl" data-gt-lang="my"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/my.svg" alt="my"> Myanmar (Burmese)</a><a href="#" class="nturl" data-gt-lang="ne"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ne.svg" alt="ne"> Nepali</a><a href="#" class="nturl" data-gt-lang="no"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/no.svg" alt="no"> Norwegian</a><a href="#" class="nturl" data-gt-lang="ps"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ps.svg" alt="ps"> Pashto</a><a href="#" class="nturl" data-gt-lang="fa"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fa.svg" alt="fa"> Persian</a><a href="#" class="nturl" data-gt-lang="pl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pl.svg" alt="pl"> Polish</a><a href="#" class="nturl" data-gt-lang="pt"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pt.svg" alt="pt"> Portuguese</a><a href="#" class="nturl" data-gt-lang="pa"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pa.svg" alt="pa"> Punjabi</a><a href="#" class="nturl" data-gt-lang="ro"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ro.svg" alt="ro"> Romanian</a><a href="#" class="nturl" data-gt-lang="ru"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ru.svg" alt="ru"> Russian</a><a href="#" class="nturl" data-gt-lang="sm"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sm.svg" alt="sm"> Samoan</a><a href="#" class="nturl" data-gt-lang="gd"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/gd.svg" alt="gd"> Scottish Gaelic</a><a href="#" class="nturl" data-gt-lang="sr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sr.svg" alt="sr"> Serbian</a><a href="#" class="nturl" data-gt-lang="st"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/st.svg" alt="st"> Sesotho</a><a href="#" class="nturl" data-gt-lang="sn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sn.svg" alt="sn"> Shona</a><a href="#" class="nturl" data-gt-lang="sd"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sd.svg" alt="sd"> Sindhi</a><a href="#" class="nturl" data-gt-lang="si"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/si.svg" alt="si"> Sinhala</a><a href="#" class="nturl" data-gt-lang="sk"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sk.svg" alt="sk"> Slovak</a><a href="#" class="nturl" data-gt-lang="sl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sl.svg" alt="sl"> Slovenian</a><a href="#" class="nturl" data-gt-lang="so"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/so.svg" alt="so"> Somali</a><a href="#" class="nturl" data-gt-lang="es"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/es.svg" alt="es"> Spanish</a><a href="#" class="nturl" data-gt-lang="su"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/su.svg" alt="su"> Sundanese</a><a href="#" class="nturl" data-gt-lang="sw"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sw.svg" alt="sw"> Swahili</a><a href="#" class="nturl" data-gt-lang="sv"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sv.svg" alt="sv"> Swedish</a><a href="#" class="nturl" data-gt-lang="tg"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/tg.svg" alt="tg"> Tajik</a><a href="#" class="nturl" data-gt-lang="ta"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ta.svg" alt="ta"> Tamil</a><a href="#" class="nturl" data-gt-lang="te"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/te.svg" alt="te"> Telugu</a><a href="#" class="nturl" data-gt-lang="th"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/th.svg" alt="th"> Thai</a><a href="#" class="nturl" data-gt-lang="tr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/tr.svg" alt="tr"> Turkish</a><a href="#" class="nturl" data-gt-lang="uk"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/uk.svg" alt="uk"> Ukrainian</a><a href="#" class="nturl" data-gt-lang="ur"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ur.svg" alt="ur"> Urdu</a><a href="#" class="nturl" data-gt-lang="uz"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/uz.svg" alt="uz"> Uzbek</a><a href="#" class="nturl" data-gt-lang="vi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/vi.svg" alt="vi"> Vietnamese</a><a href="#" class="nturl" data-gt-lang="cy"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/cy.svg" alt="cy"> Welsh</a><a href="#" class="nturl" data-gt-lang="xh"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/xh.svg" alt="xh"> Xhosa</a><a href="#" class="nturl" data-gt-lang="yi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/yi.svg" alt="yi"> Yiddish</a><a href="#" class="nturl" data-gt-lang="yo"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/yo.svg" alt="yo"> Yoruba</a><a href="#" class="nturl" data-gt-lang="zu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/zu.svg" alt="zu"> Zulu</a></div><div class="gt-selected"><div class="gt-current-lang"><img src="https://cdn.gtranslate.net/flags/svg/en.svg" alt="en"> <span class="gt-lang-code">en</span> <span class="gt_float_switcher-arrow"></span></div></div></div></div></div>
+<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer=""></script>
+
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'f3cd93b64e59ba3a5e1eff930a1eac893fbc886f';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+    
+
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;"></iframe><div style="position: absolute; z-index: -10000; top: 0px; left: 0px; right: 0px; height: 9664px;"></div><div style="clear: both;"></div><div id="smartsupp-widget-container">    </div></body></html>

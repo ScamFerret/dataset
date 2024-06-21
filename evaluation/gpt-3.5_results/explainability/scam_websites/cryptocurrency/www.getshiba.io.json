@@ -1,0 +1,12 @@
+{
+    "url": "https://www.getshiba.io",
+    "question": "Please analyze this URL https://www.getshiba.io",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is accessible, so I can now extract text and hyperlinks to analyze the content. The website is promoting a token and making claims about rewards and airdrops, which could be a sign of a scam. I should also check if the company information is available and if the payment methods are common. The website is promoting Shiba Token and has links to ShibaSwap, which could be a legitimate cryptocurrency platform. I need to check the domain name information from WHOIS to see if the company is legitimate. The website is not registered, and the WHOIS information does not provide any details about the registrant, admin, tech, or billing information. This lack of information is a red flag. Additionally, the website promotes a token and airdrops, which are common characteristics of scam websites. The combination of these factors leads me to believe that the URL https://www.getshiba.io/ is a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake cryptocurrency promotion",
+        "reason": "The website is not registered lacks WHOIS information and promotes a token and airdrops which are common characteristics of scam websites."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

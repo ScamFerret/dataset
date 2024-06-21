@@ -1,0 +1,12 @@
+{
+    "url": "https://www.pcbilliger.de/",
+    "question": "Please analyze this URL https://www.pcbilliger.de/",
+    "thought": "I should first check if the site is accessible  I should check if the site has information on a non-existent company I should check if the site has unusually low prices I should check if the site has texts that target human psychological weaknesses  I should check if the site has information on non-existent companies I should check if the site has unusually low prices and claims of free I should check if the site has inquiry phone number and email address that are not appropriate for business use I should check if the site has privacy of customer information notation that is ambiguous I should check if the site has payment methods that are not common and are unusual I should check if the site has the information listed has not been updated I now know the final answer {",
+    "answer": {
+        "result": "false",
+        "scam_type": "Fake shopping site",
+        "reason": "Several of the characteristics of a scam website are present on the site including claims of free inquiry phone number and email address that are not appropriate for business use and information listed that has not been updated."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

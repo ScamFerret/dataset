@@ -1,0 +1,790 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Lührßen OHG</title>
+    <!-- <base href="https://www.buero-luehrssen.de/"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,user-scalable=0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="src/style/sytle.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper" style="padding-top: 0px;"> 
+        
+        <header id="header" class="header">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-1 pull-left" style="margin-left: 25%;">
+                        <a class="logo-light logo-svg" href="index.html" title="Lührßen OHG - Immobilienmakler und Versicherungen Logo"><img alt="Lührßen OHG Logo" src="src/img/luehrssen-ohg.svg" class="logo logo-size logo-anpassen"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse col navbar-collapse mt-auto" id="navbarNavDropdown">
+                        <ul class="navbar-nav " style="margin-right: 0px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#immobilien">Immobilien</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#versicherung">Versicherungen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ueber_uns">Über uns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontakt">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- <div id="content" style="margin-top: 155px;"> -->
+        <div id="content">
+            <section id="home" class="default-section">
+                <div class="indexFilterHeadWrapper container">
+                    <div class="indexFilterHead colorScheme--default">
+                        <div class="indexFilterHead__content">
+                            <div class="row" style="width: 100%;">
+                                <a href="#immobilien" class="middle"><h1 class="col indexFilterHead__content__title" style="font-size: 4vw;">Immobilien</h1></a>
+                                <a href="#versicherung" class="middle"><h1 class="col indexFilterHead__content__title" style="margin-top: 20%; margin-right: 0%; font-size: 3.2vw;">Versicherungen</h1></a>                                  
+                            </div>
+                        </div>
+                        <div class="indexFilterHead__breadcrumb">Home</div>
+                        <div class="indexFilterHead__link">
+                            <!--<a class="indexFilterHead__link__item" href="#immobilien" title="Immobilienkatalog">-->
+                            <span class="indexFilterHead__link__item">seit 1961</span>
+                            
+                        </div>
+                        <div class="indexFilterHead__image is-clear responsiveBackgroundImage">
+                            <picture>
+                                <img style="float: right; height: 100%;" src="src/img/LKW 1[545].jpg" alt="" itemprop="image">
+                            </picture>
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                        <div class="indexFilterHead__image isnt-clear responsiveBackgroundImage">
+                            <picture>
+                                <img style="float: left; height: 100%;" src="src/img/Hausfront.JPG" alt="" itemprop="image">
+                            </picture>
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="teaserList has-alternate-layout  row">
+                    <div id="research" class="teaserList__item container">
+                        <div class="teaserList__item__content">
+                            <span class="teaserList__item__content__subtitle">Immobilien</span>
+                            <h3 class="teaserList__item__content__headline">Ihr Immobilienmakler in Wulsdorf!</h3>
+                            <div class="teaserList__item__content__text">
+                                <p class="p1"><span class="s1">Unser Standort und die persönliche Bindung an den Stadtteil Wulsdorf prädestinieren uns für den Immobilienmarkt im südlichen Bremerhaven.<br>
+                                <br>Seit über 50 Jahren vermitteln wir dort und über die Grenzen Bremerhavens hinaus erfolgreich Ein- und Mehrfamilienhäusern sowie Eigentumswohnungen.</span></p>
+                                <a class="indexFilterHead__link__item " href="#immobilien" title="Immobilienkatalog">
+                                    <span class="indexFilterHead__link__item">zu den Immobilien<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="teaserList__item__visual responsiveBackgroundImage is-landscape img-warp" style="background-image: url(src/img/single-family-home-1026371_1920.jpg)" >
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                        
+                    </div>
+                    <div id="research" class="teaserList__item container ">
+                        <div class="teaserList__item__content">
+                            <span class="teaserList__item__content__subtitle">Versicherung</span>
+                            <h3 class="teaserList__item__content__headline">Wir versichern, was Sie lieben</h3>                                        
+                            <div class="teaserList__item__content__text">
+                                <p class="p1"><span class="s1">Als Bezirksdirektion der Basler Versicherung und zertifizierte Sicherheitsagentur analysieren wir Ihren Bedarf und beraten Sie in allen Versicherungsfragen, um im Schadensfall schnell zu helfen.<br>
+                                <br>Aktuell bieten wir zudem kostenlos einen Sicherheits-Check für Ihr Haus und Ihren Haushalt durch einen zertifizierten ABUS-Fachhändler an – sprechen Sie uns an!</span></p>
+                                <a class="indexFilterHead__link__item" href="#versicherung" title="Immobilienkatalog">
+                                    <span class="indexFilterHead__link__item">zu den Versicherungenangeboten<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span>
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="teaserList__item__visual responsiveBackgroundImage is-landscape img-warp" style="background-image: url(src/img/schild.jpg)">
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                    </div>-->
+                </section></div>
+            
+            <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">×</span>
+    <span class="span_right">&gt;</span>
+    <span class="span_left">&lt;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+            <section id="partner" class="default-section">
+                <div id="vorstellungskraft-statt-tunnelblick" class="headline">
+                    <span class="headline__subtitle">Unsere Partner</span>
+                </div>
+                <div class="row container mr-auto ml-auto">
+                    <div class="col">
+                        <img class="img" src="src/img/partner/1200px-Deutscher_Ring_Bausparkasse_Logo.svg.png">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/Deutscher-Ring-Krankenversicherung.png">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/Basler_Versicherungen_logo.svg.png">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/Dkv_Logo_pkv.jpg">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/Roland-Logo-WEB.png">
+                    </div>
+                </div>
+                <div class="row container mr-auto ml-auto">
+                    <div class="col">
+                        <img class="img" src="src/img/partner/1200px-Logo_Alte_Leipziger.svg.png">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/bearbeitet2.png">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/Ideal-versicherung.svg.png">
+                    </div>
+                    <div class="col ">
+                        <img class="img" src="src/img/partner/RuV_Logo_Blau.png">
+                    </div>
+                    <div class="col">
+                        <img class="img" src="src/img/partner/signal-krankenversicherung-a--g--data.png">
+                    </div>
+                </div>
+            </section>
+
+            <section id="partner" class="default-section">
+                <div id="vorstellungskraft-statt-tunnelblick" class="headline">
+                    <span class="headline__subtitle">60 Jahre Jubiläum</span>
+                </div>
+                <div class="row container mr-auto ml-auto">
+                    <div class="col">
+                        <img class="img" src="src/img/Anzeige 122x90 ESCG_Express_RZ_1-1.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <section id="immobilien" class="default-section"> 
+                <div id="vorstellungskraft-statt-tunnelblick" class="headline">
+                    <span class="headline__subtitle">Immobilien</span>
+                </div>
+                <div class="bg-section-dunkel">
+                    <div class="teaserTextImage colorScheme--default container">
+                        <div class="teaserTextImage__box">
+                            <div class="teaserTextImage__content__right">
+                                <h2 class="teaserTextImage__content__title">Unser Immobilienangebot</h2>                                    
+                                <h3 class="teaserTextImage__content__subtitle">Ganzheitlich und ein Leben lang.</h3>                                
+                                <div class="teaserTextImage__content__text">
+                                    <p>Wir sind spezialisiert auf den Verkauf von Ein- und Mehrfamilienhäusern sowie Eigentumswohnungen in Bremerhaven und Umgebung. Besondere Ortskenntnisse, vor allem in Bremerhaven-Wulsdorf, und eine jahrzehntelange Erfahrung im Verkauf und der Vermittlung von Immobilien sind die Grundlage die für eine erfolgreiche Vermarktung Ihres Objektes.</p>
+                                    <p class="immo-headline-small"><strong>Unsere Leistungen umfassen:</strong></p>
+                                    <ul>
+                                        <li>Einschätzung des marktgerechten Kaufpreises</li>
+                                        <li>Erstellung eines Exposés</li>
+                                        <li>Nutzung verschiedenster Vermarktungswege</li>
+                                        <li>Bonitätsprüfung von Kaufinteressenten</li>
+                                        <li>Vorbereitung des Kaufvertrages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teaserTextImage__image__right">
+                            <picture>
+                            <img class="test" src="src/img/villa_buergerpark.jpeg" alt="panorama_bhv">
+                    </picture>
+                        <script>
+                            window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})
+                        </script>
+                        </div>
+                    </div>
+                </div>  
+
+                <div id="slider" class="carousel slide container" data-ride="carousel" style="margin-top: 30px; margin-bottom: 30px;"><div class="carousel-inner mr-auto ml-auto"><div class="carousel-item active"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Neu</span><h3 class="teaserList__item__content__headline">Wulsdorf - Gewerbevermietung - 4-Raum-Büro-Ensemble mit großzügigem Souterrain</h3><div class="teaserList__item__content__text"><p>Ringstraße 72A</p><p>Büro/Praxis</p><div class="teaserList__item__content__text"><li>Miete: 1.400,00 € zzgl. MwSt</li><li>Büro-/Praxisfläche: 189</li><li>Verfügbar ab: sofort</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/7ec1e4c6ab79c9875e4443c905d73644998faf4f3dd0b3d593831ed7ae35f816.jpg&quot;);"><div class="banner-container"><div class="banner_neu">Neu</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Reserviert</span><h3 class="teaserList__item__content__headline">Ein-/Zweifamilienhaus - Wintergarten - Keller - Doppelgarage - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 289.000,00 €</li><li>Wohnfläche: 168</li><li>Baujahr: 1965</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/eb5264b37fa40b98361657a06261b2c069da67d4f268d3b5838edd62c122b9fb.jpg&quot;)"><div class="banner-container"><div class="banner_reserviert">Reserviert</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Schöner Bungalow:  Ebenerdig wohnen mit Ausbaupotential - Keine Maklercourtage</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 299.000</li><li>Wohnfläche: 117</li><li>Baujahr: 1972</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/20345dee1de224c4d4b1403e541fd08e5389d9adc71ddf8a576ebd31d4a937a5.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Freistehendes Haus mit Doppelcarport und Garage in Stotel - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 199.000</li><li>Wohnfläche: 109</li><li>Baujahr: 1954</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/58c4cd8821755bb57c341a9c794a8d15d3852c52aa199c15b58546d53001fa7f.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Einfamilienhaus in Bremen - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 359.000,00 €</li><li>Wohnfläche: 107</li><li>Baujahr: 2001</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/1b38921e84b741a0a5014c995479097732b8ca20184f84894606f7ca52271ef7.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Wohlfühloase in Kranenburg - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 434.000 €</li><li>Wohnfläche: 175</li><li>Baujahr: 1985</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/aa9c37b8155d50bc1d544e59045beebcafd37e1df2cc20b23776f23fc5dc0c91.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Eigentumswohnung als Kapitalanlage in Wulsdorf - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Wohnung</p><div class="teaserList__item__content__text"><li>Miete: 390,00 €</li><li>Wohnfläche: 76</li><li>Zimmer: 3</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/fbf093b754bf523974109eecec777835055bec3983f82f5d449f58a14769c058.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Einfamilienhaus mit Wintergarten - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 235.000</li><li>Wohnfläche: 104</li><li>Baujahr: 1967</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/49501400cf10d7ebd3200bf8b5679ddbcadc0220eb456bc516e54d2440cd5c8d.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Terrassenwohnung als Kapitalanlage - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Wohnung</p><div class="teaserList__item__content__text"><li>Miete: 525 €</li><li>Wohnfläche: 88</li><li>Zimmer: 3</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/afd1cdfab79af9f710feaad380b664ab11f3f5697528e2febb5c34d3bd35a49b.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Einfamilienhaus mit Nebenanlagen - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 219.00 €</li><li>Wohnfläche: 109</li><li>Baujahr: 1966</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/207b1d0bc4e31bb71112b4defa9e87af164a920e58501e207452a3db4ab63970.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Ebenerdiges Wohnen - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 179.000 €</li><li>Wohnfläche: 120</li><li>Baujahr: 1949</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/a4ad4011bbee6c63870c6e4ebe4aafacc0cc80f2064877122c48735e85e04f25.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Charmantes Einfamilienhaus in Wulsdorf - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Haus</p><div class="teaserList__item__content__text"><li>Kaufpreis: 295.000</li><li>Wohnfläche: 169</li><li>Baujahr: 1989</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/e104b57ef4969c808220159f53cff79a546578dae4dba228d0c706a4988909c2.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div><div class="carousel-item"><div class="row"><div class="col-1"></div><div id="research" class="teaserList__item container col slider"><div class="teaserList__item__content mr-auto"><span class="teaserList__item__content__subtitle">Verkauft</span><h3 class="teaserList__item__content__headline">Eigentumswohnung mit Loggia zzgl. Bodenwertanteil - Keine Maklercourtage für den Käufer</h3><div class="teaserList__item__content__text"><p></p><p>Wohnung</p><div class="teaserList__item__content__text"><li>Miete: </li><li>Wohnfläche: ca. 58 qm</li><li>Zimmer: 3</li></div></div><span class="newsTeaser__item__content exposeList__item__content__text__link" title="Mehr Details">Hier Klicken: Immobilie ansehen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M.06,1.1,4.47,8,.06,14.89,1.79,16,6.9,8,1.79,0ZM10.82,0,9.1,1.1,13.5,8,9.1,14.89,10.82,16l5.12-8Z"></path></svg></span></div><div class="teaserList__item__visual responsiveBackgroundImage is-landscape ml-auto img-warp img_hover" style="background-image: url(&quot;https://www.buero-luehrssen.de/src/img/upload/35d8b77be6a6d8fde0be32539469da59d51e2723c985eef7b8fc052bee3f9ec2.jpg&quot;)"><div class="banner-container"><div class="banner_verkauft">Verkauft</div></div></div></div><div class="col-1"></div></div></div></div>
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon carousel-control" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon carousel-control" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="immo-outer">
+                    <div class="immo-inner">
+                        <a class="immo-link" onclick="immokatalog()">Direkt zum <span class="immo-span">Immobilienkatalog</span><img src="src/img/luehrssen-pfeil.png" alt="Pfeil" class="immo-arrow"></a>
+                    </div>
+                </div>
+                </div>
+                <div class="teaserList has-alternate-layout row" style="margin-top: 30px;">
+                    <div id="research" class="teaserList__item container">
+                        <div class="teaserList__item__content col">
+                            <span class="teaserList__item__content__subtitle">RDM</span>
+                            <h3 class="teaserList__item__content__headline">Wir sind Mitglied im RDM Bremerhaven</h3>
+                            <div class="teaserList__item__content__text">
+                                <p class="p1"><span class="s1">dem Ring Deutscher Makler, Verband der Immobilienberufe und Hausverwalter<br><br>Mehr auf: <a href="http://www.rdm-bremerhaven.de/" target="_blank" title="RDM Bremerhaven">www.rdm-bremerhaven.de</a></span></p>
+                            </div>
+                        </div>
+                        <div class="teaserList__item__visual2 col responsiveBackgroundImage is-landscape img-warp" style="background-image: url(src/img/rdm.png)">
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                    </div>
+                    <div id="research" class="teaserList__item container ">
+                        <div class="teaserList__item__content col">
+                            <span class="teaserList__item__content__subtitle">ImmoScout24</span>
+                            <h3 class="teaserList__item__content__headline">Wir sind ImmoScout24 Partner</h3>                                        
+                            <div class="teaserList__item__content__text">
+                                <p class="p1"><span class="s1">Sie wollen Ihre Immobilie verkaufen? Dann sind Sie bei uns richtig. Wir vermitteln seit über 50 Jahren Immobilien in gute Hände. Dabei leisten wir einen umfassenden Service und eine sehr persönliche Betreuung. Wir besorgen fehlende Unterlagen und kümmern uns darum, Ihre Immobilie in bestem Glanz erstrahlen zu lassen. Dazu arbeiten wir u.a. mit einer professionellen Fotografin und einer Home-Stagerin zusammen. Nehmen Sie gerne Kontakt mit uns auf. <br><br>Mehr auf: <a href="https://www.immobilienscout24.de/" target="_blank" title="ImmoScout24">www.immobilienscout24.de</a></span></p>
+                            </div>
+                        </div>
+                        <div class="teaserList__item__visual2 col responsiveBackgroundImage is-landscape img-warp" style="background-image: url(src/img/immoscout24-markenlogo-210x154.jpg)">
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                    </div>
+                </div>
+            <section id="Referenzen" class="section-space">
+                <div class="container">
+                 <div class="row display-flex">
+                     <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 smart-space">
+                         <div class="txt-rahmen-hell">
+                             <h2>Referenzen</h2>
+                             <p>Hier finden Sie einige Beispiele für durch uns vermittelte Immobilien.</p>	
+                         </div>		        		
+                     </div>
+                     <div class="col-sm-8">
+                         <div class="row display-flex">
+                             <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
+                                 <div class="objekt">
+                                     <div class="objekt-div">
+                                         <img src="src/img/referenzen/immobilien-verkauft-03-zweifamilienhaus-wulsdorf.jpg" class="objekt-img" alt="Zweifamilienhaus Wulsdorf">
+                                     </div>
+                                     <div class="objekt-txt">
+                                            <p class="obj-info">
+                                                <span class="titel">Freies Zweifamilienhaus</span>
+                                                <span class="ortsteil">Bremerhaven-Wulsdorf,&nbsp;</span>
+                                                <span class="info">Zweifamilienhaus mit Garage, rd. 112 m² Wfl., 641 m² Grundstück</span>
+                                            </p>
+                                     </div>
+                                 </div>
+                                 <div class="objekt">
+                                     <div class="objekt-div">
+                                         <img src="src/img/referenzen/immobilien-verkauft-10-einfamilienhaus-speckenbuettel.jpg" class="objekt-img" alt="Einfamilienhaus Speckenbüttel">
+                                     </div>
+                                     <div class="objekt-txt">
+                                            <p class="obj-info">
+                                                <span class="titel">Einfamilienhaus mit parkähnlichem Garten</span>
+                                                <span class="ortsteil">Bremerhaven-Speckenbüttel,&nbsp;</span>
+                                                <span class="info">Einfamilienhaus mit Tiefgarage, rd. 127 m² Wfl., 765 m² Grundstück</span>
+                                            </p>
+                                     </div>
+                                 </div>
+                                 <div class="objekt">
+                                     <div class="objekt-div">
+                                         <img src="src/img/referenzen/immobilien-verkauft-06-einfamilienhaus-speckenbuettel.jpg" class="objekt-img" alt="Einfamilienhaus Speckenbüttel">
+                                     </div>
+                                     <div class="objekt-txt">
+                                            <p class="obj-info">
+                                                <span class="titel">Ruhig gelegenes, solides Einfamilienhaus</span>
+                                                <span class="ortsteil">Bremerhaven-Speckenbüttel,&nbsp;</span>
+                                                <span class="info">Einfamilienhaus mit Garage, 175 m² Wfl., 788 m² Grundstück</span>
+                                            </p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1">
+                                 <div class="objekt">
+                                     <div class="objekt-div">
+                                         <img src="src/img/referenzen/immobilien-verkauft-09-einfamilienhaus-loxstedt.jpg" class="objekt-img" alt="Einfamilienhaus Loxstedt">
+                                     </div>
+                                     <div class="objekt-txt">
+                                            <p class="obj-info">
+                                                <span class="titel">Großzügiges EFH mit nagelneuer Photovoltaik</span>
+                                                <span class="ortsteil">Loxstedt-Düring,&nbsp;</span>
+                                                <span class="info">Einfamilienhaus mit Garage, rd. 208 m² Wfl., 1.305 m² Grundstück</span>
+                                            </p>
+                                     </div>
+                                 </div>
+                                 <div class="objekt">
+                                     <div class="objekt-div">
+                                         <img src="src/img/referenzen/immobilien-verkauft-07-reihenhaus-surheide.jpg" class="objekt-img" alt="Reihenhaus Surheide">
+                                     </div>
+                                     <div class="objekt-txt">
+                                            <p class="obj-info">
+                                                <span class="titel">Gepflegtes Reihenhaus</span>
+                                                <span class="ortsteil">Bremerhaven-Surheide,&nbsp;</span>
+                                                <span class="info">Reihenhaus mit Stellplatz, rd. 100 m² Wfl, 207 m² Grundstück</span>
+                                            </p>
+                                     </div>
+                                 </div>
+                                 <div class="objekt">
+                                     <div class="objekt-div">
+                                         <img src="src/img/referenzen/immobilien-verkauft-04-einfamilienhaus-wulsdorf.jpg" class="objekt-img" alt="Einfamilienhaus Wulsdorf">
+                                     </div>
+                                     <div class="objekt-txt">
+                                            <p class="obj-info">
+                                                <span class="titel">Gediegenes Einfamilienhaus</span>
+                                                <span class="ortsteil">Bremerhaven-Wulsdorf,&nbsp;</span>
+                                                <span class="info">Einfamilienhaus mit Garage, rd. 131 m² Wfl., 577 m² Grundstück</span>
+                                            </p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 center-col">
+                                 <div class="panel-group accordion-style2" id="accordion-two">
+                                     <!-- accordion item -->
+                                     <div class="panel panel-default">
+                                        <a class="buttonStyleLink any-link-padding colorScheme--default" style="margin-bottom: 10px" data-toggle="collapse" data-parent="#accordion-two" href="#accordion-two-link2" title="Referenzobjekte">
+                                            <span class="txt-mitte">Weitere Referenzobjekte</span>
+                                        </a>
+                                         
+                                        <div id="accordion-two-link2" class="panel-collapse collapse">
+                                            <div class="panel-body more-obj">
+                                                <div class="row">
+                                                     <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 col-xs-12">
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-01-dreizimmerwohnung-wulsdorf.jpg" class="objekt-img" alt="Dreizimmerwohnung Wulsdorf">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Gepflegte Dreizimmer­wohnung</span>
+                                                                        <span class="ortsteil">Bremerhaven-Wulsdorf,&nbsp;</span>
+                                                                        <span class="info">Eigentumswohnung, rd. 81 m² Wfl., Fahrstuhl</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-02-fachwerkhaus-hagen.jpg" class="objekt-img" alt="Fachwerkhaus Hagen">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Fachwerkhaus in idyllischer Lage</span>
+                                                                        <span class="ortsteil">Hagen-Dorfhagen,&nbsp;</span>
+                                                                        <span class="info">Einfamilienhaus mit Garage, rd. 141 m² Wfl., 1.191 m Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-11-dreifamilienhaus-wulsdorf.jpg" class="objekt-img" alt="Dreifamilienhaus Wulsdorf">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Historisches Gebäude in der Lindenallee</span>
+                                                                        <span class="ortsteil">Bremerhaven-Wulsdorf,&nbsp;</span>
+                                                                        <span class="info">Dreifamilienhaus mit Garage, rd. 322 m² Wfl., ca 1.080 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-12-bungalow-wulsdorf.jpg" class="objekt-img" alt="Bungalow Wulsdorf">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Kleiner Bungalow mit großen Möglichkeiten</span>
+                                                                        <span class="ortsteil">Bremerhaven-Wulsdorf,&nbsp;</span>
+                                                                        <span class="info">Bungalow, rd. 97 m² Wfl., ca. 769 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-15-einfamilienhaus-speckenbuettel.jpg" class="objekt-img" alt="Einfamilienhaus Speckenbüttel">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Schickes Einfamilienhaus</span>
+                                                                        <span class="ortsteil">Bremerhaven-Speckenbüttel,&nbsp;</span>
+                                                                        <span class="info">Einfamilienhaus, ca. 228 m² Wfl., 620 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-17-okal-bungalow-loxstedt-lanhausen.jpg" class="objekt-img" alt="Bungalow Loxstedt Lanhausen">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">OKAL-Bungalow</span>
+                                                                        <span class="ortsteil">Loxstedt-Lanhausen,&nbsp;</span>
+                                                                        <span class="info">OKAL-Bungalow, ca. 78 m² Wfl., 598 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-19-zweifamilienhaus-loxstedt-nesse.jpg" class="objekt-img" alt="Zweifamilienhaus Loxstedt Nesse">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Zweifamilienhaus Loxstedt-Nesse</span>
+                                                                        <span class="ortsteil">Loxstedt-Nesse,&nbsp;</span>
+                                                                        <span class="info">Zweifamilienhaus mit 2 Garagen und Blick in die Natur, ca. 215 m² Wfl., 1.336 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 col-xs-12">
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-05-eigentumswohnung-speckenbuettel.jpg" class="objekt-img" alt="Eigentumswohnung Speckenbüttel">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">The American Way of Life</span>
+                                                                        <span class="ortsteil">Bremerhaven-Speckenbüttel,&nbsp;</span>
+                                                                        <span class="info">Eigentumswohnung mit Einstellplatz, 5 ZKB, 112 m² Wfl.</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-08-einfamilienhaus-geestemuende.jpg" class="objekt-img" alt="Einfamilienhaus Geestemünde">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Bevorzugt wohnen am Bürgerpark</span>
+                                                                        <span class="ortsteil">Bremerhaven-Geestemünde,&nbsp;</span>
+                                                                        <span class="info">Einfamilienhaus mit Garage, rd. 115 m² Wfl., 578 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-13-reihenhaus-wulsdorf.jpg" class="objekt-img" alt="Reihenhaus Wulsdorf">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Reihenhaus-Raumwunder</span>
+                                                                        <span class="ortsteil">Bremerhaven-Wulsdorf,&nbsp;</span>
+                                                                        <span class="info">Reihenhaus mit Garage, rd. 131 m² Wfl., ca. 195 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-14-maisonette-wohnung-lehe.jpg" class="objekt-img" alt="Maisonette-Wohnung Lehe">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Maisonette-Wohnung mit Dachterrasse</span>
+                                                                        <span class="ortsteil">Bremerhaven-Lehe,&nbsp;</span>
+                                                                        <span class="info">Eigentumswohnung mit Garage, 4.OG, rd. 115 m² Wfl., Fahrstuhl</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-16-zweifamilienhaus-geestland-neuenwalde.jpg" class="objekt-img" alt="Zweifamilienhaus Geestland Neuenwalde">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Platz zum Wohnen, Arbeiten und Vermieten</span>
+                                                                        <span class="ortsteil">Geestland-Neuenwalde,&nbsp;</span>
+                                                                        <span class="info">Zweifamilienhaus, ca. 266 m² Wfl., 876 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-18-historisches-zweifamilienhaus-bremerhaven.jpg" class="objekt-img" alt="Historisches Zweifamilienhaus Bremerhaven">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Historisches Zweifamilienhaus</span>
+                                                                        <span class="ortsteil">Bremerhaven-Lehe,&nbsp;</span>
+                                                                        <span class="info">Zweifamilienhaus, ca. 291 m² Wfl., 441 m² Grundstück</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                         <div class="objekt">
+                                                             <div class="objekt-div">
+                                                                 <img src="src/img/referenzen/immobilien-verkauft-20-erdgeschoss-eigentumswohnung-geestland-langen.jpg" class="objekt-img" alt="Eigentumswohnung Geestland Langen">
+                                                             </div>
+                                                             <div class="objekt-txt">
+                                                                    <p class="obj-info">
+                                                                        <span class="titel">Erdgeschoß-Eigentumswohnung</span>
+                                                                        <span class="ortsteil">Geestland-Langen,&nbsp;</span>
+                                                                        <span class="info">Topmoderne Erdgeschoß-Eigentumswohnung mit eigenem Garten, ca. 84 m² Wfl.</span>
+                                                                    </p>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <!-- end accordion item -->
+                                 </div>
+                             <!-- end accordion -->
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            </section>
+        </section>
+        <section id="versicherung" class="default-section">
+            <div id="vorstellungskraft-statt-tunnelblick" class="headline">
+                <span class="headline__subtitle">Versicherungen</span>
+            </div>
+            <div class="bg-section-dunkel" style="margin-top: 2.8rem;">
+                <div class="teaserTextImage colorScheme--default container">
+                    <div class="teaserTextImage__box">
+                        <div class="teaserTextImage__content__left">
+                            <h2 class="teaserTextImage__content__title" style="font-size: 4vw;">Unser Versicherungenangebot</h2>                                    
+                            <!--<h3 class="teaserTextImage__content__subtitle">Ganzheitlich und ein Leben lang.</h3> -->                              
+                            <div class="teaserTextImage__content__text">
+                                <p>Wir sichern Sie als Privatperson und auch als Geschäftsmann/-frau ab. In unserer umfassenden Leistungspalette finden Sie die ganze Bandbreit der Versicherungen, die wir individuell auf Sie zuschneiden. Wir bieten Schutz für alles, was Ihnen lieb und teuer ist.</p>
+                                <p class="immo-headline-small"><strong>Unsere Leistungen umfassen:</strong></p>
+                                <div class="row d-flex justify-content-between">
+                                    <div class="col">
+                                        <ul>
+                                            <li>Gewerbliche Gebäudeversicherungen</li>
+                                            <li>Gewerbliche Inhaltsversicherungen</li>
+                                            <li>Betriebshaftpflicht</li>
+                                            <li>Technische Versicherungen</li>
+                                            <li>Betriebliche Altersvorsorge</li>
+                                            <li>Kfz-Flottenversicherung</li>
+                                            <li>Transportversicherungen</li>
+                                            <li>Verkehrshaftungsversicherungen</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li>Private Sachversicherungen</li>
+                                            <li>Privathafpflicht</li>
+                                            <li>Krankenversicherungen</li>
+                                            <li>Lebens- und Rentenversicherungen</li>
+                                            <li>Rechtsschutz</li>
+                                            <li>Kfz-Versicherungen</li>
+                                            <li>Unfallversicherungen</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teaserTextImage__image__left">
+                        <picture>
+                        <img class="test" src="src/img/ZSA Siegel_Lührßen_2018[517].png" alt="panorama_bhv">
+                </picture>
+                    <script>
+                        window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})
+                    </script>
+                    </div>
+                </div>
+            </div>  
+            <div class="row container" style="margin-top: 2.8rem; margin-left: auto; margin-right: auto;">
+                
+                <div class="newsTeaser__item arc_1 block col featured even news_category_4 category_4 news_category_7 category_7" style="margin-bottom: 10px;" itemscope="">
+                    
+                    <div class="sliderWrapper">
+                        <div class="newsTeaser__item__content__category">Gewerbeversicherungen</div>
+                        <div class="newsTeaser__item__content__image">
+                            <picture>
+                                <img src="src/img/gebaeudeversicherung.jpg" alt="gebaeudeversicherung" class="is-landscape img2" itemprop="image">
+                            </picture>
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                        <div class="newsTeaser__item__content__text" itemprop="description">
+                            <p>Verschiedene Risikofaktoren können ein Unternehmensgebäude schnell gefährden. Eine gewerbliche Gebäudeversicherung sichert Ihr Firmengebäude zuverlässig ab.</p>  
+                        </div>
+                        <a class="newsTeaser__item__content" href="#kontakt" title="Mehr erfahren">
+                            <div class="newsTeaser__item__content__more">
+                                <span>Ihre Ansprechpartner:<br> Axel Lührßen</span>
+                                <div class="overlay colorScheme--business"></div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="newsTeaser__item arc_1 block col  featured even news_category_4 category_4 news_category_7 category_7" style="margin-bottom: 10px;" itemscope="">
+                    
+                    <div class="sliderWrapper">
+                        <div class="newsTeaser__item__content__category">Privatversicherungen</div>
+                        <div class="newsTeaser__item__content__image">
+                            <picture>
+                                <img src="src/img/hausratversicherung.jpg" alt="hausratversicherung" class="is-landscape img2" itemprop="image">
+                            </picture>
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                        <div class="newsTeaser__item__content__text" itemprop="description">
+                            <p>Sichern Sie sich ab und versichern Sie Ihr Hab und Gut gegen eine Vielzahl von Schäden wie z.B. Feuer- und Wasserschäden, Sturm, Hagel oder Einbruch.</p>  
+                        </div>
+                        <a class="newsTeaser__item__content" href="#kontakt" title="Mehr erfahren">
+                            <div class="newsTeaser__item__content__more">
+                                <span>Ihre Ansprechpartner:<br> Axel Lührßen</span>
+                                <div class="overlay colorScheme--business"></div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="newsTeaser__item arc_1 block col featured first even news_category_4 category_4 news_category_7 category_7" style="margin-bottom: 10px;" itemscope="">
+                    
+                    <div class="sliderWrapper">
+                        <div class="newsTeaser__item__content__category">Kleingartenversicherung</div>
+                        <div class="newsTeaser__item__content__image">
+                            <picture>
+                                <img src="src/img/kleingartenvereine.jpg" alt="kleingartenvereine" class="is-landscape img2" itemprop="image">
+                            </picture>
+                            <script>window.respimage&&window.respimage({elements:[document.images[document.images.length-1]]})</script>
+                        </div>
+                        <div class="newsTeaser__item__content__text" itemprop="description">
+                            <p>Außerdem ist die Lührßen OHG eine Spezialagentur für Kleingarten- versicherungen der Kleingärtner in den organisierten Kleingartenvereinen.</p>  
+                        </div>
+                        <a class="newsTeaser__item__content" href="#kontakt" title="Mehr erfahren">
+                            <div class="newsTeaser__item__content__more">
+                                <span>Ihre Ansprechpartnerin:<br> Andrea Hübenthal</span>
+                                <div class="overlay colorScheme--business"></div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+            <section id="ueber_uns" class="default-section">
+                <div id="vorstellungskraft-statt-tunnelblick" class="headline">
+                    <span class="headline__subtitle">ÜBER UNS</span>
+                </div>
+                <div class="">
+                    <div class="container">
+                        <div class="row" style="justify-content: center">
+                            
+                            <div class="card col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" style="margin-bottom: 10px;">
+                                
+                                    <input type="checkbox" class="magic_input" name="">
+                                    <div class="toggle">+</div>
+                                    <div class="imgBx">
+                                        <img class="img " src="src/img/alex_17_06_2022.jpeg" alt="Axel Lührßen">
+                                    </div>
+                                    <div class="txt-rahmen-hell txt-mitte mt-auto" style="bottom: 0; height: auto;">
+                                        <h3>Axel Lührßen</h3>
+                                        <p>Inhaber</p>
+                                    </div>
+                                    <div class="details">
+                                        <h2 class="txt-mitte">Axel Lührßen</h2>
+                                        <p class="txt-mitte">Inhaber</p>
+                                        <p>
+                                            <span>Axel Lührßen wurde in der ehemaligen Securitas Versicherung in Bremen ausgebildet zum Versicherungskaufmann. Daran schloß sich ein Studium der Betriebswirtschaft mit Schwerpunkt Steuern und Versicherungen in Köln an, das er mit dem Diplom-Kaufmann abschloss. Er sammelte weitere Erfahrungen bei der Victoria Lebensversicherung (heute Ergo) in Düsseldorf und im Bereich der Transport-Versicherung bei der Securitas Versicherung in Dortmund.</span>
+                                        </p>
+                                        <p>
+                                            <span>Axel Lührßen hat sich im Bereich der Immobilienvermarktung zusätzlich durch den Besuch von Fachlehrgängen qualifiziert. Er betreut schwerpunktmäßig das gewerbliche Versicherungsgeschäft in der Agentur und bietet auch eine umfassende Beratung für Mitarbeiter hinsichtlich der betrieblichen Altersversorgung an.</span>
+                                        </p>
+                               </div>
+                            
+                            </div>
+                            
+                            <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 smart-space" style="margin-bottom: 10px;">
+                                <div itemscope="" itemtype="http://schema.org/" class="txt-rahmen-hell">
+                                    <h2 itemprop="name"><span class="bolder">Lührßen OHG</span> Immobilien­makler und Versicherungen</h2>
+                                    <p class="adresse">
+                                        <span class="titel_ueber_uns">Kontakt</span><br>
+                                        <span itemprop="streetAddress" content="Lindenallee 11" class="kontakt_str">Lindenallee 11,&nbsp;</span>
+                                        <span itemprop="postalCode" class="kontakt_ort"> 27572 Bremerhaven</span><br>
+                                        <span itemprop="telephone" content="0471 71014" class="kontakt_telefon">
+                                            <a href="tel:+4947171014"><i class="fas fa-phone"></i>&nbsp; Tel.: 0471 71014</a>
+                                        </span><br>
+                                        <span itemprop="faxNumber" content="0471 76877" class="kontakt_fax"><i class="fas fa-fax"></i>&nbsp; Fax: 0471 76877</span>
+                                    </p>
+                                    <p class="adresse">
+                                        <span class="titel_ueber_uns">Zweigstelle Bremen:</span><br>
+                                        <span class="kontakt_ort">Schwabensteinstr. 7, 28217 Bremen</span>
+                                    </p>
+                                    <p class="mail-adressen">
+                                        <span class="titel_ueber_uns">E-Mail Axel Lührßen:<br></span>
+                                        <span class="kontakt_vereinbaren"><a href="mailto:axel.luehrssen@basler-agentur.de" title="Mail an: axel.luehrssen@basler-agentur.de"><i class="far fa-envelope"></i>&nbsp; axel.luehrssen@basler-agentur.de</a></span>
+                                    </p>
+                                    <p class="erreichbarkeit">
+                                        <span class="titel_ueber_uns">Telefonisch erreichbar</span><br>
+                                        <span class="kontakt_tage">Wochentags von 9.00 bis 17.00 Uhr</span>
+                                    </p>
+                                    <p class="oeffnungszeiten">
+                                        <span class="titel_ueber_uns">Büro-Öffnungszeiten</span><br>
+                                        <span itemprop="openingHours" content="Mo-Fr 09:00-12:00" class="kontakt_vereinbaren">Wochentags von 9.00 bis 12.00 Uhr<br>sowie nach Vereinbarung</span> 
+                                    </p>							
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </section>
+            <section id="kontakt" class="default-section">
+                <div id="vorstellungskraft-statt-tunnelblick" class="headline">
+                    <span class="headline__subtitle">KONTAKT</span>
+                </div>
+                <div class="bg-section-hell">
+                    <div class="container">
+                        <div class="row" style="align-items: center">
+                            <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 txt-rahmen-hell">
+                                <h2>Kontakt</h2>
+                                <p class="kontakt"><span class="anliegen">Kommen Sie vorbei, rufen Sie uns an oder <br>schreiben Sie uns eine Nachricht, falls Sie Fragen <br>an uns haben oder um uns Ihr persönliches Anliegen mitzuteilen.</span><br><span class="freuen titel">Wir freuen uns, von Ihnen zu hören!</span></p>
+                                <p class="adresse">
+                                    <span class="titel">Lührßen OHG<br></span>
+                                    <span class="str">Lindenallee 11,&nbsp;</span>
+                                    <span class="ort"> 27572 Bremerhaven<br></span><br>
+                                    <span class="telefon">
+                                        <a href="tel:+4947171014"><i class="fas fa-phone"></i>&nbsp; Tel.: 0471 71014</a>
+                                    </span><br>
+                                    <span class="fax"><i class="fas fa-fax"></i>&nbsp; Fax: 0471 76877<br></span>
+                                </p>
+                                <p class="zweitstelle">
+                                    <span class="titel">Zweigstelle Bremen<br></span>
+                                    <span class="tage">Schwabensteinstr. 7, 28217 Bremen</span>
+                                </p>
+                                <p class="erreichbarkeit">
+                                    <span class="titel">Telefonisch erreichbar<br></span>
+                                    <span class="tage">Wochentags von 9.00 bis 17.00 Uhr</span>
+                                </p>
+                                <p class="oeffnungszeiten">
+                                    <span class="titel">Büro-Öffnungszeiten<br></span>
+                                    <span class="vereinbaren">Wochentags von 9.00 bis 12.00 Uhr<br>sowie nach Vereinbarung</span> 
+                                </p>
+    
+                            </div>
+                            <div class="imgBx col-sm-8">
+                                <img class="img " src="src/img/Anzeige 122x90 ESCG_Express_RZ_2-1.jpg" style="margin-top: 10%;" alt="Team">
+                            </div>
+                               	        			
+                            </div>
+                        </div>
+                    </div>
+                </section></div>
+            
+        
+        <footer>
+        	<div class="bg-section-dunkel">
+        		<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="footer">
+								<p class="impressum "><a href="./impressum.html" title="Impressum">Impressum</a></p>
+								<p class="datenschutz "><a href="./datenschutz.html" title="Datenschutz" rel="nofollow">Datenschutz</a></p>
+								<p class="widerruf "><a href="./Widerrufsbelehrung-Lührssen-OHG.pdf" target="_blank" title="Widerrufsbelehrung">Widerrufsbelehrung</a></p>
+							</div>								
+						</div>
+		        	</div>
+				</div>
+			</div>
+        </footer>
+    
+
+</body></html>

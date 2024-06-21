@@ -1,0 +1,1376 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><style>
+ 
+@media only screen and (max-width: 600px) {
+  .i{
+    width:24%;
+  }
+  .l{
+      float:right;
+  }
+}
+</style> 
+
+
+</head><body class="bg-dark"><div class="wrapper"><div style="position: fixed; bottom: 1px;  z-index:50000;margin-left:50%" align="center">
+        <a href="https://t.me/@Paul_williams77">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png" style="width:50px; height:50px;border:none; border-radius:50%; z-index:70000"></a>
+    </div>
+
+
+     <style>
+      #myBtn {
+  display: none;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    border-color:none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    float:left;
+   
+}
+      
+  </style>
+<div id="myBtn" title="Go to top" class="" style="display: block;"> 
+ <a href="https://wa.me/+13862911220" target="popup">
+       <img style="border-radius:50%" src="data:image/jpeg;base64,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" width="50px" height="50px" frameborder="0" scrolling="no"></a> 
+
+</div>
+<!--Start of Tawk.to Script-->
+<script src="https://embed.tawk.to/_s/v4/app/660e2260004/js/twk-main.js" charset="UTF-8" crossorigin="*"></script><script src="https://embed.tawk.to/_s/v4/app/660e2260004/js/twk-vendor.js" charset="UTF-8" crossorigin="*"></script><script src="https://embed.tawk.to/_s/v4/app/660e2260004/js/twk-chunk-vendors.js" charset="UTF-8" crossorigin="*"></script><script src="https://embed.tawk.to/_s/v4/app/660e2260004/js/twk-chunk-common.js" charset="UTF-8" crossorigin="*"></script><script src="https://embed.tawk.to/_s/v4/app/660e2260004/js/twk-runtime.js" charset="UTF-8" crossorigin="*"></script><script src="https://embed.tawk.to/_s/v4/app/660e2260004/js/twk-app.js" charset="UTF-8" crossorigin="*"></script><script async="" src="https://embed.tawk.to/60b90517de99a4282a1b3cb7/1f79bo3hs" charset="UTF-8" crossorigin="*"></script><script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60b90517de99a4282a1b3cb7/1f79bo3hs';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<!---
+<style>
+      #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    float: left;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    border-color:none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+      
+  </style>
+<div id="myBtn" title="Go to top" class="" style="display: block;">
+     <a href="https://wa.me/+19203285378"><img src = "images/wa.jpg" style = "border-radius:50%" class = "i"></a></div>
+     
+     <style>
+      #yBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    border-color:none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+      
+  </style>
+<div id="yBtn" title="Go to top" class="" style="display: block;">
+ <a target="popup" onclick='window.open("https://tawk.to/chat/60e57adc649e0a0a5ccaf4e5/1fa06frk7")'>
+ <img src="https://coin-pay.org/chat-with-us.png" class = "i l"></img>
+ </a>
+ </div>
+     
+    -->
+     
+     
+<!-- Mirrored from premiumassetmanagers.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Mar 2021 14:13:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"> 
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="brighttrustlimited.org is a USA based cryptocurrency invesment company">
+    <meta property="title" content="brighttrustlimited.org">
+    <meta property="og:title" content="brighttrustlimited.org">
+    <meta property="og:image" content="assets/img/sgig.jpeg">
+    <meta property="og:type" content="Trading Company">
+     <meta property="og:description" content="brighttrustlimited.org is a USA based cryptocurrency invesment company">
+    <meta property="og:url" content="https://brighttrustlimited.org/">
+
+    <!-- ========== Page Title ========== -->
+  
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/sgig.jpeg" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="use.fontawesome.com/releases/v5.8.2/css/all.html" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="assets/css/flaticon-set.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/bootsnav.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/particles.css" rel="stylesheet">
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <script src="js/loginRegAjaxf9e3.js?v=1.1"></script>
+    <link rel="stylesheet" href="css/animate.css">
+     <script>
+              new WOW().init();
+              </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <style type="text/css">
+           
+.kk {
+    display: none;
+    transition-property: all;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+}
+.mgm {
+    border-radius: 7px;
+    position: fixed;
+    z-index: 90;
+    bottom: 80px;
+    right: 20px;
+    background: #fff;
+    padding: 10px 27px;
+    box-shadow: 0px 5px 13px 0px rgb(0 0 0 / 30%);
+}
+.bg-dark{
+    color: white!important;
+}
+  .box{
+    display:none;
+  }
+@media only screen and (max-width: 600px) {
+  .box{
+    display:block;
+  }
+}
+
+</style>
+   
+
+
+
+
+
+   
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con" style="display: none;"></div>
+    <!-- Preloader Ends -->
+
+        <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 address-info text-left">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info white">
+                                    <span>Address</span> 5174 Richmond Avenue
+Houston, TX 77056, USA                               </div>
+                                <!--  <div class="info">
+                                    <span>Address</span>  USA: Windmill Hill Business Park, Whitehill Way Swindon.
+                                </div> -->
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-envelope-open"></i>
+                                </div>
+                                <div class="info white">
+                                    <span>Email</span>admin@brighttrustlimited.org                                </div>
+                            </li>
+                            <!--<li>
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info white">
+                                  +44 7949 884 397                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 social text-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                    <div id="google_translate_element"></div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+        <header id="home">
+
+        <!-- Start Navigation -->
+        <div class="wrap-sticky" style="height: 90px;"><nav class="navbar navbar-default navbar-sticky bootsnav on no-full">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#"><input type="hidden" name="form_id" value="17126219778278"><input type="hidden" name="form_token" value="bd244024ba1e7c709a234205b13121d0">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars black"></i>
+                    </button>
+                    <a class="navbar-brand" href="?a=home">
+                        <img src="assets/img/sgig.jpeg" class="logo" alt="Logo" width="180">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li>
+                            <a href="?a=home">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Company</a>
+                            <ul class="dropdown-menu animated">
+                                <li><a href="?a=cust&amp;page=about">About Us</a></li>
+                                <li><a href="?a=cust&amp;page=policies">Our Policies</a></li>
+                                <li><a href="?a=support">Contact</a></li>
+                                <!-- <li><a href="#">Faq</a></li> -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="?a=login">Login</a>
+                        </li>
+                        <li>
+                            <a href="?a=signup">Register</a>
+                        </li>
+                        
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+                    <div class="box" style="background:white">
+    <a style="background:steelblue;padding:1%;margin:1%" href="?a=signup">SIGN UP</a>
+    <a style="float:right;color:steelblue;" href="?a=login">LOGIN</a>
+    </div>
+        </nav></div>
+        <!-- End Navigation -->
+
+
+    </header>
+    <!-- End Header -->
+    
+    <script src="//code.tidio.co/7baqhejymhgjqt4nfs1v0zqsbt8o4awe.js" async=""></script>
+
+
+	 
+<title>Home</title>
+ <div class="mgm kk" id="show">
+        <b id="text" class="black"></b><b class="text-primary" id="amount" style="font-size: 15px"></b>
+        
+    </div>    <!-- Start Banner 
+    ============================================= -->
+    <div id="particles-js"><canvas class="particles-js-canvas-el" width="1280" height="720" style="width: 100%; height: 100%;"></canvas></div>
+    <div class="banner-area">
+        <div id="bootcarousel" class="carousel inc-top-heading slide carousel-fade animate_text" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner text-light carousel-zoom">
+                <div class="item active">
+                    <div class="slider-thumb bg-fixe" style="background-image: url(assets/img/banner/1.jpg); "></div>
+                    <div class="box-table shadow dark">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content">
+                                            <h1 class="header_h1" data-animation="animated slideInLeft ">We serve you
+                                                <span>Better</span></h1>
+                                            <h3 class="header_h3" data-animation="animated slideInRight">We hire the
+                                                best traders to serve you better</h3>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-thumb bg-fixe" style="background-image: url(assets/img/banner/2.jpg);"></div>
+                    <div class="box-table shadow dark">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content">
+                                            <h1 class="header_h1" data-animation="animated slideInDown">High Ticket closer enrollment in progress!<br> <span>Instant Miners</span></h1>
+                                            <h3 class="header_h3" data-animation="animated slideInUp">Our  High Ticket Closer takes inbound calls for our various plan </h3>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-thumb bg-fixe" style="background-image: url(assets/img/banner/3.jpg);"></div>
+                    <div class="box-table shadow dark">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content">
+                                            <h1 class="header_h1" data-animation="animated slideInLeft">More
+                                                <span>convenient </span>than others</h1>
+                                            <h3 class="header_h3" data-animation="animated slideInRight">Invest with us
+                                                <span>Today</span><br>Let your money do the <span>hardwork.</span> </h3>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Wrapper for slides -->
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control shadow" href="#bootcarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control shadow" href="#bootcarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Our About
+    ============================================= -->
+    <div class="about-area full-width inc-shadow mt default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <!-- Start About -->
+                <div class="about-content content-left white">
+                    <div class="col-md-6 info white">
+                        <h2 class="white" style="color:steelblue">About Us</h2>
+                        <p class="wow slideInLeft white" style="visibility: hidden; animation-name: none;">brighttrustlimited.org is a USA-based investment firm with offices in UK, Canada, Australia and Europe  and
+                            Russia. We are a dynamic group whose main focus is to provide our clients with the best
+                            possible service. We diversify portfolio management through trading of different commodities and assets in the capital markets at large, and also we earn through the crypto space through mining of promising Coins, afterwhich royalties earned through mining and switched into a more secure platform which is Stocks and Foreign exchange trading.
+                        </p>
+                        <p class=" wow slideInUp white" style="visibility: hidden; animation-name: none;">
+                            The company offers long term and short term investment opportunities, Bluegate Financial
+                            Service was
+                            established in 2002 and it initially began trading stocks, shares and bonds, it got involved
+                            in forex trading in 2008 and was among the pioneer traders of Crypto-currencies in the
+                            advent of Bitcoin in 2010.
+                        </p>
+
+                    </div>
+                    <div class="col-md-6 thumb wow slideInRight" style="visibility: hidden; animation-name: none;">
+                        <img src="photo/img-1.png" alt="Thumb">
+                    </div>
+                </div>
+                <!-- End About -->
+                
+                 <!-- Start Our Features -->
+                <div class="col-md-12 text-center about-items">
+                    <h2 style="color:white">Why chose us</h2>
+
+<style>
+ 
+@media only screen and (min-width: 600px) {
+  .single-item{
+    width:33%;
+  }
+}
+</style>
+
+
+
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="col-md-3 col-sm-6 single-item">
+                            <div class="item wow slideInLeft " style="visibility: hidden; animation-name: none;">
+                                <a href="#">
+                                    <i class="flaticon-fit"></i>
+                                    <h5 class="white">Highly Secured</h5>
+                                    <p class="white">our company is 100% legit and Stable,we are monitored and insured by governmental agencies! This body has a great check on our activities with clients and we have good...<br></p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                       <!-- <div class="col-md-3 col-sm-6 single-item">
+                            <div class="item wow bounceInUp">
+                                <a href="#">
+                                    <i class="flaticon-target"></i>
+                                    <h5 class="white">HIGH ROI</h5>
+                                    <p class="white">
+                                        our crypo program is one of the fastest paying programs , Crypo ROI delivered automatically to your crypo wallet  for 7/30days depending on the duration you wants.
+                                    </p> 
+                                </a>
+                            </div>
+                        </div>-->
+                        <!-- Single Item -->
+                        <!-- End Single Item -->
+                        <div class="col-md-3 col-sm-6 single-item">
+                            <div class="item wow bounceInDown" style="visibility: hidden; animation-name: none;">
+                                <a href="#">
+                                    <i class="flaticon-chart"></i>
+                                    <h5 class="white">GUARANTEED RETURNS</h5>
+                                    <p class="white">Here, profits are 100% guaranteed As great expertise and tactical are put to work paving way for high yields trades,so basically all the work you need to do is Login and check whats happening in your account.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-3 col-sm-6 single-item">
+                            <div class="item wow slideInRight" style="visibility: hidden; animation-name: none;">
+                                <a href="#">
+                                    <i class="flaticon-customer-service"></i>
+                                    <h5 class="white">24/7 Live Support</h5>
+                                    <p class="white">We answer to the requests of every client. Our support service works in the 24/7 mode. The FAQ section is constantly updated.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+                <!-- End Our Features -->
+                
+                 </div>
+        </div>
+    </div>
+    <!-- End Our About -->
+                
+<!---
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/zQ4QmB8FxDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+               
+ --> 
+<style>
+ 
+@media only screen and (min-width: 600px) {
+  .s{
+    width:33%;
+  }
+}
+</style>         
+    <!-- Start Pricing Area
+    ============================================= -->
+  <div id="pricing" class="pricing-area default-padding bottom-less">
+    <div class="container">
+      <div class="row">
+        <div class="pricing pricing-simple text-center">
+            <div class="site-heading text-light text-center">
+                        <h2>Cryptocurrency Pricing</h2>
+                        <!-- <p>
+                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it
+                            examine express promise no. Past add size game cold girl off how old
+                        </p> -->
+                    </div>
+          
+  <div class="col-md-4 wow slideInLeft s" style="visibility: hidden; animation-name: none;">
+  <div class="pricing-item active">
+    <ul style="color:black">
+      <li class="pricing-header">
+        <h4>STANDARD PLAN </h4>
+      </li>
+      <li class="title"><h4>6% profit</h4></li>
+      <li>Min $50 - Max $199</li>
+      
+      <li> PRINCIPAL RETURNED</li>
+      <li>Duration: AFTER 24 HOURS</li>
+      <li>Referral Bonus 8%</li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="col-md-4 wow slideInDown s" style="visibility: hidden; animation-name: none;">
+  <div class="pricing-item active">
+     <ul style="color:black">
+      <li class="pricing-header">
+        <h4>SLIVER PLAN</h4>
+      </li>
+      <li class="title"><h4>15% profit</h4></li>
+      <li>Min $200 - $999</li>
+      <li> PRINCIPAL RETURNED </li>
+      <li>Duration: AFTER 3 DAYS</li>
+      <li>Referral Bonus 8%</li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="col-md-4 wow slideInRight s" style="visibility: hidden; animation-name: none;">
+  <div class="pricing-item active">
+    <ul style="color:black">
+      <li class="pricing-header">
+        <h4>DIAMOND PLAN</h4>
+      </li>
+      <li class="title"><h4>30% profit</h4></li>
+      <li>Min $1000 - $4999</li> 
+      <li>PRINCIPAL RETURNED</li>
+      <li>Duration: AFTER 5 DAYS</li>
+      <li>Referral Bonus 8%</li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="col-md-4 wow slideInRight s" style="visibility: hidden; animation-name: none;">
+  <div class="pricing-item active">
+    <ul style="color:black">
+      <li class="pricing-header">
+        <h4>GOLD PLAN</h4>
+      </li>
+      <li class="title"><h4>35% profit</h4></li>
+      <li>Min $5000 - $9999</li>
+      <li>PRINCIPAL RETURNED</li>
+      <li>Duration: AFTER 7 DAYS </li>
+      <li>Referral Bonus 8%</li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="col-md-4 wow slideInRight s" style="visibility: hidden; animation-name: none;">
+  <div class="pricing-item active">
+    <ul style="color:black">
+      <li class="pricing-header">
+        <h4>PROFICIENT PLAN</h4>
+      </li>
+      <li class="title"><h4>40% profit</h4></li>
+      <li>Min $10000 - $200000</li>
+      <li>PRINCIPAL RETURNED</li>
+      <li>Duration: AFTER 10 DAYS </li>
+      <li>Referral Bonus 8%</li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="col-md-4 wow slideInRight s" style="visibility: hidden; animation-name: none;">
+  <div class="pricing-item active">
+    <ul style="color:black">
+      <li class="pricing-header">
+        <h4>EXPERT PLAN</h4>
+      </li>
+      <li class="title"><h4>80% profit</h4></li>
+      <li>Min $200000 - UNLIMITED</li>
+      <li>PRINCIPAL RETURNED</li>
+      <li>Duration: AFTER 15 DAYS </li>
+      <li>Referral Bonus 8%</li>
+    </ul>
+  </div>
+  </div>
+  
+  
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Pricing Area -->
+
+    <!-- Start Services 
+    ============================================= -->
+    <div class="services-inc-area half-bg carousel-shadow default-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-light text-center">
+                        <h2>Our Services</h2>
+                        <!-- <p>
+                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it
+                            examine express promise no. Past add size game cold girl off how old
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="col-md-4 mb-5  wow slideInLeft" style="visibility: hidden; animation-name: none;">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cryptocurrencies.jpg" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="cryptocurrency-2.html">
+                                            <i class="flaticon-report"></i>
+                                            <h4>Cryptocurrencies</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        Cryptocurrencies are sets of software protocols for generating digital tokens
+                                        and
+                                        for tracking transactions in a way that makes it hard to counterfeit or re-use
+                                        tokens.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 mb-5  wow bounceInUp" style="visibility: hidden; animation-name: none;">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="assets/img/services/2.jpg" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            <i class="flaticon-plan"></i>
+                                            <h4>Escrow Service</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        Escrow comes into play when two parties are in the process of completing a
+                                        transaction and there is uncertainty over whether one party or another will...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 mb-5  wow bounceInDown" style="visibility: hidden; animation-name: none;">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="assets/img/services/3.jpg" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            <i class="flaticon-piggy-bank"></i>
+                                            <h4>Loans</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        Getting a loan doesn't have to be intimidating, with the right lender it can be
+                                        a
+                                        simple process. You only need a lender committed to ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <!--<div class="col-md-4 mb-5  wow slideInLeft">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="assets/img/services/1.jpg" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            <i class="flaticon-graph"></i>
+                                            <h4>Hedge Funds</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        Hedge funds Hedge fund Marketplace. An online version of a traditional capital
+                                        introduction program designed to allow Hedge Funds who use CIS as their
+                                        principal
+                                        Investing.
+                                    </p>
+                                    <a href="hedge-2.html">Readmore <i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 mb-5">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="assets/img/services/5.jpg" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            <i class="flaticon-research"></i>
+                                            <h4>Forex</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        Forex or FX is an acronym of Foreign Exchange and Forex trading means to trade
+                                        on
+                                        this market. Trading takes place by predicting how one currency performs against
+                                        another one
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="col-md-4 mb-5  wow slideInRight" style="visibility: hidden; animation-name: none;">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="assets/img/services/1.jpg" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            <i class="flaticon-graph"></i>
+                                            <h4>Non Farm Payroll [NFP]</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        The non-farm payroll report causes one of the consistently largest rate
+                                        movements of any news announcement in the forex market. As a result, many
+                                        analysts,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                         <!-- Single Item -->
+                        <div class="col-md-4 mb-5 wow slideInLeft" style="visibility: hidden; animation-name: none;">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="photo/img-2.png" alt="Thumb">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            <i class="flaticon-plan"></i>
+                                            <h4>High Ticket Closers</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="black">
+                                        High Ticket Closing is a professional skill that helps companies and influencers to close their premium products and services, brighttrustlimited.org are currently enrolling now.
+                                        
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Se
+    rvices -->
+    <hr>
+    <br>
+                    <center><b>CRYPTOCURRENCY RATE</b></center><br>
+                    	<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_bc944" style="height:400px;"><div id="tradingview_21968-wrapper" style="position: relative; box-sizing: content-box; font-family: -apple-system, BlinkMacSystemFont, &quot;Trebuchet MS&quot;, Roboto, Ubuntu, sans-serif; margin: 0px auto !important; padding: 0px !important; width: 100%; height: 100%;"><iframe title="advanced chart TradingView widget" lang="en" id="tradingview_21968" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://s.tradingview.com/widgetembed/?hideideas=1&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en#%7B%22symbol%22%3A%22BINANCE%3ABTCUSDT%22%2C%22frameElementId%22%3A%22tradingview_21968%22%2C%22interval%22%3A%2215%22%2C%22allow_symbol_change%22%3A%221%22%2C%22save_image%22%3A%221%22%2C%22studies%22%3A%22%5B%5D%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%221%22%2C%22timezone%22%3A%22Etc%2FUTC%22%2C%22studies_overrides%22%3A%22%7B%7D%22%2C%22utm_source%22%3A%22brighttrustlimited.org%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22chart%22%2C%22utm_term%22%3A%22BINANCE%3ABTCUSDT%22%2C%22page-uri%22%3A%22brighttrustlimited.org%2F%22%7D" style="width: 100%; height: 100%; margin: 0px !important; padding: 0px !important;"></iframe></div></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+      new TradingView.widget({
+      "autosize":true,"symbol":"BINANCE:BTCUSDT","interval":"15","timezone":"Etc/UTC","theme":"dark","style":"1","locale":"en","toolbar_bg":"#f1f3f6","enable_publishing":false,"allow_symbol_change":true,"container_id":"tradingview_bc944"
+      });
+      </script>
+</div><style>.tradingview-widget-copyright {font-size: 13px !important; line-height: 32px !important; text-align: center !important; vertical-align: middle !important; font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important; color: #B2B5BE !important;} .tradingview-widget-copyright .blue-text {color: #2962FF !important;} .tradingview-widget-copyright a {text-decoration: none !important; color: #B2B5BE !important;} .tradingview-widget-copyright a:visited {color: #B2B5BE !important;} .tradingview-widget-copyright a:hover .blue-text {color: #1E53E5 !important;} .tradingview-widget-copyright a:active .blue-text {color: #1848CC !important;} .tradingview-widget-copyright a:visited .blue-text {color: #2962FF !important;}</style>
+<!-- TradingView Widget END -->
+
+               <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="width: 100%; height: 490px;">
+  <iframe allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/crypto-mkt-screener/?locale=en#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A490%2C%22defaultColumn%22%3A%22overview%22%2C%22screener_type%22%3A%22crypto_mkt%22%2C%22displayCurrency%22%3A%22USD%22%2C%22colorTheme%22%3A%22dark%22%2C%22market%22%3A%22crypto%22%2C%22enableScrolling%22%3Atrue%2C%22utm_source%22%3A%22brighttrustlimited.org%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22cryptomktscreener%22%2C%22page-uri%22%3A%22brighttrustlimited.org%2F%22%7D" title="crypto mkt-screener TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+  
+<style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="width: 100%; height: 46px;">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22BTC%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22ETH%2FUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A46%2C%22utm_source%22%3A%22brighttrustlimited.org%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22brighttrustlimited.org%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+  
+<style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+<!-- TradingView Widget END -->    
+                   
+                
+            
+        
+    
+    <!-- End Skill -->
+
+
+
+
+
+    <!-- Start Achivement
+    ============================================= -->
+    <div class="achivement-area bg-fixed shadow dark text-light default-padding  wow slideInLeft" style="background-image: url(&quot;images/advan-img.jpg&quot;); visibility: hidden; animation-name: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 achivement-items">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 item  wow slideInLeft" style="visibility: hidden; animation-name: none;">
+                            <div class="fun-fact">
+                                <div class="timer" data-to="8073" data-speed="5000">4037</div>
+                                <span class="medium">Investors</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 item  wow slideInRight" style="visibility: hidden; animation-name: none;">
+                            <div class="fun-fact">
+                                <div class="timer" data-to="81688171.15" data-speed="5000">40844086</div>
+                                <span class="medium">Total deposit($)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 item  wow slideInLeft" style="visibility: hidden; animation-name: none;">
+                            <div class="fun-fact">
+                                <div class="timer" data-to="24" data-speed="5000">12</div>
+                                <span class="medium">Hours support</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 item  wow slideInRight" style="visibility: hidden; animation-name: none;">
+                            <div class="fun-fact">
+                                <div class="timer" data-to="968830674.32" data-speed="5000">484415337</div>
+                                <span class="medium">Total withdraw($)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Achivement Area -->
+    <!-- Start Testimonial & Faq
+    ============================================= -->
+    <div class="testimonials-faq about-area default-padding  wow slideInDown" style="visibility: hidden; animation-name: none;">
+        <div class="container">
+            <div class="row">
+                <!-- Start Testimonials -->
+                <div class="col-md-6 management-quote">
+                    <h2 class="white">What Clients say</h2>
+                    <div class="management-items management-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                        <!-- Single Item -->
+                        
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        
+                        <!-- End Single Item -->
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1620px;"><div class="owl-item active" style="width: 540px;"><div class="item">
+                            <p>
+                                " You know good opportunity when you see one, BFS, the best investment platform i have
+                                involved with."
+                            </p>
+                            <div class="author row">
+                                <div class="max-30 col-md-6">
+                                    <img class="img-rounded" style="border-radius:30px;" src="assets/img/team/14.jpg" alt="Thumb">
+                                </div>
+                                <div class="info">
+                                    <span>- Nathan Junior</span>
+                                    <b>CEO Flygates Delivery</b>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 540px;"><div class="item">
+                            <p>
+                                "Recommended investment company for you who are always looking for good investment with
+                                good weekly returns, swift withdrawal, and excellent support."
+                            </p>
+                            <div class="author row">
+                                <div class="max-30 col-md-6">
+                                    <img class="img-rounded" style="border-radius:30px;" src="assets/img/team/12.jpg" alt="Thumb">
+                                </div>
+                                <div class="info">
+                                    <span>- Jonathom Abhi</span>
+                                    <b>Product Designer</b>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 540px;"><div class="item">
+                            <p>
+                                "I know nothing about trading, but brighttrustlimited.org has made it possible for me to accomplish such
+                                tasks without my direct involvement with excellent weekly returns."
+                            </p>
+                            <div class="author row">
+                                <div class="max-30 col-md-6">
+                                    <img class="img-rounded" style="border-radius:30px;" src="assets/img/team/13.jpg" alt="Thumb">
+                                </div>
+                                <div class="info col-md-6">
+                                    <span>- Marlum Kayum</span>
+                                    <b>Software Developer</b>
+                                </div>
+                            </div>
+                        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                </div>
+                <!-- End Testimonials -->
+
+                <!-- Start Faq -->
+                <div class="col-md-6 faq-area  wow slideInUp" style="visibility: hidden; animation-name: none;">
+                    <div class="heading">
+                        <h2>Answer &amp; Questions</h2>
+                    </div>
+                    <div class="acd-items acd-arrow">
+                        <div class="panel-group symb" id="accordion">
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
+                                            How long does it take for my deposit to be credited into my account?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p class="black">
+                                            As soon as deposit is received. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac2">
+                                            How long does the withdrawal process take?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p class="black">
+                                            Usually just a few minutes,
+                                            we try our best to ensure withdrawals are speedily disbursed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac3">
+                                            What is the possibility that I will
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p class="black">
+                                            There is always risk of losing funds but we ensure that all invested funds
+                                            are capital insured implying that should trading go south that the amount
+                                            invested at the time of trading is covered by Insurance also we also have an
+                                            Employee Negligence cover to the tune of one million dollars
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac4">
+                                            Do you charge fees for services?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p class="black">
+                                            No we do not charge for our services as we retain our profits before
+                                            crediting investors their predetermined profit rate, some investment options
+                                            may require fees in such cases the investor is advised properly
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Faq -->
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial & Faq -->
+    <!-- Start Skill
+    ============================================= -->
+    <!--<div class="skill-area default-padding">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-md-6">-->
+    <!--                <table class="table table-striped">-->
+    <!--                    <thead style="background:#117BDC;  color:#ffffff;">-->
+    <!--                        <tr>-->
+    <!--                            <th scope="col">Latest Deposits</th>-->
+    <!--                            <th scope="col"></th>-->
+    <!--                            <th scope="col"></th>-->
+    <!--                        </tr>-->
+    <!--                    </thead>-->
+    <!--                    <tbody id="ld_body">-->
+    <!--                    </tbody>-->
+    <!--                </table>-->
+    <!--            </div>-->
+    <!--            <div class="col-md-6">-->
+    <!--                <table class="table table-striped">-->
+    <!--                    <thead style="background:#121212;  color:#ffffff;">-->
+    <!--                        <tr>-->
+    <!--                            <th scope="col">Latest Withdrawals</th>-->
+    <!--                            <th scope="col"></th>-->
+    <!--                            <th scope="col"></th>-->
+    <!--                        </tr>-->
+    <!--                    </thead>-->
+    <!--                    <tbody id="lw_body">-->
+    <!--                    </tbody>-->
+    <!--                </table>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!-- End Skill -->
+
+    <!-- Start Clients Area
+    ============================================= -->
+    <div class="clients-area bg-dark default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 clients-box">
+                   <!-- <div class="clients-items owl-carousel owl-theme text-center">
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/01.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/02.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/03.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/04.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/05.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/06.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/07.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/08.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/09.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/10.png" alt="Clients"></a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients Area -->
+
+
+    <footer class="bg-dark">
+        <!-- Start Footer Top -->
+        <div class="footer-top bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 logo">
+                        <a href="#"><img src="assets/img/sgig.jpeg" alt="Logo"></a>
+                    </div>
+                    <div class="col-md-8 col-sm-8 form text-right">
+                        <form action="#"><input type="hidden" name="form_id" value="17126219778278"><input type="hidden" name="form_token" value="bd244024ba1e7c709a234205b13121d0">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" placeholder="Enter your e-mail here" class="form-control" name="email">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        Subscribe <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top -->
+        <style>
+   .f{
+    width:33%;
+  }
+@media only screen and (max-width: 600px) {
+  .f{
+    width:100%;
+  }
+}
+</style> 
+       <!-- End Footer Top -->
+        <div class="container">
+            <div class="row">
+                <div class="f-items default-padding">
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 equal-height item  wow  wow slideInDown f" style="height: 275px; visibility: hidden; animation-name: none;">
+                        <div class="f-item">
+                            <h4>About</h4>
+                            <p>
+                                brighttrustlimited.org is a USA-based investment firm with offices in USA,
+                                Australia and canada. We are a dynamic group whose main focus is to provide our clients
+                                with the best possible service, We apply a systematic and quantitative approach to
+                                investment management, with the aim of generating high-quality and diversifying alpha
+                                for its clients’ portfolios.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <style>
+                        a{
+                            text-decoration:none;
+                        }
+                    </style>
+                    <!-- Single Item -->
+                    <div class="col-md-4 item f">
+                        <div class="f-item ">
+    <img src="images/certp.jpg" style="width:100%" alt="Thumb">
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-md-4 item f">
+                        <div class="f-item ">
+                            <h4>Contacts</h4>
+                            <ul>
+                                 <li class="mb-3">
+                                    <span><img class="mr-3" width="20" height="20" src="assets/img/phone.svg">+19203285378</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span><img class="mr-3" width="20" height="20" src="assets/img/envelope.svg">admin@brighttrustlimited.org</span>
+                                </li>
+                                <!-- <li class="mb-3">
+                                    <span><img class="mr-3" width="20" height="20" src="assets/img/address.svg" /><a href="#">US: 150N Michigan Ave-28th Floor, Chicago.</a></span>
+                                </li> -->
+                                <li class="mb-3">
+                                    <span><img class="mr-3" width="20" height="20" src="assets/img/address.svg">1055 W 7th Suite 3300, los Angles, CA 90017, United State</span>
+                                </li>
+                                <!--<li class="mb-3">
+                                    <span><img class="mr-3" width="20" height="20" src="assets/img/address.svg" /><a href="#">+44 7949 884 397</a></span>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p> Copyright © 2018. All Rights Reserved by brighttrustlimited.org</p>
+                    </div>
+                    <div class="col-md-6 text-right link">
+                        <ul>
+                            <li>
+                                Company Policies
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+      <!-- End Footer -->
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/particles_app.js"></script>
+  
+    <script src="assets/js/recents.js"></script>
+
+
+
+
+
+         
+
+
+
+
+</div><iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;"></iframe><script async="" charset="UTF-8" src="https://embed.tawk.to/_s/v4/app/660e2260004/languages/en.js"></script></body><!-- Start Footer 
+    ============================================= --></html>

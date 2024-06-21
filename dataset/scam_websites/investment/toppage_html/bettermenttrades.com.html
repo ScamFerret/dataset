@@ -1,0 +1,1800 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Simple stock &amp; cryptocurrency price forecasting console application, using PHP Machine">
+    <meta name="keywords" content="signal,btc,froex,Binance,Crypto,Buy,Sell ">
+
+    <title>Betterment Trades</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap">
+
+    <link rel="shortcut icon" type="image/png" href="https://bettermenttrades.com/asset/images/icon/icon.png">
+
+    <link rel="stylesheet" href="https://bettermenttrades.com/asset/frontend/light/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bettermenttrades.com/asset/frontend/light/css/all.min.css">
+    <link rel="stylesheet" href="https://bettermenttrades.com/asset/frontend/light/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://bettermenttrades.com/asset/frontend/light/css/lib/slick.css">
+    <link rel="stylesheet" href="https://bettermenttrades.com/asset/frontend/light/css/lib/odometer.css">
+
+            <link rel="stylesheet" href="https://bettermenttrades.com/asset/frontend/light/css/izitoast.min.css">
+    
+    <link href="https://bettermenttrades.com/asset/frontend/light/css/main.css" rel="stylesheet">
+
+    
+    <style>
+        :root {
+            --clr-main: #F2062F;
+            --h-font: 'Epilogue','sans-serif';
+            --p-font: 'Poppins','sans-serif';
+        }
+    </style>
+
+        <style>
+        .wrapper {
+            display: inline-flex;
+
+            height: 100px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            padding: 20px 15px;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .wrapper .option {
+            background: #fff;
+            height: 55px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 0 10px;
+            border: 2px solid lightgrey;
+            transition: all 0.3s ease;
+        }
+
+        .wrapper .option .dot {
+            height: 20px;
+            width: 20px;
+            background: #d9d9d9;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .wrapper .option .dot::before {
+            position: absolute;
+            content: "";
+            top: 4px;
+            left: 4px;
+            width: 12px;
+            height: 12px;
+            background: var(--clr-main);
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(1.5);
+            transition: all 0.3s ease;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #option-1:checked:checked~.option-1,
+        #option-2:checked:checked~.option-2 {
+            border-color: var(--clr-main);
+            background: var(--clr-main);
+        }
+
+        #option-1:checked:checked~.option-1 .dot,
+        #option-2:checked:checked~.option-2 .dot {
+            background: #fff;
+        }
+
+        #option-1:checked:checked~.option-1 .dot::before,
+        #option-2:checked:checked~.option-2 .dot::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .wrapper .option span {
+            font-size: 20px;
+            color: #808080;
+        }
+
+        #option-1:checked:checked~.option-1 span,
+        #option-2:checked:checked~.option-2 span {
+            color: #fff;
+        }
+    </style>
+
+      <style>
+      #linechart .apexcharts-tooltip {
+        background-color: #220700 !important;
+        border: 1px solid rgba(255, 255, 255, 0.15)
+      }
+
+      .sp_trading_section {
+        padding: 120px 0;
+      }
+
+      .radio_button_list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -3px -15px;
+      }
+
+      .radio_button_list .sp_site_radio {
+        padding: 3px 15px;
+      }
+  </style>
+
+
+<style id="apexcharts-css">@keyframes opaque {
+  0% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes resizeanim {
+  0%,to {
+      opacity: 0
+  }
+}
+
+.apexcharts-canvas {
+  position: relative;
+  user-select: none
+}
+
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px
+}
+
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
+}
+
+.apexcharts-inner {
+  position: relative
+}
+
+.apexcharts-text tspan {
+  font-family: inherit
+}
+
+.legend-mouseover-inactive {
+  transition: .15s ease all;
+  opacity: .2
+}
+
+.apexcharts-legend-text {
+  padding-left: 15px;
+  margin-left: -15px;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: .15s ease all
+}
+
+.apexcharts-tooltip.apexcharts-active {
+  opacity: 1;
+  transition: .15s ease all
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255,255,255,.96)
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  color: #fff;
+  background: rgba(30,30,30,.8)
+}
+
+.apexcharts-tooltip * {
+  font-family: inherit
+}
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background: #eceff1;
+  border-bottom: 1px solid #ddd
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgba(0,0,0,.7);
+  border-bottom: 1px solid #333
+}
+
+.apexcharts-tooltip-text-goals-value,.apexcharts-tooltip-text-y-value,.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 600
+}
+
+.apexcharts-tooltip-text-goals-label:empty,.apexcharts-tooltip-text-goals-value:empty,.apexcharts-tooltip-text-y-label:empty,.apexcharts-tooltip-text-y-value:empty,.apexcharts-tooltip-text-z-value:empty,.apexcharts-tooltip-title:empty {
+  display: none
+}
+
+.apexcharts-tooltip-text-goals-label,.apexcharts-tooltip-text-goals-value {
+  padding: 6px 0 5px
+}
+
+.apexcharts-tooltip-goals-group,.apexcharts-tooltip-text-goals-label,.apexcharts-tooltip-text-goals-value {
+  display: flex
+}
+
+.apexcharts-tooltip-text-goals-label:not(:empty),.apexcharts-tooltip-text-goals-value:not(:empty) {
+  margin-top: -6px
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0;
+  margin-right: 10px;
+  border-radius: 50%
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
+  opacity: 1
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active,.apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px
+}
+
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0!important
+}
+
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px
+}
+
+.apexcharts-custom-tooltip,.apexcharts-tooltip-box {
+  padding: 4px 8px
+}
+
+.apexcharts-tooltip-boxPlot {
+  display: flex;
+  flex-direction: column-reverse
+}
+
+.apexcharts-tooltip-box>div {
+  margin: 4px 0
+}
+
+.apexcharts-tooltip-box span.value {
+  font-weight: 700
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px
+}
+
+.apexcharts-xaxistooltip,.apexcharts-yaxistooltip {
+  opacity: 0;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #eceff1;
+  border: 1px solid #90a4ae
+}
+
+.apexcharts-xaxistooltip {
+  padding: 9px 10px;
+  transition: .15s ease all
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgba(0,0,0,.7);
+  border: 1px solid rgba(0,0,0,.5);
+  color: #fff
+}
+
+.apexcharts-xaxistooltip:after,.apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: transparent;
+  border-width: 6px;
+  margin-left: -6px
+}
+
+.apexcharts-xaxistooltip:before {
+  border-color: transparent;
+  border-width: 7px;
+  margin-left: -7px
+}
+
+.apexcharts-xaxistooltip-bottom:after,.apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%
+}
+
+.apexcharts-xaxistooltip-top:after,.apexcharts-xaxistooltip-top:before {
+  top: 100%
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #eceff1
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90a4ae
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:after,.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  border-bottom-color: rgba(0,0,0,.5)
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color: #eceff1
+}
+
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90a4ae
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:after,.apexcharts-xaxistooltip-top.apexcharts-theme-dark:before {
+  border-top-color: rgba(0,0,0,.5)
+}
+
+.apexcharts-xaxistooltip.apexcharts-active {
+  opacity: 1;
+  transition: .15s ease all
+}
+
+.apexcharts-yaxistooltip {
+  padding: 4px 10px
+}
+
+.apexcharts-yaxistooltip.apexcharts-theme-dark {
+  background: rgba(0,0,0,.7);
+  border: 1px solid rgba(0,0,0,.5);
+  color: #fff
+}
+
+.apexcharts-yaxistooltip:after,.apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none
+}
+
+.apexcharts-yaxistooltip:after {
+  border-color: transparent;
+  border-width: 6px;
+  margin-top: -6px
+}
+
+.apexcharts-yaxistooltip:before {
+  border-color: transparent;
+  border-width: 7px;
+  margin-top: -7px
+}
+
+.apexcharts-yaxistooltip-left:after,.apexcharts-yaxistooltip-left:before {
+  left: 100%
+}
+
+.apexcharts-yaxistooltip-right:after,.apexcharts-yaxistooltip-right:before {
+  right: 100%
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #eceff1
+}
+
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90a4ae
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:after,.apexcharts-yaxistooltip-left.apexcharts-theme-dark:before {
+  border-left-color: rgba(0,0,0,.5)
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #eceff1
+}
+
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90a4ae
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:after,.apexcharts-yaxistooltip-right.apexcharts-theme-dark:before {
+  border-right-color: rgba(0,0,0,.5)
+}
+
+.apexcharts-yaxistooltip.apexcharts-active {
+  opacity: 1
+}
+
+.apexcharts-yaxistooltip-hidden {
+  display: none
+}
+
+.apexcharts-xcrosshairs,.apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: .15s ease all
+}
+
+.apexcharts-xcrosshairs.apexcharts-active,.apexcharts-ycrosshairs.apexcharts-active {
+  opacity: 1;
+  transition: .15s ease all
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0
+}
+
+.apexcharts-selection-rect {
+  cursor: move
+}
+
+.svg_select_boundingRect,.svg_select_points_rot {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden
+}
+
+.apexcharts-selection-rect+g .svg_select_boundingRect,.apexcharts-selection-rect+g .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden
+}
+
+.apexcharts-selection-rect+g .svg_select_points_l,.apexcharts-selection-rect+g .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible
+}
+
+.svg_select_points {
+  fill: #efefef;
+  stroke: #333;
+  rx: 2
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-zoom {
+  cursor: crosshair
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-pan {
+  cursor: move
+}
+
+.apexcharts-menu-icon,.apexcharts-pan-icon,.apexcharts-reset-icon,.apexcharts-selection-icon,.apexcharts-toolbar-custom-icon,.apexcharts-zoom-icon,.apexcharts-zoomin-icon,.apexcharts-zoomout-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6e8192;
+  text-align: center
+}
+
+.apexcharts-menu-icon svg,.apexcharts-reset-icon svg,.apexcharts-zoom-icon svg,.apexcharts-zoomin-icon svg,.apexcharts-zoomout-icon svg {
+  fill: #6e8192
+}
+
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(.76)
+}
+
+.apexcharts-theme-dark .apexcharts-menu-icon svg,.apexcharts-theme-dark .apexcharts-pan-icon svg,.apexcharts-theme-dark .apexcharts-reset-icon svg,.apexcharts-theme-dark .apexcharts-selection-icon svg,.apexcharts-theme-dark .apexcharts-toolbar-custom-icon svg,.apexcharts-theme-dark .apexcharts-zoom-icon svg,.apexcharts-theme-dark .apexcharts-zoomin-icon svg,.apexcharts-theme-dark .apexcharts-zoomout-icon svg {
+  fill: #f3f4f5
+}
+
+.apexcharts-canvas .apexcharts-reset-zoom-icon.apexcharts-selected svg,.apexcharts-canvas .apexcharts-selection-icon.apexcharts-selected svg,.apexcharts-canvas .apexcharts-zoom-icon.apexcharts-selected svg {
+  fill: #008ffb
+}
+
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg,.apexcharts-theme-light .apexcharts-reset-icon:hover svg,.apexcharts-theme-light .apexcharts-selection-icon:not(.apexcharts-selected):hover svg,.apexcharts-theme-light .apexcharts-zoom-icon:not(.apexcharts-selected):hover svg,.apexcharts-theme-light .apexcharts-zoomin-icon:hover svg,.apexcharts-theme-light .apexcharts-zoomout-icon:hover svg {
+  fill: #333
+}
+
+.apexcharts-menu-icon,.apexcharts-selection-icon {
+  position: relative
+}
+
+.apexcharts-reset-icon {
+  margin-left: 5px
+}
+
+.apexcharts-menu-icon,.apexcharts-reset-icon,.apexcharts-zoom-icon {
+  transform: scale(.85)
+}
+
+.apexcharts-zoomin-icon,.apexcharts-zoomout-icon {
+  transform: scale(.7)
+}
+
+.apexcharts-zoomout-icon {
+  margin-right: 3px
+}
+
+.apexcharts-pan-icon {
+  transform: scale(.62);
+  position: relative;
+  left: 1px;
+  top: 0
+}
+
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6e8192;
+  stroke-width: 2
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg {
+  stroke: #008ffb
+}
+
+.apexcharts-pan-icon:not(.apexcharts-selected):hover svg {
+  stroke: #333
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0 6px 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: .15s ease all;
+  pointer-events: none
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: .15s ease all
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer
+}
+
+.apexcharts-theme-light .apexcharts-menu-item:hover {
+  background: #eee
+}
+
+.apexcharts-theme-dark .apexcharts-menu {
+  background: rgba(0,0,0,.7);
+  color: #fff
+}
+
+@media screen and (min-width:768px) {
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+      opacity: 1
+  }
+}
+
+.apexcharts-canvas .apexcharts-element-hidden,.apexcharts-datalabel.apexcharts-element-hidden,.apexcharts-hide .apexcharts-series-points {
+  opacity: 0
+}
+
+.apexcharts-datalabel,.apexcharts-datalabel-label,.apexcharts-datalabel-value,.apexcharts-datalabels,.apexcharts-pie-label {
+  cursor: default;
+  pointer-events: none
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease
+}
+
+.apexcharts-annotation-rect,.apexcharts-area-series .apexcharts-area,.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,.apexcharts-gridline,.apexcharts-line,.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,.apexcharts-point-annotation-label,.apexcharts-radar-series path,.apexcharts-radar-series polygon,.apexcharts-toolbar svg,.apexcharts-tooltip .apexcharts-marker,.apexcharts-xaxis-annotation-label,.apexcharts-yaxis-annotation-label,.apexcharts-zoom-rect {
+  pointer-events: none
+}
+
+.apexcharts-marker {
+  transition: .15s ease all
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+}
+
+.contract-trigger:before,.resize-triggers,.resize-triggers>div {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.resize-triggers>div {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  overflow: auto
+}
+
+.contract-trigger:before {
+  overflow: hidden;
+  width: 200%;
+  height: 200%
+}
+</style></head>
+
+<body>
+
+
+            <div class="preloader-holder" style="opacity: 0; display: none;">
+            <div class="preloader">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            </div>
+        </div>
+    
+
+            <script async="" src="https://www.googletagmanager.com/gtag/js?id=hjkhjk"></script>
+        <script>
+            'use strict'
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "hjkhjk");
+        </script>
+    
+    
+    <div class="body-content-area">
+                    <!-- banner section start -->
+<section class="sp_banner" style="background-image: url('https://bettermenttrades.com/asset/frontend/light/images/banner/64abafeb996ca1688973291.jpg');">
+
+    <div class="sp_banner_el">
+        <img src="https://bettermenttrades.com/asset/frontend/light/images/banner/64abd46b2a05a1688982635.png" alt="banner image">
+    </div>
+
+    <div class="container">
+        <div class="row gy-5 justify-content-lg-between justify-content-center align-items-center">
+            <div class="col-lg-7 text-lg-start text-center">
+                <h2 class="sp_banner_title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                Discover The World of <span>Forex Signal</span>                </h2>
+
+                <p class="sp_banner_description">Trade forex, synthetics, stocks &amp; indices, cryptocurrencies and commodities. we are an award winning forex and commodities broker, providing trading services and facilities to both retail and institutional clients.</p>
+                
+                <div class="mt-sm-5 mt-4 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.7s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.7s; animation-name: fadeInUp;">
+                    <a href="#" class="btn sp_theme_btn me-3 mb-2"><i class="fas fa-rocket me-2"></i> Get started</a>
+
+                    <a href="register" class="btn sp_light_border_btn mb-2">Register now <i class="las la-arrow-right ms-2 rotate-arrow"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-7">
+                <div class="sp_banner_thumb wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.9s; animation-name: fadeInUp;">
+                    <img src="https://bettermenttrades.com/asset/frontend/light/images/banner/64abdca21d89a1688984738.png" alt="banner image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner section end -->        
+        <header class="sp_header">
+    <div class="sp_header_info_bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 header-top-left">
+                    <div class="tradingview-widget-container" style="width: 100%; height: 76px;">
+                        <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22US%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22Bitcoin%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22Ethereum%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A76%2C%22utm_source%22%3A%22bettermenttrades.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22bettermenttrades.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 44px; width: 100%;"></iframe>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/?utm_source=bettermenttrades.com&amp;utm_medium=widget_new&amp;utm_campaign=ticker-tape" rel="noopener" target="_blank"><span class="blue-text">Markets today</span></a> by TradingView</div>
+                        
+                    <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+                    <!-- TradingView Widget END -->
+                </div>
+
+                <div class="col-lg-2 header-top-right">
+                    <div class="d-flex justify-content-end">
+                        <select class="custom-select-form selectric ms-3 rounded changeLang nav-link scrollto" aria-label="Default select example">
+                                                            <option value="Fr">
+                                    French
+                                </option>
+                                                            <option value="sp">
+                                    Spanish
+                                </option>
+                                                            <option value="en" selected="">
+                                    English
+                                </option>
+                                                    </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- header-top end -->
+
+    <div class="sp_header_main">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl p-0 align-items-center">
+                <a class="site-logo site-title" href="https://bettermenttrades.com">
+                    <img src="https://bettermenttrades.com/asset/images/logo/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-toggle"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-lg-0 mt-3" id="mainNavbar">
+                    <ul class="nav navbar-nav sp_site_menu ms-auto">
+                        <li class="nav-item">
+        <a class="nav-link" href="https://bettermenttrades.com">Test</a>
+    </li>
+                <li class="nav-item">
+                                <a class="nav-link" href="https://bettermenttrades.com/about">About</a>
+                            </li>
+                
+                <li class="nav-item">
+                                <a class="nav-link" href="https://bettermenttrades.com/packages">Packages</a>
+                            </li>
+                
+                <li class="nav-item">
+                                <a class="nav-link" href="https://bettermenttrades.com/contact">Contact</a>
+                            </li>
+                                    </ul>
+
+                    <select class="custom-select-form  rounded changeLang nav-link mb-3 d-xl-none">
+                                                    <option value="Fr">
+                                French
+                            </option>
+                                                    <option value="sp">
+                                Spanish
+                            </option>
+                                                    <option value="en" selected="">
+                                English
+                            </option>
+                                            </select>
+
+                    <div class="navbar-action">
+                                                    <a href="https://bettermenttrades.com/login" class="me-3 text-p">Sign in</a>
+                            <a href="https://bettermenttrades.com/register" class="btn sp_theme_btn btn-sm">Sign up <i class="las la-long-arrow-alt-right ms-2"></i></a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- header-bottom end -->
+</header>
+<!-- header-section end  -->
+
+        
+                   <section class="about-section sp_pt_120 sp_pb_120">
+    <div class="about-el"><img src="https://bettermenttrades.com/asset/frontend/light/images/about/64abe35a53fa01688986458.png" alt="about line image">
+    </div>
+    <div class="container">
+        <div class="row gy-5 align-items-center justify-content-between">
+            <div class="col-lg-7 ps-lg-5 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" style="visibility: hidden; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: none;">
+                <h2 class="sp_theme_top_title">
+                    Join the <span>trademax community</span>                </h2>
+                <p class="fs-lg mt-3">We are by far the best trading platform with a lot of great features</p>
+                <ul class="sp_check_list mt-4">
+                                                                        <li>Industry-leading security</li>
+                                                    <li>Fast withdrawals</li>
+                                                    <li>Bitcoin cloud mining</li>
+                                                    <li>Crime insurance against theft</li>
+                                                            </ul>
+                <a href="about" class="btn sp_theme_btn mt-4">Learn more</a>
+            </div>
+            
+            <div class="col-lg-5">
+                <div class="about-thumb">
+                    <img src="https://bettermenttrades.com/asset/frontend/light/images/about/64abed38b05fa1688988984.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>           <section class="trade-section sp_pt_120 sp_pb_120 sp_separator_bg">
+    <div class="trading-el">
+        <img src="https://bettermenttrades.com/asset/frontend/light/images/trade/64ad23f80a7da1689068536.png" alt="image">
+    </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center">
+        <div class="sp_theme_top  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: none;">
+          <div class="sp_theme_top_caption"><i class="fas fa-bolt"></i> Live trading</div>
+          <h2 class="sp_theme_top_title">Join the <span>Ellite Groups Capitals community</span></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="sp_site_card">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                <div class="radio_button_list">
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-1" name="currency" value="BTC" checked="">
+                        <label class="form-check-label" for="trad-1">
+                            Btc
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-2" name="currency" value="ETH">
+                        <label class="form-check-label" for="trad-2">
+                            Eth
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-3" name="currency" value="USDT">
+                        <label class="form-check-label" for="trad-3">
+                            Usdt
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-4" name="currency" value="BNB">
+                        <label class="form-check-label" for="trad-4">
+                            Bnb
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-5" name="currency" value="DOGE">
+                        <label class="form-check-label" for="trad-5">
+                            Doge
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-6" name="currency" value="LTC">
+                        <label class="form-check-label" for="trad-6">
+                            Ltc
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-7" name="currency" value="DASH">
+                        <label class="form-check-label" for="trad-7">
+                            Dash
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-8" name="currency" value="ETC">
+                        <label class="form-check-label" for="trad-8">
+                            Etc
+                        </label>
+                    </div>
+
+                    <div class="sp_site_radio">
+                        <input type="radio" class="form-check-input currency" id="trad-9" name="currency" value="BCH">
+                        <label class="form-check-label" for="trad-9">
+                            Bch
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://bettermenttrades.com/trade" class="btn sp_theme_btn order">Start trading</a>
+                </div>
+                </div>
+                <div class="sp_card_body">
+                    <div id="linechart" style="min-height: 415px;"><div id="apexchartsnzs6lm" class="apexcharts-canvas apexchartsnzs6lm apexcharts-theme-light" style="width: 1116px; height: 400px;"><svg id="SvgjsSvg1085" width="1116" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg apexcharts-zoomable" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1087" class="apexcharts-inner apexcharts-graphical" transform="translate(33.125, 51)"><defs id="SvgjsDefs1086"><clipPath id="gridRectMasknzs6lm"><rect id="SvgjsRect1096" width="0" height="312.348" x="-14.5" y="-0.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMasknzs6lm"></clipPath><clipPath id="nonForecastMasknzs6lm"></clipPath><clipPath id="gridRectMarkerMasknzs6lm"><rect id="SvgjsRect1097" width="0" height="315.348" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><line id="SvgjsLine1093" x1="0" y1="0" x2="0" y2="311.348" stroke="#b6b6b6" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="311.348" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><line id="SvgjsLine1103" x1="0" y1="312.348" x2="0" y2="318.348" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1104" x1="0" y1="312.348" x2="0" y2="318.348" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1105" x1="0" y1="312.348" x2="0" y2="318.348" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1106" x1="0" y1="312.348" x2="0" y2="318.348" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1107" x1="0" y1="312.348" x2="0" y2="318.348" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-xaxis-tick"></line><g id="SvgjsG1116" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1117" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text id="SvgjsText1119" font-family="Helvetica, Arial, sans-serif" x="0" y="340.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1120"></tspan><title></title></text><text id="SvgjsText1122" font-family="Helvetica, Arial, sans-serif" x="0" y="340.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1123"></tspan><title></title></text><text id="SvgjsText1125" font-family="Helvetica, Arial, sans-serif" x="0" y="340.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1126"></tspan><title></title></text><text id="SvgjsText1128" font-family="Helvetica, Arial, sans-serif" x="0" y="340.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1129"></tspan><title></title></text><text id="SvgjsText1131" font-family="Helvetica, Arial, sans-serif" x="0" y="340.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1132"></tspan><title></title></text><text id="SvgjsText1134" font-family="Helvetica, Arial, sans-serif" x="0" y="340.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1135"></tspan><title></title></text></g></g><g id="SvgjsG1099" class="apexcharts-grid"><g id="SvgjsG1100" class="apexcharts-gridlines-horizontal"><line id="SvgjsLine1109" x1="0" y1="62.269600000000004" x2="0" y2="62.269600000000004" stroke="#ffffff26" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1110" x1="0" y1="124.53920000000001" x2="0" y2="124.53920000000001" stroke="#ffffff26" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1111" x1="0" y1="186.80880000000002" x2="0" y2="186.80880000000002" stroke="#ffffff26" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1112" x1="0" y1="249.07840000000002" x2="0" y2="249.07840000000002" stroke="#ffffff26" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g id="SvgjsG1101" class="apexcharts-gridlines-vertical"></g><line id="SvgjsLine1115" x1="0" y1="311.348" x2="0" y2="311.348" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line id="SvgjsLine1114" x1="0" y1="1" x2="0" y2="311.348" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g id="SvgjsG1098" class="apexcharts-candlestick-series apexcharts-plot-series"></g><g id="SvgjsG1102" class="apexcharts-grid-borders"><line id="SvgjsLine1108" x1="0" y1="0" x2="0" y2="0" stroke="#ffffff26" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1113" x1="0" y1="311.348" x2="0" y2="311.348" stroke="#ffffff26" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line id="SvgjsLine1136" x1="0" y1="312.348" x2="0" y2="312.348" stroke="#e0e0e0" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt"></line></g><line id="SvgjsLine1157" x1="0" y1="0" x2="0" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1158" x1="0" y1="0" x2="0" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1159" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1160" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1161" class="apexcharts-point-annotations"></g><rect id="SvgjsRect1162" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe" class="apexcharts-zoom-rect"></rect><rect id="SvgjsRect1163" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe" class="apexcharts-selection-rect"></rect></g><text id="SvgjsText1089" font-family="Helvetica, Arial, sans-serif" x="10" y="16.5" text-anchor="start" dominant-baseline="auto" font-size="14px" font-weight="900" fill="#ffffff" class="apexcharts-title-text" style="font-family: Helvetica, Arial, sans-serif; opacity: 1;">CandleStick Chart</text><rect id="SvgjsRect1092" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1137" class="apexcharts-yaxis" rel="0" transform="translate(3.125, 0)"><g id="SvgjsG1138" class="apexcharts-yaxis-texts-g"><text id="SvgjsText1140" font-family="Helvetica, Arial, sans-serif" x="20" y="52.5" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1141">5</tspan><title>5</title></text><text id="SvgjsText1143" font-family="Helvetica, Arial, sans-serif" x="20" y="114.7696" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1144">4</tspan><title>4</title></text><text id="SvgjsText1146" font-family="Helvetica, Arial, sans-serif" x="20" y="177.0392" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1147">3</tspan><title>3</title></text><text id="SvgjsText1149" font-family="Helvetica, Arial, sans-serif" x="20" y="239.3088" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1150">2</tspan><title>2</title></text><text id="SvgjsText1152" font-family="Helvetica, Arial, sans-serif" x="20" y="301.5784" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1153">1</tspan><title>1</title></text><text id="SvgjsText1155" font-family="Helvetica, Arial, sans-serif" x="20" y="363.848" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#ffffff" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1156">0</tspan><title>0</title></text></g></g><g id="SvgjsG1088" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 200px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"></div><div class="apexcharts-xaxistooltip apexcharts-xaxistooltip-bottom apexcharts-theme-light"><div class="apexcharts-xaxistooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div><div class="apexcharts-toolbar" style="top: 0px; right: 3px;"><div class="apexcharts-zoomin-icon" title="Zoom In"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+</svg>
+</div><div class="apexcharts-zoomout-icon" title="Zoom Out"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+</svg>
+</div><div class="apexcharts-zoom-icon apexcharts-selected" title="Selection Zoom"><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 0 24 24" width="24">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+    <path d="M0 0h24v24H0V0z" fill="none"></path>
+    <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"></path>
+</svg></div><div class="apexcharts-pan-icon" title="Panning"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="24" viewBox="0 0 24 24" width="24">
+    <defs>
+        <path d="M0 0h24v24H0z" id="a"></path>
+    </defs>
+    <clipPath id="b">
+        <use overflow="visible" xlink:href="#a"></use>
+    </clipPath>
+    <path clip-path="url(#b)" d="M23 5.5V20c0 2.2-1.8 4-4 4h-7.3c-1.08 0-2.1-.43-2.85-1.19L1 14.83s1.26-1.23 1.3-1.25c.22-.19.49-.29.79-.29.22 0 .42.06.6.16.04.01 4.31 2.46 4.31 2.46V4c0-.83.67-1.5 1.5-1.5S11 3.17 11 4v7h1V1.5c0-.83.67-1.5 1.5-1.5S15 .67 15 1.5V11h1V2.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V11h1V5.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5z"></path>
+</svg></div><div class="apexcharts-reset-icon" title="Reset Zoom"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+    <path d="M0 0h24v24H0z" fill="none"></path>
+</svg></div><div class="apexcharts-menu-icon" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="apexcharts-menu"><div class="apexcharts-menu-item exportSVG" title="Download SVG">Download SVG</div><div class="apexcharts-menu-item exportPNG" title="Download PNG">Download PNG</div><div class="apexcharts-menu-item exportCSV" title="Download CSV">Download CSV</div></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+           <section class="work-section sp_pt_120 sp_pb_120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <div class="sp_theme_top  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: none;">
+                    <div class="sp_theme_top_caption"><i class="fas fa-bolt"></i> How it works</div>
+                    <h2 class="sp_theme_top_title">Started Trading <span>With Ellite Groups Capitals</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gy-5 justify-content-center">
+                            <div class="col-xl-4 col-md-6">
+                    <div class="sp_work_item">
+                        <div class="sp_work_number">
+                            1
+                        </div>
+                        <div class="sp_work_content">
+                            <img src="https://bettermenttrades.com/asset/frontend/light/images/how_works/64acf4f6e2fa71689056502.png" alt="image">
+                            <h4 class="title">Open an account</h4>
+                            <p class="mt-2">Our user-friendly registration process ensures that you can open your trading account quickly and hassle-free.</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xl-4 col-md-6">
+                    <div class="sp_work_item">
+                        <div class="sp_work_number">
+                            2
+                        </div>
+                        <div class="sp_work_content">
+                            <img src="https://bettermenttrades.com/asset/frontend/light/images/how_works/64acf503a4e111689056515.png" alt="image">
+                            <h4 class="title">Deposit amount</h4>
+                            <p class="mt-2">Your deposit amount is the foundation of your trading endeavors. it's the fuel that powers your trades and positions you for potential profits.</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xl-4 col-md-6">
+                    <div class="sp_work_item">
+                        <div class="sp_work_number">
+                            3
+                        </div>
+                        <div class="sp_work_content">
+                            <img src="https://bettermenttrades.com/asset/frontend/light/images/how_works/64acf50d79cb11689056525.png" alt="image">
+                            <h4 class="title">Start trading</h4>
+                            <p class="mt-2">Our intuitive and user-friendly trading platform is designed with you in mind. seamlessly navigate the markets, execute trades, and monitor your progress effortlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+<!-- how work section end -->           <!-- plan section start -->
+<section class="plan-section sp_pt_120 sp_pb_120" style="background-image: url('https://bettermenttrades.com/asset/frontend/light/images/plans/64acfd4e457f21689058638.jpg');">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <div class="sp_theme_top  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: none;">
+                    <div class="sp_theme_top_caption"><i class="fas fa-bolt"></i> Our best packages</div>
+                    <h2 class="sp_theme_top_title">Our Best <span>Packages</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gy-4 items-wrapper justify-content-center">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-name: none;">
+                    <div class="sp_pricing_item">
+                        <div class="pricing-header">
+                            <div class="left">
+                                <div class="icon">
+                                    <i class="far fa-gem"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="package-name">Plan six</h6>
+                                    <p>Duration
+                                        <span>75 days</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="package-price">650.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="package-features">
+                                                                                                            <li>Great features</li>
+                                                                            <li>Live api</li>
+                                                                            <li>Crypto</li>
+                                                                            <li>Great features</li>
+                                                                                                </ul>
+                        </div>
+                                                    <a href="" data-id="6" class="btn sp_theme_btn w-100 chooseBtn"><i class="las la-arrow-right me-2"></i> Choose plan
+                            </a>
+                                            </div>
+                </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-name: none;">
+                    <div class="sp_pricing_item">
+                        <div class="pricing-header">
+                            <div class="left">
+                                <div class="icon">
+                                    <i class="far fa-gem"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="package-name">Plan five</h6>
+                                    <p>Duration
+                                        <span>45 days</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="package-price">450.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="package-features">
+                                                                                                            <li>Live api</li>
+                                                                            <li>Great features</li>
+                                                                            <li>Great features</li>
+                                                                            <li>Crypto</li>
+                                                                                                </ul>
+                        </div>
+                                                    <a href="" data-id="5" class="btn sp_theme_btn w-100 chooseBtn"><i class="las la-arrow-right me-2"></i> Choose plan
+                            </a>
+                                            </div>
+                </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-name: none;">
+                    <div class="sp_pricing_item">
+                        <div class="pricing-header">
+                            <div class="left">
+                                <div class="icon">
+                                    <i class="far fa-gem"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="package-name">Plan four</h6>
+                                    <p>Duration
+                                        <span>unlimited days</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="package-price">300.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="package-features">
+                                                                                                            <li>Great features</li>
+                                                                            <li>Crypto</li>
+                                                                            <li>Live api</li>
+                                                                            <li>Great features</li>
+                                                                                                </ul>
+                        </div>
+                                                    <a href="" data-id="4" class="btn sp_theme_btn w-100 chooseBtn"><i class="las la-arrow-right me-2"></i> Choose plan
+                            </a>
+                                            </div>
+                </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-name: none;">
+                    <div class="sp_pricing_item">
+                        <div class="pricing-header">
+                            <div class="left">
+                                <div class="icon">
+                                    <i class="far fa-gem"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="package-name">Lifetime signal</h6>
+                                    <p>Duration
+                                        <span>90 days</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="package-price">900.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="package-features">
+                                                                                                            <li>Great features</li>
+                                                                            <li>Binance trading</li>
+                                                                            <li>Crypto</li>
+                                                                            <li>Live api</li>
+                                                                                                </ul>
+                        </div>
+                                                    <a href="" data-id="3" class="btn sp_theme_btn w-100 chooseBtn"><i class="las la-arrow-right me-2"></i> Choose plan
+                            </a>
+                                            </div>
+                </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-name: none;">
+                    <div class="sp_pricing_item">
+                        <div class="pricing-header">
+                            <div class="left">
+                                <div class="icon">
+                                    <i class="far fa-gem"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="package-name">Ultra</h6>
+                                    <p>Duration
+                                        <span>unlimited days</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="package-price">500.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="package-features">
+                                                                                                            <li>Great features</li>
+                                                                            <li>Binance trading</li>
+                                                                            <li>Crypto</li>
+                                                                            <li>Live api</li>
+                                                                                                </ul>
+                        </div>
+                                                    <a href="" data-id="2" class="btn sp_theme_btn w-100 chooseBtn"><i class="las la-arrow-right me-2"></i> Choose plan
+                            </a>
+                                            </div>
+                </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.3s" style="visibility: hidden; animation-duration: 0.3s; animation-name: none;">
+                    <div class="sp_pricing_item">
+                        <div class="pricing-header">
+                            <div class="left">
+                                <div class="icon">
+                                    <i class="far fa-gem"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="package-name">Pro max</h6>
+                                    <p>Duration
+                                        <span>unlimited days</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="package-price">90.00 USD</h4>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="package-features">
+                                                                                                            <li>Great features</li>
+                                                                            <li>Binance trading</li>
+                                                                            <li>Crypto</li>
+                                                                            <li>Live api</li>
+                                                                                                </ul>
+                        </div>
+                                                    <a href="" data-id="1" class="btn sp_theme_btn w-100 chooseBtn"><i class="las la-arrow-right me-2"></i> Choose plan
+                            </a>
+                                            </div>
+                </div>
+                    </div>
+
+        <div class="text-center mt-5">
+            <a href="https://bettermenttrades.com/packages" class="btn sp_theme_btn">More plans</a>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="confirmation" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="https://bettermenttrades.com/plans" method="post">
+            <input type="hidden" name="_token" value="2CDyo8SHeGtevzjwGGX6aWatLE3W0D9zz6DFWzWJ">            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmation</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper">
+                        <input type="hidden" name="payment" value="">
+                        <input type="radio" name="payment_type" id="option-1" checked="" value="balance">
+                        <input type="radio" name="payment_type" id="option-2" value="wallet">
+                        <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                            <span>Using balance</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                            <span>Using wallet</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn sp_theme_btn" type="submit">Next</button>
+                    <button class="btn sp_btn_secondary" type="button" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+           <section class="overview-section sp_separator_bg sp_pt_120 sp_pb_120">
+    <div class="overview-el">
+        <img src="https://bettermenttrades.com/asset/frontend/light/images/overview/64ae74ff11fa31689154815.png" alt="image">
+
+        <div class="map-dot dot-1"></div>
+        <div class="map-dot dot-2"></div>
+        <div class="map-dot dot-3"></div>
+        <div class="map-dot dot-4"></div>
+        <div class="map-dot dot-5"></div>
+        <div class="map-dot dot-6"></div>
+        <div class="map-dot dot-7"></div>
+        <div class="map-dot dot-8"></div>
+        <div class="map-dot dot-9"></div>
+        <div class="map-dot dot-10"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="sp_theme_top_title">Join our Trading <span>platform today.</span></h2>
+                <p class="mb-lg-5 mb-4 mt-3">Our company offers its product and services in the open market, to everyone intrested in profitable investment and getting stable revenue over a long term. t</p>
+                <div class="sp_overview_wrapper">
+                    <div class="row gy-4">
+                                                    <div class="col-xl-3 col-6">
+                                <div class="sp_overview_item">
+                                    <div class="sp_overview_content">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h4 class="sp_overview_amount me-1 odometer odometer-auto-theme" data-odometer-final="25"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></h4>
+                                            <h4 class="sp_overview_amount">
+                                                M</h4>
+                                        </div>
+                                        <p class="sp_overview_caption">Total signal</p> 
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col-xl-3 col-6">
+                                <div class="sp_overview_item">
+                                    <div class="sp_overview_content">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h4 class="sp_overview_amount me-1 odometer odometer-auto-theme" data-odometer-final="235"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></h4>
+                                            <h4 class="sp_overview_amount">
+                                                M</h4>
+                                        </div>
+                                        <p class="sp_overview_caption">Total users</p> 
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col-xl-3 col-6">
+                                <div class="sp_overview_item">
+                                    <div class="sp_overview_content">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h4 class="sp_overview_amount me-1 odometer odometer-auto-theme" data-odometer-final="45"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></h4>
+                                            <h4 class="sp_overview_amount">
+                                                M</h4>
+                                        </div>
+                                        <p class="sp_overview_caption">Success rate</p> 
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col-xl-3 col-6">
+                                <div class="sp_overview_item">
+                                    <div class="sp_overview_content">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h4 class="sp_overview_amount me-1 odometer odometer-auto-theme" data-odometer-final="12"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></h4>
+                                            <h4 class="sp_overview_amount">
+                                                </h4>
+                                        </div>
+                                        <p class="sp_overview_caption">Total award</p> 
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- overview section end -->           <section class="sp_pt_120 sp_pb_120">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-xl-5 col-lg-5">
+                <img src="https://bettermenttrades.com/asset/frontend/light/images/referral/64af8ef86fb1a1689227000.png" alt="image">
+            </div>
+            <div class="col-xl-6 col-lg-7 ps-xl-5">
+                <h2 class="sp_theme_top_title">Our Forex <span>Trading Referral</span> </h2>
+
+                <p>View our impressive referral statistics and find out more about how we execute trading orders.</p>
+
+                <div class="row gy-4 mt-2">
+                                        <div class="col-lg-6 col-6">
+                        <div class="sp_referral_item">
+                            <h4 class="sp_referral_item_title">Level 1</h4>
+                            <p>You will get referral bonus5%</p>
+                        </div>
+                    </div>
+                                        <div class="col-lg-6 col-6">
+                        <div class="sp_referral_item">
+                            <h4 class="sp_referral_item_title">Level 2</h4>
+                            <p>You will get referral bonus10%</p>
+                        </div>
+                    </div>
+                                        <div class="col-lg-6 col-6">
+                        <div class="sp_referral_item">
+                            <h4 class="sp_referral_item_title">Level 3</h4>
+                            <p>You will get referral bonus15%</p>
+                        </div>
+                    </div>
+                                        <div class="col-lg-6 col-6">
+                        <div class="sp_referral_item">
+                            <h4 class="sp_referral_item_title">Level 4</h4>
+                            <p>You will get referral bonus20%</p>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>        </div>
+
+    <div class="sp_brand_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="sp_brand_slider slick-initialized slick-slider">
+                                            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1146px; transform: translate3d(0px, 0px, 0px);"><div class="sp_brand_slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 191px;">
+                            <div class="sp_brand_item">
+                                <img src="https://bettermenttrades.com/asset/frontend/light/images/brand/64afbd8e8a0ae1689238926.png" alt="brand image">
+                            </div>
+                        </div><div class="sp_brand_slide slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 191px;">
+                            <div class="sp_brand_item">
+                                <img src="https://bettermenttrades.com/asset/frontend/light/images/brand/64afbd95334cc1689238933.png" alt="brand image">
+                            </div>
+                        </div><div class="sp_brand_slide slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 191px;">
+                            <div class="sp_brand_item">
+                                <img src="https://bettermenttrades.com/asset/frontend/light/images/brand/64afbd9dd16901689238941.png" alt="brand image">
+                            </div>
+                        </div><div class="sp_brand_slide slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="0" style="width: 191px;">
+                            <div class="sp_brand_item">
+                                <img src="https://bettermenttrades.com/asset/frontend/light/images/brand/64afbda3c9a7c1689238947.png" alt="brand image">
+                            </div>
+                        </div><div class="sp_brand_slide slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="0" style="width: 191px;">
+                            <div class="sp_brand_item">
+                                <img src="https://bettermenttrades.com/asset/frontend/light/images/brand/64afbda8b7a6f1689238952.png" alt="brand image">
+                            </div>
+                        </div><div class="sp_brand_slide slick-slide slick-active" data-slick-index="5" aria-hidden="false" tabindex="0" style="width: 191px;">
+                            <div class="sp_brand_item">
+                                <img src="https://bettermenttrades.com/asset/frontend/light/images/brand/64afbdae2e3a11689238958.png" alt="brand image">
+                            </div>
+                        </div></div></div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- sp_brand_wrapper end -->
+
+<!-- footer section start -->
+<footer class="footer-section">
+    <div class="sp_footer_menu_area">
+        <div class="back-to-top">
+            <div class="back-to-top-inner">
+                <a href="#"><i class="las la-arrow-up"></i></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-lg-4 pe-xl-5">
+                    <div class="sp_footer_item">
+                        <a href="https://bettermenttrades.com" class="site-logo"><img src="https://bettermenttrades.com/asset/frontend/light/images/footer/64f6e794047821693902740.png" alt="logo"></a>
+                        <p class="mt-4">Trade with a customisable multi-asset trading platform. offering cfds on forex, commodities, cryptocurrencies, nft's and synthetics</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="sp_footer_item">
+                        <h5 class="sp_footer_item_title">Company</h5>
+
+                        <ul class="sp_footer_menu">
+                                                            <li><a href="https://bettermenttrades.com/about">About</a></li>
+                                                            <li><a href="https://bettermenttrades.com/contact">Contact</a></li>
+                                                            <li><a href="https://bettermenttrades.com/packages">Packages</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="sp_footer_item">
+                        <h5 class="sp_footer_item_title">Links</h5>
+                        <ul class="sp_footer_menu">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="sp_footer_item">
+                        <h5 class="sp_footer_item_title">Newsletter</h5>
+                        <form class="sp_subscription_form" id="subscribe" method="POST">
+                            <input type="hidden" name="_token" value="2CDyo8SHeGtevzjwGGX6aWatLE3W0D9zz6DFWzWJ">                            <input type="email" name="email" class="form-control subscribe-email" placeholder="Email Address">
+                            <button type="submit" class="subs-btn"><i class="far fa-paper-plane"></i></button>
+                        </form>
+                        <h5 class="mt-4 text-white">Social links</h5>
+                        <ul class="sp_social_links mt-2">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- footer-top end -->
+    <div class="sp_copy_right_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright 2019 Betterment Groups Capitals . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/jquery.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/slick.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/wow.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/jquery.paroller.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/TweenMax.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/odometer.min.js"></script>
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/viewport.jquery.js"></script>
+
+
+
+            <script src="https://bettermenttrades.com/asset/frontend/light/js/izitoast.min.js"></script>
+    
+    <script src="https://bettermenttrades.com/asset/frontend/light/js/main.js"></script>
+
+        <script src="https://bettermenttrades.com/asset/frontend/light/js/lib/apex.min.js"></script>
+    <script>
+        'use strict'
+
+
+        let cryptoPrice;
+
+        let currency = $("input[name='currency']:checked").val();
+
+        $('.currency').each(function(index) {
+            $('.currency').eq(index).on('click', function() {
+                currency = $(this).val();
+                fetchCryptocurrencyPrices(currency);
+                currentPrice(currency)
+            })
+        })
+
+        function currentPrice(currency) {
+
+            $.ajax({
+                url: "https://bettermenttrades.com/current-price",
+                method: "GET",
+                data: {
+                    currency: currency
+                },
+                success: function(response) {
+                    $('#currentPrice').text('Current Price ' + response + '(' + currency + ')')
+                    $('input[name=trade_cur]').val(currency)
+                    $('input[name=trade_price]').val(response)
+                }
+            });
+
+        }
+
+        function updateChart(data) {
+            chart.updateSeries([{
+                data: data
+            }]);
+        }
+
+        setInterval(() => {
+            fetchCryptocurrencyPrices(currency);
+            currentPrice(currency);
+        }, 5000);
+
+
+        $(window).on("load", function() {
+            fetchCryptocurrencyPrices(currency);
+            currentPrice(currency);
+        });
+
+
+        function fetchCryptocurrencyPrices(currency) {
+            $.ajax({
+                url: "https://bettermenttrades.com/get-ticker",
+                method: "GET",
+                data: {
+                    currency: currency
+                },
+                success: function(response) {
+                    chart.updateSeries([{
+                        data: response
+                    }]);
+
+                }
+            });
+        }
+
+        var options = {
+            series: [{
+                data: cryptoPrice
+            }],
+            chart: {
+                type: 'candlestick',
+                height: 400
+            },
+            title: {
+                text: 'CandleStick Chart',
+                align: 'left',
+                style: {
+                    color: '#ffffff'
+                }
+            },
+            xaxis: {
+                type: 'datetime',
+                labels: {
+                    style: {
+                        colors: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff']
+                    }
+                }
+            },
+            yaxis: {
+                tooltip: {
+                    enabled: true
+                },
+                labels: {
+                    style: {
+                        colors: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff']
+                    }
+                }
+            },
+            grid: {
+                show: true,
+                borderColor: '#ffffff26',
+                strokeDashArray: 0,
+                yaxis: {
+                    lines: {
+                        show: true
+                    }
+                }
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#linechart"), options);
+        chart.render();
+
+
+        $('.order').on('click', function() {
+
+            const modal = $('#order');
+
+            modal.modal('show')
+        })
+    </script>
+    <script>
+        $(function() {
+            'use strict'
+
+            $('.balance').on('click', function(e) {
+                e.preventDefault();
+                const modal = $('#balance')
+                modal.find('input[name = payment]').val($(this).data('id'))
+                modal.modal('show')
+            })
+
+            $('.chooseBtn').on('click', function(e) {
+                e.preventDefault();
+                const modal = $('#confirmation')
+
+                modal.find('input[name=payment]').val($(this).data('id'))
+
+                modal.modal('show')
+            })
+        })
+    </script>
+
+
+    
+    <script>
+        $(function() {
+            'use strict'
+
+            $(document).on('submit', '#subscribe', function(e) {
+                e.preventDefault();
+                const email = $('.subscribe-email').val();
+                var url = "https://bettermenttrades.com/subscribe";
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: {
+                        email: email,
+                        _token: "2CDyo8SHeGtevzjwGGX6aWatLE3W0D9zz6DFWzWJ"
+                    },
+                    success: (response) => {
+
+                        $('.subscribe-email').val('');
+
+                        if (response.success) {
+
+            iziToast.success({
+            position: 'topRight',
+            message: "Successfully Subscribe",
+        });
+    
+    return
+}
+
+
+    iziToast.error({
+        position: 'topRight',
+        message: "",
+    });
+
+                    },
+                    error: () => {
+
+                                                    iziToast.error({
+                                position: 'topRight',
+                                message: "Email is Required",
+                            });
+                                            }
+                })
+
+            });
+
+            var url = "https://bettermenttrades.com/change-language";
+
+            $(".changeLang").on('change', function() {
+               
+                if ($(this).val() == '') {
+                    return false;
+                }
+                window.location.href = url + "?lang=" + $(this).val();
+            });
+
+        })
+    </script>
+
+
+    <script>
+    'use strict'
+
+    
+
+    
+
+    </script>
+
+
+
+
+
+<svg id="SvgjsSvg1080" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1081"></defs><polyline id="SvgjsPolyline1082" points="0,0"></polyline><path id="SvgjsPath1083" d="M0 0 "></path></svg></body></html>

@@ -1,0 +1,12 @@
+{
+    "url": "https://xbsjke.petmouth.top/",
+    "question": "Please analyze this URL https://xbsjke.petmouth.top/",
+    "thought": "I need to first access the URL to obtain a status code. The website is accessible, so I need to extract the text from the HTML to see if there are any signs of a scam. The website appears to be selling various products, including clothing and accessories, at unusually low prices. The contact information and company details are vague, and the website does not appear to be a legitimate e-commerce site. The URL https://xbsjke.petmouth.top/ is a scam website.",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "The website offers unusually low prices for various products lacks clear company information and does not appear to be a legitimate e-commerce site."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

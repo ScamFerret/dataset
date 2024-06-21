@@ -1,0 +1,12 @@
+{
+    "url": "https://acebusttercrypto.com",
+    "question": "Please analyze this URL https://acebusttercrypto.com",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is accessible, now I need to extract the text and check for any unusual claims or misleading information. I have observed that the website makes claims of being the \"fastest and growing cryptocurrency trading companies in the world\" and promises to share profits with members. These claims are not realistic and may indicate a scam. The website shows unrealistic claims of being the fastest and growing cryptocurrency trading company and promises to share profits with members. The WHOIS information also shows that the registrant details are hidden, which is suspicious. Based on these observations, it is likely that this URL is a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake cryptocurrency trading website",
+        "reason": "The website makes unrealistic claims about being the fastest and growing cryptocurrency trading company and promises to share profits with members. Additionally the WHOIS information shows hidden registrant details which is a characteristic of scam websites."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

@@ -1,0 +1,4297 @@
+<!DOCTYPE html><html lang="de" class="script webkit"><!--<![endif]--><head><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/string" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/string.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/legacy" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/legacy.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/tools" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/tools.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/constants" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/constants.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/browser" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/browser.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/scope" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/json" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/json.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/base64" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/base64.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/inject-sec-token" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/ep/inject-sec-token.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/cookie" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/data" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/disable-selection" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/disable-selection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/focusable" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/focusable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/form" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/ie" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/ie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/keycode" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/keycode.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/labels" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/labels.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/jquery-1-7" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/jquery-1-7.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/plugin" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/plugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/safe-active-element" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/safe-active-element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/safe-blur" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/safe-blur.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/scroll-parent" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/scroll-parent.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/tabbable" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/tabbable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/unique-id" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/unique-id.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/version" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/version.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/mouse" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/mouse.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/dialog" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/dialog.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/tabs" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/slider" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/slider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$pub" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/require/$pub.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="class" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/mime" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/mime.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$dict" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/require/$dict.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$tmpl" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/require/$tmpl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/ui/core" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/ep/ui/core.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/support" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/support.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/load" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/event/special/load.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/touch" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/event/special/touch.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/version" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/version.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/ui/validate" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/ep/ui/validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/storage" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/de_epages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages/remotesearch/ui/suggest" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/de_epages/remotesearch/ui/suggest.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$ready" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/require/$ready.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages/product/inc/energylabel" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/de_epages/product/inc/energylabel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/utf8" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/util/utf8.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/button" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/draggable" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/draggable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/resizable" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/escape-selector" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/escape-selector.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/button" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/draggable" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/draggable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/resizable" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/controlgroup" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/controlgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/checkboxradio" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/checkboxradio.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/controlgroup" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/controlgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/checkboxradio" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/widgets/checkboxradio.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/form-reset-mixin" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/jquery/ui/form-reset-mixin.js"></script><base href="http://www.karl-esch.de/epages/62024084.sf/de_DE/">
+
+    <title>Kunsthandlung Karl Esch - Kunst &amp; Krippen &amp; mehr</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+
+
+
+    <meta charset="utf-8">
+
+
+
+<script type="text/javascript" src="http://www.karl-esch.de/epages/62024084.sf/de_DE/?ViewAction=SF-ViewJQueryConfig&amp;ObjectID=1922160&amp;CurrencyID=EUR&amp;CacheName=Store20-7.92.0-0"></script>
+
+
+<script type="text/javascript">
+
+(function(require){
+
+function config(a,b){config._(config.c[a]||(config.c[a]={}),b)}config.c=require.config=require.config||{};config._=function(a,b){for(var c in b)b[c]instanceof Object?config._(a[c]||(a[c]={}),b[c]):a[c]=b[c]};
+
+
+config("jquery/canvas/canvastext", {
+  fontRoot: ["", "WebRoot", "Store20", "47BB", "CF50", "A407", "1D7E", "B5A1", "C0A8", "2936", "23C6"].join("/")
+});
+
+config("ep", {
+  baseUrl: ["http\u003A", "", "www\u002Ekarl-esch\u002Ede", "epages", "62024084\u002Esf", "de_DE", ""].join("/"),
+  
+  objectId: '1922160',
+  viewAction: 'View',
+  storeFrontUrl: ["http\u003A", "", "www\u002Ekarl-esch\u002Ede", "epages", "62024084\u002Esf"].join("/"),
+  requestProtocolAndServer: '',
+  webUrj: ["http\u003A", "", "www\u002Ekarl-esch\u002Ede", "epages", "62024084\u002Esf"].join("/"),
+  webUrlSsl: ["https\u003A", "", "shop\u002Estrato\u002Ede", "epages", "62024084\u002Esf"].join("/"),
+  google: {
+    
+  }
+});
+
+}(require));
+</script>
+
+<link type="text/css" href="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/package-sf.css" rel="stylesheet">
+
+<script type="text/javascript" src="/WebRoot/StoreTypes/7.92.0/Strato/lib-min/package-sf.js"></script>
+
+
+
+<script type="text/javascript">
+    var jq = jQuery.noConflict();
+</script>
+<script type="text/javascript">
+    require(["jquery/metaparse", "de_epages/design/inc/sf-initialize"]);
+
+    
+      
+    require(["de_epages/externalcontent/dojogadgetfix"]);
+    
+
+    require(["ep/inject-sec-token"], function (ep) {
+        ep.injectSecToken();
+    });
+
+    
+    require(["ep/sslswitch"], function(){
+      
+    });
+    
+</script>
+<script type="text/javascript">
+window.offscreenBuffering = true;
+</script>
+
+
+
+
+
+
+
+    <meta property="og:image" content="https://shop.strato.de/WebRoot/Store20/Shops/62024084/Styles/Start/logo.jpg">
+    <meta property="og:image:alt" content="Kunsthandlung Karl Esch">
+    <meta property="og:title" content="Kunsthandlung Karl Esch">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:description" content="">
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/WebRoot/Store20/Shops/62024084/MediaGallery/favicon.ico">
+
+
+
+    <meta name="description" content="Kunsthandlung Karl Esch, Kunst, Krippen und mehr. Kreuze, Kinderkreuze, Krippe, Krippen, Kerzen,">
+
+
+
+
+  
+    <link rel="canonical" href="http://www.karl-esch.de/">
+    
+    
+  
+
+
+
+
+
+  <link href="/WebRoot/Store20/Shops/62024084/Styles/Start/StorefrontStyle_809.css" rel="stylesheet" type="text/css">
+
+  
+
+  
+    <!--[if IE]>
+    <link href="/WebRoot/StoreTypes/7.92.0/Strato/lib/de_epages/design/style-ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <style type="text/css">
+      /* if IE 10 */
+      @import url('/WebRoot/StoreTypes/7.92.0/Strato/lib/de_epages/design/style-ie.css') screen and (-ms-high-contrast: active), (-ms-high-contrast: none);
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    
+  
+    
+  
+
+<body class="start-page " data-esf-rdy="1">
+
+
+
+
+
+
+
+  
+    
+    <div class="Layout1 GeneralLayout Div">
+
+ 
+  <div class="NavBarRoof HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer"></div>
+  
+  
+
+
+    </div>
+  </div>
+ 
+ 
+  <div class="Header HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer custom-container custom-left"></div>
+  <div class="SizeContainer custom-container custom-right"></div>
+  
+  
+
+
+    </div>
+  </div>
+  <div class="NavBarTop HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer">
+<div class="NavigationElement Active  NavBarElement0"><a href="?ObjectPath=/Shops/62024084/Categories">Startseite</a></div>
+<div class="NavigationElement NavBarElement1 "><a href="?ObjectPath=/Shops/62024084/Categories/Imprint">Impressum</a></div>
+
+<div class="NavigationElement  NavBarElement2"><a href="?ObjectPath=/Shops/62024084/Categories/ContactForm">Kontakt</a></div>
+
+<div class="NavigationElement NavBarElement3 ">
+  <a rel="nofollow" href="?ObjectPath=/Shops/62024084/Categories/TermsAndConditions">AGB</a>
+</div>
+
+<div class="NavigationElement NavBarElement4 "><a rel="nofollow" href="?ObjectPath=/Shops/62024084/Categories/CustomerInformation">Kundeninformation</a></div>
+
+<div class="NavigationElement NavBarElement5 ">
+  <a rel="nofollow" href="?ObjectPath=/Shops/62024084/Categories/PrivacyPolicy">Datenschutz</a>
+</div>
+
+
+</div>
+  
+  
+
+
+    </div>
+  </div>
+ 
+  <div class="Middle">
+ 
+  
+    <!--[if IE 7]><span id="NavBarLeftFix"></span><![endif]-->
+    <div class="NavBarLeft VerticalNavBar">
+      
+<div class="PropertyContainer">
+  <div class="SizeContainer">
+
+
+  
+
+<div class="ContextBox SearchBox NavBarElement0" id="NavElement_1922448">
+  <div class="BoxContainer">
+    <div class="ContextBoxHead">
+      <span>Produktsuche</span>
+    </div>
+
+  
+    
+      
+    
+  
+    
+
+  
+
+
+
+
+  <form class="ep-js" data-js="" id="RemoteSearch0" action="?" method="get" data-esf-rdy="1">
+  <input type="hidden" name="ObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="FacetedSearchProducts">
+    <div class="ContextBoxBody">
+        <div class="Entry">
+            <div class="InputField SearchForm  vertical-search">
+                <input class="Search ep-uiInput ep-uiInput-text ep-uiValidate" type="text" maxlength="255" name="SearchString" id="RemoteSearchSuggest6613F18F0A0C6D1079F6" placeholder="Suchen nach" autocomplete="off"><input type="hidden">
+                <button class="search-button" name="SearchButton" type="submit" title="Suche starten">
+                  <span class="ep-sprite ep-sprite-s ep-uiInput-buttonSpriteOnly Icon SearchIcon"></span>
+                </button>
+            </div>
+            <script type="text/javascript">
+            jQuery.ready("de_epages.remotesearch.ui.suggest",function($){
+              de_epages("#RemoteSearchSuggest6613F18F0A0C6D1079F6")
+                .remotesearchUiSuggest({
+                  required: true,
+                  suggestUrl: "\u002F\u002Fepj\u002Estrato\u002Ede\u002Frs\u002Fproduct\u002FStore20\u002F49334125-9C19-450D-C548-C0A82936107C\u002Fsuggest\u002Fjsonp\u003Flang\u003Dde",
+                  showError: false,
+                  navbar: "Left"
+                });
+            });
+            </script>
+        </div>
+    </div>
+  </form>
+
+
+
+
+
+  
+
+  </div>
+</div>
+
+
+
+
+
+<div class="ContextBox CategoriesBox NavBarElement1" id="NavElement_1922186">
+  <div class="BoxContainer">
+    <a class="ContextBoxHead" href="?ObjectPath=/Shops/62024084/Categories">
+      <span>Kategorien</span>
+    </a>
+    <div class="ContextBoxBody CategoriesTreeBox jstree jstree-0 jstree-focused jstree-classic" id="NavBarElementID1922186"><ul class="jstree-no-icons"><li class="Category-2900953 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Erstkommunion"><ins class="jstree-icon">&nbsp;</ins>Idee zur Erstkommunion  </a>
+      
+      
+        
+      
+      </li><li class="Category-1922196 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/SpecialOffers"><ins class="jstree-icon">&nbsp;</ins>Aktionsprodukte  </a>
+      
+      
+        
+      
+      </li><li class="Category-2898769    jstree-closed"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Handschmeichler"><ins class="jstree-icon">&nbsp;</ins>Handschmeichler  </a>
+      
+      
+        
+      
+      </li><li class="Category-2900954    jstree-closed"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Karten"><ins class="jstree-icon">&nbsp;</ins>Karten  </a>
+      
+      
+        
+      
+      </li><li class="Category-2901853 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Kerzen"><ins class="jstree-icon">&nbsp;</ins>Kerzen  </a>
+      
+      
+        
+      
+      </li><li class="Category-2901854    jstree-closed"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Geschenke"><ins class="jstree-icon">&nbsp;</ins>Kleine Geschenke  </a>
+      
+      
+        
+      
+      </li><li class="Category-2900798    jstree-closed"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Kreuze"><ins class="jstree-icon">&nbsp;</ins>Kreuze  </a>
+      
+      
+        
+      
+      </li><li class="Category-5487541    jstree-closed"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Krippen"><ins class="jstree-icon">&nbsp;</ins>Krippen  </a>
+      
+      
+        
+      
+      </li><li class="Category-2901855 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Paramente"><ins class="jstree-icon">&nbsp;</ins>Paramente  </a>
+      
+      
+        
+      
+      </li><li class="Category-81842920 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Skuplturen"><ins class="jstree-icon">&nbsp;</ins>Skuplturen  </a>
+      
+      
+        
+      
+      </li><li class="Category-2901856 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Triptychon"><ins class="jstree-icon">&nbsp;</ins>Triptychon  </a>
+      
+      
+        
+      
+      </li><li class="Category-82199627 jstree-last jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/62024084/Categories/Rundgang"><ins class="jstree-icon">&nbsp;</ins>Rundgang durch unser Geschäft  </a>
+      
+      
+        
+      
+      </li></ul></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+require([
+    'ep',
+    'jquery/jstree',
+    'jquery/jstree/themes',
+    'jquery/jstree/html_data',
+
+    "$ready!"
+], function ($, jstree, themes, html_data) {
+
+  var treeElem = $("#"+"NavBarElementID1922186");
+
+  if( treeElem.has('ul').length ){
+    treeElem.jstree({
+      "core": {
+        "initially_open": [
+          "SitemapTreeRootNode"
+        ],
+        "animation": !(document.all && !document.querySelector)
+      },
+      "plugins": [
+        "themes",
+        "html_data"
+      ],
+      "themes" : {
+        "theme" : "classic",
+        "dots" : true,
+        "icons" : false
+      },
+      "html_data": {
+        "data": treeElem.html(),
+        "ajax": {
+          "url": ep.config.baseUrl,
+          "data": function( elem ){
+            return {
+                "ViewAction":	"ViewSubCategoriesSnipplet",
+                "ObjectID":		(/(?:^|\s*)Category-(\d+)(?:\s*|$)/).exec( elem.attr('class') )[1],
+                "_":			"1712583055"
+              }
+          }
+        }
+      }
+    });
+
+    // manipulate events "before" standard routines are executed
+    treeElem.on("before.jstree", function(e, data){
+      // if open_node event is fired
+      if(data.func === "open_node"){
+        var $toggleLink = data.args[0].children('a[data-not_allowed]');
+        // if a link was clicked and the user has not the permissions to follow it (data-not_allowed="1")
+        if($toggleLink.length && ($toggleLink.data('not_allowed')===1)){
+          e.stopImmediatePropagation();
+          return false;
+        }
+      }
+    });
+  }
+});
+// ]]>
+</script>
+
+
+
+
+
+            <div class="ContextBox NavBarElement2" id="NavElement_5488175">
+              <div class="BoxContainer">
+                <a class="ContextBoxHead" href="?ObjectPath=/Shops/62024084/Categories/SpecialOffers">
+                  <span>Aktionsprodukte</span>
+                </a>
+              
+              
+                <div class="ContextBoxBody">
+                  <a href="?ObjectPath=/Shops/62024084/Products/14092">Bronzekreuz "Jesus segnet uns"<br>
+                    
+                      
+                        
+                      
+                      
+                      
+                      
+                      
+                        
+                          
+                        
+                        
+                        
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="3.95">3,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      
+                      
+                      
+                    
+              </a><br>
+              <div class="AlignCenter RightPaddingSmall HiddenOverflow">
+                <a href="?ObjectPath=/Shops/62024084/Products/14092" title="Zum Produkt"><img src="/WebRoot/Store20/Shops/62024084/63DF/CD0F/AA28/A18A/B0A7/0A0C/6D0F/5C5B/14092_h.jpg" alt="Bronzekreuz &quot;Jesus segnet uns&quot;"></a>
+                </div>
+                </div>
+              
+                <div class="ContextBoxBody">
+                  <a href="?ObjectPath=/Shops/62024084/Products/90330219">90330219 Holzkreuz "Jesus lädt uns alle ein"<br>
+                    
+                      
+                        
+                      
+                      
+                      
+                      
+                      
+                        
+                          
+                        
+                        
+                        
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="3.95">3,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      
+                      
+                      
+                    
+              </a><br>
+              <div class="AlignCenter RightPaddingSmall HiddenOverflow">
+                <a href="?ObjectPath=/Shops/62024084/Products/90330219" title="Zum Produkt"><img src="/WebRoot/Store20/Shops/62024084/63DF/CF72/804A/DD02/F372/0A0C/6D10/B143/90330219_h.jpg" alt="90330219 Holzkreuz &quot;Jesus lädt uns alle ein&quot;"></a>
+                </div>
+                </div>
+              
+
+              
+                <div class="ContextBoxBody TaxAndShippingInfo">
+                  
+  
+  
+    
+      
+        * <span style="font-size:9px; line-height:16px;">Preise inkl. MwSt., zzgl. <a style="font-size:9px" href="?ObjectPath=Categories/CustomerInformation" rel="nofollow" onclick="openWindow(this.href+'&amp;ViewAction=ViewPopup','Info','');return false;">Versand</a> </span>
+        
+      
+    
+    
+  
+  
+
+                </div>
+              
+
+        
+
+              
+
+              </div>
+            </div>
+
+
+
+
+
+  </div>
+</div>
+
+    </div>
+  
+  
+    <!--[if IE 7]><span id="NavBarRightFix"></span><![endif]-->
+    <div class="NavBarRight VerticalNavBar">
+      
+<div class="PropertyContainer">
+  <div class="SizeContainer">
+
+
+
+            <div class="ContextBox NavBarElement0 BasketBox" id="NavElement_1922444">
+              <div class="BoxContainer">
+                
+                  <div class="ContextBoxHead">
+                    <span>Warenkorb</span>
+                  </div>
+                
+                
+                  <div class="ContextBoxBody">
+                    Ihr Warenkorb ist leer.
+                  </div>
+                
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+<div class="ContextBox NavBarElement1" id="NavElement_5410831">
+  <div class="BoxContainer">
+    <div class="ContextBoxHead">
+      <span>Geschäftszeiten</span>
+    </div>
+
+  
+  
+  
+  
+    
+      
+        <div class="ContextBoxBody">
+          <table class="FullSize AlignCenter">
+            <tbody><tr>
+              <td class="QuarterSize">
+                <strong>Mo.</strong>
+              </td>
+              <td>
+                <span>10:00</span><br>
+                <span></span>
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                
+                <span>18:00</span>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+    
+  
+    
+      
+        <div class="ContextBoxBody">
+          <table class="FullSize AlignCenter">
+            <tbody><tr>
+              <td class="QuarterSize">
+                <strong>Di.</strong>
+              </td>
+              <td>
+                <span>10:00</span><br>
+                <span></span>
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                
+                <span>18:00</span>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+    
+  
+    
+      
+        <div class="ContextBoxBody">
+          <table class="FullSize AlignCenter">
+            <tbody><tr>
+              <td class="QuarterSize">
+                <strong>Mi.</strong>
+              </td>
+              <td>
+                <span>10:00</span><br>
+                <span></span>
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                
+                <span>18:00</span>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+    
+  
+    
+      
+        <div class="ContextBoxBody">
+          <table class="FullSize AlignCenter">
+            <tbody><tr>
+              <td class="QuarterSize">
+                <strong>Do.</strong>
+              </td>
+              <td>
+                <span>10:00</span><br>
+                <span></span>
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                
+                <span>18:00</span>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+    
+  
+    
+      
+        <div class="ContextBoxBody">
+          <table class="FullSize AlignCenter">
+            <tbody><tr>
+              <td class="QuarterSize">
+                <strong>Fr.</strong>
+              </td>
+              <td>
+                <span>10:00</span><br>
+                <span></span>
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                
+                <span>18:00</span>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+    
+  
+    
+      
+        <div class="ContextBoxBody">
+          <table class="FullSize AlignCenter">
+            <tbody><tr>
+              <td class="QuarterSize">
+                <strong>Sa.</strong>
+              </td>
+              <td>
+                <span>10:00</span><br>
+                <span></span>
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                
+                <span>14:00</span>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+    
+  
+    
+      <div class="ContextBoxBody">
+        <table class="FullSize AlignCenter">
+          <tbody><tr>
+            <td class="QuarterSize">
+              <strong>So.</strong>
+            </td>
+            <td>
+              Geschlossen
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    
+  
+
+  
+  
+  
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+<div class=" NavBarElement2" id="NavElement_1922450">
+  
+  <div class="NavigationText ">
+  Haben Sie Fragen?<br>
+Sie erreichen uns unter <br>
+<strong>0 541 / 3 57 38 11 
+   und 3 57 38 14</strong>.<br>
+Wir beraten Sie gern.
+  </div>
+  
+</div>
+
+  </div>
+</div>
+
+    </div>
+  
+ 
+    <!--[if IE 7]><span id="ContentAreaFix"></span><![endif]-->
+    <div class="ContentArea">
+      <div class="ContentAreaInner">
+        <div class="ContentAreaWrapper">
+          
+  
+
+
+  
+    
+  
+
+  
+    <hr class="Separator">
+  
+<div class="CategoryList">
+<div class="CategoryText"></div>
+<hr class="Separator">
+
+
+
+  
+
+<div class="CategoryProducts" id="CategoryProducts">
+  
+
+
+
+
+
+
+  
+    
+      <div class="HotDealList ClearBoth">
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;49CF6F50-4944-35A7-4D90-C0A828B89C5C&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/1187262">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/49CF/6F50/4944/35A7/4D90/C0A8/28B8/9C5C/1187262_s.jpg" alt="Mini-Engel" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/1187262"><span itemprop="name">Mini-Engel</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 1187262</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p>Mini-Engel aus Bronzeguß; Bronzeminiatur 40mm; Lieferung in Geschenkschachtel</p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="9.95">9,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;49CF6F50-4944-35A7-4D90-C0A828B89C5C&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_0" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="3241705">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;49D1006A-0CE2-17FC-9F4D-C0A828B9BFF3&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/330108">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/49D1/006A/0CE2/17FC/9F4D/C0A8/28B9/BFF3/330108_s.jpg" alt="330108 Kreuz &quot;Das Weizenkorn&quot;" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/330108"><span itemprop="name">330108 Kreuz "Das Weizenkorn"</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 330108</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p>Kreuz aus Holz; "Das Weizenkorn"; 11 x 7 cm</p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="9.95">9,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;49D1006A-0CE2-17FC-9F4D-C0A828B9BFF3&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_1" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="3257025">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;49D1006A-F8CA-8293-8803-C0A828B9BF25&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/330109">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/49D1/006A/F8CA/8293/8803/C0A8/28B9/BF25/330109_s.jpg" alt="330109 Kreuz &quot;Fische&quot;" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/330109"><span itemprop="name">330109 Kreuz "Fische"</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 330109</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p><span style="font-size:12px;">Kreuz aus Holz; "Fische"; 11 x 7 cm</span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="9.95">9,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;49D1006A-F8CA-8293-8803-C0A828B9BF25&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_2" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="3257026">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;5E31DDAE-1BB9-917F-9EF5-0A0C6D10C779&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/51910">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/5E31/DDAE/1BB9/917F/9EF5/0A0C/6D10/C779/51910_s.jpg" alt="Schlüsselanhänger Kreuz Taube" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/51910"><span itemprop="name">Schlüsselanhänger Kreuz Taube</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 51910</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p>Schlüsselanhänger<br>
+Metall<br>
+8 cm</p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="4.95">4,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;5E31DDAE-1BB9-917F-9EF5-0A0C6D10C779&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_3" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="222404858">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;60538780-85C7-FBCA-B9D6-0A0C6D0FCFC4&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/1900">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/6053/8780/85C7/FBCA/B9D6/0A0C/6D0F/CFC4/1900_s.jpg" alt="Geschenkkarton schwarz" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/1900"><span itemprop="name">Geschenkkarton schwarz</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 1900</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p>schwarz, 10 cm</p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="2.95">2,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;60538780-85C7-FBCA-B9D6-0A0C6D0FCFC4&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_4" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="362177693">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;621A6122-7F03-D929-5CB5-0A0C6D0FBC9A&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/2607">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/621A/6122/7F03/D929/5CB5/0A0C/6D0F/BC9A/2607_s.jpg" alt="Geschenkkarton grau" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/2607"><span itemprop="name">Geschenkkarton grau</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 2607</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p>Farbe: grau</p>
+
+<p>10 cm</p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="2.70">2,70</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;621A6122-7F03-D929-5CB5-0A0C6D0FBC9A&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_5" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="425721330">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;63DC14E6-4B21-E2D5-0FA2-0A0C6D0FC2FA&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/142238">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/63DC/14E6/4B21/E2D5/0FA2/0A0C/6D0F/C2FA/142238_s.jpg" alt="142238 Bronzekreuz Weg" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <span class="NewProduct">Neu</span>
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/142238"><span itemprop="name">142238 Bronzekreuz Weg</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 142238</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p style="vertical-align:baseline"><span style="font-size:10.0pt;font-family:
+&quot;Helvetica&quot;,sans-serif;color:black">Höhe: 9&nbsp;cm<br>
+Kreuz aus Bronze<o :p=""></o></span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="9.50">9,50</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;63DC14E6-4B21-E2D5-0FA2-0A0C6D0FC2FA&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_6" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="492439046">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;63DC17EE-E934-2B4E-583E-0A0C6D0F31E0&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/330451">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/63DC/17EE/E934/2B4E/583E/0A0C/6D0F/31E0/330451_1_s.jpg" alt="330451 Kinderkreuz &quot;Mit Jesus wird mein Leben bunt" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <span class="NewProduct">Neu</span>
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/330451"><span itemprop="name">330451 Kinderkreuz "Mit Jesus wird mein Leben bunt</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 330451</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p><span style="font-family:gillsans,sans-serif;"><span style="font-size:10.0pt;">Höhe: 18 cm<br>
+Buche natur, farbig bedruckt,<br>
+Lieferung in Geschenkverpackung</span></span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="14.95">14,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;63DC17EE-E934-2B4E-583E-0A0C6D0F31E0&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_7" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="492441461">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;63DC1E44-40EF-A9DD-C7E2-0A0C6D1067B0&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/142052">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/63DC/1E44/40EF/A9DD/C7E2/0A0C/6D10/67B0/142052_s.jpg" alt="142052 Bronzekrauz &quot;Schöpfung&quot;" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/142052"><span itemprop="name">142052 Bronzekrauz "Schöpfung"</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 142052</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p style="vertical-align:baseline"><span style="font-size:10.0pt;font-family:
+&quot;Helvetica&quot;,sans-serif;color:black">Höhe: 9,8 cm<br>
+Kreuz aus Bronze<o :p=""></o></span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="9.50">9,50</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;63DC1E44-40EF-A9DD-C7E2-0A0C6D1067B0&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_8" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="492446651">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;63DC23BA-31C4-D2C9-FA82-0A0C6D0F8048&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/142222">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/63DC/23BA/31C4/D2C9/FA82/0A0C/6D0F/8048/142222_s.jpg" alt="142222 Bronzekreuz &quot;Ähre&quot;" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <span class="NewProduct">Neu</span>
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/142222"><span itemprop="name">142222 Bronzekreuz "Ähre"</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 142222</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p style="vertical-align:baseline"><span style="font-size:10.0pt;font-family:
+&quot;Helvetica&quot;,sans-serif;color:black">Höhe: 8,3&nbsp;cm<br>
+Kreuz aus Bronze<o :p=""></o></span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="9.50">9,50</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;63DC23BA-31C4-D2C9-FA82-0A0C6D0F8048&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_9" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="492453956">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;63DFCD0F-AA28-A18A-B0A7-0A0C6D0F5C5B&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/14092">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/63DF/CD0F/AA28/A18A/B0A7/0A0C/6D0F/5C5B/14092_s.jpg" alt="Bronzekreuz &quot;Jesus segnet uns&quot;" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/14092"><span itemprop="name">Bronzekreuz "Jesus segnet uns"</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 14092</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p style="vertical-align:baseline"><span style="font-size:10.0pt;font-family:
+&quot;Helvetica&quot;,sans-serif;color:black">Höhe: 10 cm<br>
+Kreuz aus Bronze<o :p=""></o></span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="3.95">3,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;63DFCD0F-AA28-A18A-B0A7-0A0C6D0F5C5B&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_10" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="492867501">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;63DFCF72-804A-DD02-F372-0A0C6D10B143&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/90330219">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/63DF/CF72/804A/DD02/F372/0A0C/6D10/B143/90330219_s.jpg" alt="90330219 Holzkreuz &quot;Jesus lädt uns alle ein&quot;" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/90330219"><span itemprop="name">90330219 Holzkreuz "Jesus lädt uns alle ein"</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 90330219</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p style="vertical-align:baseline"><span style="font-size:10.0pt;font-family:
+&quot;Helvetica&quot;,sans-serif;color:black">Höhe: 15&nbsp;cm<br>
+Kreuz aus Holz<o :p=""></o></span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="3.95">3,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;63DFCF72-804A-DD02-F372-0A0C6D10B143&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_11" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="492869256">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide " itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;5E31DB1F-5220-3F8A-B4DA-0A0C6D0F8363&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/51908">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/5E31/DB1F/5220/3F8A/B4DA/0A0C/6D0F/8363/51908_s.jpg" alt="51908 Schlüsselanhänger Kreuz Fisch" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/51908"><span itemprop="name">51908 Schlüsselanhänger Kreuz Fisch</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 51908</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p><span style="font-size:12px;">Schlüsselanhänger<br>
+Metallkreuz Fisch<br>
+8 cm</span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="4.95">4,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;5E31DB1F-5220-3F8A-B4DA-0A0C6D0F8363&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_12" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="222403123">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+        
+
+
+<div class="ListItemProductContainer TopPaddingWide AlternateRow" itemscope="" itemtype="http://schema.org/Offer" data-productguid="{&quot;id&quot;: &quot;49CFAA70-522C-9496-CFB5-C0A828B8914A&quot;, &quot;name&quot;: &quot;&quot;, &quot;list&quot;: &quot;product_list&quot;}">
+  <div class="ListItemProduct"><div class="InfoArea">
+    
+    <div class="FloatLeft">
+      <div class="ImageArea">
+        <a href="?ObjectPath=/Shops/62024084/Products/51909">
+        
+          <img itemprop="image" class="ProductSmallImage" src="/WebRoot/Store20/Shops/62024084/49CF/AA70/522C/9496/CFB5/C0A8/28B8/914A/51909_s.jpg" alt="51909 Schlüsselanhänger Kreuz" title="Zum Produkt">
+        
+        </a>
+      </div>
+    </div>
+    
+      <div class="FloatRight">
+        <div class="FloatMinimizer"><div class="MinimizeHeight"></div></div>
+      </div><div class="ClearRight"></div>
+      <div class="ListItemProductInfoContainer">
+        <table class="HorizontalDisplay FullSize">
+          <tbody><tr>
+            <td class="AlignTop">
+              <div class="ListItemProductTopFloatArea">
+                <h3 class="Headline">
+                  
+                    <a itemprop="url" href="?ObjectPath=/Shops/62024084/Products/51909"><span itemprop="name">51909 Schlüsselanhänger Kreuz</span></a>
+                  
+                </h3>
+              </div>
+                <span class="ProductNo">Artikel-Nr.: 51909</span>
+
+                
+                <div itemprop="description" class="Description SmallTopPadding"><p><span style="font-size:12px;">Schlüsselanhänger Kreuz; </span></p>
+
+<p><span style="font-size:12px;">Metall&nbsp;8 cm</span></p></div>
+              
+            </td>
+            <td class="AlignTop PercentWidth50">
+              
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                  
+                    
+                    
+                    <div class="PriceArea">
+                    
+                      <span class="Price">
+                        
+                          
+                            
+                            
+                              
+                              
+                              
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="price" content="4.95">4,95</span> <span itemprop="priceCurrency" content="EUR">€</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+                            
+                          
+                        
+                      </span>
+                      
+                    </div>
+                    <div class="ClearRight"></div>
+                    
+                    <div class="PriceArea">
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+
+                      
+                    
+                    
+
+                    <div class="AlignRight">
+                      
+                        
+
+
+
+
+                      
+                    </div>
+                    
+                    </div>
+                
+                
+                
+                
+                
+              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+
+            </td>
+          </tr>
+          <tr>
+            <td class="Links AlignRight" colspan="2">
+              
+  
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+
+    
+                                                           
+      <form data-productguid="{&quot;id&quot;: &quot;49CFAA70-522C-9496-CFB5-C0A828B8914A&quot;, &quot;name&quot;: &quot;&quot;}" id="basketForm_13" method="post" action="?" class="ShowInlineElement AddToBasketForm ep-js" data-js="" data-esf-rdy="1">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="ChangeObjectID" value="3245227">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+       
+  <input type="hidden" name="ObjectPath" value="/Shops/62024084">
+  <input type="hidden" name="ViewObjectID" value="1922160">
+  <input type="hidden" name="ViewAction" value="View">
+  
+  
+
+
+      
+                                                           
+
+        
+        
+
+        
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                    <button name="AddToBasket" type="submit" class="AddToBasketButton ep-js ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="">
+                      <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                      In den Warenkorb
+                    </button>
+                    <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div></div>
+  <div class="ClearBoth"></div>
+</div>
+
+
+      
+      </div>
+
+      
+        <div class="TaxAndShippingInfo TopPaddingWide ClearBoth">
+          
+  
+  
+    
+      
+        * <span style="font-size:9px; line-height:16px;">Preise inkl. MwSt., zzgl. <a style="font-size:9px" href="?ObjectPath=Categories/CustomerInformation" rel="nofollow" onclick="openWindow(this.href+'&amp;ViewAction=ViewPopup','Info','');return false;">Versand</a> </span>
+        
+      
+    
+    
+  
+  
+
+        </div>
+      
+
+    
+  
+
+
+
+</div>
+
+</div>
+
+<div class="AlignRight"></div>
+
+
+
+
+
+        </div><!-- close .ContentAreaWrapper -->
+      </div><!-- close .ContentAreaInner -->
+    </div><!-- close .ContentArea -->
+  </div><!-- close .Middle -->
+  <div class="FooterContainer">
+  
+    <div class="NavBarBottom HorizontalNavBar">
+      <div class="PropertyContainer">
+        
+
+ 
+  
+  
+  <div class="SizeContainer">
+<div class=" NavBarElement0" id="NavElement_1922452">
+  
+  <div class="NavigationText ">
+  <p>Copyright © 2020&nbsp;<a href="http://www.epages.de" onclick="openWindow(this.href, '', ''); return false;">ePages Software GmbH</a></p>
+  </div>
+  
+</div>
+</div>
+  
+  
+
+
+      </div>
+    </div>
+  
+  
+    <div class="Footer HorizontalNavBar">
+      <div class="PropertyContainer">
+        
+
+ 
+  
+  
+  <div class="SizeContainer">
+<div class="NavigationElement NavBarElement0"><a href="http://www.karl-esch.de/epages/62024084.mobile?ClassicView=0">Mobile Ansicht</a></div></div>
+  
+  
+
+
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+  
+
+<script type="text/javascript">
+require(["jquery", "util/storage", "$ready!"], function ($, storage) {
+  // remove all selected products on logout
+  var $LogoutNodes = $('a[href*="ChangeAction=Logout"]');
+  
+  $LogoutNodes.each(function (event){
+    $(this).on('click', function (event){
+      storage.sessionStorage('Product::ProductComparison', null);
+    });
+  });
+});
+</script><script type="text/javascript">
+require(['jquery', '$ready!'], function ($) {
+
+	var createGadgets = function(){
+
+		// Constants.
+		var gNodeType = 'div',
+			gClassName = 'ep-gadget',
+			gDataName = gClassName,
+			gFolder = 'ui',
+			secondClickBtn = ['facebook', 'twitter', 'otherbuttons'],
+			$gNodes,
+			googleMapsAPIKey = false;
+
+		// Transform gadget imgs to divs
+		$('img.' + gClassName).each(function (i, elem) {
+			var $elem = $(elem),
+				tmplElement = $('<div/>'),
+				replaceElement = $elem.parent('p');
+
+			// set/remove gadget-, class- and style-values/options
+			tmplElement
+				.data(gDataName, $elem.data(gDataName))
+				.attr({
+					'class': ($elem.attr('class') ? $elem.attr('class') : ''),
+					'style': ($elem.attr('style') ? $elem.attr('style').replace(/\s*?height:.*?;|\s*?background.*?:.*?;|\s*?display:.*?;|\s*?margin-bottom:.*?;|\s*?max-width:.*?;|\s*?width:.*?px;/g, '') : '')
+				});
+
+			// if parent paragraph element only contains the gadget-element => replace paragraph and gadget-element by gadget-div
+			if (replaceElement.length && replaceElement.children().length === 1 && replaceElement.text().replace(/\s|\n|\r/g, '') === '') {
+				replaceElement.replaceWith(tmplElement);
+			// if parent paragraph element contains more content => replace only gadget-element by gadget-div
+			} else {
+				$elem.replaceWith(tmplElement);
+			}
+		});
+
+		// Build gadgets in the gadget div
+		$gNodes = $(gNodeType + '.' + gClassName);
+
+		if ($gNodes.length) {
+			// Go go gadgets.
+			$gNodes.each(function () {
+				var $this = $(this),
+					data = $this.data(gDataName),
+					elem,
+					classButton = 'ep-2-click-button SocialWeb',
+					classButtonType;
+
+				data.options.googleMapsAPIKey = false;
+				if (data.options.type && data.options.type === "google") {
+				 	data.options.googleMapsAPIKey = googleMapsAPIKey;
+				}
+
+				// if no second click button is needed
+				if (secondClickBtn.indexOf(data.alias) === -1) {
+					require([['de_epages', data.cartridge, gFolder, data.alias].join('/')], function ($) {
+						$this[data.cartridge + gFolder.charAt(0).toUpperCase() + gFolder.slice(1) + data.alias.charAt(0).toUpperCase() + data.alias.slice(1)](data.options);
+						
+					});
+				} else {
+					// type of button (facebook, twitter ..)
+					classButtonType = 'ep-2-click-button-' + data.alias;
+					// add classes
+					$this.addClass(classButtonType + ' ' + classButton);
+					// add tooltip
+		 			$this.attr("title", "Aktivieren\u0020Sie\u0020mit\u0020einem\u0020Klick\u0020den\u0020Button\u002E\u0020Erst\u0020danach\u0020können\u0020Sie\u0020die\u0020Seite\u0020in\u0020den\u0020sozialen\u0020Netzwerken\u0020teilen\u002E\u0020Nach\u0020der\u0020Aktivierung\u0020werden\u0020Daten\u0020an\u0020Dritte\u0020übertragen\u002E");
+
+					// add span (contains the switch)
+					$this.html('<span></span>');
+
+					// add click-handler for 2-click-button
+					$this.one('click', function (evt) {
+						evt.preventDefault();
+						evt.stopPropagation();
+
+						var _this = $(this),
+							data = $this.data(gDataName),
+							elem = $('<div />');
+
+						elem[0].className = this.className;
+						elem.removeClass(classButtonType + ' ' + classButton);
+
+						require([['de_epages', data.cartridge, gFolder, data.alias].join('/')], function ($) {
+							// instantiate needed widget (facebook, twitter ...)
+							elem[data.cartridge + gFolder.charAt(0).toUpperCase() + gFolder.slice(1) + data.alias.charAt(0).toUpperCase() + data.alias.slice(1)](data.options);
+
+							
+
+							// replace 2-click-button with widget-element
+							_this.replaceWith(elem);
+						});
+					});
+				}
+
+			});
+		}
+	};
+
+	createGadgets();
+	$('body').on('updatepreview', createGadgets);
+
+});
+</script>
+
+<script>
+require([
+    'jquery',
+    'de_epages/product/inc/energylabel',
+
+    '$ready!'
+], function ($, energylabel) {
+    var energylabels = $('.energylabel-arrow');
+
+    energylabel.init({items: energylabels});
+
+    // re-initialize energy label modul after search results are loaded
+    $(document).on('facetssearch:loaded', function() {
+        energylabels = $('.energylabel-arrow');
+
+        energylabel.init({items: energylabels});
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul style="display:none;" id="energylabel-imagelist" class="ep-facettedsearchenergylabel-imagelist"></ul></body></html>

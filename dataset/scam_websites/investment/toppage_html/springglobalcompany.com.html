@@ -1,0 +1,1495 @@
+<!DOCTYPE html><html lang="en" style="height: 100%;"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <base href="/public">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Spring Global Investment</title>
+
+
+
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
+    <!--bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/bootstrap.min.css">
+    <!--owl carousel css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/owl.carousel.min.css">
+    <!--magnific popup css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/magnific-popup.css">
+    <!--font awesome css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/font-awesome.min.css">
+    <!--meanmenu css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/meanmenu.css">
+    <!--animate css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/animate.css">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" type="text/css" href="https://springglobalcompany.com/assets/css/responsive.css">
+
+
+    <!-- sweet alert cdn link  -->
+    <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+         <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'db2ff25743f1fb4aebfed66708d0f0c8877ff9bd';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=wA/d=0/rs=AN8SPfpPTNr3cQN8QhzqvQYsNrDu3oHhow/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.ja.zxgsU3t2-_I.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfrDTk1QbMw7ws_zBrBNE2euI75KnA/m=el_main"></script><style>/* empty */</style></head>
+
+<body style="position: relative; min-height: 100%; top: 40px;"><div class="skiptranslate" style=""><iframe id=":1.container" class="VIpgJd-ZVi9od-ORHb-OEVmcd skiptranslate" frameborder="0" src="#" style="visibility:visible"></iframe></div>
+    
+    <style>
+        body{
+            overflow-x:hidden;
+        }
+    </style>
+
+    <!--star preloader-->
+    <div class="preloader" style="display: none;">
+        <div class="d-table">
+            <div class="d-table-cell align-middle">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end preloader-->
+
+    <!-- Sidebar for Small Screens  -->
+    <div class="sidebar-wrap">
+        <div class="sidebar-inner">
+            <div class="sidebar-close">
+                <div class="sidebar-close-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-logo">
+                    <a href="/">
+                        <img loading="lazy" class="img-fluid" src="https://springglobalcompany.com/assets/img/logo/logo.png" alt="logo.png">
+                    </a>
+                </div>
+                <div class="mobile-menu"></div>
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:support@springglobalcompany.com">support@springglobalcompany.com</a></li>
+                        <li><i class="fa fa-phone"></i><a href="tel:+14097537204">+14097537204</a></li>
+                    </ul>
+                </div>
+                <div class="social-icon">
+                    <ul>
+                        <li><span>Follow Us:</span></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="header-log-reg">
+                    <ul>
+                        <li><a href="https://springglobalcompany.com/user/login">Login</a></li>
+                        <li><small>|</small></li>
+                        <li><a href="https://springglobalcompany.com/user/register">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Sidebar for Small Screens  -->
+
+    <!-- start header-top-area -->
+    <header class="header-area">
+        <div class="header-top-area">
+            <div class="container">
+                <div class="header-top-wrap">
+                    <!--start header contact info-->
+                    <div class="header-contact-info text-right">
+                        <ul>
+                            <li><a href="mailto:support@springglobalcompany.com"><i class="fa fa-envelope"></i>
+                                    support@springglobalcompany.com</a></li>
+                            <li><a href="tel:+14097537204"><i class="fa fa-phone"></i>
+                                    14097537204</a></li>
+                        </ul>
+                    </div>
+                    <!--end header contact info-->
+
+                    <!--start header-top-social-->
+                    <div class="header-top-social text-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--end header-top-social-->
+                    <!-- Translator  -->
+                    <div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="言語翻訳ウィジェット"><option value="">言語を選択</option><option value="ja">日本語</option><option value="is">アイスランド語</option><option value="ay">アイマラ語</option><option value="ga">アイルランド語</option><option value="az">アゼルバイジャン語</option><option value="as">アッサム語</option><option value="af">アフリカーンス語</option><option value="am">アムハラ語</option><option value="ar">アラビア語</option><option value="sq">アルバニア語</option><option value="hy">アルメニア語</option><option value="it">イタリア語</option><option value="yi">イディッシュ語</option><option value="ig">イボ語</option><option value="ilo">イロカノ語</option><option value="id">インドネシア語</option><option value="ug">ウイグル語</option><option value="cy">ウェールズ語</option><option value="uk">ウクライナ語</option><option value="uz">ウズベク語</option><option value="ur">ウルドゥ語</option><option value="ee">エウェ語</option><option value="et">エストニア語</option><option value="eo">エスペラント語</option><option value="nl">オランダ語</option><option value="or">オリヤ語</option><option value="om">オロモ語</option><option value="kk">カザフ語</option><option value="ca">カタルーニャ語</option><option value="gl">ガリシア語</option><option value="kn">カンナダ語</option><option value="rw">キニヤルワンダ語</option><option value="el">ギリシャ語</option><option value="ky">キルギス語</option><option value="gn">グアラニ語</option><option value="gu">グジャラート語</option><option value="km">クメール語</option><option value="kri">クリオ語</option><option value="ku">クルド語（クルマンジー）</option><option value="ckb">クルド語（ソラニー）</option><option value="hr">クロアチア語</option><option value="qu">ケチュア語</option><option value="xh">コーサ語</option><option value="co">コルシカ語</option><option value="gom">コンカニ語</option><option value="sm">サモア語</option><option value="sa">サンスクリット語</option><option value="jw">ジャワ語</option><option value="ka">ジョージア語（グルジア語）</option><option value="sn">ショナ語</option><option value="sd">シンド語</option><option value="si">シンハラ語</option><option value="sv">スウェーデン語</option><option value="zu">ズールー語</option><option value="gd">スコットランド ゲール語</option><option value="es">スペイン語</option><option value="sk">スロバキア語</option><option value="sl">スロベニア語</option><option value="sw">スワヒリ語</option><option value="su">スンダ語</option><option value="ceb">セブアノ語</option><option value="nso">セペディ語</option><option value="sr">セルビア語</option><option value="st">ソト語</option><option value="so">ソマリ語</option><option value="th">タイ語</option><option value="tl">タガログ語</option><option value="tg">タジク語</option><option value="tt">タタール語</option><option value="ta">タミル語</option><option value="cs">チェコ語</option><option value="ny">チェワ語</option><option value="ts">ツォンガ語</option><option value="ti">ティグリニャ語</option><option value="dv">ディベヒ語</option><option value="te">テルグ語</option><option value="da">デンマーク語</option><option value="de">ドイツ語</option><option value="ak">トゥイ語</option><option value="doi">ドグリ語</option><option value="tk">トルクメン語</option><option value="tr">トルコ語</option><option value="ne">ネパール語</option><option value="no">ノルウェー語</option><option value="ht">ハイチ語</option><option value="ha">ハウサ語</option><option value="ps">パシュト語</option><option value="eu">バスク語</option><option value="haw">ハワイ語</option><option value="hu">ハンガリー語</option><option value="pa">パンジャブ語</option><option value="bm">バンバラ語</option><option value="hi">ヒンディー語</option><option value="fi">フィンランド語</option><option value="fr">フランス語</option><option value="fy">フリジア語</option><option value="bg">ブルガリア語</option><option value="vi">ベトナム語</option><option value="iw">ヘブライ語</option><option value="be">ベラルーシ語</option><option value="fa">ペルシャ語</option><option value="bn">ベンガル語</option><option value="bho">ボージュプリー語</option><option value="pl">ポーランド語</option><option value="bs">ボスニア語</option><option value="pt">ポルトガル語</option><option value="mai">マイティリー語</option><option value="mi">マオリ語</option><option value="mk">マケドニア語</option><option value="mr">マラーティー語</option><option value="mg">マラガシ語</option><option value="ml">マラヤーラム語</option><option value="mt">マルタ語</option><option value="ms">マレー語</option><option value="lus">ミゾ語</option><option value="my">ミャンマー語（ビルマ語）</option><option value="mni-Mtei">メイテイ語（マニプリ語）</option><option value="mn">モンゴル語</option><option value="hmn">モン語</option><option value="yo">ヨルバ語</option><option value="lo">ラオ語</option><option value="la">ラテン語</option><option value="lv">ラトビア語</option><option value="lt">リトアニア語</option><option value="ln">リンガラ語</option><option value="ro">ルーマニア語</option><option value="lg">ルガンダ語</option><option value="lb">ルクセンブルク語</option><option value="ru">ロシア語</option><option value="ko">韓国語</option><option value="zh-CN">中国語（簡体）</option><option value="zh-TW">中国語（繁体）</option></select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google 翻訳">翻訳</a></span></div></div>
+
+                    <!-- Digital Clock  -->
+                    <h4 id="clock">12:04:18 am</h4>
+                </div>
+            </div>
+        </div>
+        <!--end header-top-area-->
+        <!--start header-btm-area-->
+        <div class="header-btm-area">
+            <div class="container">
+                <div class="main-menu-wrap">
+                    <!--start site logo-->
+                    <div class="site-logo">
+                        <a class="logo" href="/">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/logo/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!--end site logo-->
+                    <!--start mainmenu-->
+                    <div class="main-menu-area text-right">
+                        <nav class="mainmenu" style="display: block;">
+                            <ul>
+                                <li>
+                                    <a class="active" href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/about">About Us</a>
+                                </li>
+                                <li><a href="/plans">Investment</a>
+                                </li>
+                                <li><a href="/faqs">FAQs</a>
+                                </li>
+                                <li><a href="/contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--end mainmenu-->
+                    <!--start login registration btn-->
+                    <div class="header-log-reg text-right">
+                        <ul>
+                            <li><a href="https://springglobalcompany.com/user/login">Login</a></li>
+                            <li><small>|</small></li>
+                            <li><a href="https://springglobalcompany.com/user/register">Signup</a></li>
+                        </ul>
+                    </div>
+                    <!--end login registration btn-->
+                    <!--start toggle button-->
+                    <div class="header-toggle-btn">
+                        <a class="sidebar-toggle-btn">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <!--end toggle button-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+
+
+    <!--start hero area-->
+    <div class="heroSection">
+        <div class="owl-carousel heroCarousel owl-theme owl-loaded">
+            
+            
+            
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2580px, 0px, 0px); transition: all 0s ease 0s; width: 9030px;"><div class="owl-item cloned" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/2.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Expert Insights for Profitable <br> Crypto Investing</h1>
+                            <p>Navigate the crypto landscape with confidence <br> using our expert market analysis.
+                            </p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/3.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Unleash Your Financial <br> Potential</h1>
+                            <p>Empower your wealth with a personalized crypto <br> portfolio that aligns with your
+                                aspirations.</p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Start Your Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item active" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/1.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Discover Crypto Investment <br> Opportunities</h1>
+                            <p>Explore the future of finance through secure <br>and user-friendly crypto
+                                investments.
+                            </p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/2.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Expert Insights for Profitable <br> Crypto Investing</h1>
+                            <p>Navigate the crypto landscape with confidence <br> using our expert market analysis.
+                            </p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/3.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Unleash Your Financial <br> Potential</h1>
+                            <p>Empower your wealth with a personalized crypto <br> portfolio that aligns with your
+                                aspirations.</p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Start Your Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/1.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Discover Crypto Investment <br> Opportunities</h1>
+                            <p>Explore the future of finance through secure <br>and user-friendly crypto
+                                investments.
+                            </p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1280px; margin-right: 10px;"><div class="item">
+                <img loading="lazy" src="https://springglobalcompany.com/assets/img/hero/2.jpeg" alt="Hero Image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <h1>Expert Insights for Profitable <br> Crypto Investing</h1>
+                            <p>Navigate the crypto landscape with confidence <br> using our expert market analysis.
+                            </p>
+                            <a class="btn-bg" href="https://springglobalcompany.com/user/login">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div></div><div class="owl-nav"><div class="owl-prev"><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="M15 19V5l-8 7z"></path>
+            </svg></div><div class="owl-next"><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="m9 19l8-7l-8-7z"></path>
+            </svg></div></div><div class="owl-dots disabled"></div></div>
+    </div>
+    <!--end hero area -->
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="width: 100%; height: 46px;">
+        <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3ABTCUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3AETHUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CRYPTOCAP%3ASOL%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CRYPTOCAP%3ADOGE%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3ATRXUSD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22COINBASE%3ABTCUSD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22PANCAKESWAP%3ATRCUSDT_3CE171%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A46%2C%22utm_source%22%3A%22springglobalcompany.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22springglobalcompany.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 46px; width: 100%;"></iframe>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></div> -->
+        
+    <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+    <!-- TradingView Widget END -->
+
+
+    <!--start about-area-->
+    <main class="row">
+        <section class="about-area col-12">
+            <div class="container">
+                <div class="row">
+                    <!--start about-img-->
+                    <div class="col-md-6">
+                        <div class="about-img">
+                            <img loading="lazy" src="assets/img/about/about3.jpeg" class="img-fluid" alt="image">
+                            <div class="about-img-inner">
+
+                                <img loading="lazy" src="assets/img/about/about2.jpeg" class="img-fluid" alt="image">
+                            </div>
+                            <div class="about-img-two">
+                                <img loading="lazy" src="assets/img/about/about1.jpeg" class="img-fluid" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--end about-img-->
+                    <!--start about-cont-->
+                    <div class="col-md-6">
+                        <div class="about-cont d-table">
+                            <div class="align-middle d-table-cell">
+                                <h3>Spring Global</h3>
+                                <h4>about us</h4>
+                                <h2>Unveiling a New Era of Crypto Wealth</h2>
+                                <p>Welcome to Spring Global, where innovation meets opportunity in the world of
+                                    cryptocurrency investments. As pioneers in
+                                    the digital frontier, we're driven by a singular vision: to empower you to unlock
+                                    the
+                                    extraordinary potential of crypto
+                                    assets. With a fusion of cutting-edge technology and financial expertise, we're here
+                                    to
+                                    guide you towards a brighter
+                                    financial future. Join us in shaping the future of finance, one smart investment at
+                                    a
+                                    time.</p>
+                                <div class="btn-default">
+                                    <a href="/about">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end about-cont-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--end about-area-->
+
+
+
+    <!--start category area-->
+    <section class="category-area">
+        <div class="container">
+            <div class="row">
+                <!--start heading-->
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="sec-heading text-center">
+                        <h4>Effective &amp; Simple</h4>
+                        <h2>Steps To Take</h2>
+                    </div>
+                </div>
+                <!--end heading-->
+            </div>
+            <div class="row">
+                <!--start category single -->
+                <div class="col-md-4">
+                    <div class="category-single text-center">
+                        <svg width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#C6853C" d="M15 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m0 1.9a2.1 2.1 0 1 1 0 4.2A2.1 2.1 0 0 1 12.9 8A2.1 2.1 0 0 1 15 5.9M4 7v3H1v2h3v3h2v-3h3v-2H6V7H4m11 6c-2.67 0-8 1.33-8 4v3h16v-3c0-2.67-5.33-4-8-4m0 1.9c2.97 0 6.1 1.46 6.1 2.1v1.1H8.9V17c0-.64 3.1-2.1 6.1-2.1Z"></path>
+                        </svg>
+                        <h3>Step 1</h3>
+                        <h5>Register</h5>
+                        <p>Click on the create account button and proceed to enter your details. A verification code
+                            will be sent to your email,
+                            verify your account and that is it. You are welcome.</p>
+                    </div>
+                </div>
+                <!--end category single -->
+                <!--start category single -->
+                <div class="col-md-4">
+                    <div class="category-single text-center">
+                        <div class="course-category-img">
+                            <svg width="80" height="80" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#C6853C" d="m8 16l-2-3h1v-2h2v2h1l-2 3zm7-15v8H1V1h14zm1-1H0v10h16V0z"></path>
+                                <path fill="#C6853C" d="M8 2a3 3 0 1 1 0 6h5V7h1V3h-1V2H8zM5 5a3 3 0 0 1 3-3H3v1H2v4h1v1h5a3 3 0 0 1-3-3z"></path>
+                            </svg>
+                        </div>
+                        <h3>Step 2</h3>
+                        <h5>Deposit</h5>
+                        <p>Now that you have gotten a new account on Spring Global, login to your dashboard and
+                            select
+                            the deposit plan that best fits your
+                            budget. There is a plan for everyone.</p>
+                    </div>
+                </div>
+                <!--end category single -->
+                <!--start category single -->
+                <div class="col-md-4">
+                    <div class="category-single text-center">
+                        <div class="course-category-img">
+                            <svg width="80" height="80" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#C6853C" d="M93.46 39.45c6.71-1.49 15.45-8.15 16.78-11.43c.78-1.92-3.11-4.92-4.15-6.13c-2.38-2.76-1.42-4.12-.5-7.41c1.05-3.74-1.44-7.87-4.97-9.49s-7.75-1.11-11.3.47s-6.58 4.12-9.55 6.62c-2.17-1.37-5.63-7.42-11.23-3.49c-3.87 2.71-4.22 8.61-3.72 13.32c1.17 10.87 3.85 16.51 8.9 18.03c6.38 1.92 13.44.91 19.74-.49z"></path>
+                                <path fill="#C6853C" d="M104.36 8.18c-.85 14.65-15.14 24.37-21.92 28.65l4.4 3.78s2.79.06 6.61-1.16c6.55-2.08 16.12-7.96 16.78-11.43c.97-5.05-4.21-3.95-5.38-7.94c-.61-2.11 2.97-6.1-.49-11.9zm-24.58 3.91s-2.55-2.61-4.44-3.8c-.94 1.77-1.61 3.69-1.94 5.67c-.59 3.48 0 8.42 1.39 12.1c.22.57 1.04.48 1.13-.12c1.2-7.91 3.86-13.85 3.86-13.85z"></path>
+                                <path fill="#C6853C" d="M61.96 38.16S30.77 41.53 16.7 68.61s-2.11 43.5 10.55 49.48c12.66 5.98 44.56 8.09 65.31 3.17s25.94-15.12 24.97-24.97c-1.41-14.38-14.77-23.22-14.77-23.22s.53-17.76-13.25-29.29c-12.23-10.24-27.55-5.62-27.55-5.62z"></path>
+                                <path fill="#1C1B22" d="M74.76 83.73c-6.69-8.44-14.59-9.57-17.12-12.6c-1.38-1.65-2.19-3.32-1.88-5.39c.33-2.2 2.88-3.72 4.86-4.09c2.31-.44 7.82-.21 12.45 4.2c1.1 1.04.7 2.66.67 4.11c-.08 3.11 4.37 6.13 7.97 3.53c3.61-2.61.84-8.42-1.49-11.24c-1.76-2.13-8.14-6.82-16.07-7.56c-2.23-.21-11.2-1.54-16.38 8.31c-1.49 2.83-2.04 9.67 5.76 15.45c1.63 1.21 10.09 5.51 12.44 8.3c4.07 4.83 1.28 9.08-1.9 9.64c-8.67 1.52-13.58-3.17-14.49-5.74c-.65-1.83.03-3.81-.81-5.53c-.86-1.77-2.62-2.47-4.48-1.88c-6.1 1.94-4.16 8.61-1.46 12.28c2.89 3.93 6.44 6.3 10.43 7.6c14.89 4.85 22.05-2.81 23.3-8.42c.92-4.11.82-7.67-1.8-10.97z"></path>
+                                <path fill="none" stroke="#1C1B22" stroke-miterlimit="10" stroke-width="5" d="M71.16 48.99c-12.67 27.06-14.85 61.23-14.85 61.23"></path>
+                                <path fill="#6D4C41" d="M81.67 31.96c8.44 2.75 10.31 10.38 9.7 12.46c-.73 2.44-10.08-7.06-23.98-6.49c-4.86.2-3.45-2.78-1.2-4.5c2.97-2.27 7.96-3.91 15.48-1.47z"></path>
+                                <path fill="#1C1B22" d="M81.67 31.96c8.44 2.75 10.31 10.38 9.7 12.46c-.73 2.44-10.08-7.06-23.98-6.49c-4.86.2-3.45-2.78-1.2-4.5c2.97-2.27 7.96-3.91 15.48-1.47z"></path>
+                                <path fill="#1C1B22" d="M96.49 58.86c1.06-.73 4.62.53 5.62 7.5c.49 3.41.64 6.71.64 6.71s-4.2-3.77-5.59-6.42c-1.75-3.35-2.43-6.59-.67-7.79z"></path>
+                            </svg>
+                        </div>
+
+                        <h3>Step 3</h3>
+                        <h5>Withdraw</h5>
+                        <p>It is time to enjoy your labour. Your profit and capital will be credited to your account
+                            after investment duration and
+                            you can withdraw to your wallet. Goodluck!</p>
+                    </div>
+                </div>
+                <!--end category single -->
+            </div>
+        </div>
+    </section>
+    <!--end category area-->
+
+    <!--start why choose area-->
+    <section class="why-choose-area">
+        <div class="container">
+            <div class="row">
+                <!--start why choose heading-->
+                <div class="col-md-4">
+                    <div class="why-choose-intro">
+                        <h2>Why Choose Us?</h2>
+                        <p>Embrace limitless opportunities with Spring Global. We're not just a platform; we're your
+                            partners in crypto success.
+                            With cutting-edge insights, rock-solid security, diverse portfolios, and unwavering
+                            support,
+                            choosing us means choosing
+                            your financial potential. Elevate your journey – choose Spring Global and redefine
+                            crypto
+                            possibilities.</p>
+                        <div class="why-choose-btn">
+                            <a href="/about">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end why choose heading-->
+                <div class="col-md-8">
+                    <div class="row">
+                        <!--start why choose single-->
+                        <div class="col-md-6">
+                            <div class="why-choose-single">
+                                <div class="why-choose-icon">
+                                    <svg width="50" height="50" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#C6853C" d="M960 384q119 0 224 45t183 124t123 183t46 224q0 63-8 118t-25 105t-44 99t-64 100q-29 40-51 72t-36 64t-21 70t-7 89v179q0 40-15 75t-41 61t-61 41t-75 15H832q-40 0-75-15t-61-41t-41-61t-15-75v-180q0-51-7-88t-21-69t-36-65t-51-72q-37-51-63-99t-44-99t-26-106t-8-118q0-119 45-224t124-183t183-123t224-46zm192 1472v-64H768v64q0 26 19 45t45 19h256q26 0 45-19t19-45zm256-896q0-93-35-174t-96-143t-142-96t-175-35q-93 0-174 35t-143 96t-96 142t-35 175q0 89 18 153t47 114t61 94t61 92t48 108t21 143h384q1-83 20-142t48-108t61-92t61-94t47-115t19-153zM960 256q-26 0-45-19t-19-45V64q0-26 19-45t45-19q26 0 45 19t19 45v128q0 26-19 45t-45 19zM192 928H64q-26 0-45-19T0 864q0-26 19-45t45-19h128q26 0 45 19t19 45q0 26-19 45t-45 19zm53 261q26 0 45 19t19 46q0 20-11 35t-30 24q-11 5-30 13t-41 17t-40 15t-32 7q-26 0-45-19t-19-46q0-20 11-35t30-24q11-4 30-13t41-17t40-15t32-7zm152-645q0 26-19 45t-45 19q-18 0-33-9l-109-67q-14-9-22-23t-9-32q0-26 19-45t45-19q16 0 33 10l110 66q14 8 22 23t8 32zm83-368q0-26 19-45t45-19q17 0 32 9t24 24l62 112q8 14 8 30q0 27-19 46t-45 19q-17 0-32-9t-24-24l-62-112q-8-14-8-31zm1376 624q26 0 45 19t19 45q0 26-19 45t-45 19h-128q-26 0-45-19t-19-45q0-26 19-45t45-19h128zm2 501q0 26-19 45t-45 19q-11 0-30-6t-41-16t-40-17t-31-14q-18-8-29-24t-12-36q0-27 19-45t46-19q12 0 31 7t40 16t40 18t31 13q18 8 29 23t11 36zm-271-693q-26 0-45-19t-19-45q0-17 8-32t22-23l110-66q17-10 33-10q26 0 45 19t19 45q0 17-8 31t-23 24l-109 67q-15 9-33 9zm-337-321q0-16 8-30l62-112q8-15 23-24t33-9q26 0 45 19t19 45q0 17-8 31l-62 112q-8 15-23 24t-33 9q-26 0-45-19t-19-46z"></path>
+                                    </svg>
+                                </div>
+                                <div class="why-choose-cont">
+                                    <h3>Expert Insights, Informed Decisions</h3>
+                                    <p>Gain an edge in the crypto market with our expert insights and analysis. We
+                                        believe that informed decisions drive
+                                        success, and that's why we provide you with up-to-the-minute data, trends,
+                                        and
+                                        forecasts. Elevate your investment
+                                        strategies and make every move count with Spring Global.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end why choose single-->
+                        <!--start why choose single-->
+                        <div class="col-md-6">
+                            <div class="why-choose-single">
+                                <div class="why-choose-icon">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#C6853C" d="M10.45 15.5q.6.6 1.55.588t1.4-.688L19 7l-8.4 5.6q-.675.45-.712 1.375t.562 1.525ZM12 4q1.475 0 2.838.413T17.4 5.65l-1.9 1.2q-.825-.425-1.712-.637T12 6Q8.675 6 6.337 8.337T4 14q0 1.05.288 2.075T5.1 18h13.8q.575-.95.838-1.975T20 13.9q0-.9-.213-1.75t-.637-1.65l1.2-1.9q.75 1.175 1.188 2.5T22 13.85q.025 1.425-.325 2.725T20.65 19.05q-.275.45-.75.7t-1 .25H5.1q-.525 0-1-.25t-.75-.7q-.65-1.125-1-2.388T2 14q0-2.075.788-3.888t2.15-3.174Q6.3 5.575 8.124 4.787T12 4Zm.175 7.825Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="why-choose-cont">
+                                    <h3>Secure and Seamless Transactions</h3>
+                                    <p>Your security is our priority. We've implemented state-of-the-art security
+                                        measures to ensure your crypto transactions
+                                        are safe and seamless. With Spring Global, you can confidently navigate the
+                                        digital realm, knowing that your assets are
+                                        protected by cutting-edge technology.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end why choose single-->
+                        <!--start why choose single-->
+                        <div class="col-md-6">
+                            <div class="why-choose-single">
+                                <div class="why-choose-icon">
+                                    <svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke="#C6853C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M29 17v11H3V17M2 8h28v8s-6 4-14 4s-14-4-14-4V8Zm14 14v-4m4-10s0-4-4-4s-4 4-4 4"></path>
+                                    </svg>
+                                </div>
+                                <div class="why-choose-cont">
+                                    <h3>Diverse Portfolios, Maximum Potential</h3>
+                                    <p>Discover the power of diversification with Spring Global. Our platform offers
+                                        a
+                                        wide array of digital assets, from
+                                        established cryptocurrencies to promising altcoins. Build a well-rounded
+                                        portfolio that maximizes your potential for
+                                        growth, while minimizing risk.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end why choose single-->
+                        <!--start why choose single-->
+                        <div class="col-md-6">
+                            <div class="why-choose-single">
+                                <div class="why-choose-icon">
+                                    <svg width="50" height="50" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="none" stroke="#C6853C" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                            <path d="m24 4l5.253 3.832l6.503-.012l1.997 6.188l5.268 3.812L41 24l2.021 6.18l-5.268 3.812l-1.997 6.188l-6.503-.012L24 44l-5.253-3.832l-6.503.012l-1.997-6.188l-5.268-3.812L7 24l-2.021-6.18l5.268-3.812l1.997-6.188l6.503.012L24 4Z"></path>
+                                            <path d="m17 24l5 5l10-10"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="why-choose-cont">
+                                    <h3>Personalized Support, Your Success</h3>
+                                    <p>Experience customer-centric support that's tailored to your needs. Our
+                                        dedicated
+                                        team is here to guide you through your
+                                        crypto journey, answering questions and providing assistance every step of
+                                        the
+                                        way. Your success is our success, and
+                                        we're here to ensure you thrive.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end why choose single-->
+                    </div>
+                </div>
+                <!--end choose single-->
+            </div>
+        </div>
+    </section>
+    <!--end why choose area-->
+
+    <!--start pricing area-->
+    <section class="pricing-area">
+        <div class="container">
+            <div class="row">
+                <!--start sec heading-->
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="sec-heading text-center">
+                        <h4>Our Plans</h4>
+                        <h2>Investment Plans</h2>
+                    </div>
+                </div>
+                <!--end sec heading-->
+            </div>
+            <div class="row">
+                                    <!--start pricing table-->
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <h2>Starter Plan</h2>
+                            <div class="pricing-table-price">
+                                <span class="pricing-table-currency">$50 -
+                                    $5,000 </span>
+                            </div>
+                            <p> 6 Months</p>
+                            <div class="pricing-table-body">
+                                <ul>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Minimium
+                                            <span class="price-right">$50</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Maximum
+                                            <span class="price-right">$5,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Weekly Profit
+                                            <span class="price-right">3%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Duration
+                                            <span class="price-right">6 Months</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                    <!--end pricing table-->
+                                    <!--start pricing table-->
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <h2>Silver Plan</h2>
+                            <div class="pricing-table-price">
+                                <span class="pricing-table-currency">$5,000 -
+                                    $10,000 </span>
+                            </div>
+                            <p> 6 Months</p>
+                            <div class="pricing-table-body">
+                                <ul>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Minimium
+                                            <span class="price-right">$5,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Maximum
+                                            <span class="price-right">$10,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Weekly Profit
+                                            <span class="price-right">5%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Duration
+                                            <span class="price-right">6 Months</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                    <!--end pricing table-->
+                                    <!--start pricing table-->
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <h2>Gold Plan</h2>
+                            <div class="pricing-table-price">
+                                <span class="pricing-table-currency">$10,000 -
+                                    $50,000 </span>
+                            </div>
+                            <p> 6 Months</p>
+                            <div class="pricing-table-body">
+                                <ul>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Minimium
+                                            <span class="price-right">$10,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Maximum
+                                            <span class="price-right">$50,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Weekly Profit
+                                            <span class="price-right">7%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Duration
+                                            <span class="price-right">6 Months</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                    <!--end pricing table-->
+                                    <!--start pricing table-->
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <h2>Premium Plan</h2>
+                            <div class="pricing-table-price">
+                                <span class="pricing-table-currency">$50,000 -
+                                    $300,000 </span>
+                            </div>
+                            <p> 6 Months</p>
+                            <div class="pricing-table-body">
+                                <ul>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Minimium
+                                            <span class="price-right">$50,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Maximum
+                                            <span class="price-right">$300,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Weekly Profit
+                                            <span class="price-right">10%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Duration
+                                            <span class="price-right">6 Months</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                    <!--end pricing table-->
+                                    <!--start pricing table-->
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <h2>Real Estate</h2>
+                            <div class="pricing-table-price">
+                                <span class="pricing-table-currency">$100,000 -
+                                    $10,000,000 </span>
+                            </div>
+                            <p> 6 Months</p>
+                            <div class="pricing-table-body">
+                                <ul>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Minimium
+                                            <span class="price-right">$100,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Maximum
+                                            <span class="price-right">$10,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Weekly Profit
+                                            <span class="price-right">12%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Duration
+                                            <span class="price-right">6 Months</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                    <!--end pricing table-->
+                                    <!--start pricing table-->
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <h2>One year fixed package plan</h2>
+                            <div class="pricing-table-price">
+                                <span class="pricing-table-currency">$20,000 -
+                                    $1,000,000 </span>
+                            </div>
+                            <p> 12 Months</p>
+                            <div class="pricing-table-body">
+                                <ul>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Minimium
+                                            <span class="price-right">$20,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Maximum
+                                            <span class="price-right">$1,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Weekly Profit
+                                            <span class="price-right">20%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="pricing-feat-text d-flex align-items-center justify-content-between ">
+                                            Duration
+                                            <span class="price-right">12 Months</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://springglobalcompany.com/user/login">Get Started</a>
+                        </div>
+                    </div>
+                    <!--end pricing table-->
+                            </div>
+            <div class="row">
+                <div class="col-12 more d-flex justify-content-center">
+                    <a href="/plan">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end pricing area-->
+
+    <!--start video area-->
+    <section class="video-area bg-gray">
+        <div class="container">
+            <div class="row">
+                <!--start video player-->
+                <div class="col-lg-12">
+                    <div class="video-player-wrap text-center">
+                        <div class="video-player d-table">
+                            <div class="d-table-cell align-middle">
+                                <!-- <a class="popup-video" href="https://www.youtube.com/watch?v=XHOmBV4js_E">
+                                    <i class="fa fa-play"></i>
+                                </a> -->
+                                <a class="popup-video" href="https://springglobalcompany.com/assets/img/Video/VID-20230814-WA0034.mp4">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end video player-->
+            </div>
+            <div class="row">
+                <!--start video content-->
+                <div class="col-lg-10 offset-lg-1 text-center">
+                    <div class="video-cont">
+                        <h2>Statistics</h2>
+                    </div>
+                </div>
+                <!--end video content-->
+            </div>
+            <div class="row counter-wrap">
+                <!--start counter-single-->
+                <div class="col-md-4">
+                    <div class="counter-single text-center">
+                        <h2><span>786</span>+</h2>
+                        <p>Users</p>
+                    </div>
+                </div>
+                <!--end counter-single-->
+                <!--start counter-single-->
+                <div class="col-md-4">
+                    <div class="counter-single text-center">
+                        <h2>$<span>567,200</span>+</h2>
+                        <p>Desposits</p>
+                    </div>
+                </div>
+                <!--end counter-single-->
+                <!--start counter-single-->
+                <div class="col-md-4">
+                    <div class="counter-single text-center">
+                        <h2>$<span>482,387</span>+</h2>
+                        <p>Withdrawals</p>
+                    </div>
+                </div>
+                <!--end counter-single-->
+            </div>
+        </div>
+    </section>
+    <!--end video area-->
+
+    <!--start testimonial area-->
+    <section class="testimonial-area two">
+        <div class="container">
+            <div class="row">
+                <!--start sec-heading-->
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="sec-heading text-center">
+                        <h4>testimonial</h4>
+                        <h2>What Our Investors Say</h2>
+                    </div>
+                </div>
+                <!--end sec-heading-->
+            </div>
+            <div class="testi-carousel owl-carousel owl-loaded owl-drag">
+                <!--start testimonial single-->
+                
+                <!--end testimonial single-->
+                <!--start testimonial single-->
+                
+                <!--end testimonial single-->
+                <!--start testimonial single-->
+                
+                <!--end testimonial single-->
+                <!--start testimonial single-->
+                
+                <!--end testimonial single-->
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1239px, 0px, 0px); transition: all 0s ease 0s; width: 4134px;"><div class="owl-item cloned" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>I've been in the investment game for years, and Spring Global stands out. Their
+                            personalized
+                            support and diversified
+                            portfolios have not only yielded impressive returns but also provided peace of mind.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial1.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Mark Ramirez</h4>
+                            <h6>Seasoned Investor</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>As a newcomer to crypto, I was skeptical. However, Spring Global's user-friendly platform
+                            and
+                            patient guidance helped me
+                            navigate the world of digital assets. I'm already seeing exciting growth!</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial2.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Emily Chen</h4>
+                            <h6>Newbie Investor</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>I thrive on calculated risks, and Spring Global's expert insights have given me the edge
+                            I
+                            crave. Their accurate
+                            predictions and market analysis have enabled me to make bold moves with confidence.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial3.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>John Collins</h4>
+                            <h6>Risk Taker</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>Spring Global has transformed my approach to investing. Their insights are spot-on, and
+                            I've
+                            seen remarkable growth in
+                            my portfolio since joining. They've truly unlocked the potential of crypto for me.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial4.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Sarah Thompson</h4>
+                            <h6>Crypto Enthusiast</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>I've been in the investment game for years, and Spring Global stands out. Their
+                            personalized
+                            support and diversified
+                            portfolios have not only yielded impressive returns but also provided peace of mind.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial1.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Mark Ramirez</h4>
+                            <h6>Seasoned Investor</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>As a newcomer to crypto, I was skeptical. However, Spring Global's user-friendly platform
+                            and
+                            patient guidance helped me
+                            navigate the world of digital assets. I'm already seeing exciting growth!</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial2.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Emily Chen</h4>
+                            <h6>Newbie Investor</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>I thrive on calculated risks, and Spring Global's expert insights have given me the edge
+                            I
+                            crave. Their accurate
+                            predictions and market analysis have enabled me to make bold moves with confidence.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial3.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>John Collins</h4>
+                            <h6>Risk Taker</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>Spring Global has transformed my approach to investing. Their insights are spot-on, and
+                            I've
+                            seen remarkable growth in
+                            my portfolio since joining. They've truly unlocked the potential of crypto for me.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial4.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Sarah Thompson</h4>
+                            <h6>Crypto Enthusiast</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>I've been in the investment game for years, and Spring Global stands out. Their
+                            personalized
+                            support and diversified
+                            portfolios have not only yielded impressive returns but also provided peace of mind.</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial1.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Mark Ramirez</h4>
+                            <h6>Seasoned Investor</h6>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 383.333px; margin-right: 30px;"><div class="testi-single two">
+                    <div class="testi-cont-inner">
+                        <div class="testi-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p>As a newcomer to crypto, I was skeptical. However, Spring Global's user-friendly platform
+                            and
+                            patient guidance helped me
+                            navigate the world of digital assets. I'm already seeing exciting growth!</p>
+                    </div>
+                    <div class="testi-client-info">
+                        <div class="testi-client-img">
+                            <img loading="lazy" src="https://springglobalcompany.com/assets/img/Testimonials/testimonial2.jpeg" alt="image">
+                        </div>
+                        <div class="testi-client-details">
+                            <h4>Emily Chen</h4>
+                            <h6>Newbie Investor</h6>
+                        </div>
+                    </div>
+                </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+        </div>
+    </section>
+    <!--end testimonial area-->
+
+    <!--start faq area-->
+    <section class="faq-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="faq-img">
+                        <img loading="lazy" src="https://springglobalcompany.com/assets/img/faqs/faqs.jpeg" class="img-fluid" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordian-cont-wrap d-table">
+                        <div class="d-table-cell align-middle">
+                            <!--start heading-->
+                            <div class="sec-heading">
+                                <h4>Popular Questions</h4>
+                                <h2>Frequently Asked Questions</h2>
+                            </div>
+                            <!--end heading-->
+                            <div id="accordion">
+                                <!--start faq single-->
+                                <div class="card active">
+                                    <div class="card-header active">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                            What is cryptocurrency and how does it work?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body current">
+                                            Cryptocurrency is a digital or virtual form of money that uses
+                                            cryptography
+                                            for secure transactions and control of new
+                                            units. It operates on blockchain technology, a decentralized and
+                                            transparent
+                                            ledger that records all transactions.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end faq single-->
+                                <!--start faq single-->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                            Why should I invest in cryptocurrency?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Cryptocurrency offers the potential for high returns and diversification
+                                            in
+                                            your investment portfolio. It's a rapidly
+                                            evolving market with various tokens, each catering to different use
+                                            cases
+                                            and technologies.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end faq single-->
+                                <!--start faq single-->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                            Is cryptocurrency investing risky?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Yes, like any investment, cryptocurrency carries risks. The value of
+                                            digital
+                                            assets can be highly volatile, and
+                                            investors should conduct thorough research and consider their risk
+                                            tolerance
+                                            before investing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end faq single-->
+                            <!--start faq single-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                        How can Spring Global help me succeed in crypto investments?
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Spring Global offers expert insights, diversified portfolios, personalized
+                                        support, and advanced security measures. Our
+                                        platform is designed to empower investors with the knowledge and tools
+                                        needed to
+                                        navigate the crypto market effectively.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end faq single-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end faq area-->
+
+    <!--start contact area-->
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-desc">
+                        <h2>Leave Us A Message</h2>
+                        <p>Feel free to drop us a message using the form,
+                            and our dedicated team will
+                            get back to you as soon as possible.</p>
+                    </div>
+
+                    <div class="contact-info-single">
+                        <div class="contact-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#C6853C" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-cont">
+                            <h3>Email Address :</h3>
+                            <p><a href="mailto:support@springglobalcompany.com">support@springglobalcompany.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-single">
+                        <div class="contact-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#C6853C" d="m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.045 15.045 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2.001 2.001 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-cont">
+                            <h3>Phone Number :</h3>
+                            <p><a href="tel:+14097537204">+14097537204</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-single">
+                        <div class="contact-icon">
+                            <svg width="30" height="30" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#C6853C" d="M8 0a5 5 0 0 0-5 5c0 5 5 11 5 11s5-6 5-11a5 5 0 0 0-5-5zm0 8.063a3.063 3.063 0 1 1 0-6.126a3.063 3.063 0 0 1 0 6.126zM6.063 5a1.938 1.938 0 1 1 3.876 0a1.938 1.938 0 0 1-3.876 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-cont">
+                            <h3>Our Location :</h3>
+                            <p>1941 Romines Mill Road Irving, TX 75062 Texas, United States</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        
+                        <form method="post" action="https://springglobalcompany.com/user/enquiry">
+                            <input type="hidden" name="_token" value="I5GA4uPD6QziXTu6nKMacMXoIXkoV4jiLmXXpXL7">
+                            <span class="text-danger">
+                                                            </span>
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required="" value="">
+
+                            <span class="text-danger">
+                                                            </span>
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required="" value="">
+
+                            <span class="text-danger">
+                                                            </span>
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="" value="">
+
+                            <span class="text-danger">
+                                                            </span>
+                            <textarea rows="4" name="message" placeholder="Write Your Message *" required="" class="form-control" value=""></textarea>
+
+
+                            <div class="submit-btn">
+                                <button type="submit">Submit Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end contact area-->
+
+    <a href="https://wa.me/14097537204?text=I'm%20interested%20in%20your%20services" id="whatsApp" title="whatsapp link" target="_blank">
+        <img loading="lazy" src="https://springglobalcompany.com/assets/img/whatsappLogo.png" alt="WhatsApp Logo">
+    </a>
+    <style>
+        #whatsApp {
+            display: inline-block;
+            position: fixed;
+            bottom: 0.7rem;
+            left: 1rem;
+            width: 70px;
+            height: 70px;
+            z-index: 99999;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        #whatsApp img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <!--start footer-area-->
+    <footer class="footer-area">
+        <!--start footer top area-->
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <!--start footer widget-->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-widget logo">
+                            <a href="/"><img loading="lazy" src="https://springglobalcompany.com/assets/img/logo/logo.png" alt="logo"></a>
+                            <div class="footer-about-description">
+                                <p>Spring Global is your premier destination for navigating the world of
+                                    cryptocurrency
+                                    investments, offering expert
+                                    insights, diverse portfolios, and unwavering support to empower your financial
+                                    journey.</p>
+                            </div>
+                            <h6>Follow Us</h6>
+                            <ul class="footer-social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end footer widget-->
+                    <!--start footer widget-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget footer-cat">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="/"><i class="fa fa-angle-right"></i> Home</a></li>
+                                <li><a href="/about"><i class="fa fa-angle-right"></i> About Us</a></li>
+                                <li><a href="/plans"><i class="fa fa-angle-right"></i> Investment</a></li>
+                                <li><a href="/faq"><i class="fa fa-angle-right"></i> FAQs</a></li>
+                                <li><a href="/contact"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end footer widget-->
+                    <!--start footer widget-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget footer-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <p class="m-0">1941 Romines Mill Road Irving, TX 75062 Texas, United States</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <p class="m-0"><a href="mailto:support@springglobalcompany.com">support@springglobalcompany.com</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <p class="m-0"><a href="tel:+14097537204">+14097537204</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end footer widget-->
+                </div>
+            </div>
+        </div>
+        <!--end footer top area-->
+        <!--start footer bottom-->
+        <div class="footer-bottom-area text-center">
+            <div class="container">
+                <p class="m-0">© Spring Global Investment 2023. All Rights Reserved</p>
+            </div>
+        </div>
+        <!--end footer bottom-->
+    </footer>
+    <!--end footer-->
+
+
+
+    <!-- ////////////// Script for language translator -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <style>
+        input:focus,
+        textarea:focus {
+            border: 2px solid #c6853c !important;
+            box-shadow: none !important;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+    <!--jQuery js-->
+    <script src="https://springglobalcompany.com/assets/js/jquery-3.3.1.min.js"></script>
+    <!--proper js-->
+    <script src="https://springglobalcompany.com/assets/js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="https://springglobalcompany.com/assets/js/bootstrap.min.js"></script>
+    <!--mainmenu js-->
+    <script src="https://springglobalcompany.com/assets/js/meanmenu.min.js"></script>
+    <!--counterup js-->
+    <script src="https://springglobalcompany.com/assets/js/counterup.min.js"></script>
+    <!--waypoints js-->
+    <script src="https://springglobalcompany.com/assets/js/waypoints.js"></script>
+    <!--magnic popup js-->
+    <script src="https://springglobalcompany.com/assets/js/magnific-popup.min.js"></script>
+    <!--owl carousel js-->
+    <script src="https://springglobalcompany.com/assets/js/owl.carousel.min.js"></script>
+    <!--syotimer js-->
+    <script src="https://springglobalcompany.com/assets/js/syotimer.min.js"></script>
+    <!--main js-->
+    <script src="https://springglobalcompany.com/assets/js/custom.js"></script>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            let ampm = hours >= 12 ? 'pm' : 'am';
+            hours %= 12;
+            hours = hours ? hours : 12;
+            const formattedHours = String(hours).padStart(2, '0'); // Adding leading zero
+
+            const timeString = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
+
+            $('#clock').text(timeString);
+        }
+
+        $(document).ready(function() {
+            updateClock();
+            setInterval(updateClock, 1000); // Update every second
+        });
+    </script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">この翻訳を評価してください</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">いただいたフィードバックは Google 翻訳の改善に役立てさせていただきます</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="良い翻訳" aria-label="良い翻訳" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="悪い翻訳" aria-label="悪い翻訳" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+
+
+
+
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;"></iframe><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="言語翻訳ウィジェット" style="visibility: visible; box-sizing: content-box; width: 1539px; height: 263px; display: none;"></iframe><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="言語翻訳ウィジェット" style="visibility: visible; box-sizing: content-box; width: 239px; height: 69px; display: none;"></iframe><div id="smartsupp-widget-container">  <div style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; animation: 300ms linear 150ms 1 normal both running __svelte_1161344228_0; width: 108px;" data-testid="widgetButtonFrame"><iframe id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;" allowfullscreen="" scrolling="no"></iframe></div>  </div></body></html>

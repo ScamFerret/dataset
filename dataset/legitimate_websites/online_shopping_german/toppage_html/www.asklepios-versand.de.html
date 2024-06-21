@@ -1,0 +1,1355 @@
+<!DOCTYPE html><html lang="de" class="script webkit"><!--<![endif]--><head><script src="//code.etracker.com/a.js?et=tVKDnx"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/string" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/string.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/legacy" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/legacy.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/tools" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/tools.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/constants" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/constants.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/browser" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/browser.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/scope" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/json" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/json.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/base64" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/base64.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/inject-sec-token" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/ep/inject-sec-token.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$pub" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/require/$pub.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/data" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/disable-selection" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/disable-selection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/focusable" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/focusable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/form" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/ie" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/ie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/keycode" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/keycode.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/labels" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/labels.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/jquery-1-7" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/jquery-1-7.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/plugin" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/plugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/safe-active-element" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/safe-active-element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/safe-blur" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/safe-blur.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/scroll-parent" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/scroll-parent.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/tabbable" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/tabbable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/unique-id" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/unique-id.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/version" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/version.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/mouse" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/mouse.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/dialog" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/dialog.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/tabs" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/slider" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/slider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/cookie" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="class" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/mime" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/mime.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$dict" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/require/$dict.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$tmpl" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/require/$tmpl.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/ui/core" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/ep/ui/core.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/support" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/support.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/load" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/event/special/load.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/touch" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/event/special/touch.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/version" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/version.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/ui/validate" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/ep/ui/validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/storage" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/de_epages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages/remotesearch/ui/suggest" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/de_epages/remotesearch/ui/suggest.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$ready" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/require/$ready.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages/product/inc/energylabel" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/de_epages/product/inc/energylabel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/utf8" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/util/utf8.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/button" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/draggable" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/draggable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/resizable" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/escape-selector" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/escape-selector.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/resizable" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/button" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/draggable" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/draggable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/controlgroup" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/controlgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/checkboxradio" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/checkboxradio.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/controlgroup" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/controlgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/checkboxradio" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/widgets/checkboxradio.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/form-reset-mixin" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/jquery/ui/form-reset-mixin.js"></script><base href="https://www.asklepios-versand.de/epages/es517726.sf/de_DE/">
+
+    <title>Asklepios - Versand -</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+
+
+
+    <meta charset="utf-8">
+
+
+
+<script type="text/javascript" src="https://www.asklepios-versand.de/epages/es517726.sf/de_DE/?ViewAction=SF-ViewJQueryConfig&amp;ObjectID=35082389&amp;CurrencyID=EUR&amp;CacheName=HostEurope-7.92.0-0"></script>
+
+
+<script type="text/javascript">
+
+(function(require){
+
+function config(a,b){config._(config.c[a]||(config.c[a]={}),b)}config.c=require.config=require.config||{};config._=function(a,b){for(var c in b)b[c]instanceof Object?config._(a[c]||(a[c]={}),b[c]):a[c]=b[c]};
+
+
+config("jquery/canvas/canvastext", {
+  fontRoot: ["", "WebRoot", "HostEurope", "44B2", "94FC", "441B", "D3DC", "1B28", "50ED", "8980", "CEC9"].join("/")
+});
+
+config("ep", {
+  baseUrl: ["https\u003A", "", "www\u002Easklepios-versand\u002Ede", "epages", "es517726\u002Esf", "de_DE", ""].join("/"),
+  
+  objectId: '35082389',
+  viewAction: 'View',
+  storeFrontUrl: ["https\u003A", "", "www\u002Easklepios-versand\u002Ede", "epages", "es517726\u002Esf"].join("/"),
+  requestProtocolAndServer: 'https\u003A\u002F\u002Fwww\u002Easklepios-versand\u002Ede',
+  webUrj: ["http\u003A", "", "www\u002Easklepios-versand\u002Ede", "epages", "es517726\u002Esf"].join("/"),
+  webUrlSsl: ["https\u003A", "", "www\u002Easklepios-versand\u002Ede", "epages", "es517726\u002Esf"].join("/"),
+  google: {
+    
+  }
+});
+
+}(require));
+</script>
+
+<link type="text/css" href="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/package-sf.css" rel="stylesheet">
+
+<script type="text/javascript" src="/WebRoot/StoreTypes/7.92.0/HostEurope/lib-min/package-sf.js"></script>
+
+
+
+<script type="text/javascript">
+    var jq = jQuery.noConflict();
+</script>
+<script type="text/javascript">
+    require(["jquery/metaparse", "de_epages/design/inc/sf-initialize"]);
+
+    
+      
+    require(["de_epages/externalcontent/dojogadgetfix"]);
+    
+
+    require(["ep/inject-sec-token"], function (ep) {
+        ep.injectSecToken();
+    });
+
+    
+</script>
+<script type="text/javascript">
+window.offscreenBuffering = true;
+</script>
+
+
+  
+    
+    
+      
+        <script type="text/javascript">
+  jQuery.ready(function() {
+    try {
+      // this refers to window._gaq
+      _gaq = window._gaq || [];
+      
+      var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+      
+      _gaq.push(['_setAccount', 'UA-3214564-5']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_gat._anonymizeIp']);
+    
+      _gaq.push(['_trackPageview',["", "Shops", "es517726", "HomeSite"].join("/") ]);
+    
+    } catch(err) {
+      console.warn("warning: error accessing google analytics API", err);
+    }
+  });
+</script>
+
+      
+      <script type="text/javascript">//<![CDATA[
+  jQuery.ready(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src =  'https://ssl'  + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  });
+
+//]]></script>
+      
+
+<script type="text/javascript">
+jQuery.ready('jQuery.i18n', function ($) {
+  var isActive = {},
+      $gadgets = $('.ep-gadget'),
+      $otherbuttonsDivs,
+      languageMap = {
+        de_CH : 'de_DE',
+        de_AT : 'de_DE',
+        de_LU : 'de_DE',
+        de_BE : 'de_DE',
+        en_CH : 'en_GB',
+        fr_BE : 'fr_FR',
+        fr_CH : 'fr_FR',
+        fr_LU : 'fr_FR',
+        es_AR : 'es_ES',
+        es_BO : 'es_ES',
+        es_CO : 'es_ES',
+        es_US : 'es_ES',
+        it_CH : 'it_IT',
+        nl_BE : 'nl_NL',
+        ru_UA : 'ru_RU'
+      },
+      region = $.i18n.settings.region.replace(/-/, '_');
+
+  if (languageMap[region]) {
+    region = languageMap[region];
+  }
+
+
+  $otherbuttonsDivs = $gadgets.filter(function () {
+    var data = $(this).data('epGadget');
+    // Set *isActive* properties.
+    data && (isActive[data.alias] = true);
+    // Filter *otherbuttons*.
+    return (data.alias === 'otherbuttons');
+  });
+
+  // Facebook.
+  if (isActive['facebook']) {
+    window.fbAsyncInit = function () {
+      FB.init();
+    };
+    $.ajax({
+      dataType : 'script',
+      url : '//connect.facebook.net/' + region + '/all.js',
+      cache : true
+    }).done(function () {
+      // Like.
+      FB.Event.subscribe('edge.create', function (targetUrl) {
+        _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+      });
+      // Unlike.
+      FB.Event.subscribe('edge.remove', function (targetUrl) {
+        _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+      });
+      // Share.
+      FB.Event.subscribe('message.send', function (targetUrl) {
+        _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+      });
+    });
+  }
+
+  // Twitter.
+  if (isActive['twitter']) {
+    var regex = new RegExp('[\\?&#]' + 'url' + '=([^&#]*)');
+    $.ajax({
+      dataType : 'script',
+      url : '//platform.twitter.com/widgets.js',
+      cache : true
+    }).done(function () {
+      twttr.ready(function (twttr) {
+        // Tweet.
+        twttr.events.bind('tweet', function (event) {
+          var targetUrl = '';
+          if (event.target && event.target.nodeName == 'IFRAME') {
+            var params = regex.exec(event.target.src);
+            params = params || [0,''];
+            _gaq.push(['_trackSocial', 'twitter', 'tweet', unescape(params[1])]);
+          }
+        });
+        // Follow.
+        twttr.events.bind('follow', function (event) {
+          _gaq.push(['_trackSocial', 'twitter', 'follow', event.data.user_id]);
+        });
+      });
+    });
+  }
+
+  // Otherbuttons.
+  if (isActive['otherbuttons']) {
+    $otherbuttonsDivs.on('click', 'img', function (event) {
+      _gaq.push(['_trackSocial', event.target && event.target.alt, 'click']);
+    });
+  }
+});
+</script>
+
+    
+    
+  
+
+
+
+
+
+
+    <meta property="og:image" content="https://www.asklepios-versand.de/WebRoot/HostEurope/Shops/es517726/MediaGallery/LogoNEU_klein.gif">
+    <meta property="og:image:alt" content="Asklepios - Versand">
+    <meta property="og:title" content="Asklepios - Versand">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:description" content="">
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/WebRoot/HostEurope/Shops/es517726/MediaGallery/favicon.ico">
+
+
+
+    <meta name="description" content="Naturheilkunde-Produkte: Ohrkerzen, Rasterbrillen, Akkupunktur, Baunscheidtieren, Moxa, Wild Yam für Wechseljahrsbeschwerden, Zapper,">
+
+
+
+
+  
+    <link rel="canonical" href="https://www.asklepios-versand.de/">
+    
+    
+  
+
+
+
+
+
+  <link href="/WebRoot/HostEurope/Shops/es517726/Styles/Wedding/StorefrontStyle_418.css" rel="stylesheet" type="text/css">
+
+  
+
+  
+    <!--[if IE]>
+    <link href="/WebRoot/StoreTypes/7.92.0/HostEurope/lib/de_epages/design/style-ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <style type="text/css">
+      /* if IE 10 */
+      @import url('/WebRoot/StoreTypes/7.92.0/HostEurope/lib/de_epages/design/style-ie.css') screen and (-ms-high-contrast: active), (-ms-high-contrast: none);
+    </style>
+
+
+
+
+
+  
+<script type="text/javascript">
+try{
+  window.onerror = window.onerrorbak;
+}
+catch(e){
+}
+</script>
+  
+<!-- Begin: User-defined HTML Head area -->
+
+  <meta name="google-site-verification" content="i2szsG9XzVRC5kD-6DIOzB7yY2VxKGT0h7yytEOgip8">
+
+<!-- End: User-defined HTML Head area -->
+<script type="text/javascript">
+
+(function(win){
+  if( !jQuery.fn.jquerysdk ){
+    jQuery.noConflict(true);
+
+    var $ = jQuery,
+      noConflict = $.config.noConflict;
+
+    if( !noConflict ){
+      win.$ = $;
+    }
+    else if( typeof noConflict == 'string' ){
+      win[ noConflict ] = $;
+    }
+  }
+  
+    try{
+      win.onerror = function() {
+        return true;
+      };
+    }
+    catch(e){
+    }
+  
+})(window);
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+
+</head>
+
+    
+  
+    
+  
+
+<body class="start-page " data-esf-rdy="1">
+
+
+
+
+
+
+
+  
+    
+    <div class="Layout1 GeneralLayout Div">
+
+ 
+ 
+  <div class="Header HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer"></div>
+  
+  
+
+
+    </div>
+  </div>
+  <div class="NavBarTop HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer"><a href="?ObjectPath=/Shops/es517726/Categories" class="NavelementIcon NavBarElement0">
+  <i class="Icon HomeIcon" title="Startseite"></i>
+</a>
+<div class="NavigationElement Active  NavBarElement1"><a href="?ObjectPath=/Shops/es517726/Categories">Startseite</a></div></div>
+  
+  
+
+
+    </div>
+  </div>
+ 
+  <div class="Middle">
+ 
+  
+    <!--[if IE 7]><span id="NavBarLeftFix"></span><![endif]-->
+    <div class="NavBarLeft VerticalNavBar">
+      
+<div class="PropertyContainer">
+  <div class="SizeContainer">
+
+
+
+
+
+ 
+
+<div class="NavBarElement0 BasketBox NavElementIcon ">
+
+  
+    <span>
+      <img src="/WebRoot/StoreTypes/7.92.0/HostEurope/SF/Icon/BusinessSymbols/ico_l_basket.png" class="FloatLeft" alt="Warenkorb">
+    </span>
+  
+
+  
+    <span>Ihr Warenkorb ist leer.</span>
+  
+
+  
+
+</div>
+
+
+
+  
+
+<div class="ContextBox SearchBox NavBarElement1" id="NavElement_71845008">
+  <div class="BoxContainer">
+    <div class="ContextBoxHead">
+      <span>Produktsuche</span>
+    </div>
+
+  
+    
+      
+    
+  
+    
+
+  
+
+
+
+
+  <form class="ep-js" data-js="" id="RemoteSearch1" action="?" method="get" data-esf-rdy="1">
+  <input type="hidden" name="ObjectID" value="35082389">
+  <input type="hidden" name="ViewAction" value="FacetedSearchProducts">
+    <div class="ContextBoxBody">
+        <div class="Entry">
+            <div class="InputField SearchForm  vertical-search">
+                <input class="Search ep-uiInput ep-uiInput-text ep-uiValidate" type="text" maxlength="255" name="SearchString" id="RemoteSearchSuggest6612C7E60A0C05BAEC9B" placeholder="Suchen nach" autocomplete="off"><input type="hidden">
+                <button class="search-button" name="SearchButton" type="submit" title="Suche starten">
+                  <span class="ep-sprite ep-sprite-s ep-uiInput-buttonSpriteOnly Icon SearchIcon"></span>
+                </button>
+            </div>
+            <script type="text/javascript">
+            jQuery.ready("de_epages.remotesearch.ui.suggest",function($){
+              de_epages("#RemoteSearchSuggest6612C7E60A0C05BAEC9B")
+                .remotesearchUiSuggest({
+                  required: true,
+                  suggestUrl: "\u002Frs\u002Fproduct\u002FHostEurope\u002F4FF4DB9F-5D62-628E-AD67-50ED89610240\u002Fsuggest\u002Fjsonp\u003Flang\u003Dde",
+                  showError: false,
+                  navbar: "Left"
+                });
+            });
+            </script>
+        </div>
+    </div>
+  </form>
+
+
+
+
+
+  
+
+  </div>
+</div>
+
+
+
+
+
+<div class="ContextBox CategoriesBox NavBarElement2" id="NavElement_71845009">
+  <div class="BoxContainer">
+    <a class="ContextBoxHead" href="?ObjectPath=/Shops/es517726/Categories">
+      <span>Kategorien</span>
+    </a>
+    <div class="ContextBoxBody CategoriesTreeBox jstree jstree-0 jstree-focused jstree-classic" id="NavBarElementID71845009"><ul class="jstree-no-icons"><li class="Category-105997464 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Agni_Hotra"><ins class="jstree-icon">&nbsp;</ins>Agni Hotra  </a>
+      
+      
+        
+      
+      </li><li class="Category-35082455 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Category1"><ins class="jstree-icon">&nbsp;</ins>Moxibustion  </a>
+      
+      
+        
+      
+      </li><li class="Category-35899304 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Seite__Kategorie1"><ins class="jstree-icon">&nbsp;</ins>Baunscheidtieren  </a>
+      
+      
+        
+      
+      </li><li class="Category-35082456 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Category2"><ins class="jstree-icon">&nbsp;</ins>Ohrkerzen  </a>
+      
+      
+        
+      
+      </li><li class="Category-35082457 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Category3"><ins class="jstree-icon">&nbsp;</ins>Rasterbrillen  </a>
+      
+      
+        
+      
+      </li><li class="Category-35750365 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Seite__Kategorie"><ins class="jstree-icon">&nbsp;</ins>Für die Gesundheit  </a>
+      
+      
+        
+      
+      </li><li class="Category-36177996 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Erdstrahlen"><ins class="jstree-icon">&nbsp;</ins>Entstörung  </a>
+      
+      
+        
+      
+      </li><li class="Category-36707766 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/%22Zapper%20und%20Magnetfeldtherapie%22"><ins class="jstree-icon">&nbsp;</ins>Zapper und Magnetfeldtherapie  </a>
+      
+      
+        
+      
+      </li><li class="Category-84738461 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/wirkungsvoller_Schmuck"><ins class="jstree-icon">&nbsp;</ins>wirkungsvoller Schmuck  </a>
+      
+      
+        
+      
+      </li><li class="Category-78481224 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Akupunktur"><ins class="jstree-icon">&nbsp;</ins>Akupunktur  </a>
+      
+      
+        
+      
+      </li><li class="Category-84738002 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/%22Interessante%20B%C3%BCcher%22"><ins class="jstree-icon">&nbsp;</ins>Interessante Bücher  </a>
+      
+      
+        
+      
+      </li><li class="Category-84738305 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Wasser"><ins class="jstree-icon">&nbsp;</ins>Wasser  </a>
+      
+      
+        
+      
+      </li><li class="Category-103371889 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Fuer_Ihr_Tier"><ins class="jstree-icon">&nbsp;</ins>Für Ihr Tier  </a>
+      
+      
+        
+      
+      </li><li class="Category-35082414 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/CustomerInformation"><ins class="jstree-icon">&nbsp;</ins>Kundeninformationen  </a>
+      
+      
+        
+      
+      </li><li class="Category-102059394 jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Formular"><ins class="jstree-icon">&nbsp;</ins>Kontakt  </a>
+      
+      
+        
+      
+      </li><li class="Category-102092091 jstree-last jstree-leaf"><ins class="jstree-icon">&nbsp;</ins>
+
+      
+        <a href="?ObjectPath=/Shops/es517726/Categories/Zahlungsmethoden"><ins class="jstree-icon">&nbsp;</ins>Zahlungsmethoden  </a>
+      
+      
+        
+      
+      </li></ul></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+require([
+    'ep',
+    'jquery/jstree',
+    'jquery/jstree/themes',
+    'jquery/jstree/html_data',
+
+    "$ready!"
+], function ($, jstree, themes, html_data) {
+
+  var treeElem = $("#"+"NavBarElementID71845009");
+
+  if( treeElem.has('ul').length ){
+    treeElem.jstree({
+      "core": {
+        "initially_open": [
+          "SitemapTreeRootNode"
+        ],
+        "animation": !(document.all && !document.querySelector)
+      },
+      "plugins": [
+        "themes",
+        "html_data"
+      ],
+      "themes" : {
+        "theme" : "classic",
+        "dots" : true,
+        "icons" : false
+      },
+      "html_data": {
+        "data": treeElem.html(),
+        "ajax": {
+          "url": ep.config.baseUrl,
+          "data": function( elem ){
+            return {
+                "ViewAction":	"ViewSubCategoriesSnipplet",
+                "ObjectID":		(/(?:^|\s*)Category-(\d+)(?:\s*|$)/).exec( elem.attr('class') )[1],
+                "_":			"1712506854"
+              }
+          }
+        }
+      }
+    });
+
+    // manipulate events "before" standard routines are executed
+    treeElem.on("before.jstree", function(e, data){
+      // if open_node event is fired
+      if(data.func === "open_node"){
+        var $toggleLink = data.args[0].children('a[data-not_allowed]');
+        // if a link was clicked and the user has not the permissions to follow it (data-not_allowed="1")
+        if($toggleLink.length && ($toggleLink.data('not_allowed')===1)){
+          e.stopImmediatePropagation();
+          return false;
+        }
+      }
+    });
+  }
+});
+// ]]>
+</script>
+
+
+  <div class="NavigationElement NavBarElement3 ">
+    <a rel="nofollow" class="Action " href="https://www.asklepios-versand.de/epages/es517726.sf/de_DE/?ObjectPath=/Shops/es517726&amp;ViewAction=ViewMyAccount&amp;LastViewAction=ViewMyAccount&amp;HideNotice=1">Anmelden</a>
+  </div>
+
+
+
+<div class="NavBarElement4 NormalWhiteSpace">
+  <div class="eKomiWidgetNavElement NavigationElement">
+    
+    <div class="eKomiRatingWrapper " style="width: 170px;">
+      <a id="eKomiRatingContainer" class="eKomiRatingContainer" href="https://www.ekomi.de/bewertungen-asklepios-versand.html" target="eKomiRating" rel="nofollow" title="inactive" style="width: 170px;">
+        <img class="eKomiRatingWidget" src="/WebRoot/HostEurope/Shops/es517726/eKomi/4032/widget.gif" alt="">
+        <span class="eKomiRatingMessage" id="eKomiRatingMessage" title="inactive" style="left: 5px; top: 55px; width: 162px; height: 55px;">
+            <span id="ekomiMessage" title="inactive">inactive</span>
+        </span>
+      </a>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+<script type="text/javascript">
+jQuery.ready({plugin: ['ep','ep.ajax']}, function($){
+  ep.ajax({
+    data: {
+            ViewAction : 'JSONGetEkomiRatingMessage'
+          },
+    dataType: "json",
+  }).done( function(jsonData)
+    {
+       jQuery('#ekomiMessage').html(jsonData.EkomiMessage);
+       jQuery('#ekomiMessage').attr('title',jsonData.EkomiMessage);
+       jQuery('#eKomiRatingMessage').attr('title',jsonData.EkomiMessage);
+       jQuery('#eKomiRatingContainer').attr('title',jsonData.EkomiMessage);
+    }
+  );
+  
+  // Below bugfix for: EPG-24320. When the widget is put in MBO as page element, for some reason (for the first time) the CSS rules, 
+	// which are created from eKomi TLEs, are created wrongly. This causes to display the widget not correctly. 
+	// Putting these style values from TLEs via javascript to solve the problem.	
+	jQuery('.eKomiRatingMessage').css({'left': '5px',
+                                     'top': '55px',
+                                     'width': '162px',     
+                                     'height': '55px'});
+	jQuery('.eKomiRatingContainer').css('width', '170px');
+	jQuery('.eKomiRatingWrapper').css('width', '170px');
+});
+</script>
+  </div>
+</div>
+
+    </div>
+  
+  
+ 
+    <!--[if IE 7]><span id="ContentAreaFix"></span><![endif]-->
+    <div class="ContentArea">
+      <div class="ContentAreaInner">
+        <div class="ContentAreaWrapper">
+          
+  
+
+
+  
+    
+  
+
+  
+    <hr class="Separator">
+  
+<div class="CategoryList">
+<div class="CategoryText"><h2><span><a class="attribute-value">Herzlich Willkommen! </a></span></h2>
+
+<p><strong>Hier finden Sie erprobte Naturheil</strong><strong style="font-size: 12px; line-height: 1.3;">kunde-Produkte.&nbsp;</strong></p>
+
+<p>Bei uns können Sie auch g<span style="font-family: sans-serif; font-size: 12px; line-height: 15.6000003814697px;">erne telefonisch bestellen: 08362-921525.</span></p></div>
+<hr class="Separator">
+      
+        <div class="CategoryList">
+          <table class="ListItemCategoryTable">
+            
+              <tbody><tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Agni_Hotra"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/5C93/B317/57C1/0E11/D190/50ED/8963/E0BB/AgnihotraPyramide_s.jpg" alt="Agni Hotra" title="Agni Hotra"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Agni_Hotra">Agni Hotra</a></h3>
+    <p>Hier finden Sie das nötige Zubehör für Ihre tägliche Agni Hotra Zeremonie. Außerdem auch interessante Bücher zu diesem Thema.&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Category1"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/Categories/Category1/../../MediaGallery/Categories/Category1/moxapfl_broschuere_list.jpg" alt="Moxibustion" title="Moxibustion"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Category1">Moxibustion</a></h3>
+    <p>
+	Hier finden Sie Moxa Produkte und erfahren mehr über die Moxibustion, eine Therapie die der der Akupunktur ähnlich ist.</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Seite__Kategorie1"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/502C/E9DD/8F0E/5B26/0423/50ED/8961/1488/100-88234_list.jpg" alt="Baunscheidtieren" title="Baunscheidtieren"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Seite__Kategorie1">Baunscheidtieren</a></h3>
+    <p><span style="color:#ff860c;">Hier finden Sie nur noch Restbestände zum Thema Baunscheidtieren.</span></p>
+
+<p>Auf Anfrage sind evtl. andere Artikel noch lieferbar. Bitte per email an: shop@asklepios-versand.de</p>
+
+<p>&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Category2"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/Categories/Category2/../../MediaGallery/Categories/Category2/Ohrkerze_list.jpg" alt="Ohrkerzen" title="Ohrkerzen"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Category2">Ohrkerzen</a></h3>
+    <p>Entspannung, Wellness und Gesundheit: Unsere hochwertigen Ohrkerzen sind in vielen Bereichen anwendbar.</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Category3"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/Categories/Category3/../../MediaGallery/Categories/Category3/raster_ganz_415-Y_list.jpg" alt="Rasterbrillen" title="Rasterbrillen"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Category3">Rasterbrillen</a></h3>
+    <p>Eine einfache Möglichkeit Ihre Augen zu trainieren und so die Sehkraft zu verbessern.</p>
+Eine Gesunde Alternative zur normalen Brille.
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Seite__Kategorie"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/5023/CA3C/F1B9/302C/D24D/50ED/8961/0BD8/mexwilyam_list.gif" alt="Für die Gesundheit" title="Für die Gesundheit"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Seite__Kategorie">Für die Gesundheit</a></h3>
+    <p>Mit unserer heutigen Ernährung und Lebensweise sind manche wichtige Vitamine, Mineralien oder Spurenelemente nur schlecht zu bekommen. Helfen Sie nach, mit unseren Algenprodukten. Mexican Wild Yam hat vor allem für Frauen viele positive Wirkungen.&nbsp;</p>
+
+<p>&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Erdstrahlen"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/5045/F350/5899/7D3A/5197/50ED/8961/2631/kopschina_erdstrahlen-krankheitsurs_list.jpg" alt="Entstörung" title="Entstörung"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Erdstrahlen">Entstörung</a></h3>
+    <p>Erdstrahlen, Handystrahlen und Elektrosmog können unsere Gesundheit schädigen und unser Wohlbefinden negativ beeinflussen.&nbsp;</p>
+
+<p>&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/%22Zapper%20und%20Magnetfeldtherapie%22"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/5064/4E97/891C/EAF7/42DB/50ED/8960/30DB/zapper_koffer1_list.jpg" alt="Zapper" title="Zapper"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/%22Zapper%20und%20Magnetfeldtherapie%22">Zapper</a></h3>
+    <p>Hier finden Sie das Gerät und Informationen zum Biofrequenzgenerator nach Dr. Hulda Clark.</p>
+<p>&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/wirkungsvoller_Schmuck"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/562A/3849/975E/E0C3/2485/50ED/8963/8661/Haftfolie_Blume_des_Lebens_m_s.jpg" alt="wirkungsvoller Schmuck" title="wirkungsvoller Schmuck"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/wirkungsvoller_Schmuck">wirkungsvoller Schmuck</a></h3>
+    <p>Das Schöne mit dem Nützlichen Verbinden. Das können Sie mit unserem wirkungsvollen Schmuck.&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Akupunktur"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/54E6/0DF8/7799/3654/1821/50ED/8965/7138/Akupunktur_s.JPG" alt="Akupunktur" title="Akupunktur"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Akupunktur">Akupunktur</a></h3>
+    <p>
+	Die Akupunktur ist eine traditionelle Behandlungsmethode, bei der durch einstechen mit feinen Nadeln Beschwerden gelindert werden können.&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/%22Interessante%20B%C3%BCcher%22"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/562A/3068/2CEC/02E1/F8E8/50ED/8965/719B/Schmert_ADE_s.JPG" alt="Interessante Bücher" title="Interessante Bücher"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/%22Interessante%20B%C3%BCcher%22">Interessante Bücher</a></h3>
+    <p>Hier finden sie Interessantes zum Thema Gesundheit - gesund werden und gesund bleiben. Unter anderem bei chronischen Schmerzen.&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Wasser"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/562A/3610/06E2/3CFB/4F1B/50ED/8964/254A/Kristallkaraffe_s.jpg" alt="Wasser" title="Wasser"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Wasser">Wasser</a></h3>
+    <p>Wasser - das wir es trinken ist sicher, wie wir es trinken kann unser wohlbefinden stark beeinflussen.&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="ImageArea"><a href="?ObjectPath=/Shops/es517726/Categories/Fuer_Ihr_Tier"><img class="CategoryImage" src="/WebRoot/HostEurope/Shops/es517726/5BA8/DD8F/2865/133D/5545/50ED/8965/4435/cat-1508613_1920_s.jpg" alt="Für Ihr Tier" title="Für Ihr Tier"></a></div>
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Fuer_Ihr_Tier">Für Ihr Tier</a></h3>
+    <p>Interessantes für Ihr Tier - Vom Kartenlegen zur Nahrungsergänzung.&nbsp;&nbsp;Diese Kategorie befindet sich noch im Aufbau, schreiben Sie uns gerne Ihre Ideen und Anregungen.&nbsp;</p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/CustomerInformation">Versandinformationen</a></h3>
+    <p></p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+              <tr>
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Formular">Kontakt</a></h3>
+    <p></p>
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              
+            
+              
+              <td class="HalfSize AlignTop">
+              
+<div class="ListItemCategory">
+  
+  <div class="InfoArea">
+    <h3><a href="?ObjectPath=/Shops/es517726/Categories/Zahlungsmethoden">Zahlungsmethoden</a></h3>
+    
+  </div>
+  
+  <div class="ClearBoth"></div>
+</div>
+
+              </td>
+              </tr>
+            
+            
+          </tbody></table>
+          <hr class="Separator">
+        </div>
+      
+</div>
+
+<div class="AlignRight"></div>
+
+
+
+
+
+        </div><!-- close .ContentAreaWrapper -->
+      </div><!-- close .ContentAreaInner -->
+    </div><!-- close .ContentArea -->
+  </div><!-- close .Middle -->
+  <div class="FooterContainer">
+  
+    <div class="NavBarBottom HorizontalNavBar">
+      <div class="PropertyContainer">
+        
+
+ 
+  
+  
+  <div class="SizeContainer"><div class="NavigationText">Asklepios - Versand -</div>
+</div>
+  
+  
+
+
+      </div>
+    </div>
+  
+  
+    <div class="Footer HorizontalNavBar">
+      <div class="PropertyContainer">
+        
+
+ 
+  
+  
+  <div class="SizeContainer">
+<div class="NavigationElement NavBarElement0 "><a href="?ObjectPath=/Shops/es517726/Categories/Imprint">Impressum</a></div>
+
+<div class="NavigationElement NavBarElement1 ">
+  <a rel="nofollow" href="?ObjectPath=/Shops/es517726/Categories/TermsAndConditions">AGB</a>
+</div>
+
+<div class="NavigationElement NavBarElement2 "><a rel="nofollow" href="?ObjectPath=/Shops/es517726/Categories/CustomerInformation">Kundeninformationen</a></div>
+
+<div class="NavigationElement NavBarElement3 ">
+  <a rel="nofollow" href="?ObjectPath=/Shops/es517726/Categories/PrivacyPolicy">Datenschutz</a>
+</div>
+
+
+</div>
+  
+  
+
+
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+<script type="text/javascript">
+require(["jquery", "util/storage", "$ready!"], function ($, storage) {
+  // remove all selected products on logout
+  var $LogoutNodes = $('a[href*="ChangeAction=Logout"]');
+  
+  $LogoutNodes.each(function (event){
+    $(this).on('click', function (event){
+      storage.sessionStorage('Product::ProductComparison', null);
+    });
+  });
+});
+</script><script type="text/javascript">
+require(['jquery', '$ready!'], function ($) {
+
+	var createGadgets = function(){
+
+		// Constants.
+		var gNodeType = 'div',
+			gClassName = 'ep-gadget',
+			gDataName = gClassName,
+			gFolder = 'ui',
+			secondClickBtn = ['facebook', 'twitter', 'otherbuttons'],
+			$gNodes,
+			googleMapsAPIKey = false;
+
+		// Transform gadget imgs to divs
+		$('img.' + gClassName).each(function (i, elem) {
+			var $elem = $(elem),
+				tmplElement = $('<div/>'),
+				replaceElement = $elem.parent('p');
+
+			// set/remove gadget-, class- and style-values/options
+			tmplElement
+				.data(gDataName, $elem.data(gDataName))
+				.attr({
+					'class': ($elem.attr('class') ? $elem.attr('class') : ''),
+					'style': ($elem.attr('style') ? $elem.attr('style').replace(/\s*?height:.*?;|\s*?background.*?:.*?;|\s*?display:.*?;|\s*?margin-bottom:.*?;|\s*?max-width:.*?;|\s*?width:.*?px;/g, '') : '')
+				});
+
+			// if parent paragraph element only contains the gadget-element => replace paragraph and gadget-element by gadget-div
+			if (replaceElement.length && replaceElement.children().length === 1 && replaceElement.text().replace(/\s|\n|\r/g, '') === '') {
+				replaceElement.replaceWith(tmplElement);
+			// if parent paragraph element contains more content => replace only gadget-element by gadget-div
+			} else {
+				$elem.replaceWith(tmplElement);
+			}
+		});
+
+		// Build gadgets in the gadget div
+		$gNodes = $(gNodeType + '.' + gClassName);
+
+		if ($gNodes.length) {
+			// Go go gadgets.
+			$gNodes.each(function () {
+				var $this = $(this),
+					data = $this.data(gDataName),
+					elem,
+					classButton = 'ep-2-click-button SocialWeb',
+					classButtonType;
+
+				data.options.googleMapsAPIKey = false;
+				if (data.options.type && data.options.type === "google") {
+				 	data.options.googleMapsAPIKey = googleMapsAPIKey;
+				}
+
+				// if no second click button is needed
+				if (secondClickBtn.indexOf(data.alias) === -1) {
+					require([['de_epages', data.cartridge, gFolder, data.alias].join('/')], function ($) {
+						$this[data.cartridge + gFolder.charAt(0).toUpperCase() + gFolder.slice(1) + data.alias.charAt(0).toUpperCase() + data.alias.slice(1)](data.options);
+						
+					});
+				} else {
+					// type of button (facebook, twitter ..)
+					classButtonType = 'ep-2-click-button-' + data.alias;
+					// add classes
+					$this.addClass(classButtonType + ' ' + classButton);
+					// add tooltip
+		 			$this.attr("title", "Aktivieren\u0020Sie\u0020mit\u0020einem\u0020Klick\u0020den\u0020Button\u002E\u0020Erst\u0020danach\u0020können\u0020Sie\u0020die\u0020Seite\u0020in\u0020den\u0020sozialen\u0020Netzwerken\u0020teilen\u002E\u0020Nach\u0020der\u0020Aktivierung\u0020werden\u0020Daten\u0020an\u0020Dritte\u0020übertragen\u002E");
+
+					// add span (contains the switch)
+					$this.html('<span></span>');
+
+					// add click-handler for 2-click-button
+					$this.one('click', function (evt) {
+						evt.preventDefault();
+						evt.stopPropagation();
+
+						var _this = $(this),
+							data = $this.data(gDataName),
+							elem = $('<div />');
+
+						elem[0].className = this.className;
+						elem.removeClass(classButtonType + ' ' + classButton);
+
+						require([['de_epages', data.cartridge, gFolder, data.alias].join('/')], function ($) {
+							// instantiate needed widget (facebook, twitter ...)
+							elem[data.cartridge + gFolder.charAt(0).toUpperCase() + gFolder.slice(1) + data.alias.charAt(0).toUpperCase() + data.alias.slice(1)](data.options);
+
+							
+
+							// replace 2-click-button with widget-element
+							_this.replaceWith(elem);
+						});
+					});
+				}
+
+			});
+		}
+	};
+
+	createGadgets();
+	$('body').on('updatepreview', createGadgets);
+
+});
+</script>
+
+<script>
+require([
+    'jquery',
+    'de_epages/product/inc/energylabel',
+
+    '$ready!'
+], function ($, energylabel) {
+    var energylabels = $('.energylabel-arrow');
+
+    energylabel.init({items: energylabels});
+
+    // re-initialize energy label modul after search results are loaded
+    $(document).on('facetssearch:loaded', function() {
+        energylabels = $('.energylabel-arrow');
+
+        energylabel.init({items: energylabels});
+    });
+});
+</script>
+
+
+  <!-- BEGIN etracker Tracklet 3.0 async -->
+<script type="text/javascript">
+(function () {
+  var et_init = function () {
+		var et = document.createElement('script');
+		et.src = '//code.etracker.com/a.js?et=tVKDnx';
+		var head = document.getElementsByTagName('head')[0];
+		head.insertBefore(et, head.firstChild);
+	};
+	window.addEventListener
+  	? window.addEventListener('load', et_init, false)
+    : window.attachEvent('onload', et_init);
+})();
+</script>
+<!-- etracker Tracklet END -->
+
+<!-- BEGIN etracker Tracklet 3.0 async Parameter -->
+<script type="text/javascript">
+function et_params() {
+    // etracker PARAMETER 3.0
+    et_pagename     = "__INDEX__HomeSite";
+    et_areas        = "";
+    et_ilevel       = 1;
+    et_url          = "http%3A//www.asklepios-versand.de/epages/es517726.sf";
+    et_tag          = "";
+    // etracker PARAMETER END
+    // etracker TARGET PARAMETER 3.0
+    
+    // etracker TARGET PARAMETER END
+    // etracker CAMPAIGN PARAMETER 3.0
+    
+    // etracker CAMPAIGN PARAMETER END
+}
+</script>
+<!-- etracker Tracklet END Parameter -->
+
+  <!-- etracker CODE NOSCRIPT 3.0 -->
+<noscript>
+
+<p><a href='https://www.etracker.de/app?et=tVKDnx'>
+<img style='border:0px;' alt='' src='https://www.etracker.de/cnt.php?et=tVKDnx&amp;v=3.0&amp;java=n&amp;et_easy=0&amp;et_pagename=__INDEX__HomeSite&amp;et_areas=&amp;et_ilevel=1&amp;et_target=,,,0&amp;et_lpage=&amp;et_trig=&amp;et_se=0&amp;et_cust=0&amp;et_basket=&amp;et_url=&amp;et_tag=&amp;et_organisation=&amp;et_demographic=' /></a></p>
+
+</noscript>
+<!-- etracker CODE NOSCRIPT END-->
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<ul style="display:none;" id="energylabel-imagelist" class="ep-facettedsearchenergylabel-imagelist"></ul></body></html>

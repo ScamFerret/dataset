@@ -1,0 +1,628 @@
+<!DOCTYPE html><html><head><title>
+	The Political Machine 2024
+</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-QBSNPMYSJB&amp;l=dataLayer&amp;cx=c"></script><script src="https://use.typekit.net/hou1zoa.js"></script>
+	<script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+	<link href="/css/reset.css" rel="stylesheet" type="text/css"><link href="/lib/lsb-lightbox/lsb.css" rel="stylesheet"><link href="/css/politicalmachine2024.css" rel="stylesheet" type="text/css"><link href="/css/stardocknav.css" rel="stylesheet" type="text/css"><link href="/css/jquery/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css">
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/smooth-scroll.js/smooth-scroll.min.js"></script>
+    <link href="/lib/slick/slick.css" rel="stylesheet"><link href="/lib/slick/slick-theme.css" rel="stylesheet"><link href="https://use.typekit.net/ahz3qky.css" rel="stylesheet">
+	<!-- Facebook FBML Tags -->
+	<meta name="title" content="The Political Machine 2024"><meta name="description" content="Win the hearts and minds of America’s voters and take the 2024 presidential election by storm in Stardock’s popular political strategy game."><link rel="image_src" href="https://www.stardock.com/images/social/1200x640/tpm2024_1200x640.jpg">
+    <!-- End Facebook FBML Tags -->
+	
+    <script src="/lib/infieldLabel/jquery.infieldLabel.min.js"></script>
+    <script>
+		(function ($) {
+			$(document).ready(function () {
+			    $('section.signup label').inFieldLabels();
+
+				(function InitEmailCollectionForms() {
+				    var signupRegion = $('.signup')[0];
+					var formRegion = $(signupRegion).find('div.form')[0];
+					var inputField = $(formRegion).find('input')[0];
+					var submitButton = $(formRegion).find('button')[0];
+
+					$(inputField).keypress(function (e) {
+						if (e.keyCode == 13)
+							$(submitButton).click();
+					});
+
+					$(submitButton).click(function (e) {
+						e.preventDefault();
+
+						var email = $(inputField).val();
+						var successRegion = $(signupRegion).find('div.success')[0];
+						var waitRegion = $(signupRegion).find('div.wait')[0];
+						var errorRegion = $(signupRegion).find('div.error')[0];
+
+						if (!IsEmail(email)) {
+							alert('Please enter a valid email address.');
+							return false;
+						}
+
+						var lists = new Array();
+						lists[0] = 37;
+
+						var params = {
+							email: email,
+							lists: lists
+						};
+
+						$.ajax({
+							type: 'POST',
+							url: 'https://www.stardock.com/accounts/ws/mailinglist.asmx/Add',
+							contentType: 'application/json; charset=utf-8',
+							dataType: 'json',
+							data: JSON.stringify(params),
+							success: function (response, status, xhr) {
+
+								if (response.d == 0) {
+									$(waitRegion).fadeOut(function () {
+										$(successRegion).find('.email_address').text(email);
+										$(successRegion).fadeIn();
+									});
+								} else {
+									$(waitRegion).fadeOut(function () {
+										$(errorRegion).fadeIn();
+									});
+								}
+							},
+							beforeSend: function () {
+								$(formRegion).hide();
+								$(waitRegion).show();
+							},
+							error: function (xhr, status, error) {
+								$(formRegion).fadeOut(function () {
+									$(errorRegion).fadeIn();
+								});
+							}
+						});
+
+					});
+
+					function IsEmail(email) {
+						var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+						return regex.test(email);
+					}
+				})();
+			});
+		})(jQuery);
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-191362-17"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-191362-17');
+	</script>
+
+	<script src="https://scripts.stardock.com/fsanalytics.min.js"></script>
+
+	
+		<script id="fsc-api" src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.2/fastspring-builder.min.js" type="text/javascript" data-storefront="stardock.onfastspring.com/popup-tpm" data-continuous="true" data-decorate-callback="fsDecorateURL" data-after-markup-callback="fsAfterMarkupCallback">
+		</script>
+	<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body>
+	<form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZIZyGn1pfqXtRqDftAaMEr_1NpIWICzE-wnJt_aPlZmKhuLSSA2&amp;t=637453888754849868" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvk2YjPIO9PY_oVjrTo3DaWNl8tX0S-6zqDcGwA5_vz-CFWJUhpeOwYBbKzcqYybXjUO5IVWbVC_RF7Ku5aQvNr8D5KcYNh-30eolm345i-Z9JLyVJ_1kRgsXfzCrcR6uY_cQ0rA1&amp;t=363be08" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8ONMcBWI1SUsa-raG-iUAqwqQiL_wJLNEk49MvkPnR_00SzjrF3QtsHEjQ7iYVjQmXVlkMV-gd4gnk4zo7aiKsaT0VP38m5DzSXDTbnmWkh49BuHMIPBX3ty4Z0KG0kwkdyHRHt41&amp;t=363be08" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987">
+</div>
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$_ScriptManager', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<main class="Site-content">
+			<div class="header-container">
+                <a id="nav-menu" href="#"><img src="/images/2016/TPM16_mobilenav_btn.jpg"></a>
+                <!--<input id="nav-trigger" type="checkbox" />
+                <div class="menu-icon" id="menu-icon">
+                    <label class="nav-trigger hamburger hamburger-one" for="nav-trigger"></label>
+                </div>-->
+                <div class="wrapper" id="navwrapper">
+                    <div class="stardock-nav">
+                        <div class="header-content">
+                            <a class="logo" href="https://www.stardock.com/" title="Stardock Home">
+                                <img alt="Stardock" src="//www.stardock.com/images/Stardock_icon_white.svg">
+                            </a>
+                            <!-- social media could go here -->
+                        </div>
+                        <nav>
+                            <h2 class="offscreen">Stardock.com Navigation</h2>
+                            <span>
+                                <a href="https://www.stardock.com/products/">Software</a>
+                                <span class="submenu">
+                                    <a href="https://www.stardock.com/products/odnt/" style="background-image: url('//www.stardock.com/images/sd2017/odnt.png')">
+                                        <strong>Object Desktop</strong>
+                                        <span>Your complete Windows customization suite.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/start11/" style="background-image: url('//www.stardock.com/images/sd2017/start11.png')">
+                                        <strong>Start11</strong>
+                                        <span>Customize the Start Menu and Taskbar in Windows 10/11.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/fences4/" style="background-image: url('//www.stardock.com/images/sd2017/fences4.png')">
+                                        <strong>Fences 4</strong>
+                                        <span>Automatically organize your desktop apps, files, and folders on Windows 10 and 11.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/deskscapes/" style="background-image: url('//www.stardock.com/images/sd2017/deskscapes.png')">
+                                        <strong>DeskScapes</strong>
+                                        <span>Personalize your desktop wallpaper with animated pictures and video.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/multiplicity/" style="background-image: url('//www.stardock.com/images/sd2017/multiplicity.png')">
+                                        <strong>Multiplicity</strong>
+                                        <span>Connect multiple PCs with one keyboard and mouse.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/groupy/" style="background-image: url('//www.stardock.com/images/sd2017/groupy2.png')">
+                                        <strong>Groupy 2</strong>
+                                        <span>Organize multiple applications into grouped tabs on your Windows desktop.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/cursorfx/" style="background-image:url('//www.stardock.com/images/sd2017/cfx.png')">
+                                        <strong>CursorFX</strong>
+                                        <span>Customize your Windows cursor and create your own.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/spacemonger/" style="background-image:url('//www.stardock.com/images/sd2017/SpaceMonger.png')">
+                                        <strong>SpaceMonger</strong>
+                                        <span>Quickly free up storage space on PCs and shared-networks.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/windowblinds/" style="background-image:url('//www.stardock.com/images/sd2017/wb11.png')">
+                                        <strong>WindowBlinds 11</strong>
+                                        <span>Customize the look and feel of your taskbar, window frames, and more.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/products/">
+                                        <strong>View All Software Products</strong>
+                                        <span>Discover our productivity and customization tools.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/corporatesolutions/">
+                                        <strong>Corporate Software Solutions</strong>
+                                        <span>Increase productivity, design intelligent controls and reinforce branding with our enterprise products.</span>
+                                    </a>
+                                </span>
+                            </span>
+                            <span>
+                                <a href="https://www.stardock.com/games/store">Games</a>
+                                <span class="submenu">
+                                    <a href="https://www.galciv4.com/" style="background-image:url('//www.stardock.com/images/sd2017/gc4.png')">
+                                        <strong>Galactic Civilizations</strong>
+                                        <span>Discover new adventures and rule the galaxy your way in this 4X space strategy game.</span>
+                                    </a>
+                                    <a href="https://www.sinsofasolarempire.com/" style="background-image:url('//www.stardock.com/images/sd2017/sins.png')">
+                                        <strong>Sins of a Solar Empire</strong>
+                                        <span>Real-time strategy. Unrivaled scale.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/games/starcontrol/" style="background-image:url('//www.stardock.com/images/sd2017/sc.png')">
+                                        <strong>Star Control</strong>
+                                        <span>The space action/adventure classic returns.</span>
+                                    </a>
+                                    <a href="https://www.politicalmachine.com/" style="background-image:url('//www.stardock.com/images/sd2017/tpm.png')">
+                                        <strong>The Political Machine 2024</strong>
+                                        <span>Win the hearts and minds of America's voters.</span>
+                                    </a>
+                                    <a href="https://www.ashesofthesingularity.com/" style="background-image:url('//www.stardock.com/images/sd2017/ashes.png')">
+                                        <strong>Ashes of the Singularity</strong>
+                                        <span>Massive-scale warfare in an epic RTS.</span>
+                                    </a>
+                                    <a href="https://www.offworldgame.com/" style="background-image:url('//www.stardock.com/images/sd2017/otc.png')">
+                                        <strong>Offworld Trading Company</strong>
+                                        <span>Save humanity. Turn a profit. Preferably both.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/games/products">
+                                        <strong>All Games</strong>
+                                        <span>Check out our complete catalog of award-winning games.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/games/">
+                                        <strong>Community</strong>
+                                        <span>Stay up-to-date with game news and dev journals.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/metaverse/">
+                                        <strong>Metaverse</strong>
+                                        <span>See how you rank against other players in your favorite games.</span>
+                                    </a>
+                                    <a href="https://www.stardock.com/wikis/">
+                                        <strong>Wikis</strong>
+                                        <span>Immerse yourself in game lore, tutorials, and more.</span>
+                                    </a>
+                                </span>
+                            </span>
+                            <span>
+                                <a href="https://www.stardock.com/games/">Community</a>
+                                <span class="submenu2">
+                                    <a href="https://forums.stardock.com/forum/175">
+                                        Software
+                                    </a>
+                                    <a href="https://forums.stardock.net/forum/171">
+                                        Games
+                                    </a>
+                                    <a href="https://discord.gg/stardock">
+                                        Discord
+                                    </a>
+                                    <a href="https://www.stardock.com/wikis/">
+                                        Wikis
+                                    </a>
+                                    <a href="https://www.wincustomize.com/">
+                                        WinCustomize
+                                    </a>
+                                </span>
+                            </span>
+                            <span><a href="https://forums.stardock.com/forum/1037">News</a></span>
+                            <span><a href="https://www.stardock.com/blog/">Blog</a></span>
+                            <span><a href="https://www.stardock.com/support/">Support</a></span>
+                        </nav>
+                        <div class="account-nav">
+                            <div class="icons">
+                                
+                                        <a class="login-trigger" href="/signin-oidc" title="Login or Create Account">
+                                            <img alt="Account" src="//www.stardock.com/games/images/nav/user.svg">
+                                        </a>
+                                    
+                                    <a href="https://www.stardock.com/search" id="search-trigger" title="Search Forums">
+                                        <img alt="Search" src="//www.stardock.com/games/images/nav/magnifying_glass.svg">
+                                    </a>
+                                    <div class="menu" id="search-form">
+                                        <input id="search-text" placeholder="Search Stardock" type="text">
+                                        <button>Search</button>
+                                    </div>
+                                
+                            </div>
+
+                            <nav class="user menu" id="account-menu">
+                                
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobilenav">
+                    <ul>
+			            <li><a href="/"><span>Home</span></a></li>
+                        <li><a data-scroll="" href="/#game"><span>Game</span></a></li>
+                        <li><a href="https://forums.politicalmachine.com/"><span>Forums</span></a></li>
+                        <li><a data-scroll="" href="/#news"><span>News</span></a></li>
+                        <li><a href="/blog"><span>Blog</span></a></li>
+                        <li><a data-scroll="" href="/#screenshots"><span>Screenshots</span></a></li>
+                        <li class="purchase"><a href="/#download"><span>Pre-Order</span></a></li>
+		            </ul>
+	            </div>
+                <header>
+                    <nav class="navigationContainer" id="navigationContainer">
+					    <ul>
+						    <li style="padding: 0; background-color: #174498; border-right: 3px solid #d5d5d5;"> <img src="/images/2024/nav-border-starsonly.png"></li>
+                            <li><a href="/"><span>Home</span></a></li>
+                            <li class="stars">★</li>
+						    <li><a data-scroll="" href="/#game"><span>Game</span></a></li>
+                            <li class="stars">★</li>
+                            <li><a href="https://forums.politicalmachine.com/"><span>Forums</span></a></li>
+                            <li class="stars">★</li>
+						    <li><a data-scroll="" href="/#news"><span>News</span></a></li>
+                            <li class="stars">★</li>
+                            <li><a href="/blog"><span>Blog</span></a></li>
+                            <li class="stars">★</li>
+                            <li><a data-scroll="" href="/#screenshots"><span>Screenshots</span></a></li>
+                            <li class="purchase"><a href="/#download"><span>Pre-Order</span></a></li>
+                            <li style="padding: 0; background-color: #174498; border-left: 3px solid #d5d5d5;"> <img src="/images/2024/nav-border-starsonly.png"></li>
+					    </ul>
+				    </nav>
+			    </header>
+            </div>
+			
+	<section class="logo2"><img src="https://www.stardock.com/thepoliticalmachine/2024/background/topbanner.jpg"></section>
+	<section class="TPM2024" id="TPM2024">
+		<div>
+			
+            <section class="top">
+                <aside class="availability" id="download">
+                    <h3>Pre-order Now: Join the Playtest</h3>
+                    <hr class="blueline">
+                    <p class="direct">Pre-purchasers can now join the <a href="/playtest">playtest</a> and help shape the game before its full release. Bonus: get the Cabinet of Curiosities DLC free when you pre-order The Political Machine 2024.</p>
+					<div class="options">
+						<div>
+                            <a class="button tpm purchase fsc" data-affiliate="" data-fsc-item-path-value="the-political-machine-2024" href="#">PRE-ORDER <strike class="strike" data-fsc-item-path="the-political-machine-2024" data-fsc-item-pricetotal="" data-fsc-smartdisplay="" style="display: none">¥2,300</strike><span class="price" data-fsc-item-path="the-political-machine-2024" data-fsc-item-unitprice="">¥2,300</span></a>
+                        </div>
+					</div>
+                    <p>Also available at:</p>
+                    <div class="disticons">
+                        <a class="fsc" data-affiliate="" data-fsc-item-path-value="the-political-machine-2024" href="#"><img src="https://www.stardock.com/images/Stardock_icon_white.svg" width="32"></a>
+                        <a href="https://steam.gs/l/0zx5g/tpmhomepage"><img src="https://www.stardock.com/thepoliticalmachine/2024/logo_steam.svg" width="24"></a>
+                    </div>
+                    <p class="playtest">Pre-order customers, <a href="/playtest">get into the playtest here</a>.</p>
+                </aside>
+                <aside class="availability" id="game">
+                    <h3>About the Game</h3>
+                    <hr class="blueline">
+                    <p class="description">Run for President in the latest edition of Stardock’s popular political strategy game series, The Political Machine 2024. Choose from a roster of existing candidates including Joe Biden, Donald Trump, Dean Phillips and Nikki Haley or create your own using the game’s candidate creation workshop.</p>
+                   <!-- <a class="trailer video" href="https://www.youtube.com/watch?v=ScMzIvxBSi4&autoplay=1">
+					    <img alt="" height="246" src="/images/2016/video_placeholder.jpg" width="443">
+					    <div class="overlay"></div>
+				    </a>-->
+                </aside>
+            </section>
+			<section class="features">
+				<h2>Game Features</h2>
+                <div class="points">
+					<ul>
+						<li><span>Choose Solo or Multiplayer Gameplay</span> – Play single player against the computer or multiplayer against other human opponents (multiplayer feature coming soon).</li>
+                        <li><span>Practice your Politics</span> – A sophisticated underlying simulation model uses census data and real issues to test your political savvy.</li>
+						<li><span>Strategize Electoral Victory</span> – Run against the opposing party’s nominee for President to gather the 270 electoral votes needed on election day or against other members of your political party to obtain the delegate count to become your party’s nominee.</li>
+                        <li><span>Choose Your Candidate</span> – Play as one of several candidates, each with their own custom stats like stamina, intelligence, charisma, media bias, and more.</li>
+                        <li><span>Create a Candidate</span> – Customize your own front runner and race for the White House.</li>
+                        <li><span>Manage Your Campaign Budget</span> – Purchase advertisements, travel across the country to campaign, and hire operatives to enhance your PR or cripple your opponent.</li>
+                        <li><span>Be Ready For Anything</span> – Torrid affairs, natural disasters, email scandals, and other “breaking news” events can pop up and change the direction of the campaign for better or worse.</li>
+                        <li><span>Check Your Standings</span> – With poll tracking and leaderboards, you can see how well people are playing as their candidates or what issues they are supporting over time.</li>
+                    </ul>
+					<ul>
+                        <li><span>NEW! Compete in the Primary Campaign</span> – Outperform the three other candidates in your party to secure the highest number of delegates. Focus on winning key caucus states early to gain a competitive edge over your rivals.</li>
+						<li><span>NEW! Deploy Political Action Cards</span> – Utilize your Political Capital strategically to undermine your opponents and bolster your campaign. Invest in cards that demand political capital for significant, election-swinging effects, ensuring your actions leave a lasting impact on the race.</li>
+                        <li><span>NEW! Participate in the Presidential Debates</span> – A battleground state is selected for candidates to express their support or opposition on the most pressing issues. Utilize this platform to either garner support or risk negative reactions from the audience. Strategically challenge an opponent’s position to sway public opinion in your favor.</li>
+                        <li><span>Deliver Impactful Speeches</span> – Assert your position on pivotal issues, utilizing your stamina judiciously. Opt to either endorse or contest particular topics within chosen states, or tactically expose an adversary's stance.</li>
+                        <li><span>Establish Campaign Headquarters</span> – Enhance your electoral strategy. Focus on constructing buildings that either increase your funding, provide valuable cards, or amplify your messaging efforts. Choose the specialization that best supports your campaign goals to gain a competitive advantage.</li>
+                        
+					</ul>
+				</div>
+
+
+			</section>
+			<section class="screenshots" id="screenshots">
+				<img class="stripes" src="/images/2016/div_stripes2.png">
+				<div class="title">
+					<img alt="" class="stars" src="/images/2016/stars_left.png">
+					<h2>Screenshots</h2>
+					<img alt="" class="stars" src="/images/2016/stars_right.png">
+				</div>
+				<div class="images">
+					<div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss01.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss01_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss02.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss02_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss03.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss03_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss04.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss04_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss05.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss05_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss06.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss06_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss07.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss07_thumb.png">
+						</a>
+					</div>
+                    <div class="ss">
+						<a class="screenshot" href="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss08.png" target="_blank">
+							<img alt="" class="screen" src="https://www.stardock.com/thepoliticalmachine/2024/screenshots/febplaytest/tpm2024_febplaytest_ss08_thumb.png">
+						</a>
+					</div>
+				</div>
+				<img class="stripes" id="news" src="/images/2016/div_stripes1.png">
+			</section>
+			<section class="bottom">
+				<!-- Latest News Box -->
+				<figure class="news">
+					<div class="fixedratio">
+						<div class="mobiletitle">Latest News</div>
+                        <div class="content">
+							
+									<a id="_Content__News__Title_0" class="title" href="https://www.politicalmachine.com/article/527004/crains-detroit-business-interviews-stardock">Crains Detroit Business Interviews Stardock</a>
+									<p class="article">
+										'We're the most famous company you've never heard of': A conversation with Michigan's oldest video...
+										<a id="_Content__News__ReadMoreLink_0" class="readmore" href="https://www.politicalmachine.com/article/527004/crains-detroit-business-interviews-stardock">[read full article]</a>
+									</p>
+									<span class="date">03.26.2024</span> <span class="separator">|</span> <a id="_Content__News__UserName_0" class="username" href="https://forums.politicalmachine.com/user/4024393">redskittlesonly</a>
+								
+									<br><br>
+								
+									<a id="_Content__News__Title_1" class="title" href="https://www.politicalmachine.com/article/526144/steam-playtest-now-available-for-the-political-machine-2024">Steam Playtest Now Available for The Political Machine 2024</a>
+									<p class="article">
+										Pre-order Customers can now Participate in the Steam Playtest 
+Pre-Order Now
+Pre-Order Customers; Get into the...
+										<a id="_Content__News__ReadMoreLink_1" class="readmore" href="https://www.politicalmachine.com/article/526144/steam-playtest-now-available-for-the-political-machine-2024">[read full article]</a>
+									</p>
+									<span class="date">02.21.2024</span> <span class="separator">|</span> <a id="_Content__News__UserName_1" class="username" href="https://forums.politicalmachine.com/user/4024393">redskittlesonly</a>
+								
+									<br><br>
+								
+									<a id="_Content__News__Title_2" class="title" href="https://www.politicalmachine.com/article/526010/steam-playtest-coming-soon-for-the-political-machine-2024">Steam Playtest Coming Soon for The Political Machine 2024</a>
+									<p class="article">
+										Game Release Update / Playtest Info
+The game was originally slated to release later this month...
+										<a id="_Content__News__ReadMoreLink_2" class="readmore" href="https://www.politicalmachine.com/article/526010/steam-playtest-coming-soon-for-the-political-machine-2024">[read full article]</a>
+									</p>
+									<span class="date">02.13.2024</span> <span class="separator">|</span> <a id="_Content__News__UserName_2" class="username" href="https://forums.politicalmachine.com/user/4024393">redskittlesonly</a>
+								
+							<div class="viewmore"><a href="https://forums.politicalmachine.com/forum/122">View More</a></div>
+						</div>
+					</div>
+				</figure>
+				<!-- End Latest News Box -->
+				<figure class="sysreq">
+					<h3>Minimum System Requirements</h3>
+					<div>
+						<div class="req">
+							<div class="redbox">Operating<br>System</div>
+							<p>Windows 10 / 11<br>64-bit Processor</p>
+						</div>
+                        <div class="req">
+							<div class="redbox one">Processor</div>
+							<p>2 GHz Dual Core Processor</p>
+						</div>
+						<div class="req">
+							<div class="redbox one">Memory</div>
+							<p>4 GB RAM</p>
+						</div>
+						<div class="req">
+							<div class="redbox one">Graphics</div>
+							<p>Nvidia GeForce GTX 650<br>Radeon HD 3600 or Better</p>
+						</div>
+                        <div class="req">
+							<div class="redbox one">DirectX</div>
+							<p>Version 11</p>
+						</div>
+                        <div class="req">
+							<div class="redbox one">Network</div>
+							<p>Broadband Internet<br>Connection</p>
+						</div>
+						<div class="req">
+							<div class="redbox">Hard Drive<br>Storage</div>
+							<p>500 MB Available Space</p>
+						</div>
+                        <!--<div class="req" style="width: 165px;"></div>
+                        <div class="req" style="width: 165px;"></div>-->
+                        <a class="wiki" href="https://wiki.politicalmachine.com/" target="_blank">
+						    <img alt="The Political Machine Official Wiki" src="/images/2024/tpm2024_wiki.png">
+					    </a>
+                        <div class="oldversion2">
+		                    <a href="/TPM2020.aspx"><img src="/images/2024/tpm2020.png"></a>
+	                    </div>
+					</div>
+				</figure>
+			</section>
+		</div>
+	</section>
+
+		</main>
+		<footer>
+			<a class="footerlogo" href="https://www.stardock.com/games"><img alt="Stardock Entertainment" src="/images/2016/stardock_logo.png"></a>
+			<div>
+				<p><a href="/press">Press</a><span class="separator">|</span><a href="/blog">Blog</a><span class="separator">|</span><a href="https://www.stardock.com/support">Support</a><span class="separator">|</span><a href="/TPM2020">2020 Version</a><br>
+                    Copyright © 2024 Stardock Entertainment. The Political Machine is a trademark of Stardock Entertainment. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries. All rights reserved.</p>
+				<div class="icons">
+					<div class="innerIcons" onclick="window.open('https://www.facebook.com/thepoliticalmachine','mywindow');"></div>
+					<div class="innerIcons" onclick="window.open('https://twitter.com/political_mach','mywindow');"></div>
+					<div class="innerIcons" onclick="window.open('https://www.youtube.com/user/stardockgames','mywindow');"></div>
+					<div class="innerIcons" onclick="window.open('https://www.twitch.tv/stardock','mywindow');"></div>
+                    <div class="innerIcons" onclick="window.open('https://discord.gg/rgjZYyGTvM','mywindow');"></div>
+                    <div class="innerIcons" onclick="window.open('https://www.reddit.com/r/ThePoliticalMachine/','mywindow');" style="margin: 0; float: left; width: 24px;"></div>
+				</div>
+			</div>
+            <section class="signup">
+                <p>Receive Game Updates &amp; Offers</p>
+                <div class="form">
+				    <span>
+					    <label for="emailAddress">Enter Email Address</label>
+					    <input maxlength="50" id="emailAddress" type="text">
+				    </span>
+				    <button><span>Subscribe</span></button>
+			    </div>
+
+			    <div class="alert wait" style="display: none">
+				    <p>Signing up, please wait...</p>
+			    </div>
+
+			    <div class="alert error" style="display: none">
+				    <p>Sorry but an error occured. Please try again later.</p>
+			    </div>
+
+			    <div class="alert success" style="display: none">
+				    <p>Thank you, please check <span class="email_address"></span> to confirm your subscription!</p>
+			    </div>
+            </section>
+		</footer>
+	<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></form>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--<script type="text/javascript"  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+	<script type="text/javascript" src="/js/jquery/jquery.fancybox-1.3.4.modified.js"></script>
+	<script type="text/javascript" src="/js/lib/pm2016.index.js"></script>
+    <script type="text/javascript" src="/js/lib/site.js"></script>
+    <script type="text/javascript" src="/lib/slick/slick.js"></script>
+    <script type="text/javascript" src="/lib/lsb-lightbox/lsb.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+                var target = $(this.hash);
+                if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+                $('html, body').animate({ scrollTop: target.offset().top - 100 }, 1000);
+                return false;
+            });
+
+            InitEventHandlers();
+        });
+
+        function InitEventHandlers() {
+            $('#nav-menu').on('click', function (e) {
+                e.preventDefault();
+                $('#mobilenav').toggleClass('navopen');
+                $('.Site-content').toggleClass('navopen');
+                $(this).toggleClass('navopen');
+            });
+
+            $('.Site-content').on('click', function (e) {
+                if ($('#mobilenav').css('left') == '0px') {
+                    $('#mobilenav').removeClass('navopen');
+                    $('.Site-content').removeClass('navopen');
+                    $('#nav-menu').removeClass('navopen');
+                }
+            });
+
+            $('#mobilenav').on('click', function (e) {
+                $('#mobilenav').removeClass('navopen');
+                $('.Site-content').removeClass('navopen');
+                $('#nav-menu').removeClass('navopen');
+            });
+        }
+
+        $('.dlcscreenshots').slick()
+        $('.expand_btn').click(function (e) {
+            e.preventDefault();
+            var link = $(e.target);
+            var details = $(link).parent().next('.details');
+
+            $(details).slideToggle(function (e) {
+                $(link).text(($(details).is(':visible')) ? '[Hide]' : '[Show]');
+            });
+        });
+
+        $('.lsb-preview').lightspeedBox();
+    </script><div class="lightspeed-box" style="z-index: 30;"><div class="lsb-content"><header class="lsb-header"><div class="lsb-image-count"></div><div class="lsb-image-title"></div></header><div class="lsb-control-panel"><a class="lsb-control lsb-panel-button lsb-play" title="Play slideshow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1408 1792"><path fill="#000" d="M1384 927l-1328 738q-23 13-39.5 3t-16.5-36v-1472q0-26 16.5-36t39.5 3l1328 738q23 13 23 31t-23 31z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1408 1792"><path fill="#fff" d="M1384 927l-1328 738q-23 13-39.5 3t-16.5-36v-1472q0-26 16.5-36t39.5 3l1328 738q23 13 23 31t-23 31z"></path></svg></a><a class="lsb-control lsb-panel-button lsb-pause" title="Stop slideshow" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1536 1792"><path fill="#000" d="M1536 192v1408q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45v-1408q0-26 19-45t45-19h512q26 0 45 19t19 45zM640 192v1408q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45v-1408q0-26 19-45t45-19h512q26 0 45 19t19 45z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1536 1792"><path fill="#fff" d="M1536 192v1408q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45v-1408q0-26 19-45t45-19h512q26 0 45 19t19 45zM640 192v1408q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45v-1408q0-26 19-45t45-19h512q26 0 45 19t19 45z"></path></svg></a><a class="lsb-control lsb-panel-button lsb-download" download="" title="Download image"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1664 1792"><path fill="#000" d="M1280 1344q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zM1536 1344q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zM1664 1120v320q0 40-28 68t-68 28h-1472q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h465l135 136q58 56 136 56t136-56l136-136h464q40 0 68 28t28 68zM1339 551q17 41-14 70l-448 448q-18 19-45 19t-45-19l-448-448q-31-29-14-70 17-39 59-39h256v-448q0-26 19-45t45-19h256q26 0 45 19t19 45v448h256q42 0 59 39z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1664 1792"><path fill="#fff" d="M1280 1344q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zM1536 1344q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zM1664 1120v320q0 40-28 68t-68 28h-1472q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h465l135 136q58 56 136 56t136-56l136-136h464q40 0 68 28t28 68zM1339 551q17 41-14 70l-448 448q-18 19-45 19t-45-19l-448-448q-31-29-14-70 17-39 59-39h256v-448q0-26 19-45t45-19h256q26 0 45 19t19 45v448h256q42 0 59 39z"></path></svg></a></div><div class="lsb-image-container"><div class="lsb-no-image-found"><div class="no-found-msg">Sorry, no image found.</div></div><img class="lsb-image lsb-noimage"></div><div class="waitingicon"><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div><div class="waitingicon-circle"></div></div><div class="lsb-control lsb-close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1408 1792"><path fill="#000" d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1408 1792"><path fill="#fff" d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"></path></svg></div><div class="lsb-control lsb-prev" title="Previous image"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 1792"><path fill="#000" d="M627 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 1792"><path fill="#fff" d="M627 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"></path></svg></div><div class="lsb-control lsb-next" title="Next image"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 1792"><path fill="#000" d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 1792"><path fill="#fff" d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg></div></div></div>
+    <script type="text/javascript">var saleBannerLinkSource = 'TPMHOME';</script>
+    <script src="//stardock.cachefly.net/scripts/salebanner/sale.min.js"></script>
+
+</body></html>

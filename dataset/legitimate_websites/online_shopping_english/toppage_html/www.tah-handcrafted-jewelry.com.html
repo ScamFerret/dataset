@@ -1,0 +1,209 @@
+<html><head>
+<title>TAH Handcrafted Jewelry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="fabricated custom designer handcrafted jewelry,  bracelets, beads,  belt buckles, cuff links, earrings, hair combs sticks, necklaces, pins, pendants, rings, mokume gane, sterling silver, 14k 18k 22k 24k gold, copper, brass, shakudo, shibuichi">
+<meta name="description" content="Custom handcrafted, one of a kind and limited edition jewelry using gold, silver, copper,  mokume gane and gem stones, by Timothy A. Hansen of Upland, California.">
+<meta name="Author" content="Timothy A. Hansen">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<script language="JavaScript">
+<!--
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(5);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 1;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns4)
+        document.MM_Time[0][0].obj = document["Image1"];
+    else if (ns5)
+        document.MM_Time[0][0].obj = document.getElementById("Image1");
+    else
+        document.MM_Time[0][0].obj = document["Image1"];
+    document.MM_Time[0][0].keyFrames = new Array(16, 20);
+    document.MM_Time[0][0].values = new Array(1);
+    document.MM_Time[0][0].values[0] = new Array("Archive/Necklace-01.3.jpg","Archive/Necklace-01.3.jpg");
+    document.MM_Time[0][0].values[0].prop = "src";
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 1;
+    if (ns4)
+        document.MM_Time[0][1].obj = document["Image1"];
+    else if (ns5)
+        document.MM_Time[0][1].obj = document.getElementById("Image1");
+    else
+        document.MM_Time[0][1].obj = document["Image1"];
+    document.MM_Time[0][1].keyFrames = new Array(6, 10);
+    document.MM_Time[0][1].values = new Array(1);
+    document.MM_Time[0][1].values[0] = new Array("Archive/Archive-02.1.jpg","Archive/Archive-02.1.jpg");
+    document.MM_Time[0][1].values[0].prop = "src";
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 1;
+    if (ns4)
+        document.MM_Time[0][2].obj = document["Image1"];
+    else if (ns5)
+        document.MM_Time[0][2].obj = document.getElementById("Image1");
+    else
+        document.MM_Time[0][2].obj = document["Image1"];
+    document.MM_Time[0][2].keyFrames = new Array(11, 15);
+    document.MM_Time[0][2].values = new Array(1);
+    document.MM_Time[0][2].values[0] = new Array("Archive/Archive-01.1.jpg","Archive/Archive-01.1.jpg");
+    document.MM_Time[0][2].values[0].prop = "src";
+    document.MM_Time[0][3] = new String("behavior");
+    document.MM_Time[0][3].frame = 20;
+    document.MM_Time[0][3].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0][4] = new String("sprite");
+    document.MM_Time[0][4].slot = 1;
+    if (ns4)
+        document.MM_Time[0][4].obj = document["Image1"];
+    else if (ns5)
+        document.MM_Time[0][4].obj = document.getElementById("Image1");
+    else
+        document.MM_Time[0][4].obj = document["Image1"];
+    document.MM_Time[0][4].keyFrames = new Array(1, 5);
+    document.MM_Time[0][4].values = new Array(1);
+    document.MM_Time[0][4].values[0] = new Array("Bracelets/Bracelet-10.1.jpg","Bracelets/Bracelet-10.1.jpg");
+    document.MM_Time[0][4].values[0].prop = "src";
+    document.MM_Time[0].lastFrame = 20;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+<meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; comment &quot;ICRAonline EN v2.0&quot; l gen true for &quot;http://www.tah-handcrafted-jewelry.com&quot; r (nz 1 vz 1 lz 1 oz 1 cz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://www.tah-handcrafted-jewelry.com&quot; r (n 0 s 0 v 0 l 0))">
+</head>
+
+<frameset cols="150,599*" bordercolor="#99CC99" rows="*" onload="MM_preloadImages('NavButtons/BraceletsOn.gif','#989868305780')">
+  <frame src="Navigation.htm" name="Navigation" frameborder="YES" bordercolor="#99CC99" scrolling="AUTO" noresize="">
+  <frame src="TAH.htm" name="Content" bordercolor="#99CC99" frameborder="YES" scrolling="AUTO">
+</frameset><noframes>
+<body background="Background.jpg" bgcolor="#99CC99" text="#000000" link="#006633" vlink="#993300" alink="#CC0000" onLoad="MM_timelinePlay('Timeline1')">
+<div align="center">
+  <table width="100%" border="0" height="100%">
+    <tr> 
+      <td width="40%" height="278"><div align="center">
+<pre><font size="4" face="Times New Roman, Times, serif"><a href="index.htm">Home</a>
+<a href="AboutTAH/AboutTAH.htm">About TAH</a>
+<a href="Contact.htm">Contacting and Ordering</a>
+<a href="Copyright.htm">Copyright Notice</a>
+<a href="Glossary.htm">Glossary</a>
+<a href="guestbook.html">Guest Book</a>
+<a href="Links/Links.htm">Links</a>
+<a href="Shows.htm">Show Schedule</a>
+
+<a href="BreastCancer/index.htm">Breast Cancer Awareness Jewelry</a>
+<a href="Diabetes/index.htm">Diabetes Awareness Jewelry</a>
+<a href="Medical-ID/index.htm">Medical ID Jewelry</a></font></pre>
+          <pre><font size="4" face="Times New Roman, Times, serif"><a href="Archive/index.htm">Archive</a>
+<a href="Beads/index.htm">Beads</a>
+<a href="Bracelets/index.htm">Bracelets</a>
+<a href="Buckles/index.htm">Belt Buckles</a>
+<a href="CuffLinks/index.htm">Cuff Links</a>
+<a href="Custom.htm">Custom Jewelry</a>
+<a href="Earrings/index.htm">Earrings</a>
+<a href="HairOrnaments/index.htm">Hair Ornaments</a>
+<a href="Necklaces/index.htm">Necklaces</a>
+<a href="Pins/index.htm">Pins</a>
+<a href="Rings/index.htm">Rings</a>
+
+<a href="GiftCertificate.htm">Gift Certificate</a></font></pre>
+        </div></td>
+      <td width="40%"><h1 align="center"><font face="Times New Roman, Times, serif"><a href="index.htm">TAH 
+          Handcrafted Jewelry</a></font></h1>
+        <p align="center"><img src="Bracelets/Bracelet-10.1.jpg" width="432" height="288" name="Image1" onload="MM_preloadImages('Archive/Necklace-01.3.jpg','Archive/Archive-01.1.jpg','Archive/Archive-02.1.jpg','Bracelets/Bracelet-10.1.jpg')"></p>
+        <div align="center"> 
+          <pre><font face="Times New Roman, Times, serif" size="4"><font size="3">This site has been tested with Internet Explorer, Netscape, Opera
+and Firefox web browsers.</font>
+
+Clicking on &quot;TAH Handcrafted Jewelry&quot;
+will always bring you back to the home page.</font></pre>
+          <pre><font face="Times New Roman, Times, serif" size="3">All jewelry designs and text appearing on this web-site are copyrighted.
+ Reproduction in whole or in part in any form or medium without express
+written permission of TAH Handcrafted Jewelry is prohibited. </font><a href="Copyright.htm" target="_self"><font face="Times New Roman, Times, serif" size="3">&copy; 1998 - 2017</font></a></pre>
+        </div>
+        <p align="center">&nbsp;</p>
+        </td>
+    </tr>
+  </table>
+  
+</div>
+</noframes>
+<noframes>
+</noframes>
+</html>

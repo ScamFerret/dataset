@@ -1,0 +1,12 @@
+{
+    "url": "http://www.blog.blog.blog.store.old.stockfund.co/",
+    "question": "Please analyze this URL http://www.blog.blog.blog.store.old.stockfund.co/",
+    "thought": "I need to access the URL and check for any signs of a scam website. The URL is accessible. I need to check for any signs of a scam website by extracting the text and hyperlinks from the HTML. The website seems to be talking about a domain that has expired and has been restored. This could be a sign of a scam website. I also need to check for any hyperlinks that may lead to non-existent companies or unusual payment methods. The website is linking to legitimate websites such as go.co and cointernet.com.co. There are no signs of unusually low prices, claims of free, or claims to get an amount of money that is generally not possible. However, the website is talking about a domain that has expired and has been restored, which is a potential scam characteristic. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Domain Restoration Scam",
+        "reason": "The website is discussing a domain that has expired and been restored which is a characteristic of a potential scam website."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

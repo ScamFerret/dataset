@@ -1,0 +1,12 @@
+{
+    "url": "http://www.blog.dev.us-en.stockfund.co/",
+    "question": "Please analyze this URL http://www.blog.dev.us-en.stockfund.co/",
+    "thought": "I need to access the URL and extract as much information as possible to determine if it is a scam website. The website is accessible, now I need to extract text and hyperlinks to further analyze the content. The website seems to be indicating that the domain has expired and needs to be updated. This could be a sign of a scam website, as legitimate websites would not have expired domains. The domain has expired, and the information provided is ambiguous and incomplete. This is a strong indication that the website is a scam. The hyperlinks on the website do not lead to any product pages or legitimate business information, which is another indication that it is a scam website. Based on the expired domain, incomplete and ambiguous information, and lack of legitimate business hyperlinks, I have determined that the URL is a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Expired Domain Scam",
+        "reason": "The website has an expired domain incomplete and ambiguous information and a lack of legitimate business hyperlinks all of which are strong indications of a scam website."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

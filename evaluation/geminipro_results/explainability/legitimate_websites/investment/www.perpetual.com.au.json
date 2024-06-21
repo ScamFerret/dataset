@@ -1,0 +1,12 @@
+{
+    "url": "https://www.perpetual.com.au/",
+    "question": "Please analyze this URL https://www.perpetual.com.au/",
+    "thought": "I should see if the URL is accessible.  I should see if there are any claims of unusually low prices or free. I should see if there are any claims of getting an amount of money that is generally not possible. I should see if there are any texts that target human psychological weaknesses. I should see if there is any information on non-existent companies. I should see if there is any information on handling different products from common e-commerce websites. I should see if there is any information on inquiry phone number and email address are not appropriate for business use. I should see if there is any information on the privacy of customer information notation is ambiguous. I should see if there is any information on payment methods are not common and are unusual. I should see if there is any information on the information listed has not been updated. I now know the final answer. {",
+    "answer": {
+        "result": "false",
+        "scam_type": "Fake shopping site",
+        "reason": "None of the characteristics of a scam website have been identified."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

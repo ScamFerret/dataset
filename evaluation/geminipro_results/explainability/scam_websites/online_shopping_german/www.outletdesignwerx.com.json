@@ -1,0 +1,12 @@
+{
+    "url": "https://www.outletdesignwerx.com/",
+    "question": "Please analyze this URL https://www.outletdesignwerx.com/",
+    "thought": "The URL does not look like a popular website. The registrant information is redacted for privacy. This is suspicious. The content of the website is all about Prometheus Design Werx. There is no mention of outlet design werx as the URL suggests. The hyperlinks on the website are all about Prometheus Design Werx. There is no mention of outlet design werx as the URL suggests. There is no mention of outlet design werx on the web or social media. I now know the final answer {",
+    "answer": {
+        "result": "False",
+        "scam_type": "Fake shopping site",
+        "reason": "1. The URL does not look like a popular website.\\n2. The registrant information is redacted for privacy.\\n3. The content of the website is all about Prometheus Design Werx. There is no mention of outlet design werx as the URL suggests.\\n4. The hyperlinks on the website are all about Prometheus Design Werx. There is no mention of outlet design werx as the URL suggests.\\n5. There is no mention of outlet design werx on the web or social media."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

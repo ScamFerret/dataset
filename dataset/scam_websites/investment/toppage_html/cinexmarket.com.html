@@ -1,0 +1,1780 @@
+<!DOCTYPE html><html lang="en" style="--vh: 7.2px;"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Cinexmarket | International Investment Corporate Company Limited</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="stylesheet" type="text/css" href="ui/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/envas-icons.css">
+<link rel="stylesheet" type="text/css" href="ui/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/cubeportfolio.min.css">
+<link rel="stylesheet" type="text/css" href="ui/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="ui/css/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="ui/css/settings.css">
+<link rel="stylesheet" type="text/css" href="ui/css/bootsnav.css">
+<link rel="stylesheet" type="text/css" href="ui/css/loader.css">
+<link rel="stylesheet" type="text/css" href="ui/css/style52e552e5.css?p=1587912412">
+<link rel="stylesheet" href="alert/css/fake-notification-min.css">
+<link rel="stylesheet" href="alert/css/animate.min.css">
+<link rel="icon" type="image/png" href="img/logo.png">
+<script type="text/javascript" async="" src="https://static.getbutton.io/widget-send-button/js/init.js"></script><script src="unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+
+<style type="text/css">#html5-text {color:#333; font-size:14px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;}.html5-description {color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}.html5-error {text-align:center; color:#ff0000; font-size:14px; font-family:Arial, sans-serif;}</style><link rel="stylesheet" href="https://code.jivosite.com/css/70c5213/widget.css" class="jv-css"><link rel="stylesheet" type="text/css" href="https://code.jivosite.com/css/70c5213/omnichannelMenu.widget.css"></head>
+<body><div class="wrapper">
+<div id="ytWidget" style="
+  position: fixed;
+  bottom: 350px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+  ">
+
+<style>
+    @-webkit-keyframes yt-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @-moz-keyframes yt-spin {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+    @-o-keyframes yt-spin {
+        0% {
+            -o-transform: rotate(0deg);
+        }
+        100% {
+            -o-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes yt-spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #yt-widget,
+    #yt-widget * {
+        clip: auto;
+        font: 14px Arial, Helvetica, sans-serif;
+        float: none;
+        width: auto;
+        color: #222;
+        height: auto;
+        margin: 0;
+        border: 0;
+        opacity: 1;
+        z-index: auto;
+        padding: 0;
+        outline: 0;
+        position: static;
+        overflow: visible;
+        direction: ltr;
+        box-shadow: none;
+        text-align: left;
+        background: none;
+        visibility: visible;
+        text-indent: 0;
+        text-shadow: none;
+    	word-spacing: normal;
+        border-radius: 0;
+        text-transform: none;
+        letter-spacing: normal;
+        vertical-align: baseline;
+        text-decoration: none;
+
+        -webkit-transform: none;
+           -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                transform: none;
+
+        -webkit-transition: none;
+           -moz-transition: none;
+             -o-transition: none;
+                transition: none;
+
+        -webkit-box-sizing: content-box;
+           -moz-box-sizing: content-box;
+                box-sizing: content-box;
+    }
+
+    #yt-widget:after,
+    #yt-widget:before,
+    #yt-widget *:after,
+    #yt-widget *:before {
+        display: none;
+    }
+
+    #yt-widget {
+        display: inline-block;
+        white-space: nowrap;
+
+        -webkit-user-select: none;
+           -moz-user-select: none;
+                user-select: none;
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    #yt-widget.yt-state_mobile * {
+        font-size: 16px;
+    }
+
+    #yt-widget .yt-button {
+        height: 34px;
+        cursor: pointer;
+        border: 1px solid #d5d5d5;
+        padding: 0 8px;
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        line-height: 34px;
+        border-radius: 3px;
+        vertical-align: middle;
+    }
+
+    #yt-widget .yt-button:active {
+        background: #f6f5f3;
+    }
+
+    #yt-widget .yt-button_type_left {
+        padding: 0 8px 0 36px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    #yt-widget .yt-button_type_right {
+        padding: 0 34px 0 8px;
+        margin-left: -1px;
+        border-radius: 0 3px 3px 0;
+    }
+
+    #yt-widget .yt-button_type_close {
+        top: 5px;
+        right: 5px;
+        width: 34px;
+        border: none;
+        display: none;
+        padding: 0;
+        position: fixed;
+    }
+
+    #yt-widget.yt-state_mobile .yt-button_type_close {
+        display: block;
+    }
+
+    #yt-widget .yt-button__icon {
+        top: 0;
+        width: 34px;
+        height: 34px;
+        display: block;
+        position: absolute;
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSJub25lIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjY4IiBzdHJva2U9IiNmZmYiPjxkZWZzPjxzeW1ib2wgaWQ9ImEiPjxwYXRoIGQ9Ik0xMSAxNGw2IDYgNi02Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYyI+PHBhdGggZD0iTTkgMTUuNWw2IDYgMTAtMTAiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJiIj48cGF0aCBkPSJNMTAgMTBsMTQgMTRtMC0xNEwxMCAyNCIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9ImQiPjxjaXJjbGUgY3g9IjE3IiBjeT0iMTciIHI9IjciLz48cGF0aCBkPSJNMTcgMTN2NW0wIDN2LTIiLz48L3N5bWJvbD48L2RlZnM+PGcgZmlsbD0iI2ZmZiIgc3Ryb2tlPSJub25lIj48Y2lyY2xlIGN4PSIyMS4xMjUiIGN5PSIxMi44NzUiIHI9IjcuODc1IiBmaWxsPSIjMzgzODM4Ii8+PHBhdGggZD0iTTIxLjE4NSAxNS4yMzNjLS4yODctLjU5LS41NjYtMS4zMS0uNzc3LTIuMTU4LjY0Ny0uMjYzIDEuMzEzLS40MDMgMS45My0uNDAzLjE0IDAgLjI4LjAwNy40MTQuMDItLjI1OC43MS0uNjY3IDEuNTA0LTEuMzEzIDIuMjY3LS4wOS4wOS0uMTcuMTgtLjI2LjI3em0tMy4xNjguOWMtLjI4Ni0uNjcuMzM0LTEuNzYzIDEuMzQ0LTIuNDkyLjI2LjkzLjU4IDEuNzIuOTEgMi4zNi0uNjIuNDEtMS4yNS42My0xLjcyLjU1LS4yNi0uMDQtLjQyLS4xNi0uNTMtLjQxem02LjMyNC01LjUwNGgtMS4xNWMtLjAxLjIxLS4wNC41My0uMTEuOTMtLjktLjE0LTEuOTItLjAxLTIuODkuMzUtLjExLS42NS0uMTctMS4yNi0uMjEtMS43OSAzLjQ3LS4yIDUuNTItMS4wNSA1LjYxLTEuMDlsLS40NC0xLjA4Yy0uMDIuMDEtMS45Ni44LTUuMjEuOTktLjAwNS0uODEuMDUtMS4zLjA1LTEuMzJoLTEuMTdjLS4wMi4yMi0uMDUyLjctLjA1IDEuMzZoLS4xMDRjLTEuMDM1IDAtMi0uMDgtMi4yMjYtLjF2MS4xN2MuMzQuMDMgMS4xNjIuMDkzIDIuMDk3LjA5M2guMjg1Yy4wNDUuNjY0LjEzIDEuNDMuMjg2IDIuMjYtMS41NC45Mi0yLjc1NiAyLjcxLTIuMTM1IDQuMTY1LjI2LjYxLjc2NyAxLjAwMiAxLjQyIDEuMTAyLjExLjAxNS4yMjMuMDIzLjM0LjAyMy42NiAwIDEuNDE4LS4yNyAyLjE0LS43My40Ny43MS44NSAxLjA4Ny44OSAxLjEybC43OS0uODVjLS4wMS0uMDA1LS4zNDYtLjMzNS0uNzctLjk4My4xOS0uMTc2LjM3NC0uMzYuNTQ0LS41Ni43Ny0uOTA4IDEuMjQ4LTEuODUgMS41NDYtMi42OS4yNi4xNTIuNTIuMzguNjUyLjcyLjQ2IDEuMTYtLjIwMyAyLjUtLjgzIDMuMDgzbC43OS44NTRjMS4wMzUtLjk3IDEuNzUtMi43OCAxLjExNS00LjM3NS0uMjUtLjYzLS43My0xLjEyLTEuNDAzLTEuNDMuMTEtLjU0LjE0Ni0uOTcuMTYtMS4yNnoiLz48Y2lyY2xlIGN4PSIxMi44NzUiIGN5PSIyMS4xMjUiIHI9IjcuODc1IiBmaWxsPSJyZWQiLz48cGF0aCBkPSJNMTQuMzEgMjEuNTk1aC0yLjg3bDEuNDM1LTMuNjd6bS0uODE1LTUuNjAyaC0xLjI0TDguNCAyNS4zNjNoMS41NzdsLjk0OC0yLjQ5M2gzLjlsLjk0OCAyLjQ5M2gxLjU3N3oiLz48L2c+PGcgb3BhY2l0eT0iLjUiPjx1c2UgeGxpbms6aHJlZj0iI2EiIHg9IjM0IiBzdHJva2U9IiMwMDAiLz48dXNlIHhsaW5rOmhyZWY9IiNhIiB4PSIzNCIgeT0iMzQiLz48dXNlIHhsaW5rOmhyZWY9IiNiIiB4PSI2OCIgc3Ryb2tlPSIjMDAwIi8+PHVzZSB4bGluazpocmVmPSIjYiIgeD0iNjgiIHk9IjM0Ii8+PC9nPjxnIHN0cm9rZS13aWR0aD0iMiI+PHVzZSB4bGluazpocmVmPSIjYyIgeD0iMTAyIiBzdHJva2U9IiNmYzAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB4PSIxMDIiIHk9IjM0Ii8+PHVzZSB4bGluazpocmVmPSIjZCIgeD0iMTM2IiBzdHJva2U9IiNmZjczNzMiLz48dXNlIHhsaW5rOmhyZWY9IiNkIiB4PSIxMzYiIHk9IjM0Ii8+PC9nPjwvc3ZnPgo=") no-repeat;
+    }
+
+    #yt-widget .yt-button__icon_type_left {
+        left: 0;
+    }
+
+    #yt-widget .yt-button__icon_type_right {
+        right: 0;
+        background-position: -34px 0;
+    }
+
+    #yt-widget .yt-button_type_close > .yt-button__icon {
+        background-position: -68px 0;
+    }
+
+    #yt-widget.yt-state_busy .yt-button__icon_type_left {
+        background: none;
+    }
+
+    #yt-widget.yt-state_busy .yt-button__icon_type_left:after {
+        top: 50%;
+        left: 50%;
+        clip: rect(auto, auto, 8px, auto);
+        color: #fc0;
+        width: 16px;
+        height: 16px;
+        margin: -8px 0 0 -8px;
+        content: "";
+        display: block;
+        position: absolute;
+        box-shadow: 0 0 0 2px inset;
+        border-radius: 50%;
+
+        -webkit-animation: yt-spin 0.8s infinite linear;
+           -moz-animation: yt-spin 0.8s infinite linear;
+             -o-animation: yt-spin 0.8s infinite linear;
+                animation: yt-spin 0.8s infinite linear;
+    }
+
+    #yt-widget.yt-state_done .yt-button__icon_type_left {
+        background-position: -102px 0;
+    }
+
+    #yt-widget.yt-state_error .yt-button__icon_type_left {
+        background-position: -136px 0;
+    }
+
+    #yt-widget.yt-state_active .yt-button__icon_type_right {
+        background-position: -68px 0;
+    }
+
+    #yt-widget.yt-state_invalid .yt-button_type_left * {
+        opacity: 0.4;
+    }
+
+    #yt-widget.yt-state_expanded .yt-button_type_right {
+        background-color: #f6f5f3;
+    }
+
+    #yt-widget .yt-button_type_right > .yt-button__text {
+        text-transform: uppercase;
+    }
+
+    #yt-widget .yt-wrapper {
+        position: relative;
+    }
+
+    #yt-widget .yt-wrapper_align_right {
+        text-align: right;
+        margin-top: 3px;
+    }
+
+    #yt-widget .yt-listbox {
+        border: 1px solid #d5d5d5;
+        z-index: 999999;
+        position: absolute;
+        margin-top: 5px;
+        background: #fff;
+        box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.1);
+    }
+
+    #yt-widget .yt-listbox[hidden] {
+        display: none;
+    }
+
+    #yt-widget.yt-state_right .yt-listbox {
+        right: 0;
+    }
+
+    #yt-widget.yt-state_bottom .yt-listbox {
+        bottom: 100%;
+        margin: 0 0 5px;
+    }
+
+    #yt-widget.yt-state_mobile .yt-listbox {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        border: none;
+        position: fixed;
+        overflow-y: auto;
+        box-shadow: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #yt-widget .yt-listbox__col {
+        display: inline-block;
+        list-style: none;
+        vertical-align: top;
+    }
+
+    #yt-widget.yt-state_mobile .yt-listbox__col {
+        display: block;
+    }
+
+    #yt-widget .yt-listbox__text,
+    #yt-widget .yt-listbox__label {
+        display: block;
+    }
+
+    #yt-widget .yt-listbox__text {
+        cursor: pointer;
+        padding: 0 8px;
+        line-height: 34px;
+    }
+
+    #yt-widget.yt-state_mobile .yt-listbox__text {
+        line-height: 44px;
+    }
+
+    #yt-widget .yt-listbox__input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #yt-widget .yt-listbox__input:checked ~ .yt-listbox__text {
+        font-weight: bold;
+        background-color: #f6f5f3;
+    }
+
+    #yt-widget .yt-listbox__text:hover,
+    #yt-widget .yt-listbox__input:checked ~ .yt-listbox__text:hover {
+        background-color: #ffeba0;
+    }
+
+    #yt-widget .yt-servicelink {
+        color: #000;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    #yt-widget.yt-state_mobile .yt-servicelink {
+        font-size: 14px;
+    }
+
+    #yt-widget .yt-servicelink:hover,
+    #yt-widget .yt-servicelink:first-letter {
+        color: #f00;
+    }
+
+    /* Dark theme */
+
+    #yt-widget[data-theme="dark"],
+    #yt-widget[data-theme="dark"] * {
+        color: #fff;
+    }
+
+    #yt-widget[data-theme="dark"] .yt-button,
+    #yt-widget[data-theme="dark"] .yt-listbox {
+        border-color: #999;
+        background-color: #777;
+    }
+
+    #yt-widget[data-theme="dark"] .yt-servicelink,
+    #yt-widget[data-theme="dark"] .yt-servicelink:first-letter {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    #yt-widget[data-theme="dark"] .yt-servicelink:hover,
+    #yt-widget[data-theme="dark"] .yt-servicelink:hover:first-letter {
+        color: #fff;
+    }
+
+    #yt-widget[data-theme="dark"] .yt-button:active,
+    #yt-widget[data-theme="dark"] .yt-listbox__text:hover,
+    #yt-widget[data-theme="dark"].yt-state_expanded .yt-button_type_right,
+    #yt-widget[data-theme="dark"] .yt-listbox__input:checked ~ .yt-listbox__text {
+        background-color: #656565;
+    }
+
+    #yt-widget[data-theme="dark"] .yt-button__icon_type_right {
+        background-position: -34px -34px;
+    }
+
+    #yt-widget[data-theme="dark"].yt-state_busy .yt-button__icon_type_left:after {
+        color: #fff;
+    }
+
+    #yt-widget[data-theme="dark"].yt-state_done .yt-button__icon_type_left {
+        background-position: -102px -34px;
+    }
+
+    #yt-widget[data-theme="dark"].yt-state_error .yt-button__icon_type_left {
+        background-position: -136px -34px;
+    }
+
+    #yt-widget[data-theme="dark"].yt-state_active .yt-button__icon_type_right,
+    #yt-widget[data-theme="dark"].yt-state_mobile .yt-button_type_close > .yt-button__icon {
+        background-position: -68px -34px;
+    }
+</style>
+<div id="yt-widget" class="yt-widget yt-state_invalid" tabindex="-1" translate="no" data-theme="light">
+    <div class="yt-wrapper" unselectable="on">
+        <span class="yt-button yt-button_type_left" unselectable="on">
+            <span class="yt-button__icon yt-button__icon_type_left" unselectable="on"></span>
+            <span class="yt-button__text" unselectable="on">Translate</span>
+        </span><span class="yt-button yt-button_type_right" unselectable="on">
+            <span class="yt-button__text" unselectable="on">en</span>
+            <span class="yt-button__icon yt-button__icon_type_right" unselectable="on"></span>
+        </span>
+        <form class="yt-listbox" hidden="" unselectable="on">
+            <span class="yt-button yt-button_type_close"><span class="yt-button__icon"></span></span>
+            <ul class="yt-listbox__col" unselectable="on">
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="af" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Afrikaans</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sq" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Albanian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="am" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Amharic</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ar" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Arabic</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="hy" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Armenian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="az" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Azerbaijani</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ba" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Bashkir</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="eu" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Basque</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="be" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Belarusian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="bn" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Bengali</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="bs" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Bosnian</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="bg" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Bulgarian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="my" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Burmese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ca" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Catalan</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ceb" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Cebuano</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="zh" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Chinese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="cv" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Chuvash</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="hr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Croatian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="cs" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Czech</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="da" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Danish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="nl" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Dutch</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="en" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">English</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="eo" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Esperanto</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="et" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Estonian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="fi" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Finnish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="fr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">French</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="gl" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Galician</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ka" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Georgian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="de" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">German</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="el" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Greek</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="gu" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Gujarati</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ht" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Haitian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="he" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Hebrew</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mrj" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Hill Mari</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="hi" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Hindi</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="hu" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Hungarian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="is" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Icelandic</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="id" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Indonesian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ga" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Irish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="it" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Italian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ja" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Japanese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="jv" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Javanese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="kn" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Kannada</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="kk" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Kazakh</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="kazlat" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Kazakh (Latin)</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="km" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Khmer</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ko" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Korean</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ky" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Kyrgyz</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="lo" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Lao</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="la" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Latin</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="lv" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Latvian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="lt" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Lithuanian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="lb" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Luxembourgish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mk" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Macedonian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mg" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Malagasy</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ms" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Malay</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ml" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Malayalam</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mt" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Maltese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mi" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Maori</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Marathi</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mhr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Mari</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="mn" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Mongolian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ne" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Nepali</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="no" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Norwegian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="pap" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Papiamento</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="fa" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Persian</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="pl" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Polish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="pt" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Portuguese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="pt-BR" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Portuguese (Brazilian)</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="pa" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Punjabi</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ro" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Romanian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ru" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Russian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="gd" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Scottish Gaelic</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Serbian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sr-Latn" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Serbian (Latin)</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="si" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Sinhalese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sk" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Slovak</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sl" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Slovenian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="es" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Spanish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="su" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Sundanese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sw" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Swahili</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sv" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Swedish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="tl" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Tagalog</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="tg" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Tajik</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ta" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Tamil</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="tt" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Tatar</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="te" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Telugu</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="th" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Thai</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="tr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Turkish</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="udm" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Udmurt</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="uk" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Ukrainian</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="ur" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Urdu</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="uz" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Uzbek</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="uzbcyr" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Uzbek (Cyrillic)</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="vi" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Vietnamese</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="cy" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Welsh</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="xh" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Xhosa</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="sah" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Yakut</span></label></li>
+                
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="yi" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Yiddish</span></label></li>
+                
+                    
+                        </ul><ul class="yt-listbox__col" unselectable="on">
+                    
+                    <li class="yt-listbox__cell" unselectable="on"><label class="yt-listbox__label" unselectable="on"><input type="radio" name="yt-lang" value="zu" class="yt-listbox__input"><span class="yt-listbox__text" unselectable="on">Zulu</span></label></li>
+                
+            </ul>
+        </form>
+    </div>
+    <div class="yt-wrapper yt-wrapper_align_right"><a href="https://translate.yandex.com/" class="yt-servicelink" target="_blank">Yandex Translate</a></div>
+</div>
+
+</div>
+<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=true" type="text/javascript"></script>
+<div id="notification-1" class="notification animated" style="top: 30%; left: 10px; border-radius: 5px; border-width: 1px; border-color: rgb(255, 153, 0); background: rgb(0, 0, 0);">      
+  <div class="notification-block">
+    <div class="notification-img" style="color: rgb(255, 255, 255);">
+      <!-- Your image or icon -->
+      <i class="fa fa-btc" aria-hidden="true"></i>
+      <!-- / Your image or icon -->
+    </div>
+    <div class="notification-text-block" style="color: white;">
+      <div class="notification-title">
+        <!-- Notification Title -->
+        Earning
+        <!-- / Notification Title -->
+      </div>
+      <div class="notification-text"></div>
+    </div>
+  </div>
+</div>
+<!--Loader-->
+<div class="loader" style="display: none;">
+  <div class="cssload-loader">
+    <div class="cssload-inner cssload-one">
+    </div>
+    <div class="cssload-inner cssload-two">
+    </div>
+    <div class="cssload-inner cssload-three">
+    </div>
+  </div>
+</div><!--Loader Ends -->
+
+<!--Header Starts-->    
+<header class="layout_first">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default bootsnav on no-full">
+        <div class="topbar yellow_bg">
+            <!-- <span class="call">Telegram: <a href="https://t.me/flexytrading1">https://t.me/flexytrading1</a> </span> -->
+            <span class="call">Email: <a href="mailto:support@cinexmarket.com"><span class="__cf_email__">support@cinexmarket.com</span></a></span>
+            <span class="call">Mon - Sun  8.00 - 20.00</span>
+        </div>
+        <div class="attr-nav">
+            <a class="scrolling getquote btn-dark text-uppercase border_radius" href="client/register">Start Investing</a>
+        </div>
+         <div class="attr-nav">
+            <a class="scrolling getquote btn-dark text-uppercase border_radius" href="client/login">Login</a>
+        </div>
+        <!-- Start Header Navigation -->
+        <div class="navbar-header clearfix">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="fa fa-bars"></i>
+          </button>
+            <a class="navbar-brand" href="index-2"><img src="img/logo.png" class="logok" alt=""></a>
+        </div>
+        <!-- End Header Navigation -->
+        
+        <!-- nav links -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right" data-in="slideInUp" data-out="fadeOut">
+            <li class=" ">
+                <a href="index-2" class="border">Home</a>
+            </li>
+            <li class=" "><a href="about" class="border">About Us</a></li>
+            <li class=" ">
+                <a href="faq" class="border">FAQ
+              </a>
+            </li>
+            <li class=" ">
+                <a href="client/login" class="border">Login
+              </a>
+            </li>
+            <li class=" ">
+              <a href="contact-us" class="border">Contact Us
+              </a>
+            </li>
+          </ul>    
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+  </div>
+</header>
+<!--HEADER Ends--> <!--Slider Main-->
+<div class="forcefullwidth_wrapper_tp_banner" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><section class="rev_slider_wrapper" style="margin-top: 0px; margin-bottom: 0px; position: absolute; overflow: visible; height: 690px; width: 1280px; left: 0px;">
+  <div id="rev_slider" class="rev_slider top revslider-initialised tp-simpleresponsive" data-version="5.0" data-slideactive="rs-937063" style="max-height: 690px; margin-top: 0px; margin-bottom: 0px; height: 690px;">
+    <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+      <!-- SLIDE  -->
+      <li data-transition="fade" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+        <!-- MAIN IMAGE -->
+        <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px); backface-visibility: hidden;"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="ui/images/home1-banner2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;ui/images/home1-banner2.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="ui/images/home1-banner2.jpg"></div></div>
+        <!-- LAYER NR. 1 -->
+        <div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 55px; top: 290px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: inherit; transition: none 0s ease 0s; line-height: 52px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 48px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">Financial 
+          <strong class="yellow_t" style="transition: none 0s ease 0s; line-height: 52px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 48px;">Growth
+          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 55px; top: 360px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: inherit; transition: none 0s ease 0s; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.999485; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.0257655, 0, 1); transform-origin: 50% 50% 0px;">
+          <p style="transition: none 0s ease 0s; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 18px;">We utilize market data to derive huge revenue in the cryptocurrency ecosystem
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 55px; top: 410px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: inherit; transition: none 0s ease 0s; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.984879; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.756046, 0, 1); transform-origin: 50% 50% 0px;">
+            <a href="client/login" class="btn-border text-uppercase border_radius" style="transition: none 0s ease 0s; line-height: 18px; border-width: 1px; margin: 0px 10px 0px 0px; padding: 9px 28px; letter-spacing: 0px; font-weight: 700; font-size: 13px;">Login
+          </a>
+          <a href="client/register" class="text-uppercase border_radius btn-yellow" style="transition: none 0s ease 0s; line-height: 18px; border-width: 0px; margin: 0px 10px 0px 0px; padding: 9px 28px; letter-spacing: 0px; font-weight: 700; font-size: 13px;">Register
+          </a>
+        </div></div></div></div>
+      </li>
+      <li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+          <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="ui/images/home3-banner3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="defaultimg">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;ui/images/home3-banner3.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="ui/images/home3-banner3.jpg"></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><h1 class="tp-caption  tp-resizeme uppercase" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['290','190','190','100']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" style="visibility: hidden;">Secured
+          <strong class="yellow_t">And Safe
+          </strong>
+        </h1></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['360','260','260','200']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1300" style="visibility: hidden;">
+          <p>We offer the most secured crypto trading and investment solution on the globe
+          </p>
+        </div></div></div></div>
+        <div class="tp-parallax-wrap" style="position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;"><div class="tp-mask-wrap" style="position:absolute"><div class="tp-caption  tp-resizeme" data-x="['left','left','left','center']" data-hoffset="['0','15','15','15']" data-y="['410','310','290','180']" data-voffset="['0','0','0','0']" data-responsive_offset="on" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1600" style="visibility: hidden;">
+            <a href="client/login" class="btn-border text-uppercase border_radius">Login
+          </a>
+          <a href="client/register" class="text-uppercase border_radius btn-yellow">Register
+          </a>
+        </div></div></div></div>
+      </li>
+    </ul>
+
+  <div class="tp-loader off" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bannertimer" style="visibility: visible; width: 17.4889%; transform: translate3d(0px, 0px, 0px);"></div><div class="tp-leftarrow tparrows   noSwipe" style="top: 50%; transform: matrix(1, 0, 0, 1, 20, -20); left: 0px; visibility: hidden; opacity: 0;"></div><div class="tp-rightarrow tparrows   noSwipe" style="top: 50%; transform: matrix(1, 0, 0, 1, -60, -20); left: 100%; visibility: hidden; opacity: 0;"></div></div>
+</section><div class="tp-fullwidth-forcer" style="width: 100%; height: 690px;"></div></div>
+<!--SLIDERR Ends-->
+
+ <!--Three columns text Info-->
+<section id="info" class="padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-right wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+       <div id="google_translate_element" style=" max-width: 100%; "></div>
+      </div>
+        
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="text-capitalize bottom10">Three Easy <span class="yellow_t">Steps</span></h2>
+        <p>Its fast and easy to get started with us in three simple steps</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="text_box text-center top40 wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;">
+          <span><i class="fa fa-user-plus"></i></span>
+          <h4 class="bottom10">Create An Account</h4>
+          <p>Simply click on the register button to create a free account for yourself. Its quick and easy.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text_box text-center top40 wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+          <span><i class="fa fa-gift"></i></span>
+          <h4 class="bottom10">Make Deposit</h4>
+          <p>Pick a plan of your choice from our investment plans. Make a deposit to your personal wallet.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text_box  text-center top40 wow fadeIn" data-wow-delay="1100ms" style="visibility: hidden; animation-delay: 1100ms; animation-name: none;">
+          <span><i class="icon-bargraph"></i></span>
+          <h4 class="bottom10">Financial Growth</h4>
+          <p>Watch your daily earnings live. Be ready to place a withdrawal as soon as your investment is completed.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="text_box text-center top40 wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;">
+          <span><i class="fa fa-money"></i></span>
+          <h4 class="bottom10">Total Deposit</h4>
+          <h5>$55B</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text_box text-center top40 wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+          <span><i class="fa fa-history"></i></span>
+          <h4 class="bottom10">Proceeded Transactions</h4>
+          <h5>$5B</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="text_box  text-center top40 wow fadeIn" data-wow-delay="1100ms" style="visibility: hidden; animation-delay: 1100ms; animation-name: none;">
+          <span><i class="fa fa-usd"></i></span>
+          <h4 class="bottom10">Total Withdrawal</h4>
+          <h5>$3B</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Info Text ends-->
+
+
+<!--Good Plan-->
+<section id="plans" class="padding light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 content_left">
+        <figure>
+          <img src="ui/images/good-plans.jpg" alt="Good Plans" class="img-responsive">
+        </figure>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 content_right shadow  margin-bottom">
+        <div id="plan_slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+          <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4360px; left: 0px; display: block;"><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">1</span>
+            <h2 class="bottom10">SAFE AND SECURE</h2>
+            <p class="bottom20">Trade with 100% peace of mind as we have the best system security team onboard.</p>
+            <a href="about" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">2</span>
+            <h2 class="bottom10">INSTANT TRADING</h2>
+            <p class="bottom20">With our lightning speed servers, you are sure to get the best out of your investments.</p>
+            <a href="about" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">3</span>
+            <h2 class="bottom10">PROGRESSIVE REVENUE</h2>
+            <p class="bottom20">Watch your accruals grow in real time and monitor how much revenue is being generated from your investment.</p>
+            <a href="about" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div><div class="owl-item" style="width: 545px;"><div class="item">
+            <span class="count bottom20 blue_bg">4</span>
+            <h2 class="bottom10">COVERED BY INSURANCE</h2>
+            <p class="bottom20">You have zero chances of losing your investments as all our assets are duly covered by inssurance.</p>
+            <a href="about" class="btn-border text-uppercase border_radius">Read More</a>
+          </div></div></div></div>
+          
+          
+          
+        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--GOOD PLANS-->
+
+
+
+ <!--Facts Counter & Grid-->
+<section id="facts" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+          <h2 class="bottom10 text-capitalize">We’ll help you to grow <span class="yellow_t">your money</span></h2>
+          <p class="tagline heading_space">Cinexmarket innovative trading platforms and tools provide the power and reliability you need to feel more confident in your trading.
+          </p>
+        </div>
+        <div class="number-counters">
+          <div class="counters-item heading_space wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;"> 
+            <p class="data"><strong data-to="6">0</strong></p>
+            <!-- Set Your Number here. i,e. data-to="56" -->
+            <p>Years of Experience</p>
+          </div>
+          <div class="counters-item heading_space wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+            <p class="data"><strong data-to="875">0</strong><sub>k</sub></p>
+            <p>Happy Clients</p>
+          </div>
+          <div class="counters-item heading_space wow fadeIn" data-wow-delay="1100ms" style="visibility: hidden; animation-delay: 1100ms; animation-name: none;">
+            <p class="data"><strong data-to="100">0</strong><sub>%</sub></p>
+            <p>Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  
+</section>
+<!--Facts & Fun ends-->
+
+<!--Video-->
+<section id="bg-video" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 video wow fadeInLeft" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;"> 
+        <img src="ui/images/video-img.jpg" alt="video">
+
+      </div>
+      <div class="col-sm-6 right_content top40 bottom40 wow fadeInRight" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom30 text-capitalize">About  <span class="yellow_t">Cinexmarket</span></h2>
+        <p class="bottom30">Cinexmarket International Investment Corporate Company Limited is a very experienced and promising organization in the field of trustee administration and long-haul ventures. The joining of distinctive systems and techniques add to income, gainful collaboration, and organized advancement. The most created territory of Cinexmarket International Investment Corporate Company Limited movement is multicurrency trading on the Forex market.
+        </p>
+        <p class="bottom30">It was established by a group of professional traders and investors, who have fore seen the future of International Capital Market</p>
+        <p class="bottom30">Since 2018, we offer the best conditions for financial specialists from Great England and will be prepared to see you among them. Various organization workers are proficient money related investigators and experienced specialists in remote trade trading and hypothesis with securities and shares of various UK organizations. They have all the information and abilities that are important to be required in beneficial trade and expand the benefit with sensible risk</p>
+        <a href="about" class="btn-white text-uppercase border_radius">More About us</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Video Ends-->
+
+<section id="info" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" style="visibility: hidden; animation-name: none;"> 
+        <h2 class="text-capitalize bottom10">Why <span class="yellow_t">Chose us</span></h2>
+        <p class="heading_space">With our innovative traders, you have many more reasons to chose us.</p>
+      </div>
+    </div>
+    <div class="row info">
+      <div class="col-sm-4 icon_box text-center first wow fadeIn" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <i class="icon-lock bottom20"></i>
+        <h4 class="bottom10">SAFE AND SECURE</h4>
+        <p>Trade with 100% peace of mind as we have the best system security team onboard.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="600ms" style="visibility: hidden; animation-delay: 600ms; animation-name: none;">
+        <i class="fa fa-bolt bottom20"></i>
+        <h4 class="bottom10">INSTANT TRADING</h4>
+        <p>With our lightning speed servers, you are sure to get the best out of your investments.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="700ms" style="visibility: hidden; animation-delay: 700ms; animation-name: none;">
+        <i class="icon-layers bottom20"></i>
+        <h4 class="bottom10">PROGRESSIVE REVENUE</h4>
+        <p>Watch your accruals grow in real time and monitor how much revenue is being generated for you..</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center first wow fadeIn" data-wow-delay="800ms" style="visibility: hidden; animation-delay: 800ms; animation-name: none;">
+        <i class="fa fa-users bottom20"></i>
+        <h4 class="bottom10">INVESTMENT FOR ALL</h4>
+        <p>With different packages, Our system is modelled to accommodate everyone no matter how much you have to invest.</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="900ms" style="visibility: hidden; animation-delay: 900ms; animation-name: none;">
+        <i class="fa fa-shield bottom20"></i>
+        <h4 class="bottom10">COVERED BY INSURANCE</h4>
+        <p>You have zero chances of losing your investments as all our assets are duly covered by inssurance..</p>
+      </div>
+      <div class="col-sm-4 icon_box text-center wow fadeIn" data-wow-delay="1000ms" style="visibility: hidden; animation-delay: 1000ms; animation-name: none;">
+        <i class="fa fa-bitcoin bottom20"></i>
+        <h4 class="bottom10">BITCOIN TRANSACTION</h4>
+        <p>Invest in the world's most popular cryptocurrency and enjoy all the benefits that come with it..</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="pricesection padding-top padding-bottom-half light">
+        <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">Our Investment <span class="blue_t">Plans</span></h2>
+        <p class="heading_space">We are trusted by thousands of investors across the globe.</p>
+      </div>
+    </div>
+  <div class="pricing pricing-palden ">
+    
+            
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+        <div class="pricing-price ">
+        120.00%
+        </div>
+        <h3 class="pricing-title">Basic </h3>
+      </div>
+          <ul class="pricing-feature-list " style="padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: $100.00</li>
+          <li class="pricing-feature"> Max. Investment: $1000.00 </li>
+          <li class="pricing-feature"> ROI after 7 Days</li>
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">10% Referral Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'client/register'" class="pricing-action">Get Started</button>
+    </div>
+         
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+        <div class="pricing-price ">
+        140.00%
+        </div>
+        <h3 class="pricing-title">Advanced </h3>
+      </div>
+          <ul class="pricing-feature-list " style="padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: $1000.00</li>
+          <li class="pricing-feature"> Max. Investment: $10,000.00 </li>
+          <li class="pricing-feature"> ROI after 7 Days</li>
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">10% Referral Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'client/register'" class="pricing-action">Get Started</button>
+    </div>
+         
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+        <div class="pricing-price ">
+        200.00%
+        </div>
+        <h3 class="pricing-title">Premium </h3>
+      </div>
+          <ul class="pricing-feature-list " style="padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: $10,000.00</li>
+          <li class="pricing-feature"> Max. Investment: $50,000.00 </li>
+          <li class="pricing-feature"> ROI after One Month</li>
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">10% Referral Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'client/register'" class="pricing-action">Get Started</button>
+    </div>
+         
+      <div class="pricing-item">
+      <div class="pricing-deco">
+        <svg class="pricing-deco-img" enable-background="new 0 0 300 50" height="50px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 50" width="400px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
+          <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
+          <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
+          
+          <!--  M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z  -->
+        </svg>
+        <div class="pricing-price ">
+        300.00%
+        </div>
+        <h3 class="pricing-title">VIP </h3>
+      </div>
+          <ul class="pricing-feature-list " style="padding-top: -100px !important;">
+          <li class="pricing-feature">Min. Investment: $50,000.00</li>
+          <li class="pricing-feature"> Max. Investment: $99999999.00 </li>
+          <li class="pricing-feature"> ROI after 3 Months</li>
+          <!--li class="pricing-feature"><strong>Loan:</strong> 3% Processing Fee</li-->
+        <li class="pricing-feature">$1000 Deposit Bonus</li>
+        <li class="pricing-feature">24/7 Customer Care</li>
+      </ul>
+        <button style="cursor: pointer;" onclick="window.location.href = 'client/register'" class="pricing-action">Get Started</button>
+    </div>
+                  
+    
+            
+       
+    
+      
+      
+  </div>
+    
+    
+</section>
+ <!--Meet the TEAM ends-->
+ 
+    
+ 
+   
+<!--People Saying-->
+<section id="people" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">What people are <span class="yellow_t">Saying</span></h2>
+        <p class="heading_space">We are trusted by thousands of users across the globe.</p>
+      </div>
+    </div>
+    <div id="people_slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+         
+        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3420px; left: 0px; display: block;"><div class="owl-item" style="width: 570px;"><div class="item">
+          <div class="people_wrap border_radius right">
+          <i class="icon-quotes-right"></i>
+          <p>Am  Allen from North Carolina, Currently living in Arizona with my Family, i came across Cinexmarket while browsing through facebook,
+I accessed the site and contact them via whatsapp and i started investing with $5000 and am making $51,560.00 Weekly.</p>
+          </div>
+          <div class="testinomial_pic text-right pull-right">
+              <div class="pic"><img alt="testinomial" src="uploads/testimonies/thumb/998bbc715738adbee6391aa77185ed78.jpg" style="width: 58px;"></div>
+            <div class="testinomial_body">
+              <span class="name">- Allen Brewer</span>
+              <span class="post_img">Verified Client</span>
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+          <div class="people_wrap border_radius right">
+          <i class="icon-quotes-right"></i>
+          <p>I want to say a big thank you to Cinexmarket. Just  got my profit of $7500 in my Bank account. This is indeed a trust worthy platform to invest</p>
+          </div>
+          <div class="testinomial_pic text-right pull-right">
+              <div class="pic"><img alt="testinomial" src="uploads/testimonies/thumb/47cbbfcf351a84a2c74ba853146d9713.jpg" style="width: 58px;"></div>
+            <div class="testinomial_body">
+              <span class="name">- Carly Jones</span>
+              <span class="post_img">Verified Client</span>
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 570px;"><div class="item">
+          <div class="people_wrap border_radius right">
+          <i class="icon-quotes-right"></i>
+          <p>It's really wonderful. I would also like to say thank you to all your staff. Cinexmarket did exactly what you said it does.</p>
+          </div>
+          <div class="testinomial_pic text-right pull-right">
+              <div class="pic"><img alt="testinomial" src="uploads/testimonies/thumb/20aab71f88a53b30534b49407b1e61b4.jpg" style="width: 58px;"></div>
+            <div class="testinomial_body">
+              <span class="name">- Carilyn E</span>
+              <span class="post_img">Verified Client</span>
+            </div>
+          </div>
+        </div></div></div></div>
+         
+        
+         
+        
+                 
+    <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+  </div>
+</section>
+<!--People Saying ends-->
+
+<!--News & Thoughts-->
+<section id="news" class="padding light layout_third">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">What We <span class="yellow_t">Offer </span></h2>
+        <p class="heading_space">We’re building a new standard for crypto trading. One account, one balance, streamlined access to multiple liquidity venues.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="news_slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3120px; left: 0px; display: block;"><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+            <div class="image"><img src="ui/images/news3.jpg" alt="News"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Trading</a></h4>
+              <p class="bottom30">Our goal is to provide one of the deepest and widest liquidity pools in the crypto market. We strive to accomplish this by aggregating liquidity from multiple connected venues like exchanges.</p>
+
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+            <div class="image"><img src="ui/images/news2.jpg" alt="News"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Investment</a></h4>
+              <p class="bottom30">For the crypto assets in your account, we use Cinexmarket custodial services and applications. Cinexmarket is trusted by institutions in the digital assets industry for security, compliance and custodial solutions.</p>
+
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+              <div class="image"><img src="ui/images/cryptoexchange.jpg" alt="News" style="width: 360px; height: 210px;"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Exchange</a></h4>
+              <p class="bottom30">We also buy bitcoins from our investors. We provide several payment methods to enable you quickly convert your cash to coin without any hassle. </p>
+
+            </div>
+          </div>
+        </div></div><div class="owl-item" style="width: 390px;"><div class="item">
+          <div class="news">
+              <div class="image"><img src="ui/images/news1.jpg" alt="News" style="width: 360px; height: 210px;"></div>
+            <div class="news_text">
+              <h4 class="bottom10"><a href="#">Loan</a></h4>
+              <p class="bottom30">Our aim is to simplify access to the crypto markets by letting our brokerage customers use the buying power from a single account to access liquidity from all of our connected venues.</p>
+
+            </div>
+          </div>
+        </div></div></div></div>
+        
+        
+          
+          
+      <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+    </div>
+  </div>
+</section>
+<!--News & Thoughts ends-->
+    
+<section style="background-color: #2E2E30;">
+  <div class="container">
+    <div class="row step-list">
+    <marquee width="100%" direction="up" height="30%">
+        <div class="col-md-6 step-list__item">
+            <h3>LATEST DEPOSIT</h3>
+            <div class="step-body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Gateway</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Amount</th>
+                            <th class="text-center">Time</th>
+                            <th class="text-center">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                                                                                                                <tr>
+                            <td class="text-center">1</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Ollie Needam</td>
+                            <td style="white-space: nowrap;" class="text-center">$2,481</td>
+                            <td class="text-center">3 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">2</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Young Louge</td>
+                            <td style="white-space: nowrap;" class="text-center">$1,798</td>
+                            <td class="text-center">4 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Completed</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">3</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Gail Schlussel</td>
+                            <td style="white-space: nowrap;" class="text-center">$4,260</td>
+                            <td class="text-center">7 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">4</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Cristine Mannebach</td>
+                            <td style="white-space: nowrap;" class="text-center">$4,633</td>
+                            <td class="text-center">2 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Completed</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">5</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Louis Brum</td>
+                            <td style="white-space: nowrap;" class="text-center">$2,395</td>
+                            <td class="text-center">6 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">6</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Annita Dewberry</td>
+                            <td style="white-space: nowrap;" class="text-center">$1,385</td>
+                            <td class="text-center">4 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Completed</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">7</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Leah Ratliff</td>
+                            <td style="white-space: nowrap;" class="text-center">$852</td>
+                            <td class="text-center">3 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Completed</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">8</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Rosalie Bautista</td>
+                            <td style="white-space: nowrap;" class="text-center">$4,156</td>
+                            <td class="text-center">7 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">9</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Calista Helgeson</td>
+                            <td style="white-space: nowrap;" class="text-center">$4,693</td>
+                            <td class="text-center">2 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Completed</button>
+                                                        </td>
+                        </tr>
+                                                                                    <tr>
+                            <td class="text-center">10</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Annabell Sheerin</td>
+                            <td style="white-space: nowrap;" class="text-center">$2,175</td>
+                            <td class="text-center">4 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                            <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                        </td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </marquee>
+        <div class="col-md-6 step-list__item">
+        <marquee width="100%" direction="down" height="30%">
+            <h3>LATEST WITHDRAWAL</h3>
+            <div class="step-body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Gateway</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Amount</th>
+                            <th class="text-center">Time</th>
+                            <th class="text-center">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                                                                                                                                                        <tr>
+                            <td class="text-center">1</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Janice Currie</td>
+                            <td style="white-space: nowrap;" class="text-center">$69,949</td>
+                            <td class="text-center">7 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">2</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Gabriel Grennay</td>
+                            <td style="white-space: nowrap;" class="text-center">$55,181</td>
+                            <td class="text-center">3 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Successful</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">3</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Ray Shillingburg</td>
+                            <td style="white-space: nowrap;" class="text-center">$96,509</td>
+                            <td class="text-center">6 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">4</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Mirella Deconti</td>
+                            <td style="white-space: nowrap;" class="text-center">$86,385</td>
+                            <td class="text-center">6 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">5</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Chrystal Rothermel</td>
+                            <td style="white-space: nowrap;" class="text-center">$29,458</td>
+                            <td class="text-center">5 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Successful</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">6</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Norman Grate</td>
+                            <td style="white-space: nowrap;" class="text-center">$46,218</td>
+                            <td class="text-center">4 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Successful</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">7</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Ettie Strudwick</td>
+                            <td style="white-space: nowrap;" class="text-center">$8,370</td>
+                            <td class="text-center">6 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Successful</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">8</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Cedrick Fuson</td>
+                            <td style="white-space: nowrap;" class="text-center">$19,558</td>
+                            <td class="text-center">7 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Successful</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">9</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Felecia Tesmar</td>
+                            <td style="white-space: nowrap;" class="text-center">$66,472</td>
+                            <td class="text-center">7 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded btn-sm"><i class="fa fa-check-circle"></i> Successful</button>
+                                                            </td>
+                        </tr>
+                                                                                                        <tr>
+                            <td class="text-center">10</td>
+                            <td class="text-center">Bitcoin</td>
+                            <td class="text-center">Cassondra Rufener</td>
+                            <td style="white-space: nowrap;" class="text-center">$81,469</td>
+                            <td class="text-center">8 day(s) ago </td>
+                            <td class="text-center" style="white-space: nowrap;">
+                                                                    <button type="button" class="btn btn-outline-warning btn-rounded btn-sm"><i class="fa fa-exclamation-triangle"></i> Pending</button>
+                                                            </td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+            </div>
+        
+      
+  
+  </marquee>
+</div></div></div></section>
+    
+<!--Partners-->
+<section id="partner" class="padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center wow fadeInDown" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+        <h2 class="bottom10 text-capitalize">Be Our <span class="yellow_t">Partners</span></h2>
+        <p class="heading_space">Are you passionate about working with us? We are glad to let you know that we will always welcome you with an open arm ready to work with you in the best way</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+<!--Partner Ends-->
+
+<!--Contact Info-->
+<div class="container bg_contact bg_two border_radius wow bounceInUp" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+  <div class="row ">
+    <div class="col-sm-6">
+      <div class="contact_inner">
+        <i class="icon-phone4"></i>
+        <h5><strong> </strong></h5>
+        <a href="mailto:support@cinexmarket.com"><span class="__cf_email__">support@cinexmarket.com</span></a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="contact_inner">
+        <i class="icon-icons20"></i>
+        <h5><strong>Mon - Sun 8.00 - 20.00</strong></h5>
+        <h5>Sunday Closed</h5>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="contact_inner">
+        <i class="icon-location"></i>
+        <h5><strong>2693 Mt Vernon Ave, California, United States</strong></h5>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer start -->
+<footer class="footer_top padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 footer_panel heading_space">
+        <a href="index-2" class="footer_logo bottom30"><img src="img/logo-footer.png" alt="envas"></a>
+        <p class="bottom30">Cinexmarket is a financial investment company established by a group of professional traders and investors, who have fore seen the future of International Capital Market. The company has direct contracts with professional traders and miners around the world that guarantees the best services and ensures profits are made and remitted to investors daily.</p>
+      </div>
+      <div class="col-sm-4 footer_panel heading_space">
+        <h3 class="heading bottom30">Useful <span class="yellow_t">Links</span></h3>
+        <ul class="links">
+            <li><a href="index-2"><i class="icon-chevron-small-right"></i>Home</a></li>
+            <li><a href="about"><i class="icon-chevron-small-right"></i>Company</a></li>
+            <li><a href="faq"><i class="icon-chevron-small-right"></i>FAQ</a></li>     
+            <li><a href="contact-us"><i class="icon-chevron-small-right"></i>Contact Us</a></li>
+            <li><a href="terms-conditions"><i class="icon-chevron-small-right"></i>Terms &amp; Conditions</a></li>
+            <li><a href="aml-policy"><i class="icon-chevron-small-right"></i>AML Policy</a></li>
+            <li><a href="privacy-policy"><i class="icon-chevron-small-right"></i>Privacy Policy</a></li>
+            <li><a href="payment-policy"><i class="icon-chevron-small-right"></i>Payment Policy</a></li>
+            <li><a href="client/login"><i class="icon-chevron-small-right"></i>Start Investing</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+          <p>Copyright © 2023 <a href="#">Cinexmarket</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="ui/js/jquery-2.2.3.js"></script>
+<script src="ui/js/bootstrap.min.js"></script>
+<script src="ui/js/jquery.parallax-1.1.3.js"></script>
+<script src="ui/js/jquery.appear.js"></script>
+<script src="ui/js/jquery-countTo.js"></script>
+<script src="ui/js/bootsnav.js"></script>
+<script src="ui/js/jquery.cubeportfolio.min.js"></script>
+<script src="ui/js/owl.carousel.min.js"></script>
+<script src="ui/js/viedobox_video.js"></script>
+<script src="ui/js/jquery.themepunch.tools.min.js"></script>
+<script src="ui/js/jquery.themepunch.revolution.min.js"></script>
+<script src="ui/js/jquery.themepunch.revolution.min.js"></script>
+<script src="ui/js/revolution.extension.layeranimation.min.js"></script>
+<script src="ui/js/revolution.extension.navigation.min.js"></script>
+<script src="ui/js/revolution.extension.parallax.min.js"></script>
+<script src="ui/js/revolution.extension.slideanims.min.js"></script>
+<script src="ui/js/revolution.extension.video.min.js"></script>
+<script src="ui/js/wow.min.js"></script>
+<script src="ui/js/functionsaed0aed0.js?u=1587912412"></script>
+<script type="text/javascript" src="alert/js/jquery.fake-notification.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#notification-1').Notification({
+    // Notification varibles
+    Varible1: ["Dirk", "Johnny", "Watkin ", "Alejandro",  "Vina",  "Tony",   "Ahmed","Jackson",  "Noah", "Aiden",  "Darren", "Isabella", "Aria", "John", "Greyson", "Peter", "Mohammed", "William",
+    "Lucas", "Amelia", "Mason", "Mathew", "Richard", "Chris", "Mia", "Oliver"],
+    Varible2: ["USA","UAE","ITALY", "FLORIDA",  "MEXICO",  "INDIA",  "CHINA",  "CAMBODIA",  "UNITED KINGDOM",  "GERMANY", "AUSTRALIA",  "BANGLADESH", "SWEDEN", "PAKISTAN", "MALDIVES", "SEYCHELLES", 
+    "BOLIVIA",
+     "SOUTH AFRICA", "ZAMBIA", "ZIMBABWE", "LEBANESE", "SAUDI ARABIA", "CHILE", "PEUTO RICO"],
+    
+    Amount: [9000, 2500,5000,6669,4440,7989,7052],          
+    Content: '[Varible1] from [Varible2] has just Earned <b>$[Amount]</b>',
+    // Timer
+    Show: ['stable', 5, 10],
+    Close: 5,
+    Time: [0, 23],
+    // Notification style 
+    LocationTop: [true, '30%'],
+    LocationBottom:[false, '10%'],
+    LocationRight: [false, '10%'],            
+    LocationLeft:[true, '10px'],
+    Background: '#000000',
+    BorderRadius: 5,
+    BorderWidth: 1,
+    BorderColor: '#ff9900',
+    TextColor: 'white',
+    IconColor: '#ffffff',
+    // Notification Animated   
+    AnimationEffectOpen: 'slideInUp',
+    AnimationEffectClose: 'slideOutDown',
+    // Number of notifications
+    Number: 40,
+    // Notification link
+    Link: [false, 'index-3', '_blank']
+    
+  });     
+});
+$("form#contact-form").submit(function(e) {
+    e.preventDefault();    
+    var formData = new FormData(this);
+    $.ajax({
+        url: 'process-contact.php',
+        type: 'POST',
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        beforeSend:function(){
+            $('#btnContact').html("Sending Message <i class='fa fa-spinner fa-spin'></i>").attr("disabled", true);
+        },
+        success: function (data) {
+            $('#btnContact').html("Send Message <i class='fa fa-rocket'></i>").attr("disabled", false);
+            if (data == "Done") {
+                swal("Message Sent", "You message was successfully sent to support. You will get a feedback soon", "success");
+                $("form#contact-form").trigger("reset");
+            } else {
+                swal("Error", data, "warning");
+            }   
+        },
+        error:function(){
+            swal("Network Unavailable", "Please check your internet connection", "warning");
+            $('#btnContact').html("Send Message <i class='fa fa-rocket'></i>").attr("disabled", false);
+        }
+    });
+});
+</script>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); 
+    })();
+</script>
+<!-- /GetButton.io widget -->
+<!--Start of Tawk.to Script-->
+<script src="//code.jivosite.com/widget/2ZPUXkKpsb" async=""></script>
+
+<!--End of Tawk.to Script-->
+
+
+
+
+
+</div><div id="html5-lightbox" style="display: none; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999998; text-align: center; position: fixed;"><div id="html5-lightbox-overlay" style="display:block;position:absolute;top:0px;left:0px;width:100%;min-height:100%;background-color:#000;opacity:0.8;filter:alpha(opacity=80);"></div><div id="html5-lightbox-box" style="display:block;position:relative;margin:0px auto;"><div id="html5-elem-box" style="display:block;position:relative;margin:0px auto;text-align:center;overflow:hidden;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;"><div id="html5-elem-wrap" style="display:block;position:relative;margin:0px auto;text-align:center;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#fff;"><div id="html5-loading" style="display:none;position:absolute;top:0px;left:0px;text-align:center;width:100%;height:100%;background:url(&quot;images/lightbox-loading.gif&quot;) no-repeat center center;"></div><div id="html5-error" class="html5-error" style="display:none;position:absolute;padding:8px;text-align:center;width:280px;height:48px;">The requested content cannot be loaded.<br>Please try again later.</div><div id="html5-image" style="display:none;position:absolute;top:0px;left:0px;padding:8px;text-align:center;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;"></div><div id="html5-next" style="display:none;cursor:pointer;position:absolute;right:8px;top:50%;margin-top:-16px;"><img src="images/lightbox-next.png"></div><div id="html5-prev" style="display:none;cursor:pointer;position:absolute;left:8px;top:50%;margin-top:-16px;"><img src="images/lightbox-prev.png"></div></div><div id="html5-elem-data-box" style="display: none; position: relative; width: 100%; height: auto; padding: 0px 0px 8px; background-color: rgb(255, 255, 255); text-align: left;"><div id="html5-text" style="display: block; overflow: hidden; margin: 0px 8px;"></div></div></div><div id="html5-watermark" style="display:none;position:absolute;left:10px;top:10px;"><a href="false" style="text-decoration:none;" title="jQuery Lightbox"><div style="display:block;width:170px;height:20px;text-align:center;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#fff;color:#333;font:12px Arial,sans-serif;"><div style="line-height:20px;"></div></div></a></div><div id="html5-close" style="display:none;cursor:pointer;position:absolute;top:0;right:0;margin-top:-16px;margin-right:-16px;"><img src="images/close-box.png"></div></div></div><a href="#" class="back-to"><i class="icon-arrow-up2"></i></a><div id="jivo-iframe-container" style="opacity: 0; visibility: hidden; width: 0px; height: 0px; overflow: hidden;"><iframe src="" role="presentation" allow="autoplay" title="Jivochat" name="jivo_container" id="jivo_container" frameborder="no"></iframe></div><jdiv><jdiv class="globalClass_fa43 global_cb08 __blue_ea75"><jdiv translate="no" class="notranslate" style="animation-duration: 300ms; animation-timing-function: cubic-bezier(0.39, 0.24, 0.21, 0.99); animation-delay: 0s; animation-iteration-count: 1; animation-direction: normal; animation-fill-mode: both; animation-play-state: running; animation-name: Label_CLOSE_WIDGET_d6ea; display: block; z-index: 2147483646; position: fixed;"><jdiv class="label_a29c _bottom_eed4 __show_d8e0 notranslate" translate="no" id="jvlabelWrap" style="max-width: calc(100vw - 80px); bottom: 0px; right: 40px; background: linear-gradient(95deg, rgb(0, 85, 201) 20%, rgb(24, 185, 212) 80%);"><jdiv class="hoverl_cecf"><jdiv class="omnichannel_da15 bottom_be25"></jdiv></jdiv><jdiv class="text_e9f0 contentTransitionWrap_eb3d" style="font-size: 15px; font-family: Arial, Arial; font-style: normal; color: rgb(240, 241, 241);">Chat with us, we're online!</jdiv><jdiv class="copy_f43a"><jdiv class="logo_d973 _bottom_e5c8"><jdiv class="hoverBox_c33a"></jdiv><jdiv class="logoIcon_c59b" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22108%22%20height%3D%2236%22%20viewBox%3D%220%200%20108%2036%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23F0F1F1%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.342%2011.967H.957c-.2%200-.4%200-.6.2%200%20.2-.198.2-.198.4v1.993c0%20.2%200%20.4.198.6.2.198.4.198.6.198h2.79v14.36c0%201.397-1.196%202.594-2.392%202.594h-.4c-.2%200-.398%200-.598.2-.2.2-.2.398-.2.598v1.994c0%20.2%200%20.4.2.6.2.198.4.198.6.198h.198c3.192%200%205.785-2.792%205.785-5.984V12.566c0-.2%200-.4-.2-.6h-.398m6.98%200H11.33c-.2%200-.2%200-.4.2s-.2.2-.2.4v14.76c0%20.2%200%20.398.2.598.2.2.4.2.598.2h1.795c.2%200%20.4%200%20.598-.2.2-.2.2-.4.2-.598v-14.76c0-.2%200-.4-.198-.6h-.6m17.154%200H28.88c-.598%200-.997.2-.997.4l-4.388%209.973-4.188-9.974c0-.4-.4-.4-.6-.4h-1.993c-.4%200-.598%200-.598.2-.2.2-.2.4%200%20.6l6.78%2015.357c.2.2.4.4.6.4h.2c.198%200%20.597-.2.597-.4l6.782-15.358c.2-.2.2-.4%200-.598-.2-.2-.4-.2-.6-.2m9.176-.4c-2.193.002-3.988.8-5.584%202.594-1.595%201.597-2.393%203.592-2.393%205.985%200%202.393.798%204.388%202.393%205.984%201.596%201.794%203.39%202.592%205.585%202.592s3.99-.798%205.586-2.593c1.596-1.796%202.394-3.79%202.394-5.985%200-2.393-.798-4.388-2.394-5.984-1.596-1.794-3.59-2.591-5.585-2.591m3.193%2012.165c-.798.998-1.995%201.596-3.192%201.596-1.395%200-2.392-.398-3.39-1.395-.797-.998-1.396-2.194-1.396-3.79%200-1.396.4-2.792%201.397-3.59.798-.997%201.995-1.396%203.39-1.396%201.398%200%202.395.398%203.193%201.395.797.997%201.396%202.194%201.396%203.59s-.6%202.593-1.397%203.59m19.147-.598c-.398-.4-.797-.2-.997%200l-.4.4-.597.597c-.2.2-.4.2-.6.4-.198.2-.597.398-.796.398-.4%200-.6.2-.998.2-1.396%200-2.393-.6-3.19-1.596-.8-.998-1.397-2.194-1.397-3.79%200-1.396.4-2.792%201.396-3.79.998-.997%201.996-1.396%203.392-1.396%201.197%200%202.194.6%203.19%201.596.4.4.8.4.998.2l1.197-1.197s0-.4-.4-.8c-1.395-1.794-3.39-2.79-5.584-2.79-2.194-.002-3.99.796-5.584%202.59-1.597%201.597-2.395%203.592-2.395%205.985%200%202.393.798%204.388%202.394%206.183%201.594%201.596%203.39%202.394%205.583%202.394%202.593%200%204.588-1.197%205.984-3.39.2-.4.2-.8-.2-1.198l-.997-.997m11.57-11.569c-1.597%200-2.993.6-4.59%201.796V4.986c0-.2%200-.4-.198-.598-.2-.2-.4-.2-.6-.2H66.38c-.2%200-.398%200-.598.2-.2.2-.2.4-.2.598v22.54c0%20.198%200%20.398.2.597.2.2.4.2.598.2h1.796c.598%200%20.797-.2.797-.798V17.353c.2-.6.8-.998%201.398-1.596.797-.598%201.795-.798%202.792-.798.997%200%201.795.398%202.393%201.196.6.798.798%201.795.798%203.19v8.378c0%20.2%200%20.4.2.6.2.198.4.198.6.198h1.794c.2%200%20.4%200%20.6-.2.198-.2.198-.398.198-.598v-8.177c-.2-5.386-2.194-7.979-6.183-7.979m20.144%201.995c-.4-.798-.997-1.197-1.596-1.596-.798-.4-1.795-.598-2.992-.598-1.994%200-3.79.398-5.385.996-.398.2-.597.4-.597.998l.4%201.396c.198.598.398.798.796.598a12.823%2012.823%200%200%201%204.388-.798c.997%200%201.595.2%201.994.798.4.598.598%201.596.4%202.793l-.4-.2c-.2%200-.598-.198-1.197-.198-.4.2-.797.2-1.396.2-1.995%200-3.392.398-4.588%201.395-1.197.997-1.596%202.194-1.596%203.79s.4%202.992%201.396%203.99c.998.996%202.194%201.395%203.59%201.395%201.796%200%203.39-.598%204.787-1.994l.398%201.196c.2.4.4.6.6.6h1.195c.2%200%20.4%200%20.6-.2.198-.2.198-.4.198-.6V18.75c0-1.198%200-2.195-.198-2.993-.2-.598-.4-1.396-.798-2.194M91.31%2023.735c-.2.4-.797.998-1.396%201.396-.798.4-1.396.6-2.194.6s-1.396-.2-1.795-.798c-.4-.4-.598-1.197-.598-1.795%200-.798.2-1.396.798-1.995.598-.4%201.396-.797%202.393-.797.598%200%201.197%200%201.795.2.6.198.997.198.997.398v2.792m16.555%202.793l-.598-1.596c-.2-.4-.4-.598-.997-.4a3.834%203.834%200%200%201-2.394.8c-.4%200-.798-.2-.997-.4-.2-.2-.4-.598-.4-1.396V14.96h4.19c.198%200%20.397%200%20.597-.2.2-.2.2-.4.2-.6v-1.594c0-.2%200-.4-.2-.6h-4.788V7.38c0-.2%200-.4-.2-.598-.2-.2-.398-.2-.598-.2h-1.994c-.2%200-.4%200-.6.2-.198.2-.198.398-.198.598v4.587h-1.795c-.4%200-.798.2-.798.798v1.396c0%20.2%200%20.4.2.6.2.2.398.2.598.2h1.795v8.975c0%201.595.2%202.792.798%203.59.598.798%201.595%201.197%202.99%201.197.8%200%201.597-.2%202.395-.4s1.396-.598%201.795-.797c.997-.2%201.197-.598.997-.997z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2318c139%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.94%2010.77C6.543.4.16%200%20.16%200c-.4%209.374%206.78%2010.77%206.78%2010.77z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv><jdiv class="fallback_dda1"></jdiv></jdiv></jdiv><jdiv class="leafCont_e143"><jdiv class="leaf_cab9 _bottom_f717"><jdiv class="cssLeaf_ba2f" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2240%22%20viewBox%3D%220%200%2032%2040%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2318b9d4%22%20d%3D%22M0%200h9.02L32%2033.196V40H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2318c139%22%20d%3D%22M9%200c3.581.05%2023%205.426%2023%2033.08v.03C18.922%2030.751%209%2019.311%209%205.554V0z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv></jdiv></jdiv><jdiv class="copyContainer_a082"><jdiv class="copyright_a144 _bottom_da01" style="background: linear-gradient(95deg, rgb(0, 85, 201) 20%, rgb(24, 185, 212) 80%);"><jdiv class="text_c598" style="color: rgb(240, 241, 241);"><a href="https://www.jivochat.com/i_sa/?utm_source=cinexmarket.com&amp;utm_medium=link&amp;utm_content=label_tooltip&amp;utm_campaign=from_widget" rel="nofollow noopener noreferrer" target="_blank" class="link_bcf3">Business Messenger by <jdiv class="logoIcon_e1a6" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22108%22%20height%3D%2236%22%20viewBox%3D%220%200%20108%2036%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23F0F1F1%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.342%2011.967H.957c-.2%200-.4%200-.6.2%200%20.2-.198.2-.198.4v1.993c0%20.2%200%20.4.198.6.2.198.4.198.6.198h2.79v14.36c0%201.397-1.196%202.594-2.392%202.594h-.4c-.2%200-.398%200-.598.2-.2.2-.2.398-.2.598v1.994c0%20.2%200%20.4.2.6.2.198.4.198.6.198h.198c3.192%200%205.785-2.792%205.785-5.984V12.566c0-.2%200-.4-.2-.6h-.398m6.98%200H11.33c-.2%200-.2%200-.4.2s-.2.2-.2.4v14.76c0%20.2%200%20.398.2.598.2.2.4.2.598.2h1.795c.2%200%20.4%200%20.598-.2.2-.2.2-.4.2-.598v-14.76c0-.2%200-.4-.198-.6h-.6m17.154%200H28.88c-.598%200-.997.2-.997.4l-4.388%209.973-4.188-9.974c0-.4-.4-.4-.6-.4h-1.993c-.4%200-.598%200-.598.2-.2.2-.2.4%200%20.6l6.78%2015.357c.2.2.4.4.6.4h.2c.198%200%20.597-.2.597-.4l6.782-15.358c.2-.2.2-.4%200-.598-.2-.2-.4-.2-.6-.2m9.176-.4c-2.193.002-3.988.8-5.584%202.594-1.595%201.597-2.393%203.592-2.393%205.985%200%202.393.798%204.388%202.393%205.984%201.596%201.794%203.39%202.592%205.585%202.592s3.99-.798%205.586-2.593c1.596-1.796%202.394-3.79%202.394-5.985%200-2.393-.798-4.388-2.394-5.984-1.596-1.794-3.59-2.591-5.585-2.591m3.193%2012.165c-.798.998-1.995%201.596-3.192%201.596-1.395%200-2.392-.398-3.39-1.395-.797-.998-1.396-2.194-1.396-3.79%200-1.396.4-2.792%201.397-3.59.798-.997%201.995-1.396%203.39-1.396%201.398%200%202.395.398%203.193%201.395.797.997%201.396%202.194%201.396%203.59s-.6%202.593-1.397%203.59m19.147-.598c-.398-.4-.797-.2-.997%200l-.4.4-.597.597c-.2.2-.4.2-.6.4-.198.2-.597.398-.796.398-.4%200-.6.2-.998.2-1.396%200-2.393-.6-3.19-1.596-.8-.998-1.397-2.194-1.397-3.79%200-1.396.4-2.792%201.396-3.79.998-.997%201.996-1.396%203.392-1.396%201.197%200%202.194.6%203.19%201.596.4.4.8.4.998.2l1.197-1.197s0-.4-.4-.8c-1.395-1.794-3.39-2.79-5.584-2.79-2.194-.002-3.99.796-5.584%202.59-1.597%201.597-2.395%203.592-2.395%205.985%200%202.393.798%204.388%202.394%206.183%201.594%201.596%203.39%202.394%205.583%202.394%202.593%200%204.588-1.197%205.984-3.39.2-.4.2-.8-.2-1.198l-.997-.997m11.57-11.569c-1.597%200-2.993.6-4.59%201.796V4.986c0-.2%200-.4-.198-.598-.2-.2-.4-.2-.6-.2H66.38c-.2%200-.398%200-.598.2-.2.2-.2.4-.2.598v22.54c0%20.198%200%20.398.2.597.2.2.4.2.598.2h1.796c.598%200%20.797-.2.797-.798V17.353c.2-.6.8-.998%201.398-1.596.797-.598%201.795-.798%202.792-.798.997%200%201.795.398%202.393%201.196.6.798.798%201.795.798%203.19v8.378c0%20.2%200%20.4.2.6.2.198.4.198.6.198h1.794c.2%200%20.4%200%20.6-.2.198-.2.198-.398.198-.598v-8.177c-.2-5.386-2.194-7.979-6.183-7.979m20.144%201.995c-.4-.798-.997-1.197-1.596-1.596-.798-.4-1.795-.598-2.992-.598-1.994%200-3.79.398-5.385.996-.398.2-.597.4-.597.998l.4%201.396c.198.598.398.798.796.598a12.823%2012.823%200%200%201%204.388-.798c.997%200%201.595.2%201.994.798.4.598.598%201.596.4%202.793l-.4-.2c-.2%200-.598-.198-1.197-.198-.4.2-.797.2-1.396.2-1.995%200-3.392.398-4.588%201.395-1.197.997-1.596%202.194-1.596%203.79s.4%202.992%201.396%203.99c.998.996%202.194%201.395%203.59%201.395%201.796%200%203.39-.598%204.787-1.994l.398%201.196c.2.4.4.6.6.6h1.195c.2%200%20.4%200%20.6-.2.198-.2.198-.4.198-.6V18.75c0-1.198%200-2.195-.198-2.993-.2-.598-.4-1.396-.798-2.194M91.31%2023.735c-.2.4-.797.998-1.396%201.396-.798.4-1.396.6-2.194.6s-1.396-.2-1.795-.798c-.4-.4-.598-1.197-.598-1.795%200-.798.2-1.396.798-1.995.598-.4%201.396-.797%202.393-.797.598%200%201.197%200%201.795.2.6.198.997.198.997.398v2.792m16.555%202.793l-.598-1.596c-.2-.4-.4-.598-.997-.4a3.834%203.834%200%200%201-2.394.8c-.4%200-.798-.2-.997-.4-.2-.2-.4-.598-.4-1.396V14.96h4.19c.198%200%20.397%200%20.597-.2.2-.2.2-.4.2-.6v-1.594c0-.2%200-.4-.2-.6h-4.788V7.38c0-.2%200-.4-.2-.598-.2-.2-.398-.2-.598-.2h-1.994c-.2%200-.4%200-.6.2-.198.2-.198.398-.198.598v4.587h-1.795c-.4%200-.798.2-.798.798v1.396c0%20.2%200%20.4.2.6.2.2.398.2.598.2h1.795v8.975c0%201.595.2%202.792.798%203.59.598.798%201.595%201.197%202.99%201.197.8%200%201.597-.2%202.395-.4s1.396-.598%201.795-.797c.997-.2%201.197-.598.997-.997z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2318c139%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.94%2010.77C6.543.4.16%200%20.16%200c-.4%209.374%206.78%2010.77%206.78%2010.77z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv></a></jdiv><jdiv class="corner_b7b2" style="border-top-color: rgb(24, 185, 212);"></jdiv></jdiv></jdiv></jdiv></jdiv><jdiv id="jivo-player" class="player_a6c1"><audio preload="auto" id="jivo-sound-agent_message"><source src="https://code.jivosite.com/sounds/agent_message.mp3" type="audio/mpeg"><source src="https://code.jivosite.com/sounds/agent_message.ogg" type="audio/ogg; codecs=vorbis"><source src="https://code.jivosite.com/sounds/agent_message.wav" type="audio/wav"></audio><audio preload="auto" id="jivo-sound-notification"><source src="https://code.jivosite.com/sounds/notification.mp3" type="audio/mpeg"><source src="https://code.jivosite.com/sounds/notification.ogg" type="audio/ogg; codecs=vorbis"><source src="https://code.jivosite.com/sounds/notification.wav" type="audio/wav"></audio><audio preload="auto" id="jivo-sound-outgoing_message"><source src="https://code.jivosite.com/sounds/outgoing_message.mp3" type="audio/mpeg"><source src="https://code.jivosite.com/sounds/outgoing_message.ogg" type="audio/ogg; codecs=vorbis"><source src="https://code.jivosite.com/sounds/outgoing_message.wav" type="audio/wav"></audio></jdiv><jdiv id="jcont" translate="no" class="notranslate" style="animation-duration: 300ms; animation-timing-function: cubic-bezier(0.39, 0.24, 0.21, 0.99); animation-delay: 0s; animation-iteration-count: 1; animation-direction: normal; animation-fill-mode: both; animation-play-state: running; animation-name: WidgetContainer_CLOSE_WIDGET_a1ef; --jright: 30px; --jheight: 496px; display: block; position: fixed; --jlabelwidth: 300px; --jlabelright: 40px;"><jdiv class="wrap_f1dc" dir="ltr" id="jivo_action"><jdiv class="closeButton_c33b" id="jivo_close_button"><jdiv class="closeIcon_d37c" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2228%22%20viewBox%3D%220%200%2028%2028%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22translate(2%202)%22%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%20fill%3D%22%23FFF%22%20opacity%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212.75%22%20stroke%3D%22%23222D38%22%20stroke-width%3D%221.5%22%20opacity%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20fill%3D%22%23222D38%22%20opacity%3D%221%22%20transform%3D%22translate(6%206)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%221.611%22%20height%3D%2213.9%22%20x%3D%225.435%22%20y%3D%22-.941%22%20rx%3D%22.806%22%20transform%3D%22rotate(45%206.24%206.01)%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%221.611%22%20height%3D%2213.9%22%20x%3D%225.435%22%20y%3D%22-.941%22%20rx%3D%22.806%22%20transform%3D%22scale(-1%201)%20rotate(45%200%20-9.058)%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv></jdiv></jdiv></jdiv><jdiv class="pseudoHeight_da57"></jdiv><jdiv class="jivoMouseTrack_e672"></jdiv></jdiv></jdiv></body></html>

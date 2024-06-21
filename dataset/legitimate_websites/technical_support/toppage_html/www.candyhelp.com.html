@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head>
+        <meta charset="UTF-8">
+        <title>CandyHelp</title>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+    </head>
+
+    <body style="">
+        <div id="wrapper">
+            <header>
+                <a href="index.html"><img src="layout/candyhelplogo.png" id="candyhelplogo" width="220"></a>
+                <img src="layout/quality.png" id="qualitylogo" width="320">
+            </header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="products.html">Products</a>
+                        <ul>
+                            <li><a href="butterreplacer.html">Butter Replacer</a></li>
+                            <li><a href="creammilk.html">Cream Milk</a></li>
+                            <li><a href="creamreplacer.html">Cream Replacer</a></li>
+                            <li><a href="cheeseflavour.html">Cheese</a></li>
+                            <li><a href="coconutflavour.html">Coconut</a></li>
+                            <li><a href="mochaflavour.html">Mocca</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="background.html">About</a>
+                        <ul>
+                            <li><a href="background.html">Background</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="visionmission.html">Vision Mission</a></li>
+                            <li><a href="ourguru.html">Our Mentor</a></li>
+                            <li><a href="quality.html">Quality Philosophy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#.html">Service</a>
+                        <ul id="servicetab">
+
+                            <li><a href="ourservices.html">Our Services</a></li>
+                            <li><a href="writeup.html">Write-Up</a></li>
+                            <li><a href="testkitchen.html">Test Kitchen</a></li>
+                            <li><a href="#.html">Gallery</a>
+                                <ol>
+                                    <li><a href="fhagallery.html">Food Hotel Asia</a></li>
+                                    <li><a href="germanygallery.html">Exhibition in Germany</a></li>
+                                    <li><a href="equipmentgallery.html">Installation of Equipments</a></li>
+                                    <li><a href="europegallery.html">Testing in Europe</a></li>
+                                    <li><a href="traininggallery.html">Training</a></li>
+                                    <li><a href="droetkergallery.html">Dr. Oetker</a></li>
+                                </ol>
+                            </li><li><a href="certification.html">Certification</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+                <div id="transparentbackground"></div>
+
+                <article>
+                    <div id="slider" style="width: 480px; height: 320px;">
+                        <img src="images/imageslider/slider01.jpeg" width="480" height="320" style="position: absolute; top: 0px; left: 0px; display: block; opacity: 1; z-index: 5;">
+                        <img src="images/imageslider/slider02.jpeg" width="480" height="320" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0;">
+                        <img src="images/imageslider/slider03.jpeg" width="480" height="320" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 2; opacity: 0;">
+                        <img src="images/imageslider/slider04.jpeg" width="480" height="320" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 1; opacity: 0;">                      
+                    </div>
+                    <div id="previous">
+                        <h1> &lt; </h1>
+                    </div>
+
+                    <div id="next">
+                        <h1> &gt; </h1>
+                    </div>                    
+                </article>
+                <selection>
+                    <div id="transparentmoreaboutus"> </div>
+                    <div id="transparentourproducts"> </div>
+                    <div id="transparentcontactus"> </div>
+                    
+                    <div id="moreaboutus">
+                        <a href="background.html">
+                            <h3>More About Us</h3>
+                            <p>"We are a boutique flavoured paste manufacturer, specialize in designing and producing unique flavoured pastes for confectionery and baking industries...” </p>
+                        </a>
+                    </div>
+
+                    <div id="ourproducts">
+                        <a href="products.html">
+                            <h3>Our Products</h3>
+                            <p>"Throughout the years we have developed and manufactured really unique flavour pastes to suit the needs of our different customers.” </p>
+                        </a>
+                    </div>
+
+                    <div id="contactus">
+                        <a href="contact.html">
+                            <h3>Contact Us</h3>
+                            <p>“Do let us know if you have any queries and we would get back to you as soon as possible”</p>
+                        </a>
+                    </div>
+                </selection>
+                
+                <footer>
+                    <br>
+                    <p>  2002Candyhelp , Hosted by ALLIANCE INGREDIENTS. TEL: 662-315 2486-7 FAX: 662-315 2485  
+                    <br>
+                    159/1 MOO 17 SOI 5/1 BANGPLEE INDUSTRY ESTATE, TEPARAK ROAD, AMPUR - BANGSAOTHONG, SAMUTPRAKARN 10540, THAILAND </p>
+                </footer>
+                
+                
+
+            
+            
+        </div>
+        <!-- JavaScript to be placed at bottome of html doc-->
+        <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/jquery.cycle.all.js"></script>
+        <script =="" "text="" javascript"="">
+            
+
+            $('#slider').cycle({ 
+                fx:     'fade', 
+                speed:  'slow', 
+                next:   '#next', 
+                prev:   '#previous' 
+            });
+        </script>
+    
+</body></html>

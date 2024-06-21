@@ -1,0 +1,12 @@
+{
+    "url": "https://gkiqlhmli3lp80l.pages.dev/smart89/",
+    "question": "Please analyze this URL https://gkiqlhmli3lp80l.pages.dev/smart89/",
+    "thought": "I should first access the URL to obtain a status code. True True",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake Windows Defender",
+        "reason": "The content of the page is text claiming to be from Windows Defender and is asking to call a number for assistance. This is likely a scam as it is not from the real Windows Defender and is trying to get you to call a premium rate number."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Very bad"
+}

@@ -1,0 +1,12 @@
+{
+    "url": "https://idealcointrading.org/",
+    "question": "Please analyze this URL https://idealcointrading.org/",
+    "thought": "I need to start by accessing the URL to obtain a status code and then extract the text from the HTML to analyze its content. The website is accessible, now I need to extract the text from the HTML to analyze its content. The website has some characteristics of a scam website, such as unusually high claims of financial gains and the promise of free money. However, I need to check the company information and the privacy policy to make a final determination. I need to check the SSL certificate for more information about the website. The SSL certificate information suggests that the website is using a Let's Encrypt certificate, which is a commonly used certificate authority. This does not provide much insight into the legitimacy of the website. However, the website's claims of financial gains and the promise of free money are red flags. Additionally, the error when trying to retrieve WHOIS information is suspicious. Combined with the characteristics of the website's content, it is likely that the website is a scam. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake investment website",
+        "reason": "The website makes unusually high claims of financial gains promises free money and has an error when trying to retrieve WHOIS information."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

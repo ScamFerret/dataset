@@ -1,0 +1,854 @@
+<!DOCTYPE html><html lang="en"><head><script src="images/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $AutoPlaySteps: 5,
+              $SlideDuration: 160,
+              $SlideWidth: 200,
+              $SlideSpacing: 3,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 5
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+            
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 057 css*/
+        .jssorb057 .i {position:absolute;cursor:pointer;}
+        .jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+        .jssorb057 .i:hover .b {stroke-opacity:.7;}
+        .jssorb057 .iav .b {stroke-opacity: 1;}
+        .jssorb057 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 073 css*/
+        .jssora073 {display:block;position:absolute;cursor:pointer;}
+        .jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+        .jssora073:hover {opacity:.8;}
+        .jssora073.jssora073dn {opacity:.4;}
+        .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+    </style>
+   
+
+<!-- Coin Investment Trading --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Coin Investment Trading -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=750">
+  <title>Coin Investment Trading</title>
+    <link rel="icon" href="images/caimlogo.png">
+ 
+    <link rel="stylesheet" href="images/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+    <link href="images/animate.css" rel="stylesheet" type="text/css">
+    <link href="images/custom068d.css" rel="stylesheet" type="text/css">
+    <link href="images/hover.css" rel="stylesheet" type="text/css">
+    
+    <script src="images/jquery.min.js"></script>
+    <script src="images/setting2.js" type="text/javascript"></script>
+    <script src="images/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        function GetClock() {
+            var tzOffset = 0;//set this to the number of hours offset from UTC
+            var d = new Date();
+            var dx = d.toGMTString();
+            dx = dx.substr(0, dx.length - 3);
+            d.setTime(Date.parse(dx))
+            d.setHours(d.getHours() + tzOffset);
+            var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate();
+            var nhour = d.getHours(), nmin = d.getMinutes(), ap;
+            if (nhour == 0) { ap = " AM"; nhour = 12; }
+            else if (nhour < 12) { ap = " AM"; }
+            else if (nhour == 12) { ap = " PM"; }
+            else if (nhour > 12) { ap = " PM"; nhour -= 12; }
+            if (nmin <= 9) nmin = "0" + nmin;
+            document.getElementById('clockbox').innerHTML = tmonth[nmonth] + "- 2020 " + ndate + " " + nhour + ":" + nmin + ap + "";
+        }
+        window.onload = function () {
+            GetClock();
+            setInterval(GetClock, 1000);
+        }
+    </script>
+    <style>
+        .planwrap {
+            background-color: #C4C4C4;
+        }
+    </style>
+  
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script></head>
+<body>
+    
+	<script type="text/javascript" src="images/check.js" async="" defer=""></script>
+    <div class="wrapper">
+        <div class="bannerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="logowrap">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="logo bounceInDown wow"><a href="index-2.html"><img src="caimlogo.png" alt="" width="60%"></a></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                   <div class="icon"><img src="images/topemail.png" alt=""></div>
+                        e-mail: <a style="color:white" href="mailto:support@cointradsmine.com">support@cointradsmine.com</a>
+                        <div id="google_translate_element"></div>
+                    <div class="headercontacts bounceInDown wow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="images/element.js"></script>
+   
+   <div class="row">
+            <div class="col-lg-12">
+                <div class="mainmenu">
+                    <div class="nav_wrap">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle
+                                navigation</span> Menu <i class="fa fa-bars"></i> </button>
+                        <a class="navbar-brand page-scroll hide" href="index-3.html"><img src="images/logo.png" alt=""></a>
+                        <div class="collapse navbar-collapse zoomIn wow" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index-4.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="faq.html">faq</a></li>
+                                 <li><a href="paid.html">Paid Out</a></li>
+                                <li><a href="rules.html">rules</a></li>
+                                <!--<li><a href="?a=cust&amp;page=rating">rate us</a></li>
+                                <li><a href="?a=cust&amp;page=banners">banners</a></li>-->
+                                <li><a href="support.html">contact us</a></li>
+                               
+                                <li class="register"><a href="index-5.html">register</a></li>
+                                <li class="login"><a href="index-5.html">member login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="row">
+            <div class="mainbanner">
+                <div class="col-lg-6">
+                    <div class="bannertexts">
+                        <h1 class="fadeInDown wow"> best <sg>cryptocurrencies investments  platform</sg></h1>
+                        <a href="index-5.html" class="login fadeInUp wow hvr-forward">login</a>
+                        <a href="index-5.html" class="signup fadeInUp wow hvr-forward">signup</a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bannerbitcoin"><img src="images/bitcoinbannerricon.png" alt=""></div>
+                    <div class=" ajax">
+                        <div class="round outer"></div>
+                        <div class="round inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+<div class="aboutwrap bounceInUp wow" style="background-color:#040710">
+    <div class="" style="background-color:#007bff">
+        <div class="row">
+            <div class="col-lg-12" style="background-color:#040710">
+                <div class="aboutinside" style="background-color:#040710">
+                    <div class="aboutleft">
+                        <h2>WELCOME TO <strong> Coin Investment Trading</strong></h2>
+                        <p>Cryptocurrencies have become a real breakthrough in the development of finance and
+                            technology sector; they represent a fundamentally new instrument of payment. In
+                            addition to opportunities that digital money offers in the field of global payments,
+                            this is also a great opportunity to make money, available to everyone. Due to their
+                            volatility, independence and availability, coins allow for speculative trading and
+                            getting a huge interest revenue. No investment instrument can display such
+                            profitability and high liquidity.
+                            Currently, the number of cryptocurrency exchanges is on the increase and the volume
+                            of cryptocurrency trading ramps up every day. Billions of dollars are involved in
+                            daily transactions in the cryptocurrency market and it is logical that such volumes
+                            attract new participants. Experienced traders and beginners engage in high-yield
+                            earnings, but most of them depend on good fortune, which fails more often.
+                        </p>
+                        <a href="about.html" class="hvr-float">more info</a>
+                    </div>
+                    <div class="aboutright">
+                        <iframe src="https://www.youtube.com/embed/41JCpzvnn_0" allowfullscreen="" width="490" height="290" frameborder="0"></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="planwrap">
+            <div class="char" style="width: 100%;/**margin-left: -410px;**/margin-bottom: 60px;">
+       <!--   
+<script type="text/javascript">
+baseUrl = "https://widgets.cryptocompare.com/";
+var scripts = document.getElementsByTagName("script");
+var embedder = scripts[ scripts.length - 1 ];
+(function (){
+var appName = encodeURIComponent(window.location.hostname);
+if(appName==""){appName="local";}
+var s = document.createElement("script");
+s.type = "text/javascript";
+s.async = true;
+var theUrl = baseUrl+'serve/v2/coin/header?fsyms=BTC,ETH,LTC,BCH&tsyms=USD,EUR,CNY,GBP';
+s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+embedder.parentNode.appendChild(s);
+})();
+</script>
+-->
+</div>           
+<link rel="stylesheet" href="images/owl.carousel.min.css">
+<link rel="stylesheet" href="images/owl.theme.min.css">
+
+ <script type="text/javascript" src="images/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="images/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    
+   
+ 
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:2,
+        itemsDesktop:[1000,2],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,2],
+        itemsMobile:[650,1],
+        pagination:true,
+        navigation:false,
+        slideSpeed:1000,
+        autoPlay:true
+    });
+});
+</script>
+<style type="text/css">
+    
+ 
+.testimonial{
+    text-align: center;
+    padding: 85px 50px 45px 70px;
+    margin: 70px 15px 35px;
+    background: #f9f9f9;
+    box-shadow: 8px 4px 0 0 #77a9dd;
+    position: relative;
+}
+.testimonial .pic{
+    width: 120px;
+    height: 120px;
+    border: 5px solid #77a9dd;
+    margin: 0 auto;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .description{
+    font-size: 15px;
+    color: #757575;
+    line-height: 27px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.testimonial .description:before{
+    content: "\f10d";
+    font-family: "FontAwesome";
+    font-size: 32px;
+    color: #77a9dd;
+    position: absolute;
+    top: -15px;
+    left: -35px;
+}
+.testimonial .testimonial-profile{
+    position: relative;
+    margin: 20px 0 10px 0;
+}
+.testimonial .testimonial-profile:after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #77a9dd;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+.testimonial .title{
+    display: inline-block;
+    font-size: 18px;
+    color: #4a5184;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.testimonial .post{
+    display: inline-block;
+    font-size: 15px;
+    color: #757575;
+    text-transform: capitalize;
+}
+.owl-theme .owl-controls{
+    margin-top: 10px;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: #5e5f5f;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #77a9dd;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    width: 22px;
+    height: 12px;
+}
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="mean%20man.html">
+                    </div>
+                    <p class="description">
+                        Professional team and the site is beautiful. I have never seen such a site.  A good opportunity for changing your lifestyle.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Paul J</h3>
+                        <span class="post">Businessman</span>
+                    </div>
+                </div>
+ 
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="healthy%20man.html">
+                    </div>
+                    <p class="description">
+                        A safe investment, if you value your capital, don't miss out on scam sites. "Fxcryptoinvestment" highly recommended.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Micheal</h3>
+                        <span class="post">Realator</span>
+                    </div>
+                </div>
+ 
+  <div class="testimonial">
+                    <div class="pic">
+                        <img src="real%20woman.html">
+                    </div>
+                    <p class="description">
+                       After years of investing in this kind of website, this is first time I deposited without worry. Everything is perfect.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Ollie</h3>
+                        <span class="post">Actor</span>
+                    </div>
+                </div>
+                
+                
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="jay.html">
+                    </div>
+                    <p class="description">
+                        The site was recommended by my colleague, now all our colleagues have invested and enjoy their regular payments.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Fabian Knorr</h3>
+                        <span class="post">Student </span>
+                    </div>
+                </div>
+                
+                 <div class="testimonial">
+                    <div class="pic">
+                        <img src="student.html">
+                    </div>
+                    <p class="description">
+                        Secure investing with regular payments. I deposited by perfect money and just in a second receive my earning amount.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Agnes S. Allman</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container">            
+        <script src="images/coingecko-coin-price-marquee-widget.js"></script>
+        <coingecko-coin-price-marquee-widget coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en" font-color="#040222" vce-ready=""></coingecko-coin-price-marquee-widget>
+<br>
+                <div class="row">
+         
+      
+        
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 planbx">
+            <div class="planbox zoomIn wow">
+                <div class="percentage" style="background-color:#040710;">BASIC <br>PLAN</div>
+                <div class="percentage" style="background-color:#040710;">DAILY<span></span></div>
+               
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Min: $500</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Max: $999</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 20px;">ROI: 10%</div>
+                  <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Referral Bonus: 5%</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Swift Transaction</div>
+                <div class="action" style="background-color: #040710;"><a href="index-5.html" class="hvr-shrink" style="background-color: #040710;">Deposit</a></div>  
+            </div>
+        </div>
+      
+      
+      
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 planbx">
+            <div class="planbox zoomIn wow">
+                <div class="percentage" style="background-color:#040710;">STANDARD PLAN</div>
+                <div class="percentage" style="background-color:#040710;">5<span>DAYS</span></div>
+                
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Min: $1000</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Max: $9999</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 20px;">ROI: 15%</div>
+                  <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Referral Bonus: 5%</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Swift Transaction</div>
+                <div class="action" style="background-color: #040710;"><a href="index-5.html" class="hvr-shrink" style="background-color: #040710;">Deposit</a></div>  
+            </div>
+        </div>
+      
+      
+      
+      
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 planbx">
+            <div class="planbox zoomIn wow">
+                <div class="percentage" style="background-color:#040710;">PREMIUM PLAN</div>
+                <div class="percentage" style="background-color:#040710;">8<span>DAYS</span></div>
+               
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Min: $10000</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Max: $99999</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 20px;">ROI: 30%</div>
+                  <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Referral Bonus: 5%</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Swift Transaction</div>
+                <div class="action" style="background-color: #040710;"><a href="index-5.html" class="hvr-shrink" style="background-color: #040710;">Deposit</a></div>  
+            </div>
+        </div>
+       
+       
+       
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 planbx">
+            <div class="planbox zoomIn wow">
+                <div class="percentage" style="background-color:#040710;">VETERAN  PLAN</div>
+                <div class="percentage" style="background-color:#040710;">10<span>DAYS</span></div>
+               
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Min: $20000</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Max: $500000</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 20px;">ROI: 50%</div>
+                  <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Referral Bonus: 5%</div>
+                <div style="background-color: #040710;line-height: 18px; padding: 5px 15px; font-size: 13px;">Swift Transaction</div>
+                <div class="action" style="background-color: #040710;"><a href="index-5.html" class="hvr-shrink" style="background-color: #040710;">Deposit</a></div>  
+            </div>
+        </div>
+        
+        
+        </div>
+                </div>
+            </div>
+        </div>
+        <div class="statwrap">
+            <div class="container">
+                <h2 class="pulse wow">online <strong>statistics</strong></h2>
+                <div class="row">
+                    <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 statbx">
+                        <div class="statbox fadeInDown wow hvr-grow">
+                            <h4>VISITORS ONLINE <strong>306</strong></h4>
+                        </div>
+                    </div>-->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 statbx" style="background-color: #040710 ;">
+                        <div class="statbox fadeInDown wow hvr-grow" style="background-color: #040710 ;">
+                            <h4>TOTAL DEPOSITS <strong>$ 24584020.77</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 statbx" style="background-color: #040710 ;">
+                        <div class="statbox fadeInDown wow hvr-grow" style="background-color: #040710 ;">
+                            <h4>total withdraw <strong>$ 23562912.17</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 statbx" style="background-color: #040710 ;">
+                        <div class="statbox fadeInLeft wow hvr-grow" style="background-color: #040710 ;">
+                            <h4>total accounts <strong>35499</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 statbx" style="background-color: #040710 ;">
+                        <div class="statbox fadeInLeft wow hvr-grow" style="background-color: #040710 ;">
+                            <h4>Total Trades <strong>562499</strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        
+        <div class="lastwrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="laststatislists bounceInUp wow" style="background-color: #040710 ;">
+                            <div class="header">LAST <strong>DEPOSITS</strong> </div>
+                            <div class="infos">
+       
+        	
+			      
+
+
+                      <table class="table table-dark" style="background-color: black; color: yellow;">
+  <thead>
+    <tr>
+     
+                                             </tr><tr>
+                                             <td><button type="button" class="btn btn-success">Completed</button></td>
+                                             <td>Yolanda</td>
+                                            <td>$2100</td>
+                                            <td><img src="images/img-222220210114-wa014322.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                                                            <tr>
+                                             <td><button type="button" class="btn btn-success">Completed</button></td>
+                                             <td>James</td>
+                                            <td>$1500</td>
+                                            <td><img src="images/img-222220210114-wa0143222.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                                                            <tr>
+                                             <td><button type="button" class="btn btn-success">Completed </button></td>
+                                             <td>Adam B </td>
+                                            <td>$1600</td>
+                                            <td><img src="images/img-20210115-wa0001_20100215_203800_826.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                                                            <tr>
+                                             <td><button type="button" class="btn btn-success">Completed </button></td>
+                                             <td>Paul J </td>
+                                            <td>$3000</td>
+                                            <td><img src="images/img-20210121-wa0017.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                        
+  </thead>
+  
+</table>
+                                 
+ 
+
+                                      </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="laststatislists bounceInUp wow">
+                            <div class="header">LAST <strong>withdrawals</strong> </div>
+                            <div class="infos">
+     
+       
+                
+ 
+
+             
+       <table class="table table-dark" style="background-color: black; color: yellow;">
+
+  <thead>
+     <tr>
+     
+                                             </tr><tr>
+                                             <td><button type="button" class="btn btn-success">Completed </button></td>
+                                             <td>Kate </td>
+                                            <td>$5500</td>
+                                            <td><img src="images/img-20210115-wa0001.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                                                            <tr>
+                                             <td><button type="button" class="btn btn-success">Completed </button></td>
+                                             <td>Carolyn </td>
+                                            <td>$2700</td>
+                                            <td><img src="images/img-2220210114-wa0043.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                                                            <tr>
+                                             <td><button type="button" class="btn btn-success">Completed </button></td>
+                                             <td>Judith </td>
+                                            <td>$500</td>
+                                            <td><img src="images/img-a020210114-wa0043.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                                                            <tr>
+                                             <td><button type="button" class="btn btn-success">Completed </button></td>
+                                             <td>Eugene</td>
+                                            <td>$1100</td>
+                                            <td><img src="images/img-20210121-wa0017-2.jpg" width="40px" height="20px"></td>
+                                            
+                                        </tr>
+                                        
+  </thead>
+  
+
+ 
+</table>
+    
+	
+                                                                    </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+        
+        
+        
+
+<div class="lastwrap aboutpage">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="paymenticons">
+          <h2>Accepted <strong>Processors</strong></h2>
+           </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<div id="jssor_1" style="position: relative; margin: 0px auto; top: 0px; left: 0px; width: 980px; height: 150px; overflow: hidden; visibility: visible;" data-jssor-slider="1">
+    <!-- Loading Screen -->
+    
+    <div style="display: block; position: absolute; top: 0px; left: 0px; width: 980px; height: 150px;"><div style="display: block; position: absolute; top: 0px; left: 0px; width: 980px; height: 150px;"><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 0px; width: 980px; height: 150px; overflow: hidden; margin: 0px; padding: 0px; transform-style: flat; z-index: 0; pointer-events: none;"><div style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; z-index: 0;"></div></div><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 0px; width: 980px; height: 150px; overflow: hidden; margin: 0px; padding: 0px; transform-style: flat; z-index: 0;">
+        <div style="width: 200px; height: 150px; top: 0px; left: 390px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+            <div data-u="bg" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"><img data-u="image" src="images/1.jpg" border="0" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block"></div>
+        </div>
+        <div style="width: 200px; height: 150px; top: 0px; left: 593px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+            <div data-u="bg" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"><img data-u="image" src="images/download.png" border="0" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block"></div>
+        </div>
+        <div style="width: 200px; height: 150px; top: 0px; left: 796px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+            <div data-u="bg" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"><img data-u="image" src="images/5.jpg" border="0" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block"></div>
+        </div>
+        <div style="width: 200px; height: 150px; top: 0px; left: 999px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+            <div data-u="bg" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"><img data-u="image" src="images/4.jpg" border="0" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block"></div>
+        </div>
+        <div style="width: 200px; height: 150px; top: 0px; left: -16px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+            <div data-u="bg" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"><img data-u="image" src="images/3.jpg" border="0" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block"></div>
+        </div>
+        <div style="width: 200px; height: 150px; top: 0px; left: 187px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+            <div data-u="bg" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;"><img data-u="image" src="images/2.jpg" border="0" style="width: 200px; height: 150px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block"></div>
+        </div>
+       
+        
+        
+    </div></div></div><div style="display: block; position: absolute; width: 0px; height: 0px;"><a data-scale="0" href="https://www.jssor.com/" style="display: none; position: absolute; top: 0px; left: 0px;">web animation composer</a></div>
+    <!-- Bullet Navigator -->
+    <div style="display: block; position: absolute; bottom: 12px; left: 408px; width: 164px; height: 14px;"><div data-u="navigator" class="jssorb057" style="position: absolute; bottom: 12px; width: 164px; height: 14px; left: 0px; top: 0px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75"><div data-u="prototype" class="i iav" style="width: 14px; height: 14px; position: absolute; left: 0px; top: 0px;" data-jssor-button="1">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+        </div><div data-u="prototype" class="i" style="width: 14px; height: 14px; position: absolute; left: 30px; top: 0px;" data-jssor-button="1">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+        </div><div data-u="prototype" class="i" style="width: 14px; height: 14px; position: absolute; left: 60px; top: 0px;" data-jssor-button="1">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+        </div><div data-u="prototype" class="i" style="width: 14px; height: 14px; position: absolute; left: 90px; top: 0px;" data-jssor-button="1">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+        </div><div data-u="prototype" class="i" style="width: 14px; height: 14px; position: absolute; left: 120px; top: 0px;" data-jssor-button="1">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+        </div><div data-u="prototype" class="i" style="width: 14px; height: 14px; position: absolute; left: 150px; top: 0px;" data-jssor-button="1">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+        </div></div></div>
+    <!-- Arrow Navigator -->
+    <div style="display: block; position: absolute; top: 50px; left: 30px; width: 50px; height: 50px;"><div data-u="arrowleft" class="jssora073" style="width: 50px; height: 50px; top: 0px; left: 0px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75" data-jssor-button="1" data-nofreeze="1">
+        <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+        </svg>
+    </div></div>
+    <div style="display: block; position: absolute; top: 50px; right: 30px; width: 50px; height: 50px;"><div data-u="arrowright" class="jssora073" style="width: 50px; height: 50px; top: 0px; right: 30px; left: 0px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75" data-jssor-button="1" data-nofreeze="1">
+        <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+        </svg>
+    </div></div>
+</div>
+
+<div class="footerwrap" style="background: #040710;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footerlogo">
+                            <p><img src="images/caimlogo.png" alt="" width="60%"></p>
+                            <p>2021 Coin Investment Trading All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footerlinks">
+                            <h3>useful links:</h3>
+                            <ul>
+                              <li><a href="index-4.html">HOME </a></li>
+                              <li><a href="about.html">ABOUT US</a></li>
+                              <li><a href="faq.html">faq</a></li>
+                               <li><a href="paid.html">Paid Out</a></li>
+                              <li><a href="rules.html">rules</a></li>
+                              <li><a href="support.html">contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footeraddress">
+                            <h3>Registered Office Address:</h3>
+                            <p class="footerlocation">63 Lytton Avenue,, United States </p>
+                             <p class="footeremail"><a href="mailto:support@cointradsmine.com">support@cointradsmine.com</a></p>
+                            <p><a href="tel:+441172050032">+1684-254-4284</a></p>
+                        </div>
+                    </div>
+                </div>
+				 <div class="row">
+				     
+      <div class="footerbottom">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="footerreg">registered UK company: <strong>#12580703</strong><a href="https://find-and-update.company-information.service.gov.uk/company/12580703" class="hvr-shrink" data-toggle="modal">view certificate</a></div>
+        </div>
+       
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footersocial"><span lang="icon"><a href="#"><img src="facebookicon.html" alt=""></a></span> <span lang="icon"><a href="#" target="_blank"><img src="instagramicon.html" alt=""></a></span></div>
+        </div>
+      </div>
+    </div>
+            </div>
+        </div>
+    
+	<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog"> 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">Ã</button>
+        <h4 class="modal-title">Company Certificate</h4>
+      </div>
+      <div class="modal-body">
+        <p><img src="images/certificate.png" alt=""></p>
+      </div>
+      <div class="modal-footer"> </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > -10 || document.documentElement.scrollTop > -10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "block";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script type="text/javascript">jssor_1_slider_init();
+</script>
+
+<script type="text/javascript" src="images/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="images/floating-wpp.min.js"></script>
+<link rel="stylesheet" href="images/floating-wpp.min.css">
+	
+ <div id="myDiv" class="floating-wpp"><div class="floating-wpp-button" style="width: 72px; height: 72px; background-color: rgb(37, 211, 102);"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 800 800" width="800" height="800"><defs><clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ"><rect width="800" height="800"></rect></clipPath></defs><g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)"><g><path d=" M 787.59 800 L 12.41 800 C 5.556 800 0 793.332 0 785.108 L 0 14.892 C 0 6.667 5.556 0 12.41 0 L 787.59 0 C 794.444 0 800 6.667 800 14.892 L 800 785.108 C 800 793.332 794.444 800 787.59 800 Z " fill="rgb(37,211,102)"></path></g><g><path d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565" fill-rule="evenodd" fill="rgb(255,255,255)"></path></g></g></svg><div class="floating-wpp-button-image"></div></div><div class="floating-wpp-popup"><div class="floating-wpp-head" style="background-color: rgb(18, 140, 126);"><span>WhatsApp Chat</span><strong class="close">×</strong></div><div class="floating-wpp-message">Hello, how can we help you?</div><div class="floating-wpp-input-message"><textarea></textarea><div class="floating-wpp-btn-send"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 20 18" width="20" height="18"><defs><clipPath id="_clipPath_fgX00hLzP9PnAfCkGQoSPsYB7aEGkj1G"><rect width="20" height="18"></rect></clipPath></defs><g clip-path="url(#_clipPath_fgX00hLzP9PnAfCkGQoSPsYB7aEGkj1G)"><path d=" M 0 0 L 0 7.813 L 16 9 L 0 10.188 L 0 18 L 20 9 L 0 0 Z " fill="rgb(46,46,46)"></path></g></svg></div></div></div></div>
+
+<script type="text/javascript">
+  $(function () {
+    $('#myDiv').floatingWhatsApp({
+      phone: '+13056800776',
+    popupMessage: 'Hello, how can we help you?',
+    showPopup: true
+    });
+  });
+</script>
+</body></html>

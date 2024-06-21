@@ -1,0 +1,737 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+	 <meta name="author" content="Pragmatic Mates s.r.o. - http://pragmaticmates.com">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/date-en-US.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,200&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1.9">
+    <title>ZADA</title>
+
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J2NYJRGWJ9"></script>
+	  <script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-J2NYJRGWJ9');
+	  </script>
+	  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" ;=""></script>  
+  <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+  <body style="">
+	  <!-- Messenger Chat plugin Code -->
+	  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div id="fb-customer-chat" class="fb-customerchat" page_id="101838975597982" attribution="biz_inbox" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;attribution=biz_inbox&amp;current_url=https%3A%2F%2Fzadauniverse.com%2F&amp;is_loaded_by_facade=true&amp;locale=en_US&amp;log_id=9255279b-8369-4b65-9fac-93d6534584df&amp;page_id=101838975597982&amp;request_time=1712559810068&amp;sdk=joey&amp;should_use_new_domain=false"><div id="f6c37a715502d432f"></div></div></div>
+
+	  <!-- Your Chat plugin code -->
+	  
+  
+	  <script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "101838975597982");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	  </script>
+  
+	  <!-- Your SDK code -->
+	  <script>
+		window.fbAsyncInit = function() {
+		  FB.init({
+			xfbml            : true,
+			version          : 'v12.0'
+		  });
+		};
+  
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	  </script>
+
+	<div id="zadaTutorial" class="overlay" style="height: 0px;">
+
+	  
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<div class="chooseWallet">
+				<div class="topTutorial">
+					<h2 class="translation-74">Choose A Wallet</h2>
+				</div>
+				<div class="bottomTutorial">
+					<a id="metamaskTutorial" class="tutorialButton"><img src="images/MetamaskButton.png"></a>
+					<a id="trustTutorial" class="tutorialButton"><img src="images/TrustWalletButton.png"></a>
+				</div>
+			</div>
+			<div class="metamaskTutorial">
+				<h2 class="translation-75">Metamask Tutorial</h2>
+				<iframe class="metamaskVideo youtubeVideo" src="https://www.youtube.com/embed/jZvSm0XNs9o" title="ZADA Metamask Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+			<div class="trustTutorial">
+				<h2 class="translation-76">Trust Wallet Tutorial</h2>
+				<iframe class="trustVideo youtubeVideo" src="https://www.youtube.com/embed/9x_nVCJKdlw" title="ZADA Metamask Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+		</div>
+	  
+	  </div>
+		
+
+
+	<div class="wrapper-outer">
+	<div class="wrapper">
+    <header class="navbar navbar-expand-lg_ navbar-dark bg-transparent fixed-top px-0">
+		<div class="container">
+		  <a class="navbar-brand mr-0 ml-2 ml-lg-0 mr-lg-2" href="index.html"><img src="images/logo.png" alt="ZADA"></a>
+		  <div class="countdown mx-auto d-none d-md-block"><a class="btn-countdown btn-link text-nowrap translation-nav1">TOTAL DISTRIBUTED: <span id="totalDistributed1" class="totalDistributed">$0.00</span></a></div> <div class="pt-xl-3 pr-md-4 aboutButtonDiv"><a href="about.html" id="aboutButton" class="about-button btn-link text-nowrap translation-nav2">About</a></div>
+		  <div class="pt-xl-3 pr-md-4">
+
+			<a target="_blank" href="https://www.certik.com/projects/zada" style="position: relative; z-index: 1;"><img class="certikBadge" src="images/Certik Audit Badge.svg"></a>
+
+		  </div>
+		  <div class="pt-xl-3 pr-md-4">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle language" type="button" id="langBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  EN
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				  <a class="dropdown-item english" id="english" href="#"><img src="images/us-flag.svg" alt="img flag" width="16px" height="auto" class="text-icon">English</a>
+				  <a class="dropdown-item spanish" id="spanish" href="#"><img src="images/es-flag.svg" alt="img flag" width="16px" height="auto" class="text-icon">Español</a>
+				  <a class="dropdown-item chinese" id="chinese" href="#"><img src="images/cn-flag.svg" alt="img flag" width="16px" height="auto" class="text-icon">普通话</a>
+				  <a class="dropdown-item chinese" id="portuguese" href="#"><img src="images/br-flag.svg" alt="img flag" width="16px" height="auto" class="text-icon">Português</a>
+				  <a class="dropdown-item chinese" id="turkish" href="#"><img src="images/tr-flag.svg" alt="img flag" width="16px" height="auto" class="text-icon">Türkçe</a>
+				  <a class="dropdown-item chinese" id="hindi" href="#"><img src="images/in-flag.svg" alt="img flag" width="16px" height="auto" class="text-icon">हिन्दी</a>
+				</div>
+			  </div>
+		 </div>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	
+		  <nav class="collapse navbar-collapse ml-auto" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item ">
+					<a class="nav-link text-uppercase translation-nav17" href="https://dashboard.zadauniverse.com"> ZADA Dashboard</a>
+				  </li>
+			   <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-uppercase translation-nav3" href="#" id="zadauniverse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				  <span class="btn btn-primary btn-circle mr-1"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.5 4.5L0.500001 4.5L4 0.5L7.5 4.5Z" fill="#CFCFCF"></path> </svg></span> ZADA UNIVERSE
+				</a>   
+				<div class="dropdown-menu text-capitalize " aria-labelledby="zadauniverse">
+				  <a class="dropdown-item translation-nav4" href="index.html#tokenomics">Tokenomics</a>
+				  <a class="dropdown-item translation-nav5" href="about.html#roadmap">Roadmap</a>
+				  <a class="dropdown-item translation-nav6" href="index.html#how-to-buy">How To Buy</a>
+				  <a class="dropdown-item translation-nav7" href="https://pancakeswap.finance/" target="_blank">Buy ZADA</a>
+				</div>
+			  </li>
+			   <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-uppercase translation-nav8" href="#" id="wallet" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				 <span class="btn btn-primary btn-circle mr-1"><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.5 4.5L0.500001 4.5L4 0.5L7.5 4.5Z" fill="#CFCFCF"></path> </svg></span> Last man standing wallet
+
+				</a>   
+				<div class="dropdown-menu text-capitalize" aria-labelledby="wallet">
+				  <a class="dropdown-item translation-nav9" href="index.html#payment-cycle">Payment Cycle</a>
+				  <a class="dropdown-item translation-nav10" href="about.html#faq">FAQ</a>
+				</div>
+			  </li>
+			  <li class="nav-item ">
+				<a class="nav-link text-uppercase translation-nav11" href="about.html">Hybrid portfolio builder</a>
+			  </li>
+			  <li class="nav-item ">
+				<a class="nav-link text-uppercase translation-nav21" target="_blank" href="https://www.certik.com/projects/zada">Certik Audit</a>
+			  </li>
+			  <li class="nav-item text-uppercase">
+				<a class="nav-link text-uppercase translation-nav12" href="about.html#chart"> The chain </a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-uppercase translation-nav13" href="about.html#team">The team</a>
+			  </li><li class="nav-item">
+				<a class="nav-link text-uppercase translation-nav14" href="https://t.me/zadabsc" target="_blank">Join our community</a>
+			  </li>
+			  
+			  <li class="nav-item">
+			  <a href="https://zadabsc.medium.com/" target="_blank" class="nav-link text-uppercase translation-nav15">Medium</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-uppercase translation-nav16" href="mailto:contact@zadauniverse.com">Contact us</a>
+			  </li>
+			</ul>
+		  </nav>  
+		  <div class="curve curve-header">
+			  <svg width="805" height="398" viewBox="0 0 805 398" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M721.18 -143.8C767.162 -143.8 804.8 -103.74 804.8 -54.7445V-20.7124V304.953C804.8 336.479 792.693 359.681 773.197 375.007C753.694 390.337 726.78 397.8 697.15 397.8H633.23C603.61 397.8 576.697 388.598 557.191 371.524C537.689 354.453 525.58 329.503 525.58 297.974V197.39C525.58 144.929 485.634 102.375 436.338 102.375H83.8205C37.8381 102.375 0.2 62.3152 0.2 13.3196V-54.7445C0.2 -103.74 37.8381 -143.8 83.8205 -143.8H721.18Z" stroke="url(#paint0_linear_326:1760)" stroke-width="0.4"></path>
+				<defs>
+				<linearGradient id="paint0_linear_326:1760" x1="402.5" y1="-144" x2="402.5" y2="398" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#A7EAF2"></stop>
+				<stop offset="1" stop-color="#2EE7FD"></stop>
+				</linearGradient>
+				</defs>
+				</svg>
+
+				<svg class="d-none" width="688" height="398" viewBox="0 0 688 398" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M721.18 -143.8C767.162 -143.8 804.8 -103.74 804.8 -54.7445V-20.7124V304.953C804.8 336.479 792.693 359.681 773.197 375.007C753.694 390.337 726.78 397.8 697.15 397.8H633.23C603.61 397.8 576.697 388.598 557.191 371.524C537.689 354.453 525.58 329.503 525.58 297.974V197.39C525.58 144.929 485.634 102.375 436.338 102.375H83.8205C37.8381 102.375 0.2 62.3152 0.2 13.3196V-54.7445C0.2 -103.74 37.8381 -143.8 83.8205 -143.8H721.18Z" stroke="url(#paint0_linear_121:1759)" stroke-width="0.4"></path>
+					<defs>
+					<linearGradient id="paint0_linear_121:1759" x1="402.5" y1="-144" x2="402.5" y2="398" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#A7EAF2"></stop>
+					<stop offset="1" stop-color="#2EE7FD"></stop>
+					</linearGradient>
+					</defs>
+					</svg>
+
+			</div>
+
+		</div>
+	</header>
+	<main class="main-contents">
+		<section class="banner">
+			<div class="container">
+				<article class="content text-md-center">
+					<div class="title-group text-left d-inline-block">
+						<p class="sec-name translation-1"><br><br>Welcome to ZADA</p> 
+						<h1 class="text-uppercase sec-title">  
+							<span class="has-gradient-1 translation-2">THE FIRST <strong>HYBRID <br> <strong>PORTFOLIO</strong> BUILDER </strong></span>
+						</h1>
+						<br>
+						<a class=" desktop-Hidden btn-countdown btn-link translation-nav1-2">TOTAL DISTRIBUTED: <span id="totalDistributed2" class="totalDistributed">$0.00</span></a>
+					</div>
+					<div class="text text-left">
+						<br>
+						<p class="translation-3">ZADA is the first of its kind, a Hyper Reflection token that rewards its holders in a multitude of ways by simplifying the investing process and building a strong and varied portfolio.</p>
+						<p><a href="https://pancakeswap.finance/swap?outputCurrency=0xfcadd830ff2d6cf3ad1681e1e8fc5ddce9d59e74" target="_blank" class="btn-link translation-4">BUY ZADA <span class="btn btn-primary btn-circle btn-arrow  ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+						<p><a href="https://www.dextools.io/app/bsc/pair-explorer/0xfdeca152d23ea9b9eb7b4045224584de1fba8341" target="_blank" class="btn-link translation-5">Price/Chart <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+						<p><a href="#" onclick="openTutorial()" class="btn-link translation-73">How To Buy Zada <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+					</div>
+				</article>
+			</div>
+			  <div class="expand-lg collapse show countdown-cont" id="getcountdown">
+					<div class="container">
+						<div class="timecountdown countdown-container">
+							<p class="text-uppercase text-nowrap font-weight-bold clock-title pb-lg-4 translation-countdown">Time until <br> next Snapshot</p>
+							<div class="clock">
+								<div class="clock-item clock-days countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-days" class="clock-canvas"><div class="kineticjs-content" role="presentation" style="position: relative; display: inline-block; width: 70px; height: 70px;"><canvas width="70" height="70" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 70px; height: 70px;"></canvas></div></div>
+
+											<div class="text">
+												<p class="val">4</p>
+												<p class="type-days type-time translation-days">DAYS</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+
+								<div class="clock-item clock-hours countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-hours" class="clock-canvas"><div class="kineticjs-content" role="presentation" style="position: relative; display: inline-block; width: 70px; height: 70px;"><canvas width="70" height="70" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 70px; height: 70px;"></canvas></div></div>
+
+											<div class="text">
+												<p class="val">12</p>
+												<p class="type-hours type-time translation-hours">HOURS</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+
+								<div class="clock-item clock-minutes countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-minutes" class="clock-canvas"><div class="kineticjs-content" role="presentation" style="position: relative; display: inline-block; width: 70px; height: 70px;"><canvas width="70" height="70" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 70px; height: 70px;"></canvas></div></div>
+
+											<div class="text">
+												<p class="val">56</p>
+												<p class="type-minutes type-time translation-minutes">MINUTES</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+
+								<div class="clock-item clock-seconds countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-seconds" class="clock-canvas"><div class="kineticjs-content" role="presentation" style="position: relative; display: inline-block; width: 70px; height: 70px;"><canvas width="70" height="70" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 70px; height: 70px;"></canvas></div></div>
+
+											<div class="text">
+												<p class="val">28</p>
+												<p class="type-seconds type-time translation-seconds">SECONDS</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+							</div><!-- /.clock -->
+						</div><!-- /.countdown-wrapper -->
+						<div class="timecountdown2 d-none countdown-container">
+							<p class="text-uppercase text-nowrap font-weight-bold clock-title pb-lg-4">Next Reward <br> Distribution</p>
+							<div class="clock">
+								<div class="clock-item clock-days2 countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-days2" class="clock-canvas"></div>
+
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-days type-time translation-days">DAYS</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+
+								<div class="clock-item clock-hours2 countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-hours2" class="clock-canvas"></div>
+
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-hours type-time translation-hours">HOURS</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+
+								<div class="clock-item clock-minutes2 countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-minutes2" class="clock-canvas"></div>
+
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-minutes type-time translation-minutes">MINUTES</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+
+								<div class="clock-item clock-seconds2 countdown-time-value">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-seconds2" class="clock-canvas"></div>
+
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-seconds type-time translation-seconds">SECONDS</p>
+											</div><!-- /.text -->
+										</div><!-- /.inner -->
+									</div><!-- /.wrap -->
+								</div><!-- /.clock-item -->
+							</div><!-- /.clock -->
+						</div><!-- /.countdown-wrapper -->
+						
+						
+						<div id="timer" class="d-none">
+						  <div id="days"></div>
+						  <div id="hours"></div>
+						  <div id="minutes"></div>
+						  <div id="seconds"></div>
+						</div>
+					</div>
+			  </div>
+		</section>
+		
+		<section class="sec sec2 text-center">
+			<img src="images/curve-up.png" class="curve-up d-md-none" alt="">
+			<div class="sec-inner">
+				<div class="container">
+					<div class="title-group text-left d-inline-block">
+						<p class="sec-name"><span class="has-gradient-1 translation-6">Welcome</span></p> 
+						<h2 class="text-uppercase sec-title">
+							<span class="has-gradient-2 translation-7">THE ZADA <br><strong class="font-weight-extrabold">UNIVERSE</strong></span>
+						</h2>
+					</div>
+					<p class="text-center d-md-none"><img src="images/zada-universe.png" alt=""></p>
+					<p class="text-center text-md-right">
+						<a href="assets/downloads/zada-whitepaper.pdf" download="" target="_blank" class="btn-link translation-nav18 whitepaper-pdf">Whitepaper <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a>
+						</p><p class="text-center text-md-right"><a href="https://bscscan.com/token/0xfCaDD830fF2D6Cf3AD1681E1e8FC5DDCe9d59E74" target="_blank" class="btn-link translation-nav19">Contract <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a>
+					</p>
+					<p class="text-center text-md-right"><a href="https://www.certik.com/projects/zada" target="_blank" class="btn-link translation-nav20">Certik Audit <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a>
+					</p>
+					
+					<div class="row expanded text-center pt-5 pb-4 text-md-left features">
+						<div class="col-12 col-md-4 col-lg-4 item item-problem mb-5">
+							<figure class="figure">
+								<svg width="127" height="126" viewBox="0 0 127 126" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M26.5068 20.4581L120.803 81.4726L42.6488 120.348L12.0671 68.69L26.5068 20.4581Z" stroke="white" stroke-width="0.3"></path> <rect x="120.996" y="80.2585" width="1.7431" height="1.86572" transform="rotate(75 120.996 80.2585)" fill="white"></rect> <rect x="27.3325" y="19.3345" width="1.7431" height="1.86572" transform="rotate(75 27.3325 19.3345)" fill="white"></rect> <rect x="13.0054" y="67.9873" width="1.7431" height="1.86572" transform="rotate(75 13.0054 67.9873)" fill="white"></rect> <rect x="43.5122" y="119.365" width="1.7431" height="1.86572" transform="rotate(75 43.5122 119.365)" fill="white"></rect> <g clip-path="url(#clip0_266:2)"> <path d="M52.2602 59C38.1879 58.9826 27.0343 70.0667 26.9996 84.0869C26.9648 97.777 38.24 108.983 52.0517 109C65.6549 109.017 76.9301 97.8117 76.9822 84.2259C77.0517 70.3968 65.8981 59.0174 52.2602 59ZM52.0517 106.915C39.3172 106.915 29.1017 96.6998 29.0844 83.9305C29.067 71.3523 39.3693 61.1022 52.0691 61.0848C64.5951 61.0674 74.9322 71.4045 74.9148 83.9479C74.8974 96.6129 64.6646 106.915 52.0517 106.915Z" fill="white"></path> <path d="M58.7757 68.4162C54.8841 65.6539 48.9946 65.5844 45.0335 68.2425C41.7847 70.4315 40.3949 74.2536 41.5589 77.7803C41.8716 78.7359 42.3928 79.4829 43.3657 79.8478C44.5818 80.2995 45.6763 80.0215 46.6492 79.2397C47.6395 78.4405 47.8306 77.3286 47.5352 76.182C47.2399 75.018 47.4831 74.1494 48.456 73.4544C50.1586 72.2557 53.2684 72.2383 55.0057 73.4023C56.8299 74.6532 57.0384 76.8248 55.44 78.371C54.6235 79.1702 53.668 79.7435 52.7472 80.4037C49.3942 82.7491 47.6916 85.9979 47.5352 90.0284C47.57 90.6018 47.5526 91.1403 47.6395 91.6441C47.9348 93.3988 49.3768 94.5628 51.0099 94.4065C52.6777 94.2327 53.9112 92.895 53.7896 91.0882C53.6159 88.3606 54.6756 86.4148 57.0036 85.0423C58.1503 84.3648 59.1926 83.4961 60.1308 82.5232C64.1093 78.3537 63.4838 71.7519 58.7757 68.4162ZM58.4456 81.2897C57.5422 82.1758 56.5172 82.9054 55.4574 83.583C52.8688 85.2334 51.5832 87.5788 51.7222 90.6712C51.7222 90.706 51.7222 90.7581 51.7222 90.7929C51.8091 91.5573 51.6701 92.2696 50.7493 92.2869C49.8459 92.3043 49.6895 91.5573 49.6548 90.8102C49.4984 87.1445 50.8883 84.2432 53.8938 82.141C54.9188 81.4287 55.9786 80.7512 56.882 79.8651C59.5227 77.2939 59.0884 73.3328 55.8917 71.526C53.1642 69.9798 50.3323 70.0319 47.5874 71.5434C45.7458 72.551 45.0683 74.1667 45.4331 76.2515C45.5547 76.9812 45.6416 77.7282 44.7382 77.9367C43.7305 78.1452 43.5394 77.3286 43.3831 76.5816C42.7403 73.2286 44.6339 70.2056 48.1954 68.9895C49.3421 68.5899 50.5408 68.3641 51.7743 68.3815C55.1794 68.5899 58.1676 69.5802 59.8702 72.8464C61.399 75.7303 60.8084 78.9617 58.4456 81.2897Z" fill="white"></path> <path d="M50.9924 95.4662C49.2725 95.4141 47.8305 96.8214 47.8132 98.5587C47.7958 100.244 49.1509 101.651 50.8187 101.686C52.5213 101.721 53.998 100.296 54.0328 98.5934C54.0501 96.9603 52.6429 95.5184 50.9924 95.4662ZM50.9577 99.5837C50.3149 99.6011 49.9153 99.2362 49.8979 98.5587C49.8806 97.9332 50.3149 97.69 50.7666 97.5163C51.4963 97.5858 51.9132 97.9332 51.9132 98.576C51.9306 99.1667 51.5484 99.5837 50.9577 99.5837Z" fill="white"></path> </g> <defs> <clipPath id="clip0_266:2"> <rect width="50" height="50" fill="white" transform="translate(27 59)"></rect> </clipPath> </defs> </svg>
+							</figure>
+							<h3 class="text-uppercase translation-8">The problem</h3>
+							<p class="translation-9">Finding a safe and secure cryptocurrency that you can invest in long term while giving you immediate short term ROI. Investment goals in the crypto space have become moving targets, seeming impossible to reach and even harder to obtain. The overwhelming challenge that investors are faced with when determining which project to invest in has too often become commonplace. These issues have not been addressed in a way that gives the investors the upper hand and because of this oversight many are left to make difficult decisions without the knowledge needed to succeed.</p>
+						</div>
+						<div class="col-12 col-md-4 col-lg-4 item item-solution mb-5">
+							<figure class="figure">
+								<svg width="137" height="88" viewBox="0 0 137 88" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.16406 60.7916L45.4077 0.62207L135.641 71.053L58.4091 87.2226L1.16406 60.7916Z" stroke="white" stroke-width="0.3"></path> <rect x="44.6318" width="2.32861" height="1.86572" fill="white"></rect> <rect y="59.7031" width="2.32861" height="1.86572" fill="white"></rect> <rect x="57.8271" y="86.1343" width="2.32861" height="1.86572" fill="white"></rect> <rect x="134.671" y="69.9646" width="2.32861" height="1.86572" fill="white"></rect> <g clip-path="url(#clip0_266:3)"> <path d="M47.7927 44.1333C44.7014 37.2852 36.9883 33.577 29.6692 35.6703C23.1077 37.5394 19.3497 41.9801 18.3496 48.6189C17.5161 54.1063 20.5468 60.1919 25.6535 63.1972C26.2597 63.5561 26.487 63.9149 26.4567 64.6027C26.396 65.8587 26.4415 67.1297 26.4415 68.4006C26.4415 69.6715 26.4415 70.9275 26.4415 72.1984C26.4567 73.7834 27.0931 74.4861 28.7145 74.3815C29.8662 74.3067 30.1693 74.6506 30.1086 75.7571C30.0177 77.342 30.7299 77.97 32.3514 77.9849C33.2151 77.9849 34.094 77.9849 34.9577 77.9849C36.7307 77.9849 37.3975 77.3868 37.3217 75.6524C37.2762 74.6506 37.549 74.3366 38.5946 74.3964C40.3675 74.4861 40.9737 73.8282 40.9888 72.0938C40.9888 69.7463 41.0343 67.3988 40.9737 65.0663C40.9434 64.1243 41.1858 63.5711 42.0647 63.0328C48.5049 58.9658 50.8992 50.9963 47.7927 44.1333ZM35.5184 75.9066C35.4275 76.2206 35.2457 76.2056 35.0335 76.2056C34.5789 76.2056 34.1243 76.2056 33.6697 76.2056C33.4121 76.2056 33.1393 76.1757 32.8817 76.2056C32.124 76.3252 31.8513 76.101 31.8513 75.2786C31.8513 74.4861 32.1392 74.3516 32.8211 74.4114C33.3515 74.4562 33.8819 74.4263 34.4122 74.4263C35.4578 74.4263 35.8063 74.9048 35.5184 75.9066ZM38.4582 72.647C36.8368 72.5722 35.2002 72.6321 33.5788 72.6321C32.0331 72.6321 30.4723 72.5872 28.9267 72.647C28.0781 72.6919 28.2448 72.1984 28.2448 71.7349C28.2448 71.2714 28.0781 70.8079 28.9267 70.8228C32.1089 70.8677 35.2911 70.8677 38.4582 70.8228C39.2916 70.8079 39.1401 71.2714 39.1401 71.7349C39.1401 72.1984 39.3068 72.6919 38.4582 72.647ZM39.1401 68.1614C39.1249 68.6099 39.3219 69.1033 38.4734 69.0884C35.2911 69.0435 32.1089 69.0435 28.9418 69.0884C28.1235 69.1033 28.2296 68.6548 28.2448 68.1913C28.2599 67.7427 28.0629 67.2343 28.9115 67.2642C30.5329 67.339 32.1695 67.2792 33.7909 67.2792C35.3366 67.2792 36.8974 67.324 38.443 67.2642C39.2765 67.2194 39.1553 67.6829 39.1401 68.1614ZM40.4281 61.8964C39.4129 62.4496 38.9431 63.0926 39.1553 64.1691C39.3826 65.3504 38.837 65.6644 37.7611 65.4999C37.4732 65.455 37.155 65.4999 36.8519 65.4999C34.6092 65.4999 34.7608 65.4849 34.5486 63.3617C34.3819 61.6721 35.2002 60.6853 36.3216 59.6835C36.8368 59.22 37.8975 58.6966 37.0338 57.8145C36.1094 56.8575 35.579 57.9789 35.0487 58.4724C33.6697 59.7583 33.7152 59.7583 32.2907 58.4275C31.7755 57.9341 31.2755 56.9024 30.3814 57.7696C29.4873 58.6368 30.5632 59.1004 31.0027 59.6536C31.033 59.6835 31.0482 59.7134 31.0785 59.7283C33.2757 61.0142 32.7453 63.1225 32.7756 65.0812C32.7756 65.4401 32.5938 65.4999 32.2756 65.4999C31.1088 65.4849 29.9268 65.47 28.76 65.4999C28.2751 65.5148 28.1538 65.2905 28.2296 64.9018C28.5933 63.1524 27.6689 62.33 26.2294 61.4329C20.9711 58.2032 18.7739 51.6841 20.8044 45.9126C22.835 40.1709 28.6842 36.4329 34.8517 36.9413C41.0646 37.4646 46.1865 42.1596 47.126 48.2451C48.0049 53.7774 45.3833 59.1901 40.4281 61.8964Z" fill="white"></path> <path d="M33.6392 33.308C34.2151 33.3379 34.5636 32.994 34.5939 32.4258C34.6242 31.8278 34.6091 31.2297 34.6091 30.6465C34.6091 30.0484 34.6242 29.4504 34.6091 28.8672C34.5788 28.2841 34.2302 27.9701 33.6544 28C33.1392 28.0299 32.821 28.3439 32.8058 28.8672C32.7906 30.0634 32.7906 31.2446 32.8058 32.4408C32.8058 32.9492 33.124 33.2781 33.6392 33.308Z" fill="white"></path> <path d="M15.5157 49.4265C14.3186 49.4115 13.1063 49.4115 11.9092 49.4265C11.3334 49.4265 10.9848 49.7704 11 50.3236C11.0151 50.8918 11.3637 51.1909 11.9395 51.1909C12.5002 51.1909 13.0609 51.1909 13.6215 51.1909C14.2277 51.1909 14.8187 51.1909 15.4248 51.1909C16.0006 51.1909 16.3643 50.8918 16.3946 50.3386C16.4249 49.7853 16.0915 49.4265 15.5157 49.4265Z" fill="white"></path> <path d="M55.4601 49.4114C54.2629 49.3964 53.0507 49.3964 51.8535 49.4114C51.2626 49.4263 50.9443 49.7852 50.9746 50.3384C50.9898 50.8468 51.308 51.1608 51.8384 51.1757C52.4445 51.1907 53.0355 51.1757 53.6416 51.1757C54.2478 51.1757 54.8388 51.1757 55.4449 51.1757C56.0207 51.1608 56.3693 50.8468 56.3844 50.2935C56.3844 49.7553 56.051 49.4263 55.4601 49.4114Z" fill="white"></path> <path d="M20.3345 38.3918C20.4557 38.5114 20.6831 38.5114 20.7891 38.5563C21.168 38.5264 21.4559 38.4367 21.6074 38.1526C21.7893 37.7937 21.8044 37.4199 21.5165 37.1209C20.6224 36.2238 19.7284 35.3266 18.804 34.4594C18.41 34.1005 17.9554 34.1753 17.6069 34.5491C17.2887 34.8781 17.2129 35.2967 17.5463 35.6406C18.4555 36.5826 19.395 37.4947 20.3345 38.3918Z" fill="white"></path> <path d="M49.5505 34.3697C49.1111 34.1155 48.7474 34.2501 48.4292 34.5641C47.626 35.3416 46.8381 36.1341 46.0349 36.9116C45.6106 37.3302 45.4439 37.8237 45.8834 38.2722C46.3683 38.7657 46.8987 38.5862 47.3533 38.1377C48.0958 37.405 48.8383 36.6723 49.5808 35.9397C49.793 35.7304 49.99 35.5061 50.0354 35.1323C50.0203 34.8332 49.8687 34.5641 49.5505 34.3697Z" fill="white"></path> <path d="M21.38 62.2552C21.0164 61.9861 20.5921 61.9562 20.2435 62.2851C19.3495 63.1374 18.4706 64.0046 17.6068 64.8719C17.3492 65.126 17.2735 65.455 17.4401 65.7989C17.6068 66.1278 17.8644 66.3073 18.3039 66.3521C18.3797 66.3222 18.5615 66.3222 18.6676 66.2325C19.6677 65.2756 20.683 64.3336 21.6225 63.3318C21.8953 63.0327 21.7589 62.5393 21.38 62.2552Z" fill="white"></path> <path d="M46.9742 62.1808C46.7015 61.9266 46.2469 62.0163 45.9438 62.3154C45.6104 62.6443 45.5043 63.0929 45.8074 63.4218C46.7015 64.3787 47.641 65.2759 48.5956 66.173C48.8684 66.4272 49.2018 66.4272 49.5352 66.2179C49.8534 66.0235 50.0049 65.7543 50.0352 65.3805C50.0049 65.2908 49.9898 65.1563 49.9292 65.0965C48.9442 64.1096 47.9895 63.1228 46.9742 62.1808Z" fill="white"></path> </g> <defs> <clipPath id="clip0_266:3"> <rect width="45.3846" height="50" fill="white" transform="translate(11 28)"></rect> </clipPath> </defs> </svg>
+							</figure>
+							<h3 class="text-uppercase translation-10">SOLUTION</h3>
+							<p class="translation-11">ZADA is a new type of cryptocurrency that does what you are used to and so much more. Giving the investor a blueprint while allowing for a more calculated approach to investing. Here's a chance at creating a portfolio that contains a collection of coins that will be the leading solutions for the future of crypto. With help from our trusted advisors we have strategically selected the ecosystems that will outperform the others, assuring that our investors portfolio will grow exponentially.</p>
+						</div>
+						<div class="col-12 col-md-4 col-lg-4 item item-technology">
+							<figure class="figure">
+								<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M139.036 115.29L65.2053 126.551L51.2026 12.9441L117.248 56.122L139.036 115.29Z" stroke="white" stroke-width="0.3"></path> <rect x="65.314" y="127.54" width="2.32861" height="1.86572" transform="rotate(-135 65.314 127.54)" fill="white"></rect> <rect x="139.09" y="116.883" width="2.32861" height="1.86572" transform="rotate(-135 139.09 116.883)" fill="white"></rect> <rect x="116.89" y="57.303" width="2.32861" height="1.86572" transform="rotate(-135 116.89 57.303)" fill="white"></rect> <rect x="51.1191" y="14.3997" width="2.32861" height="1.86572" transform="rotate(-135 51.1191 14.3997)" fill="white"></rect> <path d="M104.504 90.7738C103.143 90.4303 101.56 91.1295 100.885 92.4544C100.652 92.9082 100.407 93.0432 99.9286 93.0432C98.3953 93.0186 96.8619 92.9941 95.3408 93.0554C94.6661 93.08 94.5557 92.8346 94.568 92.2336C94.6048 90.2463 94.5803 88.2591 94.5803 86.2718C94.5803 84.6035 94.4453 84.4441 92.7402 84.4563C92.2127 84.4563 92.0042 84.3705 92.0165 83.7816C92.0655 82.2851 92.0655 80.7885 92.0165 79.292C91.9919 78.6295 92.2495 78.5559 92.8016 78.5805C94.2368 78.6173 95.672 78.5805 97.095 78.5927C97.8187 78.605 98.4689 78.4333 98.4443 77.5746C98.4321 76.7772 97.8187 76.6178 97.1195 76.63C95.2304 76.6423 93.3413 76.63 91.4522 76.6423C90.3727 76.6423 90.0783 76.949 90.066 78.0407C90.0538 79.9666 90.0538 81.8803 90.0783 83.8062C90.0906 84.2969 89.9802 84.4931 89.4404 84.4686C88.4959 84.4195 87.5513 84.4318 86.6068 84.4686C86.1161 84.4931 85.9321 84.3582 85.9443 83.8307C85.9811 82.236 85.9811 80.6413 85.9443 79.0466C85.9321 78.5805 86.1038 78.3842 86.4964 78.1634C87.8825 77.4274 88.5572 75.8817 88.1892 74.471C87.7844 72.9745 86.4964 71.9563 84.9875 71.9563C83.4787 71.9563 82.1907 72.9622 81.7736 74.4588C81.3933 75.8695 82.068 77.4274 83.4419 78.1511C83.8344 78.3597 84.0184 78.5559 84.0062 79.0221C83.9694 80.6168 83.9694 82.2115 84.0062 83.8062C84.0184 84.3214 83.8712 84.4686 83.356 84.4563C81.332 84.4318 79.3202 84.4441 77.2962 84.4441C75.5297 84.4441 75.407 84.5422 75.407 86.3086C75.407 86.8729 75.2476 87.0079 74.6956 86.9956C73.2358 86.9588 71.7638 86.9465 70.304 86.9956C69.6539 87.0201 69.5067 86.8116 69.5189 86.186C69.5557 82.8616 69.5435 79.5496 69.5189 76.2252C69.5189 75.71 69.6416 75.4401 70.1323 75.1825C71.3344 74.5569 71.8987 73.4652 71.8496 72.1281C71.8006 70.8646 71.1136 69.9446 69.9973 69.3435C69.7765 69.2208 69.4699 69.2821 69.3349 69C68.8197 69 68.2922 69 67.777 69C67.7034 69.0613 67.6543 69.1472 67.5685 69.1717C66.2314 69.6501 65.4095 70.607 65.3114 72.0299C65.201 73.4774 65.8143 74.6428 67.1882 75.2561C67.6789 75.4769 67.6175 75.8327 67.6175 76.213C67.6175 79.9298 67.6175 83.6344 67.6175 87.3513C67.6175 88.6762 67.8629 88.9215 69.2245 88.9215C71.0768 88.9215 72.9414 88.9338 74.7937 88.9092C75.2966 88.897 75.4684 89.0196 75.4438 89.5471C75.3948 90.4917 75.407 91.4362 75.4438 92.3808C75.4684 92.8837 75.3212 93.0432 74.806 93.0309C73.2113 92.9941 71.6166 92.9941 70.0219 93.0309C69.5557 93.0432 69.3595 92.8592 69.1509 92.4666C68.4149 91.0805 66.8693 90.4058 65.4586 90.7861C63.962 91.1909 62.9438 92.4789 62.9438 93.9877C62.9438 95.4966 63.962 96.7846 65.4586 97.1894C66.8693 97.5697 68.4272 96.895 69.1509 95.5088C69.3963 95.0427 69.6661 94.9446 70.1323 94.9568C71.6656 94.9814 73.199 94.9936 74.7201 94.9446C75.3334 94.92 75.4684 95.104 75.4684 95.7051C75.4316 97.8886 75.4561 100.072 75.4438 102.243C75.4438 102.955 75.6647 103.458 76.4375 103.544C76.7564 103.58 77.0876 103.58 77.4066 103.544C77.8972 103.482 77.9954 103.703 77.9954 104.145C77.9708 105.703 77.9708 107.273 77.9954 108.831C78.0076 109.321 77.8359 109.42 77.382 109.42C75.8855 109.395 74.3889 109.42 72.8923 109.407C72.2054 109.395 71.592 109.567 71.5675 110.364C71.5552 111.223 72.1931 111.382 72.9169 111.37C74.7692 111.358 76.6337 111.37 78.486 111.358C79.6269 111.358 79.9213 111.063 79.9335 109.922C79.9458 108.033 79.9458 106.144 79.9213 104.255C79.909 103.74 79.9949 103.495 80.596 103.531C81.5405 103.58 82.4851 103.58 83.4296 103.531C83.9939 103.507 84.0552 103.74 84.0552 104.206C84.0307 105.801 84.0307 107.395 84.0552 108.99C84.0552 109.407 83.9326 109.604 83.5646 109.812C82.0925 110.609 81.4301 112.106 81.8349 113.553C82.252 115.05 83.54 116.056 85.0611 116.044C86.57 116.031 87.858 115.001 88.2505 113.504C88.6185 112.094 87.9316 110.573 86.5332 109.824C86.1283 109.604 85.9934 109.37 86.0057 108.929C86.0302 107.371 86.0547 105.801 85.9934 104.243C85.9689 103.58 86.2387 103.519 86.7785 103.531C88.7289 103.556 90.6794 103.544 92.6421 103.544C94.4944 103.544 94.568 103.495 94.5925 101.642C94.6048 101.152 94.7029 100.968 95.2304 100.98C96.727 101.017 98.2235 101.017 99.7201 100.98C100.309 100.968 100.481 101.103 100.481 101.716C100.444 105.065 100.444 108.426 100.481 111.775C100.481 112.327 100.284 112.548 99.8305 112.793C98.5179 113.504 97.8678 115.062 98.2358 116.436C98.6406 117.933 99.9409 118.951 101.437 118.951C102.946 118.951 104.247 117.933 104.639 116.436C105.007 115.062 104.357 113.468 103.044 112.793C102.517 112.523 102.394 112.204 102.407 111.664C102.431 107.923 102.419 104.182 102.419 100.428C102.419 99.3361 102.112 99.0294 101.045 99.0172C100.002 99.0049 98.9596 99.0417 97.9169 99.0049C96.8251 98.9681 95.2795 99.4956 94.7643 98.8086C94.2122 98.0849 94.6416 96.6251 94.5925 95.4966C94.568 95.0059 94.752 94.9078 95.2059 94.9078C96.7638 94.9323 98.3339 94.9446 99.8918 94.9078C100.407 94.8955 100.677 95.0304 100.935 95.5211C101.609 96.8337 103.204 97.5083 104.566 97.1526C106.062 96.7601 107.093 95.472 107.105 93.9632C107.08 92.5034 106.025 91.1541 104.504 90.7738ZM68.5621 73.6737C67.8384 73.6614 67.1759 72.9868 67.2373 72.2753C67.3109 71.4902 67.777 71.0363 68.5621 70.975C69.2859 70.9259 69.936 71.6006 69.936 72.3243C69.9483 73.0481 69.2859 73.6982 68.5621 73.6737ZM66.2437 95.3616C65.5567 95.3616 64.9311 94.7728 64.882 94.0859C64.833 93.3621 65.4586 92.6874 66.1823 92.6506C66.9061 92.6138 67.5807 93.2517 67.593 93.9755C67.6175 94.6992 66.9797 95.3616 66.2437 95.3616ZM83.6504 75.2071C83.675 74.471 84.3374 73.8577 85.0611 73.8945C85.7481 73.9313 86.3491 74.5447 86.3614 75.2316C86.3737 75.9553 85.7235 76.6055 84.9998 76.6055C84.2638 76.5932 83.6259 75.9308 83.6504 75.2071ZM86.3614 112.695C86.3982 113.419 85.7726 114.093 85.0489 114.118C84.3251 114.142 83.6627 113.517 83.6504 112.781C83.6382 112.057 84.2883 111.407 85.0121 111.407C85.6867 111.407 86.3123 112.008 86.3614 112.695ZM92.6298 100.943C92.6298 101.495 92.4826 101.642 91.9306 101.642C89.5876 101.618 87.2446 101.63 84.9017 101.63C82.62 101.63 80.3384 101.618 78.069 101.642C77.517 101.655 77.3698 101.495 77.3698 100.943C77.3943 96.3184 77.3943 91.6938 77.3698 87.0815C77.3698 86.5294 77.517 86.3822 78.069 86.3822C82.6936 86.4068 87.3182 86.4068 91.9429 86.3822C92.4949 86.3822 92.6421 86.5294 92.6421 87.0815C92.6053 91.6938 92.6053 96.3184 92.6298 100.943ZM101.45 114.339C102.173 114.363 102.799 115.038 102.762 115.749C102.726 116.473 102.039 117.086 101.327 117.037C100.64 116.988 100.051 116.35 100.051 115.676C100.064 114.952 100.726 114.314 101.45 114.339ZM103.682 95.3616C102.995 95.3248 102.394 94.6992 102.394 94.0123C102.394 93.2885 103.044 92.6384 103.768 92.6506C104.504 92.6629 105.13 93.3253 105.105 94.0491C105.081 94.7851 104.406 95.3984 103.682 95.3616Z" fill="white"></path> <path d="M109.62 76.0657C108.761 74.4832 106.884 73.8454 105.277 74.6059C103.633 75.3787 102.922 77.3169 103.67 78.9607C104.406 80.5799 106.283 81.3282 107.927 80.6658C108.994 80.2364 109.534 79.3287 110 78.3719C110 77.8566 110 77.3292 110 76.814C109.718 76.6422 109.755 76.311 109.62 76.0657ZM106.627 78.9484C105.903 78.9116 105.29 78.2246 105.339 77.5132C105.388 76.8262 106.026 76.2374 106.7 76.2374C107.424 76.2497 108.062 76.9121 108.05 77.6236C108.025 78.3473 107.338 78.9852 106.627 78.9484Z" fill="white"></path> <path d="M63.3611 107.101C61.5334 107.077 60 108.598 60 110.413C60 112.204 61.4843 113.701 63.2753 113.725C65.103 113.75 66.6364 112.229 66.6364 110.401C66.6241 108.622 65.1521 107.126 63.3611 107.101ZM63.2385 111.775C62.5147 111.738 61.8768 111.039 61.9627 110.327C62.0608 109.555 62.5393 109.101 63.3366 109.076C64.0604 109.052 64.6982 109.751 64.6737 110.475C64.6492 111.186 63.9622 111.812 63.2385 111.775Z" fill="white"></path> <path d="M69.0039 109.456C68.4396 109.469 68.0716 109.837 68.0716 110.389C68.0593 110.99 68.4396 111.382 69.0529 111.37C69.6049 111.358 69.9361 111.014 69.9852 110.376C69.9361 109.837 69.6172 109.456 69.0039 109.456Z" fill="white"></path> <path d="M100.947 78.5561C101.56 78.5684 101.867 78.1635 101.953 77.5625C101.83 76.9982 101.523 76.5934 100.898 76.6425C100.346 76.6915 100.014 77.035 100.027 77.6238C100.039 78.2004 100.395 78.5316 100.947 78.5561Z" fill="white"></path> <path d="M89.4895 94.0492C89.4895 93.0065 89.5018 91.9638 89.4895 90.9211C89.4772 89.8294 89.1828 89.5104 88.1156 89.5104C86.0302 89.4982 83.9571 89.4982 81.8717 89.5104C80.8413 89.5104 80.5101 89.8294 80.5101 90.823C80.4978 92.9329 80.5224 95.0551 80.4978 97.165C80.4856 98.0482 80.8659 98.4898 81.7736 98.4898C83.9203 98.4775 86.067 98.4775 88.2137 98.4898C89.1215 98.4898 89.5018 98.0482 89.4895 97.165C89.4772 96.1346 89.4895 95.0919 89.4895 94.0492ZM87.3551 96.4044C86.8889 96.8215 85.7481 96.4903 84.9139 96.4903C84.1166 96.4535 83.0494 96.8951 82.5832 96.3676C82.1907 95.926 82.436 94.8833 82.4606 94.1105C82.4851 93.2396 82.0803 92.0987 82.6323 91.5958C83.0984 91.1665 84.2393 91.4486 85.0734 91.4731C85.8708 91.4977 86.938 91.1051 87.4041 91.6326C87.7967 92.0742 87.5513 93.1169 87.5268 93.8897C87.5145 94.7607 87.9071 95.9137 87.3551 96.4044Z" fill="white"></path> </svg>
+							</figure>
+							<h3 class="text-uppercase translation-12">The Technology</h3>
+							<p class="translation-13">ZADA is "Part 1" in a "3 Part Trilogy" of an ecosystem that gives you the strongest coins in cryptocurrency. By establishing ourselves as a 3 in 1 cryptocurrency we have created an ecosystem like none other. ZADA is home to highly skilled developers who insure security, scalability, and efficiency. The hours spent on coding this newly implemented structure was intended to bring something new to the world of crypto.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<section class="sec sec3">
+			<div class="sec-inner">
+			<div class="container">
+				<div class="diamond hand" style="opacity: 0; transform: translate(200px, 0px);">
+					
+					<ul class="list-unstyled">
+						<li class="has-gradient-1">$ <strong>234,09</strong></li>
+						<li class="has-gradient-1">$ <strong>123.456,09</strong></li>
+						<li class="text-success"><strong>+7,14%</strong></li>
+						<li class="text-success"><strong>+2,65%</strong></li>
+						<li class="has-gradient-1">$ <strong>17,084,59</strong></li>
+					</ul>
+					<figure class="figure"><img class="handImg" src="images/hand@2x.png" alt=""></figure>
+				</div>
+				<div class="title-group text-left d-inline-block">
+					<p class="sec-name"><span class="text-white translation-79">Wallet</span></p> 
+					<h2 class="text-uppercase sec-title">
+						<span class="has-gradient-1 translation-14">Introducing <br> the last man <br>  standing <br><strong class="font-weight-extrabold"> wallet</strong></span>
+					</h2>
+				</div>
+				<article class="content">
+					<p class="translation-15">With strategic engineering of the ZADA smart contract we have developed a mechanism that rewards our holders with an exclusive reserve of $ADA. The Last Man Standing Wallet is a newly implemented function that ensures inclusivity and exclusivity. 2% of every buy and sell contributes to the exponential growth of the last man standing wallet thus compounding your investment in Cardano, so by the end of the 7 days those who remain...gain.</p>
+					<p class="text-left text-md-left permalink"><a href="about.html#lms-tab" class="btn-link translation-77">More on wallet <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+				</article>
+				<div class="pt-5 pt-md-3 wallet-boxes">
+					<div class="row ">
+						<div class="wallet-box wallet-box-ada col-12 col-sm-4 mb-3">
+							<h3 class="text-center translation-16">Exclusive <br>reserve of $ADA</h3>
+							<p class="text-center text-sm-left pl-sm-5"><a href="about.html#lms-tab" class="btn-link translation-78">Read More <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+						</div>	
+						<div class="wallet-box wallet-box-investment col-12 col-sm-4 mb-3">
+							<h3 class="text-center translation-17">Compounding <br>your investment</h3>
+							<p class="text-center text-sm-left pl-sm-5"><a href="about.html#chart" class="btn-link translation-78">Read More <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+						</div>
+						<div class="wallet-box wallet-box-reflections col-12 col-sm-4 mb-3">
+							<h3 class="text-center"><span class="minimumTitle translation-80">Reflections Minimum</span><br><span class="amount translation-81">2 Million ZADA</span><br><span class="minimumTitle translation-82">LMS Minimum</span><br><span class="amount translation-83">1 Billion ZADA</span> </h3>
+							<p class="text-center text-sm-left pl-sm-5"><a href="#rewards" class="btn-link translation-78">Read More <span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+						</div>
+					</div>
+				</div>
+				
+				</div>
+			
+			<img src="images/curve-up-2.png" class="curve-up d-md-none" alt="">
+			</div>
+			
+		</section>
+		<section class="sec sec4" id="rewards">
+			<div class="sec-inner pt-4">
+				<div class="container">
+					<div class="reward pb-5">
+						<div class="title-group text-left d-inline-block">
+							<p class="sec-name"><span class="text-white translation-18">REWARD STRUCTURE</span></p> 
+							<h2 class="text-uppercase sec-title">
+								<span class="has-gradient-3 translation-19">THE LAST <br> MAN STANDING  <br><strong class="font-weight-extrabold"> REWARD STRUCTURE</strong> <br>  REQUIREMENTS</span>
+							</h2>
+						</div>
+						<ol class="list-unstyled">
+							<li class="translation-20">Each holder must hold a minimum of 1,000,000,000 $ZADA to qualify for the LMS.</li>
+							<li class="translation-21">ZADA holders will only be eligible to receive payment from the Last Man Standing Wallet if you haven’t sold any ZADA tokens for 7 days.</li>
+							<li class="translation-22">Selling or transferring any of your tokens will prohibit you from receiving rewards for that cycle.</li>
+						</ol>
+					</div>
+				</div>
+				<img src="images/payment.png" class=" d-md-none payment-bg" alt="">
+				<div class="container" id="payment-cycle">
+					<div class="payment">
+						
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div class="title-group text-left d-inline-block">
+									<p class="sec-name"><span class="text-white translation-23">CYCLE</span></p> 
+									<h2 class="text-uppercase sec-title">
+										<span class="has-gradient-1 translation-24"><strong class="font-weight-extrabold"> PAYMENT <br class="d-none d-md-block"> CYCLE</strong> </span>
+									</h2>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-5 ml-auto">
+								<ol class="list-unstyled">
+									<li class="translation-25">To participate in the first reward cycle, a snapshot is taken and all participating ZADA holders will be accounted for.</li>
+									<li class="translation-26">At the end of the week we will take another snapshot which will end the cycle for that period.</li>
+									<li class="translation-27">Only the remaining participants who didn’t sell or transfer their tokens will receive funds from the Last Man Standing Wallet.</li>
+									<li class="translation-28">After the rewards have been distributed we will begin the next cycle for the next week. (Continuing the same exact process)</li>
+								</ol>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+				 
+			</div>
+			 
+			
+		</section>
+		 <section class="sec sec5">
+			<div class="sec-inner">
+			<img src="images/curve-down-2.png" class="curve-down d-md-none" alt="">
+			<img src="images/wolf.jpg" class="wolf d-md-none" alt="">
+				<div class="container pt-5">
+					<div class="text-md-center">
+						<div id="tokenomics" class="title-group text-left d-inline-block">
+							<p class="sec-name"><span class="text-white translation-29">ZADA Token</span></p> 
+							<h2 class="text-uppercase sec-title">
+								<span class="has-gradient-1"><strong class="font-weight-extrabold translation-30"> Tokenomics</strong> </span>
+							</h2>
+						</div>
+					</div>
+					<div class="tokenomics-details">
+						<ul class="list-unstyled">
+							<li><strong class="d-block translation-31">Name</strong> ZADA</li>
+							<li><strong class="d-block translation-32">Ticker</strong> $ZADA</li>
+							<li><strong class="d-block translation-33">PLATFORM</strong> BSC</li>
+							<li><strong class="d-block translation-34">TOTAL Supply</strong> 1,000,000,000,000</li>
+							<li><strong class="d-block translation-35">CONTRACT ADDRESS</strong> <span class="text-wrap">0xfCaDD830fF2D6Cf3AD1681E1e8FC5DDCe9d59E74</span></li>
+						</ul>
+					</div>
+					<figure class="tokenomics-figure text-center" style="opacity: 0; transform: translate(0px, 100px);"><img src="images/tokenomics@2x.png" alt=""></figure>
+					
+					<div class="tokenomics-details2">
+						<div class="row">
+							<div class="col-12 col-md-6 mb-4">
+								<h3 class="text-uppercase translation-36">REFLECTIONS</h3>
+								<p class="translation-37">10% of every buy &amp; sell will convert into Cardano and be distributed to all ZADA holders with a minimum of 2 million ZADA.</p>
+							</div>
+							<div class="col-12 col-md-6  mb-4">
+								<h3 class="text-uppercase translation-38">liquidity</h3>
+								<p class="translation-39">4% of every trade contributes automatically toward generating liquidity.</p>
+							</div>
+							<div class="col-12 col-md-6  mb-4">
+								<h3 class="text-uppercase translation-40">MARKETING</h3>
+								<p class="translation-41">2% of each trade will be used for marketing.</p>
+							</div>
+							<div class="col-12 col-md-6  mb-4">
+								<h3 class="text-uppercase translation-42">LMS</h3>
+								<p class="translation-43">2% of all transactions will be stored in an exclusive reserve then distributed to the LMS.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="images/curve-up-4.png" class="curve-up d-md-none" alt="">
+			</div>
+			
+		</section>
+		 <section class="sec sec6">
+			<div class="sec-inner text-dark bg-md-none">
+				<div id="how-to-buy" class="container py-5">
+					<div class="title-group text-left d-inline-block">
+						<p class="sec-name"><span class="text-primary translation-44">To purchase on <br> Pancake Swap:</span></p> 
+						<h2 class="text-uppercase sec-title">
+							<span class="has-gradient-3 translation-45">HOW <br class="d-none d-md-block"> TO <br> <strong class="font-weight-extrabold"> BUY <br class="d-none d-md-block">  ZADA </strong></span>
+						</h2>
+					</div>
+					<div class="steps">
+						<ol class="list-unstyled">
+							<li class="helpList translation-46" style="opacity: 0; transform: translate(-50px, 0px);">Install <a href="https://metamask.io/" target="_blank" class="text-primary">Metamask</a> or use an existing wallet and Connect to Binance Smart Chain</li> 
+							<!--<li>Connect your metamask to Binance Smart Chain</li>-->
+							<li class="helpList translation-47" style="opacity: 0; transform: translate(-50px, 0px);">Withdraw your BNB from Binance to Metamask Wallet</li>
+							<li class="helpList translation-48" style="opacity: 0; transform: translate(-50px, 0px);">Go to <a href="https://pancakeswap.finance/" target="_blank" class="text-primary">PancakeSwap</a></li>
+							<li class="helpList translation-49" style="opacity: 0; transform: translate(-50px, 0px);">Click “Connect” in the top right corner</li>
+							<li class="helpList translation-50" style="opacity: 0; transform: translate(-50px, 0px);">Add the $ZADA token by pasting the Smart Contract Address</li>
+							<li class="helpList translation-51" style="opacity: 0; transform: translate(-50px, 0px);">Set Slippage tolerance to 23%</li>
+							<li class="helpList translation-52" style="opacity: 0; transform: translate(-50px, 0px);">Swap your BNB for ZADA!</li>
+							<li class="helpList translation-53" style="opacity: 0; transform: translate(-50px, 0px);">Add $ADA to your wallet to view rewards</li>
+						</ol>
+					</div>
+					<div class="cta d-md-flex justify-content-between align-items-center">
+						<p class="translation-54">More on digital money</p>
+						<p><a href="https://pancakeswap.finance/swap?outputCurrency=0xfcadd830ff2d6cf3ad1681e1e8fc5ddce9d59e74" target="_blank" class="btn-link btn-cta"><span class="has-gradient-3 font-weight-extrabold translation-55">BUY ZADA</span><span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+						<p><a href="about.html#faq" class="btn-link btn-grey translation-56">WHAT IS ZADA?<span class="btn btn-primary btn-circle btn-arrow ml-1"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M-4.76837e-07 7L1.35122e-07 1.27146e-07L4 3.5L-4.76837e-07 7Z" fill="#CFCFCF"></path> </svg></span></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="footer bg-dark text-white text-center text-md-left">
+		<img src="images/curve-down-4.png" class="curve-down d-md-none" alt="">
+		<div class="container">
+			<div class="d-md-flex align-items-center footer-top">
+				<p class="logo-footer text-center text-md-left pb-3"><img src="images/logo-footer.png" alt="" class=""></p>
+				<!--<nav class="menu pl-md-5 pt-md-4">
+					<ul class="list-inline text-uppercase">
+						<li class="list-inline-item pr-2"><a href="https://zadabsc.medium.com/about-us-c4e12da7ec88" class="btn-link">About us</a></li>
+						<li class="list-inline-item px-2"><a href="https://zadabsc.medium.com/jobs-c11ad9d51a79" class="btn-link">Jobs</a></li>
+						<li class="list-inline-item pl-2"><a href="https://zadauniverse.com/assets/downloads/zada-whitepaper.pdf" class="btn-link">Events</a></li>
+					</ul>
+				</nav>-->
+			</div>
+			
+			<div class="row widgets pt-3 pb-md-5">
+				<div class="col-12 col-md-4 widget widget-1 mb-2 mb-dm-0">
+					<p>
+					  <a class="btn-link translation-57" data-toggle="collapse" href="#use-zada-menu" role="button" aria-expanded="false" aria-controls="use-zada-menu">
+						USE ZADA
+					  </a>
+					</p>
+					<div class="collapse" id="use-zada-menu">
+					  <nav class="menu">
+							<ul class="list-unstyled ">
+								
+								<li><a href="https://zadabsc.medium.com/about-us-c4e12da7ec88" target="_blank" class="translation-58">About us</a></li>
+								<li><a href="https://zadabsc.medium.com/jobs-c11ad9d51a79" target="_blank" class="translation-59">Jobs</a></li>
+								<li><a href="assets/downloads/zada-whitepaper.pdf" download="" target="_blank" class="translation-60 whitepaper-pdf">Whitepaper</a></li>
+								<li><a href="https://zadabsc.medium.com/nft-7f1cf1b78d0b" target="_blank" class="translation-61">NFT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 widget widget-1  mb-2  mb-dm-0">
+					<p>
+					  <a class="btn-link translation-72" data-toggle="collapse" href="#learn-menu" role="button" aria-expanded="false" aria-controls="learn-menu">
+						LEARN
+					  </a>
+					</p>    
+					<div class="collapse" id="learn-menu">
+					  <nav class="menu">
+							<ul class="list-unstyled">
+								<li><a href="about.html" class="translation-62">What is ZADA?</a></li>
+								<li><a href="https://zadabsc.medium.com/" target="_blank" class="translation-63">Community guides and resources</a></li>
+								<li><a href="about.html#faq" class="translation-64">FAQ</a></li>
+								<li><a href="https://zadabsc.medium.com/about-us-c4e12da7ec88" target="_blank" class="translation-65">History of ZADA</a></li>
+							</ul>
+						</nav>
+					</div>   
+				</div>
+				<div class="col-12 col-md-4 widget widget-1">
+					<p>
+					  <a class="btn-link translation-66" data-toggle="collapse" href="#ecosystem-menu" role="button" aria-expanded="false" aria-controls="ecosystem-menu">
+						Ecosystem
+					  </a>
+					</p>    
+					<div class="collapse" id="ecosystem-menu">
+					  <nav class="menu">
+							<ul class="list-unstyled">
+								<li><a href="https://t.me/zadabsc" target="_blank" class="translation-67">ZADA community</a></li>
+								<li><a href="about.html" class="translation-68">The Hybrid Portfolio Builder</a></li>
+								<li><a href="about.html#chart" class="translation-69">The Chain</a></li>
+								<li><a href="https://zadabsc.medium.com/" target="_blank" class="translation-70">ZADA medium</a></li>
+								<li><a href="mailto:contact@zadauniverse.com" class="translation-71">ZADA support</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row footer-bottom">
+				<nav class="menu col-12 col-md-7  mr-auto">
+					<!--<ul class="list-inline py-3">
+						<li class="list-inline-item pr-1 mb-2"><a href="mailto:contact@zadauniverse.com">Support</a></li>
+						<li class="list-inline-item px-1  mb-2"><a href="#">Privacy policy</a></li>
+						<li class="list-inline-item px-1  mb-2"><a href="#">Terms of Use</a></li>
+						<li class="list-inline-item px-1  mb-2"><a href="#">Cookie Policy</a></li>
+						<li class="list-inline-item pl-1  mb-2"><a href="mailto:contact@zadauniverse.com">Contact</a></li>
+					</ul>-->
+				</nav>
+				<nav class="menu col-12 col-md-5  ml-auto">
+					<ul class="list-inline">
+						<li class="list-inline-item pr-2"><a href="https://t.me/zadabsc" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M20.6651 3.71682L2.93509 10.5538C1.72509 11.0398 1.73209 11.7148 2.71309 12.0158L7.26509 13.4358L17.7971 6.79082C18.2951 6.48782 18.7501 6.65082 18.3761 6.98282L9.8431 14.6838H9.84109L9.8431 14.6848L9.5291 19.3768C9.9891 19.3768 10.1921 19.1658 10.4501 18.9168L12.6611 16.7668L17.2601 20.1638C18.1081 20.6308 18.7171 20.3908 18.9281 19.3788L21.9471 5.15082C22.2561 3.91182 21.4741 3.35082 20.6651 3.71682Z"></path> </svg></a></li>
+						<li class="list-inline-item px-2"><a href="https://twitter.com/zadabsc" target="_blank"><svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M21.913 2.22357C21.0982 2.60067 20.2298 2.85062 19.3246 2.97199C20.2559 2.38539 20.9667 1.4636 21.3008 0.352535C20.4325 0.898676 19.4738 1.28444 18.4522 1.49972C17.6277 0.573592 16.4526 0 15.1707 0C12.6835 0 10.6812 2.12966 10.6812 4.74044C10.6812 5.11609 10.7114 5.4773 10.7853 5.82116C7.05052 5.629 3.74576 3.74063 1.5257 0.864C1.13811 1.5734 0.910761 2.38539 0.910761 3.25951C0.910761 4.90082 1.71196 6.35575 2.90622 7.19807C2.18446 7.18363 1.47639 6.96257 0.876522 6.61437C0.876522 6.62882 0.876522 6.6476 0.876522 6.66638C0.876522 8.96942 2.43372 10.8824 4.47574 11.323C4.11007 11.4285 3.71152 11.4791 3.29791 11.4791C3.0103 11.4791 2.71996 11.4617 2.44741 11.3982C3.02948 13.275 4.68117 14.6548 6.64513 14.6996C5.1167 15.9609 3.17602 16.7209 1.07511 16.7209C0.706696 16.7209 0.353348 16.7035 0 16.6558C1.98998 18.0096 4.34837 18.7826 6.89165 18.7826C15.1583 18.7826 19.6779 11.5585 19.6779 5.2967C19.6779 5.0872 19.6711 4.88492 19.6615 4.68409C20.5531 4.01659 21.3022 3.18293 21.913 2.22357Z"></path> </svg></a></li>
+						<li class="list-inline-item px-2"><a href="https://www.facebook.com/zadabsc" target="_blank"><svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.16785 11.881C3.08866 11.881 1.34634 11.881 0.554374 11.881C0.131994 11.881 0 11.723 0 11.3278C0 10.2741 0 9.19397 0 8.14022C0 7.71872 0.158393 7.587 0.554374 7.587H3.16785C3.16785 7.50797 3.16785 5.98003 3.16785 5.26875C3.16785 4.215 3.35264 3.21394 3.88062 2.29191C4.43499 1.34353 5.22696 0.711281 6.23011 0.342469C6.89008 0.105375 7.55005 0 8.26282 0H10.8499C11.2195 0 11.3779 0.158063 11.3779 0.526875V3.53006C11.3779 3.89888 11.2195 4.05694 10.8499 4.05694C10.1371 4.05694 9.42436 4.05694 8.71159 4.08328C7.99883 4.08328 7.62924 4.42575 7.62924 5.16338C7.60285 5.95369 7.62924 6.71766 7.62924 7.53431H10.6915C11.1139 7.53431 11.2723 7.69238 11.2723 8.11388V11.3015C11.2723 11.723 11.1403 11.8547 10.6915 11.8547C9.74115 11.8547 7.70844 11.8547 7.62924 11.8547V20.4428C7.62924 20.8906 7.49725 21.0487 7.02207 21.0487C5.91332 21.0487 4.83097 21.0487 3.72223 21.0487C3.32625 21.0487 3.16785 20.8906 3.16785 20.4954C3.16785 17.7293 3.16785 11.9601 3.16785 11.881Z"></path> </svg></a></li>
+						<li class="list-inline-item px-2"><a href="https://www.reddit.com/r/zadabsc/" target="_blank"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M24.0787 11.129C23.2584 11.129 22.5366 11.4681 22.0061 11.9985C20.0537 10.6478 17.4233 9.77822 14.5084 9.68525L16.0233 2.86025L20.8467 3.94307C20.8467 5.12432 21.8092 6.08682 22.9905 6.08682C24.1936 6.08682 25.1616 5.09697 25.1616 3.91572C25.1616 2.73447 24.1991 1.74463 22.9905 1.74463C22.1483 1.74463 21.4209 2.25322 21.06 2.94775L15.7334 1.7665C15.4655 1.69541 15.203 1.88682 15.1319 2.15479L13.4694 9.67979C10.5764 9.8001 7.97328 10.6696 6.01547 12.0204C5.485 11.4681 4.73578 11.129 3.91547 11.129C0.874845 11.129 -0.120467 15.2087 2.66313 16.6032C2.56469 17.0353 2.52094 17.4946 2.52094 17.954C2.52094 22.5368 7.68344 26.2501 14.0217 26.2501C20.3873 26.2501 25.5498 22.5368 25.5498 17.954C25.5498 17.4946 25.5006 17.0134 25.3803 16.5813C28.1092 15.1813 27.103 11.129 24.0787 11.129ZM7.07641 16.8931C7.07641 15.6899 8.03891 14.722 9.2475 14.722C10.4288 14.722 11.3913 15.6845 11.3913 16.8931C11.3913 18.0743 10.4288 19.0368 9.2475 19.0368C8.04438 19.0423 7.07641 18.0743 7.07641 16.8931ZM18.7959 22.0063C16.8053 23.997 11.1889 23.997 9.19828 22.0063C8.97953 21.8149 8.97953 21.4759 9.19828 21.2571C9.38969 21.0657 9.72875 21.0657 9.92016 21.2571C11.4405 22.8157 16.4827 22.8431 18.0686 21.2571C18.26 21.0657 18.5991 21.0657 18.7905 21.2571C19.0147 21.4759 19.0147 21.8149 18.7959 22.0063ZM18.7522 19.0423C17.5709 19.0423 16.6084 18.0798 16.6084 16.8985C16.6084 15.6954 17.5709 14.7274 18.7522 14.7274C19.9553 14.7274 20.9233 15.6899 20.9233 16.8985C20.9178 18.0743 19.9553 19.0423 18.7522 19.0423Z"></path> </svg></a></li>
+						<li class="list-inline-item px-2"><a href="https://zadabsc.medium.com/" target="_blank"><svg enable-background="new 0 0 48 48" height="48px" id="Layer_3" version="1.1" viewBox="0 0 48 48" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="43.78,14.897 43.78,9.858 48,5.89 48,4.945 34.615,4.945 29.64,17.743 25.299,28.361 20.106,17.174   20.106,17.174 14.615,4.945 0.536,4.945 0.536,5.89 5.669,11.969 5.669,14.897 5.669,15.527 5.669,35.055 0,42.016 0,43.055   14.299,43.055 14.299,42.016 8.567,35.055 8.567,15.59 8.567,15.527 8.567,15.475 8.614,15.59 8.567,15.59 8.99,16.523   8.992,16.528 8.992,16.528 21,43.055 22.583,43.055 32.896,16.686 33.323,15.59 33.323,38.023 29.103,42.016 29.103,43.055   48,43.055 48,42.016 43.78,38.023 43.78,16.126 "></polygon></svg></a></li>
+						<li class="list-inline-item px-2"><a href="https://www.instagram.com/zadabsc/" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.2367 24C12.1572 24 12.0777 24 11.9977 23.9996C10.1164 24.0042 8.37813 23.9564 6.68763 23.8535C5.13777 23.7592 3.72304 23.2236 2.59617 22.3048C1.50885 21.4182 0.766326 20.2194 0.389297 18.7421C0.0611596 17.456 0.0437639 16.1935 0.0271006 14.9723C0.0150152 14.0962 0.00256357 13.058 0 12.0022C0.00256357 10.942 0.0150152 9.90377 0.0271006 9.02761C0.0437639 7.80666 0.0611596 6.54414 0.389297 5.25782C0.766326 3.78052 1.50885 2.58173 2.59617 1.69513C3.72304 0.776302 5.13777 0.240717 6.68782 0.146417C8.37831 0.043695 10.117 -0.00427877 12.0023 0.000298881C13.8841 -0.00372945 15.6219 0.043695 17.3124 0.146417C18.8622 0.240717 20.277 0.776302 21.4038 1.69513C22.4913 2.58173 23.2337 3.78052 23.6107 5.25782C23.9388 6.54396 23.9562 7.80666 23.9729 9.02761C23.985 9.90377 23.9976 10.942 24 11.9978V12.0022C23.9976 13.058 23.985 14.0962 23.9729 14.9723C23.9562 16.1933 23.939 17.4558 23.6107 18.7421C23.2337 20.2194 22.4913 21.4182 21.4038 22.3048C20.277 23.2236 18.8622 23.7592 17.3124 23.8535C15.6935 23.952 14.0304 24 12.2367 24ZM11.9977 22.1246C13.8484 22.129 15.5477 22.0823 17.1985 21.982C18.3704 21.9108 19.3865 21.5305 20.2189 20.8517C20.9883 20.2242 21.5183 19.3584 21.7939 18.2785C22.0671 17.2079 22.0828 16.0583 22.098 14.9467C22.1099 14.0764 22.1224 13.0455 22.1249 12C22.1224 10.9542 22.1099 9.92355 22.098 9.05324C22.0828 7.94161 22.0671 6.79207 21.7939 5.72126C21.5183 4.6413 20.9883 3.77558 20.2189 3.14807C19.3865 2.46948 18.3704 2.08917 17.1985 2.01794C15.5477 1.91742 13.8484 1.87109 12.0021 1.87512C10.1518 1.87073 8.45229 1.91742 6.80153 2.01794C5.62961 2.08917 4.61352 2.46948 3.78109 3.14807C3.01165 3.77558 2.48172 4.6413 2.20614 5.72126C1.93294 6.79207 1.91719 7.94142 1.90199 9.05324C1.89009 9.92428 1.87764 10.9557 1.87507 12.0022C1.87764 13.044 1.89009 14.0757 1.90199 14.9467C1.91719 16.0583 1.93294 17.2079 2.20614 18.2785C2.48172 19.3584 3.01165 20.2242 3.78109 20.8517C4.61352 21.5303 5.62961 21.9106 6.80153 21.9818C8.45229 22.0823 10.1521 22.1292 11.9977 22.1246ZM11.953 17.8594C8.7222 17.8594 6.09343 15.2309 6.09343 12C6.09343 8.76906 8.7222 6.14058 11.953 6.14058C15.1841 6.14058 17.8126 8.76906 17.8126 12C17.8126 15.2309 15.1841 17.8594 11.953 17.8594ZM11.953 8.01558C9.75605 8.01558 7.9685 9.80306 7.9685 12C7.9685 14.1969 9.75605 15.9844 11.953 15.9844C14.1502 15.9844 15.9376 14.1969 15.9376 12C15.9376 9.80306 14.1502 8.01558 11.953 8.01558ZM18.4689 4.26557C17.6923 4.26557 17.0626 4.89509 17.0626 5.67182C17.0626 6.44856 17.6923 7.07808 18.4689 7.07808C19.2457 7.07808 19.8752 6.44856 19.8752 5.67182C19.8752 4.89509 19.2457 4.26557 18.4689 4.26557Z"></path> </svg></a></li>
+						<li class="list-inline-item pl-2"><a href="https://www.tiktok.com/@zadabsc" target="_blank">
+<svg width="24px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" class="svg-inline--fa fa-tiktok fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<img src="images/footer-bottom.jpg" class="curve-down d-md-none" alt="">
+	</footer>	
+	</div>
+	</div>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.final-countdown.js"></script>
+    <script src="js/jquery.final-countdown2.js"></script>
+    <script src="js/kinetic.js"></script>
+    <script src="js/custom.js?v=1.6"></script>
+	<script src="js/gsapMain.js"></script>
+  
+
+
+<script>
+	/* Open */
+function openTutorial() {
+  document.getElementById("zadaTutorial").style.height = "100%";
+}
+
+/* Close */
+function closeTutorial() {
+  document.getElementById("zadaTutorial").style.height = "0%";
+  setTimeout(
+  function() 
+  {
+	$(".chooseWallet").css("display", "block");
+  	$(".metamaskTutorial").css("display", "none");
+  	$(".trustTutorial").css("display", "none");
+	var metamask = $(".metamaskVideo").attr("src");
+	var trust = $(".trustVideo").attr("src");
+	$(".metamaskVideo").attr("src","");
+	$(".metamaskVideo").attr("src",metamask);
+	$(".trustVideo").attr("src","");
+	$(".trustVideo").attr("src",trust);
+  }, 500);
+}
+
+
+$( ".overlay" ).click(function(e) {
+	if (e.target.nodeName != "IMG") {
+		closeTutorial();
+	}
+});
+
+$( "#metamaskTutorial" ).click(function() {
+  $(".chooseWallet").css("display", "none");
+  gsap.set(".metamaskTutorial > h2", {opacity: 0, y: -500});
+  gsap.set(".metamaskVideo", {opacity: 0, y: 500});
+  $(".metamaskTutorial").show();
+  var tl = new TimelineMax({});
+  tl.to(".metamaskTutorial > h2", {y:0, opacity:1, ease: "power3", duration:0.5}, 0);
+  tl.to(".metamaskVideo", {y:0, opacity:1, ease: "power3", duration: 0.5}, 0);
+});
+
+$( "#trustTutorial" ).click(function() {
+  $(".chooseWallet").css("display", "none");
+  gsap.set(".trustTutorial > h2", {opacity: 0, y: -500});
+  gsap.set(".trustVideo", {opacity: 0, y: 500});
+  $(".trustTutorial").css("display", "block");
+  var tl1 = new TimelineMax({});
+  tl1.to(".trustTutorial > h2", {y:0, opacity:1, ease: "power3", duration:0.5}, 0);
+  tl1.to(".trustVideo", {y:0, opacity:1, ease: "power3", duration: 0.5}, 0);
+});
+
+$(document).on('keyup', function(e) {
+  if (e.key == "Escape") {
+	  if($("#zadaTutorial").height != 0) {
+		closeTutorial();
+	  }
+  }
+
+});
+</script>
+</body></html>

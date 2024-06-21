@@ -1,0 +1,12 @@
+{
+    "url": "https://nbfmok.petmouth.top/",
+    "question": "Please analyze this URL https://nbfmok.petmouth.top/",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is accessible, now I need to check for unusually low prices and claims of free. The prices on the website are unusually low and there are claims of free shipping for orders over a certain amount. I also need to check the company information and the privacy of customer information notation. The website has suspiciously low prices and claims of free shipping. The company information is also concealed, with the registrant's information being redacted. Based on these observations, it is likely that the website is a scam. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "The website has unusually low prices claims of free shipping and the registrant's information is redacted indicating a lack of transparency and credibility."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

@@ -1,0 +1,1598 @@
+<!DOCTYPE html><html class="html-home-page"><head>
+    <title>hk Verlag</title>
+    <script>
+        var Hyphenopoly = {
+            require: {
+                "de": "Silbentrennungsalgorithmus",
+                "en-us": "Supercalifragilisticexpialidocious"
+            },
+            paths:{
+              maindir: "/Content/Scripts/Hyphenopoly/",
+              patterndir : "/Content/Scripts/Hyphenopoly/patterns/"
+            },
+            setup: {
+                selectors: {
+                    ".product-title a": {}
+                }
+            }
+        };
+        </script>
+         <script src="/Content/Scripts/Hyphenopoly/Hyphenopoly_Loader.js"></script><script src="/Content/Scripts/Hyphenopoly/Hyphenopoly.js"></script>
+        <style type="text/css">
+            body {
+                width:60%;
+                margin-left:20%;
+            }
+            p {
+                text-align: justify;
+                margin: 0 2em 0 0;
+            }
+            .container {
+                display: flex;
+                hyphens: auto;
+                -ms-hyphens: auto;
+                -moz-hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+        </style>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="language" content="DE">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <meta name="generator" content="nopCommerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    
+    
+    
+
+
+
+<style>
+    @import url(//fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic);
+    @import url(//fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic);
+
+    html body{
+	    font-family: 'Arial', sans-serif;
+    }
+
+    html body .button-1,
+    html body .button-2 {
+        border-width: 0 0 0 0px !important;
+        color: #e72582 !important;
+    }
+
+   .wishlist-cart-wrapper .wishlist-qty, .wishlist-cart-wrapper .cart-qty{
+       background-color: #00adee;
+   }
+    .wishlist-cart-wrapper .cart-sum,
+    html body .shipping-method .method-list li label,
+    html body .payment-method .method-list li label,
+    html body .order-review-data .title,
+    html body .shipment-overview .title,
+    html body .order-details-area .title,
+    html body .order-number strong,
+    html body #confirm-order-form .terms-of-service a,
+    html body .cart .subtotal, html body .cart-total .order-total,
+    html body #flyout-cart.flyout-cart .mini-shopping-cart .totals strong,
+    html body .page.login-page .customer-blocks .returning-wrapper.fieldset form div.title,
+    html body .page-body.checkout-data .section.pickup-in-store .selector label,
+    html body .section .title strong,
+	html body .mega-menu li a.view-all,
+	html body .order-details-page td.total,
+	html.html-order-details-page th.total{
+        color: #00adee;
+    }
+    html body .prices .price.actual-price
+        color: #444;
+    }
+
+    html body .products-carousel .item-info .button:hover,html body .products-carousel .jcarousel-item .item-info .button:hover{
+        background-color: #e72582 !important;
+        border-color: #e72582 !important;
+    }
+
+    html body .social-sharing a:hover{
+        background-color: #e72582;
+    }
+
+    html body a:hover,
+    html body .topic-block-body a,
+    html body .message-error,
+    html body .field-validation-error,
+    html body .username-not-available-status,
+    html body .poll-vote-error,
+    html body .password-error{
+        color: #e72582 !important;
+    }
+
+    html body .footer-menu a:hover:before {
+        background-color: #e72582;
+    }
+
+    body html .header-menu > ul > li > a:hover:before,html body .header-menu > ul > li:hover a:before{
+        background-color: #e72582 !important;
+        background: #e72582 !important;
+    }
+    html body .block .list a:hover:before, html body .block .list .active a:before, html body .block .list .sublist > .inactive:hover a:before{
+        background-color: #e72582;
+    }
+
+    html body .product-grid .item-box .buttons input[type="button"]:hover{
+        border-color: #e72582;
+        background-color: #e72582;
+    }
+
+    html body .breadcrumb strong{
+        color: #e72582;
+    }
+
+    html body .ui-tabs .ui-tabs-nav li:hover a,
+    html body .overview .value,
+    html body .overview .value,
+    html body .overview .product-price,
+    html body .registration-result-page .result{
+        color: #e72582;
+    }
+
+    html body .order-progress li a:before{
+        border-width: 0px !important;
+        display: none;
+    }
+    html body .order-progress li.active-step {
+        color: #e72582;
+    }
+
+
+    html body .cart-footer .button-1,
+    html body .contact-page .button-1,
+    html body .account-page .button-1,
+    html body .search-input .button-1,
+    html body .overview .add-to-cart-button,
+    html body .write-review .button-1,
+    html body .wishlist-content .wishlist-add-to-cart-button,
+    html body .registration-page .button-1,
+    html body .registration-result-page .button-1,
+    html body .login-page .button-1,
+    html body .checkout-page .button-1{
+        border-width: 0 0 0 0px;
+    }
+
+    html body .cart-footer .button-1:hover{
+        color: white;
+    }
+
+    html body .search-box .search-box-button:hover{
+        background-color: initial !important;
+        border-color: initial !important;
+    }
+
+    html body input.button-1:hover,
+    html body input.button-2:hover{
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: white;
+    }
+    #goToTop:hover, .eu-cookie-bar-notification button:hover, .eu-cookie-bar-notification a:hover, .header-logo a img, .footer-menu a:hover::before, .social-sharing a:hover, .poll .buttons input:hover, .block .list a:hover::before, .block .list .active a::before, .block .list .sublist > .inactive:hover a::before, .pager li a:hover, .pager li span, .vendor-list a:hover, .contact-vendor input[type="button"]:hover, .overview .add-to-cart-button:hover, .overview .add-to-wishlist-button:hover, .variant-overview .add-to-wishlist-button:hover, .overview .add-to-compare-list-button:hover, .overview .email-a-friend-button:hover, .overview .subscribe-button:hover, .download-sample a:hover, .variant-overview .add-to-cart-button:hover, .attributes .qq-upload-button, .write-review .button-1:hover, .wishlist-content .button-2:hover, .compare-products-page .button-2:hover, .enter-password-form input[type="submit"]:hover, .contact-page .button-1:hover, .email-a-friend-page .button-1:hover, .apply-vendor-page .button-1:hover, .registration-page .button-1:hover, .registration-result-page .button-1:hover, #check-availability-button:hover, .login-page .button-1:hover, .password-recovery-page .button-1:hover, .account-page .button-1:hover, .account-page .edit-address-button:hover, .account-page .order-details-button:hover, .account-page .delete-address-button:hover, .account-page .return-items-button:hover, .order-details-page .page-title a:hover .return-request-page .button-1:hover, .account-page .delete-selected-biss-button:hover, .avatar-page input[type="submit"].upload-avatar-button, .shopping-cart-page .button-1:hover, .checkout-page .button-1:hover, .shopping-cart-page .button-2:hover, .checkout-page .button-2:hover, .checkout-attributes .qq-upload-button, .return-request-file .qq-upload-button, .order-details-page .actions input:hover, .search-input .button-1:hover, .blog-page .tags a:hover, .blogpost-page .tags a:hover, .new-comment .button-1:hover, .news-list-page .news-items .read-more:hover, .topic-post .pm-link-button:hover, .profile-info-box .pm-link-button:hover, .forum-edit-page .buttons input:hover, .move-topic-page .buttons input:hover, .private-message-send-page .buttons input:hover, .private-messages-page .buttons input:hover, .private-message-view-page .buttons input:hover, .ajaxCart .productAddedToCartWindowCheckout:hover, .mega-menu .box li a:hover::before, .jCarouselMainWrapper .slick-prev:hover, .jCarouselMainWrapper .slick-next:hover, .jCarouselMainWrapper .slick-dots .slick-active button, .previous-product a:hover, .next-product a:hover, .ropc button:hover, .rich-blog-homepage .view-all a:hover, .post-actions .read-more:hover, .blog-search-results li a:hover::before, .post-navigation a:hover, .nivo-controlNav a.active, .sale-of-the-day-offer .owl-controls .owl-dot.active span, .inputs.upload .k-button.k-upload-button span, .page-body form > .buttons .k-button:hover, .k-edit-buttons.k-state-default button.k-dialog-insert.k-button, #submit-reply .buttons .k-button:hover, .my-tickets-page .clear-filters:hover, .manage-tickets-page .clear-filters:hover, .k-widget.confirmation-wrapper button, .overview .submit-ticket-button:hover {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: #e72582 !important;
+    }
+    html body .eu-cookie-bar-notification .buttons-more {
+        display: inline-block;
+    }
+
+    html body .compare-products-table .product-price td{
+        color: #e72582;
+    }
+
+    html body .block .list a.active{
+        color: #e72582;
+    }
+
+    html body .account-page .button-2:hover{
+        color: #e72582 !important;
+    }
+
+    html body .account-page .button-2:hover{
+        background-color: #e72582;
+    }
+
+    html body .mega-menu>li:hover>span{
+        color: #e72582;
+    }
+
+    html body .news-list-homepage .news-items .read-more,
+    html body .footer-powered-by a {
+        color: #e72582;
+    }
+    html body .header-menu .sublist-wrap::after{
+        background-color: #e72582;
+    }
+
+    body .newsletter .title strong {
+        color: #e72582;
+    }
+    body .newsletter-validation,
+    body #newsletter-result-block {
+        position: relative;
+        color: #e72582;
+        text-align: left;
+        top: -7px;
+    }
+
+    .news-list-page .news-items .read-more:hover{
+        background-color: #e72582;
+        color: white;
+    }
+
+    .topic-block ul, .topic-block ul li, .topic-block{
+        font-weight: 100;
+        color: #444;
+        text-align: left;
+    }
+
+    html body #goToTop:hover,
+    html body .eu-cookie-bar-notification button:hover,
+    html body .eu-cookie-bar-notification a:hover{
+        background-color: #e72582;
+        border-color: #e72582;
+        color: white !important;
+    }
+
+    html body .products-carousel .jcarousel-item .item-info .button{
+        background-position: top left -33px;
+    }
+
+    html body .product-ribbon{
+        background-color: #e72582;
+    }
+
+    html body .jcarousel-next{
+        background-color: #e72582;
+    }
+
+    html body .nop-jcarousel .item-info .button,html body .nop-jcarousel .item-info .button:hover {
+        background-color: #e72582;
+    }
+
+
+    html body .overview .add-to-compare-list-button:hover,
+    html body .overview .add-to-wishlist-button:hover{
+        border-color:#e72582;
+        background-color:#e72582;
+    }
+
+    html body .mega-menu .dropdown{
+        border-color: #e72582;
+    }
+
+    html body .breadcrumb h1,
+    html body .block .list .active > a{
+        color: #e72582;
+    }
+
+    html body .block.block-manufacturer-navigation{ display: none; }
+
+    html body .return-request-page td.price,
+    html body .order-total-price .cart-total-right{
+        color: #e72582;
+    }
+
+    html body .order-details-page .page-title a:hover{
+        background-color: #e72582;
+    }
+</style>
+    
+    
+
+    <link href="/bundles/styles/xvxc8lu3jmw2kio6a2iqg6exhhszx6dkbkd3flwuyzg1?v=tflWNTS2lpNCxMuu98qgVTPyaLCyPRoB7XGaCmCoyoM1" rel="stylesheet">
+
+    
+    <script src="/bundles/scripts/_7j3lw_ooduqa9ayq_f2_uf5vweg_ojuqzw5bqosops1?v=U8e8OLFs1-xa2Qs0vrPejrW8xCM1VXmcMldGaPMvr0Y1"></script>
+
+
+    
+    
+    
+    
+    
+<link rel="shortcut icon" href="https://hk-lehrmittel.ch/favicon.ico">
+    <!--Powered by nopCommerce - http://www.nopCommerce.com-->
+</head>
+<body class="home-page-body  notAndroid23" style="">
+    <div class="loader-overlay" style="display: none;"><div class="loader"></div></div>
+    
+
+
+
+
+
+<div class="ajax-loading-block-window" style="display: none">
+</div>
+<div id="dialog-notifications-success" title="Benachrichtigung" style="display:none;">
+</div>
+<div id="dialog-notifications-error" title="Fehler" style="display:none;">
+</div>
+<div id="dialog-notifications-warning" title="Warnung" style="display:none;">
+</div>
+<div id="bar-notification" class="bar-notification">
+    <span class="close" title="Schließen">&nbsp;</span>
+</div>
+
+
+<div class="master-wrapper-page home-page items-per-row-three">
+    
+    
+    
+<!--[if lte IE 7]>
+    <div style="clear:both;height:59px;text-align:center;position:relative;">
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
+            <img src="/Themes/hkVerlag/Content/img/ie_warning.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+<![endif]-->
+
+
+    <div class="overlayOffCanvas"></div>
+
+    <div class="header"><div class="header-options-wrapper">
+        <div class="header-selectors-wrapper">
+
+                
+
+            
+        </div>
+        
+<div class="customer-header-links">
+    <ul>
+        
+            <li><a href="/de/register" class="ico-register">Registrierung</a></li>
+            <li><a href="/de/login" class="ico-login">Anmelden</a></li>
+                
+
+    </ul>
+</div>
+
+<div class="header-right">
+    
+    <div class="wishlist-cart-wrapper">
+            <div class="wishlist-links-wrapper">
+                <a href="/de/wishlist" class="ico-wishlist">
+                    <span class="wishlist-label">Wunschliste</span>
+                    <span class="wishlist-qty">0</span>
+                </a>
+            </div>
+
+            <div id="topcartlink">
+                <a href="/de/cart" class="ico-cart">
+                    <span class="cart-qty">0</span>
+                    <span class="cart-label">Warenkorb</span>
+                    
+<span class="cart-sum">CHF 0.00</span>
+                </a>
+            </div>
+<div id="flyout-cart" class="flyout-cart">
+    <div class="mini-shopping-cart">
+        <div class="count">
+Sie haben keine Artikel im Korb.        </div>
+    </div>
+</div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.header').on('mouseenter', '#topcartlink', function () {
+                        $('#flyout-cart').addClass('active');
+                    });
+                    $('.header').on('mouseleave', '#topcartlink', function () {
+                        $('#flyout-cart').removeClass('active');
+                    });
+                    $('.header').on('mouseenter', '#flyout-cart', function () {
+                        $('#flyout-cart').addClass('active');
+                    });
+                    $('.header').on('mouseleave', '#flyout-cart', function () {
+                        $('#flyout-cart').removeClass('active');
+                    });
+                });
+            </script>
+    </div>
+</div>
+    </div>
+    
+    
+</div>
+    <div class="sub-header">
+        <div class="sub-header-center"><div class="header-logo">
+        
+
+<a href="/de/" class="logo">
+
+
+
+<img alt="hk Verlag" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0000673.png"></a>
+    </div>
+            
+            <div id="headerMenuParent" class="header-menu-parent"><div class="header-menu">
+                <div class="close-menu">
+                    <span>Schließen</span>
+                </div>
+
+
+
+
+
+
+
+
+
+
+    
+    <ul class="mega-menu main-navigation" data-isrtlenabled="false" data-enableclickfordropdown="false">
+
+
+
+<li class="has-sublist">
+
+        <a>
+            <span class="with-subcategories labelfornextplusbutton">Produkte</span>
+        </a>
+
+        <div class="plus-button"></div>
+        <div class="sublist-wrap">
+            <ul class="sublist">
+                <li class="back-button">
+                    <span>Zurück</span>
+                </li>
+                            <li class="has-sublist">
+                <a href="/de/alle-lehrmittel-2" title="Alle Lehrmittel" class="with-subcategories"><span>Alle Lehrmittel</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li class="has-sublist">
+                <a href="/de/rechnungswesen-2" title="Rechnungswesen" class="with-subcategories"><span>Rechnungswesen</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/grundlagen" title="Grundlagen"><span>Grundlagen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/weiterbildung" title="Weiterbildung"><span>Weiterbildung</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/deutsch" title="Deutsch"><span>Deutsch</span></a>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/fremdsprachen" title="Fremdsprachen" class="with-subcategories"><span>Fremdsprachen</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/englisch" title="Englisch"><span>Englisch</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/franz%C3%B6sisch" title="Französisch"><span>Französisch</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/branchenkunde" title="Branchenkunde" class="with-subcategories"><span>Branchenkunde</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/bankfachwissen" title="Bankfachwissen"><span>Bankfachwissen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/versicherung" title="Versicherung"><span>Versicherung</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/allgemeinbildung-abu" title="Allgemeinbildung ABU"><span>Allgemeinbildung ABU</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/marketing-kommunikation" title="Marketing &amp; Kommunikation"><span>Marketing &amp; Kommunikation</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/lernboxen" title="Lernboxen" class="with-subcategories"><span>Lernboxen</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/rechnungswesen-3" title="Rechnungswesen"><span>Rechnungswesen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/bankfachwissen-2" title="Bankfachwissen"><span>Bankfachwissen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/versicherung-2" title="Versicherung"><span>Versicherung</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/fremdsprachen-2" title="Fremdsprachen"><span>Fremdsprachen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/dienstleistung-administration" title="Dienstleistung &amp; Administration"><span>Dienstleistung &amp; Administration</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/rechnungswesen-15" title="Rechnungswesen"><span>Rechnungswesen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/sprachtrainer-13" title="Sprachtrainer"><span>Sprachtrainer</span></a>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/gbw-fachgruppe-garten" title="GBW Fachgruppe Garten" class="with-subcategories"><span>GBW Fachgruppe Garten</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/efz-1-lehrjahr" title="EFZ 1. Lehrjahr"><span>EFZ 1. Lehrjahr</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/efz-2-3-fachrichtung-gala" title="EFZ 2. &amp; 3. Fachrichtung GaLa"><span>EFZ 2. &amp; 3. Fachrichtung GaLa</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/efz-2-3-fachrichtung-zierpflanzen" title="EFZ 2. &amp; 3. Fachrichtung Zierpflanzen"><span>EFZ 2. &amp; 3. Fachrichtung Zierpflanzen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/eba-gala-bau-8" title="EBA GaLa-Bau"><span>EBA GaLa-Bau</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/eba-produktion-8" title="EBA Produktion"><span>EBA Produktion</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+
+            </ul>
+        </div>
+
+</li>
+
+    <li class="">
+        
+        <a href="/Gesamtkatalog" class="" title="Gesamtkatalog"><span> Gesamtkatalog</span></a>
+
+    </li>
+
+
+
+<li class="has-sublist">
+
+    <a>
+        <span class="with-subcategories labelfornextplusbutton">Dienstleistungen</span>
+    </a>
+
+        <div class="plus-button"></div>
+        <div class="sublist-wrap">
+            <ul class="sublist">
+                <li class="back-button">
+                    <span>Zurück</span>
+                </li>
+                    <li><a href="/de/auslieferung-2"><span>Auslieferung</span></a></li>
+                    <li><a href="/de/lehrmittel-f%C3%BCr-schulen"><span>Lehrmittel Für Schulen</span></a></li>
+                    <li><a href="/de/verlag"><span>Verlag</span></a></li>
+            </ul>
+        </div>
+
+</li>    <li class="">
+        
+        <a href="/de/contactus" class="" title="Kontakt"><span> Kontakt</span></a>
+
+    </li>
+
+        
+    </ul>
+    <div class="menu-title"><span>Menu</span></div>
+    <ul class="mega-menu-responsive main-navigation">
+
+
+
+<li class="has-sublist">
+
+        <a>
+            <span class="with-subcategories labelfornextplusbutton">Produkte</span>
+        </a>
+
+        <div class="plus-button"></div>
+        <div class="sublist-wrap">
+            <ul class="sublist">
+                <li class="back-button">
+                    <span>Zurück</span>
+                </li>
+                            <li class="has-sublist">
+                <a href="/de/alle-lehrmittel-2" title="Alle Lehrmittel" class="with-subcategories"><span>Alle Lehrmittel</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li class="has-sublist">
+                <a href="/de/rechnungswesen-2" title="Rechnungswesen" class="with-subcategories"><span>Rechnungswesen</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/grundlagen" title="Grundlagen"><span>Grundlagen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/weiterbildung" title="Weiterbildung"><span>Weiterbildung</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/deutsch" title="Deutsch"><span>Deutsch</span></a>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/fremdsprachen" title="Fremdsprachen" class="with-subcategories"><span>Fremdsprachen</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/englisch" title="Englisch"><span>Englisch</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/franz%C3%B6sisch" title="Französisch"><span>Französisch</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/branchenkunde" title="Branchenkunde" class="with-subcategories"><span>Branchenkunde</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/bankfachwissen" title="Bankfachwissen"><span>Bankfachwissen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/versicherung" title="Versicherung"><span>Versicherung</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/allgemeinbildung-abu" title="Allgemeinbildung ABU"><span>Allgemeinbildung ABU</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/marketing-kommunikation" title="Marketing &amp; Kommunikation"><span>Marketing &amp; Kommunikation</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/lernboxen" title="Lernboxen" class="with-subcategories"><span>Lernboxen</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/rechnungswesen-3" title="Rechnungswesen"><span>Rechnungswesen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/bankfachwissen-2" title="Bankfachwissen"><span>Bankfachwissen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/versicherung-2" title="Versicherung"><span>Versicherung</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/fremdsprachen-2" title="Fremdsprachen"><span>Fremdsprachen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/dienstleistung-administration" title="Dienstleistung &amp; Administration"><span>Dienstleistung &amp; Administration</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/rechnungswesen-15" title="Rechnungswesen"><span>Rechnungswesen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/sprachtrainer-13" title="Sprachtrainer"><span>Sprachtrainer</span></a>
+            </li>
+            <li class="has-sublist">
+                <a href="/de/gbw-fachgruppe-garten" title="GBW Fachgruppe Garten" class="with-subcategories"><span>GBW Fachgruppe Garten</span></a>
+                <div class="plus-button"></div>
+                <div class="sublist-wrap">
+                    <ul class="sublist">
+                        <li class="back-button">
+                            <span>Zurück</span>
+                        </li>
+                                    <li>
+                <a class="lastLevelCategory" href="/de/efz-1-lehrjahr" title="EFZ 1. Lehrjahr"><span>EFZ 1. Lehrjahr</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/efz-2-3-fachrichtung-gala" title="EFZ 2. &amp; 3. Fachrichtung GaLa"><span>EFZ 2. &amp; 3. Fachrichtung GaLa</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/efz-2-3-fachrichtung-zierpflanzen" title="EFZ 2. &amp; 3. Fachrichtung Zierpflanzen"><span>EFZ 2. &amp; 3. Fachrichtung Zierpflanzen</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/eba-gala-bau-8" title="EBA GaLa-Bau"><span>EBA GaLa-Bau</span></a>
+            </li>
+            <li>
+                <a class="lastLevelCategory" href="/de/eba-produktion-8" title="EBA Produktion"><span>EBA Produktion</span></a>
+            </li>
+
+
+                    </ul>
+                </div>
+            </li>
+
+            </ul>
+        </div>
+
+</li>
+
+    <li class="">
+        
+        <a href="/Gesamtkatalog" class="" title="Gesamtkatalog"><span> Gesamtkatalog</span></a>
+
+    </li>
+
+
+
+<li class="has-sublist">
+
+    <a>
+        <span class="with-subcategories labelfornextplusbutton">Dienstleistungen</span>
+    </a>
+
+        <div class="plus-button"></div>
+        <div class="sublist-wrap">
+            <ul class="sublist">
+                <li class="back-button">
+                    <span>Zurück</span>
+                </li>
+                    <li><a href="/de/auslieferung-2"><span>Auslieferung</span></a></li>
+                    <li><a href="/de/lehrmittel-f%C3%BCr-schulen"><span>Lehrmittel Für Schulen</span></a></li>
+                    <li><a href="/de/verlag"><span>Verlag</span></a></li>
+            </ul>
+        </div>
+
+</li>    <li class="">
+        
+        <a href="/de/contactus" class="" title="Kontakt"><span> Kontakt</span></a>
+
+    </li>
+
+        
+    </ul>
+            </div></div>
+        </div>
+    </div>
+    <div class="responsive-nav-wrapper-parent">
+        <div class="responsive-nav-wrapper">
+            <div class="menu-title">
+                <span>Menu</span>
+            </div>
+            <div class="search-wrap">
+                <span>Suchen</span>
+            </div>
+            <div class="wishlist-button">
+                <a href="/de/wishlist" class="ico-wishlist">
+                    <span class="cart-label">Wunschliste</span>
+                </a>
+            </div>
+            <div class="shopping-cart-link">
+                <a href="/de/cart">Warenkorb</a>
+            </div>
+            
+            <div class="personal-button" id="header-links-opener">
+                <span>Personal menu</span>
+            </div>
+        </div>
+    </div>
+    <div class="master-wrapper-content">
+        <script type="text/javascript">
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+        
+        <div class="ajax-loading-block-window" style="display: none">
+            <div class="loading-image">
+            </div>
+        </div>
+
+
+
+        <div class="master-column-wrapper">
+            
+
+
+
+<script type="text/javascript">
+    var nop_store_directory_root = "https://hk-lehrmittel.ch/";
+</script>
+
+<div id="product-ribbon-info" data-productid="0" data-productboxselector=".product-item, .item-holder" data-productboxpicturecontainerselector=".picture, .item-picture" data-productpagepicturesparentcontainerselector=".product-essential" data-productpagebugpicturecontainerselector=".picture" data-retrieveproductribbonsurl="/ProductRibbons/RetrieveProductRibbons">
+</div>
+            
+
+<div class="center-1">
+    
+    
+<div class="page home-page">
+    <div class="page-body">
+        
+            <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>Betriebsferien Frühlingsferien 2024</h2>
+            </div>
+        <div class="topic-block-body">
+            <p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Vom 26. April bis und mit 3. Mai bleibt unser Geschäft geschlossen.</span></strong></p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Bestellungen werden ab dem 6. Mai 2024 umgehend bearbeitet und versendet.</span></strong></p>
+<p></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Besten Dank für Ihr Verständnis, hk Team</span></p>
+        </div>
+    </div>
+
+        
+        
+        
+
+
+
+        
+
+        
+        
+        
+        
+        
+        <div class="home-page-bottom">
+            
+    <div class="home-page-listbox featured without-banners">
+        <div class="title">
+            <strong>Unsere Produkte</strong>
+        </div>
+
+
+<div class="product-item" data-productid="96">
+    <div class="picture">
+        <a href="/de/kaufm%C3%A4nnisches-rechnungswesen-band-1-in-k%C3%BCrze-2" title="Kaufmännisches Rechnungswesen Band 1: IN KÜRZE">
+            <img alt="Kaufmännisches Rechnungswesen Band 1: IN KÜRZE" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008010_kaufmannisches-rechnungswesen-band-1-in-kurze_375.jpeg" title="Kaufmännisches Rechnungswesen Band 1: IN KÜRZE">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/kaufm%C3%A4nnisches-rechnungswesen-band-1-in-k%C3%BCrze-2">Kaufmännisches Rechnungswesen Band 1: IN KÜRZE</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    978-3-909539-13-0
+
+            </div>
+        <div class="description">
+            Nachschlagebuch mit Übersichten, Formeln, Beispielen und Skizzen
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 35.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/96/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="144">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-satz-und-komma-3" title="Sprachtrainer. Deutsch - Satz und Komma">
+            <img alt="Sprachtrainer. Deutsch - Satz und Komma" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008199_sprachtrainer-deutsch-satz-und-komma_375.jpeg" title="Sprachtrainer. Deutsch - Satz und Komma">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-satz-und-komma-3">Sprachtrainer. Deutsch - Satz und Komma</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    978-3-909539-32-1
+
+            </div>
+        <div class="description">
+            Den Satzbau verstehen und Kommas richtig setzen. Zum Lernen, Üben und Nachschlagen
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 16.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/144/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="147">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-rechtschreibung-3" title="Sprachtrainer. Deutsch - Rechtschreibung">
+            <img alt="Sprachtrainer. Deutsch - Rechtschreibung" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008200_sprachtrainer-deutsch-rechtschreibung_375.jpeg" title="Sprachtrainer. Deutsch - Rechtschreibung">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-rechtschreibung-3">Sprachtrainer. Deutsch - Rechtschreibung</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    978-3-909539-31-4
+
+            </div>
+        <div class="description">
+            Die Regeln kennen und sicher anwenden. Für Schule, Studium und Beruf
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 16.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/147/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="300">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-fremdw%C3%B6rter" title="Sprachtrainer. Deutsch - Fremdwörter">
+            <img alt="Sprachtrainer. Deutsch - Fremdwörter" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008201_sprachtrainer-deutsch-fremdworter_375.jpeg" title="Sprachtrainer. Deutsch - Fremdwörter">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-fremdw%C3%B6rter">Sprachtrainer. Deutsch - Fremdwörter</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    978-3-909539-55-0
+
+            </div>
+        <div class="description">
+            Für Schule, Studium und Beruf
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 22.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/300/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="336">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-fremdw%C3%B6rter-2" title="Sprachtrainer. Deutsch - Fremdwörter (E-Book)">
+            <img alt="Sprachtrainer. Deutsch - Fremdwörter (E-Book)" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008077_sprachtrainer-deutsch-fremdworter-e-book_375.jpeg" title="Sprachtrainer. Deutsch - Fremdwörter (E-Book)">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-fremdw%C3%B6rter-2">Sprachtrainer. Deutsch - Fremdwörter (E-Book)</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    FW E-BOOK
+
+            </div>
+        <div class="description">
+            Für Schule, Studium und Beruf
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 22.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/336/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="337">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-fremdw%C3%B6rter-3" title="Sprachtrainer. Deutsch - Fremdwörter (Buch + E-Book)">
+            <img alt="Sprachtrainer. Deutsch - Fremdwörter (Buch + E-Book)" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008063_sprachtrainer-deutsch-fremdworter-buch-e-book_375.jpeg" title="Sprachtrainer. Deutsch - Fremdwörter (Buch + E-Book)">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-fremdw%C3%B6rter-3">Sprachtrainer. Deutsch - Fremdwörter (Buch + E-Book)</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    FW BUNDLE
+
+            </div>
+        <div class="description">
+            Für Schule, Studium und Beruf
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 27.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/337/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="348">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-satz-und-komma-e-book" title="Sprachtrainer. Deutsch - Satz und Komma (E-Book)">
+            <img alt="Sprachtrainer. Deutsch - Satz und Komma (E-Book)" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008188_sprachtrainer-deutsch-satz-und-komma-e-book_375.jpeg" title="Sprachtrainer. Deutsch - Satz und Komma (E-Book)">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-satz-und-komma-e-book">Sprachtrainer. Deutsch - Satz und Komma (E-Book)</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    SK E-BOOK
+
+            </div>
+        <div class="description">
+            Den Satzbau verstehen und Kommas richtig setzen. Zum Lernen, Üben und Nachschlagen
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 16.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/348/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="349">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-rechtschreibung-e-book" title="Sprachtrainer. Deutsch - Rechtschreibung (E-Book)">
+            <img alt="Sprachtrainer. Deutsch - Rechtschreibung (E-Book)" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008189_sprachtrainer-deutsch-rechtschreibung-e-book_375.jpeg" title="Sprachtrainer. Deutsch - Rechtschreibung (E-Book)">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-rechtschreibung-e-book">Sprachtrainer. Deutsch - Rechtschreibung (E-Book)</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    RS E-BOOK
+
+            </div>
+        <div class="description">
+            Die Regeln kennen und sicher anwenden. Für Schule, Studium und Beruf
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 16.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/349/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="350">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-rechtschreibung-buch-e-book" title="Sprachtrainer. Deutsch - Rechtschreibung (Buch + E-Book)">
+            <img alt="Sprachtrainer. Deutsch - Rechtschreibung (Buch + E-Book)" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008207_sprachtrainer-deutsch-rechtschreibung-buch-e-book_375.jpeg" title="Sprachtrainer. Deutsch - Rechtschreibung (Buch + E-Book)">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-rechtschreibung-buch-e-book">Sprachtrainer. Deutsch - Rechtschreibung (Buch + E-Book)</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    RS BUNDLE
+
+            </div>
+        <div class="description">
+            Die Regeln kennen und sicher anwenden. Für Schule, Studium und Beruf
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 20.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/350/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="product-item" data-productid="351">
+    <div class="picture">
+        <a href="/de/sprachtrainer-deutsch-satz-und-komma-buch-e-book" title="Sprachtrainer. Deutsch - Satz und Komma (Buch + E-Book)">
+            <img alt="Sprachtrainer. Deutsch - Satz und Komma (Buch + E-Book)" src="https://hk-lehrmittel.ch/content/images/thumbs/000/0008167_sprachtrainer-deutsch-satz-und-komma-buch-e-book_375.jpeg" title="Sprachtrainer. Deutsch - Satz und Komma (Buch + E-Book)">
+                <div class="item-overlay"></div>
+        </a>
+        
+    </div>
+    <div class="details">
+
+        <h2 class="product-title">
+            <a href="/de/sprachtrainer-deutsch-satz-und-komma-buch-e-book">Sprachtrainer. Deutsch - Satz und Komma (Buch + E-Book)</a>
+        </h2>
+
+
+            <div class="sku">
+                
+
+    SK BUNDLE
+
+            </div>
+        <div class="description">
+            Den Satzbau verstehen und Kommas richtig setzen. Zum Lernen, Üben und Nachschlagen
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">CHF 20.00</span>
+                                            </div>
+            
+            <div class="buttons">
+                        <input type="button" value="Kaufen" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/de/addproducttocart/catalog/351/1/1    ');return false;">
+            </div>
+            
+        </div>
+    </div>
+</div>
+    </div>
+
+            
+            
+
+            <div class="home-page-banners">
+                
+                
+                
+            </div>
+        </div>
+        <div class="HomePage-Topics-Wrapper">
+            <div class="HomePage-Topics-Item">
+                    <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>Verlag</h2>
+            </div>
+        <div class="topic-block-body">
+            <p><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Wir publizieren Lehrmittel im Bereich der Repetition, Ergänzung und Nachschlagewerke. <a href="http://vm-sp-02:15536/verlag">mehr erfahren</a></span></p>
+        </div>
+    </div>
+
+            </div>
+            <div class="HomePage-Topics-Item">
+                    <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>Auslieferung</h2>
+            </div>
+        <div class="topic-block-body">
+            <p><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Wir übernehmen die Auslieferung für Kleinst- und Eigenverlage. <a href="/auslieferung-2">mehr erfahren</a></span></p>
+        </div>
+    </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="HomePage-Topics-Wrapper">
+            <div class="HomePage-Topics-Item">
+                    <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>Lehrmittel für Schulen</h2>
+            </div>
+        <div class="topic-block-body">
+            <p><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">hk Service - die umfassende Dienstleistung zur Lehrmittelbeschaffung für Schulen. <a href="/lehrmittel-f%C3%BCr-schulen">mehr erfahren</a></span></p>
+        </div>
+    </div>
+
+            </div>
+            <div class="HomePage-Topics-Item">
+                    <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>Gesamtkatalog</h2>
+            </div>
+        <div class="topic-block-body">
+            <p><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Bestellen Sie über unseren Gesamtkatalog mit Titeln aus allen Verlagen. Als Lehrperson profitieren Sie von unseren massgeschneiderten Dienstleistungen und attraktiven Konditionen. <a href="/Gesamtkatalog">mehr erfahren</a></span></p>
+        </div>
+    </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+
+    </div>
+</div>
+    
+</div>
+
+        </div>
+        
+    </div>
+</div>
+<div class="footer">
+
+<div class="footer-upper">
+    <div class="footer-blocks-holder">
+        
+        <div class="footer-upper-block twitter">
+            <h3 class="title">
+                <span>Neuester Tweet</span>
+            </h3>
+            <div class="twitter-plugin">
+                <!--include twitter plugin-->
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+    
+
+
+<div class="footer-middle">
+    <div class="footer-blocks-holder">
+        <div class="footer-middle-block contact-info">
+            <h3 class="title">
+                <span>Kontakt</span>
+            </h3>
+            <ul class="footer-menu">
+                <li class="address">
+                    <span>hk Verlag AG</span>
+                    <span>Talstrasse 15</span>
+                    <span>8620 Wetzikon</span>
+                </li>
+                <li class="phone-fax">
+                    <span>T +41 44 930 78 58</span>
+                </li>
+                <li class="email-website">
+                    <span>info@hkverlag.ch</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-middle-block information">
+            <h3 class="title">
+                <span>Information</span>
+            </h3>
+            <ul class="footer-menu">
+                    <li><a href="/de/team">Team</a></li>
+                    <li><a href="/de/unternehmen">Unternehmen</a></li>
+                    <li><a href="/de/standort">Standort</a></li>
+                    <li><a href="/de/kundendienst">Kundendienst</a></li>
+                    <li><a href="/de/impressum">Impressum</a></li>
+                    <li><a href="/de/agb">AGB</a></li>
+                                    <li><a href="/de/sitemap" title="Sitemap">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-middle-block my-account">
+            <h3 class="title">
+                <span>Mein Konto</span>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="/de/customer/info">Kunden-Information</a></li>
+                <li><a href="/de/customer/addresses">Adressen</a></li>
+                <li><a href="/de/order/history">Aufträge</a></li>
+                    <li><a href="/de/cart">Warenkorb</a></li>
+                                    <li><a href="/de/wishlist">Wunschliste</a></li>
+                                            </ul>
+        </div>
+        <div class="footer-middle-block customer-services">
+            <h3 class="title">
+                <span>links</span>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="http://sprachtrainer.ch">sprachtrainer.ch</a></li>
+                <li><a href="http://swissmarketingacademy.ch">swissmarketingacademy.ch</a></li>
+                <li><a href="http://sbvv.ch">sbvv.ch</a></li>
+                <li><a href="http://stereoweb.ch">stereoweb.ch</a></li>
+                <li><a href="http://ispace.ch">ispace.ch</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer-middle esCustomFooter">
+    <div class="footer-blocks-holder">
+        <div class="footer-middle-block">
+            <div class="topic-block">
+                <div class="topic-block-title">
+                    <h2>Zertifikate</h2>
+                </div>
+                <div class="topic-block-body">
+                        <div class="topic-block">
+        <div class="topic-block-body">
+            <p><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">Unser Shop und unsere Produkte wurden mehrfach ausgezeichnet.</span></p>
+        </div>
+    </div>
+
+                    <div class="certificateElements">
+                                                                                                    <div class="topic-block">
+        <div class="topic-block-body">
+            
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle-block">
+            <div class="topic-block">
+                <div class="topic-block-title">
+                    <h2>
+Geprüfte Sicherheit                    </h2>
+                </div>
+                <div class="topic-block-body">
+                            <div class="icon-shield-check sslIcon"></div>
+                            <div class="sslIconText">Wir setzen auf kontrollierte Sicherheit und Kommunikation über <strong>SSL</strong>. Wir legen großen Wert auf <a title="Unsere Datenschutzbestimmungen" href="/Datenschutz">Datenschutz</a> und geben Ihre Daten nicht an Dritte weiter. </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle-block">
+                <div class="topic-block">
+            <div class="topic-block-title">
+                <h2>Liefern &amp; Zahlen</h2>
+            </div>
+        <div class="topic-block-body">
+            <div class="icon-truck deliveryIcon"></div>
+<div class="deliveryIconText"><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">Wir bieten Ihnen eine schnelle Lieferung.</span></div>
+<div class="deliveryIconText"><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">Weitere Informationen zum <a title="Informationen zu unseren Versandkonditionen" href="/versandinformationen">Versand</a></span></div>
+<div class="deliveryIconText"><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">Weitere Informationen zur <span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;"><a title="Informationen zu unseren Zahlungsmethoden" href="/Zahlungsmethoden">Zahlung</a></span><br></span></span></div>
+        </div>
+    </div>
+
+
+
+        </div>
+        <div class="footer-middle-block">
+            <div class="topic-block">
+                <div class="topic-block-title">
+                    <h2>Click &amp; Collect</h2>
+                </div>
+                <div class="topic-block-body">
+                    <div class="clickAndCollectIconText">
+                        <ul class="footer-menu">
+                            <li>Online shoppen, vor Ort abholen. <br><br>Öffnungszeiten</li>
+                            <li class=""><br>MO - FR<br>09:00 - 12:00 + 13:30 - 17:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-lower">
+    <div class="footer-blocks-holder">
+        <div class="footer-store-personalize">
+            
+            
+        </div>
+        <div class="footer-powered-by">
+           Alle Preisangaben verstehen sich inkl. MWST
+        </div>
+            <div class="footer-powered-by">
+                Powered by <a href="http://www.nopcommerce.com/">nopCommerce</a>
+            </div>
+                
+
+
+            <div class="footer-disclaimer">
+                <a href="http://www.eurosoft.net/" title="Copyright © 2024 eurosoft IT GmbH. Alle Rechte vorbehalten." target="_blank">Copyright © 2024 eurosoft IT GmbH. Alle Rechte vorbehalten.</a>
+            </div>
+
+        <div class="footer-store-theme">
+            
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#eu-cookie-bar-notification').show();
+
+        $('#eu-cookie-ok').click(function () {
+            $.ajax({
+                cache: false,
+                type: 'POST',
+                url: '/eucookielawaccept',
+                dataType: 'json',
+                success: function (data) {
+                    $('#eu-cookie-bar-notification').hide();
+                },
+                failure: function () {
+                    alert('Cannot store value');
+                }
+            });
+    });
+    });
+</script>
+<div id="eu-cookie-bar-notification" class="eu-cookie-bar-notification">
+    <div class="content">
+        <div class="text">Cookies helfen uns unsere Dienstleistungen anzubieten.  Wenn Sie unsere Dienstleistungen nutzen, sind Sie damit einverstanden.</div>
+        <div class="buttons-more">
+            <button type="button" class="ok-button button-1" id="eu-cookie-ok">OK</button>
+            <a class="learn-more">Mehr dazu</a>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+    <div id="goToTop"></div>
+    <script>
+		$('.block-popular-tags li').each(function(){
+			if(/Tag-+\w+-/.test(this.innerText))
+				this.remove();
+		});
+		if($('.block-popular-tags li').length == 0)
+			$('.block-popular-tags').remove();
+    </script>
+
+
+</body></html>

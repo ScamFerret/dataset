@@ -1,0 +1,12 @@
+{
+    "url": "https://www.abykmhh.store/",
+    "question": "Please analyze this URL https://www.abykmhh.store/",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is accessible, now I need to check for the characteristics of a scam website. I have observed that the website contains unusually low prices and claims of free products, which is a characteristic of a scam website. The website domain \"abykmhh.store\" is registered, but the WHOIS information is not available, indicating potential non-existent company information. Based on the search results, it appears that the website \"abykmhh.store\" is linked to other suspicious websites, which is a characteristic of a scam website. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake shopping site",
+        "reason": "The website abykmhh.store exhibits unusually low prices and claims of free products as well as links to other suspicious websites indicating that it is a fake shopping site. The WHOIS information is also not available indicating potential non-existent company information."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

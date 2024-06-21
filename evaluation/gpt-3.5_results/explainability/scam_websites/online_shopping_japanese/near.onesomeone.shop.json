@@ -1,0 +1,12 @@
+{
+    "url": "https://near.onesomeone.shop/",
+    "question": "Please analyze this URL https://near.onesomeone.shop/",
+    "thought": "I need to access the URL to obtain a status code first. The website is accessible and returning a status code 200. The website has a variety of products with remarkably low prices. The privacy policy is mentioned, but the privacy of customer information is ambiguous. The company information is not clearly stated. The WHOIS retrieval tool encountered an error, so I will try to retrieve the domain certificate information instead. The domain has multiple certificates issued by Let's Encrypt and Google Trust Services LLC. This indicates that the website is using valid encryption. However, the website still exhibits characteristics of a potential scam, such as unusually low prices and ambiguous privacy policies. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake shopping site",
+        "reason": "The website exhibits characteristics of a scam site such as unusually low prices ambiguous privacy policies and no clear company information."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

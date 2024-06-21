@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+
+<title>Working Solutions &#124; Outsourced Customer Service Call Center Support</title><link rel="preload" as="image" href="https://workingsolutions.com/wp-content/uploads/2023/11/home-header-image.jpg" fetchpriority="high"><meta name="robots" content="index,follow"><meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"><meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"><meta name="description" content="Working Solutions&#039; customized, multichannel support solutions and professional agent workforce will manage your fluctuating sales and customer service needs. We are a recognized leader in on-demand customer service outsourcing with over 25 years of success in providing excellent experiences for our clients&#039; customers." /><meta name="keywords" content="bpo customer service,improve customer experience,customer service outsourcing,outsourced customer service,BPO,call center,call center outsourcing,best call center" /><link rel="canonical" href="https://workingsolutions.com" /><link rel="alternate" type="application/rss+xml" href="https://workingsolutions.com/sitemap.xml" /><meta name="dc.language" content="en" /><meta name="dc.language.iso" content="en_US" /><meta name="dc.publisher" content="Brandon Bowman" /><meta name="dc.title" content="Working Solutions &#124; Outsourced Customer Service Call Center Support" /><meta name="dc.description" content="Working Solutions&#039; customized, multichannel support solutions and professional agent workforce will manage your fluctuating sales and customer service needs. We are a recognized leader in on-demand customer service outsourcing with over 25 years of success in providing excellent experiences for our clients&#039; customers." /><meta name="dc.date.issued" content="2024-06-07" /><meta property="og:url" content="https://workingsolutions.com" /><meta property="og:title" content="Working Solutions &#124; Outsourced Customer Service Call Center Support" /><meta property="og:description" content="Working Solutions&#039; customized, multichannel support solutions and professional agent workforce will" /><meta property="og:type" content="website" /><meta property="og:image" content="https://workingsolutions.com/wp-content/uploads/2022/07/thumbnail_ws_2022-scaled.jpeg" /><meta property="og:image:width" content="500" /><meta property="og:site_name" content="Working Solutions" /><meta property="og:locale" content="en_US" /><meta property="fb:app_id" content="1987449728160686" /><meta property="twitter:url" content="https://workingsolutions.com" /><meta property="twitter:title" content="Working Solutions &#124; Outsourced Customer Service Call Center Support" /><meta property="twitter:description" content="Working Solutions&#039; customized, multichannel support solutions and professional agent workforce will manage your fluctuating sales and customer service needs. We are a recognized leader in on-demand customer service outsourcing with over 25 years of success in providing" /><meta property="twitter:image" content="https://workingsolutions.com/wp-content/uploads/2022/07/thumbnail_ws_2022-scaled.jpeg" /><meta property="twitter:domain" content="Working Solutions" /><meta property="twitter:card" content="summary_large_image" /><meta property="twitter:creator" content="@WorkingSol" /><meta property="twitter:site" content="@WorkingSol" /><meta name="google-site-verification" content="Fr2dQEfBugufEbn5hiX8YRYg4_EpaZbOaA_-CVADNoE" /><meta name="msvalidate.01" content="0AAA03E86C0B90118ACBA9BE6A46B986" /><meta name="p:domain_verify" content="429810a2405b3232f19191211dca939f" /><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://workingsolutions.com#Organization","url":"https://workingsolutions.com","name":"Working Solutions","logo":{"@type":"ImageObject","url":"https://workingsol.wpengine.com/wp-content/uploads/2017/11/ws_logo_google.png","@id":"https://workingsolutions.com#logo","caption":"Working Solutions"},"contactPoint":{"@type":"ContactPoint","telephone":"+972.964.4800","contactType":"sales","@id":"https://workingsolutions.com#contactpoint"},"address":{"@type":"PostalAddress","streetAddress":"19111 Dallas Pkwy","addressLocality":"Dallas","postalCode":"75093","addressCountry":"United States","@id":"https://workingsolutions.com#address"},"description":"With 25 years of success, Working Solutions is a recognized leader in on-demand, onshore contact center outsourcing. From across the U.S. and Canada, our workforce of sales, service and tech-support experts elevate customer care and improve business results.","sameAs":["https://www.facebook.com/WorkingSolutions/","https://twitter.com/WorkingSol","https://www.instagram.com/workingsol/","https://www.linkedin.com/company/working-solutions","https://www.pinterest.com/WorkingSol/","https://www.youtube.com/user/workingsol"]},{"@type":"WebSite","@id":"https://workingsolutions.com#website","url":"https://workingsolutions.com","name":"Working Solutions","headline":"Working Solutions' customized, multichannel support solutions and professional agent workforce will manage","mainEntityOfPage":{"@type":"WebPage","url":"https://workingsolutions.com"},"datePublished":"2022-06-29T12:04:31+00:00","dateModified":"2024-04-05T15:04:58+00:00","potentialAction":{"@type":"SearchAction","target":"https://workingsolutions.com/?s={search_term_string}","query-input":"required name=search_term_string"},"author":{"@type":"Person","@id":"https://workingsolutions.com/blog/author/brandon-bowman/#person","url":"https://workingsolutions.com/blog/author/brandon-bowman/","name":"Brandon Bowman"},"publisher":{"@type":"Organization","@id":"https://workingsolutions.com#Organization","url":"https://workingsolutions.com","name":"Working Solutions","logo":{"@type":"ImageObject","url":"https://workingsol.wpengine.com/wp-content/uploads/2017/11/ws_logo_google.png","@id":"https://workingsolutions.com#logo","caption":"Working Solutions"},"contactPoint":{"@type":"ContactPoint","telephone":"+972.964.4800","contactType":"sales","@id":"https://workingsolutions.com#contactpoint"},"address":{"@type":"PostalAddress","streetAddress":"19111 Dallas Pkwy","addressLocality":"Dallas","postalCode":"75093","addressCountry":"United States","@id":"https://workingsolutions.com#address"},"description":"With 25 years of success, Working Solutions is a recognized leader in on-demand, onshore contact center outsourcing. From across the U.S. and Canada, our workforce of sales, service and tech-support experts elevate customer care and improve business results.","sameAs":["https://www.facebook.com/WorkingSolutions/","https://twitter.com/WorkingSol","https://www.instagram.com/workingsol/","https://www.linkedin.com/company/working-solutions","https://www.pinterest.com/WorkingSol/","https://www.youtube.com/user/workingsol"]},"keywords":"bpo customer service,improve customer experience,customer service outsourcing,outsourced customer service,BPO,call center,call center outsourcing,best call center"}]}</script>
+
+
+		  	
+      <script type="rocketlazyloadscript">
+        (function () {
+          var zi = document.createElement('script');
+          zi.type = 'text/javascript';
+          zi.async = true;
+          zi.referrerPolicy = 'unsafe-url';
+          zi.src = 'https://ws.zoominfo.com/pixel/62d5ffd9677d11008e990339';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(zi, s);
+        })();
+      </script>
+
+
+			<!-- Google Tag Manager -->
+			<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-PM3QSKP');</script>
+			<!-- End Google Tag Manager -->
+
+				<!-- Google Conversions -->
+			<!-- Google tag (gtag.js) -->
+			<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-11034340474"></script>
+			<script type="rocketlazyloadscript">
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'AW-11034340474');
+			</script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv = 'X-UA-Compatible' content = 'IE = Edge' />
+	<meta name="msvalidate.01" content="0AAA03E86C0B90118ACBA9BE6A46B986" />
+
+	<style>
+		
+	</style>
+
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://workingsolutions.com/xmlrpc.php">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v17=9ByGyERR50">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v17=9ByGyERR50">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v17=9ByGyERR50">
+	<link rel="manifest" href="/manifest.json?v17=9ByGyERR50">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v17=9ByGyERR50" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon.ico?v17=9ByGyERR50">
+
+	<!-- <script type="rocketlazyloadscript" data-rocket-src="https://kit.fontawesome.com/3512c8bd0a.js" crossorigin="anonymous"></script> -->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="https://workingsolutions.com/wp-content/themes/working_solutions/css/iestyle.css" />
+	<![endif]-->
+
+	
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel="alternate" type="application/rss+xml" title="Working Solutions &raquo; Feed" href="https://workingsolutions.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Working Solutions &raquo; Comments Feed" href="https://workingsolutions.com/comments/feed/" />
+		<style id="content-control-block-styles">
+			@media (max-width: 640px) {
+	.cc-hide-on-mobile {
+		display: none !important;
+	}
+}
+@media (min-width: 641px) and (max-width: 920px) {
+	.cc-hide-on-tablet {
+		display: none !important;
+	}
+}
+@media (min-width: 921px) and (max-width: 1440px) {
+	.cc-hide-on-desktop {
+		display: none !important;
+	}
+}		</style>
+		<link rel='stylesheet' id='aca33b9c04-css' href='https://workingsolutions.com/wp-content/plugins/squirrly-seo/view/assets/css/frontend.min.css?ver=12.3.19' type='text/css' media='all' />
+<link rel='stylesheet' id='sbi_styles-css' href='https://workingsolutions.com/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.4' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<link data-minify="1" rel='stylesheet' id='content-control-block-styles-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/content-control/dist/style-block-editor.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='advanced_admin_search_style-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/advanced-admin-search/css/style.css?ver=1717795755' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css' href='https://workingsolutions.com/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cmplz-general-css' href='https://workingsolutions.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1717312049' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wc-shortcodes-style-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/wc-shortcodes/public/assets/css/style.css?ver=1717795755' type='text/css' media='all' />
+<link rel='stylesheet' id='working_solutions-style-css' href='https://workingsolutions.com/wp-content/themes/working_solutions/style.css?ver=6.5.3' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-css-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/style.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-newsroom-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/newsroom.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-media-kit-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/media-kit.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-animated-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/animated.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-override-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/override.css?ver=1717795755' type='text/css' media='all' />
+<link rel='stylesheet' id='flickity-css' href='https://workingsolutions.com/wp-content/themes/working_solutions/css/flickity.min.css?ver=6.5.3' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-util-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/util.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-animate-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/animate.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-block-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/block.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-button-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/button-new.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-cards-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/cards.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-chat-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/chat.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-clients-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/clients.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-cta-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/cta.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-facts-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/facts.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-form-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/form.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-minimodal-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/minimodal.css?ver=1717795755' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-post-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/post.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-resources-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/resources.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-calc-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/calc.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-newsroom-v3-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/newsroom-v3.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-about-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/about.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-leadership-grid-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/leadership-grid.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-header-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/header.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-footer-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/footer.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-contact-v2-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/contact-v2.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-resources-v2-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/resources-v2.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-solutions-v3-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/solutions-v3.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='working_solutions-search-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/new/search.css?ver=1717795756' type='text/css' media='all' />
+<link rel='stylesheet' id='modules-accordions-css' href='https://workingsolutions.com/wp-content/themes/working_solutions/css/modules/accordions.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-banner-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/banner.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-bullets-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/bullets.css?ver=1717795756' type='text/css' media='all' />
+<link rel='stylesheet' id='modules-cards-css' href='https://workingsolutions.com/wp-content/themes/working_solutions/css/modules/cards.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-columns-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/columns.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-dropdowns-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/dropdowns.css?ver=1717795756' type='text/css' media='all' />
+<link rel='stylesheet' id='modules-feature-css' href='https://workingsolutions.com/wp-content/themes/working_solutions/css/modules/feature.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-sections-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/sections.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-table-of-contents-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/table-of-contents.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='modules-visual-editor-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/modules/visual-editor.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-card-slider-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/card-slider.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-content-image-background-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/content-image-background.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-master-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/components.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-multiple-cards-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/multiple-cards.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-multiple-cards-basic-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/multiple-cards-basic.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-animated-gradient-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/animated-gradient.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-home-header-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/home-header.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-image-content-grid-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/image-content-grid.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-solutions-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/solutions.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-logos-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/logos.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-testimonials-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/testimonials.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-testimonials-slider-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/testimonials-slider.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-split-cta-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/split-cta.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-split-cta-small-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/split-cta-small.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-cta-text-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/cta-text.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-industry-header-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/industry-header.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-industry-solutions-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/industry-solutions.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-featured-solution-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/featured-solution.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-study-card-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/study-card.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-stat-box-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/stat-box.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='components-section-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/css/components/section.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-css' href='https://workingsolutions.com/wp-content/cache/min/1/fontawesome/4.7.0/css/font-awesome.min.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='searchwp-forms-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/searchwp/assets/css/frontend/search-forms.css?ver=1717795756' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wordpresscanvas-font-awesome-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/wc-shortcodes/public/assets/css/font-awesome.min.css?ver=1717795756' type='text/css' media='all' />
+<script type="text/javascript" id="advanced_admin_desktop_search_script-js-extra">
+/* <![CDATA[ */
+var advanced_admin_search = {"ajaxurl":"https:\/\/workingsolutions.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f827a3a014"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/advanced-admin-search/js/jquery-admin-desktop-search.js?ver=1717795756" id="advanced_admin_desktop_search_script-js"></script>
+<script type="text/javascript" id="advanced_admin_mobile_search_script-js-extra">
+/* <![CDATA[ */
+var advanced_admin_search = {"ajaxurl":"https:\/\/workingsolutions.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f827a3a014"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/advanced-admin-search/js/jquery-admin-mobile-search.js?ver=1717795756" id="advanced_admin_mobile_search_script-js"></script>
+<script type="text/javascript" id="advanced_admin_page_search_script-js-extra">
+/* <![CDATA[ */
+var advanced_admin_search = {"ajaxurl":"https:\/\/workingsolutions.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f827a3a014"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/advanced-admin-search/js/jquery-admin-page-search.js?ver=1717795756" id="advanced_admin_page_search_script-js"></script>
+<script type="text/javascript" src="https://workingsolutions.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://workingsolutions.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1" id="avatar-manager-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/content-text-slider-on-post/content-text-slider-on-post.js?ver=1717795756" id="content-text-slider-on-post-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/jquery-ui.min.js?ver=20230446" id="working_solutions-jquery.jquery-ui-js"></script>
+<link rel="https://api.w.org/" href="https://workingsolutions.com/wp-json/" /><link rel="alternate" type="application/json" href="https://workingsolutions.com/wp-json/wp/v2/pages/18174" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://workingsolutions.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://workingsolutions.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://workingsolutions.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingsolutions.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://workingsolutions.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingsolutions.com%2F&#038;format=xml" />
+			<style>.cmplz-hidden {
+					display: none !important;
+				}</style>
+<!-- WordPress Facebook Integration Begin -->
+<!-- Facebook Pixel Code -->
+<script type="text/plain" data-service="facebook" data-category="marketing">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1752701735016386', {}, {
+    "agent": "wordpress-6.5.3-1.6.0"
+});
+
+fbq('track', 'PageView', {
+    "source": "wordpress",
+    "version": "6.5.3",
+    "pluginVersion": "1.6.0"
+});
+</script>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<!-- WordPress Facebook Integration end -->
+      
+<!-- Facebook Pixel Code -->
+<noscript>
+<div class="cmplz-placeholder-parent"><img class="cmplz-placeholder-element cmplz-image" data-category="marketing" data-service="general" data-src-cmplz="https://www.facebook.com/tr?id=1752701735016386&amp;ev=PageView&amp;noscript=1" height="1" width="1" style="display:none"
+ src="https://workingsolutions.com/wp-content/plugins/complianz-gdpr/assets/images/placeholders/default-minimal.jpg" /></div>
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+    
+<!-- Meta Pixel Code -->
+<script data-service="facebook" data-category="marketing" type="text/plain">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js?v=next');
+</script>
+<!-- End Meta Pixel Code -->
+
+      <script data-service="facebook" data-category="marketing" type="text/plain">
+        var url = window.location.origin + '?ob=open-bridge';
+        fbq('set', 'openbridge', '1752701735016386', url);
+      </script>
+    <script data-service="facebook" data-category="marketing" type="text/plain">fbq('init', '1752701735016386', {}, {
+    "agent": "wordpress-6.5.3-3.0.16"
+})</script><script data-service="facebook" data-category="marketing" type="text/plain">
+    fbq('track', 'PageView', []);
+  </script>
+<!-- Meta Pixel Code -->
+<noscript>
+<div class="cmplz-placeholder-parent"><img class="cmplz-placeholder-element cmplz-image" data-category="marketing" data-service="general" data-src-cmplz="https://www.facebook.com/tr?id=1752701735016386&amp;ev=PageView&amp;noscript=1" height="1" width="1" style="display:none" alt="fbpx"
+ src="https://workingsolutions.com/wp-content/plugins/complianz-gdpr/assets/images/placeholders/default-minimal.jpg"  /></div>
+</noscript>
+<!-- End Meta Pixel Code -->
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	
+	</head>
+<body data-cmplz=2 class="home page-template page-template-template-components page-template-template-components-php page page-id-18174 wc-shortcodes-font-awesome-enabled group-blog page-home-v2">
+	
+				<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM3QSKP"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+		<div class="geo">
+  <div class="geo__block">
+    <h2 class="geo__heading">Notice!</h2>
+    <p>Welcome to Working Solutions. We offer independent contractor, work-at-home opportunities for folks located in either the <strong>United States</strong> or <strong>Canada</strong>.</p>
+    <p><em>We do not</em> accept applicants located outside of the <strong>United States</strong> and <strong>Canada</strong>.</p>
+    <p class="geo__cta"><a class="button" href="https://workingsolutions.com/blog/">Read our blogs <i class="fa fa-arrow-right"></i></a></p>
+    <button class="geo__close">&Cross;</button>
+  </div>
+</div>
+
+<style>
+.geo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  transition: opacity 300ms ease, visibility 300ms ease;
+  z-index: 100000;
+  background-color: rgba(27, 31, 34, 0.95);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.geo-active .geo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.geo__block {
+  position: relative;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: rgb(27, 31, 34);
+}
+
+@media (min-width: 48em) {
+  .geo__block {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
+
+.geo__block > :first-child {
+  margin-top: 0;
+}
+
+.geo__block > :last-child {
+  margin-bottom: 0;
+}
+
+.geo__block em {
+  color: rgb(198, 65, 64);
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.geo__heading {
+  color: rgb(198, 65, 64);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.geo__cta {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.geo__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  line-height: 1;
+}
+</style>
+
+<script type="rocketlazyloadscript">
+var closes = document.querySelectorAll('.geo__close');
+
+for (var i = 0; i < closes.length; i += 1) {
+  var close = closes[i];
+  close.addEventListener('click', function() {
+    document.body.classList.remove('geo-active');
+  });
+}
+
+(function($) {
+  if (!localStorage.getItem('geo')) {
+    localStorage.setItem('geo', true);
+    var allow = ['US', 'CA'];
+    $.getJSON('https://ipapi.co/json', function(data) {
+      var test = data.country_code;
+      if (!allow.includes(test)) {
+        document.body.classList.add('geo-active');
+      }
+    });
+  }
+})(jQuery);
+</script>
+	<div class="header header-light">
+  <div class="header__top">
+    <div class="header__top__container ">
+      <a href="https://info.workingsolutions.com/discover-the-difference" target="_blank" rel="noopener" class="header__top__link"><span>Explore CX solutions</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><defs><style>.fa-secondary{opacity:1}</style></defs><path class="fa-primary" d="M256 24c0-13.3 10.7-24 24-24C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24zm0 200a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM280 96c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/><path class="fa-secondary" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></a>
+      <a href="https://jobs.workingsolutions.com/apply/" target="_blank" rel="noopener" class="ifrit">Apply to work from home <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="header__container">
+    <div class="header__logo">
+      <a href="https://workingsolutions.com">
+                <!-- <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Working Solutions" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/svg/working-solutions.svg"><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/svg/working-solutions.svg" alt="Working Solutions"></noscript> -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="173.084" height="40.834" viewBox="0 0 173.084 40.834">
+          <defs>
+            <linearGradient id="linear-gradient" x1="-0.875" y1="0.413" x2="4.787" y2="0.748" gradientUnits="objectBoundingBox">
+              <stop offset="0" stop-color="#32c92b"/>
+              <stop offset="0.11" stop-color="#32c342"/>
+              <stop offset="0.419" stop-color="#33b580"/>
+              <stop offset="0.681" stop-color="#33abad"/>
+              <stop offset="0.883" stop-color="#33a5c9"/>
+              <stop offset="1" stop-color="#34a3d4"/>
+            </linearGradient>
+            <linearGradient id="linear-gradient-2" x1="-7.516" y1="0.227" x2="2.156" y2="0.563" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-3" x1="-8.57" y1="0.18" x2="1.03" y2="0.516" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-4" x1="-11.541" y1="0.178" x2="13.264" y2="0.84" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-5" x1="-8.527" y1="0.138" x2="7.982" y2="0.8" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-6" x1="-17.013" y1="0.102" x2="11.524" y2="0.763" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-7" x1="-13.117" y1="0.046" x2="7.102" y2="0.708" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-8" x1="-15.177" y1="0.005" x2="6.059" y2="0.667" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-9" x1="-70.124" y1="-0.022" x2="19.588" y2="0.641" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-10" x1="-13.431" y1="-0.059" x2="3.078" y2="0.603" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-11" x1="-17.726" y1="-0.108" x2="2.131" y2="0.554" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-12" x1="-23.788" y1="-0.148" x2="1.016" y2="0.513" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-13" x1="-5.637" y1="0.279" x2="3.663" y2="0.614" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-14" x1="-6.988" y1="0.338" x2="8.206" y2="0.674" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-15" x1="-18.961" y1="0.25" x2="7.254" y2="0.587" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-16" x1="-2.382" y1="0.387" x2="4.907" y2="0.698" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-17" x1="-6.153" y1="0.315" x2="5.924" y2="0.649" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-18" x1="-28.209" y1="-0.685" x2="-0.232" y2="0.47" xlink:href="#linear-gradient"/>
+            <linearGradient id="linear-gradient-19" x1="-66.839" y1="-1.808" x2="-1.276" y2="0.448" xlink:href="#linear-gradient"/>
+          </defs>
+          <g id="Layer_3" data-name="Layer 3" transform="translate(-487.956 -842.428)">
+            <g id="Group_431" data-name="Group 431" transform="translate(487.956 842.428)">
+              <path id="Path_46" data-name="Path 46" d="M520.82,843.624c-.744-.057-1.6-.089-2.563-.089-.757,0-1.476.032-2.149.089a10.73,10.73,0,0,0-1.359.172l-3.47,11.269-2.829-9.2a6.539,6.539,0,0,0-1.34-.279c-.6-.045-1.191-.064-1.774-.064s-1.178.019-1.773.064a8.308,8.308,0,0,0-1.69.292l-2.848,9.281L495.516,843.8a8.269,8.269,0,0,0-1.016-.172c-.712-.07-1.45-.089-2.214-.089-.965,0-1.845.032-2.648.089s-1.366.114-1.683.172l6.874,22.3a8.326,8.326,0,0,0,1.618.279c.583.045,1.165.063,1.754.063s1.178-.019,1.774-.063a15.64,15.64,0,0,0,2.052-.286c.524-1.86,3.146-10.342,3.146-10.342L508.32,866.1a13.427,13.427,0,0,0,1.864.279c.6.044,1.191.063,1.774.063s1.165-.019,1.754-.063a7.784,7.784,0,0,0,1.618-.279l6.881-22.309A12.126,12.126,0,0,0,520.82,843.624Z" transform="translate(-487.956 -843.338)" fill="url(#linear-gradient)"/>
+              <path id="Path_47" data-name="Path 47" d="M1183.891,845.183a8.891,8.891,0,0,0-3.483-1.352,23.244,23.244,0,0,0-3.865-.26c-2.188,0-8.46.3-9.185.413v22.125a19.142,19.142,0,0,0,2.058.279c.615.044,1.165.063,1.663.063.466,0,1.01-.019,1.618-.063a17.8,17.8,0,0,0,2.058-.279V850.047a2.221,2.221,0,0,1,.68-.171,6.628,6.628,0,0,1,1.029-.089,3.393,3.393,0,0,1,2.673.99,4.892,4.892,0,0,1,.874,3.263v12.069a19.146,19.146,0,0,0,2.058.279c.615.044,1.165.063,1.664.063.466,0,1.01-.019,1.618-.063a17.8,17.8,0,0,0,2.058-.279v-12.85a11.34,11.34,0,0,0-.984-5.111A7.6,7.6,0,0,0,1183.891,845.183Z" transform="translate(-1046.434 -843.367)" fill="url(#linear-gradient-2)"/>
+              <path id="Path_48" data-name="Path 48" d="M1306.69,860.369h-.777a4.8,4.8,0,0,1-3.67-1.333,5.929,5.929,0,0,1-1.25-4.171,6.9,6.9,0,0,1,.278-1.968,4.49,4.49,0,0,1,.887-1.67,4.08,4.08,0,0,1,1.6-1.143,6.205,6.205,0,0,1,2.415-.425,10.209,10.209,0,0,1,2.156.273,16.74,16.74,0,0,1,2.719.87c.259-.622.479-1.181.667-1.67s.343-.959.473-1.4.24-.87.324-1.289a10.719,10.719,0,0,0,.175-1.352,22.261,22.261,0,0,0-3.975-1.187,18.548,18.548,0,0,0-3.321-.336,13.584,13.584,0,0,0-5.094.889,10.583,10.583,0,0,0-3.69,2.412,10,10,0,0,0-2.246,3.6,12.742,12.742,0,0,0-.757,4.406,15.836,15.836,0,0,0,.628,4.533,9.273,9.273,0,0,0,5.567,6.158,13.661,13.661,0,0,0,5.288.908,21.986,21.986,0,0,0,5.224-.552,33.525,33.525,0,0,0,3.5-1.016v-9.885a26.823,26.823,0,0,0-7.121,1.181v4.165Z" transform="translate(-1150.206 -843.367)" fill="url(#linear-gradient-3)"/>
+              <path id="Path_49" data-name="Path 49" d="M828.836,1012.42a3.36,3.36,0,0,0-.854-.565,8.806,8.806,0,0,0-.984-.394c-.337-.114-.66-.216-.984-.317a5.366,5.366,0,0,1-.854-.336,1.86,1.86,0,0,1-.6-.457,1,1,0,0,1-.226-.667,1.533,1.533,0,0,1,.11-.578,1.172,1.172,0,0,1,.343-.451,1.561,1.561,0,0,1,.563-.292,2.586,2.586,0,0,1,.783-.108,2.7,2.7,0,0,1,.861.121,3.673,3.673,0,0,1,.634.273c.181.1.337.19.473.273a.7.7,0,0,0,.363.121.545.545,0,0,0,.278-.07.613.613,0,0,0,.207-.241l.531-1a4.364,4.364,0,0,0-1.476-.882,5.484,5.484,0,0,0-1.89-.311,4.413,4.413,0,0,0-1.612.273,3.626,3.626,0,0,0-1.191.73,3.1,3.1,0,0,0-.738,1.047,3.042,3.042,0,0,0-.253,1.213,3.373,3.373,0,0,0,.227,1.308,2.6,2.6,0,0,0,.6.882,3.237,3.237,0,0,0,.854.571,8.394,8.394,0,0,0,.978.375c.33.108.654.2.977.292a4.416,4.416,0,0,1,.854.324,1.739,1.739,0,0,1,.6.476,1.147,1.147,0,0,1,.227.73,1.529,1.529,0,0,1-.5,1.232,2.133,2.133,0,0,1-1.424.425,2.915,2.915,0,0,1-1.029-.159,4.733,4.733,0,0,1-.744-.355c-.214-.127-.395-.248-.55-.356a.763.763,0,0,0-.434-.159.523.523,0,0,0-.278.076.857.857,0,0,0-.214.184l-.628,1.016a4.87,4.87,0,0,0,.764.616,5.192,5.192,0,0,0,.919.47,5.747,5.747,0,0,0,2.117.413,4.759,4.759,0,0,0,1.709-.286,3.615,3.615,0,0,0,1.262-.787,3.278,3.278,0,0,0,.783-1.168,3.8,3.8,0,0,0,.266-1.441,2.912,2.912,0,0,0-.227-1.2A2.157,2.157,0,0,0,828.836,1012.42Z" transform="translate(-762.406 -977.331)" fill="url(#linear-gradient-4)"/>
+              <path id="Path_50" data-name="Path 50" d="M887.914,1008.156a5.442,5.442,0,0,0-1.851-1.212,6.782,6.782,0,0,0-4.8,0,5.531,5.531,0,0,0-1.858,1.212,5.433,5.433,0,0,0-1.2,1.841,6.467,6.467,0,0,0,0,4.622,5.347,5.347,0,0,0,3.055,3.054,6.784,6.784,0,0,0,4.8,0,5.511,5.511,0,0,0,1.851-1.213,5.415,5.415,0,0,0,1.191-1.841,6.465,6.465,0,0,0,0-4.622A5.356,5.356,0,0,0,887.914,1008.156Zm-.841,5.828a3.463,3.463,0,0,1-.725,1.257,3.161,3.161,0,0,1-1.152.787,4.411,4.411,0,0,1-3.055,0,3.192,3.192,0,0,1-1.159-.787,3.471,3.471,0,0,1-.731-1.257,5.185,5.185,0,0,1-.259-1.676,5.019,5.019,0,0,1,.259-1.676,3.552,3.552,0,0,1,.731-1.263,3.206,3.206,0,0,1,1.159-.794,4.411,4.411,0,0,1,3.055,0,3.175,3.175,0,0,1,1.152.794,3.489,3.489,0,0,1,.725,1.263,5.692,5.692,0,0,1,0,3.352Z" transform="translate(-808.4 -977.301)" fill="url(#linear-gradient-5)"/>
+              <path id="Path_51" data-name="Path 51" d="M966.825,1006.505h-2.156v11.631h6.8v-1.746h-4.641Z" transform="translate(-879.82 -977.302)" fill="url(#linear-gradient-6)"/>
+              <path id="Path_52" data-name="Path 52" d="M1029.552,1006.476v6.927a3.6,3.6,0,0,1-.181,1.181,2.563,2.563,0,0,1-.518.9,2.262,2.262,0,0,1-.835.571,3.19,3.19,0,0,1-2.24,0,2.252,2.252,0,0,1-.828-.578,2.534,2.534,0,0,1-.518-.9,3.54,3.54,0,0,1-.181-1.181v-6.92h-2.155v6.926a5.184,5.184,0,0,0,.33,1.873,4.179,4.179,0,0,0,2.46,2.457,5.9,5.9,0,0,0,4,0,4.461,4.461,0,0,0,1.515-.971,4.279,4.279,0,0,0,.958-1.486,5.184,5.184,0,0,0,.33-1.873v-6.926h-2.136Z" transform="translate(-927.025 -977.272)" fill="url(#linear-gradient-7)"/>
+              <path id="Path_53" data-name="Path 53" d="M1094.09,1008.209h3.5l-.007,9.872h2.156l.006-9.872h3.483v-1.74h-9.134Z" transform="translate(-986.206 -977.272)" fill="url(#linear-gradient-8)"/>
+              <rect id="Rectangle_523" data-name="Rectangle 523" width="2.162" height="11.605" transform="translate(120.883 29.204)" fill="url(#linear-gradient-9)"/>
+              <path id="Path_54" data-name="Path 54" d="M1212.127,1008.156a5.441,5.441,0,0,0-1.851-1.212,6.782,6.782,0,0,0-4.8,0,5.532,5.532,0,0,0-1.858,1.212,5.429,5.429,0,0,0-1.2,1.841,6.463,6.463,0,0,0,0,4.622,5.347,5.347,0,0,0,3.055,3.054,6.784,6.784,0,0,0,4.8,0,5.508,5.508,0,0,0,1.851-1.213,5.417,5.417,0,0,0,1.191-1.841,6.467,6.467,0,0,0,0-4.622A5.358,5.358,0,0,0,1212.127,1008.156Zm-.841,5.828a3.458,3.458,0,0,1-.725,1.257,3.163,3.163,0,0,1-1.152.787,4.413,4.413,0,0,1-3.055,0,3.186,3.186,0,0,1-1.159-.787,3.466,3.466,0,0,1-.732-1.257,5.185,5.185,0,0,1-.259-1.676,5.016,5.016,0,0,1,.259-1.676,3.547,3.547,0,0,1,.732-1.263,3.2,3.2,0,0,1,1.159-.794,4.41,4.41,0,0,1,3.055,0,3.175,3.175,0,0,1,1.152.794,3.484,3.484,0,0,1,.725,1.263,5.692,5.692,0,0,1,0,3.352Z" transform="translate(-1074.906 -977.301)" fill="url(#linear-gradient-10)"/>
+              <path id="Path_55" data-name="Path 55" d="M1296.231,1013.558c0,.152.006.324.013.5s.02.362.045.552l-6.078-7.764a1.121,1.121,0,0,0-.162-.178.442.442,0,0,0-.149-.1.7.7,0,0,0-.175-.051,1.32,1.32,0,0,0-.239-.013h-1.126v11.605h1.9v-7.13c0-.14-.006-.292-.013-.464s-.019-.336-.039-.508l6.052,7.732a.926.926,0,0,0,.33.292.948.948,0,0,0,.427.083h1.113v-11.605h-1.9v7.047Z" transform="translate(-1145.898 -977.301)" fill="url(#linear-gradient-11)"/>
+              <path id="Path_56" data-name="Path 56" d="M1367.73,1012.42a3.363,3.363,0,0,0-.854-.565,8.816,8.816,0,0,0-.984-.394c-.336-.114-.66-.216-.984-.317a5.372,5.372,0,0,1-.854-.336,1.856,1.856,0,0,1-.6-.457,1,1,0,0,1-.227-.667,1.532,1.532,0,0,1,.11-.578,1.171,1.171,0,0,1,.343-.451,1.557,1.557,0,0,1,.563-.292,2.587,2.587,0,0,1,.783-.108,2.706,2.706,0,0,1,.861.121,3.681,3.681,0,0,1,.634.273c.182.1.337.19.473.273a.7.7,0,0,0,.362.121.546.546,0,0,0,.278-.07.611.611,0,0,0,.207-.241l.531-1a4.361,4.361,0,0,0-1.476-.882,5.486,5.486,0,0,0-1.89-.311,4.416,4.416,0,0,0-1.612.273,3.622,3.622,0,0,0-1.191.73,3.1,3.1,0,0,0-.738,1.047,3.041,3.041,0,0,0-.252,1.213,3.374,3.374,0,0,0,.226,1.308,2.594,2.594,0,0,0,.6.882,3.229,3.229,0,0,0,.854.571,8.381,8.381,0,0,0,.978.375c.33.108.654.2.978.292a4.415,4.415,0,0,1,.854.324,1.744,1.744,0,0,1,.6.476,1.148,1.148,0,0,1,.226.73,1.53,1.53,0,0,1-.5,1.232,2.134,2.134,0,0,1-1.424.425,2.916,2.916,0,0,1-1.029-.159,4.723,4.723,0,0,1-.744-.355c-.214-.127-.4-.248-.55-.356a.763.763,0,0,0-.434-.159.524.524,0,0,0-.278.076.856.856,0,0,0-.214.184l-.621,1.016a4.866,4.866,0,0,0,.764.616,5.2,5.2,0,0,0,.919.47,5.745,5.745,0,0,0,2.117.413,4.763,4.763,0,0,0,1.709-.286,3.615,3.615,0,0,0,1.262-.787,3.278,3.278,0,0,0,.783-1.168,3.806,3.806,0,0,0,.265-1.441,2.907,2.907,0,0,0-.226-1.2A2.235,2.235,0,0,0,1367.73,1012.42Z" transform="translate(-1205.39 -977.331)" fill="url(#linear-gradient-12)"/>
+              <path id="Path_57" data-name="Path 57" d="M995.635,854.239l5-10.469a7.218,7.218,0,0,0-1.392-.146c-.777-.057-1.541-.089-2.3-.089-.583,0-1.256.032-2.013.089a14.409,14.409,0,0,0-1.929.261l-4.745,9.84v-9.8a13.244,13.244,0,0,0-1.884-.3c-.641-.057-1.243-.089-1.793-.089-.583,0-1.191.032-1.819.089a15.6,15.6,0,0,0-1.9.3V866.06a19.164,19.164,0,0,0,2.058.279c.615.044,1.165.064,1.664.064.466,0,1.01-.019,1.618-.064a17.67,17.67,0,0,0,2.058-.279V855.426l5.4,10.653a10.5,10.5,0,0,0,1.773.26c.744.057,1.5.089,2.253.089.583,0,1.269-.032,2.058-.089a14.259,14.259,0,0,0,1.968-.26Z" transform="translate(-893.127 -843.338)" fill="url(#linear-gradient-13)"/>
+              <path id="Path_58" data-name="Path 58" d="M829.3,843.884a14.119,14.119,0,0,0-1.929-.261c-.757-.057-1.431-.089-2.013-.089-.757,0-1.528.032-2.3.089a11.917,11.917,0,0,0-1.864.261l4.667,11.135-4.667,11a11.693,11.693,0,0,0,1.858.311c.79.057,1.476.089,2.058.089.757,0,1.508-.032,2.253-.089a10.492,10.492,0,0,0,1.774-.26l4.822-11.059Z" transform="translate(-761.887 -843.338)" fill="url(#linear-gradient-14)"/>
+              <path id="Path_59" data-name="Path 59" d="M1112.353,843.571a21.194,21.194,0,0,0-3.716.362v22.15a21.19,21.19,0,0,0,3.716.362,21.842,21.842,0,0,0,3.683-.362v-22.15A21.849,21.849,0,0,0,1112.353,843.571Z" transform="translate(-998.164 -843.367)" fill="url(#linear-gradient-15)"/>
+              <path id="Path_60" data-name="Path 60" d="M689.193,842.428c-7.347,0-13.432,5.066-13.432,11.408a10.492,10.492,0,0,0,2.784,7.028.078.078,0,0,0,.013.019l-2.078,6.228,6.441-3.079a.02.02,0,0,1,.013.006,14.966,14.966,0,0,0,6.13,1.3c7.347,0,13.238-5.142,13.309-11.491C702.45,847.265,696.546,842.428,689.193,842.428Zm-.155,17.529a7.687,7.687,0,0,1-3.178-.673h-.006l-3.334,1.594,1.074-3.225a.006.006,0,0,0-.006-.006A5.419,5.419,0,0,1,682.144,854c0-3.288,3.087-5.936,6.894-5.936s6.894,2.647,6.894,5.936S692.843,859.956,689.037,859.956Z" transform="translate(-642.334 -842.428)" fill="url(#linear-gradient-16)"/>
+              <path id="Path_61" data-name="Path 61" d="M886.966,856.346a7.219,7.219,0,0,0,2.848-5.644c0-4.2-3.852-7.631-8.6-7.631-.039,0-.078.006-.123.006-.116,0-.233-.006-.362-.006a48.354,48.354,0,0,0-5.4.343l2.059,4.939a4.57,4.57,0,0,1,.79-.063c2.427,0,4.4,1.651,4.4,3.663,0,1.828-1.644,3.346-3.768,3.606l4.311,10.151a15.124,15.124,0,0,0,2.02.267c.757.057,1.411.076,2.227.076.673,0,1.366-.032,2.078-.089a17.482,17.482,0,0,0,1.948-.26l-4.421-9.358Z" transform="translate(-806.38 -842.956)" fill="url(#linear-gradient-17)"/>
+              <path id="Path_62" data-name="Path 62" d="M1424.936,845.265a3.332,3.332,0,1,0,3.457,3.307A3.38,3.38,0,0,0,1424.936,845.265Zm.026,5.955a2.642,2.642,0,1,1,2.57-2.616A2.56,2.56,0,0,1,1424.962,851.22Z" transform="translate(-1255.308 -844.76)" fill="url(#linear-gradient-18)"/>
+              <path id="Path_63" data-name="Path 63" d="M1435.7,856.238V856.2a.852.852,0,0,0,.7-.768.894.894,0,0,0-.33-.724,2.154,2.154,0,0,0-1.172-.241,6.635,6.635,0,0,0-1.295.1v3.308h.784v-1.333h.369c.434,0,.641.159.7.527a2.847,2.847,0,0,0,.265.806h.842a2.475,2.475,0,0,1-.246-.825A.974.974,0,0,0,1435.7,856.238Zm-.926-.241h-.369v-.946a2.046,2.046,0,0,1,.434-.038c.492,0,.719.2.719.5C1435.562,855.857,1435.212,856,1434.779,856Z" transform="translate(-1265.293 -852.324)" fill="url(#linear-gradient-19)"/>
+            </g>
+          </g>
+        </svg>
+
+      </a>
+    </div>
+    <div class="nav-button-container">
+      <div class="mobile-search-icon">
+        <a class="mobile-nav-search-icon" href="#"><i class="fa fa-search"></i></a>
+      </div>
+      <button class="header__menu-toggle">
+        <span class="header__bar header__bar--1"></span>
+        <span class="header__bar header__bar--2"></span>
+        <span class="header__bar header__bar--3"></span>
+        <span class="screen-reader-text">Open Menu</span>
+      </button>
+    </div>
+    <nav class="header__menu">
+      <ul id="menu-main-menu" class=""><li id="menu-item-3610" class="has-children menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3610"><a href="#" aria-haspopup="true" aria-expanded="false" id="menu-item-link-3610">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-15961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15961"><a href="https://workingsolutions.com/about-us/" id="menu-item-link-15961">About Us</a></li>
+	<li id="menu-item-9338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9338"><a href="https://workingsolutions.com/careers/" id="menu-item-link-9338">Careers</a></li>
+	<li id="menu-item-2725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2725"><a href="https://workingsolutions.com/contact/" id="menu-item-link-2725">Contact Us</a></li>
+	<li id="menu-item-16098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16098"><a href="https://workingsolutions.com/leadership/" id="menu-item-link-16098">Leadership</a></li>
+	<li id="menu-item-15634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15634"><a href="https://workingsolutions.com/newsroom/" id="menu-item-link-15634">Newsroom</a></li>
+	<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="https://workingsolutions.com/our-corporate-responsibility/" id="menu-item-link-96">Responsibility</a></li>
+</ul>
+</li>
+<li id="menu-item-18943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18943"><a href="https://workingsolutions.com/why-outsource-your-contact-center/" id="menu-item-link-18943">Why Outsource</a></li>
+<li id="menu-item-17532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17532"><a href="https://workingsolutions.com/solutions/" id="menu-item-link-17532">CX Solutions</a></li>
+<li id="menu-item-16590" class="has-children menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16590"><a href="#" aria-haspopup="true" aria-expanded="false" id="menu-item-link-16590">Industries</a>
+<ul class="sub-menu">
+	<li id="menu-item-18669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18669"><a href="https://workingsolutions.com/energy-utility-bpo/" id="menu-item-link-18669">Energy</a></li>
+	<li id="menu-item-18654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18654"><a href="https://workingsolutions.com/financial-services-bpo/" id="menu-item-link-18654">Financial</a></li>
+	<li id="menu-item-18690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18690"><a href="https://workingsolutions.com/healthcare-bpo/" id="menu-item-link-18690">Healthcare</a></li>
+	<li id="menu-item-18705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18705"><a href="https://workingsolutions.com/telecom-media-bpo/" id="menu-item-link-18705">Telecom and Media</a></li>
+	<li id="menu-item-18612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18612"><a href="https://workingsolutions.com/retail-ecommerce/" id="menu-item-link-18612">Retail and Consumer Services</a></li>
+	<li id="menu-item-18535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18535"><a href="https://workingsolutions.com/travel-and-hospitality/" id="menu-item-link-18535">Travel and Hospitality</a></li>
+</ul>
+</li>
+<li id="menu-item-17819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17819"><a href="https://workingsolutions.com/resources/" aria-haspopup="true" aria-expanded="false" id="menu-item-link-17819">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-16629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16629"><a href="https://workingsolutions.com/resources/?resources_cat=article" id="menu-item-link-16629">Articles</a></li>
+	<li id="menu-item-601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-601"><a href="https://workingsolutions.com/blog/" id="menu-item-link-601">Blogs</a></li>
+	<li id="menu-item-16630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16630"><a href="https://workingsolutions.com/resources/?resources_cat=collateral" id="menu-item-link-16630">Collateral</a></li>
+	<li id="menu-item-16631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16631"><a href="https://workingsolutions.com/resources/?resources_cat=e-book" id="menu-item-link-16631">E-Book</a></li>
+	<li id="menu-item-16632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16632"><a href="https://workingsolutions.com/resources/?resources_cat=infographic" id="menu-item-link-16632">Infographic</a></li>
+	<li id="menu-item-17728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17728"><a href="https://workingsolutions.com/guide-to-outsourcing-customer-service/" id="menu-item-link-17728">Outsourcing Guide</a></li>
+	<li id="menu-item-16633" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16633"><a href="https://workingsolutions.com/resources/?resources_cat=success_story" id="menu-item-link-16633">Success Stories</a></li>
+	<li id="menu-item-16721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16721"><a href="https://workingsolutions.com/resources/?resources_cat=video" id="menu-item-link-16721">Video</a></li>
+</ul>
+</li>
+<li id="menu-item-18369" class="nav-search-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-18369"><a href="#" id="menu-item-link-18369"><i class="fa fa-search"></i></a></li>
+</ul>    </nav>
+            <div class="search-outer-container" role="search">
+            <div class="search__container">
+        <form method="get" id="searchform" class="searchform" action="https://workingsolutions.com/">
+             <i class="fa fa-search"></i>
+             <input class="resultSearch" type="text" value="" name="s" id="blogS" placeholder="What are you looking for?"/>
+             <a href="#" class="search-close"></a>
+        </form>
+        
+        </div>
+        <div id="jobs-recommend-notify">
+          <div class="jrn-container">
+            <p class="jrn-content"><span>Are you looking for opportunities to work as a Working Solutions agent?</span></p>
+            <p class="jrn-cta"><a href="#" class="btn btn-gradient-stroke dark"><span>Apply Now</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+    </svg></a></p>
+          </div> 
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+	
+          <div class="block cmpt-home-header home-header-img" style='background-image: url(https://workingsolutions.com/wp-content/uploads/2023/11/home-header-image.jpg)'>
+	<div class="header-top">
+		<div class="header-callout-text">
+			&nbsp;
+							<span class="hr-callout-item hr-callout-item-1">Simple Solutions.</span>
+							<span class="hr-callout-item hr-callout-item-2">Seamless Support.</span>
+							<span class="hr-callout-item hr-callout-item-3">Successful Service.</span>
+						<!-- <div class="hr-callout-item hr-callout-item-1"><span>Simple</span> <span>Solutions.</span></div>
+			<div class="hr-callout-item hr-callout-item-2"><span>Seamless</span> <span>Support.<span></div>
+			<div class="hr-callout-item hr-callout-item-3"><span>Successful</span> <span>Service.</span></div> -->
+		</div>
+				<div class="header-content">
+			<h1>Your Ultimate Partner for Customer Service Outsourcing</h1>
+			<p>To serve clients well, Working Solutions ranks among the best outsourced customer service providers in the contact center industry. Our business process outsourcing (BPO) produces excellent customer experiences (CX) for everyday commerce, unexpected events and long-range projects. A virtual network of 150,000+ professional agents scales to meet fluctuating demand, ensuring real-time flexibility for service and sales.</p>
+		</div>
+	</div>
+</div>
+<div class="cmpt-header-bottom">
+	<div class="multiple-cards">
+		<div class="block__container">
+			<div class="mcard__row">
+				<div class="mcard__container">
+																	
+						<div class="mcard__item animate">
+							<div class="mcard__main__content">
+								<div class="mcard__image" style="background-image: url(https://workingsolutions.com/wp-content/uploads/2023/11/cx-perfomance-lagging.jpg)"></div>
+								<div class="mcard__content">
+								  <h3 class="mcard__heading">CX Performance Lagging?  Boost Skills and Flexibility. </h3>
+								  <p>Workforce speed to proficiency and scalability make or break customer service. Agents must acclimate fast to perform well.<strong> And stay sharp to flex up and down for sustained service</strong>.</p>
+								  <p><a class="more-link"  href="https://workingsolutions.com/wp-content/uploads/2018/02/Ready-Steady-Future-State-.pdf">Achieve More →</a></p>
+								</div>
+							</div>
+						</div>
+																	
+						<div class="mcard__item animate">
+							<div class="mcard__main__content">
+								<div data-bg="https://workingsolutions.com/wp-content/uploads/2023/11/are-service-ops-a-cost-center.jpg" class="mcard__image rocket-lazyload" style=""></div>
+								<div class="mcard__content">
+								  <h3 class="mcard__heading">Service Ops a Cost Center?  Profit From Them Instead.</h3>
+								  <p>Inflation and a possible recession caused companies to tighten their belts and curtail customer service, seeing it as a cost center. Bad move. <strong>Better to optimize CX operations and turn a profit</strong>.</p>
+								  <p><a class="more-link"  href="https://info.workingsolutions.com/cost-savings-outsourcing">Make Service Pay →</a></p>
+								</div>
+							</div>
+						</div>
+																	
+						<div class="mcard__item animate">
+							<div class="mcard__main__content">
+								<div data-bg="https://workingsolutions.com/wp-content/uploads/2023/11/caught-in-a-crunch.jpg" class="mcard__image rocket-lazyload" style=""></div>
+								<div class="mcard__content">
+								  <h3 class="mcard__heading">Caught In a Crunch?  Rev Up CX Solutions.</h3>
+								  <p>When the business goes sideways, customer experiences suffer. So, <strong>why not deploy quick-turn solutions that accelerate sales and service?</strong> Delivered in days and weeks—not months.</p>
+								  <p><a class="more-link"  href="https://workingsolutions.com/solutions/">Maximize Results →</a></p>
+								</div>
+							</div>
+						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="rocketlazyloadscript" data-rocket-type="module">
+	jQuery(document).ready(function($) {
+		// Simple GSAp Fade in and out;
+		var tl = new TimelineMax({repeat:-1});
+
+		$(".hr-callout-item").each(function(index, element){
+		  tl.to(element, .5, {opacity:1})
+		    .to(element, .5, {opacity:0, ease:Power2.easeInOut}, "+=2")
+		})
+	});
+</script>          
+    
+	    	    	<style>
+	    		.section-aiia-area {
+	    			background: linear-gradient(to bottom, rgb(245,249,252), rgb(245,249,252), rgb(245,249,252));	    		}
+	    			    			    	</style>
+	    	<div class="component-section section-aiia-area bg-color content-light  ">
+
+		        										<div class="cmpt cmpt-icg block animate">
+	<div class="block__container">
+					<h2>Artificial Intelligence and Intelligent Agents™</h2>
+						<div class="icg-container img-left">
+			<div class="icg-image">
+								    	<a class="icg-link" title="" href="https://www.youtube.com/watch?v=Ii5x-V6imZI" target="_self" data-minimodal>
+				    		<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2023/11/ai-ia-video-thumbnail.jpg" /><noscript><img src="https://workingsolutions.com/wp-content/uploads/2023/11/ai-ia-video-thumbnail.jpg" alt="" /></noscript>
+				    						    			<span class="video-play-button"><span></span></span>
+				    						    	</a>
+				   				</div>
+			<div class="icg-content">
+				<p>Squeezed by budget cuts and labor shortages, businesses turn to artificial intelligence (AI) to economize and expedite service. AI, however, doesn’t always mesh with legacy IT for the best customer experiences. And technological upgrades can be expensive and disruptive.</p>
+<p>Our <strong>AI + IA</strong> solution blends automation and self-service for routine tasks with intelligent agents (IA) to solve complex issues. The result is a cost-effective way to maximize the benefits of human-AI collaboration to improve sales and service for clients, making them more capable, empathetic and competitive.</p>
+<p><a class="text-link" href="https://info.workingsolutions.com/intelligent-agents" target="_blank" rel="noopener">Learn how we do it – AI + IA →</a></p>
+			</div>
+		</div>
+	</div>	
+</div>														<div class="cmpt block block-cmpt-study-card animate">
+  <div class="study-card card">
+        <div data-bg="https://workingsolutions.com/wp-content/uploads/2023/11/empathetic-service.jpg" class="bg-card-img rocket-lazyload" style=""></div>
+    <div class="card-body">
+      <div class="card-title h5">Empathetic Service – Living Life to the Fullest</div>
+      <p>It was a call from a man whose life was ending. He wanted to compile his bucket list. Diagnosed with terminal cancer, he asked the agent’s help to book concerts, shows and games—whatever entertainment she could find.</p>
+            <div class="card-btn"><a rel="nofollow"  class="text-link" title="Read More" href="https://500000.fs1.hubspotusercontent-na1.net/hubfs/500000/major_ticketing_reseller_2022.pdf"  target="_blank">Read More →</a>
+      </div>
+        </div>
+  </div>
+</div>							</div>
+				    	
+
+          
+    
+	    	    	<style>
+	    		.section-dtd-cta-1 {
+	    			background: linear-gradient(to left, rgba(255,169,21,0.13), rgba(228,39,98,0.13), rgba(161,27,179,0.13));	    		}
+	    			    			    	</style>
+	    	<div class="component-section section-dtd-cta-1 bg-color content-light  ">
+
+		        										<div class="cmpt-split-cta block transparent animate">
+	<div class="block__container">
+		<div class="split-cta-content">
+			<h2>CX Consultation: Discover the Difference </h2>
+			<p>Working Solutions will show you how we recruit on-demand workforces, educate them in the business, and perform to your expectations—down to the minute and metric. Contact us for a free consultation.</p>
+		</div>
+		<div class="split-cta-cta">
+								<a target="_blank" class="btn-cta animate dark move" href="https://info.workingsolutions.com/discover-the-difference">Contact Us <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+						
+		</div>
+	</div>
+</div>							</div>
+				    	
+
+          <div class="cmpt cmpt-logos ">	
+	<div class="logos-container">
+								<div class="logo slug-"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2024/02/southwest-airlines.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2024/02/southwest-airlines.svg" alt=""></noscript></div>
+								<div class="logo slug-"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2024/02/toyota-connected.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2024/02/toyota-connected.svg" alt=""></noscript></div>
+								<div class="logo slug-peloton-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Peloton logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/peloton.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/peloton.svg" alt="Peloton logo"></noscript></div>
+								<div class="logo slug-intuit"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="intuit" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2023/11/intuit.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2023/11/intuit.svg" alt="intuit"></noscript></div>
+								<div class="logo slug-"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2024/02/halo-logo.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2024/02/halo-logo.svg" alt=""></noscript></div>
+								<div class="logo slug-zillow-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Zillow logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/zillow.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/zillow.svg" alt="Zillow logo"></noscript></div>
+								<div class="logo slug-michaels-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Michaels logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/michaels.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/michaels.svg" alt="Michaels logo"></noscript></div>
+								<div class="logo slug-a-place-for-mom-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="A Place for Mom logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/aplaceformom.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/aplaceformom.svg" alt="A Place for Mom logo"></noscript></div>
+								<div class="logo slug-apple-leisure-group-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Apple Leisure Group logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/alg.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/alg.svg" alt="Apple Leisure Group logo"></noscript></div>
+								<div class="logo slug-datalot-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Datalot logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/datalot.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/datalot.svg" alt="Datalot logo"></noscript></div>
+								<div class="logo slug-fedpoint-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Fedpoint logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/fedpoint.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/fedpoint.svg" alt="Fedpoint logo"></noscript></div>
+								<div class="logo slug-biotelemetry-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="BioTelemetry logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/biotelemetry.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/biotelemetry.svg" alt="BioTelemetry logo"></noscript></div>
+								<div class="logo slug-egencia-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Egencia logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/egencia.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/egencia.svg" alt="Egencia logo"></noscript></div>
+								<div class="logo slug-genesys-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Genesys logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/genesys.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/genesys.svg" alt="Genesys logo"></noscript></div>
+								<div class="logo slug-stubhub-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="StubHub logo" data-lazy-src="https://workingsolutions.com/wp-content/uploads/2022/06/stubhub.svg"><noscript><img src="https://workingsolutions.com/wp-content/uploads/2022/06/stubhub.svg" alt="StubHub logo"></noscript></div>
+			</div>
+</div>          
+    
+	    	    	<style>
+	    		.section-home-solutions {
+	    			background: linear-gradient(to bottom, rgb(245,249,252), rgb(245,249,252), rgb(245,249,252));	    		}
+	    			    			    	</style>
+	    	<div class="component-section section-home-solutions bg-color content-light  ">
+
+		        										<div class="block cmpt-solutions">
+	<div class="block__container block__container--center">
+		<div class="solutions-content">
+			<h2>Solutions that <b>Deliver</b></h2>
+			<p>As a rule, clients should expect double-digit improvements when outsourcing CX operations. If not, then they should ask: “Why not?” Desired results include sharper analytics to target offerings, streamlined processes to accelerate business and customer insights to increase sales.</p>
+<p>After nearly three decades, Working Solutions continues to perfect its virtual operations, fine-tuning them to deliver cost-effective customer service. On average, we optimize back-office support by 40%, reduce handle times by 25% and upsell 20% more.</p>
+<p><a class="text-link" href="https://workingsolutions.com/solutions/">Explore our solutions →</a></p>
+		</div>
+	</div>
+	<div class="solutions-buttons">
+		<div class="solutions-inner-container">
+											<div class="s-button"><a  target="_self" class="btn btn-gradient-stroke animate" href="https://workingsolutions.com/solutions/#customer-care">Customer Care</a></div>
+											<div class="s-button"><a  target="_self" class="btn btn-gradient-stroke animate" href="https://workingsolutions.com/solutions/#sales-support">Sales Support</a></div>
+											<div class="s-button"><a  target="_self" class="btn btn-gradient-stroke animate" href="https://workingsolutions.com/solutions/#back-office-support">Back-Office Support</a></div>
+											<div class="s-button"><a  target="_self" class="btn btn-gradient-stroke animate" href="https://workingsolutions.com/solutions/#analytics">Analytics</a></div>
+											<div class="s-button"><a  target="_self" class="btn btn-gradient-stroke animate" href="https://workingsolutions.com/solutions/#technology">Technology</a></div>
+					</div>
+	</div>
+</div>							</div>
+				    	
+
+          <div class="block block--animated-gradient block--calculator">
+  <!-- <canvas class="orb-canvas-calc"></canvas> -->
+  <div class="block__container animate">
+      <h2 class="block__heading">Cost-Savings Calculator</h2>      
+      <div class="calc-content">
+        <p>Want to reduce your call center operational costs? Take the first step today with us.</p>
+<p>Our calculator can estimate reduced expenses by outsourcing customer service. Use the slider to find your weekly call volume and see the potential savings.</p>
+      </div>
+      <div class="calc">
+        <div class="calc__top">
+          <div class="calc__volume">
+            <span class="calc__volume__value">...</span> Weekly call volume
+          </div>
+          <div class="calc__savings">
+            <span class="calc__savings__value">...</span> <span class="calc__savings__text">Annual cost savings over brick and mortar</span>
+                        <a class="btn-cta animate calc__savings__button" href="https://info.workingsolutions.com/discover-the-difference">Contact Sales <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+          </div>
+        </div>
+        <div class="calc__main">
+          <span class="calc__fill"></span>
+          <input class="calc__input" type="range" min="1000" max="40000" step="500">
+          <span class="calc__empty" style="background-color: green;"></span>
+        </div>
+        <div class="calc__bot">
+          <div class="calc__bm">
+            <span id="su_tooltip_6666976901cc4_button" class="su-tooltip-button su-tooltip-button-outline-yes" aria-describedby="su_tooltip_6666976901cc4" data-settings='{"position":"top","behavior":"hover","hideDelay":0}' tabindex="0">Brick-and-mortar staffing FTEs <span class="calc__bm__value">...</span></span><span style="display:none;z-index:100" id="su_tooltip_6666976901cc4" class="su-tooltip" role="tooltip"><span class="su-tooltip-inner su-tooltip-shadow-yes" style="z-index:100;background:#FFFFFF;color:#333333;font-size:13px;border-radius:5px;text-align:left;max-width:300px;line-height:1.25"><span class="su-tooltip-title"></span><span class="su-tooltip-content su-u-trim">Brick-and-mortar call centers schedule full-time agents in 8-hour blocks of time, whether they serve customers or not. Clients end up paying for hours clocked—but necessarily worked.</span></span><span id="su_tooltip_6666976901cc4_arrow" class="su-tooltip-arrow" style="z-index:100;background:#FFFFFF" data-popper-arrow></span></span>          </div>
+          <div class="calc__ws">
+            <span id="su_tooltip_6666976901d87_button" class="su-tooltip-button su-tooltip-button-outline-yes" aria-describedby="su_tooltip_6666976901d87" data-settings='{"position":"top","behavior":"hover","hideDelay":0}' tabindex="0">Working Solutions staffing FTEs <span class="calc__ws__value">...</span></span><span style="display:none;z-index:100" id="su_tooltip_6666976901d87" class="su-tooltip" role="tooltip"><span class="su-tooltip-inner su-tooltip-shadow-yes" style="z-index:100;background:#FFFFFF;color:#333333;font-size:13px;border-radius:5px;text-align:left;max-width:300px;line-height:1.25"><span class="su-tooltip-title"></span><span class="su-tooltip-content su-u-trim">The Working Solutions Interaction Model leverages independent contractors. Our agents are paid for time worked, tracked in 15-minute increments. So clients pay for work performed—not just clocked.</span></span><span id="su_tooltip_6666976901d87_arrow" class="su-tooltip-arrow" style="z-index:100;background:#FFFFFF" data-popper-arrow></span></span>          </div>
+        </div>
+      </div>
+          <p style="margin-bottom: 0;"><a href="https://www.youtube.com/watch?v=5MNJRm3jTc8" class="text-link light animate" data-minimodal>Watch Video  →</a></p>
+  </div>
+</div>
+<!-- <script type="rocketlazyloadscript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/orb-animation.js" defer data-rocket-type="module"></script> -->
+<!-- <div id="orbScript"></div>
+<script type="rocketlazyloadscript">
+(function() {
+  if( window.innerWidth > 600 ) {
+     window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+            $('<script src="https://workingsolutions.com/wp-content/themes/working_solutions/js/orb-animation.js" defer type="module"></' + 'script>').appendTo('#orbScript')
+        })(jQuery);
+      }); 
+      
+  }
+})();
+</script> -->          
+    
+	    	    	<style>
+	    		.section-stat-box-section {
+	    			background: linear-gradient(to bottom, rgb(245,249,252), rgb(245,249,252), rgb(245,249,252));	    		}
+	    			    			    	</style>
+	    	<div class="component-section section-stat-box-section bg-color content-light  ">
+
+		        										<div class="cmpt cmpt-stat-box block animate">
+	<div class="block__container">
+		<div class="stat-box-content">
+							<h2>In a recent survey, here’s what <b>clients have to say.</b></h2>
+						<div class="stat-box-intro">
+							</div>
+								
+				  <div class="stat-box-container" style="background-color: #ffffff;">
+					   					    	<div class="stat-box text-center">
+					        	<div class="sb-stat-icon">
+					        		<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" id="Chart" width="17.629" height="17.629" viewBox="0 0 17.629 17.629"><path id="Shape" d="M12.93,17.629H4.7A4.718,4.718,0,0,1,1.225,16.4,4.718,4.718,0,0,1,0,12.931V4.7A4.718,4.718,0,0,1,1.225,1.225,4.718,4.718,0,0,1,4.7,0H12.93A4.711,4.711,0,0,1,16.4,1.225,4.742,4.742,0,0,1,17.629,4.7v8.233A4.717,4.717,0,0,1,16.4,16.4,4.719,4.719,0,0,1,12.93,17.629Zm-.018-8.01a.762.762,0,0,0-.4.112.711.711,0,0,0-.335.7v2.892a.728.728,0,0,0,.731.661.743.743,0,0,0,.731-.661V10.427a.739.739,0,0,0-.344-.7A.726.726,0,0,0,12.912,9.619ZM8.859,3.528a.725.725,0,0,0-.388.112.746.746,0,0,0-.345.7v8.982a.743.743,0,0,0,.732.661.729.729,0,0,0,.731-.661V4.337a.719.719,0,0,0-.334-.7A.768.768,0,0,0,8.859,3.528ZM4.751,6.419a.725.725,0,0,0-.388.112.743.743,0,0,0-.344.7v6.091a.735.735,0,0,0,1.462,0V7.228a.745.745,0,0,0-.343-.7A.728.728,0,0,0,4.751,6.419Z" transform="translate(0 0)" fill="#fff"></path></svg> 					        	</div>
+					        	<div class="sb-stat">
+					        		100%					        	</div>
+					        	<div class="sb-stat-header">
+					        		Achieved Business Goals					        	</div>
+					        	<div class="sb-stat-content">
+					        		<p>Across the board, clients consistently hit the mark in making their objectives for sales and service. Validates the value of our partnerships.</p>
+					        	</div>
+					        	<div class="sb-stat-link">
+					        							        		
+					        		<!-- <a href="#">Explore All Our Solutions →</a> -->
+					        	</div>
+					   		</div>
+												    	<div class="stat-box text-center">
+					        	<div class="sb-stat-icon">
+					        		<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" id="Chat" width="17.629" height="17.629" viewBox="0 0 17.629 17.629"><path id="Shape" d="M8.815,17.629a8.775,8.775,0,0,1-4.337-1.147,1.938,1.938,0,0,0-.976-.374,1.07,1.07,0,0,0-.337.056l-1.781.53a.664.664,0,0,1-.2.031.546.546,0,0,1-.441-.211.571.571,0,0,1-.083-.509l.591-1.978a.922.922,0,0,0-.062-.794A9.314,9.314,0,0,1,0,8.828,8.953,8.953,0,0,1,2.5,2.673,8.717,8.717,0,0,1,8.832,0a8.7,8.7,0,0,1,6.276,2.639,8.865,8.865,0,0,1,1.851,2.805,8.717,8.717,0,0,1,.67,3.356,8.937,8.937,0,0,1-.762,3.677,8.461,8.461,0,0,1-2.005,2.779A9.03,9.03,0,0,1,8.815,17.629ZM12.86,7.707a1.13,1.13,0,1,0,1.128,1.13A1.13,1.13,0,0,0,12.86,7.707Zm-4.08,0h0A1.1,1.1,0,0,0,8,8.038a1.118,1.118,0,0,0-.327.79A1.128,1.128,0,1,0,8.8,7.707H8.78Zm-4.046,0a1.13,1.13,0,1,0,1.128,1.13A1.131,1.131,0,0,0,4.734,7.707Z" transform="translate(0 0)" fill="#fff"></path></svg> 					        	</div>
+					        	<div class="sb-stat">
+					        		93+%					        	</div>
+					        	<div class="sb-stat-header">
+					        		Recommended by Clients 					        	</div>
+					        	<div class="sb-stat-content">
+					        		<p>The vast majority give Working Solutions a top-rated net promoter score (NPS). Confirms the excellence of services delivered.</p>
+					        	</div>
+					        	<div class="sb-stat-link">
+					        							        		
+					        		<!-- <a href="#">Explore All Our Solutions →</a> -->
+					        	</div>
+					   		</div>
+												    	<div class="stat-box text-center">
+					        	<div class="sb-stat-icon">
+					        		<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" id="Discount" width="17.63" height="17.625" viewBox="0 0 17.63 17.625"><path id="Shape" d="M8.82,17.625a2.665,2.665,0,0,1-1.879-.766L6.3,16.214a1.313,1.313,0,0,0-.935-.386H4.456A2.657,2.657,0,0,1,1.8,13.174v-.907a1.356,1.356,0,0,0-.388-.944L.779,10.7A2.663,2.663,0,0,1,.77,6.943L1.413,6.3A1.324,1.324,0,0,0,1.8,5.355v-.9A2.656,2.656,0,0,1,4.456,1.8h.908A1.332,1.332,0,0,0,6.3,1.415L6.933.78A2.66,2.66,0,0,1,10.689.772l.644.643a1.314,1.314,0,0,0,.935.389h.908A2.656,2.656,0,0,1,15.83,4.456v.909a1.309,1.309,0,0,0,.389.933l.635.635a2.671,2.671,0,0,1,.017,3.747l-.012.012-.006.006-.009.009-.626.626a1.312,1.312,0,0,0-.389.935v.907a2.657,2.657,0,0,1-2.654,2.654h-.908a1.313,1.313,0,0,0-.935.386l-.635.635A2.632,2.632,0,0,1,8.82,17.625Zm2.266-7.316a.771.771,0,1,0,.767.767A.773.773,0,0,0,11.087,10.309Zm0-4.534A.763.763,0,0,0,10.539,6L6.007,10.529a.776.776,0,0,0,0,1.092.73.73,0,0,0,.538.229.738.738,0,0,0,.547-.229l4.533-4.53a.771.771,0,0,0-.543-1.317Zm-4.528,0a.771.771,0,1,0,.767.766A.772.772,0,0,0,6.554,5.778Z" transform="translate(0 0)" fill="#fff"></path></svg> 					        	</div>
+					        	<div class="sb-stat">
+					        		87%					        	</div>
+					        	<div class="sb-stat-header">
+					        		Reported Cost Reductions 					        	</div>
+					        	<div class="sb-stat-content">
+					        		<p>Most clients gained substantial savings by outsourcing their customer service to us. Earns a good return on investment.</p>
+					        	</div>
+					        	<div class="sb-stat-link">
+					        							        		
+					        		<!-- <a href="#">Explore All Our Solutions →</a> -->
+					        	</div>
+					   		</div>
+													</div>
+															<p class="stat-link-p"><a class="text-link stat-link" href="https://www.youtube.com/watch?v=VPCPaMlOGVQ" data-minimodal>Watch Video →</a></p>
+								</div>
+	</div>
+</div>							</div>
+				    	
+
+          
+    
+	    	    	<style>
+	    		.section-dtd-cta-2 {
+	    			background: linear-gradient(to left, rgba(255,169,21,0.13), rgba(228,39,98,0.13), rgba(161,27,179,0.13));	    		}
+	    			    			    	</style>
+	    	<div class="component-section section-dtd-cta-2 bg-color content-light  ">
+
+		        										<div class="cmpt-split-cta block transparent animate">
+	<div class="block__container">
+		<div class="split-cta-content">
+			<h2>The Power of Human Empathy in Calming Customer Storms</h2>
+			<p>Discover how we turned a catastrophic airlines crisis into a triumph of compassion and fast resolution. Read the case study.</p>
+		</div>
+		<div class="split-cta-cta">
+								<a target="_blank" class="btn-cta animate dark move" href="https://info.workingsolutions.com/airline-travel-case-study">Download Now <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+						
+		</div>
+	</div>
+</div>							</div>
+				    	
+
+          <div class="cmpt block block-cmpt-testimonials-slider animate">
+	<div class="cmpt-testimonials-sliders block__container">
+		<div class="testimonial-slider">
+			<div class="testimonial-content">
+				<h2>Don't take our word for it...</h2>
+				<div class="cmpt-testimonial-slider-2">
+											<div class="testimonial-item">
+							<div class="quote-content">
+								<p>I was impressed by the rigorous training and onboarding and passing off to the operations team. It made me feel very secure that the people who would interact with my customers were well prepared.</p>
+							</div>
+															<p class="quote-name">
+									
+									 – Director of Customer Care | Leader in personalized products 	 
+									
+								</p>
+													</div>
+											<div class="testimonial-item">
+							<div class="quote-content">
+								<p>Working Solutions augmented staff and matched quality levels at a great value. They are a perfect solution to our overflow needs.</p>
+							</div>
+															<p class="quote-name">
+									
+									 – Lead Executive | Leading Travel Company	 
+									
+								</p>
+													</div>
+											<div class="testimonial-item">
+							<div class="quote-content">
+								<p>We are very impressed with their responsiveness, flexibility and quality. Their expedited service ensured staff and volunteers were in place to provide safe shelter, food, medical supplies and comfort.</p>
+							</div>
+															<p class="quote-name">
+									
+									 – Vice President | Mid-Atlantic Affairs | Travel Management Co.	 
+									
+								</p>
+													</div>
+											<div class="testimonial-item">
+							<div class="quote-content">
+								<p>We watched your team handle millions of customer calls reliably, professionally, and with one committed focus and goal, <strong>doing the absolute best for the American Express Travel customer</strong>.</p>
+							</div>
+															<p class="quote-name">
+									
+									 – Vice President | Communications | American Express	 
+									
+								</p>
+													</div>
+											<div class="testimonial-item">
+							<div class="quote-content">
+								<p>They have successfully collaborated with us in every direction we’ve explored and have been a wonderful, long-term partner.</p>
+							</div>
+															<p class="quote-name">
+									
+									 – Senior Director, Customer Service | Fortune 100 healthcare services company	 
+									
+								</p>
+													</div>
+									</div>
+			</div>
+		</div>
+			</div>
+</div>
+           <div class="cmpt multiple-cards dark ">
+	<div class="block__container block__flex">
+		<div class="mcard-header">
+			<h2>Thought Leadership</h2>
+		</div>
+					<div class="mcard-view-all">
+					
+				<a class="text-link" href="https://workingsolutions.com/blog/">Read our blogs →</a>
+			</div>
+			</div>
+	<div class="block__container">
+		<div class="mcard__row">
+			<div class="mcard__container">
+				
+							      					<div class="mcard__item">
+						<div class="mcard__main__content">
+							<div data-bg="https://workingsolutions.com/wp-content/uploads/2023/11/how-ai-and-intelligence-agents-together-help-cut-costs-thmb.jpg" class="mcard__image rocket-lazyload" style=""></div>
+							<div class="mcard__content">
+							  							  	<div>
+								  	<span class="card-category">Blog</span>
+								</div>
+							  							  
+							  <h3 class="mcard__heading">How AI and Intelligent Agents Together Help Cut Costs for Customer Service</h3>
+							  <p>Working Solutions partners with clients to blend automation and live agents for superior service.</p>
+							  							  	<p class="read-more-para"><a class="mc-read-more" href="https://workingsolutions.com/blog/how-ai-and-intelligent-agents-together-help-cut-costs-for-customer-service/" title="" target="_self">Read More <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/home-v2/read-more-icon-play.svg"><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/home-v2/read-more-icon-play.svg"></noscript></a></p>
+							  							</div>
+						</div>
+					</div>
+			      
+			    			      					<div class="mcard__item">
+						<div class="mcard__main__content">
+							<div data-bg="https://workingsolutions.com/wp-content/uploads/2023/11/podcast-blog-tamara.jpeg" class="mcard__image rocket-lazyload" style=""></div>
+							<div class="mcard__content">
+							  							  	<div>
+								  	<span class="card-category">Blog</span>
+								</div>
+							  							  
+							  <h3 class="mcard__heading">Changing the Game of CX Education</h3>
+							  <p>At Working Solutions University, college-degreed educators immerse thousands of customer-service contractors in clients’ businesses.</p>
+							  							  	<p class="read-more-para"><a class="mc-read-more" href="https://workingsolutions.com/blog/changing-the-game-of-cx-education-tamaras-journey-to-setting-industry-standards/" title="" target="_blank">Read More <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/home-v2/read-more-icon-play.svg"><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/home-v2/read-more-icon-play.svg"></noscript></a></p>
+							  							</div>
+						</div>
+					</div>
+			      
+			    			      					<div class="mcard__item">
+						<div class="mcard__main__content">
+							<div data-bg="https://workingsolutions.com/wp-content/uploads/2022/12/driving-sales-maintaining-sales.jpg" class="mcard__image rocket-lazyload" style=""></div>
+							<div class="mcard__content">
+							  							  	<div>
+								  	<span class="card-category">Success Story</span>
+								</div>
+							  							  
+							  <h3 class="mcard__heading">Customer Retention: Driving Sales and Maintaining Sales Base</h3>
+							  <p>What are you doing to keep your existing customers who are vital to your success?</p>
+							  							  	<p class="read-more-para"><a class="mc-read-more" href="https://workingsolutions.com/customer-retention-driving-sales-and-maintaining-sales-base/" title="" target="_self">Read More <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/home-v2/read-more-icon-play.svg"><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/home-v2/read-more-icon-play.svg"></noscript></a></p>
+							  							</div>
+						</div>
+					</div>
+			      
+			    			</div>
+		</div>
+	</div>
+</div>  
+<div class="clear"></div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="block__container">
+          <div class="footer__link__container">
+            <div class="footer__list footer_list_one">
+              <h5>Site Links</h5>
+              <nav>
+                <div class="menu-footer-site-links-container"><ul id="menu-footer-site-links" class="menu"><li id="menu-item-18271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18271"><a target="_blank" rel="noopener" href="https://jobs.workingsolutions.com" id="menu-item-link-18271">Work From Home →</a></li>
+<li id="menu-item-18844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18844"><a href="https://workingsolutions.com/contact/" id="menu-item-link-18844">Contact Us</a></li>
+<li id="menu-item-18269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18269"><a href="https://workingsolutions.com/private-resources" id="menu-item-link-18269">Private Resources</a></li>
+<li id="menu-item-18270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18270"><a href="https://workingsolutions.com/resources/" id="menu-item-link-18270">Public Resources</a></li>
+</ul></div>              </nav>
+            </div>
+            <div class="footer__list footer_list_two">
+              <h5>Legal</h5>
+              <nav>
+                <div class="menu-footer-menus-container"><ul id="menu-footer-menus" class="menu"><li id="menu-item-18147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18147"><a href="https://workingsolutions.com/accessibility-statement/" id="menu-item-link-18147">Accessibility</a></li>
+<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-143"><a rel="privacy-policy" href="https://workingsolutions.com/privacy/" id="menu-item-link-143">Privacy Policy</a></li>
+</ul></div>              </nav>
+            </div>
+            <div class="footer__list footer_list_three">
+              <h5>Company</h5>
+              <nav>
+                <div class="menu-footer-company-container"><ul id="menu-footer-company" class="menu"><li id="menu-item-18272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18272"><a href="https://workingsolutions.com/about-us/" id="menu-item-link-18272">About</a></li>
+<li id="menu-item-18277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18277"><a href="https://workingsolutions.com/blog/" id="menu-item-link-18277">Blog</a></li>
+<li id="menu-item-18843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18843"><a href="https://workingsolutions.com/careers/" id="menu-item-link-18843">Corporate Careers</a></li>
+<li id="menu-item-18274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18274"><a href="https://workingsolutions.com/newsroom/" id="menu-item-link-18274">Newsroom</a></li>
+<li id="menu-item-18275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18275"><a href="https://workingsolutions.com/our-corporate-responsibility/" id="menu-item-link-18275">Responsibility</a></li>
+</ul></div>              </nav>
+            </div>
+            <div class="footer__list footer_list_four">
+              <h5>Who We are</h5>
+               <p>Working Solutions provides virtual contact center outsourcing that measurably improves customer experiences (CX). We deliver high-quality, all-encompassing solutions for your fluctuating sales and service needs. Our on-demand CX expertise enables you to better engage, empathize with and delight customers, wherever and whenever they interact with your brand.</p>
+            </div>
+          </div>
+          <div class="footer__secondary">
+            <div class="footer__copy">&copy; Working Solutions 2024. All Right Reserved</div>
+            <div class="footer__social__group">
+              
+              
+              <ul class="footer__social__list">
+                <li>
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front">
+                        <a class="" href="https://www.facebook.com/WorkingSolutions/" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Facebook" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/facebook.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/facebook.svg" alt="Facebook" /></noscript>
+                        </a>
+                      </div>
+                      <div class="back">
+                        <a class="" href="https://www.facebook.com/WorkingSolutions/" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Facebook" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/facebook-hover.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/facebook-hover.svg" alt="Facebook" /></noscript>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front">
+                        <a class="" href="https://twitter.com/WorkingSol" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="X" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/x.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/x.svg" alt="X" /></noscript>
+                        </a>
+                      </div>
+                      <div class="back">
+                        <a class="" href="https://twitter.com/WorkingSol" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="X" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/x-hover.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/x-hover.svg" alt="X" /></noscript>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front">
+                        <a class="" href="https://www.linkedin.com/company/27316" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="LinkedIn" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/linkedin.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/linkedin.svg" alt="LinkedIn" /></noscript>
+                        </a>
+                      </div>
+                      <div class="back">
+                        <a class="" href="https://www.linkedin.com/company/27316" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="LinkedIn" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/linkedin-hover.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/linkedin-hover.svg" alt="LinkedIn" /></noscript>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front">
+                        <a target="_blank"  rel="nofollow"  class="" href="https://www.instagram.com/workingsol">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Instagram" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/insta.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/insta.svg" alt="Instagram" /></noscript>
+                        </a>
+                      </div>
+                      <div class="back">
+                        <a target="_blank"  rel="nofollow"  class="" href="https://www.instagram.com/workingsol">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Instagram" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/insta-hover.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/insta-hover.svg" alt="Instagram" /></noscript>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front">
+                        <a class="" href="https://www.youtube.com/user/workingsol" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Youtube" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/youtube.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/youtube.svg" alt="Youtube" /></noscript>
+                        </a>
+                      </div>
+                      <div class="back">
+                        <a class="" href="https://www.youtube.com/user/workingsol" target="blank">
+                          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Youtube" data-lazy-src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/youtube-hover.svg" /><noscript><img src="https://workingsolutions.com/wp-content/themes/working_solutions/images/footer/youtube-hover.svg" alt="Youtube" /></noscript>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<main class="cd-main-content">
+	<!-- your content here -->
+</main>
+
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+  var _mfq = _mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.async = true;
+    mf.src = "//cdn.mouseflow.com/projects/ec022815-fdcc-4edc-9d9c-907c780f5747.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+<div id="cmplz-cookiebanner-container"><div class="cmplz-cookiebanner cmplz-hidden banner-1 this-website-uses-cookies-to-improve-your-experience-by-using-our-site-you-agree-to-our-cookie-policy optout cmplz-bottom cmplz-categories-type-view-preferences" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optout" aria-describedby="cmplz-message-1-optout">
+	<div class="cmplz-header">
+		<div class="cmplz-logo"></div>
+		<div class="cmplz-title" id="cmplz-header-1-optout">Manage Consent</div>
+		<div class="cmplz-close" tabindex="0" role="button" aria-label="Close dialog">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</div>
+	</div>
+
+	<div class="cmplz-divider cmplz-divider-header"></div>
+	<div class="cmplz-body">
+		<div class="cmplz-message" id="cmplz-message-1-optout"><p>This website uses cookies to personalize and improve your experience. Continue browsing our site if you agree to our <a target="_blank"  rel="nofollow"  href="https://worsolstaging.wpengine.com/privacy/">Cookie </a><a href="https://workingsolutions.com/privacy/">Policy</a><strong> </strong>or feel free to <a href="https://workingsolutions.com/opt-out-preferences/">Manage Cookies</a> yourself.</p></div>
+		<!-- categories start -->
+		<div class="cmplz-categories">
+			<details class="cmplz-category cmplz-functional" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Functional</span>
+							<span class='cmplz-always-active'>
+								<span class="cmplz-banner-checkbox">
+									<input type="checkbox"
+										   id="cmplz-functional-optout"
+										   data-category="cmplz_functional"
+										   class="cmplz-consent-checkbox cmplz-functional"
+										   size="40"
+										   value="1"/>
+									<label class="cmplz-label" for="cmplz-functional-optout" tabindex="0"><span class="screen-reader-text">Functional</span></label>
+								</span>
+								Always active							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-functional">The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-preferences" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Preferences</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-preferences-optout"
+									   data-category="cmplz_preferences"
+									   class="cmplz-consent-checkbox cmplz-preferences"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-preferences-optout" tabindex="0"><span class="screen-reader-text">Preferences</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-preferences">The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-statistics" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Statistics</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-statistics-optout"
+									   data-category="cmplz_statistics"
+									   class="cmplz-consent-checkbox cmplz-statistics"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-statistics-optout" tabindex="0"><span class="screen-reader-text">Statistics</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-statistics">The technical storage or access that is used exclusively for statistical purposes.</span>
+					<span class="cmplz-description-statistics-anonymous">The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.</span>
+				</div>
+			</details>
+			<details class="cmplz-category cmplz-marketing" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Marketing</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-marketing-optout"
+									   data-category="cmplz_marketing"
+									   class="cmplz-consent-checkbox cmplz-marketing"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-marketing-optout" tabindex="0"><span class="screen-reader-text">Marketing</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-marketing">The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.</span>
+				</div>
+			</details>
+		</div><!-- categories end -->
+			</div>
+
+	<div class="cmplz-links cmplz-information">
+		<a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Manage options</a>
+		<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview">Manage services</a>
+		<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper">Manage {vendor_count} vendors</a>
+		<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/">Read more about these purposes</a>
+			</div>
+
+	<div class="cmplz-divider cmplz-footer"></div>
+
+	<div class="cmplz-buttons">
+		<button class="cmplz-btn cmplz-accept">Accept</button>
+		<button class="cmplz-btn cmplz-deny">Deny</button>
+		<button class="cmplz-btn cmplz-view-preferences">View preferences</button>
+		<button class="cmplz-btn cmplz-save-preferences">Save preferences</button>
+		<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">View preferences</a>
+			</div>
+
+	<div class="cmplz-links cmplz-documents">
+		<a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a>
+			</div>
+
+</div>
+</div>
+					<div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1">Manage consent</button>
+
+</div><!-- Custom Feeds for Instagram JS -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var sbiajaxurl = "https://workingsolutions.com/wp-admin/admin-ajax.php";
+
+</script>
+    <!-- Meta Pixel Event Code -->
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Meta Pixel Event Code -->
+    <div id='fb-pxl-ajax-code'></div><link data-minify="1" rel='stylesheet' id='su-shortcodes-css' href='https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css?ver=1717795756' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" src="https://workingsolutions.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b" id="jquery-masonry-js"></script>
+<script type="text/javascript" id="wc-shortcodes-rsvp-js-extra">
+/* <![CDATA[ */
+var WCShortcodes = {"ajaxurl":"https:\/\/workingsolutions.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/wc-shortcodes/public/assets/js/rsvp.js?ver=1717795756" id="wc-shortcodes-rsvp-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/workingsolutions.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/flickity.pkgd.min.js?ver=6.5.3" id="flickity-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/smoothscroll.min.js?ver=6.5.3" id="smoothscroll-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/es6-object-assign.js?ver=1717795756" id="object-assign-js"></script>
+<script type="text/javascript" src="https://workingsolutions.com/wp-content/themes/working_solutions/js/jquery.matchHeight-min.js?ver=6.5.3" id="matchHeight-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/basicScroll.min.js?ver=6.5.3" id="basicscroll-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/plugins.js?ver=1717795756" id="working_solutions-plugins-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/minimodal.js?ver=1717795756" id="working_solutions-minimodal-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/scripts.js?ver=1717795756" id="working_solutions-scripts-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/calc.js?ver=1717795756" id="working_solutions-calc-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/newsroom-v3.js?ver=1717795756" id="working_solutions-newsroom-v3-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/themes/working_solutions/js/header.js?ver=1717795756" id="working_solutions-header-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/plugins/gsap.min.js?ver=6.5.3" defer="defer" data-rocket-type="text/javascript"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://workingsolutions.com/wp-content/themes/working_solutions/js/TweenMax.min.js?ver=6.5.3" defer="defer" data-rocket-type="text/javascript"></script>
+<script type="text/javascript" id="cmplz-cookiebanner-js-extra">
+/* <![CDATA[ */
+var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_ajax_content":"","banner_version":"113","version":"7.1.0","store_consent":"","do_not_track_enabled":"1","consenttype":"optout","region":"us","geoip":"","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https:\/\/workingsolutions.com\/wp-json\/complianz\/v1\/","locale":"lang=en&locale=en_US","set_cookies_on_root":"","cookie_domain":"","current_policy_id":"36","cookie_path":"\/","categories":{"statistics":"statistics","marketing":"marketing"},"tcf_active":"","placeholdertext":"<div class=\"cmplz-blocked-content-notice-body\">Click 'I agree' to enable {service}\u00a0<div class=\"cmplz-links\"><a href=\"#\" class=\"cmplz-link cookie-statement\">{title}<\/a><\/div><\/div><button class=\"cmplz-accept-service\">I agree<\/button>","css_file":"https:\/\/workingsolutions.com\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=113","page_links":{"us":{"cookie-statement":{"title":"Opt-out preferences","url":"https:\/\/workingsolutions.com\/opt-out-preferences\/"},"privacy-statement":{"title":"Privacy Policy","url":"https:\/\/workingsolutions.com\/privacy\/"}}},"tm_categories":"1","forceEnableStats":"","preview":"","clean_cookies":"1","aria_label":"Click button to enable {service}"};
+/* ]]> */
+</script>
+<script defer type="text/javascript" src="https://workingsolutions.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1717312049" id="cmplz-cookiebanner-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="cmplz-cookiebanner-js-after">
+/* <![CDATA[ */
+	let cmplzBlockedContent = document.querySelector('.cmplz-blocked-content-notice');
+	if ( cmplzBlockedContent) {
+	        cmplzBlockedContent.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+	}
+    
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/plugins/shortcodes-ultimate/vendor/popper/popper.min.js?ver=2.9.2" id="popper-js"></script>
+<script type="text/javascript" id="su-shortcodes-js-extra">
+/* <![CDATA[ */
+var SUShortcodesL10n = {"noPreview":"This shortcode doesn't work in live preview. Please insert it into editor and preview on the site.","magnificPopup":{"close":"Close (Esc)","loading":"Loading...","prev":"Previous (Left arrow key)","next":"Next (Right arrow key)","counter":"%curr% of %total%","error":"Failed to load content. <a href=\"%url%\" target=\"_blank\"><u>Open link<\/u><\/a>"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/wp-content/plugins/shortcodes-ultimate/includes/js/shortcodes/index.js?ver=1717795756" id="su-shortcodes-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://workingsolutions.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+
+jQuery(document).ready(function($){
+  $(".cards__item").removeAttr("role");
+  $(".cards__item").removeAttr("aria-describedby");
+  $(".slick-slide").removeAttr("aria-describedby");
+  
+});
+</script>
+
+<a href="/contact/" class="fixed-contact">Contact</a>
+
+
+
+    <!-- Start of HubSpot Embed Code -->
+      <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" id="hs-script-loader" async defer data-rocket-src="https://workingsolutions.com/wp-content/cache/min/1/500000.js?ver=1717795756"></script>
+      <!-- End of HubSpot Embed Code -->
+      <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+      _linkedin_partner_id = "2583737";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+      </script><script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+      (function(){var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);})();
+      </script>
+      <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2583737&fmt=gif" />
+      </noscript>
+
+      <noscript>
+        <img src="https://ws.zoominfo.com/pixel/62d5ffd9677d11008e990339" width="1" height="1" style="display: none;" alt="websights"/>
+      </noscript>
+    
+      <!-- Google Adwords Conversions -->
+      <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        window.addEventListener("message", function(event) {
+          if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted') {
+            gtag('event', 'conversion', {'send_to': 'AW-11034340474/hm1fCNL184cYEPrYyo0p'});
+          }
+        });
+      </script>
+      <script type="rocketlazyloadscript">
+        window.addEventListener('load', function() {
+           jQuery('body').on('mousedown', 'a:contains(Apply to work from home)', function() {
+            gtag('event', 'conversion', {'send_to': 'AW-11034340474/exW3CKq29ocYEPrYyo0p'});
+          })
+        });
+
+      </script>
+      <script type="rocketlazyloadscript">(function(d){var s = d.createElement("script");s.setAttribute("data-account", "StmBVH5OSe");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a target="_blank"  rel="nofollow"  href="https://userway.org">website accessibility</a></noscript>
+
+</body></html>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+  document.body.classList.add("theme-");
+</script><!-- Rocket no webp -->
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

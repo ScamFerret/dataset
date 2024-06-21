@@ -1,0 +1,12 @@
+{
+    "url": "https://perfxinvestment.com/",
+    "question": "Please analyze this URL https://perfxinvestment.com/",
+    "thought": "I need to check if the website https://perfxinvestment.com/ exhibits any of the characteristics of a scam website. The website is accessible, now I need to extract the text and check for any suspicious claims or information. The website contains claims of unusually high returns on investment which is a characteristic of a scam website. Additionally, the text contains psychological targeting by using phrases like \"We will utilize your money and give you profit in your wallet automatically.\" This is another red flag. The WHOIS information for perfxinvestment.com is limited, which is suspicious. The website also exhibits characteristics of a scam website with unusually high claims of returns on investment and psychological targeting. Based on these observations, the website https://perfxinvestment.com/ is likely a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake investment site",
+        "reason": "The website exhibits characteristics of a scam website with unusually high claims of returns on investment and limited WHOIS information."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

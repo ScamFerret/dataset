@@ -1,0 +1,1271 @@
+<!DOCTYPE html><html lang="en" class="mdl-js"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script type="text/javascript" src="https://bam.nr-data.net/1/6ce79480f5?a=794187897&amp;sa=1&amp;v=1169.7b094c0&amp;t=Unnamed%20Transaction&amp;rst=939&amp;ck=1&amp;ref=https://www.keycurriculum.com/&amp;be=251&amp;fe=893&amp;dc=489&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1712561010874,%22n%22:0,%22f%22:207,%22dn%22:207,%22dne%22:207,%22c%22:207,%22ce%22:207,%22rq%22:210,%22rp%22:235,%22rpe%22:236,%22dl%22:241,%22di%22:489,%22ds%22:489,%22de%22:489,%22dc%22:892,%22l%22:892,%22le%22:909%7D,%22navigation%22:%7B%7D%7D&amp;fp=502&amp;fcp=502&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-spa-1169.min.js"></script><script type="text/javascript">
+    ;window.NREUM||(NREUM={});NREUM.init={privacy:{cookies_enabled:true}};
+    window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(25),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(26),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,C=g.hash,this[u]=y.now()}function o(){L--,g.hash!==C&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),O=t(6),R=t(13),P=t(7),T=t(14),N=t(9),M=t("ee"),S=M.get("tracer");t(16),y.features.spa=!0;var C,L=0;M.on(u,r),M.on(p,r),M.on(d,o),M.on(l,o),M.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),R.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),P.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),N.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(M,"xhr-resolved"),a(M,"xhr-done"),a(P,m+s),a(P,m+"-done"),a(N,"new-jsonp"),a(N,"jsonp-end"),a(N,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(26),a=t(25);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t("wrap-function")(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),s=i(a),c=t(25),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!i(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,s=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,n,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var e=!1,n=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,n=!!r.enabled),n)if(t.sameOrigin)e=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return n&&e}var a=t(23),s=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=c(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);n&&n.header&&(e.setRequestHeader("newrelic",n.header),this.dt=n)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.parsedOrigin=c(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(25),s=t(26),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&c("lcp",[n[n.length-1]])}function i(t){if(t instanceof u&&!p){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:f.now()-n,p=!0,c("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var p=!1,l=["click","keydown","mousedown","pointerdown","touchstart"];l.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],23:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],24:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],25:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],26:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],27:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(25),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(25),u=t("ee"),d=t(24),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1169.min.js"},x=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(19),t(22),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(27)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(26),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);
+    ;NREUM.loader_config={accountID:"1486608",trustKey:"1523898",agentID:"794187897",licenseKey:"6ce79480f5",applicationID:"794187897"}
+    ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"6ce79480f5",applicationID:"794187897",sa:1}
+  </script>    
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>The Geometer's Sketchpad</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="/lib/dialog-polyfill.css">
+  <link rel="stylesheet" href="/mdl/material.css">
+  <link rel="stylesheet" href="/material-styles.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/init.js"></script>
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <dialog id="license-dialog" class="mdl-dialog license-dialog">
+    <h4 class="mdl-dialog__title">Sketchpad License Agreement</h4>
+    <div class="mdl-dialog__content">
+      <div class="license-text">
+          <h4>DEFINITIONS:</h4>
+          <ul>
+            <li>Key means Key Curriculum Press, Inc., 1150 65th Street, Emeryville, CA 94608, USA.</li>
+            <li>Software means The Geometer’s Sketchpad Version 5 computer program that you received from any source.</li>
+            <li>Documentation means the printed or electronic reference materials and other printed or electronic materials accompanying the Software.</li>
+            <li>Product means Software and Documentation.</li>
+            <li>Use means install, use, access, display, run, or otherwise interact with the Product.</li>
+            <li>License means a Single-User License, a School/Institution License, a Student License, a Student 1-Year License, or any other license as defined by Key from time to time.</li>
+            <li>Licensee means an individual or institution that has legally obtained a License and that is legally able to Use the Product under the terms of that License, or any individual that Uses the Product under a Limited Preview License.</li>
+            <li>License Name means the name given to a License by the Licensee or by Key for the purpose of identifying the License, typically, the name of the school or institution or the name of the individual Licensee, unless Licensee selects to use another identifying name.</li>
+            <li>License Administrator means the person designated by the Licensee to administer the License on behalf of the Licensee.</li>
+            <li>Authorization Code means the unique code delivered to Licensee in conjunction with a License and that enables the Use of the Software under the terms of the License.</li>
+            <li>Preview Mode means the restricted and time-limited state of the Software prior to the registration of the Software via an Authorization Code as required for Use under a License.</li>
+            <li>Limited Preview License means a license to Use the Software in Preview Mode.</li>
+            <li>Order Confirmation or License Confirmation means the printed or electronic copy of the invoice or invoice confirmation record received by a Licensee from Key or from one of Key’s authorized educational dealers or distributors, or any other printed or electronic confirmation of a License received by Licensee from Key or displayed by the Software upon registration.</li>
+            <li>License Term means the period of time associated with a License, if any.</li>
+          </ul>
+         
+          <h4> GRANT OF LICENSE</h4>
+          <p>Key grants the Licensee a limited, non-exclusive license to Use the Product on one or more computers of the Licensee consistent with the conditions set forth below. If a Licensee is found to have violated these conditions of use, then Key may cancel the Licensee’s License and terminate this Agreement. All other rights are expressly reserved by Key.</p>
+          <ul>
+            <li>Single-User Licenses: A Licensee with a Single-User License may Use the Product on up to three personal computers, provided only one copy of the Product is in use at one time.</li>
+            <li>School/Institution Licenses: A Licensee with a School/Institutional License may Use the Software or authorize Use of the Software on the number of physical or virtual computers as in the Order Confirmation or License Confirmation. Use by an instructor on a personal or home computer shall be considered one instance of use under a School/Institutional License.</li>
+            <li> Student Licenses: A student Licensee with a Student License may Use the Product on up to three personal or family-owned computers, provided only one copy of the Product is in use at one time. A student who receives the Product and/or an Authorization Code from their school or educational institution in order to use the Software on a personal or family-owned computer shall be considered a Licensee and shall be bound by the terms of the Student License. A user of a Student License must be a student at an educational institution at the time the license was purchased or obtained.</li>
+          </ul>
+
+          <p>License Term: If a License has a License Term, or if the Order Confirmation or License Confirmation indicates a License Term, Licensee may Use the Software for the specified License Term commencing on the day that the License was issued (the date on which the Authorization Code was generated). Using the Software beyond the License Term or tampering with the software in order to use it beyond the License Term is a violation of this Agreement.</p>
+          <p>GRANT OF LIMITED PREVIEW LICENSE: Key grants each individual who installs the Product on a computer a limited, non-exclusive license to Use the Product in Preview Mode on the computer on which it is installed.</p>
+          <p>VALIDATION OF LICENSE: Licensee must register the Product on a computer with a valid License Name and Authorization Code in order to unlock the full set of Product features. On launch, the Product may communicate via the Internet with a license server maintained by Key for the purpose of validating the License. That communication contains the License Name and Authorization Code associated with the License as well as relevant information regarding the computers on which the License is registered and used. In order to assist License Administrators in troubleshooting registration problems should they arise, for School/Institution Licenses and Special Licenses, the communication includes each computer’s Media Access Control (MAC) address, other computer-specific information, and Internet Protocol (IP) address. To protect the privacy of Licensees with a Single-User License or a Student License, all information identifying the specific computer on which Sketchpad is used is scrambled in such a way as to produce a unique signature while ensuring privacy. Key will use this information only in order to verify the validity of a License, assist Licensees with technical problems, and to improve the Product. This information will not be shared with parties other than the Licensee’s designated License Administrator and those charged with maintaining the Product and validating and administering Product Licenses.</p>
+          <p>LIMITATIONS ON USE: The Product is licensed as a single product and its component parts may not be separated for use on more than the number of computers set out in the License and/or as stated in the Order Confirmation or License Confirmation. The rights granted hereunder are personal to the Licensee. Neither the Product nor the rights granted hereunder may be resold, sub-licensed, assigned, leased, lent, or rented, whether for value or otherwise, except by Key pre-approved resellers or as noted in the terms of this Agreement. The License Name and Authorization Code associated with the License may not be posted for public access and use, including but not limited to Internet websites. The Product shall not be Used as part of a time-share or service bureau arrangement. The Product may not be modified, reverse engineered, decompiled, or disassembled. The proprietary rights legends contained on and in the Product shall not be removed or obscured.</p>
+          <p>ASSIGNMENT OF USE BY SCHOOLS: Schools or educational institutions that purchase either a School/Institution License or a Student Home-Use License may assign or sell a sub-license in such Product for use by an instructor or a student enrolled in the school or educational institution. For the purposes of this License, such a faculty member or student is considered a Licensee subject to all of the conditions on Use of the Product as the original Licensee.</p>
+          <p>REPRESENTATIONS OF LICENSEE: The Licensee represents that it has obtained all necessary consent and authority for the importation and Use of the Product in the jurisdiction in which the Licensee intends to Use the Product.</p>
+          <p>INTELLECTUAL PROPERTY RIGHTS: Key and/or the rights holders named in the Product are the owners of and retain title to all proprietary and intellectual property rights in and to the Product, including copyrights, trade secrets, trademarks, and know-how protected both by United States and Canadian copyright laws, and under the provisions of international treaties. Copying of the Product, other than as explicitly provided herein, constitutes an infringement of the rights holders’ intellectual property rights. Licensee acknowledges the foregoing and agrees that it has no right, title or interest in the Product, except as specifically set forth herein, and that the Licensee has no rights in any trademarks identified as belonging to the rights holders.</p>
+          <p>SUPPORT SERVICES: Key may provide the Licensee with support services related to the Product (“Support Services”). Use of Support Services is governed by Key’s policies and programs described in the user software reference manual, in online documentation, and/or in other Key-provided materials. Any supplemental software provided to the Licensee as part of the Support Services shall be considered part of the Product and subject to the provisions of this Agreement. In the event that the Licensee provides technical information to Key pursuant to the delivery of Support Services, Key may use this information for its business purposes, including Product support and development.</p>
+          <p>TERMINATION: Without prejudice to any other rights, Key may terminate this Agreement if the Licensee fails to comply with the terms and conditions hereof. In such event, the Licensee agrees to remove all copies of the Product from any computers on which they were installed and destroy all such copies.</p>
+          <p>LIMITED WARRANTY: THE PRODUCT IS PROVIDED ‘AS IS’ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO THE PRODUCT, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU.</p>
+          <p>LIMITATION OF LIABILITY: IN THE EVENT THE EXCLUSION OF IMPLIED WARRANTIES DOES NOT APPLY AND IN THE EVENT OF A BREACH OF SUCH WARRANTIES, KEY’S AND ITS DEALERS’ AND DISTRIBUTORS’ ENTIRE LIABILITY AND YOUR EXCLUSIVE REMEDY SHALL BE, AT KEY’S OPTION, EITHER (A) RETURN OF THE PRICE PAID, IF ANY; OR (B) REPAIR OR REPLACEMENT OF THE PRODUCT RETURNED TO KEY WITH A PURCHASE RECEIPT. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL KEY OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE PRODUCT OR THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF KEY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. AS SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY, THE ABOVE LIMITATION MAY NOT APPLY IN CERTAIN JURISDICTIONS.</p>
+          <p>ENTIRE AGREEMENT: The Licensee agrees that this Agreement is the complete and sole statement of the agreement between Licensee, Key, and Key’s distributors and dealers, and supersedes both all representations made in respect of the Product and all other agreements (whether written or oral) relating to the subject matter of this Agreement.</p>
+          <p>PARTIAL ILLEGALITY: If any provisions of this Agreement shall be construed to be illegal or invalid, it shall not affect the legality or validity of any other provision thereof, and the illegal or invalid provisions shall be deemed stricken and deleted herefrom to the same extent and effect as if never incorporated herein, but all other provisions hereof shall continue in full force and effect.</p>
+          <p>APPLICABLE LAWS: The rights and obligations of the parties under this Agreement shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods. Instead, unless expressly prohibited by local law, the rights and obligations of the parties under this Agreement shall be governed by the State of California, and the laws of the United States applicable therein.</p>
+          
+          <p>Key Curriculum Press 1150 65th Street Emeryville, CA 94608 Phone: 510-595-7000 Fax: 510-595-7040 Web: www.keypress.com</p>
+        </div>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button decline">Decline</button>
+      <button type="button" class="mdl-button accept">Accept</button>
+    </div>
+  </dialog>
+  <dialog id="license-dialog-nlc" class="mdl-dialog license-dialog">
+    <h4 class="mdl-dialog__title">Sketchpad License Agreement</h4>
+    <div class="mdl-dialog__content">
+      <div class="license-text">
+          <h4>DEFINITIONS:</h4>
+          <ul>
+            <li>Key means Key Curriculum Press, Inc., 1150 65th Street, Emeryville, CA 94608, USA.</li>
+            <li>Software means The Geometer’s Sketchpad Version 5 computer program that you received from any source.</li>
+            <li>Documentation means the printed or electronic reference materials and other printed or electronic materials accompanying the Software.</li>
+            <li>Product means Software and Documentation.</li>
+            <li>Use means install, use, access, display, run, or otherwise interact with the Product.</li>
+            <li>License means a Single-User License, a School/Institution License, a Student License, a Student 1-Year License, or any other license as defined by Key from time to time.</li>
+            <li>Licensee means an individual or institution that has legally obtained a License and that is legally able to Use the Product under the terms of that License, or any individual that Uses the Product under a Limited Preview License.</li>
+            <li>License Name means the name given to a License by the Licensee or by Key for the purpose of identifying the License, typically, the name of the school or institution or the name of the individual Licensee, unless Licensee selects to use another identifying name.</li>
+            <li>License Administrator means the person designated by the Licensee to administer the License on behalf of the Licensee.</li>
+            <li>Authorization Code means the unique code delivered to Licensee in conjunction with a License and that enables the Use of the Software under the terms of the License.</li>
+            <li>Preview Mode means the restricted and time-limited state of the Software prior to the registration of the Software via an Authorization Code as required for Use under a License.</li>
+            <li>Limited Preview License means a license to Use the Software in Preview Mode.</li>
+            <li>Order Confirmation or License Confirmation means the printed or electronic copy of the invoice or invoice confirmation record received by a Licensee from Key or from one of Key’s authorized educational dealers or distributors, or any other printed or electronic confirmation of a License received by Licensee from Key or displayed by the Software upon registration.</li>
+            <li>License Term means the period of time associated with a License, if any.</li>
+          </ul>
+         
+          <h4> GRANT OF LICENSE</h4>
+          <p>Key grants the Licensee a limited, non-exclusive license to Use the Product on one or more computers of the Licensee consistent with the conditions set forth below. If a Licensee is found to have violated these conditions of use, then Key may cancel the Licensee’s License and terminate this Agreement. All other rights are expressly reserved by Key.</p>
+          <ul>
+            <li>Single-User Licenses: A Licensee with a Single-User License may Use the Product on up to three personal computers, provided only one copy of the Product is in use at one time.</li>
+            <li>School/Institution Licenses: A Licensee with a School/Institutional License may Use the Software or authorize Use of the Software on the number of physical or virtual computers as in the Order Confirmation or License Confirmation. Use by an instructor on a personal or home computer shall be considered one instance of use under a School/Institutional License.</li>
+            <li> Student Licenses: A student Licensee with a Student License may Use the Product on up to three personal or family-owned computers, provided only one copy of the Product is in use at one time. A student who receives the Product and/or an Authorization Code from their school or educational institution in order to use the Software on a personal or family-owned computer shall be considered a Licensee and shall be bound by the terms of the Student License. A user of a Student License must be a student at an educational institution at the time the license was purchased or obtained.</li>
+          </ul>
+
+          <p>License Term: If a License has a License Term, or if the Order Confirmation or License Confirmation indicates a License Term, Licensee may Use the Software for the specified License Term commencing on the day that the License was issued (the date on which the Authorization Code was generated). Using the Software beyond the License Term or tampering with the software in order to use it beyond the License Term is a violation of this Agreement.</p>
+          <p>GRANT OF LIMITED PREVIEW LICENSE: Key grants each individual who installs the Product on a computer a limited, non-exclusive license to Use the Product in Preview Mode on the computer on which it is installed.</p>
+          <p>VALIDATION OF LICENSE: Licensee must register the Product on a computer with a valid License Name and Authorization Code in order to unlock the full set of Product features. On launch, the Product may communicate via the Internet with a license server maintained by Key for the purpose of validating the License. That communication contains the License Name and Authorization Code associated with the License as well as relevant information regarding the computers on which the License is registered and used. In order to assist License Administrators in troubleshooting registration problems should they arise, for School/Institution Licenses and Special Licenses, the communication includes each computer’s Media Access Control (MAC) address, other computer-specific information, and Internet Protocol (IP) address. To protect the privacy of Licensees with a Single-User License or a Student License, all information identifying the specific computer on which Sketchpad is used is scrambled in such a way as to produce a unique signature while ensuring privacy. Key will use this information only in order to verify the validity of a License, assist Licensees with technical problems, and to improve the Product. This information will not be shared with parties other than the Licensee’s designated License Administrator and those charged with maintaining the Product and validating and administering Product Licenses.</p>
+          <p>LIMITATIONS ON USE: The Product is licensed as a single product and its component parts may not be separated for use on more than the number of computers set out in the License and/or as stated in the Order Confirmation or License Confirmation. The rights granted hereunder are personal to the Licensee. Neither the Product nor the rights granted hereunder may be resold, sub-licensed, assigned, leased, lent, or rented, whether for value or otherwise, except by Key pre-approved resellers or as noted in the terms of this Agreement. The License Name and Authorization Code associated with the License may not be posted for public access and use, including but not limited to Internet websites. The Product shall not be Used as part of a time-share or service bureau arrangement. The Product may not be modified, reverse engineered, decompiled, or disassembled. The proprietary rights legends contained on and in the Product shall not be removed or obscured.</p>
+          <p>ASSIGNMENT OF USE BY SCHOOLS: Schools or educational institutions that purchase either a School/Institution License or a Student Home-Use License may assign or sell a sub-license in such Product for use by an instructor or a student enrolled in the school or educational institution. For the purposes of this License, such a faculty member or student is considered a Licensee subject to all of the conditions on Use of the Product as the original Licensee.</p>
+          <p>REPRESENTATIONS OF LICENSEE: The Licensee represents that it has obtained all necessary consent and authority for the importation and Use of the Product in the jurisdiction in which the Licensee intends to Use the Product.</p>
+          <p>INTELLECTUAL PROPERTY RIGHTS: Key and/or the rights holders named in the Product are the owners of and retain title to all proprietary and intellectual property rights in and to the Product, including copyrights, trade secrets, trademarks, and know-how protected both by United States and Canadian copyright laws, and under the provisions of international treaties. Copying of the Product, other than as explicitly provided herein, constitutes an infringement of the rights holders’ intellectual property rights. Licensee acknowledges the foregoing and agrees that it has no right, title or interest in the Product, except as specifically set forth herein, and that the Licensee has no rights in any trademarks identified as belonging to the rights holders.</p>
+          <p>SUPPORT SERVICES: Key may provide the Licensee with support services related to the Product (“Support Services”). Use of Support Services is governed by Key’s policies and programs described in the user software reference manual, in online documentation, and/or in other Key-provided materials. Any supplemental software provided to the Licensee as part of the Support Services shall be considered part of the Product and subject to the provisions of this Agreement. In the event that the Licensee provides technical information to Key pursuant to the delivery of Support Services, Key may use this information for its business purposes, including Product support and development.</p>
+          <p>TERMINATION: Without prejudice to any other rights, Key may terminate this Agreement if the Licensee fails to comply with the terms and conditions hereof. In such event, the Licensee agrees to remove all copies of the Product from any computers on which they were installed and destroy all such copies.</p>
+          <p>LIMITED WARRANTY: THE PRODUCT IS PROVIDED ‘AS IS’ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO THE PRODUCT, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU.</p>
+          <p>LIMITATION OF LIABILITY: IN THE EVENT THE EXCLUSION OF IMPLIED WARRANTIES DOES NOT APPLY AND IN THE EVENT OF A BREACH OF SUCH WARRANTIES, KEY’S AND ITS DEALERS’ AND DISTRIBUTORS’ ENTIRE LIABILITY AND YOUR EXCLUSIVE REMEDY SHALL BE, AT KEY’S OPTION, EITHER (A) RETURN OF THE PRICE PAID, IF ANY; OR (B) REPAIR OR REPLACEMENT OF THE PRODUCT RETURNED TO KEY WITH A PURCHASE RECEIPT. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL KEY OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE PRODUCT OR THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF KEY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. AS SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY, THE ABOVE LIMITATION MAY NOT APPLY IN CERTAIN JURISDICTIONS.</p>
+          <p>ENTIRE AGREEMENT: The Licensee agrees that this Agreement is the complete and sole statement of the agreement between Licensee, Key, and Key’s distributors and dealers, and supersedes both all representations made in respect of the Product and all other agreements (whether written or oral) relating to the subject matter of this Agreement.</p>
+          <p>PARTIAL ILLEGALITY: If any provisions of this Agreement shall be construed to be illegal or invalid, it shall not affect the legality or validity of any other provision thereof, and the illegal or invalid provisions shall be deemed stricken and deleted herefrom to the same extent and effect as if never incorporated herein, but all other provisions hereof shall continue in full force and effect.</p>
+          <p>APPLICABLE LAWS: The rights and obligations of the parties under this Agreement shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods. Instead, unless expressly prohibited by local law, the rights and obligations of the parties under this Agreement shall be governed by the State of California, and the laws of the United States applicable therein.</p>
+          
+          <p>Key Curriculum Press 1150 65th Street Emeryville, CA 94608 Phone: 510-595-7000 Fax: 510-595-7040 Web: www.keypress.com</p>
+        </div>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button decline">Decline</button>
+      <button type="button" class="mdl-button accept">Accept</button>
+    </div>
+  </dialog>
+  <script id="item-template" type="x-tmpl-mustache">
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/{{image}}">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>{{{title}}}</h4>
+        <p>{{{body}}}</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+          href="{{link}}">
+          {{linktitle}}
+        </a>
+      </div>
+    </div>
+  </script>
+  <div class="mdl-layout__container has-scrolling-header"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-tabs is-upgraded" data-upgraded=",MaterialLayout">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row large-header">
+        <img src="/images/logo-retina.png">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar-container"><div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-left-button"><i class="material-icons">chevron_left</i></div><div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-js-ripple-effect--ignore-events" data-upgraded=",MaterialRipple">
+        <a href="#overview" class="mdl-layout__tab is-active download">Download<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+        <a href="#activities" class="mdl-layout__tab">Free Activities<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+        <a href="#tutorials" class="mdl-layout__tab">Online Tutorials<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+       <!-- <a href="#other" class="mdl-layout__tab">Other Resources</a> -->
+      </div><div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button"><i class="material-icons">chevron_right</i></div></div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="mdl-layout__tab-panel is-active" id="overview">
+        <section id="license-parent" class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+            <img src="/images/GSP5_logo_image-grey_0.jpg">
+          </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+              <h4>The Geometer's Sketchpad Version 5.06</h4>
+              <p><em>The Geometer’s Sketchpad</em>® is the world’s leading software for teaching mathematics.
+                Sketchpad® gives students at all levels—from third grade through college—a tangible, visual way to learn
+                mathematics that increases their engagement, understanding, and achievement. Make math more meaningful
+                and memorable using Sketchpad.
+              </p>
+              <button id="show-dialog" type="button" class="lc-only mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent license-dialog-button" data-dialog="license-dialog" data-parent="license-parent" data-upgraded=",MaterialButton,MaterialRipple">
+                Review License to Download
+              <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+              <button id="show-dialog" type="button" class="nlc-only mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent license-dialog-button" data-dialog="license-dialog-nlc" data-parent="license-parent" data-upgraded=",MaterialButton,MaterialRipple">
+                Review License to Download
+              <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+              <div class="lc-only license-content section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span><a href="https://sketchpad.keycurriculum.com/key-s3/gsp5/InstallSketchpad.zip">Windows Installer</a></span>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span><a href="https://sketchpad.keycurriculum.com/key-s3/gsp5/GSP5.dmg">Mac Installer</a></span>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <span><a href="https://sketchpad.keycurriculum.com/key-s3/gsp5/GSP5_Mac_Win.zip">Combined Mac and Windows Installer</a></span>
+                      </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span><a href="https://sketchpad.keycurriculum.com/key-s3/gsp5/GSP5-04.dmg">Mac PowerPC (Version 5.04)</a></span>
+                    </span>
+                  </li>           
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span><a href="https://sketchpad.keycurriculum.com/key-s3/gsp5/GSP5_NetworkInstallation.zip">Network Install
+                          Instructions</a></span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="nlc-only license-content section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span><a href="./files/InstallSketchpad.zip">Windows Installer</a></span>
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span><a href="./files/GSP5.dmg">Mac Installer</a></span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="mdl-layout__tab-panel" id="tutorials">
+        
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_1ConstrTri.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Construct isosceles and equilateral triangles, gain familiarity with <em>Sketchpad's</em> tools, and learn how to change the size and color of objects.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/ConstructingTriangles.htm" data-upgraded=",MaterialButton">
+          Go to Constructing Triangles
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_2PropShap.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Construct right triangles and parallelograms, create a multi-page sketch, use the drag test, and analyze constructions in a sketch.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/PropertiesShapes.htm" data-upgraded=",MaterialButton">
+          Go to Properties of Shapes
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_3AnglesTri.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Measure lengths and angles and use the measurements in calculations, create angle marks, and communicate results using Hot Text®</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/AnglesTriangle.htm" data-upgraded=",MaterialButton">
+          Go to Angles in a Triangle
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_4PerimArea.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Collect measurement data in a table and plot them in a graph, adjust the scale of axes, measure slope, and plot a function to model data.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/PerimeterArea.htm" data-upgraded=",MaterialButton">
+          Go to Perimeter and Area
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_5DynAlg.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Plot a functional relationship and dynamically vary the input value, trace a point, create and animate a parameter, and graph a family of functions.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/DynamicAlgebra.htm" data-upgraded=",MaterialButton">
+          Go to Dynamic Algebra
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_6RotSym.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Create a moving kaleidoscope by constructing concentric circles, attaching a picture and rotating it, and building an animation button.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/RotationsSymmetry.htm" data-upgraded=",MaterialButton">
+          Go to Rotations and Symmetry
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_7TransRef.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Translate a picture by a marked vector, reflect a picture over a line, and then create and apply a custom transformation.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/TranslationsReflections.htm" data-upgraded=",MaterialButton">
+          Go to Translations and Reflections
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_8ConstSqua.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Construct a square using several different methods, create a Hide/Show button, and create and save a custom tool.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/SquareConstructions.htm" data-upgraded=",MaterialButton">
+          Go to Constructing Squares
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_9Pythag.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Work with custom tools, construct an illustration of the Pythagorean theorem and then iterate the construction to create a fractal.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/PythagoreanTheorem.htm" data-upgraded=",MaterialButton">
+          Go to Pythagorean Theorem
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_10TwistShrink.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Rotate a picture by a marked angle, dilate the picture by a marked scale factor, and then create and apply a custom transformation.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/TwistShrink.htm" data-upgraded=",MaterialButton">
+          Go to Twist and Shrink
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_11SineWave.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Define a coordinate system based on a unit circle, use a trigonometric axis, and construct an animation that traces out a sine wave.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/SineWaveTracer.htm" data-upgraded=",MaterialButton">
+          Go to Sine Wave Tracer
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_tutorial_12TraceSlope.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4></h4>
+        <p>Construct a secant line, trace the path of a moving point, create a movement button, and compute and plot the derivative of a function.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="http://learningcenter.dynamicgeometry.com/TracingSlopeFunction.htm" data-upgraded=",MaterialButton">
+          Go to Tracing the Slope Function
+        </a>
+      </div>
+    </div>
+              </section>
+        
+        <script class="template" data-target="tutorials-target" type="x-tmpl-mustache">
+          {{#tutorials}}
+            <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                {{ >item}}
+            </section>
+          {{/tutorials}}
+        </script>
+      </div>
+
+      <div class="mdl-layout__tab-panel tab-has-filter" id="activities">
+        <div class="content-filter">
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-checked is-upgraded" for="option2" data-upgraded=",MaterialRadio,MaterialRipple">
+            <input type="radio" id="option2" name="filter" value="grades35" class="mdl-radio__button" checked="">
+            <span class="mdl-radio__label">Grades 3-5</span>
+          <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span><span class="mdl-radio__ripple-container mdl-js-ripple-effect mdl-ripple--center" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effec is-upgraded" for="option3" data-upgraded=",MaterialRadio">
+            <input type="radio" id="option3" name="filter" value="grades68" class="mdl-radio__button">
+            <span class="mdl-radio__label">Grades 6-8</span>
+          <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span></label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effec is-upgraded" for="option4" data-upgraded=",MaterialRadio">
+            <input type="radio" id="option4" name="filter" value="algebra" class="mdl-radio__button">
+            <span class="mdl-radio__label">Algebra</span>
+          <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span></label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effec is-upgraded" for="option5" data-upgraded=",MaterialRadio">
+            <input type="radio" id="option5" name="filter" value="geometry" class="mdl-radio__button">
+            <span class="mdl-radio__label">Geometry</span>
+          <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span></label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effec is-upgraded" for="option6" data-upgraded=",MaterialRadio">
+            <input type="radio" id="option6" name="filter" value="precalculus" class="mdl-radio__button">
+            <span class="mdl-radio__label">Precalculus</span>
+          <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span></label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effec is-upgraded" for="option7" data-upgraded=",MaterialRadio">
+            <input type="radio" id="option7" name="filter" value="calculus" class="mdl-radio__button">
+            <span class="mdl-radio__label">Calculus</span>
+          <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span></label>
+        </div>
+        <div class="content-parent grades35">
+          
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_jumpalong.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Jump Along: Factor Families on the Number Line</h4>
+        <p>Students investigate factors from a visual perspective as they find all of the ways a rabbit can take equal-sized jumps to reach a target number. Students write multiplication sentences to represent the rabbit's jumps, and uncover the commutative property of multiplication. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/JumpAlong.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_BugsInGroups.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Bugs in Groups: Dividing into Groups of Equal Size</h4>
+        <p>Students explore and connect part-whole relationships in multiplication and division as they order a collection of bugs into groups of equal size, and consider the number of groups and the number of bugs left over. Concepts of factors, remainders, and the commutative property of multiplication all arise as students work with the model. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/BugsInGroups.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_DividingAndSubdividing.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Dividing and Subdividing: Fractions on the Number Line</h4>
+        <p>Students locate fractions that are less than 1 along a number line using virtual tools and a strategy of dividing and subdividing. The challenge is to find more than one way to locate a given fraction.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/DividingAndSubdividing.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_PlaceValueCounter.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Place-Value Counter: Get to the Target</h4>
+        <p>Students use their knowledge of place value and their intuitive notions of rounding to operate an interactive numerical counter that works like an odometer. Using buttons that increase or decrease the value of the counter by one, ten, one hundred, one thousand, or more, students work to reach given target values in as few button presses as possible.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/Place-ValueCounter.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ZoomingDecimals.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Zooming Decimals: Precision and Place Value</h4>
+        <p>Students zoom in on a number line to reveal scales calibrated to tenths, hundredths, thousandths, and ten-thousandths. They reason about decimals and place value as they name with increasing precision the location of a point on the number line.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ZoomingDecimals.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_RightOrLeft.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Right or Left: Adding and Subtracting Integers</h4>
+        <p>Students add and subtract integers using animations on a number line and understand that subtracting an integer is the same as adding its opposite.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/RightOrLeft.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_CropAndReflect.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Crop and Reflect: Mirror Symmetry</h4>
+        <p>Students create mirror symmetry lines for a variety of pictures, including the Eiffel Tower, a butterfly, letters of the alphabet, and a human face. Optionally, they can import a picture of their own face into <em>Sketchpad</em> and explore its mirror symmetry.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/CropAndReflect.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MondrianInMotion.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Mondrian in Motion: Parallel and Perpendicular Lines</h4>
+        <p>Students construct parallel and perpendicular lines to create virtual artwork in the style of the painter Piet Mondrian. They also explore the properties of two parallelograms, the square and rectangle. As students manipulate their constructions, they change the orientation of the lines and note that parallel or perpendicular lines need not be oriented vertically and horizontally.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MondrianInMotion.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MakingAKaleidoscope.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Making a Kaleidoscope: Exploring Rotations</h4>
+        <p>Students create virtual kaleidoscopes by rotating quadrilaterals and then animating them. Students learn that rotated figures keep their size and shape; only their orientation changes. Students make a variety of kaleidoscopes, each with a different number of quadrilaterals and amount of rotation. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MakingAKaleidoscope.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades35 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_CirclesAndSquares.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Circles and Squares: Two Unknowns</h4>
+        <p>Students use algebraic thinking as they work with addition statements in which the addends are represented by two symbols. By analyzing the information from two or more statements, students deduce the numerical values of the symbols. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/CirclesAndSquares.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_RightOrLeft.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Right or Left: Adding and Subtracting Integers</h4>
+        <p>Students add and subtract integers using animations on a number line, and understand that subtracting an integer is the same as adding its opposite. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/RightOrLeft.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MakingMeans.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Making Means: Data Distribution and Averages</h4>
+        <p>Students drag data points on a number line and observe how the mean of their values changes. Students can add, remove, and drag the data points to different locations to create examples of data sets with a given mean. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MakingMeans.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MeanMeetsTheMedian.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Mean Meets the Median: Measures of Central Tendency</h4>
+        <p>Students drag a fixed number of data points to different locations on a number line and observe the effects on the median and the mean. Students can explore the difference in the median that occurs between having an even and an odd number of data points. The emphasis of the activity is on understanding how the mean and median behave depending both on how the data is distributed and on the number of data points. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MeanMeetsTheMedian.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MakingAKaleidoscope.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Making a Kaleidoscope: Exploring Rotations</h4>
+        <p>Students create virtual kaleidoscopes by rotating quadrilaterals and then animating them. Students learn that rotated figures keep their size and shape; only their orientation changes. Students make a variety of kaleidoscopes, each with a different number of quadrilaterals and amount of rotation. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MakingAKaleidoscope.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MellowYellow.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Mellow Yellow: Interpreting Graphs</h4>
+        <p>Students interpret linear piecewise time-distance graphs that represent different stories about a character, Mellow Yellow. They decide whether a given graph corresponds to the motions (walking fast, walking slow, stopping, or going backward) described in the story. Students then create stories based on given graphs and create graphs based on given stories. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MellowYellow.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_Hikers.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Hikers: Solving Through Multiple Representations</h4>
+        <p>Students use tables, graphs, and equations to represent and solve a real-world problem about two hikers walking at different speeds in opposite directions along the same trail. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/Hikers.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_QuadrilateralPretenders.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Quadrilateral Pretenders: Classifying Quadrilaterals</h4>
+        <p>Students drag the edges and vertices of various <em>Sketchpad</em> quadrilaterals to discover which are constructed to have specific characteristics. As they make distinctions on the basis of these characteristics, they deepen their understanding of the definitions of various quadrilaterals, their properties, and the relationships among them.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/QuadrilateralPretenders.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ParallelPairs.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Parallel Pairs: Parallelogram and Triangle Area</h4>
+        <p>Students explore the relationship between the areas of parallelograms and triangles using a process called shearing. Students discover that shearing does not affect the area, but changing the lengths of the height and base does. Based on their observations, students write formulas for the area of a parallelogram and the area of a triangle. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ParallelPairs.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all grades68 section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_BalancingWithBalloons.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Balancing with Balloons: Solving Equations with Negatives</h4>
+        <p>Students use a <em>Sketchpad</em> pan balance model to solve a sequence of equations with positive numbers and variables (represented by weights), and negative numbers and variables (represented by balloons). As the problems increase in difficulty, students go from manipulating the pan balance to solving equations independent of the balance. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/BalancingWithBalloons.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_TilingInAFrame.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Tiling in a Frame: Multiplying Polynomials</h4>
+        <p>Students use <em>Sketchpad</em> algebra tiles to multiply polynomials. Using the polynomial factors as dimensions, they build rectangles out of tiles. The area of the completed rectangle represents the product. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/TilingInAFrame.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_PointsLiningUpInThePlane.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Points Lining Up in the Plane</h4>
+        <p>Students are informally and experientially introduced to the relationship between descriptions of coordinate patterns and graphs in the Cartesian plane. Too often students don't really understand the connection between an equation and its graph. This activity fosters the understanding that graphs depict the set of points whose coordinates satisfy an equation. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/PointsLiningUpInThePlane.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_TheSlopeGame.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>The Slope Game</h4>
+        <p>Students acquire an intuitive feel for slope as they construct and play a game in which one player rearranges lines on the screen and the other player tries to match each line with its slope measurement. The game can also be modified to be played by just one person. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/TheSlopeGame.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MellowYellow.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Mellow Yellow: Interpreting Graphs</h4>
+        <p>Students interpret linear piecewise time-distance graphs that represent different stories about a character, Mellow Yellow. They decide whether a given graph corresponds to the motions (walking fast, walking slow, stopping, or going backward) described in the story. Students then create stories based on given graphs and create graphs based on given stories. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MellowYellow.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_Hikers.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Hikers: Solving Through Multiple Representations</h4>
+        <p>Students use tables, graphs, and equations to represent and solve a real-world problem about two hikers walking at different speeds in opposite directions along the same trail. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/Hikers.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_BalancingWithBalloons.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Balancing with Balloons: Solving Equations with Negatives</h4>
+        <p>Students use a <em>Sketchpad</em> pan balance model to solve a sequence of equations with positive numbers and variables (represented by weights), and negative numbers and variables (represented by balloons). As the problems increase in difficulty, students go from manipulating the pan balance to solving equations independent of the balance. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/BalancingWithBalloons.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_IntroducingDynagraphs.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Introducing Dynagraphs</h4>
+        <p>Students explore dynagraphs, an alternative to Cartesian graphs, to develop a feel for various types of functional relationships.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/IntroducingDynagraphs.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ParabolasInFactoredForm.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Parabolas in Factored Form</h4>
+        <p>Students plot a quadratic function in factored form, investigate the relationship between the equation and its graph, and use their observations to create functions from various descriptions of their graphs. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ParabolasInFactoredForm.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_QuadraticQuandary.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Quadratic Quandary: Find the Equation of a Parabola</h4>
+        <p>Students convert quadratic functions between standard, vertex, and factored forms. They check their results by changing parameters and comparing the graphs.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/QuadraticQuandary.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all algebra section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ARectangleWithMaximumArea.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>A Rectangle with Maximum Area</h4>
+        <p>Students explore areas of rectangles whose perimeter is fixed. They make a conjecture about what type of rectangle has the most area for a given perimeter and check their conjecture by plotting the side length and area of the rectangle on the coordinate plane.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ARectangleWithMaximumArea.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_TessellationsUseRotations.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Tessellations That Use Rotations</h4>
+        <p>Students construct an irregularly shaped tile based on an equilateral triangle, and then use rotation to tessellate the plane with it.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/TessellationsUseRotations.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MediansInATriangle.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Medians in a Triangle</h4>
+        <p>Students construct a triangle and its medians. They observe the concurrence of the medians, measure distances to observe how the centroid divides each median, and make a custom tool for constructing the centroid of a given triangle. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MediansInATriangle.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_QuadrilateralPretenders.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Quadrilateral Pretenders: Classifying Quadrilaterals</h4>
+        <p>Students drag the edges and vertices of various <em>Sketchpad</em> quadrilaterals to discover which are constructed to have specific characteristics. As they make distinctions on the basis of these characteristics, they deepen their understanding of the definitions of various quadrilaterals, their properties, and the relationships among them. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/QuadrilateralPretenders.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MeetTheParallelogram.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Meet the Parallelogram: Properties of Parallelograms</h4>
+        <p>Students construct a parallelogram, measure the side lengths and angles, and observe that opposite sides are congruent, opposite angles are congruent, and consecutive angles are supplementary. Then they construct the diagonals, measure the distances from the vertices to the point of intersection, and discover that the diagonals bisect each other.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MeetTheParallelogram.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_MidpointQuadrilaterals.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Midpoint Quadrilaterals</h4>
+        <p>Students connect the midpoints of a quadrilateral to construct a midpoint quadrilateral. They discover that the midpoint quadrilateral is a parallelogram and prove this conjecture. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/MidpointQuadrilaterals.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ExteriorAnglesInAPolygon.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Exterior Angles in a Polygon</h4>
+        <p>Students construct a convex polygon and make a conjecture about the sum of the measures of its exterior angles. They dilate the polygon to approximately a single point to create a visual proof by dilation that the sum of the measures of the exterior angles of a convex polygon is what they conjectured. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ExteriorAnglesInAPolygon.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ChordsInACircle.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Chords in a Circle</h4>
+        <p>Students explore the properties of chords in a circle. They construct a chord and its perpendicular bisector and discover a relationship between the chord's length and its distance to the center of the circle. Then they investigate and write a conjecture about congruent chords in a circle.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ChordsInACircle.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ParallelPairs.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Parallel Pairs: Parallelogram and Triangle Area</h4>
+        <p>Students explore the relationship between the areas of parallelograms and triangles using a process called shearing. Students discover that shearing does not affect the area, but changing the lengths of the height and base does. Based on their observations, students write formulas for the area of a parallelogram and the area of a triangle.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ParallelPairs.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_PyramidDissection.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Pyramid Dissection: Surface Area</h4>
+        <p>Students find the surface area of a regular pyramid (a pyramid with a regular polygon base) using a net that appears along a three-dimensional view of the pyramid. They ensure the generality of their results by changing the dimensions and the number of faces of the base. By increasing the number of faces, students extend their results to the surface area of a cone, giving them an informal opportunity to think about limits.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/PyramidDissection.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all geometry section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_VisualDemoPythagTheorem.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Visual Demonstration of the Pythagorean Theorem</h4>
+        <p>Students investigate a visual demonstration of the Pythagorean theorem based on Euclid's proof. They use shearing to modify the squares on the sides of a right triangle to create congruent shapes without changing the areas of the original squares, and then explain why these shapes demonstrate the Pythagorean theorem.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/VisualDemoPythagTheorem.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all precalculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_ASineWaveTracer.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>A Sine Wave Tracer</h4>
+        <p>Students use points on perpendiculars, parallels, and a circle to construct an animation that traces out a sine wave. They explore the sine wave by dragging various points in their construction. Finally, students explore the relationship between a unit circle, its circumference, and the trace of a sine wave.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/ASineWaveTracer.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all precalculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_UnitCircleRightTriangleFunc.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Unit Circle and Right Triangle Functions</h4>
+        <p>Students explore the relationships between the unit circle definitions of trigonometric functions and the right triangle definitions. They then combine the two models and examine the similarities and differences that emerge.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/UnitCircleRightTriangleFunc.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all precalculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_PattyPaperParabolas.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Patty Paper Parabolas</h4>
+        <p>Students fold a piece of paper so that the creases outline the shape of a parabola. They compare their parabolas with those of other students to see how the shape depends on the positions of the focus and directrix. Students then do the same construction with <em>Sketchpad</em> and explore how moving the focus or directrix changes the shape of the folds. Finally students are challenged to construct the parabola itself (not just the folds) and to prove that their construction matches the geometric locus definition of a parabola.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/PattyPaperParabolas.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all precalculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_AnalyticConics.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Analytic Conics</h4>
+        <p>Students explore conic sections analytically. They change the parameters in the equation of a conic in standard position and observe changes in the graph, and then explore the general equation of a conic section.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/AnalyticConics.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all precalculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_IntroductionToVectors.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Introduction to Vectors: Walking Rex</h4>
+        <p>Students learn two ways to describe vectors, how to convert between the two descriptions, and how to move vectors around the plane to explore how vectors are independent of specific positions.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/IntroductionToVectors.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all precalculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_CartesianAndPolarGraphs.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Cartesian Graphs and Polar Graphs</h4>
+        <p>Students compare rectangular graphs and polar graphs for functions in the form <em>y</em> = <em>a</em> sin(<em>bx</em>) and <em>r</em> = <em>a</em> sin(<em>bθ</em>). They find connections between the two types of graphing when they analyze how the period and amplitude of a Cartesian graph correlate with features of the corresponding polar graph. They make predictions as to how changing <em>a</em> and <em>b</em> will affect the polar graph and then check their predictions.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/CartesianAndPolarGraphs.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all calculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_InstantaneousRate.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Instantaneous Rate</h4>
+        <p>Students learn about instantaneous rates and derivatives by investigating the rate of change of a door’s angle as it closes. They look at the graph of the angle as a function of time, calculate the average rate of change between two points on the graph, make the time difference between the points smaller and smaller, and discover that the average rate (the slope of the secant) approaches a limiting value: the derivative.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/InstantaneousRate.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all calculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_PlottingTheDerivative.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Plotting the Derivative</h4>
+        <p>Students approximate the derivative by constructing a secant line between two points on the graph of a function and graphing the value of the secant's slope. They improve the approximation by moving the points that determine the secant closer together. They edit the original function and practice predicting the shape of the derivative graph from the shape of the function graph.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/PlottingTheDerivative.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all calculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_OneTypeOfIntegral.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>One Type of Integral</h4>
+        <p>Students explore the concept of definite integral by using a velocity graph to estimate the distance a car travels. They count grid squares beneath the graph, and then make the squares smaller to improve the accuracy of their approximation. They use the same method to approximate definite integrals for several different functions.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/OneTypeOfIntegral.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all calculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_TaylorSeries.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Taylor Series</h4>
+        <p>Students approximate the sine function using a Taylor series. They construct one point corresponding to the first partial sum and iterate to find points corresponding to the subsequent terms. Their final result is a graph drawn to any desired depth.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/TaylorSeries.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all calculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_AGeometricApproachToEipi.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>A Geometric Approach to <strong><em>e<sup>iπ</sup></em></strong></h4>
+        <p>Students explore <em>e<sup><i>iπ</i></sup></em>. They first explore the limit of (1+<em>x</em>/<em>n</em>)<sup><em>n</em></sup> for large values of <em>n</em> to find that it approaches <em>e<sup><i>x</i></sup></em>. They then replace <em>x</em> with <em>iπ</em> and use a geometric approach to multiplication on the complex plane to find the limit and evaluate <em>e<sup><i>iπ</i></sup></em>.</p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/AGeometricApproachToEipi.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+            <section class="filtered all calculus section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+      <img src="/images/resources/sketchpad_activity_BarnsleysFractalFern.gif">
+    </header>
+    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card__supporting-text">
+        <h4>Barnsley's Fractal Fern</h4>
+        <p>Students create several functions that transform a point and then iterate the transformation, choosing randomly among the functions, to create a fractal fern and other fractal shapes. </p>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://learningcenter.dynamicgeometry.com/Documents/BarnsleysFractalFern.zip" data-upgraded=",MaterialButton">
+          Download Activity Files (.zip)
+        </a>
+      </div>
+    </div>
+              </section>
+        
+        </div>
+        <script class="template" data-target="activities-target" type="x-tmpl-mustache">
+          {{#activities}}
+            <section class="filtered all {{filters}} section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                {{ >item}}
+            </section>
+          {{/activities}}
+        </script>
+      </div>
+
+<!--
+      <div class="mdl-layout__tab-panel" id="other">
+        <section class="section mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <header
+            class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+            <img src="/images/DN_logo_0.png">
+          </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+              <h4>Dynamic Number</h4>
+              <p>The Dynamic Number project focuses on number, operation, and early algebra and features 70 free
+                Sketchpad activities for grades 2–11.</p>
+              <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                href="http://www.dynamicnumber.org">
+                Browse Dynamic Number
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    -->
+
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">The Geometer's Sketchpad</div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="https://www.mheducation.com/prek-12/contact.html">Technical Support</a></li>
+            <li><a href="https://www.mheducation.com/privacy.html">Privacy &amp; Terms</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div></div>
+  <script src="/lib/dialog-polyfill.js"></script>
+  <script src="/mdl/material.min.js"></script>
+  <script src="/lib/mustache.min.js"></script>
+  <script src="/activities.js"></script>
+  <script src="/tutorials.js"></script>
+  <script src="/main.js"></script>
+
+
+</body></html>

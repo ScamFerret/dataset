@@ -1,0 +1,1263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head>
+<meta http-equiv="Content-Language" content="english">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Classification" content="search engine">
+<meta name="Author" content="Ahibo Portal of south africa, south africa, government, institutions, embassies, tourism, cluture and sport, cuisine">
+<meta name="description" content="Ahibo Portal of south africa, south africa, government, institutions, embassies, tourism, cluture and sport, cuisine, ...">
+<meta name="keywords" content="Ahibo Portal of south africa, afrique du sud, south africa portal, south africa directory, south africa internet directory, south africa internet portal, south africa, south africa embassies, afrique du sud ambassades, south africa newspapers, south africa cuisine, afrique du sud gouvernement, south africa government, south africa institutions, south africa schools, south africa president, south africa education, south africa internet, south africa portal, afrique du sud portail, afrique du sud partis politques, south africa political parties, afrique du sud tourisme, south africa tourism, south africa investment, south africa economy, afrique du sud economie, south africa culture, south africa sport, south africa presse, south africa press, south africa geography, afrique du sud geographie, south africa high commissions, south africa consulate, afrique du sud consulat, south africa colleges, south africa trade, south africa trade and investment, south africa radio, south africa tv, south africa radio and tv">
+<meta name="description" content="Ahibo Portal of south africa, pretoria, south africa, institutions, presidents, embassies, political parties, schools, universities, economy, trade and investment, newspapers, culture and sport, tourism, cuisine, internet ">
+<meta name="copyright" content="© 2006 Ahibo">
+<meta http-equiv="refresh" content="1800">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="organization" content="Ahibo Inc.">
+<meta name="Audience" content="General">
+<meta name="Distribution" content="Global">
+<meta name="expires" content="never">
+<meta name="identifier-url" content="http://southafrica.ahibo.com/">
+<meta name="Page-topic" content="Document">
+<meta name="publisher" content="Ahibo Inc.">
+<meta name="Rating" content="General">
+<meta name="Robots" content="all, index, follow">
+<meta name="subject" content="Ahibo Portal of south africa, pretoria, south africa, institutions, presidents, embassies, political parties, schools, universities, economy, newspapers, tourism, cuisine">
+<meta name="description" content="Ahibo Portal of south africa, pretoria, south africa, institutions, presidents, embassies, political parties, schools, universities, economy, trade and investment, newspapers, culture and sport, tourism, cuisine, internet">
+<meta name="verify-v1" content="vzHKPKilZmIQmcwrklqgVwCrrEpe27WdAnst+UYRQ4c=">
+<link rel="SHORTCUT ICON" href="http://www.ahibo.com/favicon.ico">
+<title>Ahibo Portal of south africa, south africa, government, institutions, embassies, tourism</title>
+<style>
+BODY {
+	SCROLLBAR-FACE-COLOR: #339933; SCROLLBAR-HIGHLIGHT-COLOR: #339933; SCROLLBAR-SHADOW-COLOR: #339933; SCROLLBAR-3DLIGHT-COLOR: #339933; SCROLLBAR-ARROW-COLOR: #339933; SCROLLBAR-TRACK-COLOR: #339933; SCROLLBAR-DARKSHADOW-COLOR: #339933
+}
+</style>
+
+<script language="JavaScript">
+
+<!-- Original:  KK Chan -->
+
+<!-- Begin
+
+var timerID ;
+
+
+
+function tzone(tz, os, ds, cl)
+
+{
+
+	this.ct = new Date(0) ;		// datetime
+
+	this.tz = tz ;		// code
+
+	this.os = os ;		// GMT offset
+
+	this.ds = ds ;		// has daylight savings
+
+	this.cl = cl ;		// font color
+
+}
+
+
+
+function UpdateClocks()
+
+{
+
+	
+
+	var ct = new Array(
+
+		new tzone('Abuja: ', +1, 0, 'lime'),
+
+		new tzone('Addis: ', +3, 0, 'violet'),
+
+		new tzone('Dakar: ', 0, 0, 'cyan'),
+
+		new tzone('Rabbat: ', 0, 0, 'yellow'),
+
+		new tzone('Tripoli: ', +2, 0, '#FFAA00'),
+
+		new tzone('Abidjan: ', 0, 0, 'silver'),
+
+		new tzone('Caire: ', +2, +1, 'pink'),
+
+		new tzone('Jobourg: ', +2, 0, 'red')
+
+	) ;
+
+
+
+	var dt = new Date() ;	// [GMT] time according to machine clock
+
+
+
+	var startDST = new Date(dt.getFullYear(), 3, 1) ;
+
+	while (startDST.getDay() != 0)
+
+		startDST.setDate(startDST.getDate() + 1) ;
+
+
+
+	var endDST = new Date(dt.getFullYear(), 9, 31) ;
+
+	while (endDST.getDay() != 0)
+
+		endDST.setDate(endDST.getDate() - 1) ;
+
+
+
+	var ds_active ;		// DS currently active
+
+	if (startDST < dt && dt < endDST)
+
+		ds_active = 1 ;
+
+	else
+
+		ds_active = 0 ;
+
+
+
+	// Adjust each clock offset if that clock has DS and in DS.
+
+	for(n=0 ; n<ct.length ; n++)
+
+		if (ct[n].ds == 1 && ds_active == 1) ct[n].os++ ;
+
+
+
+	// compensate time zones
+
+	gmdt = new Date() ;
+
+	for (n=0 ; n<ct.length ; n++)
+
+		ct[n].ct = new Date(gmdt.getTime() + ct[n].os * 3600 * 1000) ;
+
+
+
+	document.all.Clock0.innerHTML =
+
+		'<font color="' + ct[0].cl + '">' + ct[0].tz + ClockString(ct[0].ct) + '</font>' ;
+
+
+
+	document.all.Clock1.innerHTML =
+
+		'<font color="' + ct[1].cl + '">' + ct[1].tz + ClockString(ct[1].ct) + '</font>' ;
+
+
+
+	document.all.Clock2.innerHTML =
+
+		'<font color="' + ct[2].cl + '">' + ct[2].tz + ClockString(ct[2].ct) + '</font>' ;
+
+
+
+	document.all.Clock3.innerHTML =
+
+		'<font color="' + ct[3].cl + '">' + ct[3].tz + ClockString(ct[3].ct) + '</font>' ;
+
+
+
+	document.all.Clock4.innerHTML =
+
+		'<font color="' + ct[4].cl + '">' + ct[4].tz + ClockString(ct[4].ct) + '</font>' ;
+
+
+
+	document.all.Clock5.innerHTML =
+
+		'<font color="' + ct[5].cl + '">' + ct[5].tz + ClockString(ct[5].ct) + '</font>' ;
+
+
+
+	document.all.Clock6.innerHTML =
+
+		'<font color="' + ct[6].cl + '">' + ct[6].tz + ClockString(ct[6].ct) + '</font>' ;
+
+
+
+	document.all.Clock7.innerHTML =
+
+		'<font color="' + ct[7].cl + '">' + ct[7].tz + ClockString(ct[7].ct) + '</font>' ;
+
+
+
+	
+
+	timerID = window.setTimeout("UpdateClocks()", 1001) ;
+
+}
+
+
+
+function ClockString(dt)
+
+{
+
+	var stemp;
+
+
+
+	var dt_year = dt.getUTCFullYear() ;
+
+	var dt_month = dt.getUTCMonth() + 1 ;
+
+	var dt_day = dt.getUTCDate() ;
+
+	var dt_hour = dt.getUTCHours() ;
+
+	var dt_minute = dt.getUTCMinutes() ;
+
+	var dt_second = dt.getUTCSeconds() ;
+
+	
+
+	dt_year = dt_year.toString() ;
+
+	if (dt_hour < 10) 
+
+		dt_hour= "0" + dt_hour;
+
+  	else dt_hour = dt_hour
+
+	
+
+	if (dt_minute < 10)
+
+		dt_minute = '0' + dt_minute ;
+
+	
+
+	if (dt_second < 10)
+
+		dt_second = '0' + dt_second ;
+
+
+
+	stemp = dt_month + '/' + dt_day + '/' + dt_year.substr(2,2) ;
+
+	stemp = stemp + ' ' + dt_hour + ":" + dt_minute + ":" + dt_second;
+
+	return stemp ;
+
+}
+
+//  End -->
+
+</script>
+
+<script>
+<!--
+function pop_infos(page)
+{
+  newWindow=open(page,"affich","left=50,top=50,width=600,height=400,resizable=yes,scrollbars=yes");
+  newWindow.focus() ;
+}
+
+//-->
+</script>
+
+<script>
+function listeav()
+{
+  largeur = 200; 
+  hauteur = 120; 
+  l = screen.width / 2 - largeur /2; 
+  h = screen.height / 2 - hauteur / 2;
+newWindow=open("","inscription","width=" + largeur + ",height=" + hauteur +",scrolling=auto,resizable=no,scrollbars=no,left=" + l + ",top=" + h)
+newWindow.focus()
+}
+</script>
+
+<script language="JavaScript">
+
+<!-- Begin
+function checkFields() {
+missinginfo = "";
+
+if ((document.form.email.value == "") || 
+(document.form.email.value.indexOf('@') == -1) || 
+(document.form.email.value.indexOf('.') == -1)) {
+missinginfo += "\n     -   Email";
+}
+if ((document.form.website.value == "") || 
+(document.form.website.value.indexOf("http://") == -1) || 
+(document.form.website.value.indexOf(".") == -1)) {
+missinginfo += "\n     -  Adresse du site web";
+}
+
+
+if (missinginfo != "") {
+missinginfo ="_____________________________\n" +
+"Veuillez compléter les cases suivantes :\n" +
+missinginfo + "\n_____________________________" +
+"\nSVP. Merci!";
+alert(missinginfo);
+return false;
+}
+else return true;
+}
+//  End -->
+</script>
+
+<style type="text/css">
+A:hover {
+	FONT-WEIGHT: bold; COLOR: #ff6600; FONT-STYLE: italic
+}
+.Style1 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+<meta content="MSHTML 6.00.2800.1528" name="GENERATOR"></head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" vlink="#000000" alink="#ffcc00" link="#000000" bgcolor="green" leftmargin="0" topmargin="0" onload="UpdateClocks()" marginheight="0" marginwidth="0">
+<script language="JavaScript" type="text/javascript">
+<!-- 
+function click(){
+if(event.button==2){
+alert("Faites un lien, Make a link!") ;
+}
+}
+document.onmousedown=click
+//-->
+</script>
+<a name="top"></a>
+<div align="left"> 
+  <table cellspacing="0" cellpadding="0" width="760" align="center" bgcolor="#ffffff" border="0">
+    <tbody>
+      <tr> 
+        <td> <div align="center"><a href="http://ahibo.com/index.htm"><img height="86" src="im/0logo_ahibo.gif" width="192" border="0"></a></div></td>
+        <td><div align="center"> 
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="560" height="86">
+              <param name="movie" value="pubhaut.swf">
+              <param name="quality" value="high">
+              <embed src="pubhaut.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="560" height="86"></object>
+          </div></td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="760" border="1" align="center" cellpadding="0" cellspacing="0">
+    <tbody><tr> 
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="36" height="16">
+            <param name="movie" value="text2.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#339933">
+            <param name="scale" value="exactfit">
+            <embed src="text2.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="36" height="16" bgcolor="#339933"> 
+          </object>
+        </div></td>
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="65" height="16">
+            <param name="movie" value="text3.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#339933">
+            <param name="scale" value="exactfit">
+            <embed src="text3.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="65" height="16" bgcolor="#339933"> 
+          </object>
+        </div></td>
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="73" height="19">
+            <param name="movie" value="text8.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#339933">
+            <param name="scale" value="exactfit">
+            <embed src="text8.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="73" height="19" bgcolor="#339933"> 
+          </object>
+        </div></td>
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="167" height="19">
+            <param name="movie" value="text5.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#339933">
+            <param name="scale" value="exactfit">
+            <embed src="text5.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="167" height="19" bgcolor="#339933"> 
+          </object>
+        </div></td>
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="101" height="16">
+            <param name="movie" value="text6.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#339933">
+            <param name="scale" value="exactfit">
+            <embed src="text6.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="101" height="16" bgcolor="#339933"> 
+          </object>
+        </div></td>
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="127" height="16">
+            <param name="movie" value="text7.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#339933">
+            <param name="scale" value="exactfit">
+            <embed src="text7.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="127" height="16" bgcolor="#339933"> 
+          </object>
+        </div></td>
+      <td><div align="center"> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="111" height="16">
+            <param name="movie" value="text4.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#FFFF00">
+            <param name="scale" value="exactfit">
+            <embed src="text4.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="111" height="16" bgcolor="#FFFF00"> 
+          </object>
+        </div></td>
+    </tr>
+  </tbody></table>
+</div>
+<table cellspacing="0" width="760" align="center" border="0">
+  <tbody>
+    <tr style="FONT-SIZE: xx-small; FONT-FAMILY: Verdana, Tahoma, Arial" bgcolor="#000000">
+      <td id="Clock0" width="25%"><font color="lime">Abuja: 4/8/24 07:37:39</font></td>
+      <td id="Clock1" width="25%"><font color="violet">Addis: 4/8/24 09:37:39</font></td>
+      <td id="Clock2" width="25%"><font color="cyan">Dakar: 4/8/24 06:37:39</font></td>
+      <td id="Clock3" width="25%"><font color="yellow">Rabbat: 4/8/24 06:37:39</font></td>
+    </tr>
+    <tr style="FONT-SIZE: xx-small; FONT-FAMILY: Verdana, Tahoma, Arial" bgcolor="#000000">
+      <td id="Clock4" width="25%"><font color="#FFAA00">Tripoli: 4/8/24 08:37:39</font></td>
+      <td id="Clock5" width="25%"><font color="silver">Abidjan: 4/8/24 06:37:39</font></td>
+      <td id="Clock6" width="25%"><font color="pink">Caire: 4/8/24 09:37:39</font></td>
+      <td id="Clock7" width="25%"><font color="red">Jobourg: 4/8/24 08:37:39</font></td>
+    </tr>
+  </tbody>
+</table>
+<table cellspacing="0" cellpadding="10" width="760" align="center" bgcolor="#ffffff" border="3">
+  <tbody>
+    <tr> 
+      <td> <table cellspacing="5" cellpadding="5" width="170" align="left" bgcolor="#339933" border="10">
+          <tbody>
+            <tr> 
+              <td bgcolor="#FFFFFF"> <div align="center"><b><i><em><strong><font face="Arial, Helvetica, sans-serif" color="#ffffff" size="+2"><img src="im/Safrica.gif" alt="Afrique" du="" sud="" width="63" height="42" border="1"></font><font color="#ffffff"> 
+                  </font></strong></em></i></b></div></td>
+            </tr>
+            <tr> 
+              <td><b><a href="http://agenda.ahibo.com"><img height="25" alt="salons, colloques et conférences" src="im/event.gif" width="136" border="1"></a></b></td>
+            </tr>
+            <tr> 
+              <td><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" height="22" width="142" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+                  <param name="movie" value="text1.swf">
+                  <param name="quality" value="high">
+                  <param name="bgcolor" value="#FFFFFF">
+                  <param name="scale" value="exactfit">
+                  <embed src="text1.swf" base="" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit" width="142" height="22" bgcolor="#FFFFFF"> </object></td>
+            </tr>
+            <tr> 
+              <td> <table width="100%" align="center" bgcolor="green" border="1">
+                  <tbody>
+                    <tr> 
+                      <td> <div align="center"><a href="http://ahibo.com/pays.htm"><img height="16" src="im/pays-af.gif" width="125" border="0"></a></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://algeria.ahibo.com/"><font color="#ffcc00">Algeria</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://angola.ahibo.com/"><font color="#ffcc00">Angola</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://benin.ahibo.com/"><font color="#ffcc00">Benin</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://botswana.ahibo.com/"><font color="#ffcc00">Botswana</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://burkina.ahibo.com/"><font color="#ffcc00">Burkina Faso</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td height="18"> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://burundi.ahibo.com/"><font color="#ffcc00">Burundi</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://cameroon.ahibo.com/"><font color="#ffcc00">Cameroon</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://capeverde.ahibo.com/"><font color="#ffcc00">Cape Verde</font></a><font color="#ffcc00"> </font></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://chad.ahibo.com/"><font color="#ffcc00">Chad</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://centralafrica.ahibo.com/"><font color="#ffcc00">Central Africa Republic</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://comoros.ahibo.com/"><font color="#ffcc00">Comoros</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://congo.ahibo.com/"><font color="#ffcc00">Congo Republc</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://drcongo.ahibo.com/"><font color="#ffcc00">Democratic Republic of Congo</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://djibouti.ahibo.com/"><font color="#ffcc00">Djibouti</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://egypt.ahibo.com/"><font color="#ffcc00">Egypt</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://eritrea.ahibo.com/"><font color="#ffcc00">Eritrea</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://ethiopia.ahibo.com/"><font color="#ffcc00">Ethiopia</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://equatorialguinea.ahibo.com/"><font color="#ffcc00">E</font><font color="#ffcc00">quatorial Guinea</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://gabon.ahibo.com/"><font color="#ffcc00">Gabon</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://gambia.ahibo.com/"><font color="#ffcc00">Gambia</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://ghana.ahibo.com/"><font color="#ffcc00">Ghana</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://guinea.ahibo.com/"><font color="#ffcc00">Guinea</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://guineabissau.ahibo.com/"><font color="#ffcc00">Guinea Bissau</font></a> </font></div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://ivorycoast.ahibo.com/"><font color="#ffcc00">Ivory Coast</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://kenya.ahibo.com/"><font color="#ffcc00">Kenya</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://lesotho.ahibo.com/"><font color="#ffcc00">Lesotho</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://liberia.ahibo.com/"><font color="#ffcc00">Liberia</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://libya.ahibo.com/"><font color="#ffcc00">Libya</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://madagascar.ahibo.com/"><font color="#ffcc00">Madagascar</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://malawi.ahibo.com/"><font color="#ffcc00">Malawi</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://mali.ahibo.com/"><font color="#ffcc00">Mali</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://mauritania.ahibo.com/"><font color="#ffcc00">Mauritania</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://mauritius.ahibo.com/"><font color="#ffcc00">Mauritius</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://morocco.ahibo.com/"><font color="#ffcc00">Morocco</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://mozambique.ahibo.com/"><font color="#ffcc00">Mozambique</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://namibia.ahibo.com/"><font color="#ffcc00">Namibia</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://niger.ahibo.com/"><font color="#ffcc00">Niger</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://nigeria.ahibo.com/"><font color="#ffcc00">Nigeria</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://rwanda.ahibo.com/"><font color="#ffcc00">Rwanda</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://saotome.ahibo.com/"><font color="#ffcc00">Sao Tomé &amp; Principe</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://senegal.ahibo.com/"><font color="#ffcc00">Senegal</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://seyschelles.ahibo.com/"><font color="#ffcc00">Seychelles</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://sierraleone.ahibo.com/"><font color="#ffcc00">Sierra Leone</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://somalia.ahibo.com/"><font color="#ffcc00">Somalia</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://southafrica.ahibo.com/"><font color="#ffcc00">South Africa</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://sudan.ahibo.com/"><font color="#ffcc00">Sudan</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://swaziland.ahibo.com/"><font color="#ffcc00">Swaziland</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://tanzania.ahibo.com/"><font color="#ffcc00">Tanzania</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://togo.ahibo.com/"><font color="#ffcc00">Togo</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://tunisia.ahibo.com/"><font color="#ffcc00">Tunisia</font></a> </font></div></td>
+                    </tr>
+                    <tr> 
+                      <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://uganda.ahibo.com/"><font color="#ffcc00">Uganda</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://zambia.ahibo.com/"><font color="#ffcc00">Zambia</font></a></font></div></td>
+                    </tr>
+                    <tr> 
+                      <td> <div align="center"><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://zimbabwe.ahibo.com/"><font color="#ffcc00">Zimbabwe</font></a></font></div></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1" cellpadding="0" cellspacing="0" bordercolor="#339933">
+          <tbody><tr> 
+            <td> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr> 
+                  <td><table width="100%" border="00" cellspacing="0" cellpadding="0">
+                      <tbody><tr> 
+                        <td width="4%" bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td width="92%" bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i> Geography</i></font></b></font></td>
+                        <td width="4%"><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial, Helvetica, sans-serif" size="1"><font size="2">Area 
+                              : <font face="Arial, Helvetica, sans-serif">1 
+                              221 040</font></font></font><font face="Arial, Helvetica, sans-serif"><font size="2"> 
+                              Km² </font></font></li>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"> 
+                              </font><font size="2"><font face="Arial, Helvetica, sans-serif">Population 
+                              : 45,3 million inhabitants<br>
+                              79% African; 9,6% White; 8,9% Coloured; and 2,5% 
+                              Indian / Asian</font></font></li>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"> 
+                              </font><font size="2"><font face="Arial, Helvetica, sans-serif">Capital 
+                              : Pretoria</font></font></li>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.hitsme.com/portal/freewares.html"> </a></font><font size="2"><font face="Arial, Helvetica, sans-serif">Official 
+                              Languages : (The Constitution recognises 11) : Afrikaans, 
+                              English, isiNdebele, isiXhosa, isiZulu, Sepedi, 
+                              Sesotho, Setswana, siSwati, Tshivenda and Xitsonga</font></font></li>
+                          </ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font color="#000088"><i><font color="#0000FF">Institutions</font></i></font></b></font><font color="#0000FF"></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.elections.org.za/">Independent Electoral 
+                              Commission</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.gov.za/">Government Online</a></font> 
+                            </li><li><font size="2" face="Arial, Helvetica, sans-serif">National 
+                              departments </font> 
+                              <ul>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.nda.agric.za/">Agriculture</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dac.gov.za/">Arts 
+                                  &amp; Culture</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.doc.gov.za/">Communications</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.doc.gov.za/">Correctional 
+                                  Services</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dod.mil.za/">Defence</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.education.gov.za/">Education</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.environment.gov.za/">Environmental 
+                                  Affairs &amp; Tourism</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dfa.gov.za/">Foreign 
+                                  Affairs</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.gcis.gov.za/">Government 
+                                  Communications (GCIS)</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.doh.gov.za/">Health</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.home-affairs.gov.za/">Home 
+                                  Affairs</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.housing.gov.za/">Housing</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.icd.gov.za/">Independent 
+                                  Complaints Directorate</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.doj.gov.za/">Justice 
+                                  &amp; Constitutional Development</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.labour.gov.za/">Labour</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://land.pwv.gov.za/">Land 
+                                  Affairs</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dme.gov.za/">Minerals 
+                                  &amp; Energy</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.intelligence.gov.za/">National 
+                                  Intelligence Agency</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.treasury.gov.za/">National 
+                                  Treasury</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dplg.gov.za/">Provincial 
+                                  &amp; Local Government</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dpe.gov.za/">Public 
+                                  Enterprises</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dpsa.gov.za/">Public 
+                                  Service &amp; Administration</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.psc.gov.za/">Public 
+                                  Service Commission</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.publicworks.gov.za/">Public 
+                                  Works</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dst.gov.za/">Science 
+                                  &amp; Technology</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.info.gov.za/sss/">Secretariat 
+                                  for Safety &amp; Security</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.samdi.gov.za/">SA 
+                                  Management Development Institute</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saps.gov.za/">SA 
+                                  Police Service</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sars.gov.za/">SA 
+                                  Revenue Service</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sass.gov.za/">SA 
+                                  Secret Service</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.welfare.gov.za/">Social 
+                                  Development</a> </font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.srsa.gov.za/">Sport 
+                                  &amp; Recreation South Africa</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.statssa.gov.za/">Statistics 
+                                  South Africa</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.thedti.gov.za/">Trade 
+                                  &amp; Industry</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.transport.gov.za/">Transport</a></font></li>
+                                <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.dwaf.gov.za/">Water 
+                                  Affairs &amp; Forestry</a></font></li>
+                              </ul>
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.gcis.gov.za/">Government Communication</a></font><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.gcis.gov.za/"> </a></font>
+                            </li><li> <font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.polity.org.za/">Government Information</a> 
+                              </font>
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.parliament.gov.za/">Parliament</a></font> 
+                          </li></ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"> <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffdf00" border="0">
+                            <tbody>
+                              <tr> 
+                                <td><img height="2" src="ISA - Africa_fichiers/transp.gif" width="167"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <font face="Arial, Helvetica, sans-serif"><b><font color="#000088"><i><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i>Symbols of the country - Presidents &amp; Heads 
+                          of State</i></font></b></font></i></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><table cellspacing="0" cellpadding="0" width="80%" align="center" border="0">
+                            <tbody>
+                              <tr> 
+                                <td> <div align="center"><img src="im/pr_afsud.gif" width="88" height="119" border="1"></div></td>
+                              </tr>
+                              <tr> 
+                                <td> <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">H.E. 
+                                    Thabo Mbeki<br>
+                                    <strong>President of the Republic<br>
+                                    </strong>Since june 14, 1999 </font><br>
+                                  </div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                            <tbody>
+                              <tr bgcolor="#ffffcc"> 
+                                <td colspan="3" height="25"> <div align="center"><strong><font face="Arial, Helvetica, sans-serif">Former</font><font face="Arial, Helvetica, sans-serif"> 
+                                    Presidents &amp; Heads of State</font></strong></div></td>
+                              </tr>
+                              <tr> 
+                                <td width="33%"> <div align="center"><img height="119" src="im/nMandela.jpg" width="93"></div></td>
+                                <td width="31%"> <div align="center"><img height="120" src="im/Klerk.jpg" width="78"></div></td>
+                                <td width="36%"> <div align="center"><img height="100" src="im/Botha.jpg" width="67"></div></td>
+                              </tr>
+                              <tr> 
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Nelson Rolihlahla Mandela<br>
+                                    President<br>
+                                    May 10, 1994 - June 1999</font><font size="1" face="Arial, Helvetica, sans-serif"><br>
+                                    <br>
+                                    <br>
+                                    </font></div></td>
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Frederick W. de Klerk<br>
+                                    President <br>
+                                    August 14, 1989 - april 28, 1994 </font><font size="1" face="Arial, Helvetica, sans-serif"><br>
+                                    <br>
+                                    <br>
+                                    </font></div></td>
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Pieter Willem Botha <br>
+                                    President <br>
+                                    1984 - August 14, 1989</font><font size="1" face="Arial, Helvetica, sans-serif"><br>
+                                    Prime Minister <br>
+                                    1978 - 1984 </font></div></td>
+                              </tr>
+                              <tr> 
+                                <td><hr></td>
+                                <td><hr></td>
+                                <td><hr></td>
+                              </tr>
+                              <tr> 
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    John Vorster <br>
+                                    Prime Minister <br>
+                                    1966 - 1978</font></div></td>
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Hendrik Frensch Verwoerd<br>
+                                    Prime Minister<br>
+                                    1958 - 1966</font></div></td>
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    J.G. Strijdom <br>
+                                    Prime Minister <br>
+                                    1954 - 1958</font></div></td>
+                              </tr>
+                              <tr> 
+                                <td><hr></td>
+                                <td><hr></td>
+                                <td><hr></td>
+                              </tr>
+                              <tr> 
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Daniel F. Malan <br>
+                                    Prime Minister<br>
+                                    1948 - 1954</font></div></td>
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    J.G.H. Hertzog<br>
+                                    Prime Minister <br>
+                                    1924 - 1939</font></div></td>
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Jan Christaan Smuts <br>
+                                    Prime Minister <br>
+                                    1939 - 1948<br>
+                                    1919 - 1924</font></div></td>
+                              </tr>
+                              <tr> 
+                                <td><hr></td>
+                                <td><hr></td>
+                                <td><hr></td>
+                              </tr>
+                              <tr> 
+                                <td><div align="center"><font size="1" face="Arial, Helvetica, sans-serif">HE. 
+                                    Louis Botha <br>
+                                    First Prime Minister <br>
+                                    1910 -1919</font></div></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i>Embassies, Consulates and High Commissions</i></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><table width="100%" cellspacing="0">
+                          <tbody><tr>
+                            <td><ul>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sambangola.info/">Angola, 
+                                Luanda </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.embajadasudafrica.org.ar/">Argentina, 
+                                Buenos Aires</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sahc.org.au/">Australia, 
+                                Australia</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembvie.at/">Austria, 
+                                Vienna</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.be/">Belgium, 
+                                Brussels</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.africadosulemb.org.br/">Brazil, 
+                                Sao Paolo</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica-canada.ca/">Canada, 
+                                Ottawa</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.embajada-sudafrica.cl/">Chile, 
+                                Santiago</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sudafrica.cu/">Cuba, 
+                                Havana</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.dk/">Denmark, 
+                                Copenhagen</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafricanembassy.fi/">Finland, 
+                                Helsinki</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.afriquesud.net/">France, 
+                                Paris</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.suedafrika.org/">Germany, 
+                                Berlin</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.gr/">Greece, 
+                                Athens</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sa-embassy.hu/">Hungary, 
+                                Budapest</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sahc-india.com/">India, 
+                                New Delhi</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassy-jakarta.or.id/">Indonesia, 
+                                Jakarta</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.rsaembassy-tehran.net/">Iran, 
+                                Tehran </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.safis.co.il/">Israel, 
+                                Tel Aviv </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sudafrica.it/">Italy, 
+                                Rome</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.rsatk.com/">Japan, 
+                                Tokyo</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembjor.com/">Jordan, 
+                                Amman</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica-embassy.or.kr/">Korea 
+                                (South), Seoul</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafricaq8.com/">Kuwait, 
+                                Kuwait </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.samali.info/">Mali, 
+                                Bamako</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sudafrica.org.mx/">Mexico, 
+                                Mexico City</a></font></li>
+                              </ul>                            </td>
+                            <td><ul>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.zuidafrika.nl/">Netherlands, 
+                                The Hague </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassymuscat.gov.om/">Oman, 
+                                Muscat</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sarep.org/">Palestine, 
+                                Ramala</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.embaixada-africadosul.pt/">Portugal, 
+                                Lisbon</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassy.ru/">Russia, 
+                                Moscow</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassy-kigali.org.rw/">Rwanda, 
+                                Kigali</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.com.sa/">Saudi 
+                                Arabia, Riyadh</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saesenegal.info/">Senegal, 
+                                Dakar</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafricahc.org.sg/">Singapore, 
+                                Singapore</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.sudafrica.com/">Spain, 
+                                Madrid</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafricanemb.se/">Sweden, 
+                                Stockholm</a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif">Switzerland </font>
+                                  <ul>
+                                    <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.ch/">Berné</a></font></li>
+                                    <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://missions.itu.int/~southafr/Index.htm"> Geneva</a></font></li>
+                                  </ul>
+                              </li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.org.tw/">Taiwan, 
+                                Taipei </a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.intl.tn/">Tunisia, 
+                                Tunis</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.org.tr/">Turkey, 
+                                Ankara</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassy.kiev.ua/">Ukraine, 
+                                Kyiv </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica.ae/">United 
+                                Arab Emirates, Abu Dhabi </a></font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafricahouse.com/">United 
+                                Kingdom, London</a> </font></li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif">United States of America </font>
+                                  <ul>
+                                    <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.link2southafrica.com/">Los 
+                                      Angeles</a></font></li>
+                                    <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.southafrica-newyork.net/">New 
+                                      York</a></font></li>
+                                    <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassy.org/">Washington</a> </font></li>
+                                  </ul>
+                              </li>
+                              <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.saembassy-hanoi.com/">Vietnam, 
+                                Hanoi </a></font> </li>
+                            </ul>                            </td>
+                          </tr>
+                        </tbody></table></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font color="#000088"><i><font color="#0000FF">Education</font></i></font></b></font></b></font><font color="#0000FF"></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://ahibo.com/uaf.htm#af">Colleges &amp; Universities</a></font>                            </li>
+                          </ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif"><b><font color="#000088"><i><font color="#0000FF">General </font></i></font></b></font></b></font><font color="#0000FF"><i>Information</i></font><font color="#0000FF" face="Arial, Helvetica, sans-serif"><b><i> </i></b></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.arc.agric.za/">Agricultural Research Council 
+                              (ARC)</a></font><font face="arial" size="2"> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.geoscience.org.za/">Geological Survey</a></font><font face="Arial, Helvetica, sans-serif" size="2"> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.mrc.ac.za/">Medical Research Council</a></font>
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.anc.org.za/ancdocs/history/mbeki/">The Mbeki 
+                              Page</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.idasa.org.za/">Institute For Democracy (IDASA)</a> 
+                              </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.fedusa.org.za/">Federation of Unions (FEDUSA)</a></font>
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.statssa.gov.za/">Central Statistical Service</a> 
+                              </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.hsrc.ac.za/">Human Sciences Research Council</a> 
+                              </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.csir.co.za/">CSIR</a></font><font face="Arial, Helvetica, sans-serif" size="2"> </font></li>
+                          </ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font color="#0000FF" face="Arial, Helvetica, sans-serif"><strong><em>Political 
+                          Parties</em></strong></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.anc.org.za/">African National Congress</a> 
+                              </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.da.org.za/">Democratic Alliance Party</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.ifp.org.za/">Inkatha Freedom Party</a> </font> 
+                          </li></ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i>Trade &amp; Investment</i></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.absa.co.za/">Amalgamated Banks of South Africa 
+                              (ABSA)</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.ccma.org.za/">Commission for Conciliation, 
+                              Mediation and Arbitration (CCMA)</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.ftrservices.co.za/">Financial Tax &amp; Remuneration 
+                              Services</a> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.guarantee.co.za/">Guarantee Trust</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.marriott.co.za/">Marriott Merchant Bank</a></font>
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.nedlac.org.za/">National Economic Development 
+                              and Labour Council (NEDLAC) </a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.ner.org.za/">National Electricity Regulator 
+                              (NER)</a> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://population.pwv.gov.za/">National Population Unit 
+                              (NPU)</a> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.nnr.co.za/">National Nuclear Regulator (NNR)</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.nedbank.co.za/">Nedbank</a> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.nlpi.net/">Nedcor Investment Bank</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.psam.ru.ac.za/">Public Service Accountability 
+                              Monitor (PSAM)</a> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.saqa.org.za/">Qualifications Authority (SAQA)</a></font><font face="Arial, Helvetica, sans-serif" size="2"> </font>
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.rmb.co.za/">Rand Merchant Bank</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.resbank.co.za/">South African Reserve Bank</a> 
+                              </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.standardbank.co.za/">Standard Bank of South 
+                              Africa</a></font><font face="arial" size="2"> </font></li>
+                          </ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i>Tourism</i></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><a href="http://www.lathita.co.za/" class="Style1">African Safaris and Adventure: Luxury Tours, Mobile Safaris, Motorcycle Tours,   Honeymoon Packages, Car Hire, 4x4 Hire, Camper Hire, Motorcycle Hire,   Accommodation, Tailor Made Tours.</a><br>                            
+                            </li><li><a href="http://www.etango.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">Etango Game Lodge 
+                              :almost all accommodation, superb conference and 
+                              teambuilding facilities available at Etango Game 
+                              Lodge in the Warmbaths area of Bela-Bela in the 
+                              Limpopo Province either as a conference venue and 
+                              team building venue as well as catering for all 
+                              your functions. Etango boasts a luxurious conference 
+                              facilit with air-conditioning as well as theme evenings, 
+                              murder evenings and many other adventure activities 
+                              in a bush or bushveld environment less than 2 hours 
+                              from Johannesburg in Warmbaths, (Bela-Bela) in the 
+                              Limpopo Province (Northern Province) of South Africa.</font></a> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.execujet.net/">ExecuJet</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.interair.co.za/">Interair South Africa</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.demarcation.org.za/">Municipal Demarcation 
+                              Board</a> </font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.sanparks.org/">National Parks (SANP)</a> 
+                              </font>
+                            </li><li><a href="http://www.photos-afrique.net/" class="Style1">Photos and travel in Africa : Do you dream about Africa ? Are you inspired by nature, are you overcome with   the desire to travel ? The photos found on this site might just convince you to   go there ! </a><br>                            
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.pretoriabar.co.za/">Pretoria Bar Association</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.safair.co.za/">Safair</a></font> 
+                            </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://ww1.flysaa.com/">South African Airways</a></font>                            </li>
+                          </ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i>Culture &amp; Sport</i></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><ul>
+                            <li><font face="Arial" size="2"><a href="http://www.safa.net/">South African football association 
+                              </a></font> </li></ul></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FFCC00"><img src="im/jauneg.gif" width="20" height="20"></td>
+                        <td bgcolor="#FFCC00"><font face="Arial, Helvetica, sans-serif"><b><font color="#0000FF"><i>Press</i></font></b></font></td>
+                        <td><img src="im/jauned.gif" width="20" height="20"></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody><tr bgcolor="#FFFF00"> 
+                              <td height="24" colspan="2" bgcolor="#FFFFCC"> <div align="center"><i><b><font face="Arial, Helvetica, sans-serif" color="#000088" size="2">N e w s p a p e r s</font></b></i></div></td>
+                              <td width="28%" bgcolor="#FFFFcc"> <div align="center"><b><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif" color="#ff0000" size="2"><i>&nbsp;<font color="#000066">R a d i o &amp; 
+                                  T V&nbsp;</font></i></font></font></b></div></td>
+                            </tr>
+                            <tr> 
+                              <td width="36%"> <div align="left"> 
+                                  <ul>
+                                    <li><font face="Arial" size="2"><font face="Arial"><a href="http://www.africanpilot.co.za/">African 
+                                      Pilot</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://152.111.1.74/mags/insig.html"></a><a href="http://www.artthrob.co.za/">Artthrob - Contemporary 
+                                      Art in South Africa</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.avspecialist.co.za/">AV Specialist 
+                                      Magazine Online</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://new.mweb.co.za/">Bike SA</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.business2.co.za/">Business 2.0</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.businessmonitor.com/cgi-bin/bmi_homepage.pl"></a><a href="http://www.hnp.org.za/afrikaner">Die Afrikaner</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.cartoday.com/">CARtoday.com</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.cover.co.za/">Cover - financial 
+                                      services magazine</a></font></font><font face="Arial" size="2"><font face="Arial"><a href="http://www.computingsa.co.za/"></a></font></font> 
+                                    </li><li> 
+                                      <div><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.bday.co.za/">Business 
+                                        Day</a></font></div>
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.busrep.co.za/">Business Report</a></font></font> 
+                                    </li><li> 
+                                      <div><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.sundaytimes.co.za/">Business 
+                                        Times</a></font></div>
+                                    </li><li><small><font face="Arial"><a href="http://www.iol.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">Cape 
+                                      Argus</font></a> </font></small> 
+                                    </li><li><font face="Arial, Helvetica, sans-serif"><small><a href="http://www.cbn.co.za/"><font size="2">Cape 
+                                      Business News</font></a></small> </font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.channelafrica.org/">Channel Africa 
+                                      Online</a> </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.mg.co.za/">Daily Mail and Guardian</a> 
+                                      </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.dispatch.co.za/">Dispatch Online</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.encounter.co.za/">Encounter South 
+                                      Africa</a></font></font> 
+                                    </li><li> 
+                                      <div><font face="Arial"><small><a href="http://www.stellenboschvillage.com/"><font face="Arial, Helvetica, sans-serif" size="2">Eikestad</font></a></small></font></div>
+                                    </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://free.financialmail.co.za/">Financial 
+                                      Mail</a></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.fleetwatch.co.za/">FleetWatch</a> 
+                                      </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.getawaytoafrica.com/">Getawaytoafrica</a></font></font> 
+                                    </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.helderberg.com/helder.html">Helderberg 
+                                      Pos</a></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.huisgenoot.com/">Huisgenoot</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.insig.com/">Insig</a></font></font> 
+                                    </li><li> 
+                                      <div><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.iol.co.za/">Independent Online</a> 
+                                        </font></div>
+                                    </li><li> 
+                                      <div><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.mg.co.za/">Mail &amp;&nbsp;Guardian</a></font></div>
+                                    </li>
+                                  </ul>
+                                </div></td>
+                              <td width="36%"> <div align="left"> 
+                                  <ul>
+                                    <li><font face="Arial" size="2"><font face="Arial"><a href="http://www.menshealthsa.co.za/">Mens Health</a></font></font> 
+                                    </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.zoutnet.co.za/">Mirror / Zoutpansberger</a></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.netassets.co.za/">NetAssets</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://news24.co.za/">News24</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.pcformat.co.za/">PC Format</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.pursuit.co.za/">Pursuit</a> </font></font> 
+                                    </li><li><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.rekord.co.za/">Rekord</a></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.rooirose.co.za/">Rooi Rose</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.sabcnews.com/">SABCnews</a></font></font>
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.saflyermag.co.za/"></a><a href="http://www.sailing.co.za/">Sailing</a> </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.sabcnews.com/"></a><a href="http://www.sapa.org.za/">SAPA </a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.sarie.com/">Sarie</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.sarie.com/"></a><a href="http://www.servamus.co.za/">Servamus</a> 
+                                      </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.time.com/time/"></a><a href="http://www.sportstrader.co.za/">Sports trader 
+                                      Magazine</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.sapa.org.za/secure/login.cfm?CFID=48069&amp;CFTOKEN=23284"></a><a href="http://www.sowetan.co.za/">Sowetan </a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.sowetan.co.za/"></a><a href="http://www.suntimes.co.za/">Sunday Times</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.suntimes.co.za/"></a><a href="http://www.sundaytimes.co.za/">Sunday Tribune</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.bigissue.org.za/">The Big Issue</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.witness.co.za/">The Natal&nbsp; 
+                                      Witness</a></font></font> 
+                                    </li><li> 
+                                      <div><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.thestar.co.za/">The 
+                                        Star</a></font> </div>
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.teacher.co.za/">The Teacher</a> 
+                                      </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.wildlifesociety.org.za/Publications.htm">Toktokkie</a> 
+                                      </font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.topcar.co.za/">Topcar</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.women24.co.za/TrueLove/">True 
+                                      Love Magazine</a></font></font> 
+                                    </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://news24.co.za/Die_Volksblad/Home/0,4215,,00.html">Volksblad</a></font></font> 
+                                  </li></ul>
+                                </div></td>
+                              <td><ul>
+                                  <li><a href="http://www.5fm.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">5 FM (SABC 
+                                    Radio)</font></a> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.702.co.za/">702 Talk Radio</a> </font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.highveld.co.za/">94.7 Highveld Stereo</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.channelafrica.org/">Channel Africa</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.channelafrica.org/currenta.shtml"></a><a href="http://www.classicfm.co.za/">Classic fM</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.dstv.com/">DSTV</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.etv.co.za/"></a><a href="http://www.impact-radio.co.za/">Impact Radio</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.jacarandafm.com/">Jakaranda FM</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.kayafm.co.za/">Kaya FM</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.kfm.co.za/">K FM</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.ktv.co.za/">K-TV</a></font></font> 
+                                  </li><li><a href="http://www.lesedifm.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">Lesedi FM</font></a> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.mnet.co.za/ktv/"></a><a href="http://www.metrofm.co.za/">Metro FM</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.radioalgoa.com/"></a><a href="http://www.mfm.co.za/">MFM</a> </font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.metrofm.co.za/"></a><a href="http://www.mnet.co.za/">M-NET</a></font></font> 
+                                  </li><li><a href="http://www.multichoice.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">Multichoice 
+                                    South Africa</font></a> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.ofm.co.za/">OFM 94-97 FM</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.radioalgoa.com/">Radio Algoa</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.radiokansel.co.za/">Radio Pulpit</a></font></font> 
+                                  </li><li><a href="http://www.safm.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">SAfm</font></a> 
+                                  </li><li><a href="http://www.sabc.co.za/"><font face="Arial, Helvetica, sans-serif" size="2">South Africa 
+                                    Broadcasting Corporate (SABC)</font></a> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.uctradio.co.za/">UCT Radio</a></font></font> 
+                                  </li><li><font face="Arial" size="2"><font face="Arial"><a href="http://www.uctradio.co.za/"></a><a href="http://www.vcr.co.za/">Vaal Community Radio Station</a></font></font> 
+                                </li></ul></td>
+                            </tr>
+                          </tbody></table></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </tbody></table></td>
+                </tr>
+              </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+    </tr>
+  </tbody>
+</table>
+<table width="760" align="center" border="0">
+  <tbody>
+  <tr>
+    <td height="12">
+      <hr>
+    </td></tr>
+  <tr>
+    <td height="12"><a href="http://ahibo.com/index.htm"><strong><font face="Arial, Helvetica, sans-serif" color="#ffcc00" size="2">Copyright © 2006 
+      Ahibo Inc. Tous droits 
+réservés.</font></strong></a></td></tr></tbody></table>
+</body></html>

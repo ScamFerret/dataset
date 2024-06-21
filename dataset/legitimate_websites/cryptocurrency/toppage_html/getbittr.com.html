@@ -1,0 +1,1306 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <title data-suffix=" - BITTR AG">Get and receive bitcoin directly to your wallet - BITTR AG</title>
+  <meta name="csrf-token" content="AyUqeDVqH2sVeCoXHDgmOj4XcVpRMVl4SzD6e3TRBKIDhzitq_78cKaH">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bittr offers an easy and convenient way to buy bitcoin repeatedly (dollar-cost-averaging) to consumers in Europe. Simply sign up on our website by telling us your email address, IBAN, and bitcoin address.">
+
+  <link rel="icon" href="/images/favicon-ba08c9526d8035be39445af42ed6df51.png?vsn=d">
+  <!-- Open Graph (used by Facebook/Twitter). See layout_view.ex for relevant function -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://getbittr.com/">
+  <meta property="og:title" content="Get and receive bitcoin directly to your wallet">
+  <meta property="og:description" content="Bittr offers an easy and convenient way to buy bitcoin repeatedly (dollar-cost-averaging) to consumers in Europe. Simply sign up on our website by telling us your email address, IBAN, and bitcoin address.">
+  <meta property="og:image" content="http://getbittr.com/images/open-graph-55919a41bf40d388a017e7011fd970a4.png?vsn=d">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <!-- Twitter only -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Get and receive bitcoin directly to your wallet">
+  <meta name="twitter:description" content="Bittr offers an easy and convenient way to buy bitcoin repeatedly (dollar-cost-averaging) to consumers in Europe. Simply sign up on our website by telling us your email address, IBAN, and bitcoin address.">
+  <meta name="twitter:image" content="http://getbittr.com/images/open-graph-55919a41bf40d388a017e7011fd970a4.png?vsn=d">
+  <meta name="twitter:site" content="@GetBittr">
+  <meta name="twitter:creator" content="@GetBittr">
+
+  <link phx-track-static="" rel="stylesheet" href="/assets/app-6948f85d6a7fcdbd0280626d01fa9ea8.css?vsn=d">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.3/cdn.js" integrity="sha512-KnYVZoWDMDmJwjmoUEcEd//9bap1dhg0ltiMWtdoKwvVdmEFZGoKsFhYBzuwP2v2iHGnstBor8tjPcFQNgI5cA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer="">
+  </script>
+
+  <script defer="" phx-track-static="" type="text/javascript" src="/assets/app-809457e1638bbe3c284b5e8c81bf02d2.js?vsn=d">
+  </script>
+
+  <script async="" defer="" data-domain="getbittr.com" src="https://plausible.getbittr.com/js/plausible.js">
+  </script>
+
+  <script>
+  window.applyScheme = function(scheme) {
+    if (scheme === "light") {
+      document.documentElement.classList.remove('dark')
+      document
+        .querySelectorAll(".color-scheme-dark-icon")
+        .forEach((el) => el.classList.remove("hidden"));
+      document
+        .querySelectorAll(".color-scheme-light-icon")
+        .forEach((el) => el.classList.add("hidden"));
+      localStorage.scheme = 'light'
+    } else {
+      document.documentElement.classList.add('dark')
+      document
+        .querySelectorAll(".color-scheme-dark-icon")
+        .forEach((el) => el.classList.add("hidden"));
+      document
+        .querySelectorAll(".color-scheme-light-icon")
+        .forEach((el) => el.classList.remove("hidden"));
+      localStorage.scheme = 'dark'
+    }
+  };
+
+  window.toggleScheme = function () {
+    if (document.documentElement.classList.contains('dark')) {
+      applyScheme("light")
+    } else {
+      applyScheme("dark")
+    }
+  }
+
+  window.initScheme = function() {
+    if (localStorage.scheme === 'dark' || (!('scheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      applyScheme("dark")
+    } else {
+      applyScheme("light")
+    }
+  }
+
+  try {
+    initScheme()
+  } catch (_) {}
+</script>
+</head>
+
+  <body class="font-sans antialiased text-gray-600 bg-white dark:text-gray-400 dark:bg-zinc-950" style="">
+<div id="phx-F8Q75NXrmZq9IjNy" data-phx-main="" data-phx-session="SFMyNTY.g2gDaAJhBXQAAAAIdwJpZG0AAAAUcGh4LUY4UTc1TlhybVpxOUlqTnl3BHZpZXd3KUVsaXhpci5CaXR0ckZyb250ZW5kV2ViLlBhZ2VzLkxhbmRpbmdMaXZldwpwYXJlbnRfcGlkdwNuaWx3B3Nlc3Npb250AAAAAHcGcm91dGVydx5FbGl4aXIuQml0dHJGcm9udGVuZFdlYi5Sb3V0ZXJ3CHJvb3RfcGlkdwNuaWx3CXJvb3Rfdmlld3cpRWxpeGlyLkJpdHRyRnJvbnRlbmRXZWIuUGFnZXMuTGFuZGluZ0xpdmV3DGxpdmVfc2Vzc2lvbmgCdwZwdWJsaWNuCADfY7tEvkrAF24GAK_hgbyOAWIAAVGA.OSKAt36b6TsKDWni7eaJYhNlVhDm_U2EXp8xR6tJ3As" data-phx-static="SFMyNTY.g2gDaAJhBXQAAAADdwJpZG0AAAAUcGh4LUY4UTc1TlhybVpxOUlqTnl3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdsAAAAAXcMY3VycmVudF91c2Vyam4GAK_hgbyOAWIAAVGA.8v0O6RMhEFLDY7ZB52dEuhbFJMpEGT_jxjNpO58a8Vk" class="phx-connected" data-phx-root-id="phx-F8Q75NXrmZq9IjNy">
+<script>
+  // When you scroll down, you will notice the navbar becomes translucent.
+  function makeHeaderTranslucentOnScroll() {
+    const header = document.querySelector("header");
+    if (header) {
+      const distanceFromTop = window.scrollY;
+      distanceFromTop > 0
+        ? header.classList.add("is-active")
+        : header.classList.remove("is-active");
+    }
+  }
+</script>
+
+<style>
+  /* Hover effects for the top menu */
+  header .menu-item {
+    position: relative;
+  }
+
+  header .menu-item:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    background: #4b5563;
+    transition: 0.3s all ease;
+  }
+
+  .dark header .menu-item:before {
+    background: #ccc;
+  }
+
+  header .menu-item:hover:before {
+    left: 0;
+    width: 100%;
+  }
+
+  header .menu-item.is-active:before {
+    left: 0;
+    width: 100%;
+  }
+
+  /* Translucent effects for the the navbar when you scroll down the page */
+  header.is-active {
+    background: rgba(255, 255, 255, .55);
+    @apply shadow;
+  }
+
+  .dark header.is-active {
+    background: rgba(0,0,0,.45);
+    @apply shadow;
+  }
+
+  header.is-active.semi-translucent {
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    -moz-backdrop-filter: saturate(180%) blur(10px);
+  }
+</style>
+
+<header x-data="{mobile: false}" x-init="window.addEventListener('scroll', makeHeaderTranslucentOnScroll)" class="fixed top-0 left-0 z-30 w-full transition duration-500 ease-in-out md:sticky semi-translucent bg-white dark:bg-zinc-950">
+  <div class="pc-container pc-container--xl pc-container--mobile-padded " data-phx-id="m1-phx-F8Q75NXrmZq9IjNy">
+  
+    <div class="flex flex-wrap items-center h-16 md:h-18">
+      <div class="lg:w-3/12">
+        <div class="flex items-center">
+          <a href="/" class="inline-block ml-1 text-2xl font-bold leading-none" data-phx-id="m2-phx-F8Q75NXrmZq9IjNy">
+            
+  <img class="h-10 block dark:hidden" src="/images/logo_dark-71fe1d3cff5f877fddc4be88ee5f050a.svg?vsn=d">
+  <img class="h-10 hidden dark:block" src="/images/logo_light-7a7441535895703355e2440e0f278f5a.svg?vsn=d">
+
+          </a>
+
+          <a href="/" class="hidden ml-3 lg:block" data-phx-id="m3-phx-F8Q75NXrmZq9IjNy"></a>
+        </div>
+      </div>
+
+      <div class="hidden lg:w-6/12 md:block">
+        <ul class="justify-center md:flex">
+          
+  <li class="ml-8 lg:mx-4 xl:mx-6">
+    <a href="/" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/" class="block font-medium leading-7 capitalize dark:text-gray-100 menu-item">
+      Home
+    </a>
+  </li>
+
+  <li class="ml-8 lg:mx-4 xl:mx-6">
+    <a href="/support" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/support" class="block font-medium leading-7 capitalize dark:text-gray-100 menu-item">
+      FAQ
+    </a>
+  </li>
+
+  <li class="ml-8 lg:mx-4 xl:mx-6">
+    <a href="/blog" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/blog" class="block font-medium leading-7 capitalize dark:text-gray-100 menu-item">
+      Blog
+    </a>
+  </li>
+
+  <li class="ml-8 lg:mx-4 xl:mx-6">
+    <a href="/dashboard" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/dashboard" class="block font-medium leading-7 capitalize dark:text-gray-100 menu-item">
+      Dashboard
+    </a>
+  </li>
+
+  <li class="ml-8 lg:mx-4 xl:mx-6">
+    <a href="/support" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/support" class="block font-medium leading-7 capitalize dark:text-gray-100 menu-item">
+      Contact
+    </a>
+  </li>
+
+        </ul>
+      </div>
+
+      <div class="flex items-center justify-end ml-auto lg:w-3/12">
+        <div class="flex items-center gap-3 mr-4">
+
+          <button data-phx-id="m4-phx-F8Q75NXrmZq9IjNy" phx-hook="ColorSchemeHook" type="button" id="c8666d3d-112e-4084-8d00-209b45cf3af6" class="color-scheme text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 ">
+  <svg class="w-5 h-5 color-scheme-dark-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+  </svg>
+  <svg class="hidden w-5 h-5 color-scheme-light-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd">
+    </path>
+  </svg>
+</button>
+        </div>
+
+        <a href="/buy-bitcoin" data-phx-link="redirect" data-phx-link-state="push" class="bg-brand hidden md:block hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 text-black text-base hover:bg-gray-100 leading-normal" data-phx-id="m5-phx-F8Q75NXrmZq9IjNy">
+Buy Bitcoin
+        </a>
+
+        <div @click="mobile = !mobile" class="relative inline-block w-5 h-5 cursor-pointer md:hidden">
+          <svg x-bind:class="{ 'opacity-1' : !mobile, 'opacity-0' : mobile }" width="24" height="24" fill="none" class="absolute -mt-3 -ml-3 transform top-1/2 left-1/2 opacity-1">
+            <path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+
+          <svg x-bind:class="{ 'opacity-0' : !mobile }" width="24" height="24" fill="none" class="absolute -mt-3 -ml-3 transform opacity-0 top-1/2 left-1/2 scale-80">
+            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div x-bind:class="{ 'block' : mobile, 'hidden' : !mobile }" class="md:hidden hidden">
+      <hr class="border-primary-900 border-opacity-10 dark:border-gray-700">
+      <ul class="py-6">
+        
+  <li class="mb-2 last:mb-0 dark:text-gray-400">
+    <a href="/" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/" class="inline-block font-medium capitalize menu-item">
+      Home
+    </a>
+  </li>
+
+  <li class="mb-2 last:mb-0 dark:text-gray-400">
+    <a href="/support" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/support" class="inline-block font-medium capitalize menu-item">
+      FAQ
+    </a>
+  </li>
+
+  <li class="mb-2 last:mb-0 dark:text-gray-400">
+    <a href="/blog" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/blog" class="inline-block font-medium capitalize menu-item">
+      Blog
+    </a>
+  </li>
+
+  <li class="mb-2 last:mb-0 dark:text-gray-400">
+    <a href="/dashboard" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/dashboard" class="inline-block font-medium capitalize menu-item">
+      Dashboard
+    </a>
+  </li>
+
+  <li class="mb-2 last:mb-0 dark:text-gray-400">
+    <a href="/support" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/support" class="inline-block font-medium capitalize menu-item">
+      Contact
+    </a>
+  </li>
+
+      </ul>
+    </div>
+  
+</div>
+</header>
+
+<div class="pt-[64px] md:pt-0">
+  <div id="flash_group" class="fixed bottom-0 right-0 z-[9999] w-5/6 max-w-sm m-4 space-y-4" data-phx-id="m6-phx-F8Q75NXrmZq9IjNy">
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+    
+    
+      
+    
+  
+
+  <div id="disconnected" phx-disconnected="[[&quot;show&quot;,{&quot;time&quot;:300,&quot;to&quot;:&quot;#disconnected&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-out&quot;,&quot;duration-300&quot;],[&quot;opacity-0&quot;],[&quot;opacity-100&quot;]]}]]" phx-connected="[[&quot;hide&quot;,{&quot;to&quot;:&quot;#disconnected&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-in&quot;,&quot;duration-200&quot;],[&quot;opacity-100&quot;],[&quot;opacity-0&quot;]]}]]" hidden="">
+    <div id="disconnected-flash" phx-hook="ClearFlashHook" phx-mounted="[[&quot;show&quot;,{&quot;time&quot;:300,&quot;to&quot;:&quot;#disconnected-flash&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-out&quot;,&quot;duration-300&quot;],[&quot;opacity-0&quot;],[&quot;opacity-100&quot;]]}]]" data-timer-length="99999" data-type="error" data-is-static="true" class="bg-danger-600 rounded-lg shadow-lg text-white sm:w-full hidden group" style="display: block;">
+  <div class="overflow-hidden rounded-lg shadow-xs">
+    
+    <div class="flex items-start p-4">
+      <div class="flex-shrink-0">
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" stroke="currentColor" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.5" data-phx-id="m7-phx-F8Q75NXrmZq9IjNy">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+</svg>
+      </div>
+      <div class="ml-3 w-0 flex-1 pt-0.5">
+        <div class="text-sm font-medium leading-5 text-white">
+          <div class="whitespace-pre-line">Internet lost. Attempting reconnection...</div>
+        </div>
+      </div>
+      <div class="flex flex-shrink-0 ml-4">
+        
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<section id="hero" class="relative sm:overflow-x-hidden">
+  <div id="hero-wrapper" phx-update="ignore" class="grid md:contents max-w-screen-xl relative mx-auto p-8 sm:overflow-x-hidden">
+    <img class="absolute w-[158px] h-[158px] mx-auto top-[-70px] left-[40%] sm:origin-top-left sm:left-[80px] sm:top-[125px] " src="/images/icons/gradient-bg-elem-0905894d548f4357161652e9f9345a50.svg?vsn=d" alt="Background Element">
+    <img id="hero-image" class="fade-in-from-left-animation w-36 h-36 hidden absolute md:block sm:left-[62.75px] sm:top-[150px] " src="/images/icons/coin3-cd4c03f79b45793a0c6ccbb41b88dc16.webp?vsn=d" alt="Bitcoin Left" style="transform: translate(0px, 0px); opacity: 1;">
+    <div class="w-96 h-96 hidden md:block sm:right-[-10%] md:right-0 top-[424.48px] absolute rotate-[157.50deg] bg-gradient-to-b from-neutral-200 to-white dark:from-neutral-700 dark:to-neutral-900 rounded-full shadow-inner blur-xl">
+    </div>
+    <img id="hero-image" class="fade-in-from-right-animation w-44 h-44 absolute order-1 top-6 left-[30%]  md:left-auto md:block sm:right-0 md:right-[5%] xl:right-[10%] sm:top-[370px] xl:top-[420px] sm:hidden" src="/images/icons/coin1-e7b4f8d8029355a70378f7d9a77ee470.webp?vsn=d" alt="Bitcoin Right" style="transform: translate(0px, 0px); opacity: 1;">
+    <div class="hidden absolute md:block right-[-30%] bottom-[500px]  w-[749.61px] h-[749.61px] border-gray-200 border-b rotate-[191deg] bg-gradient-to-b from-neutral-200 to-white dark:from-neutral-700 dark:to-neutral-900 rounded-full shadow-inner blur-[38.88px]">
+    </div>
+
+    <div id="hero-text" phx-update="ignore" class="my-8 flex flex-row items-center gap-2.5 justify-center order-9 xl:mt-20">
+      <div class="flex items-center text-zinc-950 dark:text-zinc-400 text-base font-normal font-space-grotesk capitalize leading-tight">
+        <img class="w-10 h-10" src="/images/icons/swissflag-cb68fd81c2bb4be21070d94bc4c9464a.svg?vsn=d" alt="Swiss Flag">
+        <div class="p-2 text-base font-medium leading-snug">
+Made in Switzerland
+        </div>
+      </div>
+    </div>
+    <div class="flex-col mt-48 sm:mt-0 justify-center items-center my-4 flex order-4">
+      <div class="dark:text-zinc-400 fade-in-animation z-10 w-full text-3xl text-left font-bold md:text-7xl text-zinc-950 md:w-9/12 xl:w-6/12 sm:text-center " style="transform: translate3d(0px, 2.7925px, 0px); opacity: 0.8138;">
+        <span class="font-space-grotesk-bold">
+Buy
+        </span>
+        <span class="text-brand-500 font-space-grotesk-bold">
+Bitcoin
+        </span>
+        <span class="font-space-grotesk-bold">
+directly into your wallet
+        </span>
+      </div>
+      <div class="fade-in-animation z-10 mt-12 mb-4 mx-auto px-2 sm:mb-12 sm:text-center text-neutral-500 text-4xl md:text-6xl font-space-grotesk-bold" style="transform: translate3d(0px, 4.5317px, 0px); opacity: 0.6979;">
+Simplify saving for the future
+      </div>
+    </div>
+    <div class="flex-col w-full justify-center items-center flex order-5">
+      <div class="text-center relative w-full md:w-6/12">
+        <div class="text-center relative">
+          <a href="/buy-bitcoin" class="inline-flex items-center justify-center w-full md:w-auto px-10 py-3 border-2 border-transparent bg-brand-500 hover:bg-brand-500 text-xl text-black font-medium text-base rounded-lg mt-2 sm:mt-0 sm:ml-4">
+            Buy Bitcoin
+          </a>
+          <a href="/free-guide" class="inline-flex items-center justify-center w-full md:w-auto px-10 py-3 border-2 border-transparent dark:border-white bg-neutral-950 hover:bg-zinc-700 dark:hover:bg-neutral-800 text-white dark:text-white text-xl font-medium text-base rounded-lg mt-2 sm:mt-0 sm:ml-4">
+            Free Guide
+            <svg height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 482.14 482.14" xml:space="preserve" class="text-white fill-current w-6 h-6 ml-2">
+              <g>
+                <path d="M142.024,310.194c0-8.007-5.556-12.782-15.359-12.782c-4.003,0-6.714,0.395-8.132,0.773v25.69
+                  c1.679,0.378,3.743,0.504,6.588,0.504C135.57,324.379,142.024,319.1,142.024,310.194z"></path>
+                <path d="M202.709,297.681c-4.39,0-7.227,0.379-8.905,0.772v56.896c1.679,0.394,4.39,0.394,6.841,0.394
+                  c17.809,0.126,29.424-9.677,29.424-30.449C230.195,307.231,219.611,297.681,202.709,297.681z"></path>
+                <path d="M315.458,0H121.811c-28.29,0-51.315,23.041-51.315,51.315v189.754h-5.012c-11.418,0-20.678,9.251-20.678,20.679v125.404
+                  c0,11.427,9.259,20.677,20.678,20.677h5.012v22.995c0,28.305,23.025,51.315,51.315,51.315h264.223
+                  c28.272,0,51.3-23.011,51.3-51.315V121.449L315.458,0z M99.053,284.379c6.06-1.024,14.578-1.796,26.579-1.796
+                  c12.128,0,20.772,2.315,26.58,6.965c5.548,4.382,9.292,11.615,9.292,20.127c0,8.51-2.837,15.745-7.999,20.646
+                  c-6.714,6.32-16.643,9.157-28.258,9.157c-2.585,0-4.902-0.128-6.714-0.379v31.096H99.053V284.379z M386.034,450.713H121.811
+                  c-10.954,0-19.874-8.92-19.874-19.889v-22.995h246.31c11.42,0,20.679-9.25,20.679-20.677V261.748
+                  c0-11.428-9.259-20.679-20.679-20.679h-246.31V51.315c0-10.938,8.921-19.858,19.874-19.858l181.89-0.19v67.233
+                  c0,19.638,15.934,35.587,35.587,35.587l65.862-0.189l0.741,296.925C405.891,441.793,396.987,450.713,386.034,450.713z
+                  M174.065,369.801v-85.422c7.225-1.15,16.642-1.796,26.58-1.796c16.516,0,27.226,2.963,35.618,9.282
+                  c9.031,6.714,14.704,17.416,14.704,32.781c0,16.643-6.06,28.133-14.453,35.224c-9.157,7.612-23.096,11.222-40.125,11.222
+                  C186.191,371.092,178.966,370.446,174.065,369.801z M314.892,319.226v15.996h-31.23v34.973h-19.74v-86.966h53.16v16.122h-33.42
+                  v19.875H314.892z"></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a name="how-to-get-started"></a>
+  <div class="flex my-10 justify-center items-center"></div>
+  <div class="hidden md:block w-96 h-96 left-[525px] top-[1250px] absolute origin-top-left rotate-[157.50deg] bg-gradient-to-b from-neutral-200 to-white dark:from-neutral-700 dark:to-neutral-900 rounded-full shadow-inner blur-xl">
+  </div>
+  <div class="container how-it-works  mx-auto max-w-screen-xl flex-col  md:flex-row  justify-center sm:justify-between items-center gap-0 flex">
+    <div class="block w-[80%] md:min-w-[96px] md:w-1/2 relative items-center bg-no-repeat bg-center bg-[url('/images/icons/card1.svg')]">
+      <div class="sm:w-96 p-16 mb-4 pr-6 mx-auto ">
+        <div class="justify-start items-start gap-2.5 inline-flex">
+          <div class="w-10 h-12 mb-5 relative">
+            <img class="w-7 h-7 left-[7.98px] top-0 absolute origin-top-left rotate-[12.68deg]" src="/images/icons/btc-7150b0c79be3de11dba8f26dff160e87.webp?vsn=d" alt="Bitcoin in Walelt">
+            <img class="w-10 h-8 left-0 top-[20.36px] absolute" src="/images/icons/wallet-b9537761b89442f055cfc1465ca611a0.webp?vsn=d" alt="Wallet with bitcoin">
+          </div>
+        </div>
+        <div class="mb-4 text-2xl font-medium font-space-grotesk leading-tight">
+          <span class="text-zinc-950 ">
+Select your
+          </span>
+          <span class="text-brand-500 dark:text-brand-900">
+bitcoin wallet
+          </span>
+        </div>
+        <div class="mb-4 w-60 text-zinc-950 text-base font-normal leading-loose">
+A bitcoin wallet is the equivalent of a traditional bank account, only now you are your own bank.
+        </div>
+        
+      </div>
+    </div>
+    <div class="block w-[80%] sm:min-w-[96px]  md:w-1/2 relative bg-center bg-no-repeat bg-[url('/images/icons/card1.svg')]">
+      <div class="Frame225 sm:w-96 p-16 mb-5 pr-6 mx-auto">
+        <div class="GetStartedIconFrame justify-start items-start gap-2.5 inline-flex">
+          <img class="w-12 h-12" src="/images/icons/euro-f4df50ca056e570eae662868906c9e53.webp?vsn=d" alt="Euro Bank Transfer">
+        </div>
+        <div class="mb-4">
+          <span class="text-zinc-950 text-2xl font-medium font-space-grotesk leading-tight">
+Set up a
+          </span>
+          <span class="text-brand-500 dark:text-brand-900 text-2xl font-medium font-space-grotesk leading-loose">
+bank transfer
+          </span>
+        </div>
+        <div class="mb-4 w-60 text-zinc-950 text-base font-normal leading-loose">
+A single or recurrent bank transfer from your bank app. We sent bitcoin directly to your wallet, in real-time.
+        </div>
+        
+      </div>
+    </div>
+    <div class="block w-[80%] sm:min-w-[96px]  md:w-1/2 relative bg-center bg-no-repeat bg-[url('/images/icons/card1.svg')]">
+      <div class=" sm:w-96 p-16 mb-5 pr-6 mx-auto">
+        <div class="justify-start items-start gap-2.5 inline-flex">
+          <img class="Safe1 w-14 h-14" src="/images/icons/safe-d1c8eeaff75aeb6ba758046fec64a7c3.webp?vsn=d" alt="Bitcoin Safe">
+        </div>
+        <div class="mb-4">
+          <span class="text-brand-500 dark:text-brand-900 text-2xl font-medium font-space-grotesk leading-tight">
+Receive bitcoin<br>
+          </span>
+          <span class="text-zinc-950 text-2xl font-medium font-space-grotesk leading-relaxed">
+and repeat
+          </span>
+        </div>
+        <div class="mb-4 w-60 text-zinc-950 text-base font-normal leading-loose">
+Receive a notification every time you buy bitcoin into your wallet. Repeat as often as you like.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <a name="testimonials"></a>
+  <div class="max-w-screen-xl relative z-10 mx-auto p-4" id="testimonials-wrapper" phx-update="ignore">
+    <section id="testimonials" class="relative z-10 transition duration-500 ease-in-out dark:bg-zinc-950">
+  <div class="overflow-hidden content-wrapper">
+    <div class="pc-container pc-container--xl pc-container--mobile-padded relative z-10">
+  
+      <div class="flex-col mt-20 mb-8 justify-center items-center flex stagger-fade-in-animation">
+        <div class="text-5xl my-4 text-zinc-950 dark:text-white font-medium w-9/12 text-center font-space-grotesk leading-10 fade-in-animation" style="transform: translate3d(0px, 6.8747px, 0px); opacity: 0.5417;">
+          Success stories from our community
+        </div>
+      </div>
+
+      <div class="solo-animation fade-in-animation flickity flickity-enabled is-draggable" tabindex="0" style="opacity: 0.3392; transform: translate3d(0px, 9.9116px, 0px);">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      <div class="flickity-viewport" style="height: 256px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(0%);"><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0 is-selected" style="position: absolute; left: 0px; transform: translateX(0%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        Have no issues whatsoever with this company. Handles things fast and always friendly in the communications.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/1.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Daphnee</div>
+          <div class="text-base font-semibold">Have no issues whatsoever with this…</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(107.89%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        GetBittr is doing my DCA like a finetuneable Swiss-Watch, always reliable by verified correct rates.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/0.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Waltraut Irmscher</div>
+          <div class="text-base font-semibold">Very correct service!</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(215.79%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        No issues so far, payments are processed in market value and sats sent to wallet in few hours.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/2.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Amalia</div>
+          <div class="text-base font-semibold">Great service</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(323.68%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        Very transparent about fees, and they use the REAL exchange rate for the purchase.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/4.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Suzette</div>
+          <div class="text-base font-semibold">Great service</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(431.58%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        Bittr is great for no-nonsense DCA right into your wallet. Easy to setup and run in the background.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/3.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Terry</div>
+          <div class="text-base font-semibold">Bittr is great for no-nonsens DCA</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(539.47%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        Fantastic service and it worked flawlessly every single payment I did (every week since 2020).
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/5.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Riko</div>
+          <div class="text-base font-semibold">BITTR satisfied customer since 2020</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(647.37%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        With Bittr I finally have found the smoothest way to buy: Minimum KYC, fast and professional customer service.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/9.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Aunt Satoshi</div>
+          <div class="text-base font-semibold">Smooth, secure and professional</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(755.26%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        The Bitcoin go straight into my hardware wallet, perfect! The 1.5% fee of Bittr are well worth this convenience!
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/6.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Thomas</div>
+          <div class="text-base font-semibold">Simple and effective</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(863.16%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        The best and safest way to build up your BTC holdings. Once everything is set up the service is super hands off.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/8.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Brian</div>
+          <div class="text-base font-semibold">Safe and easy to use</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div><div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 dark:bg-zinc-600 dark:text-white carousel-cell last:mr-0" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(971.05%);">
+  <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+    <div class="relative text-lg font-medium md:flex-grow">
+      <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+        </path>
+      </svg>
+      <p class="relative">
+        Your sats are sent to your non-custodial wallet immediately after they were bought, with a very competitive fee of 1.5%.
+      </p>
+    </div>
+    <footer class="mt-8">
+      <div class="flex items-start">
+        <div class="inline-flex flex-shrink-0 border-2 border-white rounded-full">
+          <img class="w-12 h-12 rounded-full" src="/images/avatars/7.webp" alt="">
+        </div>
+        <div class="ml-4">
+          <div class="text-base font-medium">Gino</div>
+          <div class="text-base font-semibold">Bittr makes buying Bitcoin a great…</div>
+        </div>
+      </div>
+    </footer>
+  </blockquote>
+</div></div></div><ol class="flickity-page-dots"><li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li><li class="dot" aria-label="Page dot 2"></li><li class="dot" aria-label="Page dot 3"></li><li class="dot" aria-label="Page dot 4"></li><li class="dot" aria-label="Page dot 5"></li><li class="dot" aria-label="Page dot 6"></li><li class="dot" aria-label="Page dot 7"></li><li class="dot" aria-label="Page dot 8"></li><li class="dot" aria-label="Page dot 9"></li><li class="dot" aria-label="Page dot 10"></li></ol></div>
+    
+</div>
+  </div>
+</section>
+
+<script phx-update="ignore" id="testimonials-js" type="module">
+  // Flickity allows for a touch-enabled slideshow - used for testimonials
+  import flickity from 'https://cdn.skypack.dev/flickity@2';
+
+  let el = document.querySelector(".flickity");
+
+  if(el){
+    new flickity(el, {
+      cellAlign: "left",
+      prevNextButtons: false,
+      adaptiveHeight: false,
+      cellSelector: ".carousel-cell",
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css" integrity="sha512-B0mpFwHOmRf8OK4U2MBOhv9W1nbPw/i3W1nBERvMZaTWd3+j+blGbOyv3w1vJgcy3cYhzwgw1ny+TzWICN35Xg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+  /* Modify the testimonial slider to go off the page */
+  #testimonials .flickity-viewport {
+    overflow: unset;
+  }
+
+  #testimonials .flickity-page-dots {
+    position: relative;
+    bottom: unset;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  #testimonials .flickity-page-dots .dot {
+    background: #FBBF5D;
+    transition: 0.3s all ease;
+    opacity: 0.35;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  #testimonials .flickity-page-dots .dot.is-selected {
+    opacity: 1;
+  }
+
+  .dark #testimonials .flickity-page-dots .dot {
+    background: white;
+  }
+</style>
+  </div>
+  <a href="https://www.trustpilot.com/review/getbittr.com" class="max-w-screen-xl sm:mt-12 mx-auto relative z-10 flex-row justify-center items-center gap-2.5 flex" target="_blank" data-phx-id="m9-phx-F8Q75NXrmZq9IjNy">
+    <div class="origin-top-left text-neutral-900 dark:text-zinc-400 text-base font-normal font-space-grotesk leading-relaxed">
+See our 166 reviews on
+    </div>
+    <div class=" origin-top-left  justify-start items-start gap-2 inline-flex">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+        <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#00B09B"></path>
+      </svg>
+      <div class="text-zinc-900 dark:text-zinc-400 text-base font-normal font-space-grotesk capitalize leading-tight">
+Trustpilot
+      </div>
+    </div>
+  </a>
+  <a name="how-it-works"></a>
+  <section class="relative overflow-hidden">
+    <img class="absolute dark:hidden origin-top-left" src="/images/icons/ellipse_ready_left-43ad14c465aa3b90dccc5bc0ad9de821.svg?vsn=d" alt="Background image left">
+    <img class="absolute right-0 dark:hidden top-[-150px]" src="/images/icons/ellipse_ready_right-b78f59c1232c4f0fbd3536b80f5288dc.svg?vsn=d" alt="Background image right">
+    <div class="max-w-screen-xl relative  z-10 mx-auto p-4">
+      <div class="flex-col mt-20 sm:justify-center sm:items-center flex">
+        <div class="my-10 text-zinc-950 font-normal sm:w-9/12 text-center font-space-grotesk ">
+          <span class="text-neutral-950 dark:text-white text-5xl font-medium capitalize">
+Ready to own bitcoin?
+          </span>
+        </div>
+      </div>
+      <div class="flex-col mb-20 justify-center items-center sm:flex ">
+        <div class="h-14 my-6 text-center relative sm:w-10/12 md:w-8/12 xl:w-5/12">
+          <a href="/buy-bitcoin" class="inline-flex items-center justify-center w-full md:w-auto px-10 py-3 border-2 border-transparent bg-brand-500 hover:bg-brand-500 text-xl text-black font-medium text-base rounded-lg mt-2 sm:mt-0 sm:ml-4">
+            Buy Bitcoin
+          </a>
+        </div>
+      </div>
+    </div>
+    <a name="services"></a>
+    <section class="overflow-hidden relative h-auto bg-zinc-950">
+      <img class="w-[581.56px] h-[581.56px] absolute origin-top-left" src="/images/icons/black-ember-84a1c3bdfe5510527c7bbd53697583dd.svg?vsn=d" alt="Background image">
+
+      <img class="w-96 h-96 hidden md:block absolute top-0 right-0" src="/images/icons/services_top_right-15e32a313617dc2d16d74f8f2c46d3fc.svg?vsn=d" alt="Background image">
+
+      <img class="w-[324px] md:hidden absolute top-[30%] right-0" src="/images/icons/services_mobile_right-5759fde2b7ce17f2d4d8992c09af09f2.svg?vsn=d" alt="Background image">
+
+      <img class="w-[1028px] hidden md:block absolute bottom-0 left-[15%] origin-top-left" src="/images/icons/services_bottom-fc1acd386a310a0a9f0afd87ba681155.svg?vsn=d" alt="Background image">
+
+      <img class="w-[257px] md:hidden absolute bottom-0 left-[15%] origin-top-left" src="/images/icons/services_mobile_bottom-06dd4fee5cc484fd265d25774f0c6b97.svg?vsn=d" alt="Background image">
+      <div class="p-4 text-center my-[25px] text-neutral-200 text-4xl font-semibold font-space-grotesk capitalize leading-10">
+Fiat Money Is Broken
+      </div>
+      <div class="max-w-screen-xl relative z-10 mx-auto justify-center items-center gap-10 p-4 md:flex">
+        <div class="flex flex-col rounded-xl p-6 mb-4 border border-neutral-600 h-full">
+          <div class="flex-1">
+            <img class="mx-auto h-28 mb-4" src="/images/icons/pyramid_chart_black-cce55b0b24beb24f3f9ac1c5ff3b813d.webp?vsn=d" alt="Inflation" loading="lazy">
+            <h3 class="text-white text-xl font-semibold mb-2 text-center">Inflation</h3>
+          </div>
+          <p class="text-zinc-300 text-base font-normal leading-snug">
+Printing money reduces its value and makes everything more expensive.
+          </p>
+        </div>
+
+        <div class="flex flex-col rounded-xl p-6 mb-4 border border-neutral-600 h-full">
+          <div class="flex-1">
+            <img class="mx-auto h-28 mb-4" src="/images/icons/euro_contract_black-6a2e28c4b22ee005aed7609c89e4db42.webp?vsn=d" alt="No Security for Retirement" loading="lazy">
+            <h3 class="text-white text-xl font-semibold mb-2 text-center">
+No Security for Retirement
+            </h3>
+          </div>
+          <p class="text-zinc-300 text-base font-normal leading-snug">
+With no control over money policies, unpredictable shifts can destroy your retirement savings.
+          </p>
+        </div>
+
+        <div class="flex flex-col rounded-xl p-6 mb-4 border border-neutral-600 h-full">
+          <div class="flex-1">
+            <img class="mx-auto h-28 mb-4" src="/images/icons/hourglass_black-f37f3ba9e9342b39ad8b5c1f773e3439.webp?vsn=d" alt="Waste of Time" loading="lazy">
+            <h3 class="text-white text-xl font-semibold mb-2 text-center">Waste of Time</h3>
+          </div>
+          <p class="text-zinc-300 text-base font-normal leading-snug">
+Endlessly searching for investments to outpace inflation consumes your valuable time.
+          </p>
+        </div>
+      </div>
+      <div class="p-4 text-center my-[25px] text-neutral-200 text-4xl font-semibold font-space-grotesk capitalize leading-10">
+But you don't have to be frustrated anymore
+      </div>
+      <div class="sm:h-64 max-w-screen-xl relative z-10 mx-auto justify-center items-center gap-10 p-4 md:flex">
+        <!-- Low Fees -->
+        <div class="flex flex-col md:w-4/12 mb-4 rounded-2xl p-4 border border-neutral-600 h-full">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-white text-3xl font-medium leading-relaxed">
+Low Fees
+            </h3>
+            <img class="w-[84px]" src="/images/icons/discount_black-23ff2fc3dc852fc9e57d87e2a2d50c1d.webp?vsn=d" alt="Low Fees" loading="lazy">
+          </div>
+          <div class="flex-1 flex flex-col justify-end">
+            <p class="text-zinc-300 text-base font-normal leading-snug">
+A transparent fee so you know exactly what you're paying with no surprises.
+              <br><br>
+1.5% (+ 1€/CHF for transactions &lt; 100€/CHF)
+            </p>
+          </div>
+        </div>
+        <!-- Directly into your wallet -->
+        <div class="flex flex-col md:w-4/12 mb-4 rounded-2xl p-4 border border-neutral-600 h-full">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-white text-3xl font-medium leading-relaxed">
+Directly into your wallet
+            </h3>
+            <img class="w-[84px]" src="/images/icons/lock3_black-f7c081d3e52040dd3ff44d53dd303fe3.webp?vsn=d" alt="Direct Wallet" loading="lazy">
+          </div>
+          <div class="flex-1 flex flex-col justify-end">
+            <p class="text-zinc-300 text-base font-normal leading-snug">
+Your bitcoin are secured immediately, full control with no extra fees.
+            </p>
+          </div>
+        </div>
+        <!-- Automate your savings plan -->
+        <div class="flex flex-col md:w-4/12 mb-4 rounded-2xl p-4 border border-neutral-600 h-full">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-white text-3xl font-medium leading-relaxed">
+Automate your savings plan
+            </h3>
+            <img class="w-[84px]" src="/images/icons/calendar_black-b47e96d2f9880b69ca0686e0f4987fbf.webp?vsn=d" alt="Automate Savings" loading="lazy">
+          </div>
+          <div class="flex-1 flex flex-col justify-end">
+            <p class="text-zinc-300 text-base font-normal leading-snug">
+Watch your savings grow automatically without additional effort.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-screen-xl relative mb-10 sm:mb-0 z-10 mx-auto p-4">
+        <div class="flex-col sm:justify-center sm:items-center flex">
+          <div class="my-10 text-zinc-950 font-normal sm:w-9/12 md:text-center font-space-grotesk ">
+            <span class="text-neutral-200 text-4xl font-medium text-neutral-200 text-4xl font-semibold font-space-grotesk capitalize leading-10">
+Ready to own bitcoin?
+            </span>
+          </div>
+        </div>
+        <div class="flex-col mb-10 justify-center items-center sm:flex ">
+          <div class="h-14 my-6 text-center relative sm:w-10/12 md:w-8/12 xl:w-5/12">
+            <a href="/buy-bitcoin" class="inline-flex items-center justify-center w-full md:w-auto px-10 py-3 border-2 border-transparent bg-brand-500 hover:bg-brand-500 text-xl text-black font-medium text-base rounded-lg mt-2 sm:mt-0 sm:ml-4">
+Buy Bitcoin
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name="about"></a>
+    <div class="mt-20 container mx-auto max-w-screen-xl md:flex-row md:flex justify-center items-center gap-16  gap-4 sm:gap-8 lg:gap-10">
+      <div class="basis-1/4 h-96 relative flex justify-center px-4 items-center">
+        <img class="h-96 w-full object-cover rounded-full" src="/images/icons/ruben-7d19b3bff6a87643a98db185e33f1c4c.webp?vsn=d" alt="Ruben Waterman" loading="lazy">
+      </div>
+      <div class="basis-3/4 relative p-4">
+        <div class="my-2 ">
+          <span class="text-neutral-950 dark:text-white text-5xl font-medium font-space-grotesk">
+Why we think <span class="text-brand-500 text-5xl font-medium font-space-grotesk leading-10">bitcoin</span> is the best savings technology
+          </span>
+        </div>
+        <div class="py-10 text-lg text-stone-950 dark:text-zinc-400 font-normal text-medium leading-loose">
+          <p class="mb-6">
+At Bittr we know you are the kind of person who just wants to live your life and put aside some savings for the future. In order to be that way, you need a better method than your bank’s savings account.
+          </p>
+          <p class="mb-6">
+Inflation is the silent killer slowly eating the value of your savings. It's a frustrating reality that feels unjust — and we're on your side in this. That’s why we use Bitcoin as savings technology, a deflationary money.
+          </p>
+          <p class="mb-6 font-bold">Here's the straightforward Bittr approach:</p>
+          <ol class="list-decimal list-inside mb-6">
+            <li>Get a bitcoin wallet</li>
+            <li>Initiate a bank transfer</li>
+            <li>Receive Bitcoin and repeat</li>
+          </ol>
+          <p>
+Start saving in Bitcoin now to preserve the purchasing power of your hard-earned money and to build a secure future for yourself.
+          </p>
+        </div>
+        <div class="">
+          <span class="text-stone-950 dark:text-zinc-400 text-2xl font-medium  leading-loose">
+Ruben Waterman<br>
+          </span>
+          <span class="text-stone-300 text-2xl font-normal  leading-loose">
+Founder of bittr
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a name="partners"></a>
+  <div id="logo-cloud" class="container px-4 mx-auto my-10">
+    <h2 class="text-zinc-950 font-normal text-center font-space-grotesk text-neutral-950 dark:text-white text-5xl font-medium capitalize">
+Our Partners
+    </h2>
+
+    <div class="grid grid-cols-2 gap-4 my-10 rounded-lg md:grid-cols-6 lg:gap-6">
+
+        <div class="flex h-32 items-center justify-center p-4 text-gray-400 sm:h-32">
+          <a href="https://bitcoin-guides.me/?utm_source=bittr" class="grayscale hover:grayscale-0" rel="noopener noreferrer" target="_blank">
+            <img class="h-32 w-auto hidden dark:block" src="/images/partners/bitcoin_guides-2889a427fcd9cb2747b3442d67eee60b.webp?vsn=d" alt="Bitcoin Guides" loading="lazy">
+            <img class="h-32 w-auto dark:hidden" src="/images/partners/bitcoin_guides-2889a427fcd9cb2747b3442d67eee60b.webp?vsn=d" alt="Bitcoin Guides" loading="lazy">
+          </a>
+        </div>
+
+        <div class="flex h-32 items-center justify-center p-4 text-gray-400 sm:h-32">
+          <a href="https://www.bitsaver.info/?utm_source=bittr" class="grayscale hover:grayscale-0" rel="noopener noreferrer" target="_blank">
+            <img class="h-32 w-auto hidden dark:block" src="/images/partners/bitsaver-b655c0c57fb614a156a224adc92b5e98.webp?vsn=d" alt="Bitsaver" loading="lazy">
+            <img class="h-32 w-auto dark:hidden" src="/images/partners/bitsaver-b655c0c57fb614a156a224adc92b5e98.webp?vsn=d" alt="Bitsaver" loading="lazy">
+          </a>
+        </div>
+
+        <div class="flex h-32 items-center justify-center p-4 text-gray-400 sm:h-32">
+          <a href="https://copiaro.de?utm_source=bittr" class="grayscale hover:grayscale-0" rel="noopener noreferrer" target="_blank">
+            <img class="h-32 w-auto hidden dark:block" src="/images/partners/copiaro_dark-4fa83d5910631cee3c75e04a0293d2cd.webp?vsn=d" alt="Copiaro" loading="lazy">
+            <img class="h-32 w-auto dark:hidden" src="/images/partners/copiaro-2d87701baaa081ed827ab9635b4de1c6.webp?vsn=d" alt="Copiaro" loading="lazy">
+          </a>
+        </div>
+
+        <div class="flex h-32 items-center justify-center p-4 text-gray-400 sm:h-32">
+          <a href="https://einundzwanzig.space/?utm_source=bittr" class="grayscale hover:grayscale-0" rel="noopener noreferrer" target="_blank">
+            <img class="h-32 w-auto hidden dark:block" src="/images/partners/einundzwanzig_dark-baa22acad84ee43e85e056bd142218df.webp?vsn=d" alt="Einundzwanzig" loading="lazy">
+            <img class="h-32 w-auto dark:hidden" src="/images/partners/einundzwanzig-c0fcb8501651b243ee95383dde62b849.webp?vsn=d" alt="Einundzwanzig" loading="lazy">
+          </a>
+        </div>
+
+        <div class="flex h-32 items-center justify-center p-4 text-gray-400 sm:h-32">
+          <a href="https://bitcoinbook.shop?ref=bittr" class="grayscale hover:grayscale-0" rel="noopener noreferrer" target="_blank">
+            <img class="h-32 w-auto hidden dark:block" src="/images/partners/konsensus_network_dark-34c3d4c836b404e4c39750b136ac830b.webp?vsn=d" alt="Konsensus Network" loading="lazy">
+            <img class="h-32 w-auto dark:hidden" src="/images/partners/konsensus_network-fd0c09164e4b6869bbd3bf65beaba869.webp?vsn=d" alt="Konsensus Network" loading="lazy">
+          </a>
+        </div>
+
+        <div class="flex h-32 items-center justify-center p-4 text-gray-400 sm:h-32">
+          <a href="https://seedor.io/bittr" class="grayscale hover:grayscale-0" rel="noopener noreferrer" target="_blank">
+            <img class="h-32 w-auto hidden dark:block" src="/images/partners/seedor_dark-235d887400c58628761e1afc6a023b39.webp?vsn=d" alt="Seedor" loading="lazy">
+            <img class="h-32 w-auto dark:hidden" src="/images/partners/seedor-2374a38f47029af6a72f2649c6d7b04d.webp?vsn=d" alt="Seedor" loading="lazy">
+          </a>
+        </div>
+
+    </div>
+  </div>
+</section>
+  <section id="footer" data-phx-id="m10-phx-F8Q75NXrmZq9IjNy">
+  <footer class="overflow-hidden relative  bg-neutral-900 backdrop-blur-sm ">
+    <img class="w-96 h-96 hidden absolute origin-top-left md:block" src="/images/icons/footer_top_left.svg">
+    <img class="w-96 h-96 hidden absolute top-0 right-0 md:block" src="/images/icons/footer_top_right.svg">
+    <img class="w-[1028px] hidden absolute bottom-0 left-[25%] origin-top-left md:block" src="/images/icons/footer_bottom.svg">
+
+    <img class="w-[137px] absolute origin-top-left md:hidden" src="/images/icons/footer_top_left_m.svg">
+    <img class="w-[177px] absolute top-[30%] right-0 md:hidden" src="/images/icons/footer_right_m.svg">
+    <img class="w-[531px] absolute bottom-0 left-0 origin-top-left md:hidden" src="/images/icons/footer_bottom_m.svg">
+
+    <div class="max-w-screen-xl px-4 relative z-10 mt-8 mx-auto ">
+      <div class="justify-between items-center gap-1.5 flex">
+        <div class="w-full mb-12 md:w-1/5 md:mb-0">
+          <a class="inline-block text-3xl font-bold leading-none" href="/">
+            
+  <img class="h-10" src="/images/logo_light-7a7441535895703355e2440e0f278f5a.svg?vsn=d">
+
+          </a>
+        </div>
+        <div class="w-4/12 justify-center items-center gap-7 hidden md:inline-flex">
+          <ul class="flex flex-wrap items-center md:space-x-5">
+            
+  <li class="w-full mb-2 md:w-auto md:mb-0">
+    <a href="/" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/" class="text-gray-300 md:text-sm hover:text-gray-500">
+      Home
+    </a>
+  </li>
+
+  <li class="w-full mb-2 md:w-auto md:mb-0">
+    <a href="/support" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/support" class="text-gray-300 md:text-sm hover:text-gray-500">
+      FAQ
+    </a>
+  </li>
+
+  <li class="w-full mb-2 md:w-auto md:mb-0">
+    <a href="/blog" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/blog" class="text-gray-300 md:text-sm hover:text-gray-500">
+      Blog
+    </a>
+  </li>
+
+  <li class="w-full mb-2 md:w-auto md:mb-0">
+    <a href="/dashboard" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/dashboard" class="text-gray-300 md:text-sm hover:text-gray-500">
+      Dashboard
+    </a>
+  </li>
+
+  <li class="w-full mb-2 md:w-auto md:mb-0">
+    <a href="/support" data-csrf="PWY_LCgqAnAjHgwpWRB4GTwxFBt_Pnxem9QbxsIIt-oz-R7WsyRyMDDn" data-to="/support" class="text-gray-300 md:text-sm hover:text-gray-500">
+      Contact
+    </a>
+  </li>
+
+          </ul>
+        </div>
+        <div class="w-1/5 justify-between flex-row hidden md:inline-flex">
+          
+            <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://www.facebook.com/GetBittr/">
+              <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/fb.svg" alt="Facebook Icon">
+            </a>
+          
+          
+            <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://www.instagram.com/getbittr/">
+              <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/insta.svg" alt="Instagram Icon">
+            </a>
+          
+          
+            <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://t.me/getbittr">
+              <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/telegram.svg" alt="Telegram Icon">
+            </a>
+          
+          
+            <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://twitter.com/GetBittr">
+              <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/x.svg" alt="X Icon (Formerly Twitter)">
+            </a>
+          
+          
+            <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://getbittr.com/whatsapp">
+              <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/whatsapp.svg" alt="WhatsApp Icon">
+            </a>
+          
+        </div>
+      </div>
+      <div class="mt-8  md:h-auto justify-between  gap-1.5 md:flex">
+        <div class="w-full mb-4 md:w-3/12 relative flex flex-col">
+          <div class="text-white text-xl font-normal font-space-grotesk capitalize leading-relaxed">
+            About
+          </div>
+          <div class="mt-2.5 flex-1 text-neutral-400 text-base font-normal leading-snug">
+            Most people get their savings eaten by inflation. With Bittr, you can buy Bitcoin straight into your Piggy Bank, saving in a currency that is deflationary by design.
+          </div>
+          <div class="mt-auto flex items-center gap-2">
+            <img class="w-10 h-10" src="/images/icons/swissflag.svg" alt="Swiss Flag">
+            <div class="text-white text-base font-medium leading-snug">
+              Made in Switzerland
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-3/12 relative flex flex-col">
+          <div class="text-white text-xl font-normal font-space-grotesk capitalize leading-relaxed">
+            Bitcoin Price
+          </div>
+          <div class="flex flex-col mt-2.5 align-top items-start">
+            <div class="text-zinc-400 text-center font-normal leading-snug">
+              
+                  <div class="flex">
+                    <div class="font-space-grotesk">
+                      <span class="align-top text-7xl md:text-5xl xl:text-7xl">63000.00</span>
+                      <br>
+                      <span class="text-6xl md:text-5xl xl:text-6xl">CHF/BTC</span>
+                    </div>
+                  </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="w-full mb-4 md:w-3/12 relative flex-col mb-4 mb-8 justify-start items-start gap-5 md:inline-flex">
+          <div class="Blog text-white text-xl font-normal font-space-grotesk capitalize leading-relaxed">
+            Blog
+          </div>
+          <div class="mt1 flex-col justify-start items-start gap-2.5 flex">
+            
+              
+              <a href="/blog/what-is-dollar-cost-averaging" class="text-neutral-400 hover:text-neutral-200 text-base font-normal leading-snug">
+                What is Dollar-Cost-Averaging?
+              </a>
+              <a href="/blog/what-is-dollar-cost-averaging" class="text-neutral-400 hover:text-neutral-200 text-base font-normal leading-snug">
+                Mar 5, 2024
+              </a>
+            
+              
+              <a href="/blog/why-do-bitcoin-mining-pools-mine-empty-blocks" class="text-neutral-400 hover:text-neutral-200 text-base font-normal leading-snug">
+                Why do bitcoin mining pools mine empty blocks?
+              </a>
+              <a href="/blog/why-do-bitcoin-mining-pools-mine-empty-blocks" class="text-neutral-400 hover:text-neutral-200 text-base font-normal leading-snug">
+                Jan 18, 2024
+              </a>
+            
+          </div>
+        </div>
+        <div class="w-full mb-4 md:w-3/12 relative flex-col justify-start items-start gap-5 md:inline-flex md:w-auto">
+          <div class="text-white text-xl font-normal font-space-grotesk capitalize leading-relaxed">
+            Other
+          </div>
+          <div class="mt-1 flex-col justify-start items-start gap-2.5 flex">
+            <div class="text-neutral-400 text-base font-normal leading-snug">BITTR AG</div>
+            <div class="text-neutral-400 text-base font-normal leading-snug">
+              Chamber of Commerce:<br>210.059.556
+            </div>
+            <div class="text-neutral-400 text-base font-normal leading-snug">
+              Universitätstrasse <br>298006 Zürich, Switzerland
+            </div>
+            <div class="text-neutral-400 text-base font-normal leading-snug">
+              <a href="mailto:hello@getbittr.com" class="text-neutral-400 text-base font-normal leading-snug" data-phx-id="m11-phx-F8Q75NXrmZq9IjNy">
+                hello@getbittr.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="justify-center gap-10 my-4 flex md:hidden">
+        
+          <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://www.facebook.com/GetBittr/">
+            <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/fb.svg">
+          </a>
+        
+        
+          <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://www.instagram.com/getbittr/">
+            <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/insta.svg">
+          </a>
+        
+        
+          <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://t.me/getbittr">
+            <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/telegram.svg">
+          </a>
+        
+        
+          <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://twitter.com/GetBittr">
+            <svg class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300.25">
+              <path d="M178.57,127.15L290.27,0h-26.46l-97.03,110.38L89.34,0H0l117.13,166.93L0,300.25h26.46l102.4-116.59,81.8,116.59h89.34M36.01,19.54h40.65l187.13,262.13h-40.66" stroke-width="0"></path>
+            </svg>
+          </a>
+        
+        
+          <a target="_blank" class="inline-block p-2 rounded dark:bg-zinc-950 bg-gray-500 hover:bg-gray-700 dark:hover:bg-gray-600 group" href="https://getbittr.com/whatsapp">
+            <img class="w-5 h-5 fill-white dark:fill-gray-400 group-hover:fill-white" src="/images/icons/whatsapp.svg" alt="Facebook Icon">
+          </a>
+        
+      </div>
+      <div class="h-px border border-zinc-600"></div>
+      <div class="my-8 text-neutral-400 text-base  text-center font-normal font-raleway leading-normal">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center">
+          <span>© 2024 BITTR AG</span>
+          <span class="hidden sm:block px-3">|</span>
+          <span class="sm:mt-0 mt-2">Made with 🧡 in Switzerland 🇨🇭</span>
+        </div>
+        <div class="mt-2 divide-x divide-gray-500 dark:divide-gray-400">
+          <a href="/privacy-policy" class="text-xs sm:text-base pr-3 hover:text-gray-300" data-phx-id="m12-phx-F8Q75NXrmZq9IjNy">
+            Privacy Policy
+          </a>
+          <a href="/cookie-policy" class="text-xs sm:text-base px-3 hover:text-gray-300" data-phx-id="m13-phx-F8Q75NXrmZq9IjNy">
+            Cookie Policy
+          </a>
+          <a href="/terms-and-conditions" class="text-xs sm:text-base px-3 hover:text-gray-300" data-phx-id="m14-phx-F8Q75NXrmZq9IjNy">
+            Terms &amp; Conditions
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+  <script type="module" data-phx-id="m15-phx-F8Q75NXrmZq9IjNy">
+  // Use GSAP for animations
+  // https://greensock.com/gsap/
+  import gsap from 'https://cdn.skypack.dev/gsap@3.10.4';
+
+  // Put it on the window for when you want to try out animations in the console
+  window.gsap = gsap;
+
+  // A plugin for GSAP that detects when an element enters the viewport - this helps with timing the animation
+  import ScrollTrigger from "https://cdn.skypack.dev/gsap@3.10.4/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  animateHero();
+  setupPageAnimations();
+
+  // This is needed to ensure the animations timings are correct as you scroll
+  setTimeout(() => {
+    ScrollTrigger.refresh(true);
+  }, 1000);
+
+  function animateHero() {
+
+    // A timeline just means you can chain animations together - one after another
+    // https://greensock.com/docs/v3/GSAP/gsap.timeline()
+    const heroTimeline = gsap.timeline({});
+
+    heroTimeline
+      .to("#hero .fade-in-animation", {
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        ease: "power2.out",
+        duration: 1,
+      })
+      .to("#hero-image", {
+        opacity: 1,
+        x: 0,
+        duration: 0.4
+      }, ">-1.3")
+      .to("#logo-cloud .fade-in-animation", {
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        ease: "power2.out",
+      })
+  }
+
+  function setupPageAnimations() {
+
+    // This allows us to give any individual HTML element the class "solo-animation"
+    // and that element will fade in when scrolled into view
+    gsap.utils.toArray(".solo-animation").forEach((item) => {
+      gsap.to(item, {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: item,
+        },
+      });
+    });
+
+    // Add the class "stagger-fade-in-animation" to a parent element, then all elements within it
+    // with the class "fade-in-animation" will fade in on scroll in a staggered formation to look
+    // more natural than them all fading in at once
+    gsap.utils.toArray(".stagger-fade-in-animation").forEach((stagger) => {
+      const children = stagger.querySelectorAll(".fade-in-animation");
+      gsap.to(children, {
+        opacity: 1,
+        y: 0,
+        ease: "power2.out",
+        stagger: 0.15,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: stagger,
+          start: "top 75%",
+        },
+      });
+    });
+  }
+</script>
+</div></div>
+  
+<canvas style="position: fixed; padding: 0px; margin: 0px; right: 0px; left: 0px; top: 0px; z-index: 100001; display: none; opacity: 0.05;" width="1280" height="15"></canvas></body></html>

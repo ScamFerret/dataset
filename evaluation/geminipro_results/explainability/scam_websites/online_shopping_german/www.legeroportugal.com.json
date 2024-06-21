@@ -1,0 +1,12 @@
+{
+    "url": "https://www.legeroportugal.com/",
+    "question": "Please analyze this URL https://www.legeroportugal.com/",
+    "thought": "First, get an overview of the site. The prices look normal. The WHOIS record shows that the registrar is Paknic Private Limited, which is a well-known and reputable registrar. The website is also hosted on Cloudflare, which is a well-known and reputable hosting provider. The website has a valid SSL certificate issued by Let's Encrypt, which is a well-known and reputable certificate authority. The DNS record shows that the website is hosted on Cloudflare. The search results show that the website has been reported as a scam by several users. True",
+    "answer": {
+        "reason": "The website sells products at unusually low prices and the prices are not consistent with the market value. The website also has several characteristics of a scam website such as a lack of contact information a lack of a privacy policy and a lack of a terms of service.",
+        "result": "True",
+        "scam_type": "Fake shopping site"
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

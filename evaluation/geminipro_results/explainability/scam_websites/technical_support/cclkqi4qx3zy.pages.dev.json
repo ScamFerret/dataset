@@ -1,0 +1,12 @@
+{
+    "url": "https://cclkqi4qx3zy.pages.dev/smart89/",
+    "question": "Please analyze this URL https://cclkqi4qx3zy.pages.dev/smart89/",
+    "thought": "I should first access the page to get the text",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake antivirus software scam",
+        "reason": "The URL is a fake antivirus software scam because the text on the website says \\Windows Defender SmartScreen により、認識されないアプリケーションの表示が防止されました。このアプリケーションを実行すると、PC が危険にさらされる可能性があります。Windows Defenderスキャンにより、パスワード、オンラインID、財務情報、個人ファイル、写真、ドキュメントを盗む可能性があるアドウェアがこのデバイス上で見つかりました。\\ and \\お使いのコンピュータは、トロイの木馬タイプのスパイウェアに感染していると報告されました。次のデータが侵害されました。\\."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Very bad"
+}

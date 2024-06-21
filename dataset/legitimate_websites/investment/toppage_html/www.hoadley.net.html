@@ -1,0 +1,1127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Trading and Investment Tools | Hoadley</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="keywords" content="option strategy, option, options software, options tools, exchange traded options, options pricing calculator, portfolio analysis, asset allocation, Black-Scholes calculator, binomial, trading strategy, options, trading, options trading, strategies, strategy, evaluation, model, software, pay-off diagram, option pricing calculator, pay-off, payoff diagram, payoff, analysis, black-scholes, price, pricing, covered call writing, option writing, put options, call options, puts, calls, Peter Hoadley, risk, reward, equity options, straddle, strangle, spread, stock options, short, profit graph, dividends, ex-dividend, writing, monte carlo simulation, Excel, add-in, add-ins, GARCH, EWMA, eurodollar, futures, employee stock options, VAR, value at risk">
+  <meta name="description" content="Options Trading and Portfolio Investment Analysis and Design Tools by Peter Hoadley. Includes software for options analysis, asset allocation, portfolio optimization and analysis, risk management, value at risk (VaR), volatility and correlation estimation, real-time data, and much more.">
+  
+  <link rel="SHORTCUT ICON" href="https://www.hoadley.net/options/options.ico">
+  <script type="text/javascript">
+<!--
+      if (window != window.top) top.location.href = location.href;
+//-->
+  </script>
+   
+	<link rel="stylesheet" type="text/css" href="maindummy.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" media="all" title="text/css" href="m.css">
+  
+<style type="text/css">
+	.valignbottom {
+	vertical-align:bottom;
+	}
+</style>
+
+<!--[if lte IE 7]>
+	<style type="text/css">
+		.valignbottom {
+		vertical-align:baseline;
+		}
+	
+	</style>
+<![endif]--> 
+
+<!--[if gt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" title="text/css" href="mIE8.css">
+<![endif]-->
+     
+  <script src="m.js" type="text/javascript">
+</script>
+  
+</head>
+
+<body>
+<div id="Content" onclick="return true">
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" class="header">
+    <tbody><tr>
+      <td style="width: 50%; height: 9px" valign="bottom"><a name="top" id="top"></a> <img style="vertical-align:bottom; border:0px;" alt="" src="images/optionlogo5.gif" width="460"></td>
+
+      <td style="width: 50%; height:9px;" valign="bottom" align="right">
+      
+
+<form style="margin: 2px 0px 3px 0px;" action="SearchLog.aspx" method="get" accept-charset="utf-8">
+	<div>
+		<input type="hidden" name="nsb">
+		<input type="hidden" name="si" value="93377536">
+		<input type="hidden" name="pid" value="r">
+		<input type="hidden" name="n" value="0">
+		<input type="hidden" name="_charset_" value="">
+		<input type="hidden" name="bcd" value="÷">
+		<input type="text" name="query" size="15" style=" background: url(images/magglass.png) no-repeat scroll right center white !important; border: 1px solid #7e9db9; vertical-align:bottom; margin-bottom: 0px; margin-top: 0px; height: 14px; font-size: 8pt;"> 
+		<input type="submit" name="sa" class="searchButton" style="height: 18px; width:70px; vertical-align: bottom; padding-left: 4px; padding-top: 0px;  padding-bottom: 5px; font-size: 8pt;" value="Search">
+	</div>
+</form>
+</td>
+
+    </tr>
+
+    <tr>
+      <td style="width: 100%; height:20px;" colspan="2">
+      
+<div class="nocontent">
+<div class="menuBar">
+<!-- FreeFind Begin No Index -->
+<noscript>
+	<div style ="display:inline;"><a class="menuButtonSelected" href="options.htm">Home </a></div>
+</noscript><script type="text/javascript"> 
+	document.write("<a class=\"menuButtonSelected\" href=\"#\" onmouseover=\"buttonMouseover(event, 'menu1');\">Home <\/a>");
+</script><a class="menuButtonSelected" href="#" onmouseover="buttonMouseover(event, 'menu1');">Home </a><a class="menuButtonSeparator">|</a><noscript>
+	<div style ="display:inline;"><a class="menuButton" href="optionstools.htm">Options &amp; Other Derivatives</a></div
+></noscript><script type="text/javascript"> 
+	document.write("<a class=\"menuButton\" href=\"#\" onmouseover=\"buttonMouseover(event, 'menu2');\">Options &amp; Other Derivatives<\/a>");
+</script><a class="menuButton" href="#" onmouseover="buttonMouseover(event, 'menu2');">Options &amp; Other Derivatives</a><a class="menuButtonSeparator">|</a><noscript>
+	<div style ="display:inline;"><a class="menuButton" href="develtoolsportfolioanalysis.htm">Portfolio Analysis &amp; Design</a></div
+></noscript><script type="text/javascript"> 
+	document.write("<a class=\"menuButton\" href=\"#\" onmouseover=\"buttonMouseover(event, 'menu4');\">Portfolio Analysis &amp; Design<\/a>");
+</script><a class="menuButton" href="#" onmouseover="buttonMouseover(event, 'menu4');">Portfolio Analysis &amp; Design</a><a class="menuButtonSeparator">|</a><noscript>
+	<div style ="display:inline;"><a class="menuButton" href="develtools.htm">Finance Add-in</a></div
+></noscript><script type="text/javascript"> 
+	document.write("<a class=\"menuButton\" href=\"#\" onmouseover=\"buttonMouseover(event, 'menu5');\">Finance Add-in<\/a>");
+</script><a class="menuButton" href="#" onmouseover="buttonMouseover(event, 'menu5');">Finance Add-in</a><a class="menuButtonSeparator">|</a><noscript>
+	<div style ="display:inline;"><a class="menuButton" href="calculators.htm">On-line Calculators</a></div
+></noscript><script type="text/javascript"> 
+	document.write("<a class=\"menuButton\" href=\"#\" onmouseover=\"buttonMouseover(event, 'menu3');\">On-line Calculators<\/a>");
+</script><a class="menuButton" href="#" onmouseover="buttonMouseover(event, 'menu3');">On-line Calculators</a><a class="menuButtonSeparator">|</a><noscript>
+	<div style ="display:inline;"><a class="menuButton" href="Contact.htm">Contact</a></div
+></noscript><script type="text/javascript"> 
+	document.write("<a class=\"menuButton\" href=\"#\" onmouseover=\"buttonMouseover(event, 'menu6');\">Contact<\/a>");
+</script><a class="menuButton" href="#" onmouseover="buttonMouseover(event, 'menu6');">Contact</a></div>
+
+<div id="menu1" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="options.htm">Home</a>
+	<a class="menuItem" href="Search.htm">Search Hoadley Site</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" onclick="return(PopupWindow2(&quot;prices.asp&quot;,&quot;750&quot;,&quot;680&quot;,&quot;&quot;))" href="prices.asp">Product Pricing</a>
+	<a class="menuItem" href="develtoolsaddin.htm#versions">Buy now</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="addinregisterexisting.asp">Login - Existing Users</a>
+	<a class="menuItem" href="addinregister.asp">Register - New Users</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="terms.htm">Terms Of Use</a>
+</div>
+
+<div id="menu2" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="optionstools.htm">Overview</a>
+	<a class="menuItem" href="develtoolsaddin.htm#versions">Buy Now</a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Applications</a>
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'OSET');"><span class="menuItemText">Options Strategy Evaluation Tool</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="develtoolsvolcalc.htm">Historic Volatility Calculator</a>
+	<a class="menuItem" href="develtoolsimpliedvolcalc.htm">Implied Volatility Calculator</a>
+	<a class="menuItem" href="develtoolsprobabilitycones.htm">Probability Cones</a>	
+	<a class="menuItem" href="develtoolspositionmanager.htm">Open Positions Manager</a>
+	<div class="menuItemSep"></div>	
+
+	<a class="menuItemHeading">Finance Add-in: Derivatives Functions</a>
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'valuation');"><span class="menuItemText">Derivatives Valuation</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="develtoolseso.htm">Employee Stock Options</a>
+	<a class="menuItem" href="develtoolsaddin.htm#volatility">Historic Volatility</a>
+	<a class="menuItem" href="develtoolsaddin.htm#probabilities">Asset Probabilities</a>
+	<a class="menuItem" href="develtoolsaddin.htm#profitability">Option Hedging, Portfolio Insurance, Profitability</a>
+
+	<a class="menuItem" href="develtoolsaddin.htm#quotes">On-line Data Sources</a>
+
+	
+	<div class="menuItemSep"></div>
+	<a class="menuItemHeading ">More Information</a>
+
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'OPTIONSDEMOS');"><span class="menuItemText">On-line Demos &amp; Tutorials</span><span class="menuItemArrow">►</span></a>
+
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'PRICINGMODELS');"><span class="menuItemText">Option Pricing Models</span><span class="menuItemArrow">►</span></a>
+
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'OPTIONSVERSIONS');"><span class="menuItemText">Latest Version Information</span><span class="menuItemArrow">►</span></a>
+
+</div>
+
+<div id="menu4" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="develtoolsportfolioanalysis.htm">Overview</a>
+	<a class="menuItem" href="develtoolsaddin.htm#versions">Buy now</a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Applications</a>
+	<a class="menuItem" href="develtoolsoptimize.htm">Portfolio Optimizer</a>
+	<a class="menuItem" href="develtoolsblacklitterman.htm">Black-Litterman Returns Estimator</a>
+	<a class="menuItem" href="develtoolsstyleanalyzer.htm">Style Analyzer</a>
+	<a class="menuItem" href="develtoolsportfoliosimulator.htm">Portfolio Monte Carlo Simulator</a>
+	<a class="menuItem" href="develtoolsvarsimulator.htm">VaR Simulator</a>
+	<a class="menuItem" href="develtoolsCorrClustering.htm">Correlation Clustering Analyzer</a>
+	<a class="menuItem" href="develtoolsFactorAnalyzer.htm">Factor Analyzer</a>
+	<a class="menuItem" href="develtoolsUtilities.htm">Utility Applications</a>
+	<a class="menuItem" href="develtoolsRetirementPlanner.htm">Retirement Planner </a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Finance Add-in: Portfolio Functions</a>
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'PORTFOLIOANALYTICS');"><span class="menuItemText">Portfolio Analytics</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'PCA');"><span class="menuItemText">Factor Models</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfoliodesign">Asset Allocation - Black-Litterman </a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfoliodesign">Portfolio Optimization &amp; Efficient Frontier</a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfoliodesign">Portfolio Simulation &amp; Retirement Simulation</a>
+	<a class="menuItem" href="develtoolsaddin.htm#VaR">Value at Risk (VaR)</a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">More Information</a>
+	<a class="menuItem" href="develtoolsportfoliosamples.htm">Additional Samples Spreadsheets</a>
+	<a class="menuItem" href="demosaddin.aspx">On-line Demos &amp; Tutorials</a>
+	<a class="menuItem" href="develtoolslatestversion.htm">Latest Version Information</a>
+</div>
+
+<div id="menu5" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="develtools.htm">Overview</a>
+	<a class="menuItem" onclick="return(PopupWindow2(&quot;prices.asp&quot;,&quot;750&quot;,&quot;680&quot;,&quot;&quot;))" href="prices.asp">Price List</a>
+	<a class="menuItem" href="develtoolsaddin.htm#versions">Buy now</a>
+	<a class="menuItem" href="addinregisterexisting.asp">Login - Existing Users</a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Functions</a>
+	<a class="menuItem" href="develtoolsaddin.htm">Function Index</a>
+
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'DERIVATIVESFUNCTIONS');"><span class="menuItemText">Derivatives Valuation &amp; Analysis</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'PORTFOLIOFUNCTIONS');"><span class="menuItemText">Portfolio Analysis &amp; Design</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="develtoolsaddin.htm#VaR">Value At Risk (VaR)</a>
+	<a class="menuItem" href="develtoolscopulas.htm">Copulas (Simulation)</a>
+	<a class="menuItem" href="develtoolsaddin.htm#investmentvaluation">Company Valuation</a>
+	<a class="menuItem" href="develtoolsaddin.htm#quotes">On-line Data Sources</a>
+	<a class="menuItem" href="develtoolsaddin.htm#utilities">Utilities - Rates, Dividends</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItemHeading ">More Information</a>
+	<a class="menuItem" href="demosaddin.aspx">On-line Demos &amp; Tutorials</a>
+	<a class="menuItem" href="develtoolsFAQs.htm">FAQs</a>
+	<a class="menuItem" href="develtoolslatestversion.htm">Latest Version Information</a>
+</div>
+
+<div id="menu3" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="calculators.htm">Overview</a>
+	
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Black-Scholes Calculators</a>
+
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'BSOptions');"><span class="menuItemText">Options</span><span class="menuItemArrow">►</span></a>
+	
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'BSWarrants');"><span class="menuItemText">Warrants</span><span class="menuItemArrow">►</span></a>
+
+	<div class="menuItemSep"></div>
+	<a class="menuItemHeading ">Lattice Calculators</a>
+
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'BinomialOptions');"><span class="menuItemText">Binomial - Options</span><span class="menuItemArrow">►</span></a>
+
+	<a class="menuItem" href="binomialtree.aspx?tree=B&amp;warrant=Y">Binomial - Warrants</a>
+
+	<a class="menuItem" href="binomialtree.aspx?tree=T">Trinomial - Options</a>
+	<a class="menuItem" href="trinomialbarrier.aspx">Trinomial - Barrier Options</a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Model Comparisons</a>
+	<a class="menuItem" href="binomialvsbs.aspx">Binomial/Black-Scholes Convergence</a>
+	<a class="menuItem" href="dividendgraphs.aspx">Dividend Impact</a>
+	<div class="menuItemSep"></div>
+
+	<a class="menuItemHeading ">Stock Price Behaviour</a>
+	<a class="menuItem" href="probgraphs.aspx">Distribution Analysis</a>
+	<a class="menuItem" href="barrierprobs.aspx">Probability Analysis</a>
+</div>
+
+<div id="menu6" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="Contact.htm">General Enquiries</a>
+	<a class="menuItem" href="ContactCommercial.htm">Commercial License Enquiries</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="about.htm">About</a>
+</div>
+
+<!-- Sub menus options Strategy Tool -->
+<div id="OSET" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="strategymodel.htm">Overview</a>
+	<a class="menuItem" onclick="return(PopupWindow(&quot;featuresummary.htm&quot;,&quot;&quot;))" href="featuresummary.htm">Feature Highlights</a>
+	<a class="menuItem" href="OSETPremium.htm">Premium Features</a>	
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="demos.aspx">On-line Demos and Tutorials</a>
+	<a class="menuItem" href="FAQs.htm">FAQs</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="latestversion.htm">Latest Version Information</a>
+	<a class="menuItem" href="strategymodel.htm#download">Download</a>
+</div>
+
+<!-- Sub menus Options On-line Demos-->
+<div id="OPTIONSDEMOS" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="demos.aspx">Options Strategy Tool</a>
+	<a class="menuItem" href="demosaddin.aspx">Add-in &amp; Other Applications</a>
+</div>
+
+<!-- Sub menus Options LatestVersions-->
+<div id="OPTIONSVERSIONS" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="latestversion.htm">Options Strategy Evaluation Tool</a>
+	<a class="menuItem" href="develtoolslatestversion.htm">Add-in &amp; Other Applications</a>
+</div>
+
+<!-- Sub menus Options Pricing Models-->
+<div id="PRICINGMODELS" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="bs.htm">Overview</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="bs.htm#Black-Scholes">Black-Scholes Model</a>
+	<a class="menuItem" href="bs.htm#Binomial">Binomial Model</a>
+	<a class="menuItem" href="bs.htm#RGW">Other Models</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="bs.htm#delta">Delta</a>
+	<a class="menuItem" href="bs.htm#greeks">Other Greeks</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolseso.htm">Employee Stock Options</a>
+</div>
+
+<!-- Sub menu Factor Models-->
+<div id="PCA" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="develtoolsaddin.htm#factormodels">PCA Functions</a>	
+	<a class="menuItem" href="develtoolsaddin.htm#volatility">Orthogonal EWMA &amp; GARCH</a>
+	<a class="menuItem" href="develtoolsaddin.htm#factormodels">Portfolio Aggregation </a>
+	<a class="menuItem" href="develtoolsaddin.htm#factormodels">Risk Decomposition</a>
+</div>
+
+<!-- Sub menu Addin Derviative functions-->
+<div id="DERIVATIVESFUNCTIONS" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'valuation');"><span class="menuItemText">Derivatives Valuation</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="develtoolsaddin.htm#volatility">Historic Volatility</a>
+	<a class="menuItem" href="develtoolsaddin.htm#probabilities">Asset Probabilities</a>
+	<a class="menuItem" href="develtoolsaddin.htm#profitability">Hedging, Portfolio Insurance</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolsaddin.htm#copulas">Monte Carlo Simulation (Multi-Asset)</a>
+</div>
+
+<!-- Sub menu Addin Portfolio functions-->
+<div id="PORTFOLIOFUNCTIONS" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'PORTFOLIOANALYTICS');"><span class="menuItemText">Portfolio Analytics</span><span class="menuItemArrow">►</span></a>
+	<a class="menuItem" href="develtoolsaddin.htm#factormodels">Factor Models</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolsaddin.htm#portfoliodesign">Asset Allocation</a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfoliodesign">Portfolio Optimization </a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfoliodesign">Portfolio Simulation </a>
+
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolsaddin.htm#VaR">Value at Risk (VaR)</a>
+</div>
+
+
+<!-- Sub menu Portfolio Analysis Tools functions-->
+<div id="PORTFOLIOANALYTICS" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="develtoolsaddin.htm#volatility">Volatility, Correlation</a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfolioanalysis">Beta &amp; R-Squared</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolsaddin.htm#portfolioanalysis">Active Management Statistics</a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfolioanalysis">Risk Attribution</a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfolioanalysis">Style Analysis</a>
+</div>
+
+
+<!-- Sub menus calculators -->
+<div id="BSOptions" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="optiongraphs.aspx">Without Dividends</a>
+	<a class="menuItem" href="optiongraphs.aspx?divs=Y">With Dividends</a>
+</div>
+<div id="BSWarrants" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="optiongraphs.aspx?divs=N&amp;warrant=Y">Without Dividends</a>
+	<a class="menuItem" href="optiongraphs.aspx?divs=Y&amp;warrant=Y">With Dividends</a>
+</div>
+<div id="BinomialOptions" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="binomialtree.aspx?tree=B">Cox, Ross &amp; Rubinstein Tree</a>
+	<a class="menuItem" href="binomialtree.aspx?tree=E">Equal Probabilities Tree</a>
+</div>
+
+<!-- Sub menus Add-in -->
+<div id="FunctionCategories" class="menu" onmouseover="menuMouseover(event)">
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'valuation');"><span class="menuItemText">Derivatives Valuation</span><span class="menuItemArrow">►</span></a>
+	
+	<a class="menuItem" href="develtoolsaddin.htm#volatility">Historic Volatility, Correlation</a>
+	<a class="menuItem" href="develtoolsaddin.htm#probabilities">Asset Probabilities</a>
+	<a class="menuItem" href="develtoolsaddin.htm#profitability">Option Hedging, Profitability</a>
+	<a class="menuItem" href="#" onmouseover="menuItemMouseover(event, 'portanal');"><span class="menuItemText">Portfolio Analysis and Risk</span><span class="menuItemArrow">►</span></a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolsaddin.htm#quotes">On-line Data Sources</a>
+</div>
+
+<!-- Sub sub menus Add-in -->
+<div id="valuation" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="develtoolsaddin.htm#pricing">Options - Vanilla</a>
+	<a class="menuItem" href="develtoolsaddin.htm#exotic">Options - Exotic</a>
+	<a class="menuItem" href="develtoolsaddin.htm#interestrate">Interest Rate Derivatives</a>
+	<a class="menuItem" href="develtoolsaddin.htm#futures">Futures &amp; Variance Swaps</a>
+	<div class="menuItemSep"></div>
+	<a class="menuItem" href="develtoolseso.htm">Employee Stock Options</a>
+</div>
+<div id="portanal" class="menu" onmouseover="menuMouseover(event)"> 
+	<a class="menuItem" href="develtoolsaddin.htm#VaR">Value at Risk (VaR)</a>
+	<a class="menuItem" href="develtoolsaddin.htm#portfolioanalysis">Portfolio Analysis, Asset Allocation</a>
+<!-- FreeFind End No Index -->
+</div>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+
+  <table border="0" cellpadding="6">
+    <tbody><tr>
+
+      <td style="width:119px" valign="top">
+        <p style="margin-top: 0; margin-bottom: 5px">&nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px">&nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px">&nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px">&nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px"><a class="sidemenubar" href="develtools.htm">Finance
+        Add-in for Excel</a>&nbsp;<br>
+        &nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px"><a class="sidemenubar" href="optionstools.htm">Options</a><br>
+        <a class="sidemenubar" href="optionstools.htm">Applications</a><br>
+        &nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px"><a class="sidemenubar" href="develtoolsportfolioanalysis.htm">Portfolio Analysis &amp; Design
+        Applications</a><br>
+        &nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px"><a class="sidemenubar" href="calculators.htm">On-line
+        Calculators</a><br>
+        &nbsp;</p>
+
+        <p style="margin-top: 0; margin-bottom: 5px"><a href="Contact.htm" class="sidemenubar">Contact</a></p>
+
+        <p style="margin-top: 0; margin-bottom: 5px">&nbsp;</p>
+
+        <table border="0" width="120">
+          <tbody><tr>
+            <td style="width:120px"></td>
+          </tr>
+        </tbody></table>
+
+        <p style="margin-top: 0; margin-bottom: 5px">&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+      </td>
+
+      <td valign="bottom" style="width: 40px"></td>
+
+      <td valign="top" style="width: 560px">
+        <h3 style="text-align:center; margin-top : 20px">Hoadley Trading &amp; Investment Tools</h3>
+
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%">
+          <tbody><tr>
+            <td style="width:100%;" colspan="2">
+			Software tools for derivatives traders and portfolio investors.&nbsp;
+            <a onclick="return(PopupWindow2(&quot;prices.asp&quot;,&quot;750&quot;,&quot;680&quot;,&quot;&quot;))" href="prices.asp">Tools &amp; prices -
+            summary.</a></td>
+          </tr>
+
+          <tr>
+            <td style="width:80%;">&nbsp;</td>
+
+            <td style="width:20%;">&nbsp;</td>
+          </tr>
+        </tbody></table>
+
+        <table border="0" width="100%" cellpadding="0">
+          <tbody><tr>
+            <td class="subHd1" style="height:19px; font-size : 12pt; vertical-align:bottom;  " colspan="2" align="center">
+                 <b>Toolset</b></td>
+          </tr>
+
+          <tr>
+            <td style="background:#D8E4F1;height:41px" colspan="2" class="CellLink" onclick="location.href='develtools.htm';">
+              <p style="text-align:center; margin-top: 3px; margin-bottom: 3px">
+			  <b>Finance Add-in For
+              Excel</b></p>
+
+              <p style="text-align:center; margin-top: 3px; margin-bottom: 3px"><a href="develtools.htm">Overview</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; background:#E8E8E8; height: 75px">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Finance Add-in for
+              Excel</b>:&nbsp; Tools to support the analysis of options and other
+              derivatives, portfolio asset/sector allocation &amp; optimization,
+              investment performance analysis, value at risk (VaR), company 
+			  valuation, and
+              more.</p>
+            </td>
+
+            <td style="background:#E8E8E8; width: 38%; height: 75px;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="develtools.htm">
+			  Information &amp; download</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="demosaddin.aspx">
+			  On-line demos &amp; tutorials</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="background-color: #336699; height: 5px; line-height: 5px;">
+			<img class="valignbottom" alt="" src="Padder.gif" width="5" height="5"></td>
+          </tr>
+
+          <tr>
+            <td style="background:#D8E4F1; height:38px;" colspan="2" class="CellLink" onclick="location.href='optionstools.htm';">
+              <p style="text-align:center; margin-top: 3px; margin-bottom: 3px"><b>Options</b> <b>Applications</b></p>
+			  <p style="text-align:center; margin-top: 3px; margin-bottom: 3px">
+			  <b><a href="optionstools.htm">Overview</a></b></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height: 74px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Options Strategy</b>
+              <b>Evaluation</b> <b>Tool:</b>&nbsp; Turn-key Excel application for
+              examining and comparing the profitability and risks of options strategies
+              using payoff diagrams and other techniques.</p>
+            </td>
+
+            <td style="background:#E8E8E8; height:74px; width: 38%;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="strategymodel.htm">
+			  Information &amp; download</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <a href="featuresummary.htm" onclick="return(PopupWindow(&quot;featuresummary.htm&quot;,&quot;&quot;))">Feature
+              highlights</a>&nbsp;</p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="demos.aspx">
+			  On-line guided
+              tour</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:58px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Historic Volatility
+              Calculator</b>:&nbsp; GARCH-based forecasting, smile/skew modelling; auto
+              retrieval of historic asset prices from web for most
+              exchanges.</p>
+            </td>
+
+            <td style="width: 38%; height:58px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="develtoolsvolcalc.htm">
+			  Information &amp; download</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="demosaddin.aspx">
+			  On-line demo/tutorial</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:58px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Implied Volatility
+              Calculator:&nbsp;</b> Retrieval of on-line option chains;&nbsp; implied
+              volatility calculation; volatility smile surface charting; combined
+              historic/implied volatility cones.</p>
+            </td>
+
+            <td style="width:38%; height:58px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="develtoolsimpliedvolcalc.htm">
+			  Information &amp;
+              download</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="demosaddin.aspx">
+			  On-line demo/tutorial</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:42px; background:#E8E8E8;">
+            <p style="margin-top: 3px; margin-bottom: 3px">
+                <b>Probability
+              Cones: </b>Provides a visual
+                indication of the range of future asset prices for a range of probability
+                bands.</p>
+              
+            </td>
+
+            <td style="width:38%; height:42px; background:#E8E8E8;"><a href="develtoolsprobabilitycones.htm">Information &amp; download</a></td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:42px; background:#E8E8E8;">
+              <p style="margin-bottom: 3px; margin-top:3px">
+			  <b>Open Positions
+              Manager</b>:&nbsp; Options portfolio management &amp; position analysis
+              software.</p>
+            </td>
+
+            <td style="width:38%; height:42px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="develtoolspositionmanager.htm">
+			  Information &amp;
+              download</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="demosaddin.aspx">
+			  On-line demos &amp; tutorials</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="background-color: #336699; height: 5px; line-height: 5px;">
+			<img class="valignbottom" alt="" src="Padder.gif" width="5" height="5"></td>          </tr>
+
+          <tr>
+            <td style="background-color:#D8E4F1; height:41px;" colspan="2" class="CellLink" onclick="location.href='develtoolsportfolioanalysis.htm';">
+              <p style="text-align:center; margin-top: 3px; margin-bottom: 3px">
+			  <b>Portfolio Analysis &amp; Design
+              Applications</b></p>
+			  <p style="text-align:center; margin-top: 3px; margin-bottom: 3px">
+			  <b><a href="develtoolsportfolioanalysis.htm">Overview</a></b></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width: 66%; background-color:#E8E8E8"><p style="margin-bottom: 3px; margin-top:3px">
+			<b>Portfolio
+            Optimizer:</b>&nbsp; Analysis and mean-variance
+            optimization of a portfolio using MPT/CAPM principles.</p></td>
+
+            <td style="width:38%; height:42px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="develtoolsoptimize.htm">
+			  Information &amp; download</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="demosaddin.aspx">
+			  On-line demo/tutorial</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; background-color:#E8E8E8;">
+			<p style="margin-bottom: 3px; margin-top:3px"><b>Black-Litterman Returns Estimator:
+			</b>&nbsp;Estimation of asset/sector returns using the Black-Litterman 
+			model.</p>
+			  </td>
+
+            <td style="width: 38%;background:#E8E8E8;"><p style="margin-top: 3px; margin-bottom: 3px">
+			<a href="develtoolsblacklitterman.htm">Information &amp; download</a></p></td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; background-color:#E8E8E8;"><p style="margin-bottom: 3px; margin-top:3px">
+			<b>Style Analyzer: </b>&nbsp;Returns-based analysis of the investment
+            style of a portfolio or fund.</p></td>
+
+            <td style="width: 38%;background:#E8E8E8;"><a href="develtoolsstyleanalyzer.htm">
+			Information &amp;
+            download</a></td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; background-color:#E8E8E8;"><p style="margin-bottom: 3px; margin-top:3px">
+			<b>Portfolio Simulator:</b>
+            &nbsp;Analysis of future risks and returns of mutual funds or
+            other portfolios using Monte Carlo simulation.</p></td>
+
+            <td style="width:38%; background:#E8E8E8;">
+			<a href="develtoolsportfoliosimulator.htm">Information &amp;
+            download</a></td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; background-color:#E8E8E8;">
+              <p style="margin-bottom: 3px; margin-top:3px"><b>VaR Simulator:</b>&nbsp; Simulation 
+			  of Value at Risk (VaR) for both linear and non-linear portfolios.</p>
+            </td>
+
+            <td style="width:38%; background:#E8E8E8;">
+              <a href="develtoolsvarsimulator.htm">Information &amp;
+            download</a></td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; background-color:#E8E8E8;">
+              <p style="margin-bottom: 3px; margin-top:3px"><b>Correlation Analyzer:</b>&nbsp; 
+			  Identification of groupings, or clusters, of assets/sectors using 
+			  hierarchical cluster analysis.</p>
+            </td>
+
+            <td style="width:38%; background:#E8E8E8;">
+              <a href="develtoolsCorrClustering.htm">Information &amp; download</a></td>
+          </tr>
+
+            <tr>
+            <td style="width:66%; height:44px; background-color:#E8E8E8;">
+              <p style="margin-bottom: 3px; margin-top:3px"><b>Factor Analyzer:</b>
+              &nbsp;Analysis of individual assets, funds and portfolios using 
+			  the Fama-French factor models.</p>
+            </td>
+
+            <td style="width:38%; height:44px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <a href="develtoolsFactorAnalyzer.htm">Information &amp;
+              download</a></p>
+            </td>
+            </tr>
+
+          <tr>
+            <td style="width:66%; height:44px; background-color:#E8E8E8;">
+              <p style="margin-bottom: 3px; margin-top:3px"><b>Retirement Planner:</b>
+              &nbsp;Preparation of retirement plans using Monte Carlo
+              Simulation.</p>
+            </td>
+
+            <td style="width:38%; height:44px; background:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="develtoolsRetirementPlanner.htm">
+			  Information &amp;
+              download</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="background-color: #336699; height: 5px; line-height: 5px;">
+			<img class="valignbottom" alt="" src="Padder.gif" width="5" height="5"></td>
+          </tr>
+
+          <tr>
+            <td style="height:22px; background-color:#D8E4F1;" colspan="2" class="CellLink" onclick="location.href='calculators.htm';">
+              <p style="text-align:center; margin-top: 3px; margin-bottom: 3px">
+			  <b>Options Valuation Analysis
+              Calculators (on-line)</b></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:60px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Black-Scholes pricing</b>:
+              Sensitivity analysis of prices, "Greeks", and
+              probabilities</p>
+            </td>
+
+            <td style="width:38%; height: 60px; background-color:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <a href="optiongraphs.aspx">Run
+              on-line</a> (w/out dividends)</p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <a href="optiongraphs.aspx?divs=Y">Run on-line</a> (with
+              dividends)</p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:60px; background-color:#E8E8E8">
+              <p style="margin-top: 5px; margin-bottom: 5px">
+			  <b>Binomial&nbsp; pricing</b>:
+              Cox, Ross &amp; Rubinstein or equal probabilities; American or European,
+              with graphical tree structure</p>
+            </td>
+
+            <td style="width: 38%; height:60px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <a href="binomialtree.aspx?tree=B">Run on-line</a> (CRR)</p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <a href="binomialtree.aspx?tree=E">Run on-line</a> (Equal probs)</p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:42px; background-color:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Trinomial pricing</b>: -
+              American or European, with graphical tree structure</p>
+            </td>
+
+            <td style="width:38%; height:42px; background-color:#E8E8E8;">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="binomialtree.aspx?tree=T">
+			  Run on-line</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width:66%; height:42px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Barrier option pricing</b>
+              (trinomial &amp; analytic):- American or European, with graphical tree
+              structure&nbsp;</p>
+            </td>
+
+            <td style="width:38%; height:42px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="trinomialbarrier.aspx">
+			  Run on-line</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width: 66%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Black-Scholes/Binomial
+              convergence</b> analysis</p>
+            </td>
+
+            <td style="width:38%; height:42px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="binomialvsbs.aspx">Run
+              on-line</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width: 66%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top:5px; margin-bottom: 5px">
+			  <b>Dividend impact</b> analysis;
+              American vs European pricing</p>
+            </td>
+
+            <td style="width: 38%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="dividendgraphs.aspx">
+			  Run on-line</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="background-color: #336699; height: 5px; line-height: 5px;">
+			<img class="valignbottom" alt="" src="Padder.gif" width="5" height="5"></td>
+          </tr>
+
+          <tr>
+            <td style="height:22px; background-color:#D8E4F1" colspan="2" onclick="location.href='calculators.htm';" class="CellLink">
+              <p style="text-align:center; margin-top: 3px; margin-bottom: 3px"><b>Stock Price Behaviour Analysis
+              (on-line)</b></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width: 66%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top:3px; margin-bottom: 3px">
+			  <b>Lognormal stock price
+              distribution</b> analysis</p>
+            </td>
+
+            <td style="width: 38%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="probgraphs.aspx">Run
+              on-line</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm#stockcalc">
+			  Information</a></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width: 66%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px">
+			  <b>Stock price probability</b>
+              calculator</p>
+            </td>
+
+            <td style="width: 38%; height: 41px; background-color:#E8E8E8">
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="barrierprobs.aspx">Run
+              on-line</a></p>
+
+              <p style="margin-top: 3px; margin-bottom: 3px"><a href="calculators.htm#stockcalc">
+			  Information</a></p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <h4 style="margin-bottom: 10px">&nbsp;</h4>
+
+        <table border="0" cellspacing="0" width="100%" style="border-collapse: collapse">
+          <tbody><tr>
+            <td class="subHd1" style="width:100%; height:10px; background-color:#336699">
+            <b>Excel Spreadsheet Tools</b></td>
+          </tr>
+        </tbody></table>
+
+        <ul>
+			<li><b>Finance Add-in for Excel:</b> For
+            use in Excel spreadsheets for the calculation of option and warrant prices (equities, currencies, stock indices,&nbsp;futures, barrier options,
+            and Employee Stock Options), "Greeks" , implied volatility
+            (using&nbsp; the Black-Scholes and binomial models), convertible bonds,
+            historical volatility (including the EWMA and GARCH models), trading
+            profitability, probabilities and optimal early exercise points. Also includes
+            functions for futures pricing and contract valuation. Handles both
+            lognormally distributed asset prices, and non-lognormally distributed (using
+            the Gram-Charlier/Edgeworth expansion &amp; Rubinstein implied binomial
+            trees), values options using the SABR stochastic volatility model; and much
+            more.<br>
+            <br>
+            Interest rate derivatives (bonds, floating rate notes (FRNs or floaters),
+            bond options, caps and floors, swaptions) are handled using either the
+            Black-76 model or the Hull-White model (analytic and Hull-White trinomial
+            interest rate trees). Also includes a Monte Carlo simulation
+            components and components for the retrieval of on-line quotes and option
+            chains into a spreadsheet.<br>
+            <br>
+            Other portfolio investment related features include portfolio analysis using
+            principal component analysis, asset allocation using the Black-Litterman
+            model, portfolio optimization and efficient frontier, value at risk (VAR) and
+            much more. The add-in provides functions which can be used directly in
+            spreadsheet cells and which can be called from VBA modules/Macros. <a href="develtoolsaddin.htm">More information &amp; download.</a>&nbsp;<br>
+            <br>
+            &nbsp;</li>
+		</ul>
+
+        <table border="0" cellspacing="0" width="100%" style="border-collapse: collapse">
+          <tbody><tr>
+            <td class="subHd1" style="width:100%; height:10px; background-color:#336699">
+            <b><a name="strategymodel" id="strategymodel"></a> Options
+            Analysis Applications</b></td>
+          </tr>
+        </tbody></table>
+
+		<ul>
+			<li><b>Options Strategy Analysis
+            Tool:&nbsp;</b> Assess, using pay-off diagrams, the profitability of any
+            number of options trading strategies and deals. View "Greeks" graphically.
+            Download to use.&nbsp;&nbsp;<br>
+            <br>
+            See <a href="featuresummary.htm" onclick="return(PopupWindow(&quot;featuresummary.htm&quot;,&quot;&quot;))">feature highlights</a> for a
+            quick overview.&nbsp;<br>
+            See <a href="strategymodel.htm">O</a><a href="strategymodel.htm">ptions Strategy Evaluation Tool</a> page for further
+            information.<br>
+            &nbsp;</li>
+			<li><b>Historic Volatility
+            Calculator:</b> An Excel-based application for the calculation and charting
+            of historic volatility. Includes forecasting --&nbsp; construction of
+            volatility term structures based on GARCH -- and volatility smile/skew
+            modelling.&nbsp; Data is automatically retrieved from Yahoo finance without
+            the need for browsing or downloading data. Most exchanges around the world
+            supported.&nbsp; Not password protected so application can be modified if
+            required. <a href="develtoolsvolcalc.htm">More information &amp;
+            download.</a><br>
+            &nbsp;</li>
+			<li><b>Implied Volatility
+            Calculator:</b> &nbsp;An application which retrieves
+            complete option chains from on-line providers and calculates implied
+            volatilities for all options in the series.&nbsp; The application also
+            produces a volatility surface combining the volatility skew (smile) and term
+            structure for all strikes and expiry months. <a href="develtoolsimpliedvolcalc.htm">More information &amp;
+            download.</a><br>
+            &nbsp;</li>
+			<li><b>Open Positions Manager:</b>&nbsp;
+            An Excel-based sample application for the maintenance of a portfolio of open
+            options and underlying asset positions. The portfolio management software can
+            be used to perform sensitivity analyses (eg what will be my total exposure be
+            if the market drops by 10%), to produce pay-off diagrams and optimal early
+            exercise reports for open positions.&nbsp; Designed to be used as is, the
+            application, which is not password protected, can be enhanced or tailored to
+            meet individual user requirements. <a href="develtoolspositionmanager.htm">More information &amp;
+            download.</a><br>
+            <br>
+            &nbsp;</li>
+		</ul>
+
+        <table border="0" cellspacing="0" width="100%" style="border-collapse: collapse">
+          <tbody><tr>
+            <td class="subHd1" style="width:100%; height:10px; background-color:#336699">
+            <b>Portfolio Analysis &amp; Design
+            Applications</b></td>
+          </tr>
+        </tbody></table>
+
+		<ul>
+			<li><b>Portfolio Optimizer:</b> An
+            Excel-based application which will automatically download historical data
+            from the web for a specified portfolio of stocks and analyze the portfolio in
+            terms of volatility, beta, R-Squared, Sharpe ratio, and value at risk. The
+            optimization component will estimate optimal portfolio weightings required to
+            produce a range of returns for the lowest risk. The efficient frontier and
+            security/capital market line are charted. <a href="develtoolsoptimize.htm">More information &amp; download</a>.<br>
+            &nbsp;</li>
+			<li><b>Style
+              Analyzer:</b>&nbsp;
+			Applies the
+                returns-based methodology, originally developed by William F
+                Sharpe, to analyze the
+                  investment style of a mutual fund or other investment
+                  portfolio.
+			&nbsp;<br>
+
+                    
+                      <br>
+                      This approach uses quadratic programming to determine the
+                      combination of positions in passive indices, style&nbsp;benchmarks,
+                      or asset classes&nbsp;that would best replicate the performance of
+                      a fund or investment portfolio over a specified time frame.&nbsp;
+                      <a href="develtoolsstyleanalyzer.htm">More information &amp;
+                      download.</a></li>
+		</ul>
+		<ul>
+			<li><b>Portfolio
+              Simulator:&nbsp;</b> Analysis of the future risks and returns for a mutual
+              fund or other investment portfolio. Includes periodic asset weight
+              rebalancing.&nbsp; 
+			<a href="develtoolsportfoliosimulator.htm">More information &amp;
+                download.</a><br>&nbsp;<br> </li>
+			<li><b>Retirement
+              Planner:&nbsp;</b> Preparation of retirement plans using Monte Carlo
+              simulation. Includes graphical representation of expected risks and returns
+              during both the accumulation and retirement phases of the
+              plan..&nbsp; 
+			<a href="develtoolsRetirementPlanner.htm">More information &amp;
+                download.</a><br><br>&nbsp; </li>
+		</ul>
+
+        <table border="0" cellspacing="0" width="100%" style="border-collapse: collapse">
+          <tbody><tr>
+            <td class="subHd1" style="width:100%; height:10px; background-color:#336699">
+            <b><a name="calculators" id="calculators"></a> On-line Options
+            Pricing Analysis Calculators</b></td>
+          </tr>
+        </tbody></table>
+
+        <ul>
+			<li><b>Black-Scholes pricing
+            analysis.</b>&nbsp; Examine graphically how changes in stock price,
+            volatility, time to expiration and interest rate affect the option price,
+            time value, the derived "Greeks" (delta, gamma, theta, vega, rho) and the
+            probability of the option closing in the money.&nbsp; Uses the Black-Scholes
+            model.&nbsp; No software or files need to be downloaded.&nbsp;<br>
+            See&nbsp; <a href="calculators.htm">on-line calculators</a> for further
+            information, or <a href="optiongraphs.aspx">use it now</a>.&nbsp;<br>
+            &nbsp;</li>
+			<li><b>Binomial tree graphical option
+            calculator:</b> Calculate option prices using either the Cox, Ross and
+            Rubinstein binomial option pricing model, or the equal probabilities tree
+            pricing model, and display the tree structure used in the calculation.&nbsp;
+            Designed to calculate accurate prices and to illustrate tree-based pricing
+            principles for both American &amp; European options with discrete or
+            continuous dividends.&nbsp;&nbsp;<br>
+            See <a href="calculators.htm">on-line calculators</a> for further
+            information, or use either the&nbsp; <a href="binomialtree.aspx?tree=B">Cox,
+            Ross &amp; Rubinstein&nbsp;</a> or the <a href="binomialtree.aspx?tree=E">Equal Probability tree</a> calculator now.<br>
+            &nbsp;</li>
+			<li><b>Trinomial tree graphical option
+            calculator:</b> Calculate option prices using the trinomial tree pricing
+            model, and display the tree structure used in the calculation.&nbsp; Designed
+            to calculate accurate prices and to illustrate tree-based pricing principles
+            for both American &amp; European options with discrete or continuous
+            dividends.&nbsp;&nbsp;<br>
+            See <a href="calculators.htm">on-line calculators</a> for further
+            information, or <a href="binomialtree.aspx?tree=T">use it
+            now.</a>&nbsp;&nbsp;<br>
+            &nbsp;</li>
+			<li><b>Barrier option calculator using
+            trinomial lattice:</b> Calculate barrier option prices, and hedge parameters,
+            using a trinomial lattice, and display the tree structure used in the
+            calculation. Key features include American &amp; European option pricing,
+            dividends as continuous yield or discrete payment, continuous or discrete
+            monitoring of barrier, and two methods of computation enhancement. Analytic
+            prices, where analytic formulas exist, are displayed for comparison.<br>
+            See <a href="calculators.htm">on-line calculators</a> for further
+            information, or <a href="trinomialbarrierx.aspx">use it now.</a><br>
+            &nbsp;</li>
+			<li><b>Black-Scholes/Binomial
+            convergence analysis:</b> Display graphically the way in which options priced
+            under the binomial model converge with Black-Scholes prices as the number of
+            binomial steps increases. The impact of changes to the other pricing inputs
+            can also be examined. See o<a href="calculators.htm">n-line calculators</a>
+            for futher information, or <a href="binomialvsbs.aspx">use it now</a>.<br>
+            &nbsp;</li>
+			<li><b>American &amp; European option
+            pricing comparison, &amp; dividend impact analysis&nbsp;</b> Examine how
+            dividends paid during the life of the option impact the price, and in
+            particular the sensitivity of the option price to different ex-dividend
+            dates. Also compare pricing for <i>American</i> &amp; <i>European</i>
+            options.&nbsp;<br>
+            See&nbsp; <a href="calculators.htm">on-line calculators</a> for further
+            information, or <a href="dividendgraphs.aspx">use it now</a>.&nbsp;<br>
+            <br>
+            &nbsp;<img alt="White Dot" height="10" src="images/WhiteDot.gif" width="250"></li>
+		</ul>
+
+        <table border="0" cellspacing="0" width="100%" style="border-collapse: collapse">
+          <tbody><tr>
+            <td class="subHd1" style="width:100%; height:10px; background-color:#336699">
+            <b><a name="stockprices" id="stockprices"></a> On-line Stock
+            Price Distribution &amp; Probability Calculators</b></td>
+          </tr>
+        </tbody></table>
+
+        <ul>
+			<li><b>Lognormal distribution
+            analysis:&nbsp;</b> Examine graphically the expected distribution of stock
+            prices (assumed by the Black-Scholes pricing model), given a starting price
+            and various assumptions for time, volatility and rate of
+            return.&nbsp;&nbsp;<br>
+            See <a href="calculators.htm">on-line calculators</a> for further
+            information, or <a href="probgraphs.aspx">use it now</a>.&nbsp;<br>
+            &nbsp;</li>
+			<li><b>Stock price probability
+            calculator:</b>&nbsp; Compute the probability of a stock price exceeding, or
+            falling between, upper and lower boundary prices. The results show both
+            closing probabilities (ie at end of period) and the probabilities of the
+            boundary prices <i>ever</i> being exceeded (ie the probability that they will
+            be exceeded <i>at any time during</i> the period).&nbsp;&nbsp;<br>
+            See <a href="calculators.htm">on-line calculators</a> for further
+            information, or <a href="barrierprobs.aspx">use it now</a>.&nbsp;</li>
+		</ul>
+		
+      </td>
+    </tr>
+       
+  </tbody></table>
+ 
+  <div id="counter">
+	  <!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=4035240; 
+var sc_invisible=1; 
+var sc_partition=31; 
+var sc_click_stat=1; 
+var sc_security="05422186"; 
+var sc_https=1; 
+</script>
+
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="hit counter" href="https://www.statcounter.com/"><img class="statcounter" src="https://c.statcounter.com/4035240/0/05422186/1/" alt="hit counter" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+<br>
+  </div>
+   
+</div>
+ 
+<div id="footerBar">
+  <div class="menuBarFooter">
+	<span class="copyright">Copyright © 2024
+	Peter Hoadley&nbsp;|</span>
+	<a href="terms.htm" class="copyrightLink">Terms of Use</a>
+	<span class="copyright">&nbsp;|&nbsp;</span>
+	<a href="https://validator.w3.org/check?uri=referer" class="copyrightLink">W3C HTML 4.01</a>
+ </div>
+
+</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+</body></html>

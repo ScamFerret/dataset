@@ -1,0 +1,1611 @@
+<!DOCTYPE html><html lang="en" data-cm-hook="1"><head><style>:root{--litepickerBgColor: #fff;--litepickerMonthHeaderTextColor: #333;--litepickerMonthButton: #9e9e9e;--litepickerMonthButtonHover: #2196f3;--litepickerMonthWidth: calc(var(--litepickerDayWidth) * 7);--litepickerMonthWeekdayColor: #9e9e9e;--litepickerDayColor: #333;--litepickerDayColorHover: #2196f3;--litepickerDayIsTodayColor: #f44336;--litepickerDayIsInRange: #bbdefb;--litepickerDayIsLockedColor: #9e9e9e;--litepickerDayIsBookedColor: #9e9e9e;--litepickerDayIsStartColor: #fff;--litepickerDayIsStartBg: #2196f3;--litepickerDayIsEndColor: #fff;--litepickerDayIsEndBg: #2196f3;--litepickerDayWidth: 38px;--litepickerButtonCancelColor: #fff;--litepickerButtonCancelBg: #9e9e9e;--litepickerButtonApplyColor: #fff;--litepickerButtonApplyBg: #2196f3;--litepickerButtonResetBtn: #909090;--litepickerButtonResetBtnHover: #2196f3;--litepickerHighlightedDayColor: #333;--litepickerHighlightedDayBg: #ffeb3b}.show-week-numbers{--litepickerMonthWidth: calc(var(--litepickerDayWidth) * 8)}.litepicker{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-size:0.8em;display:none}.litepicker .container__main{display:-webkit-box;display:-ms-flexbox;display:flex}.litepicker .container__months{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:var(--litepickerBgColor);border-radius:5px;-webkit-box-shadow:0 0 5px #ddd;box-shadow:0 0 5px #ddd;width:calc(var(--litepickerMonthWidth) + 10px);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months.columns-2{width:calc((var(--litepickerMonthWidth) * 2) + 20px)}.litepicker .container__months.columns-3{width:calc((var(--litepickerMonthWidth) * 3) + 30px)}.litepicker .container__months.columns-4{width:calc((var(--litepickerMonthWidth) * 4) + 40px)}.litepicker .container__months.split-view .month-item-header .button-previous-month,.litepicker .container__months.split-view .month-item-header .button-next-month{visibility:visible}.litepicker .container__months .month-item{padding:5px;width:var(--litepickerMonthWidth);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months .month-item-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-weight:500;padding:10px 5px;text-align:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--litepickerMonthHeaderTextColor)}.litepicker .container__months .month-item-header div{-webkit-box-flex:1;-ms-flex:1;flex:1}.litepicker .container__months .month-item-header div>.month-item-name{margin-right:5px}.litepicker .container__months .month-item-header div>.month-item-year{padding:0}.litepicker .container__months .month-item-header .reset-button{color:var(--litepickerButtonResetBtn)}.litepicker .container__months .month-item-header .reset-button>svg,.litepicker .container__months .month-item-header .reset-button>img{fill:var(--litepickerButtonResetBtn);pointer-events:none}.litepicker .container__months .month-item-header .reset-button:hover{color:var(--litepickerButtonResetBtnHover)}.litepicker .container__months .month-item-header .reset-button:hover>svg{fill:var(--litepickerButtonResetBtnHover)}.litepicker .container__months .month-item-header .button-previous-month,.litepicker .container__months .month-item-header .button-next-month{visibility:hidden;text-decoration:none;color:var(--litepickerMonthButton);padding:3px 5px;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__months .month-item-header .button-previous-month>svg,.litepicker .container__months .month-item-header .button-previous-month>img,.litepicker .container__months .month-item-header .button-next-month>svg,.litepicker .container__months .month-item-header .button-next-month>img{fill:var(--litepickerMonthButton);pointer-events:none}.litepicker .container__months .month-item-header .button-previous-month:hover,.litepicker .container__months .month-item-header .button-next-month:hover{color:var(--litepickerMonthButtonHover)}.litepicker .container__months .month-item-header .button-previous-month:hover>svg,.litepicker .container__months .month-item-header .button-next-month:hover>svg{fill:var(--litepickerMonthButtonHover)}.litepicker .container__months .month-item-weekdays-row{display:-webkit-box;display:-ms-flexbox;display:flex;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;color:var(--litepickerMonthWeekdayColor)}.litepicker .container__months .month-item-weekdays-row>div{padding:5px 0;font-size:85%;-webkit-box-flex:1;-ms-flex:1;flex:1;width:var(--litepickerDayWidth);text-align:center}.litepicker .container__months .month-item:first-child .button-previous-month{visibility:visible}.litepicker .container__months .month-item:last-child .button-next-month{visibility:visible}.litepicker .container__months .month-item.no-previous-month .button-previous-month{visibility:hidden}.litepicker .container__months .month-item.no-next-month .button-next-month{visibility:hidden}.litepicker .container__days{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:center;-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__days>div,.litepicker .container__days>a{padding:5px 0;width:var(--litepickerDayWidth)}.litepicker .container__days .day-item{color:var(--litepickerDayColor);text-align:center;text-decoration:none;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__days .day-item:hover{color:var(--litepickerDayColorHover);-webkit-box-shadow:inset 0 0 0 1px var(--litepickerDayColorHover);box-shadow:inset 0 0 0 1px var(--litepickerDayColorHover)}.litepicker .container__days .day-item.is-today{color:var(--litepickerDayIsTodayColor)}.litepicker .container__days .day-item.is-locked{color:var(--litepickerDayIsLockedColor)}.litepicker .container__days .day-item.is-locked:hover{color:var(--litepickerDayIsLockedColor);-webkit-box-shadow:none;box-shadow:none;cursor:default}.litepicker .container__days .day-item.is-booked{color:var(--litepickerDayIsBookedColor)}.litepicker .container__days .day-item.is-booked:hover{color:var(--litepickerDayIsBookedColor);-webkit-box-shadow:none;box-shadow:none;cursor:default}.litepicker .container__days .day-item.is-in-range{background-color:var(--litepickerDayIsInRange);border-radius:0}.litepicker .container__days .day-item.is-start-date{color:var(--litepickerDayIsStartColor);background-color:var(--litepickerDayIsStartBg);border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-flipped{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date{color:var(--litepickerDayIsEndColor);background-color:var(--litepickerDayIsEndBg);border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date.is-flipped{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-end-date{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-highlighted{color:var(--litepickerHighlightedDayColor);background-color:var(--litepickerHighlightedDayBg)}.litepicker .container__days .week-number{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#9e9e9e;font-size:85%}.litepicker .container__footer{text-align:right;padding:10px 5px;margin:0 5px;background-color:#fafafa;-webkit-box-shadow:inset 0px 3px 3px 0px #ddd;box-shadow:inset 0px 3px 3px 0px #ddd;border-bottom-left-radius:5px;border-bottom-right-radius:5px}.litepicker .container__footer .preview-date-range{margin-right:10px;font-size:90%}.litepicker .container__footer .button-cancel{background-color:var(--litepickerButtonCancelBg);color:var(--litepickerButtonCancelColor);border:0;padding:3px 7px 4px;border-radius:3px}.litepicker .container__footer .button-cancel>svg,.litepicker .container__footer .button-cancel>img{pointer-events:none}.litepicker .container__footer .button-apply{background-color:var(--litepickerButtonApplyBg);color:var(--litepickerButtonApplyColor);border:0;padding:3px 7px 4px;border-radius:3px;margin-left:10px;margin-right:10px}.litepicker .container__footer .button-apply:disabled{opacity:0.7}.litepicker .container__footer .button-apply>svg,.litepicker .container__footer .button-apply>img{pointer-events:none}.litepicker .container__tooltip{position:absolute;margin-top:-4px;padding:4px 8px;border-radius:4px;background-color:#fff;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);white-space:nowrap;font-size:11px;pointer-events:none;visibility:hidden}.litepicker .container__tooltip:before{position:absolute;bottom:-5px;left:calc(50% - 5px);border-top:5px solid rgba(0,0,0,0.12);border-right:5px solid transparent;border-left:5px solid transparent;content:""}.litepicker .container__tooltip:after{position:absolute;bottom:-4px;left:calc(50% - 4px);border-top:4px solid #fff;border-right:4px solid transparent;border-left:4px solid transparent;content:""}.litepicker-open{overflow:hidden}.litepicker-backdrop{display:none;background-color:#000;opacity:0.3;position:fixed;top:0;right:0;bottom:0;left:0}
+</style><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+
+			<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<!-- Prefetch: http://goo.gl/TOCXgm -->
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<!-- <link rel="dns-prefetch" href="https://www.google-analytics.com"> -->
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	<!-- SEO -->
+	<meta name="author" content="">
+	<meta name="robots" content="INDEX,FOLLOW">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Title  -->
+	<title>Luxury Resort in Barbados - Royal Westmoreland</title>
+
+	
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/css/styles.min.css?ver=1.0.83">
+
+	<script type="text/javascript" async="" src="https://widget.intercom.io/widget/mgix383c"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/rz4DvU-cY2JYCwHSTck0_qm-/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-eZG8e4nRp0gEpRB75JBNzhS0vVseDRBVprGQYHJNXJCYwHihzdLYpvGhxa6VAhNb" nonce="null"></script><script async="" src="//www.gstatic.com/call-tracking/call-tracking_9.js" nonce="null"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/wcm/loader.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-22H9F78QTR&amp;l=dataLayer&amp;cx=c"></script><script src="https://connect.facebook.net/signals/config/188779095083232?v=2.9.152&amp;r=stable&amp;domain=www.royalwestmoreland.com&amp;hme=c3a545c63044e8e9102d4f32d84a1137594d024f28e801d670bc76dc5c075575&amp;ex_m=67%2C112%2C99%2C103%2C58%2C3%2C93%2C66%2C15%2C91%2C84%2C49%2C51%2C158%2C161%2C172%2C168%2C169%2C171%2C28%2C94%2C50%2C73%2C170%2C153%2C156%2C165%2C166%2C173%2C121%2C14%2C48%2C178%2C177%2C123%2C17%2C33%2C38%2C1%2C41%2C62%2C63%2C64%2C68%2C88%2C16%2C13%2C90%2C87%2C86%2C100%2C102%2C37%2C101%2C29%2C25%2C154%2C157%2C130%2C27%2C10%2C11%2C12%2C5%2C6%2C24%2C21%2C22%2C54%2C59%2C61%2C71%2C95%2C26%2C72%2C8%2C7%2C76%2C46%2C20%2C97%2C96%2C9%2C19%2C18%2C81%2C53%2C79%2C32%2C70%2C0%2C89%2C31%2C78%2C83%2C45%2C44%2C82%2C36%2C4%2C85%2C77%2C42%2C39%2C34%2C80%2C2%2C35%2C60%2C40%2C98%2C43%2C75%2C65%2C104%2C57%2C56%2C30%2C92%2C55%2C52%2C47%2C74%2C69%2C23%2C105" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TF9LN6X"></script><script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d1d1d">
+	<meta name="msapplication-TileColor" content="#1d1d1d">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Royal Westmoreland luxury beach resort Barbados is a world class golf and beach resort on the prestigious west coast with stunning homes for purchase, fractional ownership or holiday lettings. Features include a golf course, beach club, fitness centre, swimming pools, tennis courts and club house.">
+	<link rel="canonical" href="https://www.royalwestmoreland.com/">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Luxury Resort in Barbados - Royal Westmoreland">
+	<meta property="og:description" content="Royal Westmoreland luxury beach resort Barbados is a world class golf and beach resort on the prestigious west coast with stunning homes for purchase, fractional ownership or holiday lettings. Features include a golf course, beach club, fitness centre, swimming pools, tennis courts and club house.">
+	<meta property="og:url" content="https://www.royalwestmoreland.com/">
+	<meta property="og:site_name" content="Royal Westmoreland">
+	<meta property="article:modified_time" content="2024-03-15T16:10:22+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.royalwestmoreland.com/","url":"https://www.royalwestmoreland.com/","name":"Luxury Resort in Barbados - Royal Westmoreland","isPartOf":{"@id":"https://www.royalwestmoreland.com/#website"},"about":{"@id":"https://www.royalwestmoreland.com/#organization"},"datePublished":"2020-01-08T16:24:53+00:00","dateModified":"2024-03-15T16:10:22+00:00","description":"Royal Westmoreland luxury beach resort Barbados is a world class golf and beach resort on the prestigious west coast with stunning homes for purchase, fractional ownership or holiday lettings. Features include a golf course, beach club, fitness centre, swimming pools, tennis courts and club house.","breadcrumb":{"@id":"https://www.royalwestmoreland.com/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.royalwestmoreland.com/"]}]},{"@type":"BreadcrumbList","@id":"https://www.royalwestmoreland.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.royalwestmoreland.com/#website","url":"https://www.royalwestmoreland.com/","name":"Royal Westmoreland","description":"Luxury Resort in Barbados","publisher":{"@id":"https://www.royalwestmoreland.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.royalwestmoreland.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.royalwestmoreland.com/#organization","name":"Royal Westmoreland","url":"https://www.royalwestmoreland.com/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.royalwestmoreland.com/#/schema/logo/image/","url":"http://test17.reubeninternet.com/wp-content/uploads/2020/10/rwm-logo.png","contentUrl":"http://test17.reubeninternet.com/wp-content/uploads/2020/10/rwm-logo.png","width":229,"height":220,"caption":"Royal Westmoreland"},"image":{"@id":"https://www.royalwestmoreland.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.royalwestmoreland.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.7" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="https://www.royalwestmoreland.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.4" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://www.royalwestmoreland.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.royalwestmoreland.com/wp-json/wp/v2/pages/158"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.royalwestmoreland.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.royalwestmoreland.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.7">
+<link rel="shortlink" href="https://www.royalwestmoreland.com/">
+<link rel="alternate" type="application/json+oembed" href="https://www.royalwestmoreland.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.royalwestmoreland.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.royalwestmoreland.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.royalwestmoreland.com%2F&amp;format=xml">
+<link rel="icon" href="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/favicon.ico" sizes="32x32">
+<link rel="icon" href="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/favicon.ico" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/favicon.ico">
+<meta name="msapplication-TileImage" content="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/favicon.ico">
+		<style type="text/css" id="wp-custom-css">
+			.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+@media (min-width: 960px)
+.hero__intro {
+    padding-top: 30px;
+}
+
+.hero-slider__slides {
+	overflow: hidden;
+}		</style>
+		
+	
+			<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TF9LN6X');</script>
+		<!-- End Google Tag Manager -->
+	
+	
+	<!-- Hotjar Tracking Code for https://www.royalwestmoreland.com/ -->
+
+	<script>
+	(function(h,o,t,j,a,r){
+	h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+	h._hjSettings={hjid:2658341,hjsv:6};
+	a=o.getElementsByTagName('head')[0];
+	r=o.createElement('script');r.async=1;
+	r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+	a.appendChild(r);
+	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script><script async="" src="https://static.hotjar.com/c/hotjar-2658341.js?sv=6"></script>
+
+
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-32938043-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-32938043-1');
+	</script>
+	
+
+					<!-- Facebook Pixel Code -->
+			<script>
+			  !function(f,b,e,v,n,t,s)
+			  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			  n.queue=[];t=b.createElement(e);t.async=!0;
+			  t.src=v;s=b.getElementsByTagName(e)[0];
+			  s.parentNode.insertBefore(t,s)}(window, document,'script',
+			  'https://connect.facebook.net/en_US/fbevents.js');
+			  fbq('init', '188779095083232');
+			  fbq('track', 'PageView');
+			</script>
+			<noscript>
+			  <img height="1" width="1" style="display:none"
+			       src="https://www.facebook.com/tr?id=188779095083232&ev=PageView&noscript=1"/>
+			</noscript>
+			<!-- End Facebook Pixel Code -->
+		
+	
+	<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://bat.bing.com/p/action/26352944.js" type="text/javascript" async="" data-ueto="ueto_566082ebf5"></script><style></style><style></style></head>
+		<body class="home page-template-default page page-id-158 isChrome" id="post-158"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override--1040130303 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="/cookie-policy/" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Accept</a></div><!--googleon: all--></div>
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>
+	
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF9LN6X"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+
+	
+	
+
+<div class="fixed-social uk-card uk-position-fixed">
+  
+    <div class="fixed-social__item">
+        <a href="https://twitter.com/RoyalWM">
+            <span class="fixed-social__icon">
+                <svg width="36" height="30" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.74a7.587 7.587 0 01-2.119.58A3.715 3.715 0 0017.503.28a7.331 7.331 0 01-2.344.89A3.682 3.682 0 0012.464 0a3.698 3.698 0 00-3.596 4.539A10.482 10.482 0 011.254.679c-.318.54-.5 1.181-.5 1.86 0 1.281.651 2.411 1.643 3.071a3.654 3.654 0 01-1.674-.461v.04A3.71 3.71 0 003.686 8.82a4.083 4.083 0 01-1.668.06 3.701 3.701 0 003.451 2.569 7.467 7.467 0 01-4.587 1.57 6.44 6.44 0 01-.882-.05 10.439 10.439 0 005.662 1.66c6.792 0 10.508-5.629 10.508-10.5 0-.16-.004-.32-.013-.48A7.533 7.533 0 0018 1.74" fill="#FFF"></path></svg>            </span>
+            <span class="fixed-social__label">Twitter</span>
+        </a>
+    </div>
+
+  
+    <div class="fixed-social__item">
+        <a href="https://www.facebook.com/royalwestmorelandbarbados/">
+            <span class="fixed-social__icon">
+                <svg width="18" height="34" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="M6 9h2.6L9 6H6V4.3c0-.9.2-1.5 1.5-1.5H9V.1C8.7.1 8 0 6.9 0 4.6 0 3 1.4 3 4v2H.5v3H3v8h3V9z" fill="#FFF"></path></svg>            </span>
+            <span class="fixed-social__label">Facebook</span>
+        </a>
+    </div>
+
+  
+    <div class="fixed-social__item">
+        <a href="https://www.instagram.com/royal_westmoreland/">
+            <span class="fixed-social__icon">
+                <svg width="36" height="36" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF"><path d="M12.55 0H5.46C2.45 0 0 2.44 0 5.44v7.12c0 3 2.45 5.44 5.46 5.44h7.08c3.02 0 5.46-2.44 5.46-5.44V5.44c.01-3-2.44-5.44-5.45-5.44zm3.95 13c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h8c1.93 0 3.5 1.57 3.5 3.5v8z"></path><circle cx="13.87" cy="4.26" r="1.09"></circle><path d="M9.03 4.45c-2.55 0-4.63 2.06-4.63 4.6 0 2.55 2.07 4.61 4.63 4.61s4.63-2.061 4.63-4.61a4.626 4.626 0 00-4.63-4.6zM9.08 12c-1.66 0-3-1.34-3-2.99 0-1.65 1.34-2.99 3-2.99s3 1.34 3 2.99c0 1.65-1.34 2.99-3 2.99z"></path></g></svg>            </span>
+            <span class="fixed-social__label">Instagram</span>
+        </a>
+    </div>
+
+  </div>
+
+<header class="site-header">
+	<div class="uk-container uk-container-large uk-visible@m">
+		<div class="utility-bar">
+			<div class="utility-bar__left">
+				<div class="utility-bar__list">
+					<a href="#" class="utility-bar__link uk-visible@l" data-newsletter-link="">
+						<span data-uk-icon="icon: bell" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="bell"><path fill="none" stroke="#000" stroke-width="1.1" d="M17,15.5 L3,15.5 C2.99,14.61 3.79,13.34 4.1,12.51 C4.58,11.3 4.72,10.35 5.19,7.01 C5.54,4.53 5.89,3.2 7.28,2.16 C8.13,1.56 9.37,1.5 9.81,1.5 L9.96,1.5 C9.96,1.5 11.62,1.41 12.67,2.17 C14.08,3.2 14.42,4.54 14.77,7.02 C15.26,10.35 15.4,11.31 15.87,12.52 C16.2,13.34 17.01,14.61 17,15.5 L17,15.5 Z"></path><path fill="none" stroke="#000" d="M12.39,16 C12.39,17.37 11.35,18.43 9.91,18.43 C8.48,18.43 7.42,17.37 7.42,16"></path></svg></span>
+						Join our mailing list
+					</a>
+					<span class="utility-bar__divider uk-visible@l"></span>
+					<a href="https://www.royalwestmoreland.com/contact-us/?brochure" class="utility-bar__link uk-visible@l">
+						<span data-uk-icon="icon: file-text" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="file-text"><rect fill="none" stroke="#000" width="13" height="17" x="3.5" y="1.5"></rect><line fill="none" stroke="#000" x1="6" x2="12" y1="12.5" y2="12.5"></line><line fill="none" stroke="#000" x1="6" x2="14" y1="8.5" y2="8.5"></line><line fill="none" stroke="#000" x1="6" x2="14" y1="6.5" y2="6.5"></line><line fill="none" stroke="#000" x1="6" x2="14" y1="10.5" y2="10.5"></line></svg></span>
+						Request a brochure
+					</a>
+					<span class="utility-bar__divider uk-visible@l"></span>
+					<span class="utility-bar__message">
+						Holiday enquiries:
+						<span>
+							<a href="tel:+44(0)1524917316">+44 (0)1524 917316</a>
+						</span>
+					</span>
+					<span class="utility-bar__divider"></span>
+					<span class="utility-bar__message">
+						Ownership enquiries:
+						<span>
+							<a href="tel:+44(0)1524917317">+44 (0)1524 917317</a>
+						</span>
+					</span>
+				</div>
+			</div>
+			<div class="utility-bar__right">
+
+				<div class="utility-bar__controls">
+					<form method="GET" action="https://www.royalwestmoreland.com/" class="utility-bar__search js-header-search">
+						<button class="utility-bar__search-btn js-header-search-btn">
+							<span data-uk-icon="icon: search" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></span>
+							<span class="a11y">Search</span>
+						</button>
+						<label for="s" class="a11y">Search</label>
+						<input class="utility-bar__search-input js-header-search-input" name="s" id="s" type="text" placeholder="Search" disabled="disabled">
+					</form>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="site-header__main f-bg-black">
+		<div class="uk-container uk-container-large">
+			<div class="uk-flex uk-flex-between uk-flex-middle">
+				<a class="site-header__crest uk-hidden@m" href="https://www.royalwestmoreland.com/">
+					<img src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/rwm-30-logo.svg" alt="Royal Westmoreland Crest">
+				</a>
+				<a class="site-header__logo" href="https://www.royalwestmoreland.com/">
+					<img src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/rwm-30-logo.svg" alt="Royal Westmoreland" class="uk-visible@m">
+				</a>
+				<nav class="site-header__nav">
+					
+<div class="uk-flex">
+
+	<ul class="site-nav__list uk-flex uk-flex-between uk-visible@m"><li class="current-menu-item  page-158"><a href="https://www.royalwestmoreland.com/" class="">Home</a></li><li class="  page-174"><a href="https://www.royalwestmoreland.com/ownership/" class="" aria-expanded="false">Ownership</a><div class="uk-container uk-container-large js-mega-menu uk-drop">
+<div class="mega-menu">
+    <div class="uk-flex uk-flex-between">
+        <div class="mega-menu__col mega-menu__col--intro">
+            <h3 class="mega-menu__title">Ownership at Royal Westmoreland</h3>
+            <p class="mega-menu__intro">With over 250 beautiful homes this is the choice for those who want the best in lifestyle, security and exclusivity.</p>
+                            <a href="/ownership/search/" class="mega-menu__intro-button uk-button uk-text-left uk-button-primary uk-button-large icon-chevron-right">View all properties</a>
+                    </div>
+
+
+                  <div class="mega-menu__col">
+                              <h4 class="mega-menu__subtitle mega-menu__subtitle--listheading"><a href="https://www.royalwestmoreland.com/ownership/type/property/">Property Types</a></h4>
+
+                
+
+                
+              <ul class="mega-menu__list">
+                <li>
+                    <a href="https://www.royalwestmoreland.com/ownership/type/property/townhouses/" class="uk-display-inline-block">
+                        Townhouses                    </a>
+                </li>
+
+                
+              
+                <li>
+                    <a href="https://www.royalwestmoreland.com/ownership/type/property/royal-apartments/" class="uk-display-inline-block">
+                        Royal Apartments                    </a>
+                </li>
+
+                
+              
+                <li>
+                    <a href="https://www.royalwestmoreland.com/ownership/type/property/architecturally-designed-villas/" class="uk-display-inline-block">
+                        Architecturally Designed Villas                    </a>
+                </li>
+
+                </ul>
+                        </div>
+        
+                  <div class="mega-menu__col">
+                              <h4 class="mega-menu__subtitle mega-menu__subtitle--listheading"><a href="https://www.royalwestmoreland.com/ownership/type/fractional-ownership/">Fractional Ownership</a></h4>
+                  <ul class="mega-menu__list">                    <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/lancaster-mews/">Lancaster Mews</a></li>
+
+                                      <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/royal-apartments/">Royal Apartments</a></li>
+
+                                      <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/golf-cottages/">Golf Cottages</a></li>
+
+                                      <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/golf-villas/">Golf Villas</a></li>
+
+                                      <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/royal-palm-villa/">Royal Palm Villa</a></li>
+
+                                      <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights-fractional/">Mahogany Heights</a></li>
+
+                                      <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/begonia-grove/">Begonia Grove - The Willow</a></li>
+
+                  </ul>
+                
+                        </div>
+        
+                  <div class="mega-menu__col">
+                              <h4 class="mega-menu__subtitle mega-menu__subtitle--listheading"><a href="https://www.royalwestmoreland.com/ownership/type/developments/">Developments</a></h4>
+
+                <ul class="mega-menu__list">
+                  <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/lancaster-drive-and-grove/">Lancaster Drive &amp; Grove</a></li>
+
+
+                  
+                  <li><a class="uk-display-inline-block" href="https://www.royalwestmoreland.com/ownership/property/lancaster-mews-3/">Lancaster Mews</a></li>
+
+
+                  </ul>
+                
+                              <h4 class="mega-menu__subtitle mega-menu__subtitle--listheading"><a href="https://www.royalwestmoreland.com/ownership/type/resale-villas/">Resale Villas</a></h4>
+
+                
+                
+                        </div>
+        
+    </div>
+</div>
+</div></li><li class="  page-176"><a href="https://www.royalwestmoreland.com/holidays/" class="" aria-expanded="false">Holidays</a><div class="uk-container uk-container-large js-mega-menu uk-drop">
+<div class="mega-menu">
+    <div class="uk-flex uk-flex-between">
+        <div class="mega-menu__col mega-menu__col--intro">
+            <h3 class="mega-menu__title">Luxury Barbados Accommodation</h3>
+            <p class="mega-menu__intro">Find paradise at Royal Westmoreland, a world-class resort on Barbados’ stunning west coast.</p>
+                            <a href="https://bookings.royalwestmoreland.com/" class="mega-menu__intro-button uk-button uk-text-left uk-button-primary uk-button-large icon-chevron-right">Search all holidays</a>
+                    </div>
+        <div class="mega-menu__col">
+            <h4 class="mega-menu__subtitle mega-menu__subtitle--listheading"><a href="/holidays/">Accommodation Types</a></h4>
+            <ul class="mega-menu__list">
+
+                
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/holidays/property/royal-apartments/" class="uk-display-inline-block">
+                                Royal Apartments                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/holidays/property/golf-cottages/" class="uk-display-inline-block">
+                                Golf Cottages                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/holidays/property/golf-villas/" class="uk-display-inline-block">
+                                Golf Villas                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/holidays/property/townhouses/" class="uk-display-inline-block">
+                                Townhouses                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/holidays/property/exclusive-villas/" class="uk-display-inline-block">
+                                Exclusive Villas                            </a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+
+                <div class="mega-menu__col">
+            <h4 class="mega-menu__subtitle mega-menu__subtitle--listheading"><a href="/holidays/special-offers/">Special Offers</a></h4>
+            <ul class="mega-menu__list">
+                                    <li>
+                        <a href="https://www.royalwestmoreland.com/holidays/special-offers/7-nights-for-the-price-of-5/" class="uk-display-inline-block">
+                            7 Nights For The Price of 5                        </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.royalwestmoreland.com/holidays/special-offers/christmas-golf-cottage-special/" class="uk-display-inline-block">
+                            Christmas Golf Cottage Special                        </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.royalwestmoreland.com/holidays/special-offers/exclusive-green-fee-packages/" class="uk-display-inline-block">
+                            Exclusive Green Fee Packages                        </a>
+                    </li>
+                            </ul>
+        </div>
+      
+
+        <div class="mega-menu__col">
+            <h4 class="mega-menu__subtitle"><a href="https://www.royalwestmoreland.com/holidays/property/exclusive-villas/">Exclusive Villas</a></h4>
+                          <a href="https://www.royalwestmoreland.com/holidays/property/exclusive-villas/" class="mega-menu__cta" title="Exclusive Villas">
+                  <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/uploads/blog/villas/resale-villas-homepage-686x518.jpg" alt="Exclusive Villas">
+              </a>
+                    </div>
+
+
+    </div>
+</div>
+</div></li><li class="  page-777"><a href="https://www.royalwestmoreland.com/estate/" class="" aria-expanded="false">Experiences</a><div class="site-nav__dropdown js-drop-down uk-drop"><ul class="sub-menu"><li><a href="https://www.royalwestmoreland.com/estate/beach/" class="">Beach</a></li><li><a href="https://www.royalwestmoreland.com/estate/dining/" class="">Dining</a></li><li><a href="https://www.royalwestmoreland.com/estate/racquet-sports/" class="">Racquet Sports</a></li><li><a href="https://www.royalwestmoreland.com/estate/golf/" class="">Golf</a></li><li><a href="https://www.royalwestmoreland.com/estate/gym/" class="">Gym</a></li><li><a href="https://www.royalwestmoreland.com/estate/limegrove-shopping-centre/" class="">Limegrove Shopping Centre</a></li><li><a href="https://www.royalwestmoreland.com/estate/singita-wellness-spa/" class="">Singita Wellness Spa</a></li></ul></div></li><li class="  page-7442"><a href="https://www.royalwestmoreland.com/about/" class="" aria-expanded="false">About</a><div class="site-nav__dropdown js-drop-down uk-drop"><ul class="sub-menu"><li><a href="https://www.royalwestmoreland.com/about/barbados/" class="">Barbados</a></li><li><a href="https://www.royalwestmoreland.com/blog/" class="">Blog</a></li><li><a href="https://www.royalwestmoreland.com/about/gallery/" class="">Gallery</a></li></ul></div></li><li class="  page-768"><a href="https://www.royalwestmoreland.com/contact-us/" class="">Contact</a></li></ul>
+	<button class="site-nav__trigger uk-hidden@m" type="button" data-uk-toggle="target: #offcanvas-nav">
+		<svg class="site-nav__trigger-icon" width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<title>Open Navigation</title>
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g transform="translate(-330.000000, -105.000000)" fill="#FFFFFF">
+		            <g transform="translate(0.000000, 70.000000)">
+		                <g transform="translate(320.000000, 21.000000)">
+		                    <g transform="translate(10.000000, 14.000000)">
+		                        <rect x="0" y="0" width="16" height="1"></rect>
+		                        <rect x="0" y="6" width="20" height="1"></rect>
+		                        <rect x="0" y="12" width="12" height="1"></rect>
+		                    </g>
+		                </g>
+		            </g>
+		        </g>
+		    </g>
+		</svg>
+	</button>
+
+</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="utility-bar__overlay"></div>
+</header>
+<div class="site-header__overlay js-header-overlay"></div>
+
+
+<section class="hero-slider js-hero hero-slider--active">
+
+    <div class="hero-slider__text-overlay js-hero-text-overlay" style="opacity: 0;">
+        <img src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/slider-graphic.svg" alt="Royal Westmoreland Barbados">
+    </div>
+
+    <div class="hero-slider__slides js-hero-slider flickity-enabled active is-draggable" tabindex="0" style="opacity: 1;">
+        
+        
+        
+                    
+                    
+                    
+                    
+                    
+                    
+        
+    <div class="flickity-viewport" style="height: 670.719px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(-53.69%);"><div class="hero-slider__slide js-slide " data-video-url="https://youtu.be/FbQULsKsan0" aria-hidden="true" style="position: absolute; left: 0%;">
+
+                                    <img class="hero-slider__slide-image" src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Carousel-01.jpg" alt="">
+                
+                <div class="hero-slider__slide-content">
+                                    </div>
+            </div><div class="hero-slider__slide js-slide hero-slider__slide--video js-video-slide is-selected" data-video-url="https://youtu.be/TOWqrj_YfL8" style="position: absolute; left: 70.69%;">
+
+                                    <img class="hero-slider__slide-image" src="https://www.royalwestmoreland.com/wp-content/uploads/2024/03/TATTERS-05-Edit.jpg" alt="">
+                
+                <div class="hero-slider__slide-content">
+                                            <button class="js-video-trigger" aria-label="Play Video" data-video-slide="1">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><defs><filter x="-4.4%" y="-3.1%" width="108.8%" height="108.8%" filterUnits="objectBoundingBox" id="a"><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"></feColorMatrix></filter><circle id="b" cx="50" cy="50" r="40"></circle></defs><g fill="none" fill-rule="evenodd"><circle class="play-border" stroke="#C49E49" cx="50" cy="50" r="49.5"></circle><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use><path d="M41.7 66a.7.7 0 01-.7-.7V34.7c0-.2.1-.5.4-.6h.7l22.6 15.3a.7.7 0 010 1.2L42 66l-.4.1z" fill="#1D1D1D" fill-rule="nonzero"></path></g></svg>
+                        </button>
+                        <h2 class="hero-slider__slide-title">The opportunity of a lifetime</h2>
+                        <span class="hero-slider__slide-description">Play video</span>
+                                    </div>
+            </div><div class="hero-slider__slide js-slide hero-slider__slide--video js-video-slide" data-video-url="https://www.youtube.com/watch?v=QBGuVQFl4GU" aria-hidden="true" style="position: absolute; left: 141.37%;">
+
+                                    <img class="hero-slider__slide-image" src="https://www.royalwestmoreland.com/wp-content/uploads/2024/03/LANCASTER-MEWS-EXTERIOR.jpg" alt="">
+                
+                <div class="hero-slider__slide-content">
+                                            <button class="js-video-trigger" aria-label="Play Video" data-video-slide="2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><defs><filter x="-4.4%" y="-3.1%" width="108.8%" height="108.8%" filterUnits="objectBoundingBox" id="a"><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"></feColorMatrix></filter><circle id="b" cx="50" cy="50" r="40"></circle></defs><g fill="none" fill-rule="evenodd"><circle class="play-border" stroke="#C49E49" cx="50" cy="50" r="49.5"></circle><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use><path d="M41.7 66a.7.7 0 01-.7-.7V34.7c0-.2.1-.5.4-.6h.7l22.6 15.3a.7.7 0 010 1.2L42 66l-.4.1z" fill="#1D1D1D" fill-rule="nonzero"></path></g></svg>
+                        </button>
+                        <h2 class="hero-slider__slide-title">Introducing Lancaster Mews</h2>
+                        <span class="hero-slider__slide-description">Play video</span>
+                                    </div>
+            </div><div class="hero-slider__slide js-slide " data-video-url="https://youtu.be/TOWqrj_YfL8" aria-hidden="true" style="position: absolute; left: 212.06%;">
+
+                                    <img class="hero-slider__slide-image" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Carousel-04.jpg" alt="" uk-img="" src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Carousel-04.jpg">
+                
+                <div class="hero-slider__slide-content">
+                                    </div>
+            </div><div class="hero-slider__slide js-slide" data-video-url="" style="position: absolute; left: 282.75%;" aria-hidden="true">
+
+                                    <img class="hero-slider__slide-image" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Carousel-05.jpg" alt="" uk-img="" src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Carousel-05.jpg">
+                
+                <div class="hero-slider__slide-content">
+                                    </div>
+            </div><div class="hero-slider__slide js-slide " data-video-url="" aria-hidden="true" style="position: absolute; left: 353.44%;">
+
+                                    <img class="hero-slider__slide-image" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/RWM-Carousel-Image-2.jpg" alt="" uk-img="" src="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/RWM-Carousel-Image-2.jpg">
+                
+                <div class="hero-slider__slide-content">
+                                    </div>
+            </div></div></div><ol class="flickity-page-dots active"><li class="dot" aria-label="Page dot 1"></li><li class="dot is-selected" aria-label="Page dot 2" aria-current="step"></li><li class="dot" aria-label="Page dot 3"></li><li class="dot" aria-label="Page dot 4"></li><li class="dot" aria-label="Page dot 5"></li><li class="dot" aria-label="Page dot 6"></li></ol></div>
+
+    <button class="hero-slider__gallery-btn js-hero-gallery-btn icon-button uk-text-left uk-button uk-button-default" style="visibility: hidden; opacity: 0;" disabled="">
+        <span data-uk-icon="image" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="image"><circle cx="16.1" cy="6.1" r="1.1"></circle><rect fill="none" stroke="#000" x=".5" y="2.5" width="19" height="15"></rect><polyline fill="none" stroke="#000" stroke-width="1.01" points="4,13 8,9 13,14"></polyline><polyline fill="none" stroke="#000" stroke-width="1.01" points="11,12 12.5,10.5 16,14"></polyline></svg></span> Take a tour
+    </button>
+
+</section>
+
+<main class="home__body">
+	<section class="hero__intro">
+		<div class="uk-container uk-container-large uk-position-relative">
+			<div class="f-grid">
+				<div class="f-width-16-16 uk-margin-auto">
+					<div class="f-grid uk-flex-center">
+						<div class="f-width-14-14 f-width-m-10-16 uk-text-center">
+							<h1>Royal Westmoreland Barbados</h1>
+							<div class="uk-text-intro">
+								<p class="uk-text-lead uk-text-small">A world-class golf and beach resort located in St. James on the prestigious west coast of Barbados.</p>
+<p>For 30 years, Royal Westmoreland has become synonymous with luxurious serenity. Finding art in the meeting of crystalline Caribbean waters with azure horizons and the endless opportunity this instills in your psyche. Leave behind responsibilities, peel back the palm fronds and enter into your own slice of paradise…</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="hero__intro-crest f-img-reset" width="550" height="600" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/rwm-crest-outline.svg" alt="">
+		</div>
+	</section>
+	
+<section class="feature-blocks js-feature-blocks">
+    <div class="uk-container uk-container-large uk-position-relative uk-position-z-index">
+        <div class="feature-blocks__wrapper js-feature-blocks-slider">
+
+                            <div class="feature-blocks__block feature-blocks__block--holidays feature-blocks__block--large" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/DSCF7461.jpg" uk-img="">
+                    <a class="feature-blocks__content" href="https://www.royalwestmoreland.com/holidays/special-offers/7-nights-for-the-price-of-5/">
+                        <div class="feature-blocks__icon">
+                                                            <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/holidays-icon.svg" alt="">
+                                                    </div>
+                        <h3 class="feature-blocks__category">
+                                                    </h3>
+                        <h2 class="feature-blocks__title">
+                            7 Nights for the Price of 5                        </h2>
+                    </a>
+                    <div class="feature-blocks__shadow"></div>
+                </div>
+                            <div class="feature-blocks__block feature-blocks__block--ownership " data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/Mahogany-Heights-No.1-13-Balcony-01-pop.jpg" uk-img="">
+                    <a class="feature-blocks__content" href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" target="_blank">
+                        <div class="feature-blocks__icon">
+                                                            <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/ownership-icon.svg" alt="">
+                                                    </div>
+                        <h3 class="feature-blocks__category">
+                            Real Estate                        </h3>
+                        <h2 class="feature-blocks__title">
+                            Mahogany Heights - <br>
+Townhome sophistication                        </h2>
+                    </a>
+                    <div class="feature-blocks__shadow"></div>
+                </div>
+                            <div class="feature-blocks__block feature-blocks__block--ownership " data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/10/begonia3-7-min.jpg" uk-img="">
+                    <a class="feature-blocks__content" href="https://www.royalwestmoreland.com/ownership/property/sea-bridge/" target="_blank">
+                        <div class="feature-blocks__icon">
+                                                            <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/ownership-icon.svg" alt="">
+                                                    </div>
+                        <h3 class="feature-blocks__category">
+                            Real Estate                        </h3>
+                        <h2 class="feature-blocks__title">
+                            Sea Bridge - Our exclusive Tamarind villa                        </h2>
+                    </a>
+                    <div class="feature-blocks__shadow"></div>
+                </div>
+                            <div class="feature-blocks__block feature-blocks__block--ownership " data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-3.png" uk-img="">
+                    <a class="feature-blocks__content" href="https://www.royalwestmoreland.com/ownership/property/tatters/" target="_blank">
+                        <div class="feature-blocks__icon">
+                                                            <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/ownership-icon.svg" alt="">
+                                                    </div>
+                        <h3 class="feature-blocks__category">
+                            Real Estate                        </h3>
+                        <h2 class="feature-blocks__title">
+                            Horizons -  Panoramic villa views                        </h2>
+                    </a>
+                    <div class="feature-blocks__shadow"></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-large uk-position-relative uk-position-z-index">
+        <div class="feature-blocks__slider-progress js-feature-blocks-progress">
+            <div style="width: 25%"></div>
+        </div>
+    </div>
+
+    <div class="feature-blocks__background"></div>
+
+</section>
+<div class="f-bg-gray-100 home__search">
+<div class="uk-container uk-container-large">
+  <div class="holiday-search-bar" id="holidaysearchbar">
+
+    <div class="holiday-search-bar__mobileheadings">
+      <h3 class="holiday-search-bar__mobileheadingsmain">Holiday Search</h3>
+      <div class="holiday-search-bar__mobileheadingssecondary">Find your dream holiday today...</div>
+    </div>
+
+    <div class="uk-card holiday-search-bar__bar" data-holiday-search-bar="">
+      <h4 class="holiday-search-bar__heading">Find your dream holiday today...</h4>
+
+      <form class="holiday-search-bar__form" action="https://bookings.royalwestmoreland.com/AvailabilityRange.aspx" method="get">
+
+        <div class="holiday-search-bar__fields">
+
+          <div class="holiday-search-bar__fieldarea holiday-search-bar__fieldarea--dates">
+            <div class="holiday-search-bar__fieldareainner">
+              <span uk-icon="icon: calendar" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="calendar"><path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path><rect width="1" height="3" x="6" y="2"></rect><rect width="1" height="3" x="13" y="2"></rect></svg></span>
+              <div class="holiday-search-bar__basicfield">
+                <label for="startdate" class="holiday-search-bar__datelabel">
+                  <span id="startdate-formatted" class="holiday-search-bar__datelabelstart">Mon 8 Apr</span>
+                  <span id="enddate-formatted" class="holiday-search-bar__datelabelend">Mon 15 Apr</span>
+                  <span class="holiday-search-bar__nights">7-nights</span>
+                </label>
+                <input aria-label="Start date" type="text" id="startdate" readonly="readonly" name="resarrivedate" class="holiday-search-bar__datefield">
+                <input aria-label="End date" type="text" id="enddate" readonly="readonly" name="resdepartdate" class="holiday-search-bar__datefield">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="holiday-search-bar__fieldarea holiday-search-bar__fieldarea--people">
+            <div class="holiday-search-bar__fieldareainner">
+              <span uk-icon="icon: user" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="user"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4" r="4.4"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2"></path></svg></span>
+              <!-- Multi Selector -->
+              <div class="multiselector holiday-search-bar__multi-selector" data-multi-selector="">
+                  <div class="multiselector__select holiday-search-bar__multi-selector-select" data-multi-selector-select="">
+                      <div class="multiselector__content holiday-search-bar__multi-selector-content">
+                          <span class="multiselector__text" data-multi-selector-textoutput="{&quot;id&quot;:&quot;Adults&quot;, &quot;default&quot;: &quot;0 adults&quot;, &quot;singular&quot;:&quot;adult&quot;, &quot;plural&quot;:&quot;adults&quot;}">
+                              2 adults</span>
+                          <span class="multiselector__separator">•</span>
+                          <span class="multiselector__text" data-multi-selector-textoutput="{&quot;id&quot;:&quot;Children&quot;, &quot;default&quot;: &quot;0 children&quot;, &quot;singular&quot;:&quot;child&quot;, &quot;plural&quot;:&quot;children&quot;}">
+                              0 children</span>
+                          <span class="multiselector__separator">•</span>
+                          <span class="multiselector__text" data-multi-selector-textoutput="{&quot;id&quot;:&quot;Rooms&quot;, &quot;default&quot;: &quot;0 rooms&quot;, &quot;singular&quot;:&quot;room&quot;, &quot;plural&quot;:&quot;rooms&quot;}">1
+                              room</span>
+                      </div>
+                  </div>
+                  <div class="holiday-search-bar__multi-selector-optsouter">
+                    <div class="multiselector__options multiselector__options--absolute holiday-search-bar__multi-selector-options" data-multi-selector-options="">
+                        <div class="multiselector__options-inner">
+                            <div class="multiselector__option">
+                                <div>
+                                    <p class="multiselector__label">Adults</p>
+                                </div>
+                                <div class="multiselector__inputs">
+                                    <div><button class="multiselector__button multiselector__button--remove" data-multi-selector-control="{&quot;type&quot;: &quot;-&quot;, &quot;outputId&quot;: &quot;Adults&quot;}"><span class="a11y">Remove</span></button></div>
+                                    <div>
+                                        <label for="Adults" class="a11y">Adults</label>
+                                        <input type="text" id="Adults" name="resadults" class="multiselector__figure" data-multi-selector-output="{&quot;id&quot;:&quot;Adults&quot;}" value="2" title="Number of Adults">
+                                    </div>
+                                    <div><button class="multiselector__button multiselector__button--add" data-multi-selector-control="{&quot;type&quot;: &quot;+&quot;, &quot;outputId&quot;: &quot;Adults&quot;}"><span class="a11y">Add</span></button></div>
+                                </div>
+                            </div>
+                            <div class="multiselector__option">
+                                <div>
+                                    <p class="multiselector__label">Children</p>
+                                </div>
+                                <div class="multiselector__inputs">
+                                    <div><button class="multiselector__button multiselector__button--remove" data-multi-selector-control="{&quot;type&quot;: &quot;-&quot;, &quot;outputId&quot;: &quot;Children&quot;}"><span class="a11y">Remove</span></button></div>
+                                    <div>
+                                        <label for="Children" class="a11y">Children</label>
+                                        <input type="text" id="Children" name="reschildren" class="multiselector__figure" data-multi-selector-output="{&quot;id&quot;:&quot;Children&quot;}" value="0" title="Number of Children">
+                                    </div>
+                                    <div><button class="multiselector__button multiselector__button--add" data-multi-selector-control="{&quot;type&quot;: &quot;+&quot;, &quot;outputId&quot;: &quot;Children&quot;}"><span class="a11y">Add</span></button></div>
+                                </div>
+                            </div>
+                            <div class="multiselector__option">
+                                <div>
+                                    <p class="multiselector__label">Rooms</p>
+                                </div>
+                                <div class="multiselector__inputs">
+                                    <div><button class="multiselector__button multiselector__button--remove" data-multi-selector-control="{&quot;type&quot;: &quot;-&quot;, &quot;outputId&quot;: &quot;Rooms&quot;}"><span class="a11y">Remove</span></button></div>
+                                    <div>
+                                        <label for="Rooms" class="a11y">Rooms</label>
+                                        <input type="text" id="Rooms" name="resrooms" class="multiselector__figure" data-multi-selector-output="{&quot;id&quot;:&quot;Rooms&quot;}" value="1" title="Number of Rooms">
+                                    </div>
+                                    <div><button class="multiselector__button multiselector__button--add" data-multi-selector-control="{&quot;type&quot;: &quot;+&quot;, &quot;outputId&quot;: &quot;Rooms&quot;}"><span class="a11y">Add</span></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="holiday-search-bar__fieldarea holiday-search-bar__fieldarea--promotion">
+            <div class="holiday-search-bar__fieldareainner">
+              <div class="uk-icon uk-preserve">
+                <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-1391.000000, -2717.000000)" fill="#999999" fill-rule="nonzero">
+                            <g transform="translate(100.000000, 2666.000000)">
+                                <g transform="translate(60.000000, 30.000000)">
+                                    <g transform="translate(1208.000000, 0.000000)">
+                                        <path d="M32.5192851,21 C32.6311741,21.0007911 32.7379501,21.0469794 32.8151286,21.1279931 L34.5421971,22.9369132 L36.9486338,22.2452673 C37.0556146,22.2141518 37.1706571,22.2279968 37.2672007,22.2836059 C37.3637444,22.3392151 37.4334435,22.4317812 37.4602062,22.539933 L38.0495377,24.9709252 L40.4805299,25.5725344 C40.5886817,25.5992971 40.6812478,25.6689963 40.736857,25.7655399 C40.7924661,25.8620836 40.8063111,25.9771261 40.7751956,26.0841068 L40.0712719,28.4864509 L41.8760994,30.2217046 C41.956041,30.2999931 42.0007522,30.4073961 42,30.5192851 C41.9992089,30.6311741 41.9530206,30.7379501 41.8720069,30.8151286 L40.0630868,32.5421971 L40.7547327,34.9486338 C40.7858482,35.0556146 40.7720032,35.1706571 40.7163941,35.2672007 C40.6607849,35.3637444 40.5682188,35.4334435 40.460067,35.4602062 L38.0290748,36.0495377 L37.4274656,38.4805299 C37.4007029,38.5886817 37.3310037,38.6812478 37.2344601,38.736857 C37.1379164,38.7924661 37.0228739,38.8063111 36.9158932,38.7751956 L34.5135491,38.0712719 L32.7782954,39.8760994 C32.7000069,39.956041 32.5926039,40.0007522 32.4807149,40 C32.3688259,39.9992089 32.2620499,39.9530206 32.1848714,39.8720069 L30.4578029,38.0630868 L28.0513662,38.7547327 C27.9443854,38.7858482 27.8293429,38.7720032 27.7327993,38.7163941 C27.6362556,38.6607849 27.5665565,38.5682188 27.5397938,38.460067 L26.9504623,36.0290748 L24.5194701,35.4274656 C24.4113183,35.4007029 24.3187522,35.3310037 24.263143,35.2344601 C24.2075339,35.1379164 24.1936889,35.0228739 24.2248044,34.9158932 L24.9287281,32.5135491 L23.1239006,30.7782954 C23.043959,30.7000069 22.9992478,30.5926039 23,30.4807149 C23.0007911,30.3688259 23.0469794,30.2620499 23.1279931,30.1848714 L24.9369132,28.4578029 L24.2452673,26.0513662 C24.2141518,25.9443854 24.2279968,25.8293429 24.2836059,25.7327993 C24.3392151,25.6362556 24.4317812,25.5665565 24.539933,25.5397938 L26.9709252,24.9504623 L27.5725344,22.5194701 C27.5992971,22.4113183 27.6689963,22.3187522 27.7655399,22.263143 C27.8620836,22.2075339 27.9771261,22.1936889 28.0841068,22.2248044 L30.4864509,22.9287281 L32.2217046,21.1239006 C32.2999931,21.043959 32.4073961,20.9992478 32.5192851,21 Z M34.2368129,24.0651694 L32.514,22.261 L30.7870999,24.0588679 L28.395,23.358 L27.7959453,25.7794227 L25.376,26.366 L26.0651694,28.7631871 L24.261,30.485 L26.0588679,32.2129001 L25.358,34.604 L27.7794227,35.2040547 L28.366,37.623 L30.7631871,36.9348306 L32.485,38.738 L34.2129001,36.9411321 L36.604,37.641 L37.2040547,35.2205773 L39.623,34.633 L38.9348306,32.2368129 L40.738,30.514 L38.9411321,28.7870999 L39.641,26.395 L37.2205773,25.7959453 L36.633,23.376 L34.2368129,24.0651694 Z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </div>
+                <div class="holiday-search-bar__basicfield">
+                  <input class="form-control" aria-label="Offer Code" name="resspecialoffercode" id="offer-code" placeholder="Promotion code?" value="" type="text">
+                </div>
+            </div>
+          </div>
+
+          <div class="holiday-search-bar__submitarea">
+            <button type="submit" name="submit" class="holiday-search-bar__submit uk-button uk-button-large uk-button-gold f-btn-arrow-r f-btn-arrow-r--dark uk-text-left">
+              <span class="f-button-span">Check availability</span>
+            </button>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+</div>
+<section class="home__content">
+    <div class="uk-container uk-container-large">
+        <div class="home__content-area">
+            <div class="f-grid">
+                <div class="f-width-16-16 f-width-m-14-16 uk-margin-auto">
+                    <div class="f-grid uk-flex-between">
+                        <div class="f-width-16-14 f-width-m-7-14" data-uk-parallax="media: @l; easing: 0; viewport: 0.25; y: 300,0" style="transform: translate3d(0px, 300px, 0px);">
+                                                            <a href="https://www.royalwestmoreland.com/ownership/">                                    <h3>Luxury Barbados Property </h3>
+                                    <p>Royal Westmoreland offers the ultimate in resort living. A vibrant community of members complements the superb resort amenities.</p>
+                                    <div class="home__content-area__img home__content-area__img--1 uk-background-cover" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Featured-01.jpg" data-uk-img=""></div>
+                                </a>                                                   </div>
+                        <div class="f-width-14-14 f-width-m-6-14" data-uk-parallax="media: @l; easing: 2; viewport: 0.5; y: 300,150" style="transform: translate3d(0px, 300px, 0px);">
+                                                            <a href="https://www.royalwestmoreland.com/holidays/">                                    <h3>Exclusive Holidays</h3>
+                                    <p>Experience the resort living lifestyle with a short break in our of our fabulous properties; choose from luxury apartments to impressive villas.</p>
+                                    <div class="home__content-area__img home__content-area__img--2 uk-background-cover" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Blocks-02.jpg" data-uk-img=""></div>
+                                </a>                                                    </div>
+                    </div>
+                    <div class="f-grid uk-flex-middle uk-flex-between">
+                        <div class="f-width-16-14 f-width-m-5-14" data-uk-parallax="media: @l; easing: 0; viewport: 0.4; y: 300,0" style="transform: translate3d(0px, 300px, 0px);">
+                                                            <a href="https://www.royalwestmoreland.com/estate/dining/">                                    <h3>Dining at Royal Westmoreland </h3>
+                                    <p>We know the people that visit Royal Westmoreland enjoy the finer things in life, and of course, that extends to wining and dining.</p>
+                                    <div class="home__content-area__img home__content-area__img--3 uk-background-cover" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Blocks-03.jpg" data-uk-img=""></div>
+                                </a>                                                    </div>
+                        <div class="f-width-16-14 f-width-m-8-14" data-uk-parallax="media: @l; easing: 0; viewport: 0.6; y: 300,100" style="transform: translate3d(0px, 300px, 0px);">
+                                                            <a href="/about/gallery/">                                    <h3>The best from our Barbados gallery</h3>
+                                    <p>Picture yourself here with us.</p>
+                                    </a>                                    <div class="home__content-area__img home__content-area__img--4 uk-background-cover" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/01/RWM-Blocks-04.jpg" data-uk-img="">
+
+                                                                                    <div class="page-banner__gallery-btn">
+                                                <a href="/about/gallery/" class="icon-button uk-text-left uk-button uk-button-default">
+                                                    <span data-uk-icon="image" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="image"><circle cx="16.1" cy="6.1" r="1.1"></circle><rect fill="none" stroke="#000" x=".5" y="2.5" width="19" height="15"></rect><polyline fill="none" stroke="#000" stroke-width="1.01" points="4,13 8,9 13,14"></polyline><polyline fill="none" stroke="#000" stroke-width="1.01" points="11,12 12.5,10.5 16,14"></polyline></svg></span> View Gallery                                                </a>
+                                            </div>
+                                        
+                                    </div>
+
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<section class="property-slider">
+    <div class="uk-container uk-container-large">
+        <div class="property-slider__wrapper">
+            <div class="f-grid">
+                <div class="f-width-16-16 f-width-m-14-16 uk-margin-auto">
+                    <div class="f-grid">
+                        <div class="f-width-16-14 f-width-m-4-14">
+                            <h3 class="property-slider__title">Own a Piece of Paradise. <br> Luxurious Portfolio Properties</h3>
+                        </div>
+                        <div class="property-slider__introholder f-width-16-14 f-width-m-7-14">
+                            <p class="property-slider__intro">Royal Westmoreland offers an unparalleled experience when it comes to purchasing your Caribbean property. With over 250 beautiful homes we are the choice for those who want the best in lifestyle, security and exclusivity, with full and fractional ownership opportunities across our portfolio.</p>
+                        </div>
+                    </div>
+                                            <div class="tns-outer" id="tns1-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1</span>  of 3</div><div id="tns1-mw" class="tns-ovh"><div class="tns-inner" id="tns1-iw"><div class="property-slider__body js-property-slider  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" id="tns1" style="transition-duration: 0s; transform: translate3d(0%, 0px, 0px);">
+                                                            <div class="slide tns-item tns-slide-active" id="tns1-item0">
+
+                                    
+<div class="f-panel f-panel--xlarge property-panel property-panel__featured">
+    <div class="f-panel__inner">
+                    <div class="f-flag">Featured Property</div>
+                <div class="f-panel__img">
+
+            <div class="f-panel__slideshow uk-slideshow" data-uk-slideshow="animation: push; ratio: 462:347">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slideshow-items" style="min-height: 240.346px;">
+                                                    <li class="uk-active uk-transition-active" style="transform: translateX(0px); z-index: 0;">
+                                <a href="https://www.royalwestmoreland.com/ownership/property/horizons/" class="property-panel__imglink" tabindex="0">
+                                  <img data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/TATTERS-NEW-25-Pool-Deck-OceanView.jpg" data-srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/TATTERS-NEW-25-Pool-Deck-OceanView.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/10/TATTERS-NEW-25-Pool-Deck-OceanView.jpg 2x" alt="Image 1" data-uk-img="" data-uk-cover="" class="uk-cover" style="width: 320px; height: 240px;">
+                                </a>
+                            </li>
+                        
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/horizons/" class="property-panel__imglink" tabindex="0">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/TATTERS-NEW-17-Pool-Deck-B.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/TATTERS-NEW-17-Pool-Deck-B.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/10/TATTERS-NEW-17-Pool-Deck-B.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/horizons/" class="property-panel__imglink" tabindex="0">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-5.png" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-5.png, https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-5.png 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/horizons/" class="property-panel__imglink" tabindex="0">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-6.png" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-6.png, https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-6.png 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/horizons/" class="property-panel__imglink" tabindex="0">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-2.png" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-2.png, https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-2.png 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/horizons/" class="property-panel__imglink" tabindex="0">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-4.png" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-4.png, https://www.royalwestmoreland.com/wp-content/uploads/2020/10/thumbnail-4.png 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                            </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slideshow-item="previous" tabindex="0"><span class="a11y">Previous</span><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slideshow-item="next" tabindex="0"><span class="a11y">Next</span><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+
+                    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                        
+                            <li data-uk-slideshow-item="0" class="uk-active"><a href="" tabindex="0"><span class="a11y">Go to slide 1</span></a></li>
+                                                            <li data-uk-slideshow-item="1"><a href="" tabindex="0"><span class="a11y">Go to slide 1</span></a></li>
+                                                            <li data-uk-slideshow-item="2"><a href="" tabindex="0"><span class="a11y">Go to slide 2</span></a></li>
+                                                            <li data-uk-slideshow-item="3"><a href="" tabindex="0"><span class="a11y">Go to slide 3</span></a></li>
+                                                            <li data-uk-slideshow-item="4"><a href="" tabindex="0"><span class="a11y">Go to slide 4</span></a></li>
+                                                            <li data-uk-slideshow-item="5"><a href="" tabindex="0"><span class="a11y">Go to slide 5</span></a></li>
+                                                                        </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="f-panel__body">
+            <h3 class="f-panel__title property-panel__title "><a href="https://www.royalwestmoreland.com/ownership/property/horizons/" tabindex="0">Horizons</a></h3>
+
+                          <div class="f-panel__subtitle property-panel__subtitle">
+                  <p><strong>POA</strong></p>              </div>
+                        <div class="f-panel__content">
+                <p class="property-panel__desc">Boasting panoramic views over Barbados’ famous west coast, this is an imposing residence designed with entertaining in mind. An expansive terrace surrounds the large infinity edge pool – perfect for enjoying a cocktail as you watch the sunset over the Caribbean Sea. Descend a staircase and a private bar and entertaining area is revealed underneath…</p>
+                <div class="f-panel__iconlist">
+                    <div class="icon-list icon-list--dots">
+                        
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/floorplan.svg" alt="Property size">
+        6500 .sq feet    </div>
+
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/bed.svg" alt="Property size">
+        6 bedrooms    </div>
+
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/bath.svg" alt="Property size">
+        5 bathrooms    </div>
+
+            <div>
+                            <img class="" src="https://www.royalwestmoreland.com/wp-content/uploads/2017/12/private-swimming-pool.svg" alt="Private swimming pool">
+                        Private swimming pool        </div>
+                                        </div>
+                </div>
+
+                                    <a class="property--panel__category pill pill--plum" href="https://www.royalwestmoreland.com/ownership/type/property/architecturally-designed-villas/" tabindex="0">
+                        Architecturally Designed Villas                    </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                                </div>
+                                                            <div class="slide tns-item" id="tns1-item1" aria-hidden="true" tabindex="-1">
+
+                                    
+<div class="f-panel f-panel--xlarge property-panel ">
+    <div class="f-panel__inner">
+                <div class="f-panel__img">
+
+            <div class="f-panel__slideshow uk-slideshow" data-uk-slideshow="animation: push; ratio: 462:347">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slideshow-items" style="min-height: 240.346px;">
+                                                    <li class="uk-active uk-transition-active" style="transform: translateX(0px); z-index: 0;">
+                                <a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" class="property-panel__imglink" tabindex="-1">
+                                  <img data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-001-520x390.jpg" data-srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-001-520x390.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-001-1040x780.jpg 2x" alt="Image 1" data-uk-img="" data-uk-cover="" class="uk-cover" style="width: 320px; height: 240px;">
+                                </a>
+                            </li>
+                        
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-002-520x390.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-002-520x390.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-002-1040x780.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-013-520x390.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-013-520x390.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-013-1040x780.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-003-520x390.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-003-520x390.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-003-1040x780.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-006-520x390.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-006-520x390.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-006-1040x780.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-005-520x390.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-005-520x390.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/09/2-Mahogany-Heights-005-1040x780.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                            </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slideshow-item="previous" tabindex="-1"><span class="a11y">Previous</span><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slideshow-item="next" tabindex="-1"><span class="a11y">Next</span><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+
+                    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                        
+                            <li data-uk-slideshow-item="0" class="uk-active"><a href="" tabindex="-1"><span class="a11y">Go to slide 1</span></a></li>
+                                                            <li data-uk-slideshow-item="1"><a href="" tabindex="-1"><span class="a11y">Go to slide 1</span></a></li>
+                                                            <li data-uk-slideshow-item="2"><a href="" tabindex="-1"><span class="a11y">Go to slide 2</span></a></li>
+                                                            <li data-uk-slideshow-item="3"><a href="" tabindex="-1"><span class="a11y">Go to slide 3</span></a></li>
+                                                            <li data-uk-slideshow-item="4"><a href="" tabindex="-1"><span class="a11y">Go to slide 4</span></a></li>
+                                                            <li data-uk-slideshow-item="5"><a href="" tabindex="-1"><span class="a11y">Go to slide 5</span></a></li>
+                                                                        </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="f-panel__body">
+            <h3 class="f-panel__title property-panel__title "><a href="https://www.royalwestmoreland.com/ownership/property/mahogany-heights/" tabindex="-1">Mahogany Heights</a></h3>
+
+                          <div class="f-panel__subtitle property-panel__subtitle">
+                  <p><strong>Starting from £1,150,000 with Developer Incentive Package</strong></p>              </div>
+                        <div class="f-panel__content">
+                <p class="property-panel__desc">On the ground floor, a master suite with luxury en-suite bathrooms boasts a large sitting area which opens up to the garden, pool and patio area through floor to ceiling sliding glass doors. Two additional guest rooms link to a generous family bathroom and a fourth en-suite master guest bedroom of equally generous proportions is…</p>
+                <div class="f-panel__iconlist">
+                    <div class="icon-list icon-list--dots">
+                        
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/floorplan.svg" alt="Property size">
+        2974 .sq feet    </div>
+
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/bed.svg" alt="Property size">
+        4 bedrooms    </div>
+
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/bath.svg" alt="Property size">
+        3 bathrooms    </div>
+
+            <div>
+                        En suite bathrooms        </div>
+                            </div>
+                </div>
+
+                                    <a class="property--panel__category pill pill--plum" href="https://www.royalwestmoreland.com/ownership/type/property/townhouses/" tabindex="-1">
+                        Townhouses                    </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                                </div>
+                                                            <div class="slide tns-item" id="tns1-item2" aria-hidden="true" tabindex="-1">
+
+                                    
+<div class="f-panel f-panel--xlarge property-panel ">
+    <div class="f-panel__inner">
+                <div class="f-panel__img">
+
+            <div class="f-panel__slideshow uk-slideshow" data-uk-slideshow="animation: push; ratio: 462:347">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slideshow-items" style="min-height: 240.346px;">
+                                                    <li class="uk-active uk-transition-active" style="transform: translateX(0px); z-index: 0;">
+                                <a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" class="property-panel__imglink" tabindex="-1">
+                                  <img data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-Golf-Villa-No.1-02-Aerial-Edit.jpg" data-srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-Golf-Villa-No.1-02-Aerial-Edit.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-Golf-Villa-No.1-02-Aerial-Edit.jpg 2x" alt="Image 1" data-uk-img="" data-uk-cover="" class="uk-cover" style="width: 320px; height: 240px;">
+                                </a>
+                            </li>
+                        
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-01-Great-Room-1.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-01-Great-Room-1.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-01-Great-Room-1.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-18-Balcony-2.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-18-Balcony-2.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-18-Balcony-2.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-15-Bedroom-3-B.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-15-Bedroom-3-B.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-15-Bedroom-3-B.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-13-Bathroom-2.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-13-Bathroom-2.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-13-Bathroom-2.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" class="property-panel__imglink" tabindex="-1">
+                                    <img src="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-11-Bedroom-2-B.jpg" srcset="https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-11-Bedroom-2-B.jpg, https://www.royalwestmoreland.com/wp-content/uploads/2020/05/RWM-GOLF-VILLA-No.1-11-Bedroom-2-B.jpg 2x" alt="" data-uk-cover="" class="uk-cover">
+                                </a>
+                            </li>
+                                            </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slideshow-item="previous" tabindex="-1"><span class="a11y">Previous</span><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slideshow-item="next" tabindex="-1"><span class="a11y">Next</span><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+
+                    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                        
+                            <li data-uk-slideshow-item="0" class="uk-active"><a href="" tabindex="-1"><span class="a11y">Go to slide 1</span></a></li>
+                                                            <li data-uk-slideshow-item="1"><a href="" tabindex="-1"><span class="a11y">Go to slide 1</span></a></li>
+                                                            <li data-uk-slideshow-item="2"><a href="" tabindex="-1"><span class="a11y">Go to slide 2</span></a></li>
+                                                            <li data-uk-slideshow-item="3"><a href="" tabindex="-1"><span class="a11y">Go to slide 3</span></a></li>
+                                                            <li data-uk-slideshow-item="4"><a href="" tabindex="-1"><span class="a11y">Go to slide 4</span></a></li>
+                                                            <li data-uk-slideshow-item="5"><a href="" tabindex="-1"><span class="a11y">Go to slide 5</span></a></li>
+                                                                        </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="f-panel__body">
+            <h3 class="f-panel__title property-panel__title "><a href="https://www.royalwestmoreland.com/ownership/property/golf-villas/" tabindex="-1">Golf Villas</a></h3>
+
+                          <div class="f-panel__subtitle property-panel__subtitle">
+                  <p><strong>Two weeks ownership starting from £42,000 </strong></p>              </div>
+                        <div class="f-panel__content">
+                <p class="property-panel__desc">Representing modern-day Caribbean living, the clean lines of the flat roofed design portray a fresh vibrant aesthetic which is becoming a pre-requisite in today’s villa ownership market. South West facing with excellent balcony views across the estate to the Azure waters of the Caribbean Sea, they are perfectly placed to enjoy a traditional Bajan Rum…</p>
+                <div class="f-panel__iconlist">
+                    <div class="icon-list icon-list--dots">
+                        
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/floorplan.svg" alt="Property size">
+        2358 .sq feet    </div>
+
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/bed.svg" alt="Property size">
+        3 bedrooms    </div>
+
+    <div>
+        <img class="" src="https://www.royalwestmoreland.com/wp-content/themes/fabric/assets/images/property-icons/bath.svg" alt="Property size">
+        2.5 bathrooms    </div>
+
+            <div>
+                            <img class="" src="https://www.royalwestmoreland.com/wp-content/uploads/2017/12/private-swimming-pool.svg" alt="Communal swimming pool">
+                        Communal swimming pool        </div>
+                                    </div>
+                </div>
+
+                                    <a class="property--panel__category pill pill--blue" href="https://www.royalwestmoreland.com/ownership/type/fractional-ownership/" tabindex="-1">
+                        Fractional Ownership                    </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                                </div>
+                                                    </div></div></div></div>
+                                                            <div class="f-grid">
+                        <div class="f-width-1-1">
+                            <a href="https://www.royalwestmoreland.com/ownership/search/" class="uk-button uk-button-large uk-button-secondary f-btn-arrow-r uk-text-left property-slider__link">
+                                <span class="f-button-span">Search all properties</span>
+                            </a>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related-posts home-related-posts">
+    <div class="uk-container uk-container-large">
+        <div class="related-posts__wrapper">
+            <div class="f-grid f-grid__gutter-s uk-flex-center">
+                <div class="f-width-16-16 f-width-l-14-16 f-width-xl-12-16">
+                    <h3 class="related-posts__title">Explore Our Latest Blog Articles</h3>
+
+                    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" data-uk-grid="" data-uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 100">
+
+                                                    <div class="uk-first-column" style="visibility: hidden;">
+                                <div class="post-card">
+    <a aria-label="Phil Spencer joins us at Royal Westmoreland for the ultimate Caribbean retreat" class="post-card__thumbnail" href="https://www.royalwestmoreland.com/blog/carribean-golf/phil-spencer-royal-westmoreland/">
+        <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2023/06/Phil_Spencer.jpg" alt="Phil Spencer joins us at Royal Westmoreland for the ultimate Caribbean retreat">
+    </a>
+    <div class="post-card__content">
+        <a href="https://www.royalwestmoreland.com/blog/carribean-golf/phil-spencer-royal-westmoreland/">
+            <h3>
+                Phil Spencer joins us at Royal Westmoreland for the ultimate Caribbean retreat            </h3>
+        </a>
+        <div class="post-card__meta">
+                            <time datetime="2023-06-27" class="post-card__meta-date">
+                    June 27, 2023                </time>
+                <ul class="post-card__meta-categories">
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/carribean-golf/">
+                                Carribean Golf                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/holidays/">
+                                Holidays                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/luxury-travel/">
+                                Luxury Travel                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/news/">
+                                News                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/ownership/">
+                                Ownership                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/press-pr/">
+                                Press &amp; PR                            </a>
+                        </li>
+                                    </ul>
+                    </div>
+    </div>
+</div>
+                            </div>
+                                                    <div style="visibility: hidden;">
+                                <div class="post-card">
+    <a aria-label="Spoiled for Choice – New Year Celebrations in Barbados" class="post-card__thumbnail" href="https://www.royalwestmoreland.com/blog/holidays/spoiled-for-choice-new-year-celebrations-in-barbados/">
+        <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/uploads/blog/blog/fireworks-photo-1252509-812x526.jpeg" alt="Spoiled for Choice – New Year Celebrations in Barbados">
+    </a>
+    <div class="post-card__content">
+        <a href="https://www.royalwestmoreland.com/blog/holidays/spoiled-for-choice-new-year-celebrations-in-barbados/">
+            <h3>
+                Spoiled for Choice – New Year Celebrations in Barbados            </h3>
+        </a>
+        <div class="post-card__meta">
+                            <time datetime="2022-12-05" class="post-card__meta-date">
+                    December 5, 2022                </time>
+                <ul class="post-card__meta-categories">
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/holidays/">
+                                Holidays                            </a>
+                        </li>
+                                    </ul>
+                    </div>
+    </div>
+</div>
+                            </div>
+                                                    <div style="visibility: hidden;">
+                                <div class="post-card">
+    <a aria-label="6 Facts About Buying a Property in Barbados" class="post-card__thumbnail" href="https://www.royalwestmoreland.com/blog/ownership/6-facts-about-buying-a-property-in-barbados/">
+        <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/uploads/2020/06/gallery-16-812x526.jpg" alt="6 Facts About Buying a Property in Barbados">
+    </a>
+    <div class="post-card__content">
+        <a href="https://www.royalwestmoreland.com/blog/ownership/6-facts-about-buying-a-property-in-barbados/">
+            <h3>
+                6 Facts About Buying a Property in Barbados            </h3>
+        </a>
+        <div class="post-card__meta">
+                            <time datetime="2022-04-12" class="post-card__meta-date">
+                    April 12, 2022                </time>
+                <ul class="post-card__meta-categories">
+                                            <li>
+                            <a href="https://www.royalwestmoreland.com/blog/ownership/">
+                                Ownership                            </a>
+                        </li>
+                                    </ul>
+                    </div>
+    </div>
+</div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="f-grid uk-flex-center uk-visible@l">
+                <div class="f-width-16-16 f-width-l-12-16 uk-text-center">
+                    <a href="/blog" class="related-posts__link uk-button uk-button-large uk-button-primary f-btn-arrow-r f-btn-arrow-r--dark uk-text-left">
+                        <span class="f-button-span">View all blog posts</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+	
+<footer>
+    <div class="footer">
+        <h1 class="a11y">Page footer</h1>
+        <!-- Newsletter -->
+        <div class="footer__newsletter" data-newsletter-form-msg="">
+    <div class="uk-container uk-container-large">
+        <div class="footer__newsletter-inner">
+            <div class="footer__newsletter-body f-width-16-16 f-width-l_xl-14-16">
+                <div>
+                    <h3>Join Our Newsletter</h3>
+					
+					
+<div class="wpcf7 js" id="wpcf7-f5357-o1" lang="en-GB" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f5357-o1" method="post" class="wpcf7-form init cmonitor-ext-0.4.67" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="5357">
+<input type="hidden" name="_wpcf7_version" value="5.7.4">
+<input type="hidden" name="_wpcf7_locale" value="en_GB">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5357-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+<input type="hidden" name="_wpcf7_recaptcha_response" value="03AFcWeA4DlUlOEacFcxTqwo3d26nmtg4ejo9CZvcBUZlVNi9pdhcSW68jEEWQ5V2vNCEPYxehoHRNly8Ao8SXS3mH-Zigq_ixq_z2_SXCX9rtinvjm-PpMctY74G_5bDkgGvWKX9AQ6EexozpghItSbZFe_pYGoelEPMB3orQkJBGvvu4xNWzNrRRQL_fJcPuDjRvJjJ1xczT2Zej7Mgr9svnKBd3WplrfM_SMGc-4nlj4Nk7gXhkQ8H5sI4xgTNXBBuHF1Z-GpEbF3LZl-e7CRyp7qAaRHe1a27RUTXu1i5809oleNOzp-rjCivnqfUL1wbbR_o6CIbtPEgWx1N3Q7sYlOnmIwBT_uUNCtw9Axi95JNXdDeEbwIIHurkmThCHS7WoND-NR6_yfz80SEDS47W7TpZXsS6o5jk20CMapHPw3AvkhIWyIw7fcx8ZmqOejxR_eW0BflFYZ4H4LKQgP1QZUcLVWFdoNRKe5yGcxvi2blrJcofgk12Z974tgbiwMi4Onxz_iOTkzVSKcfPc9socs5yl-IhNKHG27t46zHdqmUaKWmJbLYLg7c_nbMoT1KZytllKcWX__Rq8LyYEi7kVqaJv7cjDIjap_p-yeKanC0QZabwpbezChgY1djHfUMZSRFe8PP8finQtgomFvYrCLcfXDRHw1qJkgSGXBZZAYtyPKRWQULIUoLqZB56-hllQIZAVtvg">
+</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div><p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page"><input type="text" name="referer-page" value="http://Direct%20Visit" data-value="http://Direct%20Visit" size="40" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false"></span></p>
+<!-- campaignmonitor extension by Renzo Johnson -->
+<input class="wpcf7-form-control wpcf7-hidden" value="RWM-newsletter" type="hidden" name="text">
+<div class="uk-flex uk-flex-wrap footer__newsletter-grid">
+	<div class="footer__newsletter-col1 uk-width-1-1 uk-width-1-4@l">
+		<div class="footer__newsletter-caption">
+			<p>Stay up to date and never miss any offers and special promotions
+			</p>
+		</div>
+	</div>
+	<div class="footer__newsletter-col2 uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+		<p><label for="fieldName" class="a11y">Full Name</label><br>
+<span class="wpcf7-form-control-wrap" data-name="full-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required uk-input js-newsletter-name" id="fieldName" aria-required="true" aria-invalid="false" placeholder="Full Name" value="" type="text" name="full-name"></span>
+		</p>
+	</div>
+	<div class="footer__newsletter-col3 uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+		<p><label for="fieldEmail" class="a11y">Email</label><br>
+<span class="wpcf7-form-control-wrap" data-name="email"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email uk-input" id="fieldEmail" aria-required="true" aria-invalid="false" placeholder="your@email.com" value="" type="email" name="email"></span>
+		</p>
+	</div>
+	<div class="uk-child-width-1-1 uk-grid uk-grid-stack" data-uk-grid="">
+		<p class="uk-first-column"><script type="text/javascript">
+var clicked = false;
+function disableMe() {
+if (document.getElementById) {
+if (!clicked) {
+document.getElementById("myButton").value = "thank you";
+clicked = true;
+return true;
+} else {
+return false;
+}
+} else {
+return true;
+}
+}
+</script>
+		</p>
+		<p class="uk-first-column uk-grid-margin"><button id="myButton" class="uk-button uk-button-large uk-button-secondary" type="submit" name="myButton" onclick="return disableMe()" value="Submit">Subscribe</button>
+		</p>
+	</div>
+	<div class="footer__newsletter-col12 uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-auto@l">
+		<div class="footer__note">
+			<p>By choosing to subscribe you are signing up to receive marketing updates from us. Please be aware that you can opt out at anytime.
+			</p>
+		</div>
+	</div>
+</div>
+</form>
+</div>
+					
+<!--                     <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231FE7F5352E498CD3665C005ECDB9447282EECC307C24AEE21876B2C27DDF0AF2B35A753213CBDD6B993F3904C34396ED0">
+                        <div class="uk-flex uk-flex-wrap footer__newsletter-grid">
+                            <div class="footer__newsletter-col1 uk-width-1-1 uk-width-1-4@l">
+                                <div class="footer__newsletter-caption"><p>Stay up to date and never miss any offers and special promotions</p></div>
+                            </div>
+                            <div class="footer__newsletter-col2 uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                                <label for="cm-name" class="a11y">Full Name</label>
+                                <input class="uk-input js-newsletter-name" aria-label="Name" id="fieldName" maxlength="200" name="cm-name" placeholder="Full Name" type="text" required>
+                            </div>
+                            <div class="footer__newsletter-col3 uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                                <label for="email" class="a11y">Email </label>
+                                <input autocomplete="Email" aria-label="Email" class="uk-input js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="email" required type="email" placeholder="your@email.com">
+                            </div>
+                            <div class="footer__newsletter-col4 uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-auto@l">
+                                <button class="wpcf7-form-control wpcf7-submit uk-button uk-button-large uk-button-secondary uk-width-1-1 uk-text-left footer__newsletter-btn" type="submit">Subscribe</button>
+                                <div class="footer__note"><p>By choosing to subscribe you are signing up to receive marketing updates from us. Please be aware that you can opt out at anytime.</p></div>
+                            </div>
+                        </div>
+                    </form> -->
+                </div>
+                <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Footer main -->
+        <div class="footer__main f-bg-black f-txt-white">
+            <div class="uk-container uk-container-large">
+                <div class="uk-flex uk-flex-wrap f-grid">
+                    <div class="uk-visible@l f-width-l-1-16">
+                        <img class="f-img-reset" uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/rwm-logo-outlines.svg" alt="Royal Westmoreland Logo">
+                    </div>
+                    <div class="uk-visible@l f-width-16-16 f-width-m-8-16 f-width-l-5-16 f-width-xl-4-16">
+                        <h3 class="a11y">Contact Numbers</h3>
+                        <div class="uk-flex uk-flex-wrap footer__tels f-grid">
+                            <div class="uk-width-1-2 uk-width-auto@l footer__tel">
+                                <p>
+                                    <strong class="footer__title">UK Holidays</strong>
+                                    <span class="footer__tel-number"><a href="tel:+44(0)1524917316">+44 (0)1524 917316</a></span>
+                                </p>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-auto@l footer__tel">
+                                <p>
+                                    <strong class="footer__title">UK Ownership</strong>
+                                    <span class="footer__tel-number"><a href="tel:+44(0)1524917317">+44 (0)1524 917317</a></span>
+                                </p>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-auto@l footer__tel">
+                                <p>
+                                    <strong class="footer__title">Barbados Sales</strong>
+                                    <span class="footer__tel-number"><a href="tel:+12464190394">+1 246 419 0394</a></span>
+                                </p>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-auto@l footer__tel">
+                                <p>
+                                    <strong class="footer__title">Concierge</strong>
+                                    <span class="footer__tel-number"><a href="tel:+12464197299">+1 246 419 7299</a></span>
+                                </p>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-auto@l footer__tel">
+                                <p>
+                                    <strong class="footer__title">Sanctuary</strong>
+                                    <span class="footer__tel-number"><a href="tel:+12464197258">+1 246 419 7258</a></span>
+                                </p>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-auto@l footer__tel">
+                                <p>
+                                    <strong class="footer__title">Golf</strong>
+                                    <span class="footer__tel-number"><a href="tel:+12464197242">+1 246 419 7242</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-visible@l f-width-16-16 f-width-xs-8-16 f-width-m-4-16 f-width-l-3-16">
+                        <h3 class="footer__title">
+                            Ownership                        </h3>
+                        <ul id="menu-ownership" class="f-list-reset footer__menu"><li id="menu-item-6545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6545"><a href="https://www.royalwestmoreland.com/ownership/search/">View all properties</a></li>
+<li id="menu-item-8338" class="menu-item menu-item-type-taxonomy menu-item-object-type menu-item-8338"><a href="https://www.royalwestmoreland.com/ownership/type/property/architecturally-designed-villas/">Architecturally Designed Villas</a></li>
+<li id="menu-item-10511" class="menu-item menu-item-type-taxonomy menu-item-object-type menu-item-10511"><a href="https://www.royalwestmoreland.com/ownership/type/property/lancasternews/">Lancaster Mews</a></li>
+<li id="menu-item-8336" class="menu-item menu-item-type-taxonomy menu-item-object-type menu-item-8336"><a href="https://www.royalwestmoreland.com/ownership/type/property/royal-apartments/">Royal Apartments</a></li>
+<li id="menu-item-8337" class="menu-item menu-item-type-taxonomy menu-item-object-type menu-item-8337"><a href="https://www.royalwestmoreland.com/ownership/type/property/townhouses/">Townhouses</a></li>
+<li id="menu-item-8335" class="menu-item menu-item-type-taxonomy menu-item-object-type menu-item-8335"><a href="https://www.royalwestmoreland.com/ownership/type/fractional-ownership/">Fractional Ownership</a></li>
+<li id="menu-item-8334" class="menu-item menu-item-type-taxonomy menu-item-object-type menu-item-8334"><a href="https://www.royalwestmoreland.com/ownership/type/resale-villas/">Resale Villas</a></li>
+</ul>                    </div>
+                    <div class="uk-visible@l f-width-16-16 f-width-xs-8-16 f-width-m-4-16 f-width-l-3-16">
+                        <h3 class="footer__title">
+                            Holidays                        </h3>
+                        <ul id="menu-holidays" class="f-list-reset footer__menu"><li id="menu-item-7689" class="menu-item menu-item-type-post_type menu-item-object-holidays menu-item-7689"><a href="https://www.royalwestmoreland.com/holidays/property/royal-apartments/">Royal Apartments</a></li>
+<li id="menu-item-7690" class="menu-item menu-item-type-post_type menu-item-object-holidays menu-item-7690"><a href="https://www.royalwestmoreland.com/holidays/property/golf-cottages/">Golf Cottages</a></li>
+<li id="menu-item-7691" class="menu-item menu-item-type-post_type menu-item-object-holidays menu-item-7691"><a href="https://www.royalwestmoreland.com/holidays/property/townhouses/">Townhouses</a></li>
+<li id="menu-item-7692" class="menu-item menu-item-type-post_type menu-item-object-holidays menu-item-7692"><a href="https://www.royalwestmoreland.com/holidays/property/exclusive-villas/">Exclusive Villas</a></li>
+</ul>                    </div>
+                    <div class="f-width-16-16 f-width-s-8-16 f-width-m-8-16 f-width-l-2-16">
+                        <h3 class="footer__title">Connect</h3>
+                        <ul class="f-list-reset footer__menu footer__menu--social">
+                            
+                            <li>
+                                <a href="https://twitter.com/RoyalWM">
+                                    <span class="footer__social-icon">
+                                        <svg width="36" height="30" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.74a7.587 7.587 0 01-2.119.58A3.715 3.715 0 0017.503.28a7.331 7.331 0 01-2.344.89A3.682 3.682 0 0012.464 0a3.698 3.698 0 00-3.596 4.539A10.482 10.482 0 011.254.679c-.318.54-.5 1.181-.5 1.86 0 1.281.651 2.411 1.643 3.071a3.654 3.654 0 01-1.674-.461v.04A3.71 3.71 0 003.686 8.82a4.083 4.083 0 01-1.668.06 3.701 3.701 0 003.451 2.569 7.467 7.467 0 01-4.587 1.57 6.44 6.44 0 01-.882-.05 10.439 10.439 0 005.662 1.66c6.792 0 10.508-5.629 10.508-10.5 0-.16-.004-.32-.013-.48A7.533 7.533 0 0018 1.74" fill="#FFF"></path></svg>                                    </span>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+
+                            
+                            <li>
+                                <a href="https://www.facebook.com/royalwestmorelandbarbados/">
+                                    <span class="footer__social-icon">
+                                        <svg width="18" height="34" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="M6 9h2.6L9 6H6V4.3c0-.9.2-1.5 1.5-1.5H9V.1C8.7.1 8 0 6.9 0 4.6 0 3 1.4 3 4v2H.5v3H3v8h3V9z" fill="#FFF"></path></svg>                                    </span>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+
+                            
+                            <li>
+                                <a href="https://www.instagram.com/royal_westmoreland/">
+                                    <span class="footer__social-icon">
+                                        <svg width="36" height="36" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF"><path d="M12.55 0H5.46C2.45 0 0 2.44 0 5.44v7.12c0 3 2.45 5.44 5.46 5.44h7.08c3.02 0 5.46-2.44 5.46-5.44V5.44c.01-3-2.44-5.44-5.45-5.44zm3.95 13c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h8c1.93 0 3.5 1.57 3.5 3.5v8z"></path><circle cx="13.87" cy="4.26" r="1.09"></circle><path d="M9.03 4.45c-2.55 0-4.63 2.06-4.63 4.6 0 2.55 2.07 4.61 4.63 4.61s4.63-2.061 4.63-4.61a4.626 4.626 0 00-4.63-4.6zM9.08 12c-1.66 0-3-1.34-3-2.99 0-1.65 1.34-2.99 3-2.99s3 1.34 3 2.99c0 1.65-1.34 2.99-3 2.99z"></path></g></svg>                                    </span>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+
+                                                    </ul>
+                    </div>
+                    <hr class="footer__divider">
+                    <div class="f-width-16-16 f-width-s-8-16 f-width-m-8-16 f-width-l-2-16 f-width-xl-3-16">
+                        <div class="uk-flex uk-flex-wrap footer__logos">
+                            <div class="uk-width-1-2 uk-width-1-1@l uk-width-auto@xl">
+                                <img class="footer__logo footer__logo--visa" uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/company-logos/visa.svg" alt="Visa logo">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-1-1@l uk-width-auto@xl">
+                                <img class="footer__logo footer__logo--mastercard" uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/company-logos/mastercard.svg" alt="Mastercard logo">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-1-1@l uk-width-auto@xl">
+                                <img class="footer__logo footer__logo--sagepay" uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/company-logos/sagepay.svg" alt="Sagepay Logo">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-1-1@l uk-width-auto@xl">
+                                <img class="footer__logo footer__logo--pci" uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/company-logos/pci.png" alt="PCI Compliance logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Base -->
+        <div class="footer__base">
+            <div class="uk-container uk-container-large">
+                <div class="footer__base--inner">
+                    <div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+                        <div class="uk-width-1-1 uk-width-auto@m footer__base--copy">
+                            Copyright © 2024 Royal Westmoreland. All Rights Reserved.
+                            <div class="footer__base--nav">
+                                <ul class="f-list-reset"><li><a href="https://www.royalwestmoreland.com/privacy-policy/">Privacy Policy</a></li><li><a target="_blank" href="https://www.royalwestmoreland.com/wp-content/uploads/2022/05/RW-Terms-Conditions-May-22.pdf">Terms &amp; Conditions</a></li><li><a href="https://www.royalwestmoreland.com/cookie-policy/">Cookie Policy</a></li><li><a href="https://www.royalwestmoreland.com/sitemap/">Sitemap</a></li><li><a href="https://www.visitbarbados.org/covid-19-travel-guidelines-2020">Current Travel Protocols</a></li><li><a href="https://www.visitbarbados.org/barbados-welcome-stamp-2020">12 Month Stamp Visa</a></li></ul>                            </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-auto@m footer__base--logos">
+                            <div class="uk-flex uk-flex-wrap">
+                                <div class="footer__base--logo">
+                                    <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/company-logos/americas-property-awards-winner-2018.svg" alt="Americas property awards winner 2018-19">
+                                </div>
+                                <div class="footer__base--logo">
+                                    <img uk-img="" data-src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/company-logos/tripadvisor.svg" alt="Trip Advisor certificate of excellence">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Organization","name":"Royal Westmoreland","legalName":"Royal Westmoreland","url":"http:\/\/www.royalwestmoreland.com","logo":"https:\/\/www.royalwestmoreland.com\/wp-content\/themes\/fabric\/dist\/images\/rwm-logo.png","address":{"@type":"PostalAddress","addressLocality":"St. James","addressCountry":"Barbados"},"contactPoint":[{"@type":"ContactPoint","contactType":"UK Holidays","telephone":"+44 (0)1524 917316"},{"@type":"ContactPoint","contactType":"UK Ownership","telephone":"+44 (0)1524 917317"},{"@type":"ContactPoint","contactType":"Barbados Sales","telephone":"+1 246 419 0394"},{"@type":"ContactPoint","contactType":"Concierge","telephone":"+1 246 419 7299"},{"@type":"ContactPoint","contactType":"Sanctuary","telephone":"+1 246 419 7258"},{"@type":"ContactPoint","contactType":"Golf","telephone":"+1 246 419 7242"}],"sameAs":["https:\/\/twitter.com\/RoyalWM","https:\/\/www.facebook.com\/royalwestmorelandbarbados\/","https:\/\/www.instagram.com\/royal_westmoreland\/","https:\/\/www.pinterest.co.uk\/rwmbarbados\/"]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"LocalBusiness","image":["https:\/\/example.com\/photos\/1x1\/photo.jpg","https:\/\/example.com\/photos\/4x3\/photo.jpg","https:\/\/example.com\/photos\/16x9\/photo.jpg"],"@id":"http:\/\/davessteakhouse.example.com","name":"Royal Westmoreland","address":{"@type":"PostalAddress","streetAddress":"St. James","addressCountry":"Barbados"},"geo":{"@type":"GeoCoordinates","latitude":413.1858297,"longitude":-59.6315809},"url":"http:\/\/www.royalwestmoreland.com","telephone":"+44 (0)1524 917316","priceRange":"$$$$$ - $$$$$$$"}</script><div id="share-links" class="uk-flex-top sharelinks uk-modal" data-uk-modal="">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical sharelinks__inner">
+
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" data-uk-close=""><span class="a11y">Close</span><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+
+        <div>
+            <p class="sharelinks__title">Share Page</p>
+
+            <ul class="sharelinks__list f-list-reset">
+                <li>
+                    <a href="#" target="_blank" class="js-share-facebook">
+                        <span class="sharelinks__list-icon">
+                            <svg width="18" height="36" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="M6 9h2.6L9 6H6V4.3c0-.9.2-1.5 1.5-1.5H9V.1C8.7.1 8 0 6.9 0 4.6 0 3 1.4 3 4v2H.5v3H3v8h3V9z"></path></svg>
+                        </span>
+                        <span class="sharelinks__list-text">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="js-share-twitter">
+                        <span class="sharelinks__list-icon">
+                            <svg width="36" height="30" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.74a7.587 7.587 0 01-2.119.58A3.715 3.715 0 0017.503.28a7.331 7.331 0 01-2.344.89A3.682 3.682 0 0012.464 0a3.698 3.698 0 00-3.596 4.539A10.482 10.482 0 011.254.679c-.318.54-.5 1.181-.5 1.86 0 1.281.651 2.411 1.643 3.071a3.654 3.654 0 01-1.674-.461v.04A3.71 3.71 0 003.686 8.82a4.083 4.083 0 01-1.668.06 3.701 3.701 0 003.451 2.569 7.467 7.467 0 01-4.587 1.57 6.44 6.44 0 01-.882-.05 10.439 10.439 0 005.662 1.66c6.792 0 10.508-5.629 10.508-10.5 0-.16-.004-.32-.013-.48A7.533 7.533 0 0018 1.74"></path></svg>
+                        </span>
+                        <span class="sharelinks__list-text">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="js-share-whatsapp">
+                        <span class="sharelinks__list-icon">
+                            <svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M16.7 3.3C14.9 1.5 12.6.5 10 .5 4.8.5.6 4.7.6 9.9c0 1.7.4 3.3 1.3 4.7L.6 19.5l5-1.3c1.4.8 2.9 1.2 4.5 1.2 5.2 0 9.4-4.2 9.4-9.4 0-2.6-1-5-2.8-6.7m-6.6 14.4c-1.4 0-2.8-.4-4-1.1l-.3-.2-3 .8.8-2.9-.2-.3c-.8-1.2-1.2-2.7-1.2-4.2C2.2 5.5 5.7 2 10 2c2.1 0 4.1.8 5.5 2.3 1.5 1.5 2.3 3.4 2.3 5.5.1 4.4-3.4 7.9-7.7 7.9m4.3-5.8l-1.6-.8c-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1s-1-.4-1.9-1.2c-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.2.3-.4.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4 0-.1-.5-1.2-.7-1.7-.2-.5-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.4c.1.2 1.7 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.5-.3"></path></svg>
+                        </span>
+                        <span class="sharelinks__list-text">WhatsApp</span>
+                    </a>
+                </li>
+                <li data-share-copy-link="">
+                    <a href="#" class="js-share-copy">
+                        <span class="sharelinks__list-icon">
+                            <svg width="30" height="48" viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" fill="none" fill-rule="evenodd"><path fill="#000" d="M.5 2.5h12v16H.5z"></path><path d="M2 .5h12.5V17"></path></g></svg>
+                        </span>
+                        <span class="sharelinks__list-text">Copy Link</span>
+                    </a>
+                <input type="text" name="sharelinks__input" id="sharelinks__input" class="sharelinks__input" title="Copy Link"></li>
+                <li>
+                    <a href="#" target="_blank" class="js-share-email">
+                        <span class="sharelinks__list-icon">
+                            <svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" points="1.4,6.5 10,11 18.6,6.5"></polyline><path d="M 1,4 1,16 19,16 19,4 1,4 Z M 18,15 2,15 2,5 18,5 18,15 Z"></path></svg>
+                        </span>
+                        <span class="sharelinks__list-text">Email</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<nav id="offcanvas-nav" class="f-offcanvas uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true;">
+	<div class="uk-offcanvas-bar uk-flex uk-flex-column" data-offcanvas-controls="">
+
+		<header class="f-offcanvas__header">
+			<a class="f-offcanvas__logo" href="https://www.royalwestmoreland.com/">
+				<img src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/images/rwm-crest.svg" alt="Royal Westmoreland Crest">
+			</a>
+			<button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close=""><span class="a11y">Close</span><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+		</header>
+
+		<div class="f-offcanvas__nav">
+
+			<ul class="f-offcanvas__nav_ul"><li class="current-menu-item  page-158"><a href="https://www.royalwestmoreland.com/" class="">Home</a></li><li class=" menu-item-has-children page-174"><a href="https://www.royalwestmoreland.com/ownership/" class="">Ownership<span class="f-border-left f-offcanvas__sub-trigger"><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><g fill="#999" fill-rule="nonzero"><path d="M6.6 0h1v14h-1z"></path><path d="M0 6.6h14v1H0z"></path></g></svg></span></a><ul class="sub-menu"><li><a href="https://www.royalwestmoreland.com/ownership/type/property/" class="">Property Types</a></li><li><a href="https://www.royalwestmoreland.com/ownership/type/fractional-ownership/" class="">Fractional Ownership</a></li><li><a href="https://www.royalwestmoreland.com/ownership/type/developments/" class="">Developments</a></li><li><a href="https://www.royalwestmoreland.com/ownership/type/resale-villas/" class="">Resale Villas</a></li></ul></li><li class=" menu-item-has-children page-176"><a href="https://www.royalwestmoreland.com/holidays/" class="">Holidays<span class="f-border-left f-offcanvas__sub-trigger"><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><g fill="#999" fill-rule="nonzero"><path d="M6.6 0h1v14h-1z"></path><path d="M0 6.6h14v1H0z"></path></g></svg></span></a><ul class="sub-menu"><li><a href="https://www.royalwestmoreland.com/holidays/special-offers/" class="">Special Offers</a></li></ul></li><li class=" menu-item-has-children page-777"><a href="https://www.royalwestmoreland.com/estate/" class="">Experiences<span class="f-border-left f-offcanvas__sub-trigger"><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><g fill="#999" fill-rule="nonzero"><path d="M6.6 0h1v14h-1z"></path><path d="M0 6.6h14v1H0z"></path></g></svg></span></a><ul class="sub-menu"><li><a href="https://www.royalwestmoreland.com/estate/beach/" class="">Beach</a></li><li><a href="https://www.royalwestmoreland.com/estate/dining/" class="">Dining</a></li><li><a href="https://www.royalwestmoreland.com/estate/racquet-sports/" class="">Racquet Sports</a></li><li><a href="https://www.royalwestmoreland.com/estate/golf/" class="">Golf</a></li><li><a href="https://www.royalwestmoreland.com/estate/gym/" class="">Gym</a></li><li><a href="https://www.royalwestmoreland.com/estate/limegrove-shopping-centre/" class="">Limegrove Shopping Centre</a></li><li><a href="https://www.royalwestmoreland.com/estate/singita-wellness-spa/" class="">Singita Wellness Spa</a></li></ul></li><li class=" menu-item-has-children page-7442"><a href="https://www.royalwestmoreland.com/about/" class="">About<span class="f-border-left f-offcanvas__sub-trigger"><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><g fill="#999" fill-rule="nonzero"><path d="M6.6 0h1v14h-1z"></path><path d="M0 6.6h14v1H0z"></path></g></svg></span></a><ul class="sub-menu"><li><a href="https://www.royalwestmoreland.com/about/barbados/" class="">Barbados</a></li><li><a href="https://www.royalwestmoreland.com/blog/" class="">Blog</a></li><li><a href="https://www.royalwestmoreland.com/about/gallery/" class="">Gallery</a></li></ul></li><li class="  page-768"><a href="https://www.royalwestmoreland.com/contact-us/" class="">Contact</a></li></ul>
+		</div>
+
+		<footer class="f-offcanvas__footer">
+			<p class="f-offcanvas__contact">
+				Holiday enquiries:
+				<span>
+					<a href="tel:+44(0)1524917316">+44 (0)1524 917316</a>
+				</span>
+			</p>
+
+			<p class="f-offcanvas__contact">
+				Ownership enquiries:
+				<span>
+					<a href="tel:+44(0)1524917317">+44 (0)1524 917317</a>
+				</span>
+			</p>
+		</footer>
+
+	</div>
+</nav>
+<script type="text/javascript" src="https://www.royalwestmoreland.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.4" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.royalwestmoreland.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.royalwestmoreland.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.4" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Lduep4aAAAAAI5b7YsMb1WOb74TnpzxI0_Cc9_V&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script type="text/javascript" src="https://www.royalwestmoreland.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://www.royalwestmoreland.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Lduep4aAAAAAI5b7YsMb1WOb74TnpzxI0_Cc9_V","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.royalwestmoreland.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7.4" id="wpcf7-recaptcha-js"></script>
+
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@latest/ie11CustomProperties.js"><\x2fscript>');</script>
+
+<script src="https://www.royalwestmoreland.com/wp-content/themes/fabric/dist/scripts/scripts.min.js?ver=1.0.83"></script>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+	"popup": {
+	  "background": "#384455"
+	},
+	"button": {
+	  "background": "#00A7D6"
+	}
+  },
+  "theme": "classic",
+  "content": {
+  	"dismiss": "Accept",
+	"href": "/cookie-policy/"
+  }
+})});
+</script>
+
+<script>
+window.intercomSettings = {
+app_id: "mgix383c"
+};
+</script>
+
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/mgix383c&#39;;
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/mgix383c';;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+	
+<div class="litepicker" style="display: none;"><div class="container__main"><div class="container__months"><div class="month-item no-previous-month"><div class="month-item-header"><a href="#" class="button-previous-month">Previous Month</a><div><strong class="month-item-name">April</strong><span class="month-item-year">2024</span></div><a href="#" class="button-next-month">Next Month</a></div><div class="month-item-weekdays-row"><div title="Monday">Mon</div><div title="Tuesday">Tue</div><div title="Wednesday">Wed</div><div title="Thursday">Thu</div><div title="Friday">Fri</div><div title="Saturday">Sat</div><div title="Sunday">Sun</div></div><div class="container__days"><a href="#" class="day-item is-locked" data-time="1711929600000">1</a><a href="#" class="day-item is-locked" data-time="1712016000000">2</a><a href="#" class="day-item is-locked" data-time="1712102400000">3</a><a href="#" class="day-item is-locked" data-time="1712188800000">4</a><a href="#" class="day-item is-locked" data-time="1712275200000">5</a><a href="#" class="day-item is-locked" data-time="1712361600000">6</a><a href="#" class="day-item is-locked" data-time="1712448000000">7</a><a href="#" class="day-item is-today is-start-date is-locked" data-time="1712534400000">8</a><a href="#" class="day-item is-in-range" data-time="1712620800000">9</a><a href="#" class="day-item is-in-range" data-time="1712707200000">10</a><a href="#" class="day-item is-in-range" data-time="1712793600000">11</a><a href="#" class="day-item is-in-range" data-time="1712880000000">12</a><a href="#" class="day-item is-in-range" data-time="1712966400000">13</a><a href="#" class="day-item is-in-range" data-time="1713052800000">14</a><a href="#" class="day-item is-end-date is-in-range" data-time="1713139200000">15</a><a href="#" class="day-item" data-time="1713225600000">16</a><a href="#" class="day-item" data-time="1713312000000">17</a><a href="#" class="day-item" data-time="1713398400000">18</a><a href="#" class="day-item" data-time="1713484800000">19</a><a href="#" class="day-item" data-time="1713571200000">20</a><a href="#" class="day-item" data-time="1713657600000">21</a><a href="#" class="day-item" data-time="1713744000000">22</a><a href="#" class="day-item" data-time="1713830400000">23</a><a href="#" class="day-item" data-time="1713916800000">24</a><a href="#" class="day-item" data-time="1714003200000">25</a><a href="#" class="day-item" data-time="1714089600000">26</a><a href="#" class="day-item" data-time="1714176000000">27</a><a href="#" class="day-item" data-time="1714262400000">28</a><a href="#" class="day-item" data-time="1714348800000">29</a><a href="#" class="day-item" data-time="1714435200000">30</a></div></div></div></div><div class="container__footer">
+      <span class="preview-date-range"></span>
+      <button type="button" class="button-cancel">Cancel</button>
+      <button type="button" class="button-apply">Done</button>
+      </div><div class="container__tooltip"></div></div><style type="text/css">@media all and (min-width:1px){.tns-mq-test{position:absolute}}</style><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-abegwh9x2yd5" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lduep4aAAAAAI5b7YsMb1WOb74TnpzxI0_Cc9_V&amp;co=aHR0cHM6Ly93d3cucm95YWx3ZXN0bW9yZWxhbmQuY29tOjQ0Mw..&amp;hl=en&amp;v=rz4DvU-cY2JYCwHSTck0_qm-&amp;size=invisible&amp;cb=iyo6iqe4u6nk"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><div id="batBeacon323834063368" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon909552008990" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=26352944&amp;tm=gtm002&amp;Ver=2&amp;mid=01a23b6a-028e-4723-8767-4393fb66b057&amp;sid=f7ce9120f56d11eeaf897771dceab57a&amp;vid=f7ceb980f56d11eeb2e91995f14a502a&amp;vids=1&amp;msclkid=N&amp;pi=0&amp;lg=en-US&amp;sw=1280&amp;sh=720&amp;sc=24&amp;nwd=1&amp;tl=Luxury%20Resort%20in%20Barbados%20-%20Royal%20Westmoreland&amp;p=https%3A%2F%2Fwww.royalwestmoreland.com%2F&amp;r=&amp;lt=7252&amp;evt=pageLoad&amp;sv=1&amp;rn=744839" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe></body></html>

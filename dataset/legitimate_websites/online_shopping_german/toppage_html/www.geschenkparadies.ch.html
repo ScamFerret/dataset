@@ -1,0 +1,2250 @@
+<!DOCTYPE html><html lang="de" class=""><!--<![endif]--><head>
+
+<noscript>
+        <iframe title="ns script" src="https://gtm.geschenkparadies.ch/ns.html?id=GTM-5MGHQM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <div class="top-page-error-message">
+            <div class="container" style="max-width: 100%">
+                Lieber Kunde, bei uns auf der Seite wird Javascript zwingend benötigt, bitte aktivieren sie Javascript damit der Einkaufsspass auf der Seite mit den besten Erlebnisse und Produkte beginnen kann.            </div>
+        </div>
+    </noscript>
+<script type="text/javascript" async="" src="https://gtm.geschenkparadies.ch/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="//cdn.m-pathy.com/js/a3084.js" crossorigin="anonymous" charset="UTF-8"></script><script async="" charset="utf-8" src="https://static.zdassets.com/ekr/asset_composer.js?key=a3428aea-a0a7-4beb-86f9-94985836f34f" type="text/javascript"></script><script type="text/javascript" async="" src="https://gtm.geschenkparadies.ch/analytics.js"></script><script type="text/javascript" async="" src="https://static.criteo.net/js/ld/ld.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-790748700&amp;l=dataLayer&amp;cx=c&amp;sign=62d97fc5621b43f8b23318c8028d7ddbadd90c5f67bad64bea036f3c68a228c0_20240408"></script><script src="https://connect.facebook.net/signals/config/1534430006777011?v=2.9.152&amp;r=stable&amp;domain=www.geschenkparadies.ch&amp;hme=c3a545c63044e8e9102d4f32d84a1137594d024f28e801d670bc76dc5c075575&amp;ex_m=67%2C112%2C99%2C103%2C58%2C3%2C93%2C66%2C15%2C91%2C84%2C49%2C51%2C158%2C161%2C172%2C168%2C169%2C171%2C28%2C94%2C50%2C73%2C170%2C153%2C156%2C165%2C166%2C173%2C121%2C14%2C48%2C178%2C177%2C123%2C17%2C33%2C38%2C1%2C41%2C62%2C63%2C64%2C68%2C88%2C16%2C13%2C90%2C87%2C86%2C100%2C102%2C37%2C101%2C29%2C25%2C154%2C157%2C130%2C27%2C10%2C11%2C12%2C5%2C6%2C24%2C21%2C22%2C54%2C59%2C61%2C71%2C95%2C26%2C72%2C8%2C7%2C76%2C46%2C20%2C97%2C96%2C9%2C19%2C18%2C81%2C53%2C79%2C32%2C70%2C0%2C89%2C31%2C78%2C83%2C45%2C44%2C82%2C36%2C4%2C85%2C77%2C42%2C39%2C34%2C80%2C2%2C35%2C60%2C40%2C98%2C43%2C75%2C65%2C104%2C57%2C56%2C30%2C92%2C55%2C52%2C47%2C74%2C69%2C23%2C105" async=""></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://gtm.geschenkparadies.ch/gtag/js?id=G-RN46HXRM38&amp;l=dataLayer&amp;cx=c&amp;sign=62d97fc5621b43f8b23318c8028d7ddbadd90c5f67bad64bea036f3c68a228c0_20240408"></script><script async="" src="https://gtm.geschenkparadies.ch/gtm.js?id=GTM-5MGHQM"></script><script>
+        var gtmMappers = {
+            'prediggo': {
+                'basket': function(cart) {
+                    var payload = [];
+                    var lines = cart.lines;
+                    $.each(lines, function (index, line) {
+                        if (!line.isFrontendType) {
+                            return;
+                        }
+
+                        payload.push({
+                            itemId:   line.article,
+                            quantity: line.quantity
+                        });
+                    });
+                    return payload;
+                }
+            },
+            'cartsGuru': {
+                'address': function (address) {
+                    var payload = {};
+                    if (address && address.mail) {
+                        payload = {
+                            civility: address.title == 1 ? 'madam' : 'mister',
+                            lastname: address.last_name,
+                            firstname: address.first_name,
+                            email: address.mail,
+                            homePhoneNumber: address.phone,
+                            mobilePhoneNumber: address.phone,
+                            phoneNumber: address.phone,
+                            countryCode: address.country_short,
+                            accountId: address.userId
+                        };
+                    }
+                    return payload;
+                },
+                'cart': function (cart, address, cartsGuruId, order) {
+                    var payload = {};
+                    if (!address || !cartsGuruId || order) {
+                        return payload;
+                    }
+
+                    var lines = gtmMappers.cartsGuru.cartLines(cart);
+                    if (lines.length == 0) {
+                        return payload;
+                    }
+
+                    payload = {
+                        siteId: cartsGuruId,
+                        id: cart.number,
+                        totalATI: cart.totalArticleLinesMarketingDiscounted,
+                        totalET: cart.totalArticleLinesMarketingDiscountedWithoutTax,
+                        currency: "CHF",
+                        ip: cart.ip,
+                        recoverUrl: "",
+                        custom: {},
+                        items: lines,
+                        buyerAcceptsMarketing: true
+                    };
+                    return {
+                        cart: $.extend(payload, gtmMappers.cartsGuru.address(address))
+                    };
+                },
+                'cartLines': function (cart) {
+                    var payload = [];
+                    var lines = cart.lines;
+                    $.each(lines, function (index, line) {
+                        if (!line.isFrontendType) {
+                            return;
+                        }
+                        payload.push({
+                           id:       line.vertical,
+                           label:    line.verticalName,
+                           quantity: line.quantity,
+                           totalATI: line.totalPrice,
+                           totalET:  line.totalPriceWithoutVat,
+                           url:      line.url,
+                           imageUrl: line.imageUrl,
+                           universe: line.topCategory,
+                           category: line.category
+                        });
+                    });
+                    return payload;
+                },
+                'product': function (vertical, cartsGuruId) {
+                    var payload = {};
+                    if (!cartsGuruId || vertical === 'null') {
+                        return payload;
+                    }
+                    payload = {
+                        product: {
+                            id: vertical.id
+                        }
+                    };
+                    return payload;
+                },
+                'order': function (order, address, cartsGuruId, cart) {
+                    var payload = {};
+                    if (!address || !cartsGuruId || cart) {
+                        return payload;
+                    }
+
+                    payload = {
+                        siteId: cartsGuruId,
+                        id: order.id,
+                        cartId: order.orderNumber,
+                        totalATI: order.totalArticleLinesMarketingDiscounted,
+                        totalET: order.totalArticleLinesMarketingDiscountedWithoutTax,
+                        currency: "CHF",
+                        creationDate: order.creationDate,
+                        paymentMethod: order.paymentMethod,
+                        state: "",
+                        ip: order.userIp,
+                        custom: {},
+                        buyerAcceptsMarketing: true,
+                        items: gtmMappers.cartsGuru.orderLines(order)
+                    };
+                    return {
+                        order: $.extend(payload, gtmMappers.cartsGuru.address(address))
+                    }
+                },
+                'orderLines': function (order) {
+                    var payload = [];
+                    var lines = order.lines;
+                    $.each(lines, function (index, line) {
+                        payload.push({
+                            id:       line.vertical,
+                            label:    line.name,
+                            quantity: line.quantity,
+                            totalATI: line.totalPrice,
+                            totalET:  line.totalPriceWithoutVat,
+                            url:      line.url,
+                            imageUrl: line.imageUrl,
+                            universe: line.topCategory,
+                            category: line.category
+                        });
+                    });
+                    return payload;
+                }
+            }
+        };
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                "https://gtm.geschenkparadies.ch/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5MGHQM');
+    </script>
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-5MGHQM':true});
+    </script>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        const e = ("abbr,article,aside,audio,canvas,datalist,details," +
+        "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+        "progress,section,time,video").split(',');
+        for (let i = 0; i < e.length; i++) {
+            document.createElement(e[i]);
+        }
+    </script>
+    <![endif]-->
+<!--[if IE]>
+    <link rel="stylesheet" href="/css/ie-minified.css"><![endif]-->
+<script type="text/javascript">
+        window.__gp__ = {
+            language: {}, lang: function (n) {
+                return window.__gp__.language[n] || '[' + n + ']';
+            }
+        };
+    </script>
+<meta name="description" content="Originelle Geschenke und Geschenkideen für jeden Empfänger und Anlass ?. Heute bestellt - morgen geliefert ✅ Über 350'000 zufriedene Kunden ✅">
+<meta name="author" content="Opari AG, Wengistrasse 7, CH-8004 Zürich">
+<meta name="google-site-verification" content="6sAQwMpDgVndBXDqWZ2nhA0XW2lostoJlHdeYBZ7Uk8">
+<meta name="keywords" content="Geschenke">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicons/GPTemplate/ms-icon-144x144.png">
+<meta name="msapplication-config" content="/images/favicons/GPTemplate/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index, follow">
+<title>Geschenke und Geschenkideen: Finde das perfekte Geschenk! </title>
+<link rel="stylesheet" type="text/css" href="/cache/assets/9daa9af8eaecae4cbb3d3aeaf35aed01.minified.css">
+<link rel="apple-touch-icon" href="/images/favicons/GPTemplate/apple-touch-icon.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-57x57.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-60x60.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-72x72.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-76x76.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-114x114.png">
+<link rel="apple-icon" type="image/ico" href="/images/favicons/GPTemplate/apple-icon-120x120.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-144x144.png">
+<link rel="apple-icon" href="/images/favicons/GPTemplate/apple-icon-152x152.png">
+<link rel="apple-icon" type="image/ico" href="/images/favicons/GPTemplate/apple-icon-180x180.png">
+<link rel="apple-icon" type="image/png" href="/images/favicons/GPTemplate/favicon-32x32.png">
+<link rel="icon" type="image/png" href="/images/favicons/GPTemplate/favicon-96x96.png">
+<link rel="icon" type="image/png" href="/images/favicons/GPTemplate/android-icon-192x192.png">
+<link rel="icon" type="image/png" href="/images/favicons/GPTemplate/favicon-16x16.png">
+<link rel="icon" type="image/png" href="/images/favicons/GPTemplate/favicon-32x32.png">
+<link rel="manifest" href="/images/favicons/GPTemplate/manifest.json">
+<link rel="mask-icon" href="/images/favicons/GPTemplate/safari-pinned-tab.svg">
+<link rel="shortcut icon" href="/images/favicons/GPTemplate/favicon.ico">
+<link rel="alternate" hreflang="de-CH" href="https://www.geschenkparadies.ch/">
+<link rel="alternate" hreflang="fr-CH" href="https://www.cadeaux24.ch/">
+<link rel="alternate" hreflang="it-CH" href="https://www.mondoregali.ch/">
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body class="role-page-landingpage role-page-home" data-gtm-list-name="GP-Homepage" data-gtm-page-type="home" data-gtm-webextend-category-type="">
+<div class="background-image" data-path="">
+</div>
+<div class="js-infobar-stage"></div><div class="js-sitebar-wrapper">
+</div>
+<span></span>
+<div class="info_top_nav">
+<div class="container">
+<ul class="info-list">
+<li>
+<a href="//www.geschenkparadies.ch/trustedshops/lp" title="Trusted Shops Garantie" target="_self" class="a_strip">
+<span class="icon-trusted "></span>
+</a>
+<span class="texts">Über 350'000 zufriedene Kunden</span>
+</li>
+<li>
+<span class="icon-delivery"></span>
+<span class="texts">Bis 17 Uhr bestellt, morgen geliefert</span>
+</li>
+<li>
+<span class="icon-rechnung"></span>
+<span class="texts">Kauf auf Rechnung</span>
+</li>
+<li>
+<span class="icon-mail"></span>
+<span class="texts">
+<a href="mailto:info@geschenkparadies.ch">
+info@geschenkparadies.ch </a>
+</span>
+</li>
+</ul>
+<div id="lang_nav_wrap">
+<ul>
+<li>
+<a href="#"> de <span class="icon-triangle-down"></span>
+</a>
+<ul>
+<li>
+<a href="https://www.cadeaux24.ch/">fr</a>
+</li>
+<li>
+<a href="https://www.mondoregali.ch/">it</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<header id="top-header">
+<div class="container row" id="header">
+<div class="col-5">
+<a href="https://www.geschenkparadies.ch" title="geschenkparadies.ch">
+<!--[if lt IE 9]>
+
+        <img class="js-sticky-header-fixed header-logo" src="/images/logos/desktop/geschenkparadies.ch.png" alt="geschenkparadies.ch">
+        <![endif]-->
+<!--[if gte  IE 9]>
+        <img class="js-sticky-header-fixed header-logo" src="/images/logos/svg/geschenkparadies.ch.svg" alt="geschenkparadies.ch">
+        <![endif]-->
+<!--[if !IE]><!-->
+<img class="js-sticky-header-fixed header-logo" src="/images/logos/svg/geschenkparadies.ch.svg" alt="geschenkparadies.ch">
+<!--<![endif]-->
+</a>
+</div>
+<div class="col-6 header-search js-header-search">
+<form action="/s" class="search-form js-search-form">
+<input name="query" id="sel-search-form-input" class="form-control search-form-input light-border js-search-form-input" maxlength="30" autocomplete="off" placeholder="Geschenke suchen...">
+<button class="btn btn-red search-button">
+<div class="icon-search"></div>
+</button>
+<div id="search-panel"></div>
+</form>
+</div> <div id="header-cart-link">
+<div id="header-cart-icon">
+<a href="//www.geschenkparadies.ch/cart/show">
+<div class="icon-cart" rel="Warenkorb">
+<span class="header-cart-num cart-num-loading-bgr no-background-image">0</span>
+</div>
+</a>
+</div>
+<div id="header-cart-box" class="col-5 cart-box" style="display: none;">
+<div class="col-12 mini-loading js-loading" style="display: none;"><div class="col-12 loading-animation"><img src="/images/gp/loading_dark.gif"></div><div class="col-12 loading-text">Bitte warten ...</div></div>
+<a id="link-from-mini-to-cart" href="//www.geschenkparadies.ch/cart/show" style="visibility: visible;">
+<span class="pointer"></span>
+<div class="header-cart-container col-12">
+<div class="header-cart-headline row">
+<span class="col-10">Warenkorb (<span class="header-cart-num no-background-image">0</span>)
+</span>
+</div>
+<div id="header-cart-lines"></div>
+<span class="col-12 border-line"></span>
+<p class="total">
+Total: <span id="header-cart-total"><span class="total-price"> CHF 0.00</span></span>
+</p>
+<div class="header-cart-btn col-12">zur Kasse</div>
+</div>
+</a>
+</div>
+</div> </div>
+</header>
+<div class="container content">
+<div class="row">
+</div>
+</div>
+<div class="main-nav-bg">
+<div class="container main-nav">
+<div class="row main-element">
+<div class="top-menu hactive">
+<div class="menu-link dropdown">
+<a href="/c/erlebnisgeschenke">Erlebnisgeschenke <span class="icon-angle-down"></span>
+</a>
+</div>
+<div class="row menu-content dropdown">
+<p class="border "></p>
+<ul class="col-4">
+<li>
+<a href="/c/erlebnisgeschenke/uebernachtungen">
+<p class="menu-link-container">Übernachtungen</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/erlebnisse-fuer-2">
+<p class="menu-link-container">Erlebnisse für 2</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/wellness">
+<p class="menu-link-container">Wellness &amp; Spa</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/gourmetkulinarisches">
+<p class="menu-link-container">Gourmet &amp; Kulinarisches</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/bier-weinschnaps">
+<p class="menu-link-container">Bier, Wein &amp; Schnaps</p>
+</a>
+</li>
+</ul>
+<ul class="col-4">
+<li>
+<a href="/c/erlebnisgeschenke/fliegenfallen">
+<p class="menu-link-container">Rundflüge &amp; Flugerlebnisse</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/actionsport">
+<p class="menu-link-container">Action &amp; Sport</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/fahren">
+<p class="menu-link-container">Fahrerlebnisse</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/erlebnis-geschenkboxen">
+<p class="menu-link-container">Erlebnis-Geschenkboxen</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/familiekinder">
+<p class="menu-link-container">Familie &amp; Kinder</p>
+</a>
+</li>
+</ul>
+<ul class="col-4">
+<li>
+<a href="/c/erlebnisgeschenke/lifestyle">
+<p class="menu-link-container">Kultur &amp; Lifestyle</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/abonnements">
+<p class="menu-link-container">Abonnements</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/gruppenerlebnisse">
+<p class="menu-link-container">Gruppenerlebnisse</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/wertgutscheine">
+<p class="menu-link-container">Wertgutscheine</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/gutscheine-einloesen">
+<p class="menu-link-container">Gutscheine einlösen</p>
+</a>
+</li>
+</ul>
+<ul class="col-4">
+<li>
+<a href="/c/erlebnisgeschenke/deals">
+<p class="menu-link-container">Deals %</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/topseller">
+<p class="menu-link-container">Topseller</p>
+</a>
+</li>
+<li>
+<a href="/c/erlebnisgeschenke/neuheiten">
+<p class="menu-link-container">Neuheiten</p>
+</a>
+</li>
+</ul>
+<div class="col-12 menu-more-link menu-more-link-first">
+<a class="js-translate-all" href="/c/erlebnisgeschenke" title="Alle Geschenkartikel">alle anzeigen +</a>
+</div>
+</div>
+</div>
+<div class="top-menu">
+<div class="menu-link dropdown">
+<a href="/c/geschenkartikel">Geschenkartikel <span class="icon-angle-down"></span>
+</a>
+</div>
+<div class="row menu-content dropdown">
+<p class="border "></p>
+<ul class="col-4">
+<li>
+<a href="/c/geschenkartikel/personalisiertegeschenke">
+<p class="menu-link-container">Personalisierte Geschenke</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/beautywellness">
+<p class="menu-link-container">Beauty &amp; Wellness</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/gadgetsfun">
+<p class="menu-link-container">Gadgets &amp; Fun</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/bier-weindrinks">
+<p class="menu-link-container">Bier, Wein &amp; Drinks</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/essen">
+<p class="menu-link-container">Essen &amp; Leckereien</p>
+</a>
+</li>
+</ul>
+<ul class="col-4">
+<li>
+<a href="/c/geschenkartikel/lieberomantik">
+<p class="menu-link-container">Liebe &amp; Romantik</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/homeliving">
+<p class="menu-link-container">Wohnen &amp; Dekoration</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/kueche">
+<p class="menu-link-container">Küche &amp; Haushalt</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/spielzeugkinderzimmer">
+<p class="menu-link-container">Kindergeschenke</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/sportfreizeit">
+<p class="menu-link-container">Sport &amp; Freizeit</p>
+</a>
+</li>
+</ul>
+<ul class="col-4">
+<li>
+<a href="/c/geschenkartikel/heimtextil">
+<p class="menu-link-container">Wärmeartikel</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/soundmedia">
+<p class="menu-link-container">Sound &amp; Media</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/grillbarbecue">
+<p class="menu-link-container">Picknick &amp; Grillieren</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/schmuckaccessoires">
+<p class="menu-link-container">Schmuck &amp; Fashion</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/k-baby">
+<p class="menu-link-container">Babygeschenke</p>
+</a>
+</li>
+</ul>
+<ul class="col-4">
+<li>
+<a href="/c/geschenkartikel/kaffetee">
+<p class="menu-link-container">Kaffee &amp; Tee</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/geschenktipps">
+<p class="menu-link-container">Geschenkideen</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenkartikel/top-100-geschenkartikel">
+<p class="menu-link-container">Top 100</p>
+</a>
+</li>
+</ul>
+<div class="col-12 menu-more-link">
+<a class="js-translate-all" href="/c/geschenkartikel" title="Alle Geschenkartikel">alle anzeigen +</a>
+</div>
+</div>
+</div>
+<div class="top-menu">
+<div class="menu-link dropdown">
+<a href="/c/geschenksets">Geschenksets <span class="icon-angle-down"></span>
+</a>
+</div>
+<div class="row menu-content dropdown">
+<p class="border "></p>
+<ul class="col-4">
+<li>
+<a href="/c/geschenksets/bier-weinco">
+<p class="menu-link-container">Bier, Wein &amp; Co.</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenksets/koestlichkeiten">
+<p class="menu-link-container">Köstlichkeiten</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenksets/wellnessbeauty">
+<p class="menu-link-container">Wellness &amp; Beauty</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenksets/surprise-boxen-sets">
+<p class="menu-link-container">Surprise-Boxen</p>
+</a>
+</li>
+<li>
+<a href="/c/geschenksets/gadget-funfreizeit">
+<p class="menu-link-container">Gadget, Fun &amp; Freizeit</p>
+</a>
+</li>
+</ul>
+<div class="col-12 menu-more-link menu-more-link-second">
+<a class="js-translate-all" href="/c/geschenksets" title="Alle Geschenkartikel">alle anzeigen +</a>
+</div>
+</div>
+</div>
+<div class="sublinks">
+<ul class="item-link-list">
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container content">
+<div class="row"><span class="spacer role-widget role-wt-additional-space-widget" style="height:10px;">&nbsp;</span>
+<div class="colWidget col-12 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/geschenke-fuer-maenner/lp" class="teaser col-6 role-widget role-wt-teaser-widget" title="Geschenke für Ihn">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 52.47311827957%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image remove-background">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-2-FuerIhn-2.png" title="Geschenke für Ihn" alt="Geschenke für Ihn" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-2-FuerIhn-2.png" style="display: block;">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<a href="/geschenke-fuer-frauen/lp" class="teaser col-6 role-widget role-wt-teaser-widget" title="Geschenke für Sie">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 52.47311827957%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image remove-background">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-1-FuerSie.png" title="Geschenke für Sie" alt="Geschenke für Sie" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-1-FuerSie.png" style="display: block;">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<a href="/c/erlebnisgeschenke" class="teaser col-12 role-widget role-wt-teaser-widget" title="Die besten Erlebnisgeschenke">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 20.3125%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image remove-background">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-5-Erlebnisgeschenke.png" title="Erlebnisgeschenke" alt="Erlebnisgeschenke" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-5-Erlebnisgeschenke.png" style="display: block;">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<div class="colWidget col-6 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/a/2-taegiger-ueberraschungs-roadtrip-in-europa-in-3-hotel-oder-hoeher-unter-der-woche-fuer-2-personen-ao-deal" class="teaser col-12 role-widget role-wt-teaser-widget" title="2-tägiger Überraschungs-Roadtrip">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 52.47311827957%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image remove-background">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-28-SuperDeal-Roadtrip-DE2.png" title="2-tägiger Überraschungs-Roadtrip" alt="2-tägiger Überraschungs-Roadtrip" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-28-SuperDeal-Roadtrip-DE2.png" style="display: block;">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/baumhaus-mit-whirlpool" title="Baumhausübernachtung" data-vertical-id="258502" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Baumhausübernachtung, mit ausfahrbarem Whirlpool, Frühstück &amp; 4-Gang Abendessen" title="Baumhausübernachtung, mit ausfahrbarem Whirlpool, Frühstück &amp; 4-Gang Abendessen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/36455/800x800/01.jpg" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/36455/800x800/01.jpg" style="display: block;"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Baumhausübernachtung</span>
+<div class="col-12 item-subtitle">
+mit ausfahrbarem Whirlpool, Frühstück &amp; 4-Gang Abendessen</div> <p class="col-12 item-price sel-item-price">CHF 370.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-BE">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/day-spa-fuer-2-4h-eintritt-panorama-resort-wochentags" title="Day Spa für 2" data-vertical-id="310628" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Day Spa für 2, 4h Eintritt im Panorama Resort &amp; Spa | wochentags" title="Day Spa für 2, 4h Eintritt im Panorama Resort &amp; Spa | wochentags" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49761/800x800/01.jpg" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49761/800x800/01.jpg" style="display: block;"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Day Spa für 2</span>
+<div class="col-12 item-subtitle">
+4h Eintritt im Panorama Resort &amp; Spa | wochentags</div> <p class="col-12 item-price sel-item-price">CHF 320.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-SZ">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/happy-birthday-wishbox" title="Happy Birthday - Wishbox" data-vertical-id="301930" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Happy Birthday - Wishbox, 1 Box - über 25 Erlebnisse" title="Happy Birthday - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47200/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Happy Birthday - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 159.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/baggerplausch" title="Baggerplausch" data-vertical-id="218032" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Baggerplausch, 30min freies Baggern mit 21 Tonnen Bagger" title="Baggerplausch, 30min freies Baggern mit 21 Tonnen Bagger" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/28542/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Baggerplausch</span>
+<div class="col-12 item-subtitle">
+30min freies Baggern mit 21 Tonnen Bagger</div> <p class="col-12 item-price sel-item-price">CHF 249.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">1</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-AG">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li></ul>
+<a href="/a/steuern-eines-formel-4-rennwagen-10-bis-12-runden-am-steuer-eines-einsitzers-1-person-ao-deal" class="teaser col-12 role-widget role-wt-teaser-widget" title="Steuern eines Formel 4-Rennwagen">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 52.47311827957%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-14-SuperDeal-1.png" title="Steuern eines Formel 4-Rennwagen" alt="Steuern eines Formel 4-Rennwagen" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wellness-meets-design-inkl-fruehstueck" title="Wellness-Aufenthalt in Adelboden" data-vertical-id="305192" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Wellness-Aufenthalt in Adelboden, 1 Nacht im The Cambrian inkl. Frühstück &amp; Spa-Rabatt für 2 Personen" title="Wellness-Aufenthalt in Adelboden, 1 Nacht im The Cambrian inkl. Frühstück &amp; Spa-Rabatt für 2 Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47965/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Wellness-Aufenthalt in Adelboden</span>
+<div class="col-12 item-subtitle">
+1 Nacht im The Cambrian inkl. Frühstück &amp; Spa-Rabatt für 2 Personen</div> <p class="col-12 item-price sel-item-price">CHF 399.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-BE">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/privater-rundflug-luzern-2-personen" title="Luzern Rundflug" data-vertical-id="292297" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Luzern Rundflug, 30 Minuten für 2 Personen" title="Luzern Rundflug, 30 Minuten für 2 Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/44348/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Luzern Rundflug</span>
+<div class="col-12 item-subtitle">
+30 Minuten für 2 Personen</div> <p class="col-12 item-price sel-item-price">CHF 189.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-LU">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li></ul>
+</div>
+</div>
+<div class="colWidget col-6 role-widget role-wt-col-widget">
+<div class="row">
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/bubble-suite-mit-weitblick-unter-baum-woche" title="Bubble-Suite Übernachtung" data-vertical-id="307584" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Bubble-Suite Übernachtung, mit Weitblick unter dem Birnenbaum für 2 Personen | wochentags" title="Bubble-Suite Übernachtung, mit Weitblick unter dem Birnenbaum für 2 Personen | wochentags" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/48890/800x800/01.jpg" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/48890/800x800/01.jpg" style="display: block;"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Bubble-Suite Übernachtung</span>
+<div class="col-12 item-subtitle">
+mit Weitblick unter dem Birnenbaum für 2 Personen | wochentags</div> <p class="col-12 item-price sel-item-price">CHF 249.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-GR">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/day-spa-baden-im-thermalbad-fortyseven" title="Day Spa in Baden für 2" data-vertical-id="304913" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Day Spa in Baden für 2, in der Wellness-Therme FORTYSEVEN" title="Day Spa in Baden für 2, in der Wellness-Therme FORTYSEVEN" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47838/800x800/01.jpg" src="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47838/800x800/01.jpg" style="display: block;"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Day Spa in Baden für 2</span>
+<div class="col-12 item-subtitle">
+in der Wellness-Therme FORTYSEVEN</div> <p class="col-12 item-price sel-item-price">CHF 136.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-AG">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li></ul>
+<a href="/a/erholung-in-der-toskana-4-tage-in-der-villa-san-filippo-inkl-fruehstueck" class="teaser col-12 role-widget role-wt-teaser-widget" title="Erholung in der Toskana">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 52.47311827957%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-18-SuperDeal-1.png" title="Erholung in der Toskana" alt="Erholung in der Toskana" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wellness-uebernachtung-am-see-hotel-alexander-gerbi-weggis" title="Wellness Übernachtung am See" data-vertical-id="639" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Wellness Übernachtung am See, im Hotel Alexander &amp; Gerbi, Weggis" title="Wellness Übernachtung am See, im Hotel Alexander &amp; Gerbi, Weggis" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/642/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Wellness Übernachtung am See</span>
+<div class="col-12 item-subtitle">
+im Hotel Alexander &amp; Gerbi, Weggis</div> <p class="col-12 item-price sel-item-price">CHF 339.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-LU">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/kulinarik-wanderung-im-pizol-5-seen-picknick" title="Kulinarik-Wanderung im Pizol" data-vertical-id="300934" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Kulinarik-Wanderung im Pizol, 5 Seen-Picknick für zwei Personen" title="Kulinarik-Wanderung im Pizol, 5 Seen-Picknick für zwei Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/46822/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Kulinarik-Wanderung im Pizol</span>
+<div class="col-12 item-subtitle">
+5 Seen-Picknick für zwei Personen</div> <p class="col-12 item-price sel-item-price">CHF 185.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-SG">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/schwebendes-restaurant-2-personen" title="Schwebendes Restaurant" data-vertical-id="305906" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Schwebendes Restaurant, Atemberaubendes Dinner auf der Rigi | 2 Personen" title="Schwebendes Restaurant, Atemberaubendes Dinner auf der Rigi | 2 Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/48274/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Schwebendes Restaurant</span>
+<div class="col-12 item-subtitle">
+Atemberaubendes Dinner auf der Rigi | 2 Personen</div> <p class="col-12 item-price sel-item-price">CHF 298.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-LU">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-6 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/indoor-skydiving-4-fluege-fuer-1-person" title="Winterthur Bodyflying" data-vertical-id="215952" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Winterthur Bodyflying, inkl. Video- und Fotoaufnahme | 4 Flüge " title="Winterthur Bodyflying, inkl. Video- und Fotoaufnahme | 4 Flüge " data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/27928/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Winterthur Bodyflying</span>
+<div class="col-12 item-subtitle">
+inkl. Video- und Fotoaufnahme | 4 Flüge </div> <p class="col-12 item-price sel-item-price">CHF 188.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">1</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-ZH">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li></ul>
+<a href="/a/3-tage-wellnessferien-fuer-2-im-schwarzwald-inkl-5-gang-gourmetdinner-ao-deal" class="teaser col-12 role-widget role-wt-teaser-widget" title="3 Tage Wellnessferien für 2">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 52.47311827957%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-20-SuperDeal.png" title="3 Tage Wellnessferien für 2" alt="3 Tage Wellnessferien für 2" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<a href="/c/erlebnisgeschenke" class="teaser col-12 role-widget role-wt-teaser-widget" title="Weitere Erlebnisgeschenke entdecken">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 7.2916666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-9-Geschenkideen.png" title="Weitere Erlebnisgeschenke entdecken" alt="Weitere Erlebnisgeschenke entdecken" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<a href="/c/erlebnisgeschenke/deals" class="teaser col-12 role-widget role-wt-teaser-widget" title="Weitere Deals entdecken">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 7.2916666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-34-Geschenkideen.png" title="Weitere Deals entdecken" alt="Weitere Deals entdecken" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<a href="/c/geschenkartikel" class="teaser col-12 role-widget role-wt-teaser-widget" title="Die besten Geschenkideen">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 20.3125%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-8-Geschenkideen.png" title="Die besten Geschenkideen" alt="Die besten Geschenkideen" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<div class="colWidget col-12 role-widget role-wt-col-widget">
+<div class="row">
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/mini-projektor-home-cinema" title="Mini Projektor" data-vertical-id="302314" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 40%</span></div> <img class="item-img lazy" alt="Mini Projektor, Home Cinema" title="Mini Projektor, Home Cinema" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47329/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Mini Projektor</span>
+<div class="col-12 item-subtitle">
+Home Cinema</div> <div class="row special-price-row">
+<p class="old-price">CHF99.95</p>
+<p class="special-price sel-item-price">CHF 59.95</p>
+</div>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/xl-led-schminkspiegel-inkl-15-leds" title="XL LED Schminkspiegel" data-vertical-id="301425" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="XL LED Schminkspiegel, inkl. 15 LEDs" title="XL LED Schminkspiegel, inkl. 15 LEDs" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/46997/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+XL LED Schminkspiegel</span>
+<div class="col-12 item-subtitle">
+inkl. 15 LEDs</div> <p class="col-12 item-price sel-item-price">CHF 139.00</p>
+<div class="col-7 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/sturmglas-mystische-wettervorhersage" title="Sturmglas" data-vertical-id="103447" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 33%</span></div> <img class="item-img lazy" alt="Sturmglas, mystische Wettervorhersage" title="Sturmglas, mystische Wettervorhersage" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/27548/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Sturmglas</span>
+<div class="col-12 item-subtitle">
+mystische Wettervorhersage</div> <div class="row special-price-row">
+<p class="old-price">CHF44.95</p>
+<p class="special-price sel-item-price">CHF 29.95</p>
+</div>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/badewannenbutleraus-bambus" title="Badewannenbutler" data-vertical-id="78109" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 42%</span></div> <img class="item-img lazy" alt="Badewannenbutler, aus Bambus" title="Badewannenbutler, aus Bambus" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/23021/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Badewannenbutler</span>
+<div class="col-12 item-subtitle">
+aus Bambus</div> <div class="row special-price-row">
+<p class="old-price">CHF69.95</p>
+<p class="special-price sel-item-price">CHF 39.95</p>
+</div>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/herz-bilderrahmen-fuer-13-fotos-2" title="Herz Bilderrahmen" data-vertical-id="2051" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Herz Bilderrahmen, für 13 Fotos" title="Herz Bilderrahmen, für 13 Fotos" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/2666/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Herz Bilderrahmen</span>
+<div class="col-12 item-subtitle">
+für 13 Fotos</div> <p class="col-12 item-price sel-item-price">CHF 29.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/matte-oil-and-vinegar-bottles" title="Oil and Vinegar" data-vertical-id="310845" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Oil and Vinegar, Flaschen-Set" title="Oil and Vinegar, Flaschen-Set" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49854/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Oil and Vinegar</span>
+<div class="col-12 item-subtitle">
+Flaschen-Set</div> <p class="col-12 item-price sel-item-price">CHF 44.95</p>
+<div class="col-12 prd-stock">
+4 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/rituals-jing-set-4-teilig" title="Rituals Jing Set" data-vertical-id="310864" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Rituals Jing Set, 4-teilig" title="Rituals Jing Set, 4-teilig" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49865/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Rituals Jing Set</span>
+<div class="col-12 item-subtitle">
+4-teilig</div> <p class="col-12 item-price sel-item-price">CHF 59.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/pizza-set" title="Pizza Set" data-vertical-id="293482" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Pizza Set, Mit edlem Pizzaschneider" title="Pizza Set, Mit edlem Pizzaschneider" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/44681/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Pizza Set</span>
+<div class="col-12 item-subtitle">
+Mit edlem Pizzaschneider</div> <p class="col-12 item-price sel-item-price">CHF 24.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/massage-pistole-mit-4-aufsaetzen" title="Massage Pistole" data-vertical-id="309084" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 17%</span></div> <img class="item-img lazy" alt="Massage Pistole, mit 4 Aufsätzen" title="Massage Pistole, mit 4 Aufsätzen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49452/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Massage Pistole</span>
+<div class="col-12 item-subtitle">
+mit 4 Aufsätzen</div> <div class="row special-price-row">
+<p class="old-price">CHF39.95</p>
+<p class="special-price sel-item-price">CHF 32.95</p>
+</div>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/hotcold-becher-fuers-auto" title="Getränkekühler" data-vertical-id="311456" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Getränkekühler, fürs Auto" title="Getränkekühler, fürs Auto" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/50055/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Getränkekühler</span>
+<div class="col-12 item-subtitle">
+fürs Auto</div> <p class="col-12 item-price sel-item-price">CHF 39.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/olive-and-pits-bowl-book-box" title="Olive and Pits Schalen" data-vertical-id="310848" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Olive and Pits Schalen, 2er Set" title="Olive and Pits Schalen, 2er Set" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49857/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Olive and Pits Schalen</span>
+<div class="col-12 item-subtitle">
+2er Set</div> <p class="col-12 item-price sel-item-price">CHF 39.95</p>
+<div class="col-12 prd-stock">
+4 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/9-teiliges-cocktail-set-mit-staender" title="Cocktail Set" data-vertical-id="310516" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Cocktail Set, 9-teilig" title="Cocktail Set, 9-teilig" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49727/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Cocktail Set</span>
+<div class="col-12 item-subtitle">
+9-teilig</div> <p class="col-12 item-price sel-item-price">CHF 49.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li></ul>
+</div>
+</div>
+<a href="/c/geschenkartikel" class="teaser col-12 role-widget role-wt-teaser-widget" title="Weitere Geschenkideen entdecken">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 7.2916666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-18-Geschenkideen.png" title="Weitere Geschenkideen entdecken" alt="Weitere Geschenkideen entdecken" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/wellness-weekend/lp" class="teaser col-12 role-widget role-wt-teaser-widget" title="Wellnessgeschenke">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-24-FuerSie1.png" title="Wellnessgeschenke" alt="Wellnessgeschenke" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/spezielle-uebernachtung/lp" class="teaser col-12 role-widget role-wt-teaser-widget" title="Einzigartige Übernachtungen">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-11-FuerSie.png" title="Einzigartige Übernachtungen" alt="Einzigartige Übernachtungen" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/romantische-wochenende/lp" class="teaser col-12 role-widget role-wt-teaser-widget" title="Romantische Erlebnisse für zwei">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-12-FuerSie.png" title="Romantische Erlebnisse für zwei" alt="Romantische Erlebnisse für zwei" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<a href="/c/geschenkartikel/personalisiertegeschenke" class="teaser col-12 role-widget role-wt-teaser-widget" title="Personalisierte Geschenke und Geschenkideen">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 20.3125%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-19-Geschenkideen.png" title="Personalisierte Geschenke" alt="Personalisierte Geschenke und Geschenkideen" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/goldrose-17cm-24k-etui-personalisiert" title="Goldrose - 28cm" data-vertical-id="6647" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 20%</span></div> <img class="item-img lazy" alt="Goldrose - 28cm, mit Gravur - in edler Lederbox" title="Goldrose - 28cm, mit Gravur - in edler Lederbox" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/6794/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Goldrose - 28cm</span>
+<div class="col-12 item-subtitle">
+mit Gravur - in edler Lederbox</div> <div class="row special-price-row">
+<p class="old-price">CHF149.95</p>
+<p class="special-price sel-item-price">CHF 119.00</p>
+</div>
+<div class="col-7 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/personalisierbare-flasche-zuerich" title="Personalisierbare Flasche" data-vertical-id="311355" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Personalisierbare Flasche, Zürich" title="Personalisierbare Flasche, Zürich" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/50011/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Personalisierbare Flasche</span>
+<div class="col-12 item-subtitle">
+Zürich</div> <p class="col-12 item-price sel-item-price">CHF 49.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/teelichter-2-er-herz-mit-gravur" title="Teelichter Herz" data-vertical-id="296272" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Teelichter Herz, mit Gravur" title="Teelichter Herz, mit Gravur" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/45495/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Teelichter Herz</span>
+<div class="col-12 item-subtitle">
+mit Gravur</div> <p class="col-12 item-price sel-item-price">CHF 59.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/caran-dache-kugelschreiber-849-black" title="Caran d'Ache Kugelschreiber 849Black" data-vertical-id="298281" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Caran d'Ache Kugelschreiber 849Black, mit Gravur und Etui" title="Caran d'Ache Kugelschreiber 849Black, mit Gravur und Etui" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/46175/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Caran d'Ache Kugelschreiber 849Black</span>
+<div class="col-12 item-subtitle">
+mit Gravur und Etui</div> <p class="col-12 item-price sel-item-price">CHF 47.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/glaskaraffe-globus-mit-4-glaeser-mit-gravur" title="Glaskaraffe Globus mit 4 Gläser" data-vertical-id="309065" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Glaskaraffe Globus mit 4 Gläser, mit Gravur" title="Glaskaraffe Globus mit 4 Gläser, mit Gravur" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49445/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Glaskaraffe Globus mit 4 Gläser</span>
+<div class="col-12 item-subtitle">
+mit Gravur</div> <p class="col-12 item-price sel-item-price">CHF 149.95</p>
+<div class="col-7 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/baumrinde-personalisierbar" title="Baumscheibe Herzen" data-vertical-id="311045" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Baumscheibe Herzen, Personalisierbar" title="Baumscheibe Herzen, Personalisierbar" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49921/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Baumscheibe Herzen</span>
+<div class="col-12 item-subtitle">
+Personalisierbar</div> <p class="col-12 item-price sel-item-price">CHF 34.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/master-grillkoffer-18-teilig-mit-gravur" title="Grillkoffer 18-teilig" data-vertical-id="292362" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 30%</span></div> <img class="item-img lazy" alt="Grillkoffer 18-teilig, mit Gravur" title="Grillkoffer 18-teilig, mit Gravur" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/44374/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Grillkoffer 18-teilig</span>
+<div class="col-12 item-subtitle">
+mit Gravur</div> <div class="row special-price-row">
+<p class="old-price">CHF99.95</p>
+<p class="special-price sel-item-price">CHF 69.95</p>
+</div>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/eskimo-hoodie-dunkelgrau-personalisierbar" title="XXL Kuschelpullover Slate grey" data-vertical-id="300056" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="XXL Kuschelpullover Slate grey, personalisierbar" title="XXL Kuschelpullover Slate grey, personalisierbar" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/46479/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+XXL Kuschelpullover Slate grey</span>
+<div class="col-12 item-subtitle">
+personalisierbar</div> <p class="col-12 item-price sel-item-price">CHF 79.95</p>
+<div class="col-12 prd-stock">
+10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/personalisierbare-weinkiste-mit-amarone" title="Weinkiste mit Amarone della Valpolicella" data-vertical-id="309050" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Weinkiste mit Amarone della Valpolicella, mit Gravur" title="Weinkiste mit Amarone della Valpolicella, mit Gravur" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/49428/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Weinkiste mit Amarone della Valpolicella</span>
+<div class="col-12 item-subtitle">
+mit Gravur</div> <p class="col-12 item-price sel-item-price">CHF 59.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/leder-portemonnaie-mit-praegung" title="Leder Portemonnaie" data-vertical-id="6506" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<div class="deals-bar" style="position:absolute; width: 100%; right: 0; left: 0; padding: 4px; border-radius: 10px 10px 0 0; display: flex;"><div style="color: #ed4938; font-weight: 700; padding-left:30px; font-size: 13.5px;">&nbsp;</div><span class="percent-discount-value-box" style="border-radius: 0 10px 0 10px; color:white!important; background-color: #ed4938 !important;">- 30%</span></div> <img class="item-img lazy" alt="Leder Portemonnaie, mit Lasergravur" title="Leder Portemonnaie, mit Lasergravur" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/6640/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Leder Portemonnaie</span>
+<div class="col-12 item-subtitle">
+mit Lasergravur</div> <div class="row special-price-row">
+<p class="old-price">CHF99.95</p>
+<p class="special-price sel-item-price">CHF 69.95</p>
+</div>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/925er-silberhalskette-herz-personalisiert" title="925er Silberhalskette Herz" data-vertical-id="238104" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="925er Silberhalskette Herz, personalisiert" title="925er Silberhalskette Herz, personalisiert" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/32598/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+925er Silberhalskette Herz</span>
+<div class="col-12 item-subtitle">
+personalisiert</div> <p class="col-12 item-price sel-item-price">CHF 49.90</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/herz-lampe-mit-gravur-leuchtet-in-7-farben" title="Herz-Lampe mit Gravur" data-vertical-id="304426" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Herz-Lampe mit Gravur, leuchtet in 7 Farben" title="Herz-Lampe mit Gravur, leuchtet in 7 Farben" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47732/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Herz-Lampe mit Gravur</span>
+<div class="col-12 item-subtitle">
+leuchtet in 7 Farben</div> <p class="col-12 item-price sel-item-price">CHF 34.95</p>
+<div class="col-12 prd-stock">
+&gt; 10 Stück an Lager </div>
+</div>
+</div>
+</a></li></ul>
+<div class="col-12 title-line role-widget role-wt-title-widget">
+<a name=""></a>
+<span class="col-12 link">
+<a href="/c/geschenkartikel/personalisiertegeschenke" title="weitere Personalisierte Geschenke">
+weitere Personalisierte Geschenke </a> +
+</span>
+<span class="col-12 title-line-border"></span>
+</div>
+<a href="/ausverkauf/lp" class="teaser col-12 role-widget role-wt-teaser-widget" title="SALE %">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 20.3125%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-7-Kampagnenteaser.png" title="SALE %" alt="SALE %" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/c/geschenkartikel/gadgetsfun" class="teaser col-12 role-widget role-wt-teaser-widget" title="Gadgets &amp; Fun">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-24-FuerSie.png" title="Gadgets &amp; Fun" alt="Gadgets &amp; Fun" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/c/geschenkartikel/schmuckaccessoires" class="teaser col-12 role-widget role-wt-teaser-widget" title="Schmuck &amp; Fashion">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-23-FuerSie.png" title="Schmuck &amp; Fashion" alt="Schmuck &amp; Fashion" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/c/geschenkartikel/homeliving" class="teaser col-12 role-widget role-wt-teaser-widget" title="Wohnen &amp; Dekoration">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-25-FuerSie.png" title="Wohnen &amp; Dekoration" alt="Wohnen &amp; Dekoration" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<span class="spacer role-widget role-wt-additional-space-widget" style="height:20px;">&nbsp;</span>
+<a href="/c/erlebnisgeschenke/erlebnis-geschenkboxen" class="teaser col-12 role-widget role-wt-teaser-widget" title="Wishbox">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 20.3125%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-18-Geschenkideen1.png" title="Wishbox" alt="Wishbox" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<div class="col-12 title-line role-widget role-wt-title-widget">
+<a name=""></a>
+<span class="col-12 title">Wishbox: Schenken Sie Erlebnisse</span>
+<span class="col-12 title-line-border"></span>
+</div>
+<div class="colWidget col-12 role-widget role-wt-col-widget">
+<div class="row">
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-romantische-auszeit" title="Romantische Auszeit - Wishbox" data-vertical-id="70105" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Romantische Auszeit - Wishbox, 1 Box - über 25 Erlebnisse" title="Romantische Auszeit - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/19148/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Romantische Auszeit - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 209.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-wellnessbeauty1" title="Wellness &amp; Beauty - Wishbox" data-vertical-id="57693" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Wellness &amp; Beauty - Wishbox, 1 Box - über 25 Erlebnisse" title="Wellness &amp; Beauty - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/18992/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Wellness &amp; Beauty - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 99.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-ladies-world" title="Ladies World - Wishbox" data-vertical-id="57690" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Ladies World - Wishbox, 1 Box - über 25 Erlebnisse" title="Ladies World - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/18989/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Ladies World - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 149.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-mens-world" title="Men's World - Wishbox" data-vertical-id="57688" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Men's World - Wishbox, 1 Box - über 25 Erlebnisse" title="Men's World - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/18987/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Men's World - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 149.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-kurzurlaub" title="Kurzurlaub - Wishbox" data-vertical-id="57683" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Kurzurlaub - Wishbox, 1 Box - über 25 Erlebnisse" title="Kurzurlaub - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/18982/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Kurzurlaub - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 299.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-schweizerreise" title="Schweizerreise - Wishbox" data-vertical-id="292833" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Schweizerreise - Wishbox, 1 Box - über 25 Erlebnisse" title="Schweizerreise - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/44507/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Schweizerreise - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 169.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-tagesausfluege" title="Tagesausflüge - Wishbox" data-vertical-id="57694" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Tagesausflüge - Wishbox, 1 Box - über 25 Erlebnisse" title="Tagesausflüge - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/18993/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Tagesausflüge - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 59.00</p>
+</div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/wishbox-deluxe-mix1" title="Deluxe Mix - Wishbox" data-vertical-id="57686" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Deluxe Mix - Wishbox, 1 Box - über 25 Erlebnisse" title="Deluxe Mix - Wishbox, 1 Box - über 25 Erlebnisse" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/18985/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Deluxe Mix - Wishbox</span>
+<div class="col-12 item-subtitle">
+1 Box - über 25 Erlebnisse</div> <p class="col-12 item-price sel-item-price">CHF 229.00</p>
+</div>
+</div>
+</a></li></ul>
+<div class="col-12 title-line role-widget role-wt-title-widget">
+<a name=""></a>
+<span class="col-12 link">
+<a href="/c/erlebnisgeschenke/erlebnis-geschenkboxen" title="alle Geschenkboxen entdecken">
+alle Geschenkboxen entdecken </a> +
+</span>
+<span class="col-12 title-line-border"></span>
+</div>
+</div>
+</div>
+<span class="spacer role-widget role-wt-additional-space-widget" style="height:10px;">&nbsp;</span>
+<div class="colWidget col-12 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/c/erlebnisgeschenke/uebernachtungen/spezielle-unterkuenfte" class="teaser col-12 role-widget role-wt-teaser-widget" title="Spezielle Unterkünfte">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 20.3125%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-14-Erlebnisgeschenke.png" title="Spezielle Unterkünfte" alt="Spezielle Unterkünfte" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+<ul class="row col-12 listing-container role-widget role-wt-article-list-widget">
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/weintourismus-im-schloss-1-nacht-sommer" title="Übernachtung im Schloss" data-vertical-id="295984" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Übernachtung im Schloss, 1 Nacht mit Weinverkostung und Walliser Teller | im Sommer" title="Übernachtung im Schloss, 1 Nacht mit Weinverkostung und Walliser Teller | im Sommer" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/45229/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Übernachtung im Schloss</span>
+<div class="col-12 item-subtitle">
+1 Nacht mit Weinverkostung und Walliser Teller | im Sommer</div> <p class="col-12 item-price sel-item-price">CHF 299.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-VS">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/baumhaus-mit-whirlpool" title="Baumhausübernachtung" data-vertical-id="258502" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Baumhausübernachtung, mit ausfahrbarem Whirlpool, Frühstück &amp; 4-Gang Abendessen" title="Baumhausübernachtung, mit ausfahrbarem Whirlpool, Frühstück &amp; 4-Gang Abendessen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/36455/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Baumhausübernachtung</span>
+<div class="col-12 item-subtitle">
+mit ausfahrbarem Whirlpool, Frühstück &amp; 4-Gang Abendessen</div> <p class="col-12 item-price sel-item-price">CHF 370.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-BE">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/baumhaus-uebernachtung-inklusiv-abendessen" title="Baumhaus Übernachtung" data-vertical-id="299568" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Baumhaus Übernachtung, inklusiv 4 Gang Abendessen und Frühstück, für zwei Personen" title="Baumhaus Übernachtung, inklusiv 4 Gang Abendessen und Frühstück, für zwei Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/46379/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Baumhaus Übernachtung</span>
+<div class="col-12 item-subtitle">
+inklusiv 4 Gang Abendessen und Frühstück, für zwei Personen</div> <p class="col-12 item-price sel-item-price">CHF 290.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-BE">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/bubble-suite-auf-dem-lebenshof-wochentags" title="Bubble-Suite Übernachtung " data-vertical-id="307596" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Bubble-Suite Übernachtung , auf dem Lebenshof im Emmental für 2 Personen | wochentags" title="Bubble-Suite Übernachtung , auf dem Lebenshof im Emmental für 2 Personen | wochentags" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/48897/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Bubble-Suite Übernachtung </span>
+<div class="col-12 item-subtitle">
+auf dem Lebenshof im Emmental für 2 Personen | wochentags</div> <p class="col-12 item-price sel-item-price">CHF 199.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-BE">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/uebernachtung-fondue-im-tipi-fuer-2-personen" title="Übernachtung &amp; Fondue im Tipi " data-vertical-id="306469" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Übernachtung &amp; Fondue im Tipi , inkl. Frühstück für 2 Personen" title="Übernachtung &amp; Fondue im Tipi , inkl. Frühstück für 2 Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/48076/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Übernachtung &amp; Fondue im Tipi </span>
+<div class="col-12 item-subtitle">
+inkl. Frühstück für 2 Personen</div> <p class="col-12 item-price sel-item-price">CHF 159.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-VD">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/baumhaus-uebernachtung-1-nacht-2p" title="Baumhaus-Übernachtung " data-vertical-id="301724" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Baumhaus-Übernachtung , 1 Nacht für 2 Personen inkl. Frühstück" title="Baumhaus-Übernachtung , 1 Nacht für 2 Personen inkl. Frühstück" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/47159/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Baumhaus-Übernachtung </span>
+<div class="col-12 item-subtitle">
+1 Nacht für 2 Personen inkl. Frühstück</div> <p class="col-12 item-price sel-item-price">CHF 259.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-FRA">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/uebernachtung-in-den-baeumen" title="Schlafen im schwebenden Zelt" data-vertical-id="103776" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Schlafen im schwebenden Zelt, für zwei Personen" title="Schlafen im schwebenden Zelt, für zwei Personen" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/27532/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Schlafen im schwebenden Zelt</span>
+<div class="col-12 item-subtitle">
+für zwei Personen</div> <p class="col-12 item-price sel-item-price">CHF 150.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-VS">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li>
+<li class="col-3 listing-item-box role-widget role-wt-article-widget">
+<a class="col-12 js-list-item-gtm js-list-item-link" href="//www.geschenkparadies.ch/a/bubble-suite-inkl-fruehstueckskorb-woche" title="Bubble-Suite Übernachtung" data-vertical-id="307586" data-tracking-code="">
+<div class="row">
+<div class="col-12 listing-item-border">
+<img class="item-img lazy" alt="Bubble-Suite Übernachtung, inkl. Frühstückskorb im Naturpark Gantrisch | wochentags" title="Bubble-Suite Übernachtung, inkl. Frühstückskorb im Naturpark Gantrisch | wochentags" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=250/https://www.hsgimg.ch/articles/48892/800x800/01.jpg" src="/images/listing-alt.jpg"> </div>
+<div class="item-info col-12">
+<span class="col-12 item-title item-title-hover-show">
+Bubble-Suite Übernachtung</span>
+<div class="col-12 item-subtitle">
+inkl. Frühstückskorb im Naturpark Gantrisch | wochentags</div> <p class="col-12 item-price sel-item-price">CHF 249.00</p>
+<div class="item-exp-info">
+<span class="item-exp-info-icon people-icon">
+<span class="people-count">2</span>
+<i class="far fa-user"></i>
+</span>
+<span class="item-exp-info-icon flag-icon">
+<span class="item-flag flag-BE">&nbsp;</span>
+</span>
+</div> </div>
+</div>
+</a></li></ul>
+<div class="col-12 title-line role-widget role-wt-title-widget">
+<a name=""></a>
+<span class="col-12 link">
+<a href="/c/erlebnisgeschenke/uebernachtungen/spezielle-unterkuenfte" title="weitere Erlebnisse">
+weitere Erlebnisse </a> +
+</span>
+<span class="col-12 title-line-border"></span>
+</div>
+</div>
+</div>
+<span class="spacer role-widget role-wt-additional-space-widget" style="height:10px;">&nbsp;</span>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/geburtstagsgeschenke/lp" class="teaser col-12 role-widget role-wt-teaser-widget" title="Geburtstagsgeschenke ">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-29-FuerSie.png" title="Geburtstagsgeschenke " alt="Geburtstagsgeschenke " src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/c/erlebnisgeschenke/gourmetkulinarisches" class="teaser col-12 role-widget role-wt-teaser-widget" title="Gourmet &amp; Kulinarisches">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-30-FuerSie.png" title="Gourmet &amp; Kulinarisches" alt="Geschenkideen für romantische Dinners, Kochkurse &amp; Tastings" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a href="/c/erlebnisgeschenke/bier-weinschnaps/wein-erlebnisse" class="teaser col-12 role-widget role-wt-teaser-widget" title="Tastings und Kurse für Weingeniesser">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 96.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GPWEBSITENEUTRALV01Desktop-31-FuerSie.png" title="Wein" alt="Tastings und Kurse für Weingeniesser" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</a>
+</div>
+</div>
+<span class="spacer role-widget role-wt-additional-space-widget" style="height:10px;">&nbsp;</span>
+<div class="teaser col-12 role-widget role-wt-teaser-widget">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="row">
+<div style="padding-top: 16.666666666667%;" class="pre-loaded-image-height js-pre-loaded-image-height hide-broken-image">
+<img class="full-width-image lazy role-widget role-wt-picture-widget" data-original="https://www.hsgimg.ch/cdn-cgi/image/format=auto,quality=100,width=/https://www.hsgimg.ch/landingpages/GP_Kat_Trust_960x160_DE.jpg" title="Weihnachtsgeschenke" alt="Weihnachtsgeschenke" src="">
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="col-12 title-line role-widget role-wt-title-widget">
+<a name=""></a>
+<h1 class="col-8 title">geschenkparadies.ch - Geschenke und Geschenkideen Online Shop</h1>
+<span class="col-12 title-line-border"></span>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a name=""></a>
+<h2 class="col-12 role-widget role-wt-title-widget">Geschenke schenken macht glücklich</h2>
+</div><div class="row"> <div class="text col-12 role-widget role-wt-text-widget">
+<p>Jeder erhält gerne ein Geschenk. Aber auch das Schenken selbst macht gerade durch ausgefallene Geschenkideen oder Geburtstagsgeschenke glücklich. Aus diesem Grund haben wir geschenkparadies.ch gegründet: um Menschen glücklich zu machenmit der passsenden Geschenkidee. Unser Angebot an tollen Geschenkideen bis hin zur Outdoor Deko lässt denn auch keine Wünsche offen - sie finden immer die passende Geschenkidee in den verschiedenen Kategorien und mit vielen Produkten. Egal, ob der Anlass ein&nbsp;<a href="https://www.geschenkparadies.ch/wellness-weekend/lp">Wellness Weekend</a> zu zweit im romantischen Hotel ist, ein feines Romantik Dinner bei Kerzenschein, eine trendige Bambus Sonnenbrille oder ein&nbsp;<a href="https://www.geschenkparadies.ch/personalisierte-geschenke/lp">persönliches Schmuckstück</a> mit graviertem Namen; unsere Palette an Erlebnisgeschenken und Geschenkartikeln ist riesig und hält zu jeder Zeit und für jeden Geschmack bei jedem Budget und Anlass das perfekte Angebot bereit. Auch an besonderen Tagen wie dem Valentinstag ist ohne Hast schnell das beste Abenteuer all inclusive gebucht und damit das perfekte Geschenk z. B. für die junge Liebe gefunden. Selber zuhause kochen für die Lieben ist auch eine Idee um bei Laune zu sein. Auch mit Freunden im Wohnzimmer oder Garten. Es gibt immer einen Grund zum Feiern mit tollen Geschenkideen - und damit auch gleich einen Grund, jemandem mit einer kleinen Aufmerksamkeit oder einem witzigen und sympathischen Geschenk eine Freude zu bereiten - für alle Personen. Ob zum <a href="https://www.geschenkparadies.ch/geburtstagsgeschenke/lp">Geburtstag</a>&nbsp;oder Jubiläum, zur Beförderung oder bestandenen Prüfung: Wir begegnen durchs ganze Jahr hindurch aussergewöhnlichen Momenten, an denen wir jemanden mit Geschenken oder Geschenkideen eine Freude bereiten können. Ein Schenktermin für originelle Geschenke und Ideen par excellence ist natürlich Weihnachten. Ein&nbsp;<a href="https://www.geschenkparadies.ch/weihnachtsgeschenke/lp">Weihnachtsgeschenk</a> finden ist aber ganz leicht. Welche Familie feiert nicht diese schöne Tradition zu Weihnachten, wenn man sich im trauten Familienkreis unterm festlich geschmückten Weihnachtsbaum kleine und grosse Geschenke macht. Die Bescherung zu Weihnachten ist ein alter Brauch der, je nach Quelle, bis ins 13. Jahrhundert zurück geht. Die Geschenke bringt auch nicht überall die gleiche Person - alles ist Unterschiedlich in diesem Fall. In der Schweiz freuen sich gerade die Kinder über das Christkind. In Norddeutschland und in den angelsächsischen Ländern ist es der Weihnachtsmann bzw. der Santa Claus (meist Männer), der auf seiner Runde aussergewöhnliche Wege findet, um mit seinen Geschenken die Herzen zu erfreuen mit der passenden Geschenkidee. Das perfekte Geschenk erhalten ist dann am schönsten, wenn man es gar nicht erwartet, auch zu Ostern. Es muss nicht immer nur der Anlass zum Geburtstag sein. Warum nicht einfach mal zwischendurch der Freundin eine kleine Aufmerksamkeit schenken als Zeichen der Freundschaft? Die Botschaft ist mehr als deutlich: Du bedeutest mir etwas und bist mir niemals egal. Wenn du möchtest, hast du jetzt das passende Abenteuer zum besten Preis - entdecke die Topseller. Einfach die Themen sortieren und die Ergebnisse ansehen - mit Filtern. Lass uns die gemeinsame Zeit genießen. Jetzt Kontakt aufnehmen auf der Website für eine Frage - dein Passwort wird nicht benötigt und wir stehen zur Verfügung.&nbsp;</p></div>
+</div><div class="row"> </div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<a name=""></a>
+<h2 class="col-12 role-widget role-wt-title-widget">Erlebnisse sind als Geschenk unvergesslich</h2>
+<div class="text col-12 role-widget role-wt-text-widget">
+<p>Wer etwas erlebt, der hat etwas zu erzählen. Aus der Forschung wissen wir, dass Erlebnisse die zuverlässigsten Glücklichmacher sind, die man sich überhaupt schenken kann. Warum das so ist? Eine Geschenkidee kommt von Herzen. Man will dem anderen etwas Gutes tun und gerade eine so persönliche und personalisierbare Geschenkidee im Sortiment ist für Männer ideal. Einmal bei einem Anlass einen&nbsp;<a href="https://www.geschenkparadies.ch/gleitschirm-fliegen/lp">Tandemflug</a> mit seinem Liebsten oder seiner Frau buchen und wie ein Vogel durch die Luft fliegen. Mit der Familie auf einem Heissluftballon gerade frühmorgens über das erwachende Mittelland schweben. An einem Wochenende in einem originellen Formel Renault wie ein Champion mit deinem Freund im Geschwindigkeitsrausch über die&nbsp;<a href="https://www.geschenkparadies.ch/c/erlebnisgeschenke/fahren/rennstrecken">Rennstrecke</a> donnern. Sie werden das Magische dieses Moments bestimmt niemals vergessen. Besser noch: Auch wenn der Bungee Jump nur einen kurzen Moment dauerte, die bloße Erinnerung daran löst bei uns auch noch viele weitere Jahre danach Glücksgefühle aus. Die richtige Geschenkidee für echte Männer. Natürlich muss es nicht immer Action und Adrenalin sein. Mit über <a href="https://www.geschenkparadies.ch/c/erlebnisgeschenke">1500 Erlebnisgeschenken</a>&nbsp;gilt geschenkparadies.ch 2021 als das grösste und vielseitigste Erlebnisangebot in der ganzen Schweiz. Sportliche Erlebnisgeschenke oder auch Geschenkideen, bei denen man sich wunderbar erholen und entspannen kann wie zum Beispiel unsere zahlreichen Wellness- und Massagegutscheine, sind ebenfalls möglich. 500 zuverlässige Partner sorgen dafür, dass Ihr Erlebnis Geschenk beim Empfänger nachhaltig und unvergesslich in Erinnerung bleibt.</p></div>
+<a name=""></a>
+<h2 class="col-12 role-widget role-wt-title-widget">Tolle Geschenkartikel und Geschenkideen</h2>
+<div class="text col-12 role-widget role-wt-text-widget">
+<p>Sie möchten lieber etwas Handfestes oder Art schenken? Kein Problem: Mit&nbsp;<a href="https://www.geschenkparadies.ch/c/geschenkartikel">tausenden Geschenkideen</a> zur Auswahl gelingt Ihnen garantiert mit Ihren Geschenken ein Treffer ins Schwarze. Wir bieten witzige Gadgets, Geschenke für Kinder, Accessoires für zu Hause, romantische Geschenke für Verliebte oder so originelle Sachen wie zum Beispiel das Bierbrauset für den Hobby-Brauer und Männer zu Hause. Das praktisch-schöne automatische Handtaschenlicht mit LED für Damen, die gerne Licht ins Dunkel ihrer Shoppers bringen und ihre wichtigsten Utensilien raschmöglichst zur Hand haben möchten. Coole und nachhaltig produzierte Geschenke wie unsere Bambusbrillen, die den Zeitgeist getroffen haben und Spass machen.&nbsp;</p>
+<p>Verschenken mit Service und einfacher Suche. Vielleicht Geschenkideen wie ein personalisierbarer Schlüsselanhänger, ein Foto Set, ein Spiel oder einfach ein Gutschein. Bei uns werden Sie immer für Präsent Ideen und Geburtstagsgeschenke im Shop fündig. Selbst passende Bücher können sie bei Ihrer Suche in den Warenkorb legen. Immer eine Idee für Kleinigkeiten. Eine Abmeldung ist nicht nötig.&nbsp;</p>
+<h2>Geschenkidee</h2></div>
+</div>
+</div>
+<div class="colWidget col-4 role-widget role-wt-col-widget">
+<div class="row">
+<div class="text col-12 role-widget role-wt-text-widget">
+<p>Einfach anmelden und Sie sind uns jederzeit “Herzlich Willkommen”. Sie bekommen eine Mail zurück mit der passenden Geschenkidee: “ Dieser Artikel in deinem Warenkorb ist nicht mehr lieferbar, aber wir haben noch eine andere Idee. Du findest einen guten Ersatz in unserem Shop”. Dann erfolgt eine Gutschrift oder Sie suchen sich eine neue Geschenkidee. Darauf freuen wir uns und helfen Ihnen auch bei DIY Ideen für alle Geschenkanlässe. Sollte die Geschenkidee für die beste Freundin etwa nicht passend sein, soll Sie nicht zöbern und schickt es nach kurzer Zeit zurück. Personalisierbare und ausgefallene Geschenkideen sind meistens vom Umtausch ausgeschlossen. Verschiedene Kategorien helfen das passende Geschenk zu finden. Dann fragen Sie bitte nach der Geschenkidee. Natürlich finden Sie bei uns auch immer die besten <a href="https://www.geschenkparadies.ch/black-friday/lp">Black Friday Deals</a>, wenn die Zeit gekommen ist.&nbsp;</p></div>
+<a name=""></a>
+<h2 class="col-12 role-widget role-wt-title-widget">Werden Sie persönlich - Geschenkideen mit Gravur</h2>
+<div class="text col-12 role-widget role-wt-text-widget">
+<p>Typische Frauengeschenke, typische Männergeschenke: Bei uns liegen Sie für originelle Geschenke nie falsch. Auch wenn es einmal etwas besonders persönliches sein soll: In unserer Kategorie "<a href="https://www.geschenkparadies.ch/c/geschenkartikel/personalisiertegeschenke">Personalisierte Geschenke</a>" dürfen Sie Ihrem Geschenk für Männer und Frauen eine ganz persönliche Note verleihen. Mit einem Namen oder einem Liebesgruss gravierter Schmuck für die Herzdame. Eine herzige Babyflasche mit dem Namen und Geburtstag für den neuen Erdenbürger oder ein Weinset in einer Bambuskiste mit dem eingravierten Namen des weinliebenden Hausherrns. Oder sogar auch tolle Socken. Personalisierte Geschenke und ausgefallene Geschenkideen ganz besonders zum Verschenken. Gratis Versand ab CHF 100.- und erstklassiger Kundenservice.&nbsp;</p></div>
+<a name=""></a>
+<h2 class="col-12 role-widget role-wt-title-widget">Geschenkideen ab Lager schnell geliefert</h2>
+<div class="text col-12 role-widget role-wt-text-widget">
+<p>Uns liegt viel daran, Sie nicht nur zum Geburtstag zu unseren zufriedenen Kunden zählen zu dürfen. Denn nur glückliche Kunden sind Kunden, die auch wiederkommen für die nächste Geschenkidee. Um die richtige Geschenkidee selber im Shop zu finden, zeigen wir Ihnen auf unserer Seite Neuheiten und Zubehör Produkte aus aller Welt. Ein großer Vorteil, wenn Sie bei uns einkaufen: Bestellen Sie Ihr Geschenk auch last minute bis 17 Uhr. Dann liegt das Päckchen bereits am nächsten Tag in Ihrem Briefkasten. Bei Bestellungen über CHF 100.- sogar portofrei. Registrieren Sie sich zum Newsletter mit der E Mail Adresse. Wir bemühen uns bei der Auswahl unserer Geschenke und Gadgets auf Topqualität zu fairen Preisen zu achten. Sollte Ihnen oder dem Beschenkten das Geschenk aus irgendeinem Grund nicht gefallen, können Sie uns den Artikel selbstverständlich innerhalb von 14 Tagen jederzeit problemlos zurückschicken. Alle unsere Geschenke sind ab Lager verfügbar und werden per A-Post versendet. Die Geschenkgutscheine sind gratis verlängerbar. Die happyshops Group AG ist Mitglied im Schweizer Versandhandelsverband. Denn wie gesagt: Ihre Zufriedenheit ist unsere oberste Maxime.&nbsp;</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="bar">
+<div id="scroll-btn">
+<span class="icon-angle-up"></span>
+<span> TOP</span>
+</div>
+</div>
+</div>
+<footer>
+<div id="footer">
+
+<div class="landingpages">
+<div class="row">
+<ul class="col-3">
+<li>
+<p class="footer-title" style="padding-left: 0;">Erlebnisgeschenke&nbsp;</p>
+</li>
+<li>
+<a href="/geschenkgutscheine/lp" title="Geschenkgutscheine &amp; Erlebnisgeschenke">
+Geschenkgutscheine </a>
+</li>
+<li>
+<a href="https://www.geschenkparadies.ch/wellness-weekend/lp" title="Wellness Weekend">
+Wellness Weekend </a>
+</li>
+<li>
+<a href="https://www.geschenkparadies.ch/iglu-uebernachtung/lp" title="Iglu Übernachtung">
+Iglu Übernachtung </a>
+</li>
+</ul>
+<ul class="col-3">
+<li>
+<p class="footer-title" style="padding-left: 0;">Spezielle Anlässe&nbsp;</p>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/weihnachtsgeschenke/lp" title="Weihnachtsgeschenke">
+Weihnachtsgeschenke </a>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/geburtstagsgeschenke/lp" title="Geburtstagsgeschenke">
+Geburtstagsgeschenke </a>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/muttertag/lp" title="Geschenke zum Muttertag">
+Geschenke zum Muttertag </a>
+</li>
+</ul>
+<ul class="col-3">
+<li>
+<p class="footer-title" style="padding-left: 0;"> &nbsp;</p>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/valentinstag/lp" title="Valentinstag">
+Valentinstag </a>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/hochzeitsgeschenke/lp" title="Hochzeitsgeschenke">
+Hochzeitsgeschenke </a>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/babygeschenke/lp" title="Geschenke zur Geburt">
+Geschenke zur Geburt </a>
+</li>
+</ul>
+<ul class="col-3">
+<li>
+<p class="footer-title" style="padding-left: 0;">Geschenke für&nbsp;</p>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/geschenke-fuer-maenner/lp" title="Geschenke für Männer">
+Männer </a>
+</li>
+<li>
+<a href=" https://www.geschenkparadies.ch/geschenke-fuer-paare/lp" title="Geschenke für Paare">
+Paare </a>
+</li>
+<li>
+<a href="https://www.geschenkparadies.ch/geschenke-fuer-frauen/lp" title="Geschenke für Frauen">
+Frauen </a>
+</li>
+<li>
+<a href="/mitarbeitergeschenke/lp" title="Mitarbeitergeschenke">
+Mitarbeitergeschenke </a>
+</li>
+</ul>
+<ul class="col-3">
+<li>
+<p class="footer-title" style="padding-left: 0;">Empfehlungen&nbsp;</p>
+</li>
+<li>
+<a href="/adventskalender/lp" title="Geschenkideen für Garten und Balkon">
+Adventskalender Geschenke </a>
+</li>
+<li>
+<a href="https://www.geschenkparadies.ch/personalisierte-geschenke/lp" title="Personalisierte Geschenke">
+Personalisierte Geschenke </a>
+</li>
+<li>
+<a href="/firmengeschenke-b2b/lp" title="Firmengeschenke">
+Firmengeschenke </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="information">
+<div class="sub-nav-bg">
+<div class="row">
+<ul class="col-12 sub-nav">
+<a href="/ueber-uns/lp" title="Über uns">
+<li>Über uns</li>
+</a>
+<a href="https://ideen.geschenkparadies.ch/" title="Blog" target="_blank">
+<li>Blog</li>
+</a>
+<a href="/kontakt/lp" title="Kontakt">
+<li>Kontakt</li>
+</a>
+<a href="/fragen-und-antworten/lp" title="Fragen und Antworten">
+<li>Q &amp; A</li>
+</a>
+<a href="/impressum/lp" title="Impressum">
+<li>Impressum</li>
+</a>
+<a href="/agb/lp" title="AGB">
+<li>AGB</li>
+</a>
+<a href="/datenschutz/lp" title="Datenschutz">
+<li>Datenschutz</li>
+</a>
+<a href="/partner/login" title="Anbieter LOGIN ">
+<li>LOGIN </li>
+</a>
+<a href="/gutschein/step1">
+<li>Einlösen &amp; Verlängern</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="details-bg">
+<div class="row details">
+<div class="col-4">
+<p class="footer-title row col-12">Newsletter:</p>
+<form class="row newsletter-form" action="//www.geschenkparadies.ch/newsletter/lp">
+<div class="col-12">
+<input name="email" class="form-control input-newsletter middle-border col-12" type="email" placeholder="Ihre E-Mail Adresse" maxlength="50">
+<div class="row">
+<div class="col-7 newsletter-check">
+<div class="row">
+<span class="col-3 icon-check"></span>
+<span class="col-9">Monatliche Updates</span>
+</div>
+<div class="row">
+<span class="col-3 icon-check"></span>
+<span class="col-9">Neue Angebote und Aktionen</span>
+</div>
+</div>
+<div class="col-5 newsletter-btn">
+<input type="submit" class="btn btn-orange col-12" value="abonnieren">
+</div>
+</div>
+</div>
+</form>
+<p class="footer-title row col-12">Zahlungsarten:</p>
+<div class="footer-payment-types-list">
+<span>
+<img src="https://www.hsgimg.ch/payment/de/payment-type-1.svg" class="payment-type-footer-image js-png-fallback" alt="Rechnung" title="Rechnung">
+</span>
+<span>
+<img src="https://www.hsgimg.ch/payment/de/payment-type-20.svg" class="payment-type-footer-image js-png-fallback" alt="Twint" title="Twint">
+</span>
+<span>
+<img src="https://www.hsgimg.ch/payment/de/payment-type-2.svg" class="payment-type-footer-image js-png-fallback" alt="Mastercard" title="Mastercard">
+</span>
+<span>
+<img src="https://www.hsgimg.ch/payment/de/payment-type-3.svg" class="payment-type-footer-image js-png-fallback" alt="Visa" title="Visa">
+</span>
+<span>
+<img src="https://www.hsgimg.ch/payment/de/payment-type-5.svg" class="payment-type-footer-image js-png-fallback" alt="PostFinance E-Finance" title="PostFinance E-Finance">
+</span>
+<span>
+<img src="https://www.hsgimg.ch/payment/de/payment-type-6.svg" class="payment-type-footer-image js-png-fallback" alt="Postfinance Card" title="Postfinance Card">
+</span>
+</div> </div>
+<div class="col-5">
+<p class="footer-title row col-12">Geprüfte Qualität:</p>
+<div class="row">
+<div class="col-2">
+<a href="//www.geschenkparadies.ch/trustedshops/lp" title="Trusted Shops Garantie" target="_self" class="a_strip">
+<p class="sprite-trusted-shops "></p>
+</a>
+</div>
+<div class="col-10 quality-check">
+<div class="row">
+<div class="col-5">
+<div class="row">
+<span class="col-3 icon-check"></span>
+<span class="col-9">Schnelle Lieferzeiten</span>
+</div>
+<div class="row">
+<span class="col-3 icon-check"></span>
+<span class="col-9">Käuferschutz</span>
+</div>
+<div class="row">
+<span class="col-3 icon-check"></span>
+<span class="col-9">Datenschutz</span>
+</div>
+</div>
+<div class="col-7">
+<div class="row">
+<span class="col-2 icon-check"></span>
+<span class="col-10">100 Tage Rückgaberecht</span>
+</div>
+<div class="row">
+<span class="col-2 icon-check"></span>
+<span class="col-10">Sichere Zahlung mit SSL-Verschlüsselung</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row vsv-info">
+<div class="col-2">
+<a href="https://www.vsv-versandhandel.ch/members/detail/geschenkparadies-ch-ag/" title="HANDELSVERBAND.swiss - Risikolos einkaufen" target="_blank">
+<p class="sprite-vsv"></p>
+</a>
+</div>
+<div class="col-10">
+<div class="row">
+<p class="col-12 vsv-text">geschenkparadies.ch ist Mitglied beim HANDELSVERBAND.swiss. Dieses Logo garantiert Vertrauen, Sicherheit und Transparenz.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="row social-media">
+<p class="footer-title col-12">Folge uns:</p>
+<ul class="horizontal-list col-10">
+<li class="col-3">
+<a href="https://www.facebook.com/geschenkparadies" title="geschenkparadies.ch auf Facebook" target="_blank" class="social-media-icon fa fa-facebook" rel="">
+</a>
+</li>
+<li class="col-3">
+<a href="https://www.instagram.com/geschenkparadies.ch/" title="geschenkparadies.ch bei Intagram" target="_blank" class="social-media-icon fa fa-instagram" rel="">
+</a>
+</li>
+<li class="col-3">
+<a href="https://www.youtube.com/user/geschenkparadiesmov" title="geschenkparadies.ch auf Youtube" target="_blank" class="social-media-icon fa fa-youtube" rel="">
+</a>
+</li>
+<li class="col-3">
+<a href="https://www.linkedin.com/company/happyshops-group-ag" title="happyshops.ch auf Linkedin" target="_blank" class="social-media-icon fa fa-linkedin" rel="">
+</a>
+</li>
+</ul>
+</div>
+<div class="row shipping-info">
+<p class="footer-title  col-12">Wir versenden mit:</p>
+<p class=" col-12 sprite-logo_diepost"></p>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</footer>
+<div class="js-quickbar-container"></div>
+<script src="/cache/assets/language/Templates.de.js"></script>
+<script type="text/javascript">
+    var config = {
+        checkout: {"domain":"https:\/\/www.happyshops.ch\/","user":null,"password":null,"datatrans_merchant_id":3000004404,"datatrans_HMAC":"3aa3cbb695de9ecfe390d4d58b2fc734caa17369c1d56877c7276e43aef7bccba8aa88be6fd8477f61bfa953ff4cc10a64a59883fa185bc939b6abf9507c986a"},
+        host: 1,
+        languageHostPrefix: '',
+        language: 'de',
+        currentDomain: 'https://www.geschenkparadies.ch',
+        currentLanguageHostPrefix: '',
+        schemeAndPrefix: 'https://www',
+        hostName: 'geschenkparadies.ch'
+    };
+</script> <script src="/cache/assets/147764a91b31e9e2a2078a2584ace399.minified.js"></script><script type="text/javascript" id="">try{!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js"),fbq("init","1534430006777011"),fbq("track","PageView",{},{event_id:"1712588602780_17125884429371"})}catch(b){};</script>
+<script>
+    $(document).ready(function() {
+        const hasCookiesEnabled = navigator.cookieEnabled;
+        if (hasCookiesEnabled === false) {
+            $(window).trigger('pushToDataLayer', {
+                'event': 'no_cookies'
+            });
+            $('body').prepend('<div class="top-page-error-message">' +
+                '<div class="container" style="max-width:100%">' + __gp__.lang('no_cookies_error_message') + '</div>' +
+                '</div>');
+        }
+
+        $(window).trigger('pushToDataLayer', []);
+    })
+</script>
+<script type="text/javascript">
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+        const http = new XMLHttpRequest();
+        if (typeof msg === 'object') {
+            msg = JSON.stringify(msg);
+        }
+        const params = '?msg=' + msg + '&url=' + encodeURIComponent(url) + '&line=' + lineNo;
+        const errorReportUrl = config.currentDomain + '/report/error' + params;
+        http.open("GET", errorReportUrl);
+        http.send();
+
+        return false;
+    };
+</script>
+
+<script type="text/javascript" id="">0<$(".info_top_nav").length&&(window.zE||function(a,d,e){var b=window.zE=window.zEmbed=function(){b._.push(arguments)},c=b.s=a.createElement(d);a=a.getElementsByTagName(d)[0];b.set=function(a){b.set._.push(a)};b._=[];b.set._=[];c.async=!0;c.setAttribute("charset","utf-8");c.src="https://static.zdassets.com/ekr/asset_composer.js?key\x3d"+e;b.t=+new Date;c.type="text/javascript";a.parentNode.insertBefore(c,a)}(document,"script",google_tag_manager["rm"]["854128"](51)));</script><script type="text/javascript" id="">try{(function(){window.Mpathy={Config:{max_cookie_lifetime:730,activate_do_not_track:!1}};if(!Mpathy.Config.activate_do_not_track||!~[1,"1","yes"].indexOf(navigator.doNotTrack)){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.m-pathy.com/js/a3084.js";a.crossOrigin="anonymous";a.charset="UTF-8";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}})()}catch(a){};</script><div id="criteo-tags-div" style="display: none;"><iframe src="https://gum.criteo.com/syncframe?topUrl=www.geschenkparadies.ch&amp;origin=onetag#{&quot;bundle&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;cw&quot;:true,&quot;optout&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;origin&quot;:&quot;onetag&quot;,&quot;sid&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;tld&quot;:&quot;geschenkparadies.ch&quot;,&quot;topUrl&quot;:&quot;www.geschenkparadies.ch&quot;,&quot;version&quot;:&quot;5_23_0&quot;,&quot;ifa&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;lsw&quot;:true,&quot;pm&quot;:0}" id="criteo-syncframe-onetag" width="0" height="0" frameborder="0" style="border-width:0px; margin:0px; display:none" title="Criteo GUM iframe"></iframe><script async="true" type="text/javascript" src="https://sslwidget.criteo.com/event?a=9568&amp;v=5.23.0&amp;otl=1&amp;p0=e%3Dce%26m%3D%255B%255D&amp;p1=e%3Dexd%26site_type%3Dd&amp;p2=e%3Dvh&amp;p3=e%3Ddis&amp;adce=1&amp;bundle=6xa3YV9ISm5OTFpuQ0EwT1dnSXdxRXUzSE05THpYZnR5aUg1MkRmY3JscUtCQiUyQkF1ZnBRTVV3ZklyQ0tBNmZMWTc1M081SFpJbWlabEN0YWJuQ3RZUTFDMkp1WW9GMGY5NElOcXA5eDglMkZPZVB4RFFqaHhIT01WTWg0VWpnWmNMS3JXWHFGMEdUVnklMkJrVVp5cE1SYXNFT0h3clVVZ3E2ekdESFZ4JTJCUkVKbks0RWFURSUzRA&amp;tld=geschenkparadies.ch&amp;fu=https%253A%252F%252Fwww.geschenkparadies.ch%252F&amp;ceid=d8d2b37a-6a5d-4e07-8730-8081ce4e2ba2&amp;dtycbr=45912"></script></div><iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="about:blank" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><iframe height="0" width="0" sandbox="allow-same-origin allow-scripts" title="Criteo DIS iframe" style="display: none;"></iframe></body></html>

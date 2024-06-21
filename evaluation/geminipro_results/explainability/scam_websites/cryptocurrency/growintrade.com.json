@@ -1,0 +1,12 @@
+{
+    "url": "https://growintrade.com",
+    "question": "Please analyze this URL https://growintrade.com",
+    "thought": "I should first check if the website is accessible  I should check if the website sells products I should check if the website has an unusual payment method I should check if the website has an ambiguous privacy policy I should check if the website has an unusually low price I should check if the website has contact information I should check if the website has a privacy policy I should check if the website has an updated certificate I should check if the website has a response from the DNS server I now know the final answer {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "1. Unusually low prices and claims of free.\\n2. Claims to be able to get an amount of money that is generally not possible.\\n3. Texts that target human psychological weaknesses exist on websites.\\n4. Information on non-existent companies.\\n5. Handling different products from common e-commerce websites.\\n6. Inquiry phone number and email address are not appropriate for business use.\\n7. Privacy of customer information notation is ambiguous.\\n8. Payment methods are not common and are unusual.\\n9. The information listed has not been updated."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

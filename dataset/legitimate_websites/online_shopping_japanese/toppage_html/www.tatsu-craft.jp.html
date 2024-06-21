@@ -1,0 +1,445 @@
+<html lang="ja"><head>
+		<meta http-equiv="content-type" content="text/html;charset=x-sjis">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>TATSU-CRAFT 橋本達之助工芸</title>
+		</head><body background="z_photo/A_base12_5gy.gif" onload="CSScriptInit();" topmargin="0" marginheight="0"><csactionitem name="BA1968F81"></csactionitem>
+		<csactionitem name="BA180E3D22"></csactionitem>
+		<csactionitem name="BA18076A0"></csactionitem>
+		<csactionitem name="BA1807984"></csactionitem>
+		<csactionitem name="BA18079F6"></csactionitem>
+		<csactionitem name="BA1807A58"></csactionitem>
+		<csactionitem name="BA1807AB10"></csactionitem>
+		<csactionitem name="BA1807B112"></csactionitem>
+		<csactionitem name="BA1807B914"></csactionitem>
+		<csactionitem name="BA1807C316"></csactionitem>
+		<csactionitem name="BB9FD5377"></csactionitem>
+		<csscriptdict>
+			<script><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}
+CSStopExecution=false;
+function CSAction(array) {return CSAction2(CSAct, array);}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var aa = fct[array[i]];
+		if (aa == null) return false;
+		var ta = new Array;
+		for(var j=1;j<aa.length;j++) {
+			if((aa[j]!=null)&&(typeof(aa[j])=="object")&&(aa[j].length==2)){
+				if(aa[j][0]=="VAR"){ta[j]=CSStateArray[aa[j][1]];}
+				else{if(aa[j][0]=="ACT"){ta[j]=CSAction(new Array(new String(aa[j][1])));}
+				else ta[j]=aa[j];}
+			} else ta[j]=aa[j];
+		}			
+		result=aa[0](ta);
+	}
+	return result;
+}
+CSAct = new Object;
+
+CSImages=new Array();
+function CSPreloadImage(action) {
+	if (document.images) { CSImages[CSImages.length]=new Image(); CSImages[CSImages.length-1].src=action[1]; }
+}
+
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+CSIsW3CDOM = ((document.getElementById) && !(IsIE()&&CSBVers<6)) ? true : false;
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { if (CSIsW3CDOM) return document.getElementById(s).style; else return CSFindElement(s,0);  }
+CSIImg=false;
+function CSInitImgID() {if (!CSIImg && document.images) { for (var i=0; i<document.images.length; i++) { if (!document.images[i].id) document.images[i].id=document.images[i].name; } CSIImg = true;}}
+function CSFindElement(n,ly) { if (CSBVers<4) return document[n];
+	if (CSIsW3CDOM) {CSInitImgID();return(document.getElementById(n));}
+	var curDoc = ly?ly.document:document; var elem = curDoc[n];
+	if (!elem) {for (var i=0;i<curDoc.layers.length;i++) {elem=CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSGetImage(n) {if(document.images) {return ((!IsIE()&&CSBVers<5)?CSFindElement(n,0):document.images[n]);} else {return null;}}
+CSDInit=false;
+function CSIDOM() { if (CSDInit)return; CSDInit=true; if(document.getElementsByTagName) {var n = document.getElementsByTagName('DIV'); for (var i=0;i<n.length;i++) {CSICSS2Prop(n[i].id);}}}
+function CSICSS2Prop(id) { var n = document.getElementsByTagName('STYLE');for (var i=0;i<n.length;i++) { var cn = n[i].childNodes; for (var j=0;j<cn.length;j++) { CSSetCSS2Props(CSFetchStyle(cn[j].data, id),id); }}}
+function CSFetchStyle(sc, id) {
+	var s=sc; while(s.indexOf("#")!=-1) { s=s.substring(s.indexOf("#")+1,sc.length); if (s.substring(0,s.indexOf("{")).toUpperCase().indexOf(id.toUpperCase())!=-1) return(s.substring(s.indexOf("{")+1,s.indexOf("}")));}
+	return "";
+}
+function CSGetStyleAttrValue (si, id) {
+	var s=si.toUpperCase();
+	var myID=id.toUpperCase()+":";
+	var id1=s.indexOf(myID);
+	if (id1==-1) return "";
+	s=s.substring(id1+myID.length+1,si.length);
+	var id2=s.indexOf(";");
+	return ((id2==-1)?s:s.substring(0,id2));
+}
+function CSSetCSS2Props(si, id) {
+	var el=document.getElementById(id);
+	if (el==null) return;
+	var style=document.getElementById(id).style;
+	if (style) {
+		if (style.left=="") style.left=CSGetStyleAttrValue(si,"left");
+		if (style.top=="") style.top=CSGetStyleAttrValue(si,"top");
+		if (style.width=="") style.width=CSGetStyleAttrValue(si,"width");
+		if (style.height=="") style.height=CSGetStyleAttrValue(si,"height");
+		if (style.visibility=="") style.visibility=CSGetStyleAttrValue(si,"visibility");
+		if (style.zIndex=="") style.zIndex=CSGetStyleAttrValue(si,"z-index");
+	}
+}
+
+function CSSetImageURL(action) {
+	var img=CSGetImage(action[1]);
+	if (img) img.src=action[2];
+}
+
+
+function initIArray() {
+this.length = initIArray.arguments.length;
+for (var i = 0; i < this.length; i++)
+this[i+1] = initIArray.arguments[i]; 
+}
+
+function dailyImageURL(action) {
+var dateArray = new
+initIArray("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+var today = new Date();
+var day = dateArray[today.getDay()];
+if (today.getDay() == 0) { day = "Sunday"; }
+var img = null;
+if (document.images) {
+	if (!IsIE()&&CSBVers<5) img = CSFindElement(action[1],0);
+	else img = document.images[action[1]];
+		if (img) {
+			if (day == "Monday" && action[2] != "(Empty Reference!)" && action[2] != "(EmptyReference!)") img.src = action[2]
+			if (day == "Tuesday" && action[3] != "(Empty Reference!)" && action[3] != "(EmptyReference!)") img.src = action[3]
+			if (day == "Wednesday" && action[4] != "(Empty Reference!)" && action[4] != "(EmptyReference!)") img.src = action[4]
+			if (day == "Thursday" && action[5] != "(Empty Reference!)" && action[5] != "(EmptyReference!)") img.src = action[5]
+			if (day == "Friday" && action[6] != "(Empty Reference!)" && action[6] != "(EmptyReference!)") img.src = action[6]
+			if (day == "Saturday" && action[7] != "(Empty Reference!)" && action[7] != "(EmptyReference!)") img.src = action[7]
+			if (day == "Sunday" && action[8] != "(Empty Reference!)" && action[8] != "(EmptyReference!)") img.src = action[8]
+		}  
+}  
+}
+
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++)
+this[i+1] = initArray.arguments[i]; 
+}
+
+function dailyRedirect(action) {
+var dateArray = new
+initArray("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+var today = new Date();
+var day = dateArray[today.getDay()];
+if (today.getDay() == 0) { day = "Sunday"; }
+if (day == "Monday" && action[1] != "(Empty Reference!)" && action[1] != "(EmptyReference!)") window.location = action[1]
+if (day == "Tuesday" && action[2] != "(Empty Reference!)" && action[2] != "(EmptyReference!)") window.location = action[2]
+if (day == "Wednesday" && action[3] != "(Empty Reference!)" && action[3] != "(EmptyReference!)") window.location = action[3]
+if (day == "Thursday" && action[4] != "(Empty Reference!)" && action[4] != "(EmptyReference!)") window.location = action[4]
+if (day == "Friday" && action[5] != "(Empty Reference!)" && action[5] != "(EmptyReference!)") window.location = action[5]
+if (day == "Saturday" && action[6] != "(Empty Reference!)" && action[6] != "(EmptyReference!)") window.location = action[6]
+if (day == "Sunday" && action[7] != "(Empty Reference!)" && action[7] != "(EmptyReference!)") window.location = action[7]
+}
+
+
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+
+function CSButtonReturn () { return !CSClickReturn(); }
+
+CSIm=new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img=CSGetImage(n);
+			if (img&&typeof(CSIm[n][i].src)!="undefined") {img.src=CSIm[n][i].src;}
+			if(i!=0) self.status=CSIm[n][3]; else self.status=" ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im=action[1];
+	if (document.images) {
+		CSIm[im]=new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i]!='') {CSIm[im][i-2]=new Image(); CSIm[im][i-2].src=action[i];}
+			else CSIm[im][i-2]=0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(dailyImageURL,/*CMP*/ 'top',/*URL*/ 'z_photo_icon/top_img_butudan.gif',/*URL*/ 'z_photo_icon/top_img_stylebox.gif',/*URL*/ 'z_photo_icon/top_img_euroSWG.jpg',/*URL*/ 'z_photo_icon/top_img_negorokasa.gif',/*URL*/ 'z_photo_icon/top_img_petbutu.gif',/*URL*/ 'z_photo_icon/top_img_butudan.gif',/*URL*/ 'z_photo_icon/top_img_stylebox.gif');
+CSInit[CSInit.length] = new Array(dailyImageURL,/*CMP*/ 'sub',/*URL*/ 'z_photo_icon/shop_icon_title_butudan.gif',/*URL*/ 'z_photo_icon/shop_icon_title_stylebox.gif',/*URL*/ 'z_photo_icon/shop_icon_title_euroSWG.gif',/*URL*/ 'z_photo_icon/shop_icon_title_umbre.gif',/*URL*/ 'z_photo_icon/shop_icon_title_petbutu.gif',/*URL*/ 'z_photo_icon/shop_icon_title_butudan.gif',/*URL*/ 'z_photo_icon/shop_icon_title_stylebox.gif');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_butu_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_int_stand_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_kasa_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_lunch_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_petbutu_140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_sikki_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_dust_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_tray_img140.jpg');
+CSInit[CSInit.length] = new Array(CSPreloadImage,/*URL*/ 'z_photo_icon/pre_pro_img140.jpg');
+CSAct[/*CMP*/ 'BA18280A24'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_tray_img140.jpg');
+CSAct[/*CMP*/ 'BA18280A26'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_lunch_img140.jpg');
+CSAct[/*CMP*/ 'BA18280A28'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_dust_img140.jpg');
+CSAct[/*CMP*/ 'BA18280A32'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_int_stand_img140.jpg');
+CSAct[/*CMP*/ 'BA18280A34'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_sikki_img140.jpg');
+CSAct[/*CMP*/ 'BA18280A40'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_petbutu_140.jpg');
+CSAct[/*CMP*/ 'BB9FCD623'] = new Array(CSSetImageURL,/*CMP*/ 'pre',/*URL*/ 'z_photo_icon/pre_butu_img140.jpg');
+CSAct[/*CMP*/ 'BDCCE8074'] = new Array(dailyRedirect,/*URL*/ 'product_butsuzi.html',/*URL*/ 'stylebox.html',/*URL*/ 'euroswingbox.html',/*URL*/ 'product_kasa.html',/*URL*/ 'pet.html',/*URL*/ 'product_butsuzi.html',/*URL*/ 'stylebox.html');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button11',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button6',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button7',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button5',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button10',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button12',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button13',/*URL*/'z_photo/yazirusi_gy.gif',/*URL*/'z_photo/yazirusi_RED.gif',/*URL*/'','');
+
+// --></script>
+		</csactiondict>
+		<csactions>
+			<csaction name="BA18076A0" class="Preload Image" type="onload" val0="z_photo_icon/pre_butu_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA1807984" class="Preload Image" type="onload" val0="z_photo_icon/pre_int_stand_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA18079F6" class="Preload Image" type="onload" val0="z_photo_icon/pre_kasa_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA1807A58" class="Preload Image" type="onload" val0="z_photo_icon/pre_lunch_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA1807AB10" class="Preload Image" type="onload" val0="z_photo_icon/pre_petbutu_140.jpg" urlparams="1"></csaction>
+			<csaction name="BA1807B112" class="Preload Image" type="onload" val0="z_photo_icon/pre_sikki_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA1807B914" class="Preload Image" type="onload" val0="z_photo_icon/pre_dust_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA1807C316" class="Preload Image" type="onload" val0="z_photo_icon/pre_tray_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BA18280A24" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_tray_img140.jpg" urlparams="2"></csaction>
+			<csaction name="BA18280A26" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_lunch_img140.jpg" urlparams="2"></csaction>
+			<csaction name="BA18280A28" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_dust_img140.jpg" urlparams="2"></csaction>
+			<csaction name="BA18280A32" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_int_stand_img140.jpg" urlparams="2"></csaction>
+			<csaction name="BA18280A34" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_sikki_img140.jpg" urlparams="2"></csaction>
+			<csaction name="BA18280A40" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_petbutu_140.jpg" urlparams="2"></csaction>
+			<csaction name="BA1968F81" class="Daily Image URL" type="onload" val0="top" val1="z_photo_icon/top_img_butudan.gif" val2="z_photo_icon/top_img_stylebox.gif" val3="z_photo_icon/top_img_euroSWG.jpg" val4="z_photo_icon/top_img_negorokasa.gif" val5="z_photo_icon/top_img_petbutu.gif" val6="z_photo_icon/top_img_butudan.gif" val7="z_photo_icon/top_img_stylebox.gif" urlparams="2,3,4,5,6,7,8"></csaction>
+			<csaction name="BA180E3D22" class="Daily Image URL" type="onload" val0="sub" val1="z_photo_icon/shop_icon_title_butudan.gif" val2="z_photo_icon/shop_icon_title_stylebox.gif" val3="z_photo_icon/shop_icon_title_euroSWG.gif" val4="z_photo_icon/shop_icon_title_umbre.gif" val5="z_photo_icon/shop_icon_title_petbutu.gif" val6="z_photo_icon/shop_icon_title_butudan.gif" val7="z_photo_icon/shop_icon_title_stylebox.gif" urlparams="2,3,4,5,6,7,8"></csaction>
+			<csaction name="BB9FCD623" class="Set Image URL" type="onevent" val0="pre" val1="z_photo_icon/pre_butu_img140.jpg" urlparams="2"></csaction>
+			<csaction name="BB9FD5377" class="Preload Image" type="onload" val0="z_photo_icon/pre_pro_img140.jpg" urlparams="1"></csaction>
+			<csaction name="BDCCE8074" class="Daily Redirect" type="onevent" val0="product_butsuzi.html" val1="stylebox.html" val2="euroswingbox.html" val3="product_kasa.html" val4="pet.html" val5="product_butsuzi.html" val6="stylebox.html" urlparams="1,2,3,4,5,6,7"></csaction>
+		</csactions>
+		<link rel="stylesheet" href="fontset/font_h1.css">
+		<link rel="SHORTCUT ICON" href="tatsuicon.ico">
+		<meta name="keywords" content="仏壇, 仏事, 漆器, 雑貨, ぬりもの, 漆, 橋本, 橋本達之助工芸, TATSU-CRAFT, 4932903, 紀州漆器, 海南, トレー, ダストBOX, 屑入れ">
+	
+
+	
+		<div align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="680" height="100%" background="z_photo/A_base12_5.gif">
+				<tbody><tr height="100%">
+					<td align="center" height="100%"><br>
+						<img src="z_photo_icon/main_top.gif" width="300" height="30" border="0"><br>
+						<table border="0" cellpadding="0" cellspacing="0" width="600">
+							<tbody><tr>
+								<td align="center" background="z_photo/A_base12_5dgy.gif">
+									<table border="0" cellpadding="0" cellspacing="1" width="100%">
+										<tbody><tr height="16">
+											<td colspan="2" height="16" align="right">
+												<table border="0" cellpadding="1" cellspacing="1" width="100%">
+													<tbody><tr>
+														<td><font size="2"><img src="z_photo_icon/top_up_titleS22.gif" width="164" height="18" border="0" alt="TATSU-CRAFT"></font></td>
+														<td align="right"></td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" bgcolor="white"><font size="2"><a href="#" onclick="CSAction(new Array(/*CMP*/'BDCCE8074'));return CSClickReturn();" csclick="BDCCE8074"><img src="z_photo_icon/top_img_butudan.gif" width="300" height="240" name="top" border="0" alt="本日のご案内"></a></font></td>
+											<td align="right" width="297" valign="top" bgcolor="white">
+												<table border="0" cellpadding="0" cellspacing="0" width="297" background="z_photo/A_base12_5.gif" height="240">
+													<tbody><tr height="50%">
+														<td valign="top" height="50%"><img src="z_photo_icon/shop_icon_title_butudan.gif" width="220" height="66" border="0" name="sub"></td>
+													</tr>
+													<tr height="50%">
+														<td align="right" valign="bottom" height="50%">
+															<div align="center">
+																<table border="0" cellpadding="4" cellspacing="8" width="266">
+																	<tbody><tr>
+																		<td valign="bottom" class="h102">
+																			<p class="h104"><font size="1" color="#222222">TATSU-CRAFT（タツクラフト）橋本達之助工芸は塗りもの雑貨と漆器を作る工房です。暮らしの小物からお仏壇まで様々な漆器製品をご覧ください。ご希望の商品はTATSU-CRAFTショップでお求めいただけます。</font></p>
+																		</td>
+																	</tr>
+																</tbody></table>
+															</div>
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" align="center">
+												<table border="0" cellpadding="0" cellspacing="0" width="99%" bgcolor="#747474">
+													<tbody><tr height="75">
+														<td align="center" valign="bottom" height="75"><font size="1"><a href="product_tray.html" onmouseover="CSAction(new Array(/*CMP*/'BA18280A24'));return true;" csover="BA18280A24"><img src="z_photo_icon/top_icon44_tray.gif" width="60" height="60" border="0" alt="トレー"></a></font></td>
+														<td align="center" valign="bottom" height="75"><font size="1"><a href="product_lunch.html" onmouseover="CSAction(new Array(/*CMP*/'BA18280A26'));return true;" csover="BA18280A26"><img src="z_photo_icon/top_icon44_lunch.gif" width="60" height="60" border="0" alt="お弁当箱"></a></font></td>
+														<td align="center" valign="bottom" height="75"><font size="1"><a href="product_Dust.html" onmouseover="CSAction(new Array(/*CMP*/'BA18280A28'));return true;" csover="BA18280A28"><img src="z_photo_icon/top_icon44_dust.gif" width="60" height="60" border="0" alt="屑入れ"></a></font></td>
+														<td align="center" valign="bottom" height="75"><font size="1"><a href="shikkikomo.html" onmouseover="CSAction(new Array(/*CMP*/'BA18280A32'));return true;" csover="BA18280A32"><img src="z_photo_icon/top_icon44_komono.gif" width="60" height="60" border="0" alt="漆器小物"></a></font></td>
+														<td align="center" valign="bottom" height="75"><font size="1"><a href="sikki.html" onmouseover="CSAction(new Array(/*CMP*/'BA18280A34'));return true;" csover="BA18280A34"><img src="z_photo_icon/top_icon44_sikki.gif" width="60" height="60" border="0" alt="漆器盆"></a></font></td>
+														<td align="center" valign="bottom" height="75"><a href="product_butsuzi.html" onmouseover="CSAction(new Array(/*CMP*/'BB9FCD623'));return true;" csover="BB9FCD623"><font size="1"><img src="z_photo_icon/top_icon44_butu.gif" width="60" height="60" border="0" alt="漆器仏壇"></font></a></td>
+														<td align="center" valign="bottom" height="75"><font size="1"><a href="pet.html" onmouseover="CSAction(new Array(/*CMP*/'BA18280A40'));return true;" csover="BA18280A40"><img src="z_photo_icon/top_icon44_petbutu.gif" width="60" height="60" border="0" alt="ペット仏壇"></a></font></td>
+													</tr>
+													<tr height="30">
+														<td align="center" height="30" valign="top"><a href="product_tray.html"><font size="1" color="white">トレー</font></a></td>
+														<td height="30" align="center" valign="top"><a href="product_lunch.html"><font size="1" color="white">弁当箱</font></a></td>
+														<td height="30" align="center" valign="top"><a href="product_Dust.html"><font size="1" color="white">屑入れ</font></a></td>
+														<td height="30" align="center" valign="top"><a href="product_shikkikagu.html"><font size="1" color="white">漆器<br>
+																	
+														
+																	
+										小物</font></a></td>
+														<td height="30" align="center" valign="top"><a href="sikki.html"><font size="1" color="white">漆器盆</font></a></td>
+														<td height="30" align="center" valign="top"><a href="product_butsuzi.html"><font size="1" color="white">漆器<br>
+																	
+																	
+																	
+														
+																	
+										仏壇</font></a></td>
+														<td height="30" align="center" valign="top"><a href="pet.html"><font size="1" color="white">ペット<br>
+																	
+														
+																	
+										仏壇</font></a></td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" background="z_photo/A_base12_5gy.gif">
+									<table border="0" cellpadding="1" cellspacing="1" width="100%">
+										<tbody><tr>
+											<td valign="top">
+												<table border="0" cellpadding="0" cellspacing="4">
+													<tbody><tr height="142">
+														<td valign="bottom" height="142"><img src="z_photo_icon/pre_brank140.gif" width="140" height="140" border="0" name="pre"></td>
+													</tr>
+												</tbody></table>
+											</td>
+											<td align="right" valign="top">
+											  <table border="0" cellpadding="0" cellspacing="4">
+													<tbody><tr height="32">
+														<td align="right" nowrap="" colspan="2" valign="bottom" height="32"><br>
+														</td>
+														<td align="right" nowrap="" colspan="2" valign="bottom" height="32"><a href="http://www.rakuten.co.jp/tatsu-craft/" target="_blank"><font size="1"><img src="z_photo_icon/tyuumon3.gif" width="116" height="30" border="0" alt="TATSU-CRAFTショップ"></font></a></td>
+													</tr>
+													<tr height="20">
+														<td align="right" nowrap="" height="20" width="93"><a href="deskpro.html"><font size="1" color="black">新製品</font></a></td>
+														<td align="center" nowrap="" width="20" height="20"><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="deskpro.html" onmouseover="return CSIShow(/*CMP*/'button11',1)" onmouseout="return CSIShow(/*CMP*/'button11',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button11" border="0"></a></csobj></td>
+														<td align="right" nowrap="" height="20" width="93"><a href="info.html"><font size="1" color="black"><nobr>お知らせ</nobr></font></a></td>
+														<td align="center" width="20" nowrap="" height="20"><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="info.html" onmouseover="return CSIShow(/*CMP*/'button6',1)" onmouseout="return CSIShow(/*CMP*/'button6',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button6" border="0"></a></csobj></td>
+													</tr>
+													<tr>
+														<td align="right" nowrap="" width="93"><a href="link.html"><font size="1" color="black">リンク</font></a></td>
+														<td align="center" nowrap="" width="20"><font size="1"><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="link.html" onmouseover="return CSIShow(/*CMP*/'button7',1)" onmouseout="return CSIShow(/*CMP*/'button7',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button7" border="0"></a></csobj></font></td>
+														<td align="right" nowrap="" width="93"><a href="comp.html"><font size="1" color="black">会社概要</font></a></td>
+														<td align="center" width="20" nowrap=""><font size="1"><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="comp.html" onmouseover="return CSIShow(/*CMP*/'button5',1)" onmouseout="return CSIShow(/*CMP*/'button5',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button5" border="0"></a></csobj></font></td>
+													</tr>
+													<tr>
+														<td align="right" nowrap="" width="93"><a href="sitemap.html"><font size="1" color="black">サイトマップ</font></a></td>
+														<td align="center" nowrap="" width="20"><font size="1"><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="sitemap.html" onmouseover="return CSIShow(/*CMP*/'button10',1)" onmouseout="return CSIShow(/*CMP*/'button10',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button10" border="0"></a></csobj></font></td>
+														<td align="right" nowrap="" width="93"><a href="https://forms.gle/ZFd7Sjt38XVEZVGe8"><font size="1" color="black">お問い合せ</font></a></td>
+														<td align="center" width="20" nowrap=""><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="https://forms.gle/ZFd7Sjt38XVEZVGe8" onmouseover="return CSIShow(/*CMP*/'button12',1)" onmouseout="return CSIShow(/*CMP*/'button12',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button12" border="0"></a></csobj></td>
+													</tr>
+													<tr>
+														<td align="right" nowrap="" width="93"></td>
+														<td align="right" nowrap="" colspan="2"><a href="security.html"><font size="1" color="black">個人情報について</font></a></td>
+														<td width="20" align="center"><font size="1"><csobj w="20" h="20" t="Button" ht="z_photo/yazirusi_RED.gif"><a href="security.html" onmouseover="return CSIShow(/*CMP*/'button13',1)" onmouseout="return CSIShow(/*CMP*/'button13',0)" onclick="return CSButtonReturn()"><img src="z_photo/yazirusi_gy.gif" width="20" height="20" name="button13" border="0"></a></csobj></font></td>
+													</tr>
+													<tr>
+														<td width="238" height="16" colspan="4" align="right" nowrap="" class="h102">
+															<div align="right">
+																<br>
+															</div>
+														</td>
+													</tr>
+												</tbody></table>
+									          <div align="right"></div></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr height="1">
+								<td align="right" height="1" background="z_photo/A_base12_5dgy.gif"><img src="z_photo/10_4.gif" width="10" height="1" border="0"></td>
+							</tr>
+							<tr>
+								<td align="right">
+									<table border="0" cellpadding="2" cellspacing="2" width="540">
+										<tbody><tr>
+											<td align="right" nowrap="">
+												<p class="h104"><font size="1" color="#222222">
+							
+							Sorry, this page is Japanese only.<br>
+														Copyright(C)1999-2020 Hashimoto Tatsunosuke Kougei All Rights Reserved.<br>
+															since Oct 5, 1999<br>
+													</font></p>
+											</td>
+											<td align="center" width="90" nowrap=""><img src="z_photo/LinkMNtatsu.gif" width="88" height="31"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+						<br>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	
+
+</body></html>

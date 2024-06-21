@@ -1,0 +1,2975 @@
+<!DOCTYPE html><html class="translated-ltr" style="height: 100%;"><head>
+<style>
+
+[class|=dream],[class|=dream]::after,[class|=dream]::before{box-sizing:border-box;outline:0}.dream-msg-progress{width:13px;height:13px}.dream-msg__circle{stroke-width:2;stroke-linecap:square;fill:none;transform:rotate(-90deg);transform-origin:center}.dream-msg-stage:hover .dream-msg__circle{-webkit-animation-play-state:paused!important;animation-play-state:paused!important}.dream-msg__background{stroke-width:2;fill:none}.dream-msg-stage{position:fixed;top:20px;left:50%;width:auto;transform:translate(-50%,0);z-index:3000}.dream-msg-wrapper{position:relative;left:50%;transform:translate(-50%,0);transform:translate3d(-50%,0,0);transition:height .3s ease,padding .3s ease;padding:6px 0;will-change:transform,opacity}.dream-msg{padding:10px 21px;border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,0.15);position:relative;left:50%;transform:translate(-50%,0);transform:translate3d(-50%,0,0);display:flex;align-items:center}.dream-msg-content,.dream-msg-icon,.dream-msg-wait{display:inline-block}.dream-msg-icon{position:relative;width:15px;height:15px;border-radius:100%;display:flex;justify-content:center;align-items:center}.dream-msg-icon svg{position:absolute;top:50%;left:53%;transform:translate(-50%,-50%);width:12px;height:12px}.dream-msg-wait{width:20px;height:20px;position:relative;fill:#4eb127}.dream-msg-wait svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.dream-msg-close{width:14px;height:14px}.dream-msg-content{margin:0 10px;min-width:240px;text-align:left;font-size:14px;font-weight:500;font-family:-apple-system,Microsoft Yahei,sans-serif;text-shadow:0 0 1px rgba(0,0,0,.01)}.dream-msg.info{color:#0fafad;background-color:#e7fdfc;box-shadow:0 0 2px 0 rgba(0,1,1,.01),0 0 0 1px #c0faf9}.dream-msg.info .dream-msg-icon{background-color:#0fafad}.dream-msg.success{color:#4ebb23;background-color:#f3ffe8;box-shadow:0 0 2px 0 rgba(0,1,0,.01),0 0 0 1px #d9f8bb}.dream-msg.success .dream-msg-icon{background-color:#4ebb23}.dream-msg.warning{color:#f1b306;background-color:#fff9eb;box-shadow:0 0 2px 0 rgba(1,1,0,.01),0 0 0 1px #fcf2cd}.dream-msg.warning .dream-msg-icon{background-color:#f1b306}.dream-msg.error{color:#f34b51;background-color:#fff7f7;box-shadow:0 0 2px 0 rgba(1,0,0,.01),0 0 0 1px #ffe3e3}.dream-msg.error .dream-msg-icon{background-color:#f34b51}.dream-msg.loading{color:#0B69E3;background-color:#DEEEFC;box-shadow:0 0 2px 0 rgba(0,1,1,.01),0 0 0 1px #DEEEFC}.dream-msg_loading{flex-shrink:0;width:20px;height:20px;position:relative}.dream-msg-circular{-webkit-animation:dream-msg-rotate 2s linear infinite both;animation:dream-msg-rotate 2s linear infinite both;transform-origin:center center;height:18px!important;width:18px!important}.dream-msg-path{stroke-dasharray:1,200;stroke-dashoffset:0;stroke:#0B69E3;-webkit-animation:dream-msg-dash 1.5s ease-in-out infinite;animation:dream-msg-dash 1.5s ease-in-out infinite;stroke-linecap:round}@-webkit-keyframes dream-msg-rotate{100%{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes dream-msg-rotate{100%{transform:translate(-50%,-50%) rotate(360deg)}}@-webkit-keyframes dream-msg-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:89,200;stroke-dashoffset:-35px}100%{stroke-dasharray:89,200;stroke-dashoffset:-124px}}@keyframes dream-msg-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:89,200;stroke-dashoffset:-35px}100%{stroke-dasharray:89,200;stroke-dashoffset:-124px}}.dream-msg.info .dream-msg-wait{fill:#0fafad}.dream-msg.success .dream-msg-wait{fill:#4ebb23}.dream-msg.warning .dream-msg-wait{fill:#f1b306}.dream-msg.error .dream-msg-wait{fill:#f34b51}.dream-msg.loading .dream-msg-wait{fill:#0fafad}.dream-msg-pointer{cursor:pointer}@-webkit-keyframes dream-msg_info{0%{stroke:#0fafad}to{stroke:#0fafad;stroke-dasharray:0 100}}@keyframes dream-msg_info{0%{stroke:#0fafad}to{stroke:#0fafad;stroke-dasharray:0 100}}@-webkit-keyframes dream-msg_success{0%{stroke:#4eb127}to{stroke:#4eb127;stroke-dasharray:0 100}}@keyframes dream-msg_success{0%{stroke:#4eb127}to{stroke:#4eb127;stroke-dasharray:0 100}}@-webkit-keyframes dream-msg_warning{0%{stroke:#fcbc0b}to{stroke:#fcbc0b;stroke-dasharray:0 100}}@keyframes dream-msg_warning{0%{stroke:#fcbc0b}to{stroke:#fcbc0b;stroke-dasharray:0 100}}@-webkit-keyframes dream-msg_error{0%{stroke:#eb262d}to{stroke:#eb262d;stroke-dasharray:0 100}}@keyframes dream-msg_error{0%{stroke:#eb262d}to{stroke:#eb262d;stroke-dasharray:0 100}}.dream-msg-fade-in{-webkit-animation:dream-msg-fade .2s ease-out both;animation:dream-msg-fade .2s ease-out both}.dream-msg-fade-out{animation:dream-msg-fade .3s linear reverse both}@-webkit-keyframes dream-msg-fade{0%{opacity:0;transform:translate(-50%,0);transform:translate3d(-50%,-80%,0)}to{opacity:1;transform:translate(-50%,0);transform:translate3d(-50%,0,0)}}@keyframes dream-msg-fade{0%{opacity:0;transform:translate(-50%,0);transform:translate3d(-50%,-80%,0)}to{opacity:1;transform:translate(-50%,0);transform:translate3d(-50%,0,0)}}
+        </style><meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="https://oss.choosepickhere.com/commons/202403142020101899737845.png" type="image/x-icon"><link rel="stylesheet" href="/m2/assets/css/resert.css?v=20231000003">
+<link rel="stylesheet" href="/p2/assets/css/header.css?v=20231000006">
+<link rel="preload" href="/m2/assets/font/Assistant-Medium.ttf" as="font" type="font/ttf" crossorigin="">
+<script src="/common_files/js/jquery.js"></script>
+<script src="/common_files/js/axios.min.js"></script>
+<!-- <script src="/common_files/js/page_car/shopCar_new.js"></script> -->
+<script src="/common_files/js/fb_new.js"></script>
+<!-- <script src="/common_files/js/usageRules.js"></script> -->
+<script src="/common_files/js/b4568713545sdf894.js?v=1704962759"></script>
+<script>
+    getMateData([{"domain":"shoppayd1.com","faceBookId":"","TiktokPixelId":""},{"domain":"www.shoppayd1.com","faceBookId":"","TiktokPixelId":""}]);
+</script>
+<title>
+slowlife.top</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=wA/d=0/rs=AN8SPfpPTNr3cQN8QhzqvQYsNrDu3oHhow/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.ja.zxgsU3t2-_I.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfrDTk1QbMw7ws_zBrBNE2euI75KnA/m=el_main"></script></head><body style="position: relative; min-height: 100%; top: 40px;"><div class="skiptranslate" style=""><iframe id=":1.container" class="VIpgJd-ZVi9od-ORHb-OEVmcd skiptranslate" frameborder="0" src="#" style="visibility:visible"></iframe></div><div style="margin:0 auto;overflow:hidden; width:0; height: 0; display: block;">
+    <img src="https://oss.choosepickhere.com/template/20240314/202403142019262966430754.jpg"></div>
+<style>
+    .skiptranslate  iframe{display:none;}
+    body{top:0 !important ;}
+    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+        display: none!important;
+    }
+    #goog-gt-tt{display: none!important;}
+</style>
+
+        <div class="p3_header  top">
+        <div class="announcement-bar__message bgColor_com" style="background:#000000;color:#FFFFFF;">
+            <p class="font14 bar__message_p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                $49.99以上で送料無料！新型コロナウイルス（COVID-19）の影響により物流に影響があり、配達の遅れや納期の延長が発生する可能性があります。                
+                </font></font></p><div class="currency-more">
+                                        <div class="text notranslate" id="headingOne">
+                        <span class="currency-icon icon-USD">
+                            <img src="/common_files/images/currency/JPY.png" alt="">
+                        </span>JPY                    </div>
+                    <ul class="currency-list">
+                                                <li class="login_name notranslate" data-currency-code="KRW">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/KRW.png">
+                            </span>KRW                        </li>
+                                                <li class="login_name notranslate" data-currency-code="USD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/USD.png">
+                            </span>USD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="TWD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/TWD.png">
+                            </span>TWD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="THB">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/THB.png">
+                            </span>THB                        </li>
+                                                <li class="login_name notranslate" data-currency-code="SGD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/SGD.png">
+                            </span>SGD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="SAR">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/SAR.png">
+                            </span>SAR                        </li>
+                                                <li class="login_name notranslate" data-currency-code="RON">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/RON.png">
+                            </span>RON                        </li>
+                                                <li class="login_name notranslate" data-currency-code="PLN">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/PLN.png">
+                            </span>PLN                        </li>
+                                                <li class="login_name notranslate" data-currency-code="PHP">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/PHP.png">
+                            </span>PHP                        </li>
+                                                <li class="login_name notranslate" data-currency-code="PEN">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/PEN.png">
+                            </span>PEN                        </li>
+                                                <li class="login_name notranslate" data-currency-code="NZD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/NZD.png">
+                            </span>NZD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="MYR">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/MYR.png">
+                            </span>MYR                        </li>
+                                                <li class="login_name notranslate" data-currency-code="MXN">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/MXN.png">
+                            </span>MXN                        </li>
+                                                <li class="login_name notranslate" data-currency-code="MOP">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/MOP.png">
+                            </span>MOP                        </li>
+                                                <li class="login_name notranslate" data-currency-code="AED">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/AED.png">
+                            </span>AED                        </li>
+                                                <li class="login_name notranslate" data-currency-code="JPY">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/JPY.png">
+                            </span>JPY                        </li>
+                                                <li class="login_name notranslate" data-currency-code="IDR">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/IDR.png">
+                            </span>IDR                        </li>
+                                                <li class="login_name notranslate" data-currency-code="HUF">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/HUF.png">
+                            </span>HUF                        </li>
+                                                <li class="login_name notranslate" data-currency-code="GBP">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/GBP.png">
+                            </span>GBP                        </li>
+                                                <li class="login_name notranslate" data-currency-code="EUR">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/EUR.png">
+                            </span>EUR                        </li>
+                                                <li class="login_name notranslate" data-currency-code="DZD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/DZD.png">
+                            </span>DZD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="CZK">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/CZK.png">
+                            </span>CZK                        </li>
+                                                <li class="login_name notranslate" data-currency-code="COP">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/COP.png">
+                            </span>COP                        </li>
+                                                <li class="login_name notranslate" data-currency-code="CLP">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/CLP.png">
+                            </span>CLP                        </li>
+                                                <li class="login_name notranslate" data-currency-code="CAD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/CAD.png">
+                            </span>CAD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="BRL">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/BRL.png">
+                            </span>BRL                        </li>
+                                                <li class="login_name notranslate" data-currency-code="AUD">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/AUD.png">
+                            </span>AUD                        </li>
+                                                <li class="login_name notranslate" data-currency-code="ARS">
+                            <span class="currency-icon icon-USD">
+                                <img src="/common_files/images/currency/ARS.png">
+                            </span>ARS                        </li>
+                                            </ul>
+                    <svg t="1695632902079" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4014" width="15" height="15"><path d="M512 690.252l-427.805-427.805c-14.26-14.26-35.65-14.26-49.91 0s-14.26 35.65 0 49.91l449.195 449.195c7.13 7.13 21.39 14.26 28.52 14.26s21.39 0 28.52-7.13l456.325-456.325c14.26-14.26 14.26-35.65 0-49.91s-35.65-14.26-49.91 0l-434.935 427.805z" fill="#272636" p-id="4015"></path></svg>
+                </div>
+            <p></p>
+        </div>
+        <div id="google_translate_element" style="display: none;"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" style="display: inline;"><select class="goog-te-combo" aria-label="言語翻訳ウィジェット"><option value="ja">日本語</option><option value="is">アイスランド語</option><option value="ay">アイマラ語</option><option value="ga">アイルランド語</option><option value="az">アゼルバイジャン語</option><option value="as">アッサム語</option><option value="af">アフリカーンス語</option><option value="am">アムハラ語</option><option value="ar">アラビア語</option><option value="sq">アルバニア語</option><option value="hy">アルメニア語</option><option value="it">イタリア語</option><option value="yi">イディッシュ語</option><option value="ig">イボ語</option><option value="ilo">イロカノ語</option><option value="id">インドネシア語</option><option value="ug">ウイグル語</option><option value="cy">ウェールズ語</option><option value="uk">ウクライナ語</option><option value="uz">ウズベク語</option><option value="ur">ウルドゥ語</option><option value="ee">エウェ語</option><option value="et">エストニア語</option><option value="eo">エスペラント語</option><option value="nl">オランダ語</option><option value="or">オリヤ語</option><option value="om">オロモ語</option><option value="kk">カザフ語</option><option value="ca">カタルーニャ語</option><option value="gl">ガリシア語</option><option value="kn">カンナダ語</option><option value="rw">キニヤルワンダ語</option><option value="el">ギリシャ語</option><option value="ky">キルギス語</option><option value="gn">グアラニ語</option><option value="gu">グジャラート語</option><option value="km">クメール語</option><option value="kri">クリオ語</option><option value="ku">クルド語（クルマンジー）</option><option value="ckb">クルド語（ソラニー）</option><option value="hr">クロアチア語</option><option value="qu">ケチュア語</option><option value="xh">コーサ語</option><option value="co">コルシカ語</option><option value="gom">コンカニ語</option><option value="sm">サモア語</option><option value="sa">サンスクリット語</option><option value="jw">ジャワ語</option><option value="ka">ジョージア語（グルジア語）</option><option value="sn">ショナ語</option><option value="sd">シンド語</option><option value="si">シンハラ語</option><option value="sv">スウェーデン語</option><option value="zu">ズールー語</option><option value="gd">スコットランド ゲール語</option><option value="es">スペイン語</option><option value="sk">スロバキア語</option><option value="sl">スロベニア語</option><option value="sw">スワヒリ語</option><option value="su">スンダ語</option><option value="ceb">セブアノ語</option><option value="nso">セペディ語</option><option value="sr">セルビア語</option><option value="st">ソト語</option><option value="so">ソマリ語</option><option value="th">タイ語</option><option value="tl">タガログ語</option><option value="tg">タジク語</option><option value="tt">タタール語</option><option value="ta">タミル語</option><option value="cs">チェコ語</option><option value="ny">チェワ語</option><option value="ts">ツォンガ語</option><option value="ti">ティグリニャ語</option><option value="dv">ディベヒ語</option><option value="te">テルグ語</option><option value="da">デンマーク語</option><option value="de">ドイツ語</option><option value="ak">トゥイ語</option><option value="doi">ドグリ語</option><option value="tk">トルクメン語</option><option value="tr">トルコ語</option><option value="ne">ネパール語</option><option value="no">ノルウェー語</option><option value="ht">ハイチ語</option><option value="ha">ハウサ語</option><option value="ps">パシュト語</option><option value="eu">バスク語</option><option value="haw">ハワイ語</option><option value="hu">ハンガリー語</option><option value="pa">パンジャブ語</option><option value="bm">バンバラ語</option><option value="hi">ヒンディー語</option><option value="fi">フィンランド語</option><option value="fr">フランス語</option><option value="fy">フリジア語</option><option value="bg">ブルガリア語</option><option value="vi">ベトナム語</option><option value="iw">ヘブライ語</option><option value="be">ベラルーシ語</option><option value="fa">ペルシャ語</option><option value="bn">ベンガル語</option><option value="bho">ボージュプリー語</option><option value="pl">ポーランド語</option><option value="bs">ボスニア語</option><option value="pt">ポルトガル語</option><option value="mai">マイティリー語</option><option value="mi">マオリ語</option><option value="mk">マケドニア語</option><option value="mr">マラーティー語</option><option value="mg">マラガシ語</option><option value="ml">マラヤーラム語</option><option value="mt">マルタ語</option><option value="ms">マレー語</option><option value="lus">ミゾ語</option><option value="my">ミャンマー語（ビルマ語）</option><option value="mni-Mtei">メイテイ語（マニプリ語）</option><option value="mn">モンゴル語</option><option value="hmn">モン語</option><option value="yo">ヨルバ語</option><option value="lo">ラオ語</option><option value="la">ラテン語</option><option value="lv">ラトビア語</option><option value="lt">リトアニア語</option><option value="ln">リンガラ語</option><option value="ro">ルーマニア語</option><option value="lg">ルガンダ語</option><option value="lb">ルクセンブルク語</option><option value="ru">ロシア語</option><option value="en">英語</option><option value="ko">韓国語</option><option value="zh-CN">中国語（簡体）</option><option value="zh-TW">中国語（繁体）</option></select></div>&nbsp;&nbsp;Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google 翻訳">翻訳</a></span></div></div>
+        <!-- fanyi -->
+    </div>
+
+    <div id="header_nav" class="p3_fixed_top nav">
+        <div class="nav_list">
+            <div class="p3_Head_icon">
+                <div class="head_tag">
+                    <div class="head_icon_top">
+                        <div class="head_icon_main">
+                            <div class="head_name">
+                                <div class="shop_Name  font20 fw600"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                     
+                                    店
+                                                                    </font></font></div>
+                                                                <div class="header__inline-menu">
+                                    <ul class="list-menu">
+                                                                                <li class="list-menu-item menu_hover">
+                                            <div class="father">
+                                                <a class="visible" href="/shop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">すべての製品</font></font></a>
+                                            </div>
+                                        </li>
+                                                                                                                                                            </ul>
+                                </div>
+                            </div>
+                            <div class="head_right">
+                                <div class="genduo_Icon">
+                                    <i class="iconfont serch icon-h5_ss1 pc_serch"></i>
+                                </div>
+                                <div class="login_user_icon loginacc">
+                                    <i class="iconfont  icon-p3-wode icon_my  fw600 font24"></i>
+                                </div>
+                                <div class="car_box">
+                                    <i class="iconfont shopCar icon-shangcheng1"></i>
+                                    <span class="car_num car_out_num font_m3_com" style="display: none;"></span>
+                                </div>
+                                <div class="login_user_icon zhuxiao">
+                                    <i class="iconfont  icon-zhuxiao zhuxiao_icon fw600 font20"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_modal modal__content">
+                    <div class="search_modal_content">
+                        <div class="input_text">
+                            <input type="text" class="input_search" id="Search-In-Modal">
+                            <label class="field__label" for="Search-In-Modal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">検索</font></font></label>
+                            <div class="search__btn">
+                                <svg t="1666071310766" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8130" width="20" height="20">
+                                    <path d="M938.88694045 899.74010311l-272.16372623-272.16372622c49.71026963-58.40956682 79.53643141-133.59634963 79.53643141-216.23967289 0-184.549376-149.75218725-334.30156325-334.30156326-334.30156325S77.03514075 226.787328 77.03514075 411.336704s149.75218725 334.30156325 334.30156325 334.30156325c82.02194489 0 157.2087277-29.82616178 215.61829452-78.91505303l272.16372623 272.16372623c5.59240533 5.59240533 12.42756741 8.07791882 19.88410784 8.0779188 6.83516208 0 14.29170252-2.48551348 19.88410786-8.0779188 10.5634323-11.18481067 10.5634323-28.58340503 0-39.14683734zM126.74541037 411.336704C126.74541037 254.1279763 254.1279763 126.74541037 411.336704 126.74541037s284.59129363 128.0039443 284.59129363 284.59129363-128.0039443 284.59129363-284.59129363 284.59129363S126.74541037 567.92405333 126.74541037 411.336704z" p-id="8131"></path>
+                                </svg>
+                            </div>
+                            <div class="search_goods_list">
+                                <div class="search_result_box">
+                                    <div class="shop_box">
+                                        <div class="product_name">
+                                            <span class="font12">PRODUCT</span>
+                                        </div>
+                                        <div class="shop_main_list">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search_href">
+                                    <div class="search_title">
+                                        <span class="search_key">Search for</span>
+                                        <span class="title_val"></span>
+                                    </div>
+                                    <div>
+                                        <svg t="1666055722522" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3066" width="16" height="16">
+                                            <path d="M842.808715 544.907092L566.358955 821.356852c-12.496698 12.496698-12.496698 32.758136 0 45.254834 12.496698 12.496698 32.758136 12.496698 45.254834 0l331.014362-331.014362c12.496698-12.496698 12.496698-32.758136 0-45.254834l-339.144676-341.796326c-12.496698-12.496698-32.758136-12.496698-45.254834 0-12.496698 12.496698-12.496698 32.758136 0 45.254834l284.454209 287.105859-739.427925 0.03182c-17.673427 0-32.000117 14.32669-32.000117 32.000118 0.000707 17.67272 14.327398 31.99941 32.000117 32.000117l739.553083-0.032527z" p-id="3067"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- loading -->
+                                <div class="loading_icon">
+                                    <div class="load_img_search">
+                                        <img src="/m2/assets/images/load2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_close_btn">
+                            <svg t="1666142692712" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1347" width="25" height="25">
+                                <path d="M562.281173 510.800685l294.996664-293.466821c13.94971-13.878079 14.020318-36.367279 0.14224-50.316989-13.913894-13.984503-36.367279-14.020318-50.316989-0.14224L512.034792 460.377272 219.528855 166.982082c-13.842263-13.878079-36.367279-13.94971-50.316989-0.071631-13.913894 13.878079-13.948687 36.403095-0.071631 50.352805L461.576587 510.587837 166.721139 803.876604c-13.94971 13.878079-14.020318 36.367279-0.14224 50.316989 6.939039 6.974855 16.084327 10.497075 25.229614 10.497075 9.073656 0 18.148335-3.451612 25.087375-10.354835l294.926056-293.360398 295.17472 296.064996c6.939039 6.974855 16.048511 10.462283 25.193799 10.462283 9.109472 0 18.184151-3.487428 25.12319-10.390651 13.913894-13.878079 13.94971-36.367279 0.071631-50.316989L562.281173 510.800685z" p-id="1348"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-notification">
+            <div class="car_add">
+                <span class="iconfont icon-guanbi car_close"></span>
+                <div class="car_header">
+                    <h2 class="car_top_msg font12">
+                        <span class="iconfont icon-duihao finish"></span>
+                        <span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">カートに商品が追加されました</font></font></span>
+                    </h2>
+                </div>
+                <div class="car_good">
+                </div>
+                <div class="checkOut_btns">
+                    <button class="shop_car_btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">カートを見る</font></font><span class="p3_car_num"></span></button>
+                    <button class="checkout_btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">チェックアウト</font></font></button>
+                    <a href="/shop" class="return_shop font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ショッピングを続ける</font></font></a>
+                </div>
+            </div>
+        </div>
+        <div class="search_msk">
+        </div>
+    </div>
+    <div id="notification" class="h5_dialog">
+        <i class="iconfont icon-guanbi close" onclick="closeDialog()"></i>
+        <div class="notif_img" onclick="notifImgDialog()">
+
+        </div>
+        <div class="right_info">
+            <div class="top">
+                <h1 class="user_name font14 font_common"></h1>
+                <p class="goods_infoName font12 font_common"></p>
+            </div>
+            <span class="time time_ago font12 font_common"></span>
+        </div>
+    </div>
+
+    <div class="el_backtop" style="display: none;">
+        <i class="iconfont icon-xiangshang1" style="color:;"></i>
+    </div>
+
+
+    <style>
+    .mask_order {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 200;
+    }
+
+    .mask_order {
+        display: none;
+    }
+
+    .mask_order_input {
+        position: absolute;
+        width: 1050px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .mask_order_title {
+        margin-bottom: 30px;
+    }
+
+    .mask_order_input .order_sn {
+        height: 50px;
+        width: 380px;
+        box-sizing: border-box;
+        border: 1px solid #d7dcde;
+        outline: none;
+        vertical-align: middle;
+        background-color: #f6f6f6;
+        margin-right: 2px;
+        padding: 0 10px;
+    }
+
+    .mask_order_input .order_sn:focus {
+        border-color: #2277c8;
+    }
+    .mask_order_input_msg{
+        border-color: red !important;
+    }
+
+    .orderSerachbtn {
+        width: 200px;
+        height: 50px;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .closeOrder {
+        color: #000;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px !important;
+        text-align: center;
+        cursor: pointer;
+    }
+</style>
+
+<div class="mask_order">
+    <i class="iconfont  icon-guanbi closeOrder"></i>
+
+    <div class="mask_order_input">
+        <h2 class="mask_order_title font16">
+            Quickly check your order status.
+        </h2>
+        <div style="width: 600px;height: 80px; margin: 0 auto;">
+            <div style="display: flex;">
+                <input class="order_sn" type="text" placeholder="Order No" maxlength="40">
+                <button class="orderSerachbtn">View Order Details</button>
+            </div>
+            <div class="order_msg" style="color: red;display:none;text-align: left;">Please enter the order number</div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    function showTrack(){
+        $(".mask_order").css("display", "block");
+        $("body").css("overflow", "hidden");
+    }
+
+
+    $(".track_order").click(() => {
+        $(".mask_order").css("display", "block");
+        $("body").css("overflow", "hidden");
+    })
+    $(".closeOrder").click(() => {
+        $(".mask_order").css("display", "none");
+        $("body").css("overflow", "visible");
+    })
+    $(".order_sn").focus(()=>{
+        $(".order_msg").css("display","none");
+        $(".order_sn").removeClass("mask_order_input_msg");
+    });
+    $(".orderSerachbtn").click(() => {
+        let order_sn = $(".order_sn").val();
+        if (order_sn) {
+            window.location.href = `/payment/order_sn=${order_sn}`;
+        }else{
+            $(".order_msg").css("display","block");
+            $(".order_sn").addClass("mask_order_input_msg");
+        }
+    })
+</script>    <style>
+    /* 问题中心 */
+    .issue {
+        display: none;
+        position: fixed;
+        bottom: 300px;
+        right: 20px;
+        z-index: 20;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 50%;
+    }
+
+    .issue_container {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 70%;
+        background: #ede9e9;
+        z-index: 20;
+        border: 1px solid #c1c1c1;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    .issue_container_show {
+        display: block;
+        opacity: 1;
+    }
+
+
+    .issue_top {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: #00174f;
+    }
+
+    .issue_top_close {
+        cursor: pointer;
+    }
+
+    .issue_top_img {
+        width: auto;
+        height: 100%;
+    }
+
+    .issue_top_img img {
+        width: auto;
+        height: 100%;
+    }
+
+    .issue_container_frame {
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        padding: 20px;
+    }
+
+    .issue_container_frame::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .issue_container_frame::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* 修改滚动条的滑块 */
+    .issue_container_frame::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+
+    /* 修改滚动条滑块在 hover 状态时的样式 */
+    .issue_container_frame::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+    .issue_info {
+        margin-bottom: 20px;
+    }
+
+    .issue_info_merchant {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .issue_img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .issue_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .issue_dialogue {
+        max-width: 60%;
+        /* min-width: 35%; */
+        padding: 10px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .06);
+    }
+
+    .issue_dialogue_welcome {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .issue_dialogue_welcome_p {
+        margin-bottom: 10px;
+    }
+
+    .issue_dialogue ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .issue_dialogue ul .issue_info_item {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .issue_info_reply {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .issue_info_msg {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .issue_info_msg_user {
+        flex-direction: row-reverse;
+    }
+
+    .user_send {
+        height: calc(100% - 70px - 70%);
+        background: #fff;
+        border-top: 1px solid #c1c1c1;
+    }
+
+    .user_send_inputBox {
+        width: 100%;
+        height: calc(100% - 40px);
+        outline: none;
+        cursor: text;
+        /* 显示文本输入光标 */
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .user_send_inputBox::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .user_send_inputBox::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* 修改滚动条的滑块 */
+    .user_send_inputBox::-webkit-scrollbar-thumb {
+        background: rgb(173, 173, 173);
+        border-radius: 5px;
+    }
+
+    /* 修改滚动条滑块在 hover 状态时的样式 */
+    .user_send_inputBox::-webkit-scrollbar-thumb:hover {
+        background: rgb(138, 138, 138);
+    }
+
+    .send_container {
+        display: flex;
+        justify-content: flex-end;
+        height: 40px;
+        padding: 5px 25px;
+    }
+
+    .send_btn {
+        width: 90px;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        background-color: #00174f;
+    }
+
+    .send_text {
+        flex: 0 0 70%;
+        border-right: 1px solid #fff;
+        color: #fff;
+    }
+
+    .serial {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        margin-right: 10px;
+        color: #3792ff;
+        border: 1px solid #3792ff;
+    }
+    .serial_title{
+        flex: 1;
+    }
+</style>
+
+<div class="issue">
+    <div>
+        <img src="/common_files/images/issue_ico.svg" alt="">
+    </div>
+</div>
+
+<div class="issue_container">
+    <div class="issue_top">
+        <div class="issue_top_img">
+                <img src="" alt="">
+        </div>
+        <div>
+            <span style="color: #fff;font-size: 22px;letter-spacing: 5px;">FAQ</span>
+        </div>
+        <div class="issue_top_close">
+            <svg t="1692684716819" class="icon issue_closeBtn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18837" width="20" height="20">
+                <path d="M585.412525 512.594747L973.601616 124.418586c19.600808-19.600808 19.600808-51.898182 0-71.49899l-2.120404-2.120404c-19.600808-19.600808-51.898182-19.600808-71.49899 0L511.793131 439.518384 123.61697 50.799192c-19.600808-19.600808-51.898182-19.600808-71.49899 0l-2.120404 2.120404c-20.11798 19.600808-20.11798 51.898182 0 71.49899l388.189091 388.189091L49.997576 900.783838c-19.587879 19.600808-19.587879 51.898182 0 71.49899l2.120404 2.120404c19.600808 19.600808 51.898182 19.600808 71.49899 0L511.793131 586.214141l388.189091 388.176162c19.600808 19.600808 51.898182 19.600808 71.49899 0l2.120404-2.120404c19.600808-19.600808 19.600808-51.898182 0-71.49899L585.412525 512.594747z m0 0" p-id="18838" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="issue_container_frame">
+        <div class="issue_container_frame_box">
+            <div class="issue_info">
+                <div class="issue_info_default issue_info_merchant">
+                    <div class="issue_img robot">
+                        <img src="" alt="">
+                    </div>
+                    <div class="issue_dialogue">
+                        <h3 class="issue_dialogue_welcome">Please select a question.</h3>
+                        <ul class="issue_dialogue_info">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="issue_info issue_info_reply">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let isstatus = 1;
+    let issueArr = [];
+
+    if(isstatus == 2){
+        $(".issue").css("display","block");
+    }
+    $(".issue").click(() => {
+        $(".issue_container").removeClass("issue_container_close");
+        $(".issue_container").addClass("issue_container_show");
+        $("body").css("overflow","hidden");
+        questionHtml();
+    });
+    $(".issue_top_close").click(() => {
+        $(".issue_container").removeClass("issue_container_show");
+        $("body").css("overflow","visible");
+    });
+    function questionHtml() {
+        if (issueArr.length == 0) {
+            try {
+                $.ajax({
+                    type: 'post',
+                    url: '/index/Questionview/getInfo',
+                    dataType: 'json',
+                    data: {},
+                    success: function (datq) {
+                        if (datq.code == 1) {
+                            let imgs = datq.data.robot_image;
+                            issueArr = datq.data.question_detail;
+                            $(".issue_dialogue_info").html("");
+                            let issueStr = ``;
+                            issueArr.forEach((item, index) => {
+                                issueStr += `
+                                <li class="issue_info_item">
+                                    <span class="serial">${index + 1}</span>
+                                    <span class="serial_title">${item.question_content}<span>
+                                </li>
+                                `
+                            })
+                            $(".issue_dialogue_info").append(issueStr);
+                            $(".issue_top_img img").attr("src", imgs);
+                            $(".robot img").attr("src", imgs);
+                            $(".issue_info_item").each(function (index) {
+                                $(this).click(() => {
+                                    $(".issue_info_reply").append(`
+                                    <div class="issue_info_msg issue_info_merchant issue_info_msg_user">
+                                        <div class="issue_img">
+                                            <img src="/common_files/images/user.png" alt="">
+                                        </div>
+                                        <div class="issue_dialogue">
+                                            <span>${issueArr[index].question_content}</span>
+                                        </div>
+                                    </div>
+                                `);
+                                    // 机器人回复
+                                    $(".issue_info_reply").append(`
+                                    <div class="issue_info_msg issue_info_merchant">
+                                        <div class="issue_img robot">
+                                            <img src="${imgs}" alt="">
+                                        </div>
+                                        <div class="issue_dialogue">
+                                            <span>${issueArr[index].question_answer}</span>
+                                        </div>
+                                    </div>
+                                `);
+                                    $('.issue_container_frame').animate({
+                                        scrollTop: $(".issue_container_frame_box").outerHeight()
+                                    }, 0);
+                                })
+                            })
+                        }
+                    }
+                })
+            } catch (err) {
+                console.log(err);
+            }
+        }
+
+    }
+</script>    <script>
+        let tks = localStorage.getItem('tk');
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (tks) {
+                    xhr.setRequestHeader('Authorization', 'Bearer ' + JSON.parse(tks));
+                }
+            },
+            complete: function(xhr, status) {
+                var response = xhr.responseJSON;
+                if (response && response.code === 10001) {
+                    // 执行相关操作，如跳转到登录页、清除 token 等
+                    $("body").append(`
+                        <div id="alertBox" class="alert-box show">
+                            <div class="alert-content">
+                                <p>Login failed, please login again</p>
+                            </div>
+                        </div>
+                    `);
+                    window.localStorage.removeItem("Useremail");
+                    window.localStorage.removeItem("tk");
+                    setTimeout(()=>{
+                        $("#alertBox").remove();
+                        window.location.href = '/login';
+                    },2000)
+                }
+            }
+        });
+        let menuList = $(".more_li");
+        for (let i = 0; i < menuList.length; i++) {
+            $(menuList[i]).mouseenter(function(){
+                $('.header__more_menu_right').each(function(){
+                    $(this).css("display","none");
+                })
+                $(".menu_icon").each(function(){
+                    $(this).removeClass("menu_icon-rotate");
+                })
+                $(`.more_li:eq(${i}) .menu_icon`).addClass("menu_icon-rotate");
+                $(`.header__more_menu_right:eq(${i})`).css("display","grid");
+            })
+        }
+        
+        $('.el_backtop').css({
+            'display': 'none'
+        });
+        $('html ,body').animate({ scrollTop: -10 }, 0);
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > $(window).height()) {
+                $('.el_backtop').css({
+                    'display': 'flex'
+                })
+            } else {
+                $('.el_backtop').css({
+                    'display': 'none'
+                })
+            }
+        });
+        $('.el_backtop').click(function () {
+            $('html ,body').animate({
+                scrollTop: -50
+            }, 100);
+        })
+        let country_code = JSON.parse(window.localStorage.getItem('country_code'));
+        let key = '';
+        let moneyIcon = `Ұ`;
+        let currency_val = `JPY`;
+        let currency_rate = '';
+        let reportAction_num = 0;
+        let getsettingArr = [];
+        let fbq_status = window.location.href;
+        if (!window.sessionStorage.getItem('fbq_status')) {
+            if (fbq_status.indexOf('fbclid') > 0) {
+                window.sessionStorage.setItem('fbq_status', 1);
+            }
+        }
+        axios.interceptors.response.use(function (response) {
+            if (response.data.code == 10001) {
+                Dreamer.error("Your account has expired, please login again", 1000, true);
+                window.localStorage.removeItem("tk");
+                window.location.href = "/login";
+                $("#login").css("display", "block");
+            }
+            return response;
+        }, function (error) {
+            return Promise.reject(error);
+        });
+        getInit();
+        function getInit() {
+            if (window.localStorage.getItem("tk")) {
+                $('.zhuxiao').css('display', 'flex');
+                axios.defaults.headers.post['token'] = JSON.parse(window.localStorage.getItem("tk"));
+                $.ajaxSetup({
+                    headers:{
+                        "token":JSON.parse(window.localStorage.getItem("tk"))
+                    }
+                })
+                $.ajax({
+                    type: 'post',
+                    url: '/index/Cart/cartList',
+                    dataType: 'json',
+                    data: {},
+                    success: function(res){
+                        if(res.code == 1){
+                            let sum = 0;
+                            let carList = res.data;
+                            carList.forEach(v => {
+                                sum += v.goods_num;
+                            })
+                            if (sum > 0) {
+                                $(".car_out_num").css("display", "block");
+                                if (sum >= 100) {
+                                    $(".car_out_num").html('99+');
+                                } else {
+                                    $(".car_out_num").html(`${sum}`);
+                                }
+                            } else {
+                                $(".car_out_num").css("display", "none");
+                            }
+                        }
+                    }
+                });
+            } else{
+                let sum = 0;
+                $.ajax({
+                    type: 'post',
+                    url: '/index/CartNew/count',
+                    dataType: 'json',
+                    data: {},
+                    success: function(res){
+                        if(res.code == 1){
+                            sum = res.data;
+                            if (sum == '99+' || sum > 0) {
+                                $(".car_out_num").css("display", "block");
+                                if (sum >= 100) {
+                                    $(".car_out_num").html('99+');
+                                } else {
+                                    $(".car_out_num").html(`${sum}`);
+                                }
+                            } else {
+                                $(".car_out_num").css("display", "none");
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        let menuArr = $('.list-menu-item');
+        for (let i = 0; i < menuArr.length; i++) {
+            $(menuArr[i]).bind('mouseover', {
+                index: i
+            }, menuShow);
+            $(menuArr[i]).bind('mouseout', {
+                index: i
+            }, menuDel);
+        };
+
+        function menuShow(event) {
+            let i = event.data.index;
+        };
+
+        function menuDel(event) {
+            let i = event.data.index;
+        };
+        let t = 0, b = 0;
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                let details_scr = $('.nav').offset().top;
+                let top = $('.top').height();
+                let nav_height = $('.nav').height();
+                t = $(this).scrollTop();
+                if (b < t) {
+                    if (t >= (top + nav_height)) {
+                        $('.nav').addClass('p3_Head_icon_sticky');
+                        $('.nav').addClass('p3_Head_icon_fixed');
+                        // if (window.location.pathname.indexOf('products') > 0) {
+                        //     if (rule_size_direction == 1) {
+                        //         $('.shortcut_add_bottom').css('top', `0`);
+                        //     }
+
+                        // }
+                    }
+                } else {
+                    if (t > details_scr) {
+                        $('.nav').removeClass('p3_Head_icon_sticky');
+                        $('.nav').addClass('p3_Head_icon_transition');
+                        // if (window.location.pathname.indexOf('products') > 0) {
+                        //     if (rule_size_direction == 1) {
+                        //         $('.shortcut_add_bottom').css('top', `${nav_height}px`);
+                        //     }
+                        // }
+                    }
+                    else if (t <= top) {
+                        $('.nav').removeClass('p3_Head_icon_fixed');
+                    } else if (t <= (top + nav_height)) {
+                        $('.nav').removeClass('p3_Head_icon_transition');
+                    }
+                }
+                setTimeout(function () {
+                    b = t
+                }, 0)
+            })
+        });
+        $('.car_close').click(() => {
+            $('.car_add').removeClass('car_conceal');
+        });
+        $('.pc_serch').click(() => {
+            $('.search_modal').css('transform', 'translateY(0)');
+            $('.search_goods_list').css('display', 'block');
+            $('.load_img').css('display', 'block');
+            $('.search_msk').css('display', 'block');
+            document.body.style.overflow = 'hidden';
+        })
+        $('.search_close_btn').click(() => {
+            $('.search_modal').css('transform', 'translateY(-100%)');
+            $('.search_goods_list').css('display', 'none');
+            $('.load_img').css('display', 'none');
+            $('.search_msk').css('display', 'none');
+            document.body.style.overflow = 'visible';
+        });
+        $('.input_search').focus(() => {
+            $('.field__label').css('top', '34%');
+            $('.input_search').addClass('input_focus');
+        });
+        $('.input_search').blur(() => {
+            if (!$('.input_search').val()) {
+                $('.field__label').css('top', '50%');
+                $('.input_search').removeClass('input_focus');
+            }
+        });
+        $('.input_search').on('input', headerSearchInputOn(function () {
+        }, 1000));
+        let timeHeaer = null;
+        function headerSearchInputOn(fn, delay) {
+            return function () {
+                if (timeHeaer !== null) {
+                    clearTimeout(timeHeaer);
+                }
+                timeHeaer = setTimeout(() => {
+                    fn.call(this);
+                    if (this.value) {
+                        $('.search_goods_list').css('display', 'block');
+                        $('.loading_icon').css('display', 'block');
+                        key = this.value;
+                        let data = {
+                            key: this.value,
+                            page: 1,
+                            pagesize: 4,
+                        }
+                        headerSearchGoods(data);
+                    } else {
+                        $('.shop_main_list').html('');
+                        $('.search_result_box').css('display', 'none');
+                        $('.search_goods_list').css('display', 'none');
+                        $('.loading_icon').css('display', 'none');
+                    }
+                }, delay)
+            }
+        };
+        async function headerSearchGoods(data) {
+            try {
+                let str = ``;
+                let res = await axios({
+                    method: 'post',
+                    url: '/index/Goodsview/getlist',
+                    data
+                })
+                if (res.data.code == 1) {
+                    let goodsList = res.data.data.data;
+                    if (goodsList.length > 0) {
+                        goodsList.forEach(item => {
+                            str += `
+                                <div class="shop_content_index" data_seoUrl="${item.seo_url}" data_id="${item.id}">
+                                    <img src="${item.goods_image}" alt="">
+                                    <div class="seach_goods_name">
+                                        <span class="shop_title font18" title="${item.goods_name}">${item.goods_name}</span>
+                                        <span>${item.cm_unit} ${item.price} ${item.cm_val}</span>
+                                    </div>
+                                    
+                                </div>
+                            `;
+                        });
+                        setTimeout(() => {
+                            $('.shop_main_list').html('');
+                            $('.shop_main_list').append(str);
+                            $('.search_result_box').css('display', 'block');
+                            $('.search_href').css('display', 'flex');
+                            $('.loading_icon').css('display', 'none');
+                            $('.search_key').text(`Search for '${data.key}'`);
+                            let searchArr = $('.shop_content_index');
+                            for (let i = 0; i < searchArr.length; i++) {
+                                $(searchArr[i]).bind('click', {
+                                    index: i
+                                }, headerSearchDetils)
+                            }
+                        }, 2000);
+
+                    } else {
+                        setTimeout(() => {
+                            $('.shop_main_list').html('');
+                            $('.search_key').text(`Search for '${data.key}'`);
+                            $('.search_result_box').css('display', 'none');
+                            $('.search_href').css('display', 'flex');
+                            $('.loading_icon').css('display', 'none');
+                        }, 1000)
+
+                    }
+                }
+            } catch (err) {
+                console.log(err);
+            }
+        };
+        function headerSearchDetils(event) {
+            let i = event.data.index;
+            let data_url = $(`.shop_content_index:eq(${i})`).attr('data_seoUrl');
+            if (data_url) {
+                window.location.href = `/products/${data_url}`;
+            } else {
+                let data_id = $(`.shop_content_index:eq(${i})`).attr('data_id');
+                window.location.href = `/products/${data_id}`;
+            }
+        };
+        $('.search_href').click(() => {
+            window.location.href = `/search/${key}`;
+        });
+        $('.car_box').click(() => {
+            window.location.href = '/car';
+        });
+        $('.loginacc').click(() => {
+            if (window.localStorage.getItem("tk")) {
+                window.location.href = `/my`;
+            } else {
+                window.location.href = `/login`;
+            }
+        });
+        $('.zhuxiao').click(() => {
+            window.localStorage.removeItem('tk');
+            window.localStorage.removeItem('Useremail');
+            window.location.href = '/';
+        });
+        $('.shop_Name').click(() => {
+            window.location.href = '/';
+        });
+        $('.shop_car_btn').click(() => {
+            window.location.href = '/car';
+        });
+        $('.checkout_btn').click(() => {
+            window.location.href = '/checkout';
+        });
+        $('.search__btn').click(() => {
+            let search_value = encodeURI($('.input_search').val());
+            window.location.href = `/search/${search_value}`;
+        });
+        function notifImgDialog() {
+            if (idDialog_seo) {
+                window.location.href = `/products/${idDialog_seo}`;
+            } else {
+                window.location.href = `/products/${idDialog}`;
+            }
+        };
+        document.addEventListener('visibilitychange', function () {
+            let isHidden = document.visible;
+            if (isHidden) {
+            } else {
+                if (window.location.pathname.indexOf("products") > -1) {
+                    $(".buyBtn").text('BUY IT NOW');
+                    $(".loading_btn").css("display", "none");
+                    $(".load_box").css('display', 'none');
+                    $(".buyBtn").removeAttr('disabled');
+                  
+                    $(".addBtn").text('ADD TO CART');
+                    $(".loading_btn_Add").css('display', 'none');
+                    $(".shortcut_add_car").removeAttr('disabled');
+                    $(".shortcut_buy_now").removeAttr('disabled');
+                }
+                if(window.location.pathname.indexOf("car") > -1){
+                    $(".checkout").text('Check out');
+                    $(".loading_btn").css('display', 'none');
+                    
+                }
+            }
+        }
+        );
+
+        $(document).ready(function() {
+        $(window).on('scroll', function() {
+            $('.lazy-load[data-src]').each(function() {
+                const img = $(this);
+                const windowTop = $(window).scrollTop();
+                const windowBottom = windowTop + $(window).height();
+                const imgTop = img.offset().top;
+
+                if (imgTop >= windowTop && imgTop <= windowBottom) {
+                    img.attr('src', img.data('src'));
+                    img.removeAttr('data-src'); 
+                    img.load(()=>{
+                        img.parent(".load-img-bg").addClass("bg_transparent");
+                        img.addClass("lazy-load_op1");
+                    })
+                    img.error(()=>{
+                        img.attr('src', '/common_files/images/imgs_err.png');
+                        img.addClass("lazy-load_op1");
+                    })
+                }
+                });
+            });
+            $(window).trigger('scroll');
+        });
+
+        
+        function print_val(pp) {
+            var url = window.location.pathname;
+            if(url.indexOf("?")>-1){
+                url = url + '&currency=' + pp;
+            }else{
+                url = url + '?currency=' + pp;
+            }
+            
+            $.ajax({
+                type:'post',
+                url: '/index/CurrencyManagementIpLogview/add',
+                dataType: 'json',
+                data:{cm_val: pp},
+                success:function(res){
+                    if (res.code == 1) {
+                        window.location.href = url;          
+                    }
+                }
+            })
+        }
+        
+        let currency_bo = false;
+        var panelContent = $('.currency-list');
+        $('.currency-more').click(function(e) {
+            e.stopPropagation();
+            panelContent.slideToggle();
+            currency_bo = !currency_bo;
+        });
+        $(".currency-list .login_name").click(function(e) {
+            e.stopPropagation();
+            $('.currency-more .text').html($(this).html());
+            let cur_val = $(this).attr("data-currency-code");
+            print_val(cur_val);
+            panelContent.slideToggle();
+            currency_bo = !currency_bo;
+        })
+        $(".currency-more").mouseleave(function(){
+            if(currency_bo){
+                panelContent.slideToggle();
+                currency_bo = !currency_bo;
+            }
+        })
+        const cookieExpires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+        function setCookie(name, value, expires) {  
+            document.cookie = `${name}=${value}; expires=${expires}; path=/`;  
+        }
+        function googleTranslateElementInit() {
+                setCookie("googtrans", '/en/ja' , cookieExpires);
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: false, exclude: ['.notranslate']}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async=""></script><link rel="stylesheet" href="/p2/assets/css/index.css?v=2.0">
+<link rel="stylesheet" href="/common_files/css/swiper.min.css">
+<script src="/common_files/js/swiper.min.js"></script>  
+
+<div class="font16 m3_index">
+        <div class="swiper_top">
+        <div class="banner" style="height: 533px;">
+            <div class="swiper mySwiper swiper-container-horizontal">
+                <div class="swiper-wrapper banner_swiper">
+                        
+                         
+                            <div class="swiper-slide banner_item swiper-slide-active" style="width: 1280px;">
+                                                                        <img src="https://oss.choosepickhere.com/template/20240314/202403142019262966430754.jpg" alt="">
+                                                               
+                                <div class="baner_info">
+                                                                                                            
+                                </div>
+                            </div>
+                                                            </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+            </div>
+        </div>
+    </div>
+        <main class="isolate">
+        <div class="rich-text">
+            <div class="rich-text__blocks">
+                <h2 class="font32 rich-text__blocks_h2">
+                    </h2><h4><i id="9pwai"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2個購入で送料無料になります！新型コロナウイルス（COVID-19）の影響により物流に影響があり、配達の遅れや納期の延長が発生する可能性があります。</font></font></i></h4>                
+            </div>
+        </div>
+    </main>
+        <div class="recommend_goods">
+        <ul class="product-grid">
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-64719" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-64719" data_id="336">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35673176965282_1024x1024.jpg?v=1690291858" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-64719                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ3579.1                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-67426" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-67426" data_id="335">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338728538274_1024x1024.jpg?v=1684216671" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-67426                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6862.69                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-29928" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-29928" data_id="334">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338697572514_1024x1024.jpg?v=1684216309" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-29928                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4261.19                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-36549" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-36549" data_id="333">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338548445346_1024x1024.jpg?v=1684214152" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-36549                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4850.75                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-90422" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-90422" data_id="332">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338650747042_1024x1024.jpg?v=1684215588" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-90422                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6562.69                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-70480" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-70480" data_id="331">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338773528738_1024x1024.jpg?v=1684217390" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-70480                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4850.75                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-60861" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-60861" data_id="330">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338828382370_1024x1024.jpg?v=1684218112" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-60861                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6305.97                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-56223" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-56223" data_id="329">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338867507362_1024x1024.jpg?v=1684218840" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-56223                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6485.07                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/ceramic-vase-40535" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="ceramic-vase-40535" data_id="328">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-vases-ceramic-vase-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338757374114_1024x1024.jpg?v=1684217033" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            陶器の花瓶-40535                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ3813.43                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-82360" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-82360" data_id="327">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-medium-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35347427590306_1024x1024.jpg?v=1684386054" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-82360                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5022.39                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-53385" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-53385" data_id="326">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378431070370_1024x1024.jpg?v=1672727650" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-53385                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4477.61                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-33650" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-33650" data_id="325">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378417504418_1024x1024.jpg?v=1672728176" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-33650                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6862.69                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-25196" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-25196" data_id="324">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35347409404066_1024x1024.jpg?v=1684385704" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-25196                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4649.25                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-18211" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-18211" data_id="323">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378487234722_1024x1024.jpg?v=1672724406" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-18211                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4604.48                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-93231" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-93231" data_id="322">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338368450722_1024x1024.jpg?v=1684211821" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-93231                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6711.94                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-76721" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-76721" data_id="321">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35347405308066_1024x1024.jpg?v=1684385701" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-76721                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6753.73                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-11239" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-11239" data_id="320">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35347398787234_1024x1024.jpg?v=1684385521" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-11239                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5992.54                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-12505" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-12505" data_id="319">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378478616738_1024x1024.jpg?v=1672727630" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-12505                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4104.48                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-72048" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-72048" data_id="318">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34669743898786_1024x1024.jpg?v=1672735195" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-72048                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4773.13                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-91364" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-91364" data_id="317">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34669739802786_1024x1024.jpg?v=1672719364" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-91364                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ3428.36                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-70823" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-70823" data_id="316">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378442997922_1024x1024.jpg?v=1672724227" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-70823                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ3208.96                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-32183" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-32183" data_id="315">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34377990340770_1024x1024.jpg?v=1670137988" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-32183                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5992.54                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-97987" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-97987" data_id="314">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378034479266_1024x1024.jpg?v=1670139774" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            手吹きガラス-97987                                        </font></font></span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5350.75                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-41158" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-41158" data_id="313">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378013376674_1024x1024.jpg?v=1670137975" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-41158                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6562.69                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-92672" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-92672" data_id="312">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35299892756642_1024x1024.jpg?v=1683528712" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-92672                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4738.81                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-38405" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-38405" data_id="311">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378366288034_1024x1024.jpg?v=1670138887" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-38405                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6544.78                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-56371" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-56371" data_id="310">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378389520546_1024x1024.jpg?v=1670138698" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-56371                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6320.9                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-34482" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-34482" data_id="309">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378315956386_1024x1024.jpg?v=1670139052" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-34482                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5667.16                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-98569" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-98569" data_id="308">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378401939618_1024x1024.jpg?v=1670138691" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-98569                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5888.06                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-20745" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-20745" data_id="307">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378385457314_1024x1024.jpg?v=1670138881" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-20745                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5858.21                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-45122" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-45122" data_id="306">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338358849698_1024x1024.jpg?v=1684211995" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-45122                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5902.99                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-54156" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-54156" data_id="305">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378289774754_1024x1024.jpg?v=1670138335" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-54156                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4773.13                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-37258" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-37258" data_id="304">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378305601698_1024x1024.jpg?v=1670139068" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-37258                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6562.69                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-71676" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-71676" data_id="303">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378177314978_1024x1024.jpg?v=1670139413" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-71676                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5992.54                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-34872" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-34872" data_id="302">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35299886497954_1024x1024.jpg?v=1683528537" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-34872                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6320.9                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-71525" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-71525" data_id="301">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338349248674_1024x1024.jpg?v=1684211644" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-71525                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6768.66                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-98520" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-98520" data_id="300">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378169647266_1024x1024.jpg?v=1670138159" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-98520                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6320.9                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-86932" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-86932" data_id="299">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338339549346_1024x1024.jpg?v=1684212007" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-86932                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5888.06                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-15900" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-15900" data_id="298">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338329587874_1024x1024.jpg?v=1684211455" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-15900                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4738.81                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-46532" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-46532" data_id="297">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378119315618_1024x1024.jpg?v=1670139601" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-46532                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6320.9                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-69763" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-69763" data_id="296">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378126688418_1024x1024.jpg?v=1670139422" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-69763                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5220.9                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-22250" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-22250" data_id="295">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34378084450466_1024x1024.jpg?v=1670139609" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-22250                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5370.15                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-91529" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-91529" data_id="294">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35299867230370_1024x1024.jpg?v=1683527989" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-91529                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4850.75                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-98542" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-98542" data_id="293">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35299915104418_1024x1024.jpg?v=1683529969" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-98542                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ6116.42                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-50620" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-50620" data_id="292">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34373803770018_1024x1024.jpg?v=1670137806" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-50620                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4261.19                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-86457" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-86457" data_id="291">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34373711233186_1024x1024.jpg?v=1670137611" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-86457                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4773.13                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-27144" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-27144" data_id="290">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34373814780066_1024x1024.jpg?v=1670137798" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-27144                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4323.88                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/hand-blown-glass-13241" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="hand-blown-glass-13241" data_id="289">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/files/bloomr-glass-decor-hand-blown-glass-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-35338295181474_1024x1024.jpg?v=1684210909" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Hand Blown Glass-13241                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ5858.21                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/round-ficonstone-tree-pot-50803" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="round-ficonstone-tree-pot-50803" data_id="288">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-pots-round-ficonstone-tree-pot-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34707003277474_1024x1024.jpg?v=1673097350" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Round Ficonstone Tree Pot-50803                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4022.39                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            <li class="product_grid__item">
+                    <a href="/products/round-ficonstone-tree-pot-63046" style="display:block;;color:rgb(36, 34, 45);">
+                        <div class="card-wrapper" data_seourl="round-ficonstone-tree-pot-63046" data_id="287">
+                            <div class="card__inner load-img-bg">
+                                <img class="card__inner_img card__inner_img_show lazy-load" data-src="https://bloomr.ae/cdn/shop/products/bloomr-pots-round-ficonstone-tree-pot-artificial-flowers-artificial-trees-artificial-plants-dubai-saudi-arabia-uae-34791477182626_1024x1024.jpg?v=1674477428" src="" alt="">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__information">
+                                    <h3 class="card__heading h5">
+                                        <span class="full-unstyled-link font16">
+                                            Round Ficonstone Tree Pot-63046                                        </span>
+                                    </h3>
+                                    <div class="product_grid_price notranslate">
+                                                                                <span class="price-item-selling goods_compare font18">
+                                            Ұ4470.15                                        </span>
+                                                                                <span class="price-item-selling font18">
+                                            Ұ141.79 JPY                                        </span>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+    <style>
+    .landing_page{
+        display: none;
+    }
+    .squeeze_swiper {
+        width: 100%;
+        height: 260px;
+        position: relative;
+    }
+
+    .squeeze_swiper .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .squeeze_swiper  .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .sw_a {
+        width: 100%;
+        height: 100%;
+    }
+    .laning_title{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+    .landint_item_name {
+        display: flex;
+        height: calc(100% - 220px);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing_item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .landing_length2{
+        height: 100%;
+        display: none;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    .landing_length2_item{
+        width: calc((100% - 20px)/2 );
+        height: 100%;
+        cursor: pointer;
+    } 
+
+    .landing_item_img {
+        width: 100%;
+        height: 100%;
+    }
+    .landing_item_img  img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+</style>
+
+<div class="landing_page">
+    <h2 class="laning_title">Recommended Album</h2>
+    <div class="squeeze_swiper">
+        <div class="swiper-container swiper-page">
+            <div class="swiper-wrapper pageview">
+            </div>
+            
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="landing_length2">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    getPublicityPage([]);
+    function getPublicityPage(pageviews) {
+        let str = ``;
+        if (pageviews) {
+            // pageviews.length >= 3
+            if (pageviews.length >= 3) {
+                pageviews.forEach(item => {
+                    str += `
+                    <div class="swiper-slide">
+                        <a href="/promotion/${item.seo_url}" class="sw_a landing_item_img" >
+                            <img src="${item.pic}" alt="">
+                        </a>
+                    </div>
+                    
+                    `
+                });
+                // <div class="swiper-slide swiper_page_views" data_seoUrl="${item.seo_url}">
+                //         <div class="landing_item">
+                //             <div class="landing_item_img">
+                //                 <img src="${item.pic}" alt="">
+                //             </div>
+                //             <div class="landint_item_name" style="display:none;">
+                //                 <span>${item.name}</span>
+                //             </div>
+                //         </div>
+                //     </div>
+                $(".pageview").append(str);
+                
+                $(".landing_page").css("display", "block");
+                $(".landing_swiper").css("display", "block");
+                var squeeSwiper = new Swiper(".swiper-page", {
+                    slidesPerView: 3,
+                    paginationClickable: true,
+                    spaceBetween: 30,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev'
+                });
+            } else if (pageviews.length == 2) {
+                pageviews.forEach(item => {
+                    str += `
+                    <div class="landing_length2_item" data_seoUrl="${item.seo_url}">
+                        <div class="landing_item">
+                            <div class="landing_item_img">
+                                <img src="${item.pic}"
+                                    alt="">
+                            </div>
+                            <div class="landint_item_name" style="display: none;">
+                                <span>${item.name}</span>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                })
+                $(".swiper-page").css("display","none");
+                $(".swiper-button-prev").css("display","none");
+                $(".swiper-button-next").css("display","none");
+                $(".landing_length2").append(str);
+                $(".landing_length2").css("display", "flex");
+                $(".landing_page").css("display", "block");
+            } else if (pageviews.length == 1) {
+                pageviews.forEach(item => {
+                    str += `
+                    <div class="landing_length2_item" data_seoUrl="${item.seo_url}">
+                        <div class="landing_item">
+                            <div class="landing_item_img">
+                                <img src="${item.pic}"
+                                    alt="">
+                            </div>
+                            <div class="landint_item_name" style="display: none;">
+                                <span>${item.name}</span>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                })
+                $(".landing_length2").append(str);
+                $(".swiper-page").css("display","none");
+                $(".swiper-button-prev").css("display","none");
+                $(".swiper-button-next").css("display","none");
+                $(".landing_length2_item").width("100%");
+                $(".landing_length2").css("display", "flex");
+                $(".landing_page").css("display", "block");
+            }
+            let pageLengthArr = $(".landing_length2_item");
+            for (let i = 0; i < pageLengthArr.length; i++) {
+                $(pageLengthArr[i]).bind("click", {
+                    index: i
+                }, clickLengtHande)
+
+            }
+        }
+        
+    }
+    function clickLengtHande(e) {
+        let i = e.data.index;
+        let seo_url = $(`.landing_length2_item:eq(${i})`).attr("data_seoUrl");
+        window.location.href = `/promotion/${seo_url}`
+    }
+</script>            
+</div>
+<div id="notice2" class="advertMask2 show">
+    <i class="iconfont icon-guanbi close2 close_btn"></i>
+    <div class="msk_content2 font_common">
+
+        <h1 class="msk_title2 title_text"></h1>
+
+        <p class="explain2 explain_text"></p>
+        <div class="copy2 copy_code">
+            <i class="iconfont icon-xiajiantou"></i>
+            Click to copy
+        </div>
+        <br>
+
+        <div class="code2 codeVal"></div>
+        <br>
+
+        <button class="show_btn2 show_btn_click"></button>
+    </div>
+</div>
+<style>
+    /* pop-up windows 2 */
+.advertMask2 {
+    position: fixed;
+    z-index: 15;
+    width: 500px;
+    height: 340px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://oss.choosepickhere.com/tc/car_imgs/5-pc.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: none;
+}
+
+.msk_content2 {
+    width: 60%;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    box-sizing: border-box;
+    padding: 10px 20px 0 20px;
+}
+
+.msk_title2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 0;
+    margin-top: 0px;
+}
+
+
+.explain2 {
+    width: 70%;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+.code2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 0 0 15px 0;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.copy2 {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.show_btn2 {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    bottom: -50px;
+    left: 51%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close2 {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #000;
+}
+</style><script src="/common_files/js/common_method.js"></script>
+<script>
+    $('.banner').height(document.documentElement.clientHeight - $('.top').height() - $('.nav').height());
+    let discountId = "";
+    let homeData = {};
+    let val_1 = [];
+    let val_2 = [];
+    let val_3 = [];
+    let arr_value1 = [];
+    let arr2_value1 = [];
+
+    let spec_value1 = {};
+    let name1_value = "";
+
+    let spec_value2 = {};
+    let name2_value = "";
+
+    let spec_value3 = "";
+    let name3_value = "";
+    let price_usd = "";
+    let sizeId = "";
+    let goods_imageCar = "";
+    let seo_url = "";
+    let swiper = new Swiper(".mySwiper", {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    let shop_info = $('.rich-text__blocks_h2 img');
+    for (let i = 0; i < shop_info.length; i++) {
+        $(shop_info[i]).css({
+            "width":"100%",
+            "height":"auto"
+        });
+        $(shop_info[i]).attr("width",'100%');
+        $(shop_info[i]).attr("height",'auto');
+    }
+
+    function popInfo(res) {
+        if (res) {
+            let pinfo = res[0];
+            if (pinfo.status == 1 && sessionStorage.getItem('status') != "1" && (pinfo.type == 1 || pinfo.type == 3) && pinfo.popPage.indexOf('首页')>-1) {
+                if(pinfo.discountValue){
+                    $(`.show`).show();
+                    $(`.title_text`).text(pinfo.popupTitle);
+                    $(`.explain_text`).text(pinfo.textarea);
+                    $(`.codeVal`).text(pinfo.discountValue);
+                    $(`.show_btn_click`).text(pinfo.characters);
+                    $(`.codeVal`).click(function () {
+                        var input = document.createElement("input");
+                        input.value = pinfo.discountValue;
+                        document.body.appendChild(input);
+                        input.select();
+                        document.execCommand("Copy");
+                        document.body.removeChild(input);
+                        Dreamer.success("Copy successful");
+                    });
+                        $(`.show_btn_click`).on('click', function () { 
+                        let input = document.createElement("input");
+                        input.value = pinfo.discountValue;
+                        document.body.appendChild(input);
+                        input.select();
+                        document.execCommand("Copy");
+                        document.body.removeChild(input);
+                        Dreamer.success("Copy successful");
+                 });
+                }
+            }
+            $(`.close_btn`).click(function () {
+                $(`.show`).css({
+                    'display': 'none'
+                });
+                let commitStatus = 1;
+                sessionStorage.setItem('status', commitStatus);
+            });
+           
+        }
+    };
+    popInfo([{"status":"0","popPage":"\u9996\u9875\uff0c\u5546\u54c1\u8be6\u60c5\u9875","popupDetail":"3","popupTitle":"Get 5% Discount","textarea":"Use code at check out,all items 5% off!","discountValue":"","characters":"SHOP NOW","link":"","type":"1","index":"1"}]);
+    $.ajax({
+        type:'post',
+        url: '/index/Home/reportAction',
+        dataType: 'json',
+        data: {
+            device_type:'',
+            country_code:'',
+            source: 'Direct',
+            action_type:1,
+            action_url: window.location.href
+        }, 
+    })
+    let tj_page = 1;
+    let tj_lastPage = 2;
+    let tj_dom = $(".product-grid");
+    let equipment = 2   //1:手机、2：pc
+    if(tj_dom.length>0){
+        scrollPage(tj_page,tj_lastPage,tj_dom,equipment,"index");
+    }
+</script>
+<script src="/common_files/js/dialog_new.js"></script>
+<script type="text/javascript">
+    setDialog({"page":"\u9996\u9875\uff0c\u5546\u54c1\u8be6\u60c5\u9875","title":"##\u7528\u6237## in purchased","latest":"1","before":"3","show":"5","intervalTime":"10","all":"10","goods":[],"status":"0","type":"1"})
+</script>
+<script src="/common_files/js/dream-msg.min.js"></script>
+<div id="footer_content" class="p3_footer  bgColor_com">
+    <div class="footer__content ">
+        <div class="footer__content_top">
+                        <div class="email_letter">
+                <div class="contacts">
+                    <div class="contacts_text">
+                        <h2 class="font30 contacts_text_h2 fw600">
+                            Subscribe to our newsletter                        </h2>
+                        <div class="newsletter__subheading mt20">
+                            <p class="font16 newsletter__subheading_p">
+                                Sign up for our email list and get 15% off your first order                            </p>
+                        </div>
+                        <div class="newsletter-form">
+                            <div class="field">
+                                <label for="email_user_re" class="field_label">Email</label>
+                                <input type="email" name="email_user" class="field_input" id="email_user_re">
+                                <button class="field_btn">
+                                    <span class="iconfont icon-youjiantou email_icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="focus_shop">Thanks for subscribing!</p>
+                    </div>
+                </div>
+                <div class="footer-block--newsletter">
+                    <a href="https://pinterest.com/pin/create/button/?url=https://shop002.com&amp;description=shop002" target="_blank"><img class="share_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020545782563886.png"></a><a href="https://www.facebook.com/sharer.php?u=https://shop002.com" target="_blank"><img class="share_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020547174813449.png"></a><a href="https://twitter.com/share?text=shop002&amp;url=https://shop002.com" target="_blank"><img class="share_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020547985507989.png"></a>                </div>
+            </div>
+        </div>
+        <div class="footer__content-bottom">
+            <div class="pay_img">
+                <img class="pay_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020541776327217.png"><img class="pay_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020543151764379.png"><img class="pay_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020543813482259.png"><img class="pay_icon_item" src="https://oss.choosepickhere.com/commons/20240314/202403142020544427752300.png">            </div>
+            <div class="footer__content-bottom-wrapper">
+                © 2024, Powered by slowlife.top            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let email_rex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    $('.field_input').focus(() => {
+        $('.field_label').addClass('field_label_show');
+        $('.field_input').addClass('field_input_show');
+        $('.field_input').addClass('field_input_border');
+    })
+
+    $('.field_input').blur(() => {
+        if ($('.field_input').val()) {
+            $('.field_input').removeClass('field_input_border');
+        } else {
+            $('.field_label').removeClass('field_label_show');
+            $('.field_input').removeClass('field_input_border');
+        }
+    })
+
+    async function footerInfo() {
+        let types = '3066';
+        let res_ff = await getMouldSetting(types);
+        if (res_ff.length > 0) {
+            let footerArr = JSON.parse(res_ff[0].content);
+            console.log(footerArr);
+            let footerStr = ``;
+            footerArr.forEach(item => {
+                if (item.type == 'text') {
+                    footerStr += `
+                    <div class="footer-block">
+                        <h2 class="font18 fw600 footer-block_h2">${item.title}</h2>
+                        <div class="footer-block-main">
+                            <p class="footer-block-main-p font16 font_color">
+                                ${item.desc}
+                            </p>
+                        </div>
+                    </div>
+                        `
+                } else if (item.type == 'images') {
+                    footerStr += `
+                    <div class="footer-block">
+                        <img src="${item.image}" alt="">
+                    </div>
+                        `
+                } else if (item.type == 'link') {
+                    let urlStr = `<h2 class="font18 fw600 footer-block_h2">${item.title}</h2>`
+                    let menuName = ``;
+                    item.contentList.forEach(v => {
+                        menuName += `
+                        <li class="font14"><a class="font_color" href='${v.target_url}'>${v.name}</a></li>
+                        `
+                    })
+                    footerStr += `
+                    <div class="footer-block">
+                        ${urlStr}
+                        <ul class="footer-block_ul font16 font_color">
+                            ${menuName}
+                        </ul>
+                    </div>
+                    `;
+
+                }
+            });
+
+            $('.footer_main').append(footerStr);
+        }
+    }
+
+    $('.field_btn').click(() => {
+        if (!email_rex.test($('.field_input').val())) {
+            $('.field_input').css({ borderColor: 'red' });
+            $('.focus_shop').css('opacity', '1');
+            $('.focus_shop').text('Please enter the correct email address!');
+            setTimeout(()=>{
+                $('.focus_shop').css('opacity', '0');
+                $('.field_input').css({ borderColor: 'rgba(18, 18, 18, 0.4)' });
+            },2000)
+        } else {
+            
+            let email = $('.field_input').val();
+            focusShop(email);
+        }
+
+    });
+    async function focusShop(email) {
+        try {
+            let res = await axios({
+                method: 'post',
+                url: '/index/Home/subscribeStore',
+                data: {
+                    email
+                }
+            });
+            if (res.data.code == 1) {
+                $('.field_input').css({ borderColor: 'rgb(36,34,45)' });
+                $('.focus_shop').text('Thanks for subscribing!');
+                $('.focus_shop').css('color', 'green');
+                $('.focus_shop').css('opacity', '1');
+                $('.field_input').val('');
+                $('.field_label').removeClass('field_label_show');
+                setTimeout(()=>{
+                    $('.focus_shop').css('opacity', '0');
+                    $('.field_input').css({ borderColor: 'rgba(18, 18, 18, 0.4)' });
+                },2000)
+            }else{
+                $('.field_input').css({ borderColor: 'red' });
+                $('.focus_shop').css('opacity', '1');
+                $('.focus_shop').text(`${res.data.msg}!`);
+                $('.field_input').val('');
+                $('.field_label').removeClass('field_label_show');
+                setTimeout(()=>{
+                    $('.focus_shop').css('opacity', '0');
+                    $('.field_input').css({ borderColor: 'rgba(18, 18, 18, 0.4)' });
+                },2000)
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    }
+</script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">この翻訳を評価してください</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">いただいたフィードバックは Google 翻訳の改善に役立てさせていただきます</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="良い翻訳" aria-label="良い翻訳" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="悪い翻訳" aria-label="悪い翻訳" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="言語翻訳ウィジェット" style="visibility: visible; box-sizing: content-box; width: 1646px; height: 263px; display: none;"></iframe><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="言語翻訳ウィジェット" style="visibility: visible; box-sizing: content-box; width: 239px; height: 69px; display: none;"></iframe></body></html>

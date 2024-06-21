@@ -1,0 +1,12 @@
+{
+    "url": "https://www.scanace.com/",
+    "question": "Please analyze this URL https://www.scanace.com/",
+    "thought": "I should check if the website has any online presence  I should check if the website has any recent activity on social media I should check if the website has any recent activity on social media None of the search results contain any malicious links. I should check the website's domain name information The website's domain was created in 1996, which is quite some time ago. The website's domain was created in 1996, which is quite some time ago.",
+    "answer": {
+        "result": "False",
+        "scam_type": "Fake shopping site",
+        "reason": "The website is a fake shopping site that sells products at unusually low prices. The website also has a lack of information about the company behind it and does not provide any contact information. Additionally the website has a privacy policy that is not clear and does not provide any information about how the company will use customer data."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

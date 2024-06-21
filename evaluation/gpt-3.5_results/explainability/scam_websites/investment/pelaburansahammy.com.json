@@ -1,0 +1,12 @@
+{
+    "url": "https://pelaburansahammy.com/",
+    "question": "Please analyze this URL https://pelaburansahammy.com/",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is accessible, now I need to extract the text from the HTML to analyze its content. The website shows multiple red flags such as unusually high returns, claims of being an industry leader, and a lack of updated information. The payment methods listed are not common and are unusual, and the privacy of customer information notation is ambiguous. The website also claims to be an international financial company but lacks detailed information on the company itself. Based on these characteristics, it is likely that this URL is a scam website. The WHOIS information shows that the domain was created recently and the registrant information is redacted for privacy, which is a common practice for scam websites. This further supports the suspicion that the website is a scam. - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake investment website",
+        "reason": "The website exhibits characteristics of a scam website such as unusually high returns lack of detailed company information ambiguous privacy policy and redacted registrant information. The WHOIS information also indicates recent domain creation and redacted registrant details further supporting the suspicion of being a scam."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

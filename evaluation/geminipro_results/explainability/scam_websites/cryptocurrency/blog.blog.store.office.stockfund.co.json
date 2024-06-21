@@ -1,0 +1,12 @@
+{
+    "url": "http://blog.blog.store.office.stockfund.co/",
+    "question": "Please analyze this URL http://blog.blog.store.office.stockfund.co/",
+    "thought": "The URL seems to be related to some stock fund blog, I should take a look at the content.   I should first access the website to get its text. {",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake domain name registration site",
+        "reason": "The website is about domain name registration. It has texts that claim to restore suspended domains. It also has elements that target human psychological weaknesses such as fear of losing a domain name."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

@@ -1,0 +1,12 @@
+{
+    "url": "https://cfunitltd.org/",
+    "question": "Please analyze this URL https://cfunitltd.org/",
+    "thought": "I should extract the text from the URL to check for claims I should check the text for claims of unusually low prices and free offers I should check the text for claims of being able to get an amount of money that is generally not possible I should check the text for claims of being able to get an amount of money that is generally not possible I should check the text for any psychological weaknesses that are being targeted I should check the text for information on non-existent companies I should check the text for any non-existent companies I should check the text for any handling of different products from common e-commerce websites I should check the text for any inquiry phone number and email address that are not appropriate for business use I should check the text for any privacy of customer information notation that are ambiguous I should check the text for any payment methods that are not common and are unusual I should check the text for any information that has not been updated I now know the final answer {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "The website claims to offer unusually low prices and free offers which is a common characteristic of scam websites."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

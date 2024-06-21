@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="ja"><head><style>.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,.12);border:1px solid #d2e3fc;outline:0}.dismissButton:focus:not(:focus-visible){background-color:#fff;border:1px solid #dadce0;outline:none}.dismissButton:focus-visible{background-color:rgba(66,133,244,.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,.16);border:1px solid #d2e2fd}.dismissButton:hover:focus:not(:focus-visible){background-color:rgba(66,133,244,.04);border:1px solid #d2e3fc}.dismissButton:hover:focus-visible{background-color:rgba(66,133,244,.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,.16);border:1px solid #d2e2fd;-webkit-box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}sentinel{}
+</style>
+<meta charset="UTF-8">
+<title>PAPA-KING</title>
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Belleza" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="images/fav.png" type="image/png">
+<script src="js/jquery-1.9.1.min.js"></script> 
+
+
+
+
+<!--　スムーススクロール　-->
+<script type="text/javascript">
+	var headH = 90;
+	$(function(){
+		$('a').click(function(){
+			var speed = 700;
+			var href= $(this).attr("href");
+			var target = $(href == "a" || href == "" ? 'html' : href);
+			var position = target.offset().top - headH;
+			$("html, body").animate({scrollTop:position}, speed, "swing");
+			return false;
+		});
+	});
+</script>
+
+
+<!--　マップ　-->
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+	function googleMap() {
+		var latlng = new google.maps.LatLng(35.339880, 139.525500);
+		var myOptions = {
+		zoom: 14,
+		center: latlng,
+		mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }};
+		var map = new google.maps.Map(document.getElementById('map1'), myOptions);
+		var icon = new google.maps.MarkerImage('images/icon.png',new google.maps.Size(80,120),new google.maps.Point(0,0));
+		var markerOptions = {
+		position: latlng,
+		map: map,
+		icon: icon,
+		title: 'PAPA-KING',
+		animation: google.maps.Animation.DROP};
+		var marker = new google.maps.Marker(markerOptions);
+		var styleOptions = [{"stylers": [{ "hue": '#e3ad30' }]}];
+		var styledMapOptions = { name: 'PAPA-KING' }
+		var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+		map.mapTypes.set('style', sampleType);
+		map.setMapTypeId('style');};
+		google.maps.event.addDomListener(window, 'load', function() {
+		googleMap();
+	});
+</script>
+
+<!--	スクロールトップ
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+	-->
+
+<script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/56/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/56/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/56/7/map.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/56/7/marker.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/56/7/controls.js"></script></head>
+
+<body>
+
+
+
+
+<div class="wrapper">
+
+
+	<p class="logo"><img src="images/logo_m.png" alt="PAPA-KING"></p>
+	
+	<p class="sp splogo"><a href="#top"><img src="images/logo_t.png" alt="PAPA-KING"></a></p>
+
+	<!--* 　グローバルバビゲーション　 */-->
+		<ul class="navi pc">
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#gallery">ATELIER SHOP</a></li>
+			<li><a href="#top"><img src="images/logo_t.png" alt="PAPA-KING"></a></li>
+			<li><a href="#school">SCHOOL</a></li>
+			<li><a href="#access">ACCESS</a></li>
+		</ul>
+		
+		<ul class="navi sp">
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#gallery">ATELIER SHOP</a></li>
+			<li><a href="#school">SCHOOL</a></li>
+			<li><a href="#access">ACCESS</a></li>
+		</ul>
+
+	<!--* 　グローバルバビゲーション　 */-->
+
+
+
+	<!--* 　ホーム　 */-->
+
+	<div id="top">
+	
+		<p>
+			<img src="images/top_1.png" alt="papaking">
+		</p>
+		
+		<!--* <div class="textbox">
+				<p class="web-font title">NEWS</p>
+				<p class="text">テキスト入ります。テキストテキスト入ります。テキストテキストテキストテキスト入ります。</p>
+		</div>*/-->
+		
+	</div>
+	
+
+
+
+	<!--* 　ニュース　 */-->	
+	
+	<div id="news">
+	
+		<h2>INFORMATION</h2>	
+		
+		<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/BVhIHQwlGDj/embed/?cr=1&amp;v=8&amp;wp=658&amp;rd=http%3A%2F%2Fwww.papa-king.com&amp;rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A1916.599998474121%2C%22ls%22%3A142.89999771118164%2C%22le%22%3A1005.1999969482422%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="866" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 658px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe><table>
+		
+		<tbody><tr>
+<th></th>
+<td>
+【営業再開についてのお知らせ】<br>
+新型コロナウイルス感染拡大防止に伴う店舗休業により、皆さまには大変なご不便をお掛けし、誠に申し訳ございませんでした。<br>
+政府からの緊急事態宣言・全面解除を受け、6月1日（月）よりアトリエ店舗・革教室の営業を再開致します。<br>
+営業再開にあたり、引き続き感染予防への取り組みを徹底して参ります。<br>
+<br>
+
+◇お客様へのお願い<br>
+・こまめな手洗いにご協力をお願いいたします。<br>
+・アトリエ入口に手指消毒剤を設置しております。<br>
+　ご入店時に必ず消毒いただきますようお願いいたします。<br>
+・マスクの着用をお願いいたします。<br>
+<br>
+皆様に安心してご利用いただけますよう、ご協力のほど宜しくお願い申し上げます。<br>
+<br>
+【レザー教室・受講生募集！！】<br>
+PAPA-KINGでは手縫いのレザー教室を開講しております。みどり豊かな鎌倉のアトリエで、初心者から経験者まで個性や目的に合わせたマンツーマン指導でわかりやすく手ほどきいたします。<br>
+→詳しくは<a href="http://papa-king.com/school.pdf" target="_blank">コチラ</a><br>
+TEL 0467-53-7722　e-mail：<a href="mailto:info@papa-king.com">info@papa-king.com</a><br><br>
+
+</td>
+
+
+<script async="" defer="" src="//www.instagram.com/embed.js"></script>
+
+</tr>
+		
+		</tbody></table>
+		
+	</div>
+	
+		
+		
+
+	<!--* 　ABOUT　 */-->
+
+	<div id="about">
+	
+		<h2>ABOUT</h2>
+		
+		<h3>ひと針ひと針、思いを込めて作っています。</h3>
+		
+		<div class="clearfix">
+	
+			<p class="left">
+				<img src="images/bag.png" alt="papaking">
+			</p>
+			
+			<p class="right text">
+			2003年 PAPA-KINGは東京の小さなアトリエで誕生しました。<br>
+			革のぬくもりに魅せられながら、手縫いだからできることを追い求め<br>
+			ひとつひとつ手づくりでバッグや財布をつくってきました。<br><br>
+	
+			シンプルでありながら存在感のあるデザイン。<br>
+			革に時を刻みながらもっと一緒にいたくなる、<br>
+			肌身離さず持ちたくなるような革製品。<br>
+			そんな革製品をお届けするため、<br>
+			天然由来の良質な革を使い、手縫いで仕上げています。<br><br>
+	
+			2011年 鎌倉へ移り、山と緑に囲まれた静かなアトリエで<br>
+			今日もコツコツ縫っています。<br>
+			</p>
+		
+		</div>
+		
+	</div>	
+	
+	
+	
+	<!--* 　PROMISE　 */-->
+	
+	<div id="promise">
+	
+		<h2>PROMISE</h2>	
+	
+		<p class="text">・お客様ひとりひとりのご要望にあったモノ作りをいたします。</p>
+		<p class="text">・made in Japanにこだわります。</p>
+		<p class="text">・当店の製品を長年ご使用になり、修理などのメンテナンスが<br>　必要になった場合は喜んでお受けいたします。<br>　（内容により有償）</p>
+		
+		<p class="btn"><a href="http://papa-king.af.shopserve.jp/" target="_blank">→ <span class="web-font">ONLINE SHOP</span></a></p>
+	
+		<p class="img pc">
+			<img src="images/right.png" alt="papaking">
+		</p>	
+	
+	</div>	
+	
+	
+	
+	<!--* 　ATELIER SHOP　 */-->
+	
+	<div id="gallery">
+	
+		<h2>ATELIER SHOP</h2>	
+		
+		<h3>「手に取って見てみたい」にお応えできる空間をつくりました<br>鎌倉のみどり豊かなアトリエでお待ちしています</h3>	
+	
+	
+		<div class="inner">
+		
+			<p>
+				<img src="images/main_1.png" alt="papaking">
+			</p>
+				
+			<div class="textbox">
+				<p class="web-font">mom - thu<br>open 11:00 - 17:00</p>
+			
+				<p class="web-font">tel&nbsp;&nbsp;0467-53-7722<br>mobile&nbsp;&nbsp;090-9829-4666</p>
+                                		
+</div>
+
+<div class="txtbox2">
+<p class="cap">不在の場合もございます。ご来店の際は、事前にお電話をいただけますようお願いいたします。<br>
+<span class="web-font">open：月～木&nbsp;&nbsp;&nbsp;close：金・土・日・祝</span></p>	
+</div>
+			
+
+		</div>		
+	</div>	
+	
+	
+	
+	<!--* 　SCHOOL　 */-->
+
+	<div id="school">
+	
+		<h2>SCHOOL</h2>	
+		
+		<h3>世界でたったひとつのレザーアイテムを<br>ご自分へ、大切なひとへ つくってみませんか</h3>	
+	
+		<div class="clearfix">
+	
+			<div class="left">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					  <div class="item"><img src="images/sl_1.png" alt="papaking"></div>
+				</div>
+			</div>
+			
+			<div class="right">
+			    <h3 class="sau">レザー教室へようこそ</h3>
+				<p class="text">
+				初心者から経験者まで、<br>
+				個性や目的に合わせたマンツーマン指導で基礎からしっかり学べます。<br>
+				定員6名の少人数制。<br>
+				指導経験もある作家が、手縫いによるレザーアイテムの作り方を<br>
+				丁寧でわかりやすく手ほどきいたします。
+				</p>
+				
+				<p class="text">
+				充実した時間と物作りの楽しさを感じる、居心地のよい空間<br>
+				みどり豊かな鎌倉のアトリエで、ゆったり楽しいひとときをお過ごしください。
+				</p>
+				
+				<p class="text box ">火・水・木　<span class="web-font">11:00 - 13:00&nbsp;&nbsp;/&nbsp;&nbsp;14:00 - 16:00</span><br>
+					お問い合わせ　<span class="web-font">0467-53-7722&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="mailto:info@papa-king.com"><span class="web-font">info@papa-king.com</span></a><br>
+					<span><a href="school.pdf" target="_blank">詳細はコチラ</a></span>
+				</p>
+				
+			</div>
+		
+		</div>
+	
+	</div>
+	
+
+<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-1" src="https://www.instagram.com/p/BjEkXNbAe8a/embed/?cr=1&amp;v=8&amp;wp=658&amp;rd=http%3A%2F%2Fwww.papa-king.com&amp;rp=%2F#%7B%22ci%22%3A1%2C%22os%22%3A1920%2C%22ls%22%3A142.89999771118164%2C%22le%22%3A1005.1999969482422%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="866" data-instgrm-payload-id="instagram-media-payload-1" scrolling="no" style="background: white; max-width: 658px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+<script async="" defer="" src="//www.instagram.com/embed.js"></script>
+
+	
+	
+	
+	<div id="access">
+	
+		<h2>ACCESS</h2>	
+	
+
+		<div id="map1" style="width:100%; height:450px; margin:0 auto;"><div style="height: 100%; width: 100%;"></div><div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"><div><img alt="" src="http://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false" style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;"></div><div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps correctly.</span></div><table style="width: 100%;"><tr><td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=keyless#api-key-and-billing-errors" target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this website?</a></td><td style="text-align: right;"><button class="dismissButton">OK</button></td></tr></table></div></div>
+
+		<div class="box">
+			<p class="text web-font">〒247-0066<br>神奈川県鎌倉市山崎819-4<br>tel：0467-53-7722</p>
+			<p><span class="bold">JR大船駅より</span>
+ 				<span>京急バスにて4つ目バス停（約5分）
+				<br> 「山崎」下車、徒歩3分<br> （ 東口ロータリー、3～4番乗り場から<br>　  出ているバスにご乗車ください）</span>
+				<span> 湘南モノレールにて1つ目の駅（約2分）<br>「富士見町」下車、徒歩10分</span><span class="bold2">駐車スペースあり</span></p>
+		</div>
+	
+	</div>
+	
+	
+
+	
+	
+	<div id="footer">
+		<p><img src="images/logo_f.png" alt="PAPA-KING"></p>
+		<p class="copy">Made in Japan. Copyright © 2015 PAPA-KING Inc. All rights reserved.</p>
+	</div>
+	
+</div>
+
+
+	
+
+</body></html>

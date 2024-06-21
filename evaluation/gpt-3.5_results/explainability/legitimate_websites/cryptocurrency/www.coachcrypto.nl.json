@@ -1,0 +1,12 @@
+{
+    "url": "https://www.coachcrypto.nl/",
+    "question": "Please analyze this URL https://www.coachcrypto.nl/",
+    "thought": "I need to check the content of the website to see if it exhibits any characteristics of a scam website. The website is accessible, now I need to extract the text and check for any unusual claims or information. The website does not exhibit any characteristics of a scam website. It appears to be a legitimate coaching service for cryptocurrency. {",
+    "answer": {
+        "result": "false",
+        "scam_type": "null",
+        "reason": "The website is a legitimate coaching service for cryptocurrency and does not exhibit any characteristics of a scam website."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

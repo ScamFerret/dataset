@@ -1,0 +1,856 @@
+<!DOCTYPE html><html lang="en"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Greycourt : independent investment advisory firm</title>
+
+  <meta name="robots" content="max-image-preview:large">
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d5bd16b6339877f2b6839fd9/script.js"></script><script src="https://cdn-cookieyes.com/client_data/d5bd16b6339877f2b6839fd9/banner.js" async="" id="cookieyes-banner"></script><link rel="dns-prefetch" href="//use.typekit.net">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.25.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.25.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.greycourt.com\/","page_referrer":"http:\/\/www.greycourt.com"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-QB5Y74SWL7',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-QB5Y74SWL7', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="greycourt-css-css" href="https://www.greycourt.com/wp-content/themes/greycourt-2018-v1.06/library/assets/css/app.css?v=1.0.8" type="text/css" media="all">
+<link rel="stylesheet" id="greycourt-fonts-css" href="https://use.typekit.net/nuo3zvt.css" type="text/css" media="all">
+<script type="text/javascript" src="https://www.greycourt.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.greycourt.com","hash_tracking":"false","v4_id":"G-QB5Y74SWL7"};/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://www.greycourt.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.greycourt.com/wp-json/wp/v2/pages/3746"><link rel="canonical" href="https://www.greycourt.com/">
+<link rel="alternate" type="application/json+oembed" href="https://www.greycourt.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.greycourt.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.greycourt.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.greycourt.com%2F&amp;format=xml">
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-31016634-1', 'auto');
+			ga('require', 'linkid');
+			ga('send', 'pageview');
+		</script>
+
+	<link href="https://www.greycourt.com/wp-content/themes/greycourt-2018-v1.06/library/assets/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <script async="" src="https://www.greycourt.com/wp-content/themes/greycourt-2018-v1.06/library/assets/js/icons-loader.js" data-icons="https://www.greycourt.com/wp-content/themes/greycourt-2018-v1.06/library/assets/svg/icons.svg" data-id="v3"></script>
+</head>
+
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-3746 is-loaded"><div style="position:absolute;visibility:hidden;height:0;width:0;display:none;" id="v3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="806.8" height="3465.212"><symbol id="icon-twitter" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></symbol><symbol id="icon-search" viewBox="0 0 17.49 17.49"><path id="ic_search_24px" d="M15.5 14h-.79l-.28-.27a6.51 6.51 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.494 4.494 0 0 1 9.5 14z" transform="translate(-3 -3)"></path></symbol><symbol id="icon-printer" viewBox="0 0 112.6 100.7"><path d="M103.2 11.6H9.4C4.2 11.6 0 15.8 0 21v46.9c0 5.2 4.2 9.4 9.4 9.4h14.1v23.4h65.6V77.3h14.1c5.2 0 9.4-4.2 9.4-9.4V21c-.1-5.2-4.2-9.4-9.4-9.4zM84.4 96H28.2V56.2h56.2V96z"></path><path class="st0" d="M89.1 2.3c0-1.3-1-2.3-2.3-2.3h-61c-1.3 0-2.3 1-2.3 2.3V14h65.6V2.3z"></path></symbol><symbol id="icon-play" viewBox="0 0 76 54"><path d="M13 952.4c-7.2 0-13 5.8-13 13v28c0 7.2 5.8 13 13 13h50c7.2 0 13-5.8 13-13v-28c0-7.2-5.8-13-13-13H13zm17 15l20 12-20 12v-24z" transform="translate(0 -952.362)"></path></symbol><symbol id="icon-pdf" viewBox="0 0 100 125"><path d="M96 125H4c-2.2 0-4-1.8-4-4V4c0-2.2 1.8-4 4-4h68.4v22.8c0 2.7 2.2 4.8 4.8 4.8H100V121c0 2.2-1.8 4-4 4zM18 81h5.1v-6.9H27c5.2 0 9.3-2.8 9.3-8.1v-.1c0-4.7-3.3-8-8.8-8H18V81zm5.1-11.5v-7.1H27c2.5 0 4.1 1.2 4.1 3.5v.1c0 2-1.5 3.5-4 3.5h-4zm17 11.5h9c7.3 0 12.3-5 12.3-11.6v-.1c0-6.5-5-11.5-12.3-11.5h-9V81zm9-18.5c4.2 0 7 2.9 7 7v.1c0 4.1-2.8 6.9-7 6.9h-3.9v-14h3.9zM65.9 81H71v-8.9h11v-4.6H71v-4.9h12.5V58H65.9v23zM75 21V0l25 25H79c-2.2 0-4-1.8-4-4z"></path></symbol><symbol id="icon-mail" viewBox="0 0 82 59.1"><path d="M42.2 30c5.1-3.5 20.5-16.8 35-29.9-.4-.1-.8-.1-1.2-.1H6v.1C21.1 13.2 37 26.5 42.2 30z"></path><path d="M42.2 39.5c-2.1 0-3.7 0-25.7-18.6C10.1 15.5 3.9 10.1 0 6.8v46.3c0 3.3 2.7 6 6 6h70c3.3 0 6-2.7 6-6V7.9C47 39.5 44.1 39.5 42.2 39.5z"></path></symbol><symbol id="icon-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></symbol><symbol id="icon-hamburger" viewBox="0 0 38.8 37.7"><path d="M-578-879.3v-4.2h38.8v4.2zm0-16.7v-4.2h38.8v4.2zm0-16.8v-4.2h38.8v4.2z" transform="translate(578 917)"></path></symbol><symbol id="icon-hamburger-open" viewBox="0 0 38.8 37.7"><path d="M0 0h38.8v4.2H0z"></path><path class="st0" d="M0 16.8h38.8V21H0zM0 33.5h38.8v4.2H0z"></path></symbol><symbol id="icon-facebook" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></symbol><symbol id="icon-close" viewBox="0 0 14 14"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" transform="translate(-5 -5)"></path></symbol><symbol id="icon-clear" viewBox="0 0 496 496"><path id="clear-icon" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448a200 200 0 1 1 200-200 199.945 199.945 0 0 1-200 200zm101.8-262.2L295.6 256l62.2 62.2a12.011 12.011 0 0 1 0 17l-22.6 22.6a12.011 12.011 0 0 1-17 0L256 295.6l-62.2 62.2a12.011 12.011 0 0 1-17 0l-22.6-22.6a12.011 12.011 0 0 1 0-17l62.2-62.2-62.2-62.2a12.011 12.011 0 0 1 0-17l22.6-22.6a12.011 12.011 0 0 1 17 0l62.2 62.2 62.2-62.2a12.011 12.011 0 0 1 17 0l22.6 22.6a12.011 12.011 0 0 1 0 17z" transform="translate(-8 -8)"></path></symbol><symbol id="icon-arrow-right" viewBox="0 0 32.4 61.8"><style>.icon-arrow-right{fill:none;stroke-width:2;stroke-miterlimit:10}</style><path class="icon-arrow-right" d="M.7.7L31 30.9.7 61.1"></path></symbol><symbol id="icon-arrow-left" viewBox="0 0 32.3 61.8"><style>.icon-arrow-left{fill:none;stroke-width:2;stroke-miterlimit:10}</style><path class="icon-arrow-left" d="M31.6 61.1L1.4 30.9 31.6.7"></path></symbol><symbol id="icon-arrow-down" viewBox="0 0 61.817 32.422"><defs><style>.icon-arrow-down{fill:none;stroke-miterlimit:10;stroke-width:2px}</style></defs><path id="arrows_right" class="icon-arrow-down" d="M.7.7L31 30.9.7 61.1" transform="rotate(90 30.901 30.907)"></path></symbol><symbol id="icon-30-years-gc" viewBox="0 0 806.8 761.6"><path id="Union_1" data-name="Union 1" class="cls-1" d="M-388.7 136.4a3.185 3.185 0 0 1 3.2-3.5c2.3 0 3.7 2.1 3.9 4.6l3.3-1.2a71.321 71.321 0 0 0 2.4-10.7l3.9-22.9-5.3-.3.2-1.9 5.8-1.6c.7-3.7 2.3-7.9 4.8-10.4a11.372 11.372 0 0 1 8.6-3.6c3.8 0 6.2 2.3 6.2 4.8-.2 2-1.5 3.6-3.5 3.6-2.3 0-3.7-2.3-4.2-5l-4.3.7a43.774 43.774 0 0 0-2.4 10.2h7l.2 3.2h-7.7l-3.4 17.3c-1.5 7.7-3.7 15-6.4 17.9a10.1 10.1 0 0 1-7.1 3c-2.9 0-5.2-1.7-5.2-4.2zM-7.9 114V92.2c0-.5-.4-.8-2.1-1l-2.2-.3-.2-2.2H3.4l-.2 2.2-2.3.3c-1.5.2-2 .5-2 1.1v20.1c0 7.7 4 11 10.1 11 6.2 0 9.8-3.7 9.8-10.5v-9.5c0-10.8-.4-11.5-2.4-11.8l-3-.6-.2-2.2H27l-.2 2.2-2.8.6c-2.1.4-2.6 1-2.6 11.8v10.2c0 8.2-5.5 13.4-14.6 13.4-8.9 0-14.7-4.3-14.7-13zm-59.5-6.3a19.739 19.739 0 0 1 19.9-19.8c11.4 0 19.6 7.8 19.6 19.2a19.655 19.655 0 0 1-19.8 19.8c-11.5 0-19.7-7.8-19.7-19.2zm7.5-.7c0 11 5.7 17.4 12.4 17.4s12.1-5.8 12.1-16.5c0-11-5.7-17.4-12.4-17.4s-12.1 5.8-12.1 16.5zm-255.8.9c0-12.5 9.9-19.9 21.5-19.9a29.627 29.627 0 0 1 8.5 1.3l5-1.1v12.6h-3.6l-2-8.1a15.58 15.58 0 0 0-8.1-2.1c-8 0-13.7 7-13.7 16.3 0 10.5 4.9 17.4 13.6 17.4a17.371 17.371 0 0 0 6.5-1.4v-10.1c0-.6-.4-.8-2.1-1l-2.7-.3-.2-2.2h16.3l-.3 2.2-2.4.3c-1.5.2-2.1.5-2.1 1.1v8.7l3.6.4.2 1.7a54.233 54.233 0 0 1-17.2 3.2c-12.1 0-20.8-7.1-20.8-19zm-163.1 17.2l-.7-11h3.2l2.7 8.5a18.116 18.116 0 0 0 6.8 1.5c5.1 0 7.6-3.2 7.6-6.3 0-4.9-4-6.4-9-8.2-5.9-2.1-10.8-4.4-10.8-11 0-5.4 4.2-10.5 13.1-10.7a38.788 38.788 0 0 1 7.7.8l3.1-.8V100h-3.1l-2.1-7.9a17.068 17.068 0 0 0-6.2-1.2c-4.5 0-6.7 2.6-6.7 5.4 0 4.5 3.9 5.9 8.6 7.6 6.4 2.3 11.4 4.6 11.4 11.5-.2 5.9-5.4 11.4-14.5 11.4q-.391.009-.77.008a33.078 33.078 0 0 1-10.33-1.708zm66.1-10.2c0-8.2 6.1-16.7 13.9-16.7 6.5 0 9.8 4.9 9.8 11.8-.1 8.3-6.2 16.8-13.9 16.8-6.5 0-9.8-4.9-9.8-11.9zm6.2-3.9a26 26 0 0 0-.7 6.1c0 3.6 1.3 7.4 4.2 7.4 3.9 0 6.6-6.9 7.5-10.8a33.611 33.611 0 0 0 .7-6.1c.1-3.7-1.2-7-4.1-7-3.8 0-6.6 6.7-7.6 10.4zm286.7-3.3c0-12.3 9.2-19.9 21.1-19.9a31.08 31.08 0 0 1 8.6 1.3L-85 88v12.7h-3.5l-2-8.1a15.289 15.289 0 0 0-8.2-2.1c-8.5 0-13.7 6.8-13.7 16.4 0 10.4 5.1 17.3 14.2 17.3a15.091 15.091 0 0 0 7-1.7l2.8-8.5h3.6l-1.2 11.9-3.5-.7a30.3 30.3 0 0 1-9.4 1.5c-11.9 0-20.9-6.7-20.9-19zm-39.6 18.3l.2-2.2 3.3-.3c1.5-.2 2.1-.5 2.1-1.1v-11.7l-10.5-17a4.889 4.889 0 0 0-3-2.2l-1.8-.5-.2-2.3h16.1l-.2 2.3-2.2.4c-1.7.3-1.7 1.8.9 6.3l5.6 9.6h.4l6-10.5c2.2-3.6 1.9-5-.3-5.5l-1.5-.3-.2-2.3h12.6l-.4 2.3-1 .3c-2 .6-3.4 1.4-5.8 5.4l-7.8 13.2v12.6c0 .6.4.8 2.1 1l3.3.3.2 2.2zm-507.7 0l.2-2.2 3.3-.3c1.5-.2 2.1-.5 2.1-1.1v-11.7l-10.5-17a4.89 4.89 0 0 0-3-2.2l-1.8-.5-.2-2.2h16.1l-.2 2.3-2.2.4c-1.7.3-1.7 1.8.9 6.3l5.6 9.6h.4l6-10.5c2.2-3.6 1.9-5-.3-5.5l-1.5-.3-.2-2.3h12.4l-.2 2.2-1 .3c-2 .6-3.4 1.4-5.8 5.4l-7.8 13.2v12.6c0 .6.4.8 2.1 1l3.3.3.2 2.2zm763.8-.1l.2-2.2 3.3-.3c1.5-.2 2.1-.5 2.1-1.1V91.2h-.2c-6.3 0-7.8.5-8.8 3.8l-1.5 5.8h-3.6l1.1-12.1h33.4v12.1h-3.6l-1.3-5.4c-1-3.4-2-4.2-8.6-4.2h-.2v31.2c0 .6.4.8 2.1 1l3.3.3.2 2.2zm-30.9 0l-2.3-4.4-6.7-12-4.2.1v12.7c0 .6.4.8 2.1 1l2.4.3.2 2.2h-16l.2-2.2 2.3-.3c1.5-.2 2.1-.5 2.1-1.1V92.1c0-.5-.4-.8-2.2-1l-2.2-.3-.2-2.2h16.4c9.6 0 14 3.7 14 9.2 0 4.9-3.3 8.4-8.5 10.2l7.7 12.2c1.7 2.3 2.3 2.9 3.6 3.1l1.7.4.2 2.2zm-9.9-34.6c-.7 0-3.3.1-3.3.1V107l3.9.4c4.7-.4 7.8-2.9 7.8-8.1 0-5.146-2.634-8.021-7.64-8.021q-.372-.001-.76.021zm-270.1 34.6l.2-2.2 2.3-.3c1.5-.2 2.1-.5 2.1-1.1V92.2c0-.5-.4-.8-2.2-1l-2.2-.2-.2-2.2h30.8v11.7h-3.5l-1.4-5.4c-1-3.5-2-3.8-12.3-3.8h-2.4v14.6h1.5c4 0 5.1-.2 5.7-1.6l1.4-4h2.7l-1.3 13.6h-2.6l-.5-3.7c-.2-1.3-.7-1.7-5.5-1.7h-1.4v15.1h2.3c10.8 0 12-.4 13.2-3.8l1.4-4.9h3.7l-1.1 11zm-23.4 0l-2.3-4.4-6.7-12-4.2.1v12.7c0 .6.4.8 2.1 1l2.4.3.2 2.2h-16l.2-2.2 2.3-.3c1.5-.2 2.1-.5 2.1-1.1V92.1c0-.5-.4-.8-2.2-1l-2.2-.3-.2-2.2h16.4c9.6 0 14 3.7 14 9.2 0 4.9-3.3 8.4-8.5 10.2l7.7 12.2c1.7 2.3 2.3 2.9 3.6 3.1l1.7.4.2 2.2zm-9.9-34.6c-.7 0-3.3.1-3.3.1V107l3.9.4c4.7-.4 7.8-2.9 7.8-8.1.1-5.146-2.625-8.021-7.64-8.021q-.372-.001-.76.021zm-259.9 34.6l-2.3-4.4-6.7-12-4.2.1v12.7c0 .6.4.8 2.1 1l2.4.3.2 2.2h-16l.2-2.2 2.3-.3c1.5-.2 2.1-.5 2.1-1.1V92.1c0-.5-.4-.8-2.2-1l-2.2-.3-.2-2.2h16.4c9.6 0 14 3.7 14 9.2 0 4.9-3.3 8.4-8.5 10.2l7.7 12.2c1.7 2.3 2.3 2.9 3.6 3.1l1.7.4.2 2.2zm-9.9-34.6c-.7 0-3.3.1-3.3.1V107l3.9.4c4.7-.4 7.8-2.9 7.8-8.1 0-5.146-2.634-8.021-7.641-8.021q-.371-.001-.759.021zm-44 34.6l.2-2.3 2.6-.4c2.3-.4 2.2-1.4.6-6.2l-1.2-4h-12.3l-1.1 3.5c-1.7 4.6-1.6 6.4.4 6.7l2.2.4.2 2.3h-13.1l.2-2.3 1.5-.4c2.6-.7 3.4-1.4 7.1-11.7l7-19.3v-2.3l6.3-2.3 11.3 33.6a2.639 2.639 0 0 0 2.4 1.8l2.7.6.2 2.3zm-9.2-15.6h10.5l-4.9-15.5h-.4zm-56.7 15.6l.2-2.2 2.3-.3c1.5-.2 2.1-.5 2.1-1.1V92.2c0-.5-.4-.8-2.2-1l-2.2-.3-.2-2.2h30.8v11.7h-3.5l-1.4-5.4c-1-3.5-2-3.8-12.3-3.8h-2.4v14.6h1.5c4 0 5.1-.2 5.7-1.6l1.4-4h2.7l-1.3 13.6h-2.6l-.5-3.7c-.2-1.3-.7-1.7-5.5-1.7h-1.4v15.1h2.3c10.8 0 12-.4 13.2-3.8l1.4-4.9h3.7l-1.1 11.1zm-52.3-188.5c0-17.6 13.2-34.3 34.4-34.3s32.6 17.6 42.3 31.7c11.5 16.7 22 26.4 46.7 26.4 57.3 0 157.7-74.9 157.7-172.6 0-77.5-37-143.6-113.6-143.6-43.2 0-74.9 21.1-95.1 43.2-14.1-1.8-24.7-14.1-19.4-30.8 33.5-15 105.7-47.6 140.9-76.6 19.4-15.9 46.7-42.3 46.7-84.6 0-46.7-32.6-75.7-72.2-75.7-52 0-91.6 32.6-118.9 77.5-8.8 1.8-18.5-3.5-18.5-12.3 27.1-61.8 91.4-106.7 159.2-106.7 72.3 0 122.5 38.8 122.5 101.3 0 36.1-14.1 70.5-94.2 112.7-4.4 8.8 0 12.3 10.6 13.2 66.9 5.3 127.7 52 127.7 135.6 0 63.4-30.8 126.8-85.4 174.4C-473.4-26.5-549.2-8-592.3-8c-39.6 0-87.2-13.2-87.2-54.6zM-237.4-333c0-133 53.7-288 182.3-288s182.4 155 182.4 288C127.3-194.7 73.6-45-55-45s-182.4-149.7-182.4-288zm78.4 0c0 82.8 7 261.6 103.9 261.6s104-178.8 104-261.6-7-261.6-103.9-261.6S-159-415.8-159-333z" transform="translate(679.5 621)"></path></symbol><symbol id="greycourt-logo" viewBox="0 0 527.5 37.9"><path d="M535.4 255.8h10.5v29.5h7.8v-29.5h10.5v-7.2h-28.8zm-44.9 0c5.2 0 7.6 1.7 7.6 5.2 0 3.6-2.6 5.4-7.6 5.4h-6v-10.6h6zm16.3 29.6l-8.1-13.3a12.423 12.423 0 0 0 7.2-11.5 10.561 10.561 0 0 0-4-8.8 15.656 15.656 0 0 0-10.1-3.2h-15.2v36.7h7.8v-11.8h6.2l7.2 11.8h9zm-70.6-16c0 6.3-2.6 9.5-7.6 9.5s-7.6-3.8-7.6-9.4v-20.8h-7.8v20.4c0 10.9 5.8 16.9 15.4 16.9s15.4-5.9 15.4-16.9v-20.4h-7.8zM352 267a11.85 11.85 0 0 1 3-8.2 10.992 10.992 0 0 1 15.9 0 12.682 12.682 0 0 1 .1 16.5 9.739 9.739 0 0 1-7.9 3.4 10.15 10.15 0 0 1-8.1-3.4 12.1 12.1 0 0 1-3-8.3m-8 0a18.387 18.387 0 0 0 5.4 13.6 18.164 18.164 0 0 0 13.4 5.3 18.965 18.965 0 0 0 13.5-5.3 18.088 18.088 0 0 0 5.5-13.6 17.867 17.867 0 0 0-5.5-13.5 18.638 18.638 0 0 0-13.5-5.4A18.452 18.452 0 0 0 344 267m-34.3 6.5a11.763 11.763 0 0 1-10 5.1 10.853 10.853 0 0 1-8-3.1 11.7 11.7 0 0 1-3.2-8.6 11.074 11.074 0 0 1 3.2-8.4 10.579 10.579 0 0 1 7.6-3.1 11.624 11.624 0 0 1 9.7 5l5.2-5.3a17.869 17.869 0 0 0-14.6-6.9 18.864 18.864 0 0 0-13.7 5.2c-3.7 3.5-5.5 8.1-5.5 13.8s1.8 10.2 5.5 13.7a19.583 19.583 0 0 0 14 5.2 18.178 18.178 0 0 0 14.9-6.9zm-87.3-24.8l12.2 23.9v12.8h7.7v-12.8l12.3-23.9H246l-7.6 15.5-7.5-15.5h-8.5zm-29.8 36.7v-7.2h-19.3v-8h18.4v-7.1h-18.4v-7.3h19.3v-7.2h-27.1v36.7h27.1zm-74.9-29.6c5.2 0 7.6 1.7 7.6 5.2 0 3.6-2.6 5.4-7.6 5.4h-6v-10.6h6zm16.3 29.6l-8.1-13.3a12.423 12.423 0 0 0 7.2-11.5 10.562 10.562 0 0 0-4-8.8 15.656 15.656 0 0 0-10.1-3.2h-15.2v36.7h7.8v-11.8h6.2l7.2 11.8h9zm-70.5-13.3v4.3a12.126 12.126 0 0 1-7.5 2.2 10.552 10.552 0 0 1-8-3.2 11.622 11.622 0 0 1-3.2-8.5 11.074 11.074 0 0 1 3.2-8.4 10.579 10.579 0 0 1 7.6-3.1 11.624 11.624 0 0 1 9.7 5l5.2-5.3a17.869 17.869 0 0 0-14.6-6.9 18.864 18.864 0 0 0-13.7 5.2c-3.7 3.5-5.5 8.1-5.5 13.8a17.937 17.937 0 0 0 5.5 13.6 19.272 19.272 0 0 0 13.7 5.3 21.061 21.061 0 0 0 15.2-6.3V265H56.2v7.2h7.3z" transform="translate(-36.7 -248.1)"></path></symbol><use xlink:href="#greycourt-logo" width="527.5" height="37.9"></use><use xlink:href="#icon-30-years-gc" y="39.9" width="806.8" height="761.6"></use><use xlink:href="#icon-arrow-down" y="803.5" width="61.817" height="32.422"></use><use xlink:href="#icon-arrow-left" y="837.922" width="32.3" height="61.8"></use><use xlink:href="#icon-arrow-right" y="901.722" width="32.4" height="61.8"></use><use xlink:href="#icon-clear" y="965.522" width="496" height="496"></use><use xlink:href="#icon-close" y="1463.522" width="14" height="14"></use><use xlink:href="#icon-facebook" y="1479.522" width="448" height="512"></use><use xlink:href="#icon-hamburger-open" y="1993.522" width="38.8" height="37.7"></use><use xlink:href="#icon-hamburger" y="2033.222" width="38.8" height="37.7"></use><use xlink:href="#icon-linkedin" y="2072.922" width="448" height="512"></use><use xlink:href="#icon-mail" y="2586.922" width="82" height="59.1"></use><use xlink:href="#icon-pdf" y="2648.022" width="100" height="125"></use><use xlink:href="#icon-play" y="2775.022" width="76" height="54"></use><use xlink:href="#icon-printer" y="2831.022" width="112.6" height="100.7"></use><use xlink:href="#icon-search" y="2933.722" width="17.49" height="17.49"></use><use xlink:href="#icon-twitter" y="2953.212" width="512" height="512"></use></svg></div>
+
+<aside class="page-nav js-page-nav">
+  <div class="page-nav__sidebar">
+    <div class="page-nav__toggle js-page-nav__toggle">
+      <svg class="icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-hamburger"></use>
+      </svg>
+    </div>
+    <div class="page-nav__sidebar-text">
+          </div>
+  </div>
+  <div class="page-nav__container">
+    <div class="page-nav__logo-wrapper">
+      <a href="https://www.greycourt.com/">
+        <svg class="page-nav__logo">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#greycourt-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="page-nav__content-wrapper">
+      <nav class="page-nav__columns">
+        <div class="page-nav__column">
+          <div id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-24 page-nav-group"><a class="page-nav-group__title" href="http://www.greycourt.com">Home</a>
+<ul class="sub-menu page-nav-group__list">
+	<li id="menu-item-4144" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-4144 page-nav-group__list-item"><a href="/#featured-thinking">Featured Thinking</a></li>
+	<li id="menu-item-4145" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-4145 page-nav-group__list-item"><a href="/#contact-us">Contact Us</a></li>
+</ul>
+</div>
+<div id="menu-item-4051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4051 page-nav-group"><a class="page-nav-group__title" href="https://www.greycourt.com/our-team/">Team</a>
+<ul class="sub-menu page-nav-group__list">
+	<li id="menu-item-4142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4142 page-nav-group__list-item"><a href="/our-team/">Senior Team Members</a></li>
+	<li id="menu-item-4833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4833 page-nav-group__list-item"><a href="/our-team/">Additional Team Members</a></li>
+</ul>
+</div>
+<div id="menu-item-4050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4050 page-nav-group"><a class="page-nav-group__title" href="https://www.greycourt.com/our-expertise/">Expertise</a>
+<ul class="sub-menu page-nav-group__list">
+	<li id="menu-item-4211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4211 page-nav-group__list-item"><a href="https://www.greycourt.com/30th-anniversary/">Our Story</a></li>
+	<li id="menu-item-4180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4180 page-nav-group__list-item"><a href="/our-expertise/#flexible-offering">Service Offering</a></li>
+</ul>
+</div>
+</div><div class="page-nav__column"><div id="menu-item-4207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4207 page-nav-group"><a class="page-nav-group__title" href="https://www.greycourt.com/our-library/">Library</a>
+<ul class="sub-menu page-nav-group__list">
+	<li id="menu-item-4209" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4209 page-nav-group__list-item"><a href="https://www.greycourt.com/category/point-of-view/">Point of View</a></li>
+	<li id="menu-item-4210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4210 page-nav-group__list-item"><a href="https://www.greycourt.com/category/white-paper/">White Papers</a></li>
+</ul>
+</div>
+<div id="menu-item-4631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4631 page-nav-group"><a class="page-nav-group__title" href="https://greycourt.sharefile.com/Authentication/Login">Client Access</a></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</aside>
+
+
+  <div class="background-container background-container--home">
+    <header class="page-header">
+  <div class="page-header__container">
+    <div class="page-header__grid">
+      <div class="page-header__logo-wrapper">
+        <a href="https://www.greycourt.com/">
+          <svg class="page-header__logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#greycourt-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent header-nav__item menu-item-24"><a class="header-nav__link" href="http://www.greycourt.com">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page header-nav__item menu-item-4051"><a class="header-nav__link" href="https://www.greycourt.com/our-team/">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page header-nav__item menu-item-4050"><a class="header-nav__link" href="https://www.greycourt.com/our-expertise/">Expertise</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page header-nav__item menu-item-4207"><a class="header-nav__link" href="https://www.greycourt.com/our-library/">Library</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom header-nav__item menu-item-4631"><a class="header-nav__link" href="https://greycourt.sharefile.com/Authentication/Login">Client Access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+    <div class="hero">
+      <div class="hero__container">
+        <div class="hero__grid">
+          <div class="hero__header">
+            <div class="hero__title">
+              Family wealth is different. <br>
+So are we.            </div>
+          </div>
+          <div class="hero__content">
+            <div class="hero__text">
+              <p>We are an independent advisory firm with a team of investors who simplify complex situations for our clients.</p>
+            </div>
+
+            
+            
+              <div class="hero__buttons">
+                <a class="hero__button" href="http://www.greycourt.com/our-expertise/">
+                  learn more                </a>
+              </div>
+
+                      </div>
+        </div>
+
+        <div class="hero__mobile-arrow">
+          <svg class="icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="tiles" id="featured-thinking">
+      <div class="tiles__container">
+        <div class="tiles__intro">
+
+          
+          
+            <h3 class="tiles__intro-title">
+              <span id="featured">Featured Thinking<span>            </span></span></h3>
+
+          
+          
+            <p>Here is what we are reading and thinking about.</p>
+
+                  </div>
+        <div class="tiles__grid">
+          
+<div class="tile-post-large">
+  <div class="tile-post-large__wrapper">
+    <div class="tile-post-large__container">
+      <a href="https://www.greycourt.com/trending/greycourt-white-paper-no-71-chinese-private-markets-likely-to-suffer-from-slowing-entrepreneurship/" class="tile-post-large__tile-link"></a>
+      <div class="tile-post-large__content-wrapper">
+        <div class="tile-post-large__content">
+          <div class="tile-post-large__label">
+            Greycourt White Paper No. 71          </div>
+          <div class="tile-post-large__title">
+            Chinese Private Markets Likely to Suffer from Slowing Entrepreneurship          </div>
+          <div class="tile-post-large__excerpt">
+            In this Greycourt White Paper Wendy Pan tracks the extraordinary rise and more recent constraints on entrepreneurialism in China and considers its implications for Chinese private markets - and for the vitality of the Chinese economy as a whole.
+
+Download the white paper here »
+          </div>
+        </div>
+        <div class="tile-post-large__footer">
+          <div class="tile-post-large__sub-title">
+                      </div>
+          <div class="tile-post-large__white-paper-name">
+                      </div>
+          <div class="tile-post-large__details">
+            Wendy Pan, Gregory Curtis | October 11, 2023          </div>
+        </div>
+      </div>
+      <div class="tile-post-large__arrow">
+        <svg class="icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div><div class="tiles__group">
+  <div class="tiles__group-grid">
+
+  
+<div class="tile-people-spotlight">
+  <div class="tile-people-spotlight__container">
+    <a href="https://www.greycourt.com/our-team/david-c-wells-jr-cfa/" class="tile-people-spotlight__tile-link"></a>
+    <div class="tile-people-spotlight__content-wrapper">
+      <div class="tile-people-spotlight__content">
+        <div class="tile-people-spotlight__label">
+          People Spotlight        </div>
+      </div>
+      <div class="tile-people-spotlight__footer">
+        <div class="tile-people-spotlight__title">
+                  </div>
+        <div class="tile-people-spotlight__sub-title">
+          This Month: David C. Wells        </div>
+        <div class="tile-people-spotlight__excerpt">
+                  </div>
+      </div>
+    </div>
+    <div class="tile-people-spotlight__arrow">
+      <svg class="icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+      </svg>
+    </div>
+    <div class="tile-people-spotlight__background" style="background-image: url('https://www.greycourt.com/wp-content/uploads/2023/08/DCW-headshot-002-1.png');"></div>
+  </div>
+</div><div class="tile-external-link">
+  <div class="tile-external-link__container">
+    <a href="https://www.theatlantic.com/magazine/archive/2023/09/sam-altman-openai-chatgpt-gpt-4/674764/?utm_source=apple_news" target="_blank" class="tile-external-link__tile-link"></a>
+    <div class="tile-external-link__content-wrapper">
+      <div class="tile-external-link__content">
+        <div class="tile-external-link__label">
+          What We Are Reading        </div>
+        <div class="tile-external-link__title">
+          Does Sam Altman Know What He's Creating?        </div>
+        <div class="tile-external-link__excerpt">
+          The OpenAI CEO’s ambitious, ingenious, terrifying quest to create a new form of intelligence
+        </div>
+      </div>
+      <div class="tile-external-link__footer">
+        <div class="tile-external-link__sub-title">
+          Ross Andersen, The Atlantic        </div>
+        <div class="tile-external-link__link">
+                    <a href="https://www.theatlantic.com/magazine/archive/2023/09/sam-altman-openai-chatgpt-gpt-4/674764/?utm_source=apple_news"></a>
+        </div>
+      </div>
+    </div>
+    <div class="tile-external-link__arrow">
+      <svg class="icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+      </svg>
+    </div>
+  </div>
+</div><div class="tile-external-link">
+  <div class="tile-external-link__container">
+    <a href="https://www.greycourt.com/what-we-are-reading/fifteen-on-friday-519/" target="_blank" class="tile-external-link__tile-link"></a>
+    <div class="tile-external-link__content-wrapper">
+      <div class="tile-external-link__content">
+        <div class="tile-external-link__label">
+          Fifteen on Friday        </div>
+        <div class="tile-external-link__title">
+          Issue #519        </div>
+        <div class="tile-external-link__excerpt">
+          <img data-name="image" src=" https://www.greycourt.com/wp-content/uploads/2024/01/FOF-logo-1-e1704389299744.png" alt="">
+
+The Week's Best Articles
+        </div>
+      </div>
+      <div class="tile-external-link__footer">
+        <div class="tile-external-link__sub-title">
+                  </div>
+        <div class="tile-external-link__link">
+                    <a href="https://www.greycourt.com/what-we-are-reading/fifteen-on-friday-519/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="tile-external-link__arrow">
+      <svg class="icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+      </svg>
+    </div>
+  </div>
+</div><div class="tile-external-link">
+  <div class="tile-external-link__container">
+    <a href="https://www.greycourt.com/wp-content/uploads/2023/09/David-Wells-Press-Release-September-2023.pdf" target="_blank" class="tile-external-link__tile-link"></a>
+    <div class="tile-external-link__content-wrapper">
+      <div class="tile-external-link__content">
+        <div class="tile-external-link__label">
+          Greycourt News        </div>
+        <div class="tile-external-link__title">
+          Greycourt acquires Family Capital Strategy, names David Wells as a managing director, opens Nashville, TN office        </div>
+        <div class="tile-external-link__excerpt">
+          <a href="https://www.greycourt.com/wp-content/uploads/2023/09/David-Wells-Press-Release-September-2023.pdf">Download the press release here »</a>        </div>
+      </div>
+      <div class="tile-external-link__footer">
+        <div class="tile-external-link__sub-title">
+                  </div>
+        <div class="tile-external-link__link">
+                    <a href="https://www.greycourt.com/wp-content/uploads/2023/09/David-Wells-Press-Release-September-2023.pdf"></a>
+        </div>
+      </div>
+    </div>
+    <div class="tile-external-link__arrow">
+      <svg class="icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+      </svg>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+          <div class="tile-wide">
+            <div class="tile-wide__container">
+              <div class="tile-wide__content-wrapper">
+                <div class="tile-wide__content-container">
+                  <div class="tile-wide__content">
+                    <div class="tile-wide__label">
+                      Flash Report                    </div>
+                    <div class="tile-wide__title">
+                      A summary of global market activity in February. <br>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="tile-wide__footer">
+                    <div class="tile-wide__buttons">
+                                                                    <a href="https://www.greycourt.com/wp-content/uploads/2024/03/FlashFebruary24.pdf" target="_blank" download="" class="tile-wide__button">
+                          Download
+                        </a>
+                                          </div>
+                  </div>
+                </div>
+                <div class="tile-wide__arrow">
+                  <svg class="icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="tile-wide__side-wrapper">
+                <div class="tile-wide__side js-flash-reports-sign-up">
+                  <div class="tile-wide__side-content">
+                    <div class="tile-wide__side-label">
+                      FLASH REPORTS
+                    </div>
+                    <div class="tile-wide__side-title js-flash-reports-sign-up__title">
+                      Stay informed.
+                      Sign up for our monthly flash reports.
+                    </div>
+                    <div class="tile-wide__side-input-info js-flash-reports-sign-up__confirmation">
+                      Thank you. Your request was submitted.
+                    </div>
+                  </div>
+                  <div class="tile-wide__side-footer">
+                    <input type="text" class="tile-wide__side-input tile-wide__side-input--small-margin js-flash-reports-sign-up__input-name" placeholder="Your name">
+                    <input type="email" class="tile-wide__side-input js-flash-reports-sign-up__input-email" placeholder="Your e-mail">
+                    <input type="hidden" id="fr_nonce" name="fr_nonce" value="8a02991fbc"><input type="hidden" name="_wp_http_referer" value="/">
+                    <div class="tile-wide__side-buttons">
+                      <button class="tile-wide__side-button js-flash-reports-sign-up__button">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="contact js-contact" data-active-city="pittsburg" id="contact-us">
+    <div class="contact__container">
+      <header class="contact__mobile-header">
+        <h2 class="contact__mobile-title">
+          <span id="contact">Contact us</span>        </h2>
+      </header>
+
+      <div class="contact__grid">
+        <div class="contact__select-wrapper">
+          <div class="contact__select">
+            <ul class="contact__select-list">
+                              <li class="contact__select-item js-contact__select-item is-active" data-city="pittsburg" data-background="https://www.greycourt.com/wp-content/uploads/2018/08/Pittsburgh_mobile-1024x696.png">
+                  <button class="contact__select-button">
+                    <svg class="icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                    Pittsburgh                    <svg class="icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                </li>
+                              <li class="contact__select-item js-contact__select-item " data-city="portland" data-background="https://www.greycourt.com/wp-content/uploads/2018/08/Portland_mobile-1-1024x696.png">
+                  <button class="contact__select-button">
+                    <svg class="icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                    Portland                    <svg class="icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                </li>
+                              <li class="contact__select-item js-contact__select-item " data-city="nashville" data-background="https://www.greycourt.com/wp-content/uploads/2023/07/il_1588xN.1567529479_pxgy-1.png">
+                  <button class="contact__select-button">
+                    <svg class="icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                    Nashville                    <svg class="icon">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                </li>
+                          </ul>
+            <div class="contact__select-background js-contact__select-background" style="background-image: url('https://www.greycourt.com/wp-content/uploads/2018/08/Pittsburgh_mobile-1024x696.png');"></div>
+          </div>
+        </div>
+
+        <div class="contact__content-wrapper">
+          
+                      <div class="contact__content js-contact__content is-active" data-city="pittsburg">
+              <header class="contact__header">
+                <h2 class="contact__title">
+                  <span id="contact">Contact us</span>                </h2>
+              </header>
+
+                              <div class="contact__details">
+
+                
+                  <div class="contact__detail ">
+                    <div class="contact__detail-title">
+                      If You're Interested in Our Investment Advisory Services, Please Contact Us At:                    </div>
+                    <div class="contact__detail-number">
+                      (412) 361.0100                    </div>
+                    <div class="contact__detail-description">
+                      To Contact Us By Email:<br>
+                      <a href="mailto:info@greycourt.com">
+                        info@greycourt.com                      </a>
+                    </div>
+                  </div>
+
+                
+                  <div class="contact__detail contact__detail--gray">
+                    <div class="contact__detail-title">
+                      If You're an Investment Manager Interested in Contacting Manager Research, Please Contact Us At:                    </div>
+                    <div class="contact__detail-number">
+                                          </div>
+                    <div class="contact__detail-description">
+                      <br>
+                      <a href="mailto:manager.research@greycourt.com">
+                        manager.research@greycourt.com                      </a>
+                    </div>
+                  </div>
+
+                
+                </div>
+              
+              <div class="contact__address">
+                2100 Wharton Street<br>
+Suite 600<br>
+Pittsburgh, PA 15203              </div>
+
+                              <div class="contact__buttons">
+                  <a href="https://www.google.com/maps/place/2100+Wharton+St,+Pittsburgh,+PA+15203/@40.4300357,-79.9775847,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f16fd7d2dc1b:0x5ceb5dcf6426149a!8m2!3d40.4300357!4d-79.975396" target="_blank" class="contact__button">
+                    Open in Google Maps
+                  </a>
+                </div>
+                          </div>
+                      <div class="contact__content js-contact__content " data-city="portland">
+              <header class="contact__header">
+                <h2 class="contact__title">
+                  <span id="contact">Contact us</span>                </h2>
+              </header>
+
+                              <div class="contact__details">
+
+                
+                  <div class="contact__detail ">
+                    <div class="contact__detail-title">
+                      If You're Interested in Our Investment Advisory Services, Please Contact Us At:                    </div>
+                    <div class="contact__detail-number">
+                      (503) 226.0470                    </div>
+                    <div class="contact__detail-description">
+                      To Contact Us By Email:<br>
+                      <a href="mailto:info@greycourt.com">
+                        info@greycourt.com                      </a>
+                    </div>
+                  </div>
+
+                
+                  <div class="contact__detail contact__detail--gray">
+                    <div class="contact__detail-title">
+                      If You're an Investment Manager Interested in Contacting Manager Research, Please Contact Us At:                    </div>
+                    <div class="contact__detail-number">
+                                          </div>
+                    <div class="contact__detail-description">
+                      <br>
+                      <a href="mailto:manager.research@greycourt.com">
+                        manager.research@greycourt.com                      </a>
+                    </div>
+                  </div>
+
+                
+                </div>
+              
+              <div class="contact__address">
+                707 SW Washington Street<br>
+Suite 900<br>
+Portland, OR 97205              </div>
+
+                              <div class="contact__buttons">
+                  <a href="https://www.google.com/maps/place/707+SW+Washington+St,+Portland,+OR+97205/@45.5210556,-122.6813684,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a0473d585a3:0xa0fc6a341b6f3321!8m2!3d45.5210556!4d-122.6791797" target="_blank" class="contact__button">
+                    Open in Google Maps
+                  </a>
+                </div>
+                          </div>
+                      <div class="contact__content js-contact__content " data-city="nashville">
+              <header class="contact__header">
+                <h2 class="contact__title">
+                  <span id="contact">Contact us</span>                </h2>
+              </header>
+
+                              <div class="contact__details">
+
+                
+                  <div class="contact__detail ">
+                    <div class="contact__detail-title">
+                      If You're Interested in Our Investment Advisory Services, Please Contact Us At:                    </div>
+                    <div class="contact__detail-number">
+                      (615) 621.4024                    </div>
+                    <div class="contact__detail-description">
+                      To Contact Us By Email:<br>
+                      <a href="mailto:info@greycourt.com">
+                        info@greycourt.com                      </a>
+                    </div>
+                  </div>
+
+                
+                  <div class="contact__detail contact__detail--gray">
+                    <div class="contact__detail-title">
+                      If You're an Investment Manager Interested in Contacting Manager Research, Please Contact Us At:                    </div>
+                    <div class="contact__detail-number">
+                                          </div>
+                    <div class="contact__detail-description">
+                      <br>
+                      <a href="mailto:manager.research@greycourt.com">
+                        manager.research@greycourt.com                      </a>
+                    </div>
+                  </div>
+
+                
+                </div>
+              
+              <div class="contact__address">
+                95 White Bridge Pike<br>
+Suite 105<br>
+Nashville, TN 37205              </div>
+
+                              <div class="contact__buttons">
+                  <a href="https://www.google.com/maps/place/95+White+Bridge+Pike+%23105,+Nashville,+TN+37205/@36.1303276,-86.8574173,17z/data=!3m1!4b1!4m5!3m4!1s0x886463d425f05b9b:0xd5c89a50470fe717!8m2!3d36.1303276!4d-86.8574173?entry=ttu" target="_blank" class="contact__button">
+                    Open in Google Maps
+                  </a>
+                </div>
+                          </div>
+          
+          <div class="contact__social-media">
+            <div class="contact__social-media-title">
+              Follow Us:
+            </div>
+
+            <div class="contact__social-media-items">
+              <a href="https://twitter.com/GreycourtCo" target="_blank" class="contact__social-media-item">
+                <svg class="contact__social-media-item-icon icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/company/greycourt/" target="_blank" class="contact__social-media-item">
+                <svg class="contact__social-media-item-icon icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="page-footer">
+  <div class="page-footer__container">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo-wrapper">
+        <svg class="page-footer__logo">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#greycourt-logo"></use>
+        </svg>
+      </div>
+      <div class="page-footer__content">
+        <nav class="page-footer__nav">
+          <ul class="page-footer__nav-list">
+            <li id="menu-item-5377" class="menu-item menu-item-type-custom menu-item-object-custom page-footer__nav-item menu-item-5377"><a target="_blank" href="https://www.greycourt.com/wp-content/uploads/2023/09/Greycourt-ADV-2A-Sept-2023.pdf">Form ADV Part 2A</a></li>
+<li id="menu-item-5378" class="menu-item menu-item-type-custom menu-item-object-custom page-footer__nav-item menu-item-5378"><a target="_blank" href="https://www.greycourt.com/wp-content/uploads/2022/05/Greycourt-ADV3-Form-CRS-May-2022.pdf">Form ADV Part 3 (Form CRS)</a></li>
+<li id="menu-item-3768" class="menu-item menu-item-type-post_type menu-item-object-page page-footer__nav-item menu-item-3768"><a href="https://www.greycourt.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-6088" class="menu-item menu-item-type-custom menu-item-object-custom page-footer__nav-item menu-item-6088"><a href="https://www.greycourt.com/wp-content/uploads/2023/10/Cookie-Policy.pdf">Cookie Policy</a></li>
+<li id="menu-item-3767" class="menu-item menu-item-type-post_type menu-item-object-page page-footer__nav-item menu-item-3767"><a href="https://www.greycourt.com/disclosure-of-indices/">Disclosure of Indices</a></li>
+          </ul>
+        </nav>
+        <div class="page-footer__info">
+          © greycourt &amp; co., inc. 2024. all rights reserved.        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" id="greycourt-js-js-extra">
+/* <![CDATA[ */
+var theme_params = {"ajax_url":"https:\/\/www.greycourt.com\/wp-admin\/admin-ajax.php","login_url":"https:\/\/www.greycourt.com\/wp-login.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.greycourt.com/wp-content/themes/greycourt-2018-v1.06/library/assets/js/app.js?v=1.0.7" id="greycourt-js-js"></script>
+
+
+</body></html>

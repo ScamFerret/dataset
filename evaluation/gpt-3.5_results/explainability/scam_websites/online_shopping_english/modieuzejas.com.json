@@ -1,0 +1,12 @@
+{
+    "url": "https://modieuzejas.com/",
+    "question": "Please analyze this URL https://modieuzejas.com/",
+    "thought": "I need to start by accessing the URL to obtain a status code. The website is live and accessible. Now, I need to extract the text from the HTML to check for any suspicious claims or language targeting psychological weaknesses. I can see that the website is selling a wide variety of branded products at what appears to be unusually low prices, which is a characteristic of scam websites. I also notice that the website does not provide any information about the company or its location. Additionally, the website does not have clear privacy policy or terms and conditions. I need to check the domain name information using RetrieveWHOIS to see if the company information is available. The information obtained from WHOIS indicates that the registrant information is protected by a privacy service, and the address provided is for a technology park in Malaysia. This does not provide any real location or company information. Additionally, the website has an unusually wide range of products at low prices, and the privacy policy and terms and conditions are not clearly stated. Based on these observations, I can conclude that the website https://modieuzejas.com/ is a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "The website offers a wide range of products at unusually low prices has unclear company information and lacks clear privacy policy and terms and conditions."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Okay"
+}

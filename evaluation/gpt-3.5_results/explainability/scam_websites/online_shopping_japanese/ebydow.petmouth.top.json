@@ -1,0 +1,12 @@
+{
+    "url": "https://ebydow.petmouth.top/",
+    "question": "Please analyze this URL https://ebydow.petmouth.top/",
+    "thought": "I need to access the URL to obtain a status code and then extract the text in the HTML to analyze the content. The website is accessible, so now I need to extract the text in the HTML to analyze the content for any scam characteristics. The website shows unusually low prices and offers free shipping, which is a characteristic of scam websites. Additionally, the email address listed seems unusual. I need to retrieve domain name information from WHOIS to further analyze the website. The website does not provide legitimate contact information and the domain information is vague. Based on the characteristics of scam websites, this website exhibits unusually low prices and suspicious contact details. Therefore, the website https://ebydow.petmouth.top/ is a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake shopping site",
+        "reason": "The website exhibits unusually low prices offers free shipping and has suspicious contact details all of which are characteristics of a scam website."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

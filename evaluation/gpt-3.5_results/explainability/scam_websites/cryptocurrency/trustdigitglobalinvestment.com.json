@@ -1,0 +1,12 @@
+{
+    "url": "https://trustdigitglobalinvestment.com",
+    "question": "Please analyze this URL https://trustdigitglobalinvestment.com",
+    "thought": "I need to check the content of the given URL to determine if it is a scam website. The website is live and accessible. The website claims to offer unusually high investment returns with different plans and seems to target human psychological weaknesses by promoting easy and high-profit investment opportunities. The text also mentions being registered and regulated, but there is no clear indication of which regulatory body oversees the company. The information seems too good to be true, and there are multiple red flags indicating a potential scam. The WHOIS information is not available for this domain, which could be a red flag indicating potential anonymity or lack of transparency. I now know the final answer - result: True",
+    "answer": {
+        "result": "True",
+        "scam_type": "Fake investment site",
+        "reason": "The website claims to offer unusually high investment returns with different plans and seems to target human psychological weaknesses by promoting easy and high-profit investment opportunities. The text also mentions being registered and regulated but there is no clear indication of which regulatory body oversees the company. The WHOIS information is not available for this domain which could be a red flag indicating potential anonymity or lack of transparency. The combination of these factors suggests that the website is likely a scam."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Somewhat bad"
+}

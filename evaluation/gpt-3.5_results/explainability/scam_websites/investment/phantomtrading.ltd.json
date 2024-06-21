@@ -1,0 +1,12 @@
+{
+    "url": "https://phantomtrading.ltd/",
+    "question": "Please analyze this URL https://phantomtrading.ltd/",
+    "thought": "I need to access the URL to obtain a status code and then extract the text in the HTML to look for any characteristics of a scam website. The website is accessible, now I need to extract the text in the HTML to analyze for any scam characteristics. There are some characteristics that I can check to determine if the website is a scam. I need to check the company information, the privacy policy, and the payment methods. The WHOIS information reveals that the domain is registered through Domains By Proxy, LLC, which is a private registration service. This could be a red flag for potential scam websites. Based on the information obtained from the WHOIS data and the website content, it is evident that the website https://phantomtrading.ltd/ displays characteristics of a potential scam website. The domain is registered through a private registration service, and the website makes claims about offering loans and high daily profits that are not typical in legitimate financial services. Additionally, the information provided on the website is vague, and the privacy policy is not clearly defined. Therefore, based on the characteristics of scam websites, the analysis points to the conclusion that https://phantomtrading.ltd/ is likely a scam website. {",
+    "answer": {
+        "result": "true",
+        "scam_type": "Fake investment website",
+        "reason": "The domain is registered through a private registration service the website makes unrealistic claims about offering loans and high daily profits the information provided on the website is vague and the privacy policy is not clearly defined."
+    },
+    "context": "I want you to act as a professional scam website detection expert. You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not. Scam websites have the following features. 1. Unusually low prices and claims of free. 2. Claims to be able to get an amount of money that is generally not possible. 3. Texts that target human psychological weaknesses exist on websites. 4. Information on non-existent companies. 5. Handling different products from common e-commerce websites. 6. Inquiry phone number and email address are not appropriate for business use. 7. Privacy of customer information notation is ambiguous. 8. Payment methods are not common and are unusual. 9. The information listed has not been updated.",
+    "result": "Good"
+}

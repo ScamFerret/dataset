@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><title>
+	Ocean and Oil Holdings
+</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8">
+    
+    <!-- DDLevel Style -->
+    <link rel="stylesheet" type="text/css" href="css/horizontal.css"><link rel="stylesheet" type="text/css" href="css/buttons.css"><link rel="stylesheet" type="text/css" href="css/navigator.css">
+
+    <!-- DDLevel Javascript -->
+    <script type="text/javascript" src="js/ddlevelsmenu.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery1.4.1.js"></script>
+    <script type="text/javascript">
+        var currentImage;
+        var currentIndex = -1;
+        var interval;
+        function showImage(index){
+            if(index < $('#bigPic img').length){
+    	        var indexImage = $('#bigPic img')[index]
+                if(currentImage){   
+        	        if(currentImage != indexImage ){
+                        $(currentImage).css('z-index',2);
+                        clearTimeout(myTimer);
+                        $(currentImage).fadeOut(250, function() {
+				            myTimer = setTimeout("showNext()", 10000);
+				            $(this).css({'display':'none','z-index':1})
+				        });
+                    }
+                }
+                $(indexImage).css({'display':'block', 'opacity':1});
+                currentImage = indexImage;
+                currentIndex = index;
+                $('#thumbs li').removeClass('active');
+                $($('#thumbs li')[index]).addClass('active');
+            }
+        }
+        
+        function showNext(){
+            var len = $('#bigPic img').length;
+            var next = currentIndex < (len-1) ? currentIndex + 1 : 0;
+            showImage(next);
+        }
+        
+        var myTimer;
+        
+        $(document).ready(function() {
+            myTimer = setTimeout("showNext()", 10000);
+	        showNext(); //loads first image
+            $('#thumbs li').bind('click',function(e){
+    	        var count = $(this).attr('rel');
+    	        showImage(parseInt(count)-1);
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRkDnYyrXK5dQgSiaGVHAUQYoAtnfI=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div>
+    <div class="container">
+    <div class="autofix">
+    
+    <div class="top_header">
+    <div class="logo"><a href="default.aspx"><img src="images/ooh_logo.png" height="104" width="124" alt=""></a></div>
+
+    <div class="nav">
+       <ul class="menu">
+	    <li><a href="">About Us</a>
+    	    <ul>
+      	    <li><a href="about-ooh.aspx">Company Profile</a></li>
+            <li><a href="our-philosophy.aspx">Our Philosophy</a></li> 
+            
+            <li><a href="board.aspx">Board of Directors</a></li>
+      	    </ul>
+        </li> 
+        
+        <li><a href="services.aspx">Our Services</a></li> 
+        
+        
+
+        
+        
+        <li><a href="contact.aspx">Contact</a></li> 
+	    </ul>
+    </div>
+    </div>
+
+    
+<div class="banner">
+	    <div id="wrapper">
+			    <div class="banner_thumb">
+                <ul id="thumbs">
+                    <li class="  active" rel="1"><img src="images/banner_thumb.png" height="22" width="22" alt=""></li>
+                    <li rel="2"><img src="images/banner_thumb.png" height="22" width="22" alt=""></li>
+                    <li rel="3"><img src="images/banner_thumb.png" height="22" width="22" alt=""></li>
+                    <li rel="4"><img src="images/banner_thumb.png" height="22" width="22" alt=""></li>     
+                </ul>
+                </div>
+                
+                <div id="bigPic">
+                    <img src="images/banner01.jpg" height="355" width="900" alt="" style="display: block; opacity: 1;">
+                    <img src="images/banner02.jpg" height="355" width="900" alt="">
+                    <img src="images/banner03.jpg" height="355" width="900" alt="">
+                    <img src="images/banner04.jpg" height="355" width="900" alt="">
+                </div>
+         </div>
+            
+         <div class="clearfix"></div>
+      </div>
+      
+      
+      <div class="message_box">
+        <div class="message_txt">We create and manage the best performing portfolio in Africa</div>
+        <a href="about-ooh.aspx" class="input_btn">Learn More</a>
+      </div>
+      <div class="shadow_box"></div>
+
+      <div class="services_container">
+        <div class="services_bdr">
+        	<div class="services_img">
+            <img src="images/principal_investment_img.jpg" height="116" width="190" alt=""></div>
+            <div class="services_title">Principal Investment</div>
+            <div class="services_txt">We work together to help you secure your financial future by delivering the best return for your risk profile<br>
+            </div>
+        </div>
+        
+        <div class="services_spacer"></div>
+        
+        <div class="services_bdr">
+        	<div class="services_img">
+            <img src="images/business_advisory_img.jpg" height="116" width="190" alt=""></div>
+            <div class="services_title">Business Advisory</div>
+            <div class="services_txt">We bring a unique local knowledge of the West African market &amp; capitalize on emerging opportunities<br>
+           
+            </div>
+        </div>
+        
+        <div class="services_spacer"></div>
+        
+        <div class="services_bdr">
+        	<div class="services_img"><img src="images/hcm_img.jpg" height="116" width="190" alt=""></div>
+            <div class="services_title">Human Capital Mgmt</div>
+            <div class="services_txt">We offer personnel, procurement &amp; management services to the Oil and Gas industry, Advisory &amp; Real Estate sectors<br>
+            </div>
+        </div>
+        
+        <div class="services_spacer"></div>
+        
+        <div class="services_bdr">
+        	<div class="services_img">
+            <img src="images/real_estate_img.jpg" height="116" width="190" alt=""></div>
+            <div class="services_title">Real Estate</div>
+            <div class="services_txt">We excel at property, asset management and real estate advisory services as Avante<br><br>
+           
+            </div>
+        </div>
+        
+        <a href="services.aspx" class="linkstyle2">View All Services </a></div>
+     </div>
+
+      
+    
+    <div class="copyright">
+        <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+        <td width="500">© <script type="text/javascript"> var today = new Date(); document.write(today.getFullYear());</script>2024 Ocean and Oil Holdings. All rights reserved.<br>
+        <a href="default.aspx">Home</a> | <a href="about-ooh.aspx">About</a> | <a href="services.html">Our Services</a> | <a href="contact.html">Contact Us</a></td>
+        <td align="right">
+        8th Floor, The Octagon, <br>13A, A.J. Marinho Drive
+        - V/I, Lagos, Nigeria<br>
+        </td></tr>
+        </tbody></table>
+    </div>
+    </div>
+        
+    </form>
+
+
+</body></html>

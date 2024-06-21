@@ -1,0 +1,763 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>BFCG</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Ubuntu:wght@500;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <!-- <h1 class="text-white">AI<span class="text-dark">.</span>Tech</h1> -->
+                    <img src="logo.png" class="rounded" alt="logo" style="width: 76px; ">
+
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link">Services</a>
+                        <a href="#" class="nav-item nav-link">Projects</a>
+                        <!--<div class="nav-item dropdown">-->
+                        <!--    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
+                        <!--    <div class="dropdown-menu bg-light mt-2">-->
+                        <!--        <a href="feature.html" class="dropdown-item">Features</a>-->
+                        <!--        <a href="team.html" class="dropdown-item">Our Team</a>-->
+                        <!--        <a href="faq.html" class="dropdown-item">FAQs</a>-->
+                        <!--        <a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
+                        <!--        <a href="" class="dropdown-item"></a>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                        <a href="dashboard/login.php" class="nav-item nav-link">Login</a>
+                         <a href="dashboard/register.php" class="nav-item nav-link">Register</a>
+                        <a href="#" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">BFCG</div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">BFCG TRADING PLATFROM. </h1>
+                    <p class="text-white mb-4 animated slideInRight">WE PUT QUANTAM QBITS BEHIND EVERY TRADE. YOUR TRADE NOW AI POWERED.</p>
+                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read
+                        More</a>
+                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact
+                        Us</a>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/hero-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/about-img.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
+                    <h1 class="mb-4">BFCG</h1>
+                    <p class="mb-4">THE PEN-ULTIMATE CRYPTO TRADING BOT IS NOW LIVE!!!,<br>BFCG is a crypto trading bot with inbuilt professionally managed trading strategies.
+                    BFCG comes 100% pre-configured and uses the power of Quantam computing combined with Artifical Intelligence. 
+                    This ensures that your profits remain always in the green and highest!</p>
+                    <p class="mb-4">You need ZERO trading experience to use our bot. Our proprietary bot and our crypto professionals are on the job just for YOU. : Connect your API and our bot will automatically trade for you, automatically, 24/7. BOT token is a Arbitrum One token which is designed as a native token for the BFCG ecosystem. 
+                    You will be able to use the BOT tokens for subscribing to our bot as well as earning minting rewards for staking BOT tokens.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
+                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
+                    <h1 class="mb-4">Our BFCG platform boasts a TON of unique features!</h1>
+                    <p class="mb-4">We can modify your BFCG however you like. Opportunites are endless, Trade Fearlessly with BFCG!</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-robot fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">100% Auto Trade Executions!</h5>
+                                        <p>Connect your API and our bot will automatically trade for you, automatically, 24/7.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-power-off fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Plug n Play!</h5>
+                                        <p>No configuration required. No need to research strategies. The bot is 100% pre-configured for the best results.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-graduation-cap fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">We dont Charge Commissions!</h5>
+                                        <p>All trades happen in your OWN exchange account and you are the beneficiary of 100% of the profits.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s" style="visibility: hidden; animation-delay: 0.7s; animation-name: none;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-brain fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">BFCG is fit for Newbies!</h5>
+                                        <p>You need ZERO trading experience to use our bot. Our proprietary bot and our AI Engines are on the job 24/7 just for YOU.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div>
+                    <h1 class="text-white mb-4">Check out BFCG Capabilities</h1>
+                    <p class="text-light mb-4">Profit as such has never been made before. We Make History!!</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Here You can see some of the trades BFCG makes on a 24 Hours Basis.</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>This is only the tip of the iceberg what lies beneath you must see. Use BFCG Today!</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>BFCG is world's 1st AI Bot that has the capabilities to reach such high profits Per Trade</span>
+                    </div>
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <img class="img-fluid" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px; visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Case Study</div>
+                <h1 class="mb-4">Explore Our Recent AI Case Studies</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Services</small>
+                            <h5 class="lh-base text-white mb-3">Here You can see some of the trades BFCG makes on a 24 Hours Basis.
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Services</small>
+                            <h5 class="lh-base text-white mb-3">This is only the tip of the iceberg what lies beneath you must see. Use BFCG Today!
+
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s" style="visibility: hidden; animation-delay: 0.7s; animation-name: none;">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Services</small>
+                            <h5 class="lh-base text-white mb-3">BFCG is world's 1st AI Bot that has the capabilities to reach such high profits Per Trade
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px; visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is BFCG?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                  BFCG is a proprietary cryptocurrency trading bot developed by Crypex Limited with the sole purpose
+                                  of enabling normal individuals to trade by simply connecting their exchange API with the bot.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How does BFCG generate profits for the participating community?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                   BFCG generates profits in the exchange account of the user by using signals and pre-configured strategies set by 
+                                   professional BFCG. Your funds never leave your exchange account and all the profit/loss is in your account.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   Who can become a member of BFCG?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Any person who is allowed to purchase BXOT tokens in his/her jurisdiction can do so and then use the said tokens to participate in the BFCG program. 
+                                    Please note that if you are in jurisdictions which do not allow the purchase of unregulated cryptocurrencies, 
+                                    you cannot participate in the BFCG program.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                   What percentage of profit on capital can I make with BFCG on a monthly basis?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Cryptocurrency trading is a very volatile market. Neither BFCG nor Crypex Limited or any of its associates, 
+                                    employees or affiliates promise any kind of fixed returns on your investment. Due to the fluctuations in the market,
+                                    losses are also very likely. Profits are also possible due to these fluctuations but no set percentage or amount in currency terms can be fixed and committed.
+                                    Please trade with the money which you can afford to lose.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can I connect more than one exchange with BFCG?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, you can connect upto 3 exchanges with a single instance of BFCG. The subscription / staking 
+                                    requirements for connecting more than one exchange have to be met to enable the same.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Do I require to submit my KYC for BFCG?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, you require to submit your KYC for registering and interacting with the BFCG platform.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s" style="visibility: hidden; animation-delay: 0.7s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                   Can I withdraw from the BFCG program anytime?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                   The BFCG program is a completely flexible program, allowing you entry and exit as and when you wish. The same is possible
+                                   as the entire funds that are being used in trade are in your own exchange account. In case, you are using the staking model to use the bot,
+                                   you can sell the BXOT tokens which you have staked in the exchange, and close the services of the bot. Please note, that the bot services cannot be 
+                                   closed for 3 months from the date of first starting the use of the bot. That is,
+                                   the tokens staked cannot be sold till 3 months from the start of the bot after which you are free to sell and close the bot, if you wish to do so.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Dollar Cost Averaging And Minting Rewards?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dollar Cost Averaging
+DCA is an investment method in which you buy a certain portion of the asset after the determined price deviation. This strategy allows you to lower the market volatility and improve your overall position entry price.
+Minting Rewards!
+Earn minting rewards in BOT token for using our bot. You will earn BOT tokens whilst using our BFCG along with earning high profits whilst using the bot. How exciting! Earning Doesn't stop at BFCG.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start -->
+    <!--<div class="container-fluid bg-light py-5">-->
+    <!--    <div class="container py-5">-->
+    <!--        <div class="row g-5 align-items-center">-->
+    <!--            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">-->
+    <!--                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>-->
+    <!--                <h1 class="mb-4">Meet Our Experienced Team Members</h1>-->
+    <!--                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam-->
+    <!--                    amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus-->
+    <!--                    clita duo justo et tempor eirmod magna dolore erat amet</p>-->
+    <!--                <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-7">-->
+    <!--                <div class="row g-4">-->
+    <!--                    <div class="col-md-6">-->
+    <!--                        <div class="row g-4">-->
+    <!--                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">-->
+    <!--                                <div class="team-item bg-white text-center rounded p-4 pt-0">-->
+    <!--                                    <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">-->
+    <!--                                    <h5 class="mb-0">Boris Johnson</h5>-->
+    <!--                                    <small>Founder & CEO</small>-->
+    <!--                                    <div class="d-flex justify-content-center mt-3">-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-facebook-f"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-twitter"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-instagram"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-linkedin-in"></i></a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">-->
+    <!--                                <div class="team-item bg-white text-center rounded p-4 pt-0">-->
+    <!--                                    <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">-->
+    <!--                                    <h5 class="mb-0">Adam Crew</h5>-->
+    <!--                                    <small>Executive Manager</small>-->
+    <!--                                    <div class="d-flex justify-content-center mt-3">-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-facebook-f"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-twitter"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-instagram"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-linkedin-in"></i></a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-6 pt-md-4">-->
+    <!--                        <div class="row g-4">-->
+    <!--                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">-->
+    <!--                                <div class="team-item bg-white text-center rounded p-4 pt-0">-->
+    <!--                                    <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">-->
+    <!--                                    <h5 class="mb-0">Kate Winslet</h5>-->
+    <!--                                    <small>Co Founder</small>-->
+    <!--                                    <div class="d-flex justify-content-center mt-3">-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-facebook-f"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-twitter"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-instagram"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-linkedin-in"></i></a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">-->
+    <!--                                <div class="team-item bg-white text-center rounded p-4 pt-0">-->
+    <!--                                    <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">-->
+    <!--                                    <h5 class="mb-0">Cody Gardner</h5>-->
+    <!--                                    <small>Project Manager</small>-->
+    <!--                                    <div class="d-flex justify-content-center mt-3">-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-facebook-f"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-twitter"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-instagram"></i></a>-->
+    <!--                                        <a class="btn btn-square btn-primary m-1" href=""><i-->
+    <!--                                                class="fab fa-linkedin-in"></i></a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">BFCG</div>
+                    <h1 class="mb-4">BFCG platform</h1>
+                    <p class="mb-4">BFCG is US based trading company. BFCG works on Cryptocurrencies trade on hundreds of different exchanges. BFCG buy a Cryptocurrency on one exchange, and then quickly sell it on another exchange for a higher price. That’s where the strategy of crypto comes in: Similar to using crypto in capital markets, 
+                    BFCG is a legal way to earn a potential profit when an asset is selling cheaper in one market and at a higher price in another.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary owl-loaded owl-drag">
+                        
+                        
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1260px, 0px, 0px); transition: all 0s ease 0s; width: 4410px;"><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4"> Minting Rewards</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <!--<h5 class="mb-1">Client Name</h5>-->
+                                    <!--<span>Profession</span>-->
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">BFCG is fit for Newbies</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <!--<h5 class="mb-1">Client Name</h5>-->
+                                    <!--<span>Profession</span>-->
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item active" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4"> Dollar Cost Averaging </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1"></h5>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4"> Minting Rewards</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <!--<h5 class="mb-1">Client Name</h5>-->
+                                    <!--<span>Profession</span>-->
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">BFCG is fit for Newbies</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <!--<h5 class="mb-1">Client Name</h5>-->
+                                    <!--<span>Profession</span>-->
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4"> Dollar Cost Averaging </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1"></h5>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4"> Minting Rewards</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="logo.png" style="width: 60px; height: 60px; background:#1363c6;">
+                                <div class="ps-3">
+                                    <!--<h5 class="mb-1">Client Name</h5>-->
+                                    <!--<span>Profession</span>-->
+                                </div>
+                            </div>
+                        </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="bi bi-chevron-left"></i></div><div class="owl-next"><i class="bi bi-chevron-right"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img src="logo.png" class="rounded" alt="logo" style="width: 76px; ">
+                    </a>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms &amp; Condition</a>
+                    <a class="btn btn-link" href="">Career</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s" style="visibility: hidden; animation-delay: 0.7s; animation-name: none;">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Robotic Automation</a>
+                    <a class="btn btn-link" href="">Machine learning</a>
+                    <a class="btn btn-link" href="">Predictive Analysis</a>
+                    <a class="btn btn-link" href="">Data Science</a>
+                    <a class="btn btn-link" href="">Robot Technology</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom" href="#"> BFCG .All Right Reserved. </a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body></html>
