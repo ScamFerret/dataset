@@ -147,7 +147,16 @@ This is the implementation code, dataset, and evaluation results for the propose
 
 This project is an implementation of the proposed system based on Azure OpenAI Service and LangChain.
 
-### 1. Create a .env file
+### 1. Navigate to the system directory
+Before starting the setup process, navigate to the system directory in your terminal:
+
+```
+cd /path/to/system
+```
+
+Replace `/path/to/system` with the actual path to your project's system directory.
+
+### 2. Create a .env file
 
 Create a .env file in the project's root directory with the following content:
 
@@ -174,7 +183,7 @@ ANALYSIS_LLM_TYPE="gpt-4"
 
 Note: These API keys are sensitive information. Replace them with your own API keys when using in production.
 
-### 2. Build the Docker image
+### 3. Build the Docker image
 
 Navigate to the project's root directory in your terminal and run the following command to build the Docker image:
 
@@ -182,7 +191,7 @@ Navigate to the project's root directory in your terminal and run the following 
 docker compose build
 ```
 
-### 3. Start the application
+### 4. Start the application
 
 After the build is complete, start the application with the following command:
 
@@ -192,7 +201,7 @@ docker compose up -d
 
 The `-d`option runs the container in detached mode, starting it in the background.
 
-### 4. Stop the application
+### 5. Stop the application
 
 To stop the application, run:
 
