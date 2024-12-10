@@ -181,7 +181,7 @@ TARGET_URL_FILE="./sample_urls.txt"
 ANALYSIS_LLM_TYPE="gpt-4"
 ```
 
-Note: These API keys are sensitive information. Replace them with your own API keys when using in production.
+Note: These API keys are sensitive information. Replace them with your own API keys.
 
 ### 3. Build the Docker image
 
@@ -199,7 +199,7 @@ After the build is complete, start the application with the following command:
 docker compose up -d
 ```
 
-The `-d`option runs the container in detached mode, starting it in the background.
+The `-d` option runs the container in detached mode, starting it in the background.
 
 ### 5. Stop the application
 
